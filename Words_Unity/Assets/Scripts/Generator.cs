@@ -9,7 +9,6 @@ using System.Collections.Generic;
 /*
  * TODO - Make the generator run in the editor
  * TODO - Add a progress bar to the generation
- * TODO - Add a colour sequence to left edge of the to show the progression
  * TODO - Add character removal (the gameplay)
  * TODO - Add a word list to the right of the screen
  * TODO - Decide on a good puzzle size and position accordingly
@@ -142,7 +141,9 @@ public class Generator : MonoBehaviour
 	private List<GridPosition> mGridPositions;
 
 	public Color FromColour;
-	public Color ToColour;	 
+	public Color ToColour;
+
+	public int MaxCharUsage;
 
 	void Awake()
 	{
@@ -186,7 +187,7 @@ public class Generator : MonoBehaviour
 			{
 				++successfulCount;
 
-				int maxCharCount = 0;
+				MaxCharUsage = 0;
 
 				for (int x = 0; x < Width; ++x)
 				{
@@ -196,7 +197,7 @@ public class Generator : MonoBehaviour
 						if (entry.Character != INVALID_CHAR && entry.CharacterCount > 1)
 						{
 							Debug.Log(string.Format("[{0}, {1}] = {2} ({3})", entry.Position.X, entry.Position.Y, entry.Character, entry.CharacterCount));
-							maxCharCount = Mathf.Max(maxCharCount, entry.CharacterCount);
+							MaxCharUsage = Mathf.Max(MaxCharUsage, entry.CharacterCount);
 						}
 					}
 				}
@@ -206,7 +207,7 @@ public class Generator : MonoBehaviour
 					for (int y = 0; y < Height; ++y)
 					{
 						GridEntry entry = mGrid[x, y];
-						entry.SetBackgroundColour(FromColour, ToColour, maxCharCount);
+						entry.SetBackgroundColour(FromColour, ToColour, MaxCharUsage);
 					}
 				}
 
