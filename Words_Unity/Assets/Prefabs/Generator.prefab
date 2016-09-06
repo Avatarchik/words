@@ -34,7 +34,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014136362752}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -92, y: -92, z: 0}
+  m_LocalPosition: {x: -328, y: -230, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -53,85 +53,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterPrefab: {fileID: 1000011110019902, guid: d585827988e0a2b47908bd107d88352e,
     type: 2}
-  Width: 32
-  Height: 32
-  FillGaps: 0
-  MaximumAttempts: 1000
-  Words:
-  - APPLE
-  - APRICOT
-  - AVOCADO
-  - BANANA
-  - BILBERRY
-  - BLACKBERRY
-  - BLACKCURRANT
-  - BLUEBERRY
-  - BOYSENBERRY
-  - CURRANT
-  - CHERRY
-  - CHERIMOYA
-  - CLOUDBERRY
-  - COCONUT
-  - CRANBERRY
-  - DAMSON
-  - DATE
-  - DRAGONFRUIT
-  - DURIAN
-  - ELDERBERRY
-  - FEIJOA
-  - FIG
-  - GOOSEBERRY
-  - GRAPE
-  - RAISIN
-  - GRAPEFRUIT
-  - GUAVA
-  - HUCKLEBERRY
-  - JABUTICABA
-  - JACKFRUIT
-  - JAMBUL
-  - JUJUBE
-  - KIWIFRUIT
-  - KUMQUAT
-  - LEMON
-  - LIME
-  - LOQUAT
-  - LONGAN
-  - LYCHEE
-  - MANGO
-  - MARIONBERRY
-  - MELON
-  - CANTALOUPE
-  - HONEYDEW
-  - WATERMELON
-  - MULBERRY
-  - NECTARINE
-  - NANCE
-  - OLIVE
-  - ORANGE
-  - CLEMENTINE
-  - MANDARINE
-  - TANGERINE
-  - PAPAYA
-  - PASSIONFRUIT
-  - PEACH
-  - PEAR
-  - PERSIMMON
-  - PHYSALIS
-  - PLANTAIN
-  - PLUM
-  - PRUNE
-  - PINEAPPLE
-  - POMEGRANATE
-  - POMELO
-  - QUINCE
-  - RASPBERRY
-  - SALMONBERRY
-  - RAMBUTAN
-  - REDCURRANT
-  - SALAK
-  - SATSUMA
-  - STRAWBERRY
-  - TAMARILLO
-  - TAMARIND
-  - TOMATO
-  - YUZU
+  WordList: {fileID: 0}
+  Width: 17
+  Height: 14
+  FillGaps: 1
+  MaximumAttempts: 1
+  WordListPasses: 1
+  MaxCharacterUsage: 4
+  WordLimit: 400
+  FromColour: {r: 1, g: 0.77254903, b: 0, a: 1}
+  ToColour: {r: 0.7607843, g: 0.08235294, b: 0, a: 1}
+  MaxCharUsage: 0
+  steps: 20

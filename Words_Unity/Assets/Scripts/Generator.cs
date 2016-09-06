@@ -237,6 +237,14 @@ public class Generator : MonoBehaviour
 		// Cleanup
 		Cleanup();
 
+		Vector3 gridSize = new Vector3(
+			0,
+			(Height * 24) + ((Height - 1) * 8),
+			0);
+		Vector3 halfGridSize = gridSize * 0.5f;
+		halfGridSize.x -= 12;
+		halfGridSize.y -= 12;
+
 		// Creation
 		mGrid = new GridEntry[Width, Height];
 		for (int x = 0; x < Width; ++x)
@@ -249,7 +257,7 @@ public class Generator : MonoBehaviour
 				entry.Character = INVALID_CHAR;
 
 				entry.PrefabInstance = Instantiate(CharacterPrefab, Vector3.zero, Quaternion.identity, transform) as GameObject;
-				entry.PrefabInstance.transform.localPosition = new Vector3(x * 32, y * 32, 0);
+				entry.PrefabInstance.transform.localPosition = new Vector3(x * 32, y * 32, 0) - halfGridSize;
 
 				mGrid[x, y] = entry;
 			}
@@ -342,7 +350,7 @@ public class Generator : MonoBehaviour
 				{
 					if (mGrid[x, y].Character == INVALID_CHAR)
 					{
-						mGrid[x, y].Character = (char)(UnityEngine.Random.Range(65, 91)); // A - Z
+						mGrid[x, y].Character = GetRandomLetter();
 					}
 				}
 			}
@@ -353,6 +361,12 @@ public class Generator : MonoBehaviour
 		Debug.Log(string.Format("Time taken: {0:n2} seconds", timeTaken));
 
 		return true;
+	}
+
+	private char GetRandomLetter()
+	{
+		const string letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		return letters[UnityEngine.Random.Range(0, letters.Length)];
 	}
 
 	private void Cleanup()
