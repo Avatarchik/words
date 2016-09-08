@@ -201,7 +201,6 @@ public class Generator : MonoBehaviour
 						GridEntry entry = mGrid[x, y];
 						if (entry.Character != INVALID_CHAR && entry.CharacterCount > 1)
 						{
-							Debug.Log(string.Format("[{0}, {1}] = {2} ({3})", entry.Position.X, entry.Position.Y, entry.Character, entry.CharacterCount));
 							MaxCharUsage = Mathf.Max(MaxCharUsage, entry.CharacterCount);
 						}
 					}
