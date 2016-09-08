@@ -145,6 +145,9 @@ public class Generator : MonoBehaviour
 
 	public int MaxCharUsage;
 
+	public WordPanel WordPanelRef;
+	private List<string> mWords = new List<string>();
+
 	void Awake()
 	{
 		mWordDirections = new List<EWordDirection>((int)EWordDirection.Count);
@@ -176,6 +179,8 @@ public class Generator : MonoBehaviour
 
 	private IEnumerator GenerateNow()
 	{
+		mWords.Clear();
+
 		bool wasGenerationSuccessful = false;
 
 		int successfulCount = 0;
@@ -328,7 +333,7 @@ public class Generator : MonoBehaviour
 				{
 					ScoredPlacement sp = scoredPlacements.LastItem();
 					PlaceWord(word, sp.Position, sp.WordDirection);
-					Debug.Log(word);
+					mWords.Add(word);
 
 					++placedWords;
 					if (placedWords >= WordLimit)
@@ -359,6 +364,9 @@ public class Generator : MonoBehaviour
 		float endTime = Time.realtimeSinceStartup;
 		float timeTaken = endTime - startTime;
 		Debug.Log(string.Format("Time taken: {0:n2} seconds", timeTaken));
+
+		mWords.Sort();
+		WordPanelRef.Initialise(mWords);
 
 		return true;
 	}
