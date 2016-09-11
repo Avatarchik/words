@@ -6,24 +6,25 @@ public class ColourPanel : MonoBehaviour
 {
 	public GameObject ColourPanelEntryPrefab;
 
-	public Color FromColour;
-	public Color ToColour;
+	public ColourPair Pair;
 
 	public Generator GeneratorRef;
 
-	private List<GameObject> mPanelEntries = new List<GameObject>();
+	private List<Image> mPanelEntries = new List<Image>();
+
+	private int mMaxCharUsage;
 
 	void Start()
 	{
-		int maxCharUsage = GeneratorRef.MaxCharUsage;
+		mMaxCharUsage = GeneratorRef.MaxCharUsage;
 
 		float entrySize = 24;
 		float entryGap = 4;
-		float totalSize = (entrySize * maxCharUsage) + (entryGap * (maxCharUsage - 1));
+		float totalSize = (entrySize * mMaxCharUsage) + (entryGap * (mMaxCharUsage - 1));
 
 		Vector3 pos = new Vector3(entrySize * 1.5f, totalSize * -0.5f, 0);
 
-		for (int i = 0; i < maxCharUsage; ++i)
+		for (int i = 0; i < mMaxCharUsage; ++i)
 		{
 			GameObject entry = Instantiate(ColourPanelEntryPrefab, Vector3.zero, Quaternion.identity, transform) as GameObject;
 			entry.transform.SetParent(transform);
@@ -33,9 +34,35 @@ public class ColourPanel : MonoBehaviour
 			pos.y += entrySize + entryGap;
 
 			Image image = entry.GetComponent<Image>();
-			image.color = ColorHelper.Blend(FromColour, ToColour, (1f / maxCharUsage) * i);
 
-			mPanelEntries.Add(entry);
+			mPanelEntries.Add(image);
+		}
+
+		UpdateColour();
+	}
+
+	void OnEnable()
+	{
+		ColourSwitcher.OnColourSwitched += OnColourSwitched;
+	}
+
+	void OnDisable()
+	{
+		ColourSwitcher.OnColourSwitched -= OnColourSwitched;
+	}
+
+	private void OnColourSwitched(ColourPair newPair)
+	{
+		Pair = newPair;
+		UpdateColour();
+	}
+
+	private void UpdateColour()
+	{
+		for (int entryIndex = 0; entryIndex < mPanelEntries.Count; ++entryIndex)
+		{
+			Image image = mPanelEntries[entryIndex];
+			image.color = ColorHelper.Blend(Pair.High, Pair.Low, (1f / mMaxCharUsage) * entryIndex);
 		}
 	}
 }
