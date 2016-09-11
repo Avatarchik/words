@@ -498,23 +498,4 @@ public class Generator : MonoBehaviour
 				break;
 		}
 	}
-
-	[Range(3, 20)]
-	public int steps = 5;
-
-	void OnDrawGizmos()
-	{
-		Vector3 pos = Vector3.zero;
-
-		float t = 0;
-		float step = 1f / steps;
-
-		for (int i = 0; i < steps; ++i)
-		{
-			Gizmos.color = ColorHelper.Blend(FromColour, ToColour, t);
-			Gizmos.DrawCube(pos + (Vector3.right * i), Vector3.one);
-
-			t += step;
-		}
-	}
 }
