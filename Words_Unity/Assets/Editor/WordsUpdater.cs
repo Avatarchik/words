@@ -52,11 +52,18 @@ public class WordsUpdater
 
 	static private bool IsWordValid(string word)
 	{
+		word = word.ToUpper();
+
 		bool isValid = true;
 
 		isValid &= !string.IsNullOrEmpty(word);
 		isValid &= word.Length > 2;
 		isValid &= !word.Contains(" ");
+
+		foreach (char character in word)
+		{
+			isValid &= character >= 'A' && character <= 'Z';
+		}
 
 		return isValid;
 	}
