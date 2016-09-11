@@ -40,4 +40,60 @@ static public class MathfHelper
 
 		return value;
 	}
+
+	static public int Clamp01(int value)
+	{
+		if (value < 0)
+		{
+			value = 0;
+		}
+		if (value > 1)
+		{
+			value = 1;
+		}
+
+		return value;
+	}
+
+	static public float Clamp01(float value)
+	{
+		if (value < 0)
+		{
+			value = 0;
+		}
+		if (value > 1)
+		{
+			value = 1;
+		}
+
+		return value;
+	}
+
+	static public int ClampM11(int value)
+	{
+		if (value < -1)
+		{
+			value = -1;
+		}
+		if (value > 1)
+		{
+			value = 1;
+		}
+
+		return value;
+	}
+
+	static public float ClampM11(float value)
+	{
+		if (value < -1)
+		{
+			value = -1;
+		}
+		if (value > 1)
+		{
+			value = 1;
+		}
+
+		return value;
+	}
 }
