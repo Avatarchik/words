@@ -8,7 +8,8 @@ public class WordPanel : MonoBehaviour
 
 	public WordPanelTitle Title;
 
-	private List<WordPanelPair> WordPairs;
+	private List<WordPanelPair> mWordPairs;
+	private List<Word> mWords;
 
 	private int mWordCount;
 
@@ -16,7 +17,8 @@ public class WordPanel : MonoBehaviour
 	{
 		mWordCount = words.Count;
 		int halfCount = Mathf.CeilToInt(mWordCount * 0.5f);
-		WordPairs = new List<WordPanelPair>(halfCount);
+		mWordPairs = new List<WordPanelPair>(halfCount);
+		mWords = new List<Word>(mWordCount);
 
 		Vector3 position = Vector3.zero;
 		for (int pairIndex = 0; pairIndex < halfCount; ++pairIndex)
@@ -29,13 +31,15 @@ public class WordPanel : MonoBehaviour
 			position.y = -24 + (pairIndex * -24);
 			newPairRectTrans.localPosition = position;
 
-			newPair.LeftWord.TextComp.text = words[pairIndex];
+			newPair.LeftWord.SetText(words[pairIndex]);
 			if ((pairIndex + halfCount) < mWordCount)
 			{
-				newPair.RightWord.TextComp.text = words[pairIndex + halfCount];
+				newPair.RightWord.SetText(words[pairIndex + halfCount]);
 			}
 
-			WordPairs.Add(newPair);
+			mWordPairs.Add(newPair);
+			mWords.Add(newPair.LeftWord);
+			mWords.Add(newPair.RightWord);
 		}
 
 		Title.SetWordsLeftCount(mWordCount);
@@ -45,7 +49,39 @@ public class WordPanel : MonoBehaviour
 		rectTrans.sizeDelta = new Vector2(rectTrans.sizeDelta.x, newHeight);
 	}
 
-	public void MarkWordAsFound(string word)
+	public bool RemoveWordIfExists(string word)
+	{
+		Debug.Log(string.Format("Checking {0} validity", word));
+
+		if (word.Length <= 2)
+		{
+			return false;
+		}
+
+		string wordReversed = string.Empty;
+		for (int charIndex = (word.Length - 1); charIndex >= 0; --charIndex)
+		{
+			wordReversed += word[charIndex];
+		}
+
+		bool foundMatch = false;
+
+		foreach (Word sourceWord in mWords)
+		{
+			if (sourceWord.GetText() == word && !sourceWord.HasBeenFound)
+			{
+				sourceWord.MarkWordAsFound();
+				UpdateTitle(sourceWord);
+
+				foundMatch = true;
+				break;
+			}
+		}
+
+		return foundMatch;
+	}
+
+	public void UpdateTitle(Word word)
 	{
 		--mWordCount;
 		Title.SetWordsLeftCount(mWordCount);

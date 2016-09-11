@@ -9,9 +9,6 @@ using System.Collections.Generic;
 /*
  * TODO - Make the generator run in the editor
  * TODO - Add a progress bar to the generation
- * TODO - Add character removal (the gameplay)
- * TODO - Add a word list to the right of the screen
- * TODO - Decide on a good puzzle size and position accordingly
  */
 
 [Serializable]
@@ -25,6 +22,23 @@ public class GridPosition
 		X = x;
 		Y = y;
 	}
+
+	public GridPosition(GridPosition position)
+	{
+		X = position.X;
+		Y = position.Y;
+	}
+
+	static public bool operator ==(GridPosition lhs, GridPosition rhs)
+	{
+		bool areEqual = lhs.X == rhs.X && lhs.Y == rhs.Y;
+		return areEqual;
+	}
+
+	static public bool operator !=(GridPosition lhs, GridPosition rhs)
+	{
+		return !(lhs == rhs);
+	}
 }
 
 [Serializable]
@@ -32,7 +46,31 @@ public class GridEntry
 {
 	public GridPosition Position;
 
-	public int CharacterCount;
+	private int _CharacterCount;
+	public int CharacterCount
+	{
+		get
+		{
+			return _CharacterCount;
+		}
+		set
+		{
+			_CharacterCount = value;
+
+			if (_CharacterCount > 0)
+			{
+				if (!Generator.Instance.IsRunning && BackgroundComp)
+				{
+					SetBackgroundColour(Generator.Instance.FromColour, Generator.Instance.ToColour, Generator.Instance.MaxCharUsage);
+				}
+			}
+			else
+			{
+				GameObject.Destroy(_PrefabInstance);
+				Generator.Instance.RemoveEntry(this);
+			}
+		}
+	}
 
 	private char _Character;
 	public char Character
@@ -70,6 +108,16 @@ public class GridEntry
 			_PrefabInstance = value;
 			TextComp = _PrefabInstance ? _PrefabInstance.GetComponentInChildren<Text>() : null;
 			ImageComp = _PrefabInstance ? _PrefabInstance.GetComponentInChildren<Image>() : null;
+			PositionReferenceComp = _PrefabInstance ? _PrefabInstance.GetComponent<GridPositionReference>() : null;
+			BackgroundComp = _PrefabInstance ? _PrefabInstance.GetComponentInChildren<CharacterBackground>() : null;
+		}
+	}
+
+	public void SetPosition(GridPosition position)
+	{
+		if (PositionReferenceComp)
+		{
+			PositionReferenceComp.Position = position;
 		}
 	}
 
@@ -83,8 +131,26 @@ public class GridEntry
 		}
 	}
 
+	public void AddTint()
+	{
+		if (BackgroundComp)
+		{
+			BackgroundComp.AddTint();
+		}
+	}
+
+	public void RemoveTint()
+	{
+		if (BackgroundComp)
+		{
+			BackgroundComp.RemoveTint();
+		}
+	}
+
 	private Text TextComp;
 	private Image ImageComp;
+	private GridPositionReference PositionReferenceComp;
+	private CharacterBackground BackgroundComp;
 }
 
 public class ScoredPlacement
@@ -117,8 +183,10 @@ public class Generator : MonoBehaviour
 		Count,
 	}
 
+	static public Generator Instance;
+
 	private char INVALID_CHAR = ' ';
-	private GridEntry[,] mGrid;
+	public GridEntry[,] mGrid;
 
 	public GameObject CharacterPrefab;
 	public Words WordList;
@@ -143,13 +211,23 @@ public class Generator : MonoBehaviour
 	public Color FromColour;
 	public Color ToColour;
 
+	[HideInInspector]
 	public int MaxCharUsage;
 
 	public WordPanel WordPanelRef;
 	private List<string> mWords = new List<string>();
 
+	public bool IsRunning;
+
 	void Awake()
 	{
+		if (Instance != null)
+		{
+			Destroy(gameObject);
+			return;
+		}
+		Instance = this;
+
 		mWordDirections = new List<EWordDirection>((int)EWordDirection.Count);
 		for (int directionIndex = 0, count = (int)EWordDirection.Count; directionIndex < count; ++directionIndex)
 		{
@@ -179,6 +257,8 @@ public class Generator : MonoBehaviour
 
 	private IEnumerator GenerateNow()
 	{
+		IsRunning = true;
+
 		mWords.Clear();
 
 		bool wasGenerationSuccessful = false;
@@ -211,10 +291,12 @@ public class Generator : MonoBehaviour
 					for (int y = 0; y < Height; ++y)
 					{
 						GridEntry entry = mGrid[x, y];
+						entry.SetPosition(new GridPosition(x, y));
 						entry.SetBackgroundColour(FromColour, ToColour, MaxCharUsage);
 					}
 				}
 
+				IsRunning = false;
 				yield break;
 			}
 			else
@@ -232,6 +314,8 @@ public class Generator : MonoBehaviour
 		}
 
 		Debug.Log(string.Format("Success rate: {0:n2}%", ((float)successfulCount / MaximumAttempts) * 100));
+
+		IsRunning = false;
 	}
 
 	private bool GenerateInternal()
@@ -384,6 +468,11 @@ public class Generator : MonoBehaviour
 		}
 	}
 
+	public void RemoveEntry(GridEntry entry)
+	{
+		mGrid[entry.Position.X, entry.Position.Y] = null;
+	}
+
 	private bool IsWordPlacementValid(string word, GridPosition position, EWordDirection wordDirection, out int score)
 	{
 		int xModifier;
@@ -496,6 +585,67 @@ public class Generator : MonoBehaviour
 				yModifier = 0;
 				Debug.LogError("Invalid word direction");
 				break;
+		}
+	}
+
+	public string GetWord(GridPositionReference fromPosition, GridPositionReference toPosition, ref List<GridEntry> tiles)
+	{
+		string word = string.Empty;
+		tiles.Clear();
+
+		int xDelta = toPosition.Position.X - fromPosition.Position.X;
+		int yDelta = toPosition.Position.Y - fromPosition.Position.Y;
+		int xModifier = MathfHelper.ClampM11(xDelta);
+		int yModifier = MathfHelper.ClampM11(yDelta);
+
+		bool isCardinal = false;
+		isCardinal |= xModifier != 0 && yModifier == 0;
+		isCardinal |= xModifier == 0 && yModifier != 0;
+		isCardinal |= Mathf.Abs(xDelta) == Mathf.Abs(yDelta);
+
+		if (!isCardinal)
+		{
+			GridEntry entry = mGrid[fromPosition.Position.X, fromPosition.Position.Y];
+			word += entry.Character;
+			tiles.Add(entry);
+			return word;
+		}
+
+		int maxDimension = Mathf.Max(Width, Height);
+
+		GridPosition pos = new GridPosition(fromPosition.Position);
+		GridPosition endPos = new GridPosition(toPosition.Position);
+		endPos.X += xModifier;
+		endPos.Y += yModifier;
+
+		int checkedEntries = 0;
+		do
+		{
+			GridEntry entry = mGrid[pos.X, pos.Y];
+			if (entry == null)
+			{
+				break;
+			}
+
+			word += entry.Character;
+			tiles.Add(entry);
+
+			pos.X += xModifier;
+			pos.Y += yModifier;
+
+			++checkedEntries;
+		}
+		while (IsGridPositionValid(pos) && pos != endPos && checkedEntries < maxDimension);
+
+		return word;
+	}
+
+	public void DecrementCharacterCount(List<GridEntry> tiles)
+	{
+		foreach (GridEntry entry in tiles)
+		{
+			int count = entry.CharacterCount;
+			entry.CharacterCount = count - 1;
 		}
 	}
 }

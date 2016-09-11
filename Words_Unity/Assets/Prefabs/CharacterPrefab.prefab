@@ -19,6 +19,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 224000011758560864}
+  - 114: {fileID: 114000010672875406}
   m_Layer: 5
   m_Name: CharacterPrefab
   m_TagString: Untagged
@@ -88,6 +89,20 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114000010672875406
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011110019902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f87dcdd3db419f64081811443d9df1ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Position:
+    X: 0
+    Y: 0
 --- !u!114 &114000012862706438
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -132,6 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249df44743084a843a07dfc05123d937, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ImageComp: {fileID: 114000010089115386}
 --- !u!222 &222000012530706568
 CanvasRenderer:
   m_ObjectHideFlags: 1

@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class CharacterBackground : MonoBehaviour
 	, IEventSystemHandler
@@ -8,14 +9,25 @@ public class CharacterBackground : MonoBehaviour
 	, IPointerEnterHandler
 	, IPointerExitHandler
 {
-	static public GameObject From;
-	static public GameObject To;
+	public Image ImageComp;
+	private Color mBaseColour;
+
+	public void AddTint()
+	{
+		mBaseColour = ImageComp.color;
+		ImageComp.color = Color.green;
+	}
+
+	public void RemoveTint()
+	{
+		ImageComp.color = mBaseColour;
+	}
 
 	public void OnPointerDown(PointerEventData eventData)
 	{
 		if (eventData.button == PointerEventData.InputButton.Left)
 		{
-			From = transform.parent.gameObject;
+			WordHighlighter.Instance.SetFrom(transform.parent.gameObject);
 		}
 	}
 
@@ -23,15 +35,12 @@ public class CharacterBackground : MonoBehaviour
 	{
 		if (eventData.button == PointerEventData.InputButton.Left)
 		{
-			if (To == null)
+			if (WordHighlighter.Instance.GetTo() == null)
 			{
-				To = From;
+				WordHighlighter.Instance.SetTo(WordHighlighter.Instance.GetFrom());
 			}
 
-			Debug.Log(string.Format("From: {0} To: {1}", From.name, To.name));
-			
-			From = null;
-			To = null;
+			WordHighlighter.Instance.CheckHighlightedValidity();
 		}
 	}
 
@@ -39,7 +48,7 @@ public class CharacterBackground : MonoBehaviour
 	{
 		if (eventData.button == PointerEventData.InputButton.Left)
 		{
-			To = transform.parent.gameObject;
+			WordHighlighter.Instance.SetTo(transform.parent.gameObject);
 		}
 	}
 
@@ -47,12 +56,15 @@ public class CharacterBackground : MonoBehaviour
 	{
 		if (eventData.button == PointerEventData.InputButton.Left)
 		{
-			To = From;
+			WordHighlighter.Instance.SetTo(WordHighlighter.Instance.GetFrom());
 		}
 	}
 
 	public void OnDrawGizmosSelected()
 	{
+		GameObject From = WordHighlighter.Instance.GetFrom();
+		GameObject To = WordHighlighter.Instance.GetTo();
+
 		if (From && To)
 		{
 			Gizmos.color = Color.magenta;
