@@ -61,7 +61,7 @@ public class GridEntry
 			{
 				if (!Generator.Instance.IsRunning && BackgroundComp)
 				{
-					SetBackgroundColour(Generator.Instance.Pair.High, Generator.Instance.Pair.Low, Generator.Instance.MaxCharUsage);
+					SetBackgroundColour(Generator.Instance.Scheme.High, Generator.Instance.Scheme.Low, Generator.Instance.MaxCharUsage);
 				}
 			}
 			else
@@ -207,23 +207,23 @@ public class Generator : MonoBehaviour
 	private List<EWordDirection> mWordDirections;
 	private List<GridPosition> mGridPositions;
 
-	private ColourPair _Pair;
-	public ColourPair Pair
+	private ColourScheme _Scheme;
+	public ColourScheme Scheme
 	{
 		get
 		{
-			return _Pair;
+			return _Scheme;
 		}
 		set
 		{
-			_Pair = value;
+			_Scheme = value;
 
 			for (int x = 0; x < Width; ++x)
 			{
 				for (int y = 0; y < Height; ++y)
 				{
 					GridEntry entry = mGrid[x, y];
-					entry.SetBackgroundColour(_Pair.High, _Pair.Low, MaxCharUsage);
+					entry.SetBackgroundColour(_Scheme.High, _Scheme.Low, MaxCharUsage);
 				}
 			}
 		}
@@ -321,7 +321,7 @@ public class Generator : MonoBehaviour
 					{
 						GridEntry entry = mGrid[x, y];
 						entry.SetPosition(new GridPosition(x, y));
-						entry.SetBackgroundColour(Pair.High, Pair.Low, MaxCharUsage);
+						entry.SetBackgroundColour(Scheme.High, Scheme.Low, MaxCharUsage);
 					}
 				}
 
@@ -675,8 +675,8 @@ public class Generator : MonoBehaviour
 		}
 	}
 
-	private void OnColourSwitched(ColourPair newPair)
+	private void OnColourSwitched(ColourScheme newScheme)
 	{
-		Pair = newPair;
+		Scheme = newScheme;
 	}
 }

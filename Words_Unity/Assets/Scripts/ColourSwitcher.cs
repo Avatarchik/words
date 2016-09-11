@@ -3,20 +3,21 @@ using System;
 using System.Collections.Generic;
 
 [Serializable]
-public struct ColourPair
+public struct ColourScheme
 {
 	public Color High;
 	public Color Low;
+	public Color Highlight;
 }
 
 public class ColourSwitcher : MonoBehaviour
 {
 	static private readonly string kChosenIndexKey = "ColourPairIndex";
 
-	public List<ColourPair> Pairs;
+	public List<ColourScheme> Schemes;
 	private int mChosenIndex = 0;
 
-	static public Action<ColourPair> OnColourSwitched;
+	static public Action<ColourScheme> OnColourSwitched;
 
 	void Start()
 	{
@@ -59,7 +60,7 @@ public class ColourSwitcher : MonoBehaviour
 	{
 		if (OnColourSwitched != null)
 		{
-			OnColourSwitched(Pairs[mChosenIndex]);
+			OnColourSwitched(Schemes[mChosenIndex]);
 		}
 
 		if (saveChange)

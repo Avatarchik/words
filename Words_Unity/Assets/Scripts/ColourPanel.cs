@@ -6,7 +6,7 @@ public class ColourPanel : MonoBehaviour
 {
 	public GameObject ColourPanelEntryPrefab;
 
-	public ColourPair Pair;
+	public ColourScheme Scheme;
 
 	public Generator GeneratorRef;
 
@@ -51,9 +51,9 @@ public class ColourPanel : MonoBehaviour
 		ColourSwitcher.OnColourSwitched -= OnColourSwitched;
 	}
 
-	private void OnColourSwitched(ColourPair newPair)
+	private void OnColourSwitched(ColourScheme newScheme)
 	{
-		Pair = newPair;
+		Scheme = newScheme;
 		UpdateColour();
 	}
 
@@ -62,7 +62,7 @@ public class ColourPanel : MonoBehaviour
 		for (int entryIndex = 0; entryIndex < mPanelEntries.Count; ++entryIndex)
 		{
 			Image image = mPanelEntries[entryIndex];
-			image.color = ColorHelper.Blend(Pair.High, Pair.Low, (1f / mMaxCharUsage) * entryIndex);
+			image.color = ColorHelper.Blend(Scheme.High, Scheme.Low, (1f / mMaxCharUsage) * entryIndex);
 		}
 	}
 }

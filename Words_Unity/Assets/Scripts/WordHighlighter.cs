@@ -7,7 +7,7 @@ public class WordHighlighter : MonoBehaviour
 
 	public WordPanel WordPanelComp;
 
-	public Color HighlightColour;
+	private Color mHighlightColour;
 
 	private GameObject mFrom;
 	private GameObject mTo;
@@ -23,6 +23,16 @@ public class WordHighlighter : MonoBehaviour
 		}
 
 		Instance = this;
+	}
+
+	void OnEnable()
+	{
+		ColourSwitcher.OnColourSwitched += OnColourSwitched;
+	}
+
+	void OnDisable()
+	{
+		ColourSwitcher.OnColourSwitched -= OnColourSwitched;
 	}
 
 	public GameObject GetFrom()
@@ -47,6 +57,11 @@ public class WordHighlighter : MonoBehaviour
 		CorrectHighlighting();
 	}
 
+	private void OnColourSwitched(ColourScheme newScheme)
+	{
+		mHighlightColour = newScheme.Highlight;
+	}
+
 	private void CorrectHighlighting()
 	{
 		foreach (GridEntry tile in mHighlightedTiles)
@@ -67,7 +82,7 @@ public class WordHighlighter : MonoBehaviour
 
 		foreach (GridEntry tile in mHighlightedTiles)
 		{
-			tile.AddTint(HighlightColour);
+			tile.AddTint(mHighlightColour);
 		}
 	}
 
