@@ -14,7 +14,7 @@ public class ColourPanel : MonoBehaviour
 
 	void Start()
 	{
-		mMaxCharUsage = Generator.Instance.CurrentMaxCharacterUsage;
+		mMaxCharUsage = Generator.Instance.MaxCharacterUsage;
 
 		float entrySize = 24;
 		float entryGap = 4;

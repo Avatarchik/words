@@ -61,7 +61,7 @@ public class GridEntry
 			{
 				if (!Generator.Instance.IsRunning && BackgroundComp)
 				{
-					SetBackgroundColour(Generator.Instance.Scheme.High, Generator.Instance.Scheme.Low, Generator.Instance.CurrentMaxCharacterUsage);
+					SetBackgroundColour(Generator.Instance.Scheme.High, Generator.Instance.Scheme.Low, Generator.Instance.MaxCharacterUsage);
 				}
 			}
 			else
@@ -197,8 +197,6 @@ public class Generator : MonoBehaviour
 	public int Height = 7;
 	[Range(1, 10)]
 	public int WordListPasses = 1;
-	[Range(1, 100)]
-	public int MaxCharacterUsage = 10;
 	[Range(1, 400)]
 	public int WordLimit = 100;
 
@@ -221,14 +219,14 @@ public class Generator : MonoBehaviour
 				for (int y = 0; y < Height; ++y)
 				{
 					GridEntry entry = mGrid[x, y];
-					entry.SetBackgroundColour(_Scheme.High, _Scheme.Low, CurrentMaxCharacterUsage);
+					entry.SetBackgroundColour(_Scheme.High, _Scheme.Low, MaxCharacterUsage);
 				}
 			}
 		}
 	}
 
 	[HideInInspector]
-	public int CurrentMaxCharacterUsage;
+	public int MaxCharacterUsage;
 
 	public WordPanel WordPanelRef;
 	private List<string> mWords = new List<string>();
@@ -284,7 +282,7 @@ public class Generator : MonoBehaviour
 		mWords.Clear();
 		GenerateInternal();
 
-		CurrentMaxCharacterUsage = 0;
+		MaxCharacterUsage = 0;
 		for (int x = 0; x < Width; ++x)
 		{
 			for (int y = 0; y < Height; ++y)
@@ -292,7 +290,7 @@ public class Generator : MonoBehaviour
 				GridEntry entry = mGrid[x, y];
 				if (entry.Character != INVALID_CHAR && entry.CharacterCount > 1)
 				{
-					CurrentMaxCharacterUsage = Mathf.Max(CurrentMaxCharacterUsage, entry.CharacterCount);
+					MaxCharacterUsage = Mathf.Max(MaxCharacterUsage, entry.CharacterCount);
 				}
 			}
 		}
@@ -303,7 +301,7 @@ public class Generator : MonoBehaviour
 			{
 				GridEntry entry = mGrid[x, y];
 				entry.SetPosition(new GridPosition(x, y));
-				entry.SetBackgroundColour(Scheme.High, Scheme.Low, CurrentMaxCharacterUsage);
+				entry.SetBackgroundColour(Scheme.High, Scheme.Low, MaxCharacterUsage);
 			}
 		}
 
@@ -484,7 +482,7 @@ public class Generator : MonoBehaviour
 		{
 			character = word[characterIndex];
 			gridCharacter = mGrid[pos.X, pos.Y].Character;
-			if (gridCharacter != INVALID_CHAR && character != gridCharacter && mGrid[pos.X, pos.Y].CharacterCount < MaxCharacterUsage)
+			if (gridCharacter != INVALID_CHAR && character != gridCharacter)
 			{
 				isPlacementValid = false;
 				break;
