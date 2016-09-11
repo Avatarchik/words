@@ -195,7 +195,6 @@ public class Generator : MonoBehaviour
 	public int Width = 7;
 	[Range(5, 32)]
 	public int Height = 7;
-	public bool FillGaps = true;
 	[Range(1, 1000)]
 	public int MaximumAttempts = 3;
 	[Range(1, 10)]
@@ -217,6 +216,7 @@ public class Generator : MonoBehaviour
 	public WordPanel WordPanelRef;
 	private List<string> mWords = new List<string>();
 
+	[HideInInspector]
 	public bool IsRunning;
 
 	void Awake()
@@ -430,16 +430,13 @@ public class Generator : MonoBehaviour
 		}
 
 		// Plug the gaps
-		if (FillGaps)
+		for (int x = 0; x < Width; ++x)
 		{
-			for (int x = 0; x < Width; ++x)
+			for (int y = 0; y < Height; ++y)
 			{
-				for (int y = 0; y < Height; ++y)
+				if (mGrid[x, y].Character == INVALID_CHAR)
 				{
-					if (mGrid[x, y].Character == INVALID_CHAR)
-					{
-						mGrid[x, y].Character = GetRandomLetter();
-					}
+					mGrid[x, y].Character = GetRandomLetter();
 				}
 			}
 		}
