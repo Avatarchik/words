@@ -361,6 +361,11 @@ public class Generator : MonoBehaviour
 			allWords.Shuffle();
 			foreach (string word in allWords)
 			{
+				if (mWords.Contains(word))
+				{
+					continue;
+				}
+
 				mWordDirections.Shuffle();
 				mGridPositions.Shuffle();
 
