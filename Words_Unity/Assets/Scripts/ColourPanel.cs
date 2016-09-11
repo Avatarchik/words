@@ -18,7 +18,7 @@ public class ColourPanel : MonoBehaviour
 
 		float entrySize = 24;
 		float entryGap = 4;
-		float totalSize = (entrySize * mMaxCharUsage) + (entryGap * (mMaxCharUsage - 1));
+		float totalSize = (entrySize * (mMaxCharUsage - 1)) + (entryGap * (mMaxCharUsage - 1));
 
 		Vector3 pos = new Vector3(entrySize * 1.5f, totalSize * -0.5f, 0);
 
