@@ -16,6 +16,8 @@ public class WordsUpdater
 			{
 				string[] wordListPaths = Directory.GetFiles(Path.Combine(Application.dataPath, "Words"), "*.txt");
 
+				int wordCount = 0;
+
 				foreach (string path in wordListPaths)
 				{
 					string fileContents = File.ReadAllText(path);
@@ -28,6 +30,7 @@ public class WordsUpdater
 						if (IsWordValid(word))
 						{
 							wordList.Add(word.ToUpper());
+							++wordCount;
 						}
 					}
 
@@ -37,7 +40,8 @@ public class WordsUpdater
 					EditorUtility.SetDirty(wordsPrefab);
 				}
 
-				Debug.Log("Word lists updated");
+				Debug.Log("Word list updated");
+				Debug.Log(string.Format("Now contains {0:n0} words", wordCount));
 			}
 			else
 			{
