@@ -787,11 +787,10 @@ MonoBehaviour:
   WordList: {fileID: 624646974}
   Width: 16
   Height: 16
-  MaximumAttempts: 1
   WordListPasses: 5
   MaxCharacterUsage: 15
   WordLimit: 73
-  MaxCharUsage: 0
+  CurrentMaxCharacterUsage: 0
   WordPanelRef: {fileID: 102630649}
   IsRunning: 0
 --- !u!224 &1750941732
@@ -962,7 +961,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WordPanelComp: {fileID: 102630649}
-  HighlightColour: {r: 0, g: 0.80784315, b: 0, a: 1}
 --- !u!1 &1901736573
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,15 +8,13 @@ public class ColourPanel : MonoBehaviour
 
 	public ColourScheme Scheme;
 
-	public Generator GeneratorRef;
-
 	private List<Image> mPanelEntries = new List<Image>();
 
 	private int mMaxCharUsage;
 
 	void Start()
 	{
-		mMaxCharUsage = GeneratorRef.MaxCharUsage;
+		mMaxCharUsage = Generator.Instance.CurrentMaxCharacterUsage;
 
 		float entrySize = 24;
 		float entryGap = 4;

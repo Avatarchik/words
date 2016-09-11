@@ -61,7 +61,7 @@ public class GridEntry
 			{
 				if (!Generator.Instance.IsRunning && BackgroundComp)
 				{
-					SetBackgroundColour(Generator.Instance.Scheme.High, Generator.Instance.Scheme.Low, Generator.Instance.MaxCharUsage);
+					SetBackgroundColour(Generator.Instance.Scheme.High, Generator.Instance.Scheme.Low, Generator.Instance.CurrentMaxCharacterUsage);
 				}
 			}
 			else
@@ -195,8 +195,6 @@ public class Generator : MonoBehaviour
 	public int Width = 7;
 	[Range(5, 32)]
 	public int Height = 7;
-	[Range(1, 1000)]
-	public int MaximumAttempts = 3;
 	[Range(1, 10)]
 	public int WordListPasses = 1;
 	[Range(1, 100)]
@@ -223,14 +221,14 @@ public class Generator : MonoBehaviour
 				for (int y = 0; y < Height; ++y)
 				{
 					GridEntry entry = mGrid[x, y];
-					entry.SetBackgroundColour(_Scheme.High, _Scheme.Low, MaxCharUsage);
+					entry.SetBackgroundColour(_Scheme.High, _Scheme.Low, CurrentMaxCharacterUsage);
 				}
 			}
 		}
 	}
 
 	[HideInInspector]
-	public int MaxCharUsage;
+	public int CurrentMaxCharacterUsage;
 
 	public WordPanel WordPanelRef;
 	private List<string> mWords = new List<string>();
@@ -281,68 +279,33 @@ public class Generator : MonoBehaviour
 
 	public void Generate()
 	{
-		StartCoroutine("GenerateNow");
-	}
-
-	private IEnumerator GenerateNow()
-	{
 		IsRunning = true;
 
 		mWords.Clear();
+		GenerateInternal();
 
-		bool wasGenerationSuccessful = false;
-
-		int successfulCount = 0;
-
-		for (int attemptIndex = 0; attemptIndex < MaximumAttempts; ++attemptIndex)
+		CurrentMaxCharacterUsage = 0;
+		for (int x = 0; x < Width; ++x)
 		{
-			wasGenerationSuccessful = GenerateInternal();
-			if (wasGenerationSuccessful)
+			for (int y = 0; y < Height; ++y)
 			{
-				++successfulCount;
-
-				MaxCharUsage = 0;
-
-				for (int x = 0; x < Width; ++x)
+				GridEntry entry = mGrid[x, y];
+				if (entry.Character != INVALID_CHAR && entry.CharacterCount > 1)
 				{
-					for (int y = 0; y < Height; ++y)
-					{
-						GridEntry entry = mGrid[x, y];
-						if (entry.Character != INVALID_CHAR && entry.CharacterCount > 1)
-						{
-							MaxCharUsage = Mathf.Max(MaxCharUsage, entry.CharacterCount);
-						}
-					}
+					CurrentMaxCharacterUsage = Mathf.Max(CurrentMaxCharacterUsage, entry.CharacterCount);
 				}
-
-				for (int x = 0; x < Width; ++x)
-				{
-					for (int y = 0; y < Height; ++y)
-					{
-						GridEntry entry = mGrid[x, y];
-						entry.SetPosition(new GridPosition(x, y));
-						entry.SetBackgroundColour(Scheme.High, Scheme.Low, MaxCharUsage);
-					}
-				}
-
-				IsRunning = false;
-				yield break;
 			}
-			else
-			{
-				Debug.LogWarning(string.Format("Generation attempt #{0:N0} failed!", attemptIndex + 1));
-			}
-
-			yield return new WaitForEndOfFrame();
 		}
 
-		if (!wasGenerationSuccessful)
+		for (int x = 0; x < Width; ++x)
 		{
-			Debug.LogWarning("Generation failed!");
-			Cleanup();
+			for (int y = 0; y < Height; ++y)
+			{
+				GridEntry entry = mGrid[x, y];
+				entry.SetPosition(new GridPosition(x, y));
+				entry.SetBackgroundColour(Scheme.High, Scheme.Low, CurrentMaxCharacterUsage);
+			}
 		}
-
-		Debug.Log(string.Format("Success rate: {0:n2}%", ((float)successfulCount / MaximumAttempts) * 100));
 
 		IsRunning = false;
 	}
