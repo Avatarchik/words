@@ -23,7 +23,13 @@ public class CharacterBackground : MonoBehaviour
 	{
 		if (eventData.button == PointerEventData.InputButton.Left)
 		{
+			if (To == null)
+			{
+				To = From;
+			}
+
 			Debug.Log(string.Format("From: {0} To: {1}", From.name, To.name));
+			
 			From = null;
 			To = null;
 		}
