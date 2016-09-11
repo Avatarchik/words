@@ -7,6 +7,8 @@ public class WordHighlighter : MonoBehaviour
 
 	public WordPanel WordPanelComp;
 
+	public Color HighlightColour;
+
 	private GameObject mFrom;
 	private GameObject mTo;
 
@@ -65,7 +67,7 @@ public class WordHighlighter : MonoBehaviour
 
 		foreach (GridEntry tile in mHighlightedTiles)
 		{
-			tile.AddTint();
+			tile.AddTint(HighlightColour);
 		}
 	}
 

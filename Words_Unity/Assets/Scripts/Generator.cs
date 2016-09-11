@@ -131,11 +131,11 @@ public class GridEntry
 		}
 	}
 
-	public void AddTint()
+	public void AddTint(Color highlightColour)
 	{
 		if (BackgroundComp)
 		{
-			BackgroundComp.AddTint();
+			BackgroundComp.AddTint(highlightColour);
 		}
 	}
 

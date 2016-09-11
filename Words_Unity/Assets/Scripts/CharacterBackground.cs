@@ -12,10 +12,10 @@ public class CharacterBackground : MonoBehaviour
 	public Image ImageComp;
 	private Color mBaseColour;
 
-	public void AddTint()
+	public void AddTint(Color highlightColour)
 	{
 		mBaseColour = ImageComp.color;
-		ImageComp.color = Color.green;
+		ImageComp.color = highlightColour;
 	}
 
 	public void RemoveTint()
