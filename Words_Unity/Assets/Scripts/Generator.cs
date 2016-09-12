@@ -279,6 +279,7 @@ public class Generator : MonoBehaviour
 	public void Generate()
 	{
 		IsRunning = true;
+		float startTime = Time.realtimeSinceStartup;
 
 		mWords.Clear();
 		GenerateInternal();
@@ -307,13 +308,15 @@ public class Generator : MonoBehaviour
 			}
 		}
 
+		float endTime = Time.realtimeSinceStartup;
+		float timeTaken = endTime - startTime;
+		Debug.Log(string.Format("Time taken: {0:n2} seconds", timeTaken));
+
 		IsRunning = false;
 	}
 
 	private bool GenerateInternal()
 	{
-		float startTime = Time.realtimeSinceStartup;
-
 		// Cleanup
 		Cleanup();
 
@@ -423,7 +426,7 @@ public class Generator : MonoBehaviour
 				}
 			}
 
-			Debug.Log(string.Format("#{0} Placed words: {1}", i + 1, placedWords));
+			Debug.Log(string.Format("Pass #{0} placed words: {1}", i + 1, placedWords));
 		}
 
 		// Plug the gaps
@@ -437,10 +440,6 @@ public class Generator : MonoBehaviour
 				}
 			}
 		}
-
-		float endTime = Time.realtimeSinceStartup;
-		float timeTaken = endTime - startTime;
-		Debug.Log(string.Format("Time taken: {0:n2} seconds", timeTaken));
 
 		mWords.Sort();
 		WordPanelRef.Initialise(mWords);
