@@ -26,6 +26,7 @@ public class ColourPanel : MonoBehaviour
 		{
 			GameObject entry = Instantiate(ColourPanelEntryPrefab, Vector3.zero, Quaternion.identity, transform) as GameObject;
 			entry.transform.SetParent(transform);
+			entry.name = "Colour #" + (i + 1);
 
 			RectTransform rectTrans = entry.GetComponent<RectTransform>();
 			rectTrans.localPosition = pos;
@@ -60,7 +61,11 @@ public class ColourPanel : MonoBehaviour
 		for (int entryIndex = 0; entryIndex < mPanelEntries.Count; ++entryIndex)
 		{
 			Image image = mPanelEntries[entryIndex];
-			image.color = ColorHelper.Blend(Scheme.High, Scheme.Low, (1f / mMaxCharUsage) * entryIndex);
+
+			float t = (1f / (mMaxCharUsage - 1)) * entryIndex;
+			t = MathfHelper.Clamp01(t);
+
+			image.color = ColorHelper.Blend(Scheme.High, Scheme.Low, t);
 		}
 	}
 }

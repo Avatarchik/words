@@ -86,7 +86,7 @@ public class GridEntry
 			_Character = value;
 			if (PrefabInstance)
 			{
-				PrefabInstance.name = string.Format("[{0}, {1}] = {2}", Position.X, Position.Y, _Character);
+				PrefabInstance.name = string.Format("[{0}, {1}] = {2} ({3})", Position.X, Position.Y, _Character, _CharacterCount);
 
 				if (TextComp)
 				{
@@ -125,8 +125,9 @@ public class GridEntry
 	{
 		if (ImageComp)
 		{
-			float t = (float)CharacterCount / maxCharacterCount;
-			t = MathfHelper.Clamp0(t);
+			float t = (1f / (maxCharacterCount - 1)) * (CharacterCount - 1);
+			t = MathfHelper.Clamp01(t);
+
 			ImageComp.color = ColorHelper.Blend(fromColour, toColour, t);
 		}
 	}
@@ -294,6 +295,7 @@ public class Generator : MonoBehaviour
 				}
 			}
 		}
+		Debug.Log("Max character usage: " + MaxCharacterUsage);
 
 		for (int x = 0; x < Width; ++x)
 		{
