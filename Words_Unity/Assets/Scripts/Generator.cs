@@ -68,7 +68,7 @@ public class GridEntry
 
 					if (PrefabInstance)
 					{
-						PrefabInstance.name = string.Format("[{0}, {1}] = {2} ({3})", Position.X, Position.Y, Character, CharacterCount);
+						PrefabInstance.name = string.Format("[{0}, {1}] = {2} ({3})", Position.X, Position.Y, Character, _CharacterCount);
 					}
 				}
 			}
