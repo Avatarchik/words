@@ -59,9 +59,17 @@ public class GridEntry
 
 			if (_CharacterCount > 0)
 			{
-				if (!Generator.Instance.IsRunning && BackgroundComp)
+				if (!Generator.Instance.IsRunning)
 				{
-					SetBackgroundColour(Generator.Instance.Scheme.High, Generator.Instance.Scheme.Low, Generator.Instance.MaxCharacterUsage);
+					if (BackgroundComp)
+					{
+						SetBackgroundColour(Generator.Instance.Scheme.High, Generator.Instance.Scheme.Low, Generator.Instance.MaxCharacterUsage);
+					}
+
+					if (PrefabInstance)
+					{
+						PrefabInstance.name = string.Format("[{0}, {1}] = {2} ({3})", Position.X, Position.Y, Character, CharacterCount);
+					}
 				}
 			}
 			else
