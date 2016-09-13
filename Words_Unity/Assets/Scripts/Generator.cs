@@ -86,7 +86,7 @@ public class GridEntry
 			_Character = value;
 			if (PrefabInstance)
 			{
-				PrefabInstance.name = string.Format("[{0}, {1}] = {2} ({3})", Position.X, Position.Y, _Character, _CharacterCount);
+				PrefabInstance.name = string.Format("[{0}, {1}] = {2} ({3})", Position.X, Position.Y, _Character, CharacterCount);
 
 				if (TextComp)
 				{
@@ -168,6 +168,12 @@ public class ScoredPlacement
 	}
 }
 
+public class WordPlacement
+{
+	public GridPosition Position;
+	public Generator.EWordDirection WordDirection;
+}
+
 public class Generator : MonoBehaviour
 {
 	public enum EWordDirection : byte
@@ -231,6 +237,7 @@ public class Generator : MonoBehaviour
 
 	public WordPanel WordPanelRef;
 	private List<string> mWords = new List<string>();
+	private List<WordPlacement> mWordPlacements = new List<WordPlacement>();
 
 	[HideInInspector]
 	public bool IsRunning;
@@ -282,6 +289,7 @@ public class Generator : MonoBehaviour
 		float startTime = Time.realtimeSinceStartup;
 
 		mWords.Clear();
+		mWordPlacements.Clear();
 		GenerateInternal();
 
 		MaxCharacterUsage = 0;
@@ -353,6 +361,8 @@ public class Generator : MonoBehaviour
 
 		int placedWords = 0;
 
+		int maxDimension = Mathf.Max(Width, Height);
+
 		// Puzzling
 		for (int i = 0; i < WordListPasses; ++i)
 		{
@@ -364,7 +374,7 @@ public class Generator : MonoBehaviour
 			allWords.Shuffle();
 			foreach (string word in allWords)
 			{
-				if (mWords.Contains(word))
+				if (mWords.Contains(word) || word.Length > maxDimension)
 				{
 					continue;
 				}
@@ -418,6 +428,11 @@ public class Generator : MonoBehaviour
 					PlaceWord(word, sp.Position, sp.WordDirection);
 					mWords.Add(word);
 
+					WordPlacement wordPlacement = new WordPlacement();
+					wordPlacement.Position = sp.Position;
+					wordPlacement.WordDirection = sp.WordDirection;
+					mWordPlacements.Add(wordPlacement);
+
 					++placedWords;
 					if (placedWords >= WordLimit)
 					{
@@ -440,6 +455,43 @@ public class Generator : MonoBehaviour
 				}
 			}
 		}
+
+		int extras = 0;
+		List<int> originalWordIndices = new List<int>();
+		List<string> partialWords = new List<string>();
+		foreach (string word in allWords)
+		{
+			if (mWords.Contains(word))
+			{
+				continue;
+			}
+
+			for (int usedWordIndex = 0; usedWordIndex < mWords.Count; ++usedWordIndex)
+			{
+				if (mWords[usedWordIndex].Contains(word))
+				{
+					originalWordIndices.Add(usedWordIndex);
+					partialWords.Add(word);
+					++extras;
+					break;
+				}
+			}
+		}
+
+		for (int i = 0; i < originalWordIndices.Count; ++i)
+		{
+			int originalIndex = originalWordIndices[i];
+			string str = mWords[originalIndex];
+
+			WordPlacement wordPlacement = mWordPlacements[originalIndex];
+
+			string partialWord = partialWords[i];
+			mWords.Add(partialWord);
+
+			PlacePartialWord(str, partialWord, wordPlacement.Position, wordPlacement.WordDirection);
+		}
+		Debug.Log("Extras: " + extras);
+		Debug.Log("New total: " + mWords.Count);
 
 		mWords.Sort();
 		WordPanelRef.Initialise(mWords);
@@ -523,6 +575,30 @@ public class Generator : MonoBehaviour
 		}
 	}
 
+	private void PlacePartialWord(string word, string partialWord, GridPosition position, EWordDirection wordDirection)
+	{
+		int xModifier;
+		int yModifier;
+		GetDirectionModifier(wordDirection, out xModifier, out yModifier);
+
+		GridPosition pos = new GridPosition(position.X, position.Y);
+
+		int startIndex = word.IndexOf(partialWord, 0);
+		for (int i = 0; i < startIndex; ++i)
+		{
+			pos.X += xModifier;
+			pos.Y += yModifier;
+		}
+
+		int partialWordLength = partialWord.Length;
+		for (int characterIndex = 0; characterIndex < partialWordLength; ++characterIndex)
+		{
+			mGrid[pos.X, pos.Y].Character = partialWord[characterIndex];
+			pos.X += xModifier;
+			pos.Y += yModifier;
+		}
+	}
+
 	private bool IsGridPositionValid(GridPosition position)
 	{
 		bool isValid = position.X >= 0 && position.Y >= 0 && position.X < Width && position.Y < Height;
@@ -531,6 +607,7 @@ public class Generator : MonoBehaviour
 
 	private void GetDirectionModifier(EWordDirection wordDirection, out int xModifier, out int yModifier)
 	{
+		// TODO - this should be mapped to improve performance
 		switch (wordDirection)
 		{
 			case EWordDirection.North:
