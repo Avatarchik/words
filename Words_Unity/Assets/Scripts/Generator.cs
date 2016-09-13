@@ -136,7 +136,13 @@ public class GridEntry
 			float t = (1f / (maxCharacterCount - 1)) * (CharacterCount - 1);
 			t = MathfHelper.Clamp01(t);
 
-			ImageComp.color = ColorHelper.Blend(fromColour, toColour, t);
+			Color newColour = ColorHelper.Blend(fromColour, toColour, t);
+			ImageComp.color = newColour;
+
+			if (BackgroundComp)
+			{
+				BackgroundComp.UpdateBaseColour(newColour);
+			}
 		}
 	}
 

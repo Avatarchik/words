@@ -23,6 +23,11 @@ public class CharacterBackground : MonoBehaviour
 		ImageComp.color = mBaseColour;
 	}
 
+	public void UpdateBaseColour(Color newBaseColour)
+	{
+		mBaseColour = newBaseColour;
+	}
+
 	public void OnPointerDown(PointerEventData eventData)
 	{
 		if (eventData.button == PointerEventData.InputButton.Left)
