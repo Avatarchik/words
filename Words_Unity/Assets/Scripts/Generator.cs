@@ -438,6 +438,11 @@ public class Generator : MonoBehaviour
 				scoredPlacements.Sort((a, b) => a.Score.CompareTo(b.Score));
 				hasFoundPlacement = scoredPlacements.Count > 0;
 
+				if (!hasFoundPlacement)
+				{
+					continue;
+				}
+
 				if (!hasPlacedInitialWord)
 				{
 					hasPlacedInitialWord = true;
@@ -463,15 +468,8 @@ public class Generator : MonoBehaviour
 				if (hasFoundPlacement)
 				{
 					ScoredPlacement sp = scoredPlacements.LastItem();
-					try
-					{
-						PlaceWord(word, sp.Position, sp.WordDirection);
-						mWords.Add(word);
-					}
-					catch (Exception e)
-					{
-						Debug.LogError(e);
-					}
+					PlaceWord(word, sp.Position, sp.WordDirection);
+					mWords.Add(word);
 
 					WordPlacement wordPlacement = new WordPlacement();
 					wordPlacement.Position = sp.Position;
