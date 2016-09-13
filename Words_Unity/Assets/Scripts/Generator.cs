@@ -326,9 +326,14 @@ public class Generator : MonoBehaviour
 		IsRunning = true;
 		float startTime = Time.realtimeSinceStartup;
 
-		mWords.Clear();
-		mWordPlacements.Clear();
-		GenerateInternal();
+		Cleanup();
+		bool wasGenerationSuccessful = GenerateInternal();
+
+		if (!wasGenerationSuccessful)
+		{
+			Debug.LogWarning("Generation unsuccessful!");
+			Cleanup();
+		}
 
 		MaxCharacterUsage = 0;
 		for (int x = 0; x < Width; ++x)
@@ -487,18 +492,19 @@ public class Generator : MonoBehaviour
 			Debug.Log(string.Format("Pass #{0} placed words: {1}", i + 1, placedWords));
 		}
 
-		// Plug the gaps
+		// Did any tiles get missed?
 		for (int x = 0; x < Width; ++x)
 		{
 			for (int y = 0; y < Height; ++y)
 			{
 				if (mGrid[x, y].Character == INVALID_CHAR)
 				{
-					mGrid[x, y].Character = GetRandomLetter();
+					return false;
 				}
 			}
 		}
 
+		// What about partial words?
 		int extras = 0;
 		List<int> originalWordIndices = new List<int>();
 		List<string> partialWords = new List<string>();
@@ -542,14 +548,11 @@ public class Generator : MonoBehaviour
 		return true;
 	}
 
-	private char GetRandomLetter()
-	{
-		const string letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-		return letters[UnityEngine.Random.Range(0, letters.Length)];
-	}
-
 	private void Cleanup()
 	{
+		mWords.Clear();
+		mWordPlacements.Clear();
+
 		foreach (Transform child in transform)
 		{
 			Destroy(child.gameObject);
