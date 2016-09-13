@@ -188,6 +188,18 @@ public class WordPlacement
 	public Generator.EWordDirection WordDirection;
 }
 
+public struct MappedDirection
+{
+	public int XModifier;
+	public int YModifier;
+
+	public MappedDirection(int xModifier, int yModifier)
+	{
+		XModifier = xModifier;
+		YModifier = yModifier;
+	}
+}
+
 public class Generator : MonoBehaviour
 {
 	public enum EWordDirection : byte
@@ -203,6 +215,18 @@ public class Generator : MonoBehaviour
 
 		Count,
 	}
+
+	private MappedDirection[] kMappedDirections = new MappedDirection[]
+	{
+		new MappedDirection( 0,  1),	// EWordDirection.North
+		new MappedDirection( 1,  1),	// EWordDirection.NorthEast
+		new MappedDirection( 1,  0),	// EWordDirection.East
+		new MappedDirection( 1, -1),	// EWordDirection.SouthEast
+		new MappedDirection( 0, -1),	// EWordDirection.South
+		new MappedDirection(-1, -1),	// EWordDirection.SouthWest
+		new MappedDirection(-1,  0),	// EWordDirection.West
+		new MappedDirection(-1,  1),	// EWordDirection.NorthWest
+	};
 
 	static public Generator Instance;
 
@@ -439,8 +463,15 @@ public class Generator : MonoBehaviour
 				if (hasFoundPlacement)
 				{
 					ScoredPlacement sp = scoredPlacements.LastItem();
-					PlaceWord(word, sp.Position, sp.WordDirection);
-					mWords.Add(word);
+					try
+					{
+						PlaceWord(word, sp.Position, sp.WordDirection);
+						mWords.Add(word);
+					}
+					catch (Exception e)
+					{
+						Debug.LogError(e);
+					}
 
 					WordPlacement wordPlacement = new WordPlacement();
 					wordPlacement.Position = sp.Position;
@@ -621,55 +652,9 @@ public class Generator : MonoBehaviour
 
 	private void GetDirectionModifier(EWordDirection wordDirection, out int xModifier, out int yModifier)
 	{
-		// TODO - this should be mapped to improve performance
-		switch (wordDirection)
-		{
-			case EWordDirection.North:
-				xModifier = 0;
-				yModifier = 1;
-				break;
-
-			case EWordDirection.NorthEast:
-				xModifier = 1;
-				yModifier = 1;
-				break;
-
-			case EWordDirection.East:
-				xModifier = 1;
-				yModifier = 0;
-				break;
-
-			case EWordDirection.SouthEast:
-				xModifier = 1;
-				yModifier = -1;
-				break;
-
-			case EWordDirection.South:
-				xModifier = 0;
-				yModifier = -1;
-				break;
-
-			case EWordDirection.SouthWest:
-				xModifier = -1;
-				yModifier = -1;
-				break;
-
-			case EWordDirection.West:
-				xModifier = -1;
-				yModifier = 0;
-				break;
-
-			case EWordDirection.NorthWest:
-				xModifier = -1;
-				yModifier = 1;
-				break;
-
-			default:
-				xModifier = 0;
-				yModifier = 0;
-				Debug.LogError("Invalid word direction");
-				break;
-		}
+		MappedDirection modifiers = kMappedDirections[(int)wordDirection];
+		xModifier = modifiers.XModifier;
+		yModifier = modifiers.YModifier;
 	}
 
 	public string GetWord(GridPositionReference fromPosition, GridPositionReference toPosition, ref List<GridEntry> tiles)
