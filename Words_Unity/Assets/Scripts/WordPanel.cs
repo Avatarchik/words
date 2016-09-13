@@ -68,7 +68,13 @@ public class WordPanel : MonoBehaviour
 
 		foreach (Word sourceWord in mWords)
 		{
-			if (sourceWord.GetText() == word && !sourceWord.HasBeenFound)
+			if (sourceWord.HasBeenFound)
+			{
+				continue;
+			}
+
+			string sourceText = sourceWord.GetText();
+			if (sourceText == word || sourceText == wordReversed)
 			{
 				sourceWord.MarkWordAsFound();
 				UpdateTitle(sourceWord);
