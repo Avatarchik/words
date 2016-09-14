@@ -280,6 +280,8 @@ public class Generator : MonoBehaviour
 	[HideInInspector]
 	public bool IsRunning;
 
+	private RectTransform mRectTrans;
+
 	void Awake()
 	{
 		if (Instance != null)
@@ -288,6 +290,8 @@ public class Generator : MonoBehaviour
 			return;
 		}
 		Instance = this;
+
+		mRectTrans = GetComponent<RectTransform>();
 
 		mWordDirections = new List<EWordDirection>((int)EWordDirection.Count);
 		for (int directionIndex = 0, count = (int)EWordDirection.Count; directionIndex < count; ++directionIndex)
@@ -334,29 +338,34 @@ public class Generator : MonoBehaviour
 			Debug.LogWarning("Generation unsuccessful!");
 			Cleanup();
 		}
-
-		MaxCharacterUsage = 0;
-		for (int x = 0; x < Width; ++x)
+		else
 		{
-			for (int y = 0; y < Height; ++y)
+			MaxCharacterUsage = 0;
+			for (int x = 0; x < Width; ++x)
 			{
-				GridEntry entry = mGrid[x, y];
-				if (entry.Character != INVALID_CHAR && entry.CharacterCount > 1)
+				for (int y = 0; y < Height; ++y)
 				{
-					MaxCharacterUsage = Mathf.Max(MaxCharacterUsage, entry.CharacterCount);
+					GridEntry entry = mGrid[x, y];
+					if (entry.Character != INVALID_CHAR && entry.CharacterCount > 1)
+					{
+						MaxCharacterUsage = Mathf.Max(MaxCharacterUsage, entry.CharacterCount);
+					}
 				}
 			}
-		}
-		Debug.Log("Max character usage: " + MaxCharacterUsage);
+			Debug.Log("Max character usage: " + MaxCharacterUsage);
 
-		for (int x = 0; x < Width; ++x)
-		{
-			for (int y = 0; y < Height; ++y)
+			for (int x = 0; x < Width; ++x)
 			{
-				GridEntry entry = mGrid[x, y];
-				entry.SetPosition(new GridPosition(x, y));
-				entry.SetBackgroundColour(Scheme.High, Scheme.Low, MaxCharacterUsage);
+				for (int y = 0; y < Height; ++y)
+				{
+					GridEntry entry = mGrid[x, y];
+					entry.SetPosition(new GridPosition(x, y));
+					entry.SetBackgroundColour(Scheme.High, Scheme.Low, MaxCharacterUsage);
+				}
 			}
+
+			// Scale accordingly
+			mRectTrans.localScale = new Vector3(16f / Width, 16f / Height, 1);
 		}
 
 		float endTime = Time.realtimeSinceStartup;
@@ -499,6 +508,7 @@ public class Generator : MonoBehaviour
 			{
 				if (mGrid[x, y].Character == INVALID_CHAR)
 				{
+					Debug.LogWarning("found a gap");
 					return false;
 				}
 			}
@@ -550,6 +560,8 @@ public class Generator : MonoBehaviour
 
 	private void Cleanup()
 	{
+		mRectTrans.localScale = Vector3.one;
+
 		mWords.Clear();
 		mWordPlacements.Clear();
 
