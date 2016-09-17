@@ -58,11 +58,7 @@ public class WordPanel : MonoBehaviour
 			return false;
 		}
 
-		string wordReversed = string.Empty;
-		for (int charIndex = (word.Length - 1); charIndex >= 0; --charIndex)
-		{
-			wordReversed += word[charIndex];
-		}
+		string reversedWord = WordHelper.ReverseWord(word);
 
 		bool foundMatch = false;
 
@@ -74,7 +70,7 @@ public class WordPanel : MonoBehaviour
 			}
 
 			string sourceText = sourceWord.GetText();
-			if (sourceText == word || sourceText == wordReversed)
+			if (sourceText == word || sourceText == reversedWord)
 			{
 				sourceWord.MarkWordAsFound();
 				UpdateTitle(sourceWord);

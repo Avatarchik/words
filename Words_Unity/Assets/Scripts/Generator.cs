@@ -1,7 +1,4 @@
 using UnityEngine;
-using UnityEngine.UI;
-using System;
-using System.Collections;
 using System.Collections.Generic;
 
 // http://uigradients.com/
@@ -27,7 +24,7 @@ public class Generator : MonoBehaviour
 	public int Height = 7;
 	[Range(1, 10)]
 	public int WordListPasses = 1;
-	[Range(1, 400)]
+	[Range(1, 1024)]
 	public int WordLimit = 100;
 	[Range(1, 17)]
 	public int MaxTileUsage = 5;
@@ -68,6 +65,8 @@ public class Generator : MonoBehaviour
 	public bool IsRunning;
 
 	private RectTransform mRectTrans;
+
+	public PuzzleContents contents;
 
 	void Awake()
 	{
@@ -117,7 +116,6 @@ public class Generator : MonoBehaviour
 		IsRunning = true;
 		float startTime = Time.realtimeSinceStartup;
 
-		Cleanup();
 		bool wasGenerationSuccessful = GenerateInternal();
 
 		if (!wasGenerationSuccessful)
@@ -164,6 +162,8 @@ public class Generator : MonoBehaviour
 
 	private bool GenerateInternal()
 	{
+		contents.Initialise(Width, Height);
+
 		// Cleanup
 		Cleanup();
 
@@ -269,8 +269,11 @@ public class Generator : MonoBehaviour
 				if (hasFoundPlacement)
 				{
 					ScoredPlacement sp = scoredPlacements.LastItem();
-					PlaceWord(word, sp.Position, sp.WordDirection);
+					GridPosition toPosition;
+					PlaceWord(word, sp.Position, sp.WordDirection, out toPosition);
 					mWords.Add(word);
+
+					contents.RegisterWord(word, sp.Position, toPosition);
 
 					mWordPlacements.Add(sp);
 
@@ -325,16 +328,20 @@ public class Generator : MonoBehaviour
 		{
 			int originalIndex = originalWordIndices[i];
 			string str = mWords[originalIndex];
+			string partialWord = partialWords[i];
 
 			ScoredPlacement wordPlacement = mWordPlacements[originalIndex];
-
-			string partialWord = partialWords[i];
-			mWords.Add(partialWord);
 
 			int score = 0;
 			if (IsWordPlacementValid(partialWord, wordPlacement.Position, wordPlacement.WordDirection, out score))
 			{
-				PlacePartialWord(str, partialWord, wordPlacement.Position, wordPlacement.WordDirection);
+				mWords.Add(partialWord);
+
+				GridPosition fromPosition;
+				GridPosition toPosition;
+				PlacePartialWord(str, partialWord, wordPlacement.Position, wordPlacement.WordDirection, out fromPosition, out toPosition);
+
+				contents.RegisterWord(partialWord, wordPlacement.Position, toPosition);
 			}
 		}
 		Debug.Log("Extras: " + extras);
@@ -342,6 +349,8 @@ public class Generator : MonoBehaviour
 
 		mWords.Sort();
 		WordPanelRef.Initialise(mWords);
+
+		contents.Finalise(mGrid);
 
 		return true;
 	}
@@ -352,11 +361,6 @@ public class Generator : MonoBehaviour
 
 		mWords.Clear();
 		mWordPlacements.Clear();
-
-		foreach (Transform child in transform)
-		{
-			Destroy(child.gameObject);
-		}
 	}
 
 	public void RemoveEntry(GridEntry entry)
@@ -405,43 +409,46 @@ public class Generator : MonoBehaviour
 		return isPlacementValid;
 	}
 
-	private void PlaceWord(string word, GridPosition position, EWordDirection wordDirection)
+	private void PlaceWord(string word, GridPosition position, EWordDirection wordDirection, out GridPosition toPosition)
 	{
 		int xModifier;
 		int yModifier;
 		WordDirection.GetModifiers(wordDirection, out xModifier, out yModifier);
 
-		GridPosition pos = new GridPosition(position.X, position.Y);
+		toPosition = new GridPosition(position.X, position.Y);
 		int wordLength = word.Length;
 		for (int characterIndex = 0; characterIndex < wordLength; ++characterIndex)
 		{
-			mGrid[pos.X, pos.Y].Character = word[characterIndex];
-			pos.X += xModifier;
-			pos.Y += yModifier;
+			mGrid[toPosition.X, toPosition.Y].Character = word[characterIndex];
+			toPosition.X += xModifier;
+			toPosition.Y += yModifier;
 		}
 	}
 
-	private void PlacePartialWord(string word, string partialWord, GridPosition position, EWordDirection wordDirection)
+	private void PlacePartialWord(string word, string partialWord, GridPosition position, EWordDirection wordDirection, out GridPosition fromPosition, out GridPosition toPosition)
 	{
 		int xModifier;
 		int yModifier;
 		WordDirection.GetModifiers(wordDirection, out xModifier, out yModifier);
 
-		GridPosition pos = new GridPosition(position.X, position.Y);
+		fromPosition = new GridPosition(position.X, position.Y);
 
 		int startIndex = word.IndexOf(partialWord, 0);
 		for (int i = 0; i < startIndex; ++i)
 		{
-			pos.X += xModifier;
-			pos.Y += yModifier;
+			fromPosition.X += xModifier;
+			fromPosition.Y += yModifier;
 		}
+
+		GridPosition pos = fromPosition;
+		toPosition = fromPosition;
 
 		int partialWordLength = partialWord.Length;
 		for (int characterIndex = 0; characterIndex < partialWordLength; ++characterIndex)
 		{
 			mGrid[pos.X, pos.Y].Character = partialWord[characterIndex];
-			pos.X += xModifier;
-			pos.Y += yModifier;
+			toPosition.X += xModifier;
+			toPosition.Y += yModifier;
 		}
 	}
 
