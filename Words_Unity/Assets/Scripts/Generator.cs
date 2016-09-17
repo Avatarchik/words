@@ -11,223 +11,8 @@ using System.Collections.Generic;
  * TODO - Add a progress bar to the generation
  */
 
-[Serializable]
-public class GridPosition
-{
-	public int X;
-	public int Y;
-
-	public GridPosition(int x, int y)
-	{
-		X = x;
-		Y = y;
-	}
-
-	public GridPosition(GridPosition position)
-	{
-		X = position.X;
-		Y = position.Y;
-	}
-
-	static public bool operator ==(GridPosition lhs, GridPosition rhs)
-	{
-		bool areEqual = lhs.X == rhs.X && lhs.Y == rhs.Y;
-		return areEqual;
-	}
-
-	static public bool operator !=(GridPosition lhs, GridPosition rhs)
-	{
-		return !(lhs == rhs);
-	}
-}
-
-[Serializable]
-public class GridEntry
-{
-	public GridPosition Position;
-
-	private int _CharacterCount;
-	public int CharacterCount
-	{
-		get
-		{
-			return _CharacterCount;
-		}
-		set
-		{
-			_CharacterCount = value;
-
-			if (_CharacterCount > 0)
-			{
-				if (!Generator.Instance.IsRunning)
-				{
-					if (BackgroundComp)
-					{
-						SetBackgroundColour(Generator.Instance.Scheme.High, Generator.Instance.Scheme.Low, Generator.Instance.MaxCharacterUsage);
-					}
-
-					if (PrefabInstance)
-					{
-						PrefabInstance.name = string.Format("[{0}, {1}] = {2} ({3})", Position.X, Position.Y, Character, _CharacterCount);
-					}
-				}
-			}
-			else
-			{
-				GameObject.Destroy(_PrefabInstance);
-				Generator.Instance.RemoveEntry(this);
-			}
-		}
-	}
-
-	private char _Character;
-	public char Character
-	{
-		get
-		{
-			return _Character;
-		}
-		set
-		{
-			CharacterCount = (_Character == value) ? (CharacterCount + 1) : 1;
-
-			_Character = value;
-			if (PrefabInstance)
-			{
-				PrefabInstance.name = string.Format("[{0}, {1}] = {2} ({3})", Position.X, Position.Y, _Character, CharacterCount);
-
-				if (TextComp)
-				{
-					TextComp.text = _Character.ToString();
-				}
-			}
-		}
-	}
-
-	private GameObject _PrefabInstance;
-	public GameObject PrefabInstance
-	{
-		get
-		{
-			return _PrefabInstance;
-		}
-		set
-		{
-			_PrefabInstance = value;
-			TextComp = _PrefabInstance ? _PrefabInstance.GetComponentInChildren<Text>() : null;
-			ImageComp = _PrefabInstance ? _PrefabInstance.GetComponentInChildren<Image>() : null;
-			PositionReferenceComp = _PrefabInstance ? _PrefabInstance.GetComponent<GridPositionReference>() : null;
-			BackgroundComp = _PrefabInstance ? _PrefabInstance.GetComponentInChildren<CharacterBackground>() : null;
-		}
-	}
-
-	public void SetPosition(GridPosition position)
-	{
-		if (PositionReferenceComp)
-		{
-			PositionReferenceComp.Position = position;
-		}
-	}
-
-	public void SetBackgroundColour(Color fromColour, Color toColour, int maxCharacterCount)
-	{
-		if (ImageComp)
-		{
-			float t = (1f / (maxCharacterCount - 1)) * (CharacterCount - 1);
-			t = MathfHelper.Clamp01(t);
-
-			Color newColour = ColorHelper.Blend(fromColour, toColour, t);
-			ImageComp.color = newColour;
-
-			if (BackgroundComp)
-			{
-				BackgroundComp.UpdateBaseColour(newColour);
-			}
-		}
-	}
-
-	public void AddTint(Color highlightColour)
-	{
-		if (BackgroundComp)
-		{
-			BackgroundComp.AddTint(highlightColour);
-		}
-	}
-
-	public void RemoveTint()
-	{
-		if (BackgroundComp)
-		{
-			BackgroundComp.RemoveTint();
-		}
-	}
-
-	private Text TextComp;
-	private Image ImageComp;
-	private GridPositionReference PositionReferenceComp;
-	private CharacterBackground BackgroundComp;
-}
-
-public class ScoredPlacement
-{
-	public int Score;
-	public GridPosition Position;
-	public Generator.EWordDirection WordDirection;
-
-	public ScoredPlacement(int score, GridPosition position, Generator.EWordDirection wordDirection)
-	{
-		Score = score;
-		Position = position;
-		WordDirection = wordDirection;
-	}
-}
-
-public class WordPlacement
-{
-	public GridPosition Position;
-	public Generator.EWordDirection WordDirection;
-}
-
-public struct MappedDirection
-{
-	public int XModifier;
-	public int YModifier;
-
-	public MappedDirection(int xModifier, int yModifier)
-	{
-		XModifier = xModifier;
-		YModifier = yModifier;
-	}
-}
-
 public class Generator : MonoBehaviour
 {
-	public enum EWordDirection : byte
-	{
-		North = 0,
-		NorthEast,
-		East,
-		SouthEast,
-		South,
-		SouthWest,
-		West,
-		NorthWest,
-
-		Count,
-	}
-
-	private MappedDirection[] kMappedDirections = new MappedDirection[]
-	{
-		new MappedDirection( 0,  1),	// EWordDirection.North
-		new MappedDirection( 1,  1),	// EWordDirection.NorthEast
-		new MappedDirection( 1,  0),	// EWordDirection.East
-		new MappedDirection( 1, -1),	// EWordDirection.SouthEast
-		new MappedDirection( 0, -1),	// EWordDirection.South
-		new MappedDirection(-1, -1),	// EWordDirection.SouthWest
-		new MappedDirection(-1,  0),	// EWordDirection.West
-		new MappedDirection(-1,  1),	// EWordDirection.NorthWest
-	};
-
 	static public Generator Instance;
 
 	private char INVALID_CHAR = ' ';
@@ -277,7 +62,7 @@ public class Generator : MonoBehaviour
 
 	public WordPanel WordPanelRef;
 	private List<string> mWords = new List<string>();
-	private List<WordPlacement> mWordPlacements = new List<WordPlacement>();
+	private List<ScoredPlacement> mWordPlacements = new List<ScoredPlacement>();
 
 	[HideInInspector]
 	public bool IsRunning;
@@ -487,10 +272,7 @@ public class Generator : MonoBehaviour
 					PlaceWord(word, sp.Position, sp.WordDirection);
 					mWords.Add(word);
 
-					WordPlacement wordPlacement = new WordPlacement();
-					wordPlacement.Position = sp.Position;
-					wordPlacement.WordDirection = sp.WordDirection;
-					mWordPlacements.Add(wordPlacement);
+					mWordPlacements.Add(sp);
 
 					++placedWords;
 					if (placedWords >= WordLimit)
@@ -544,7 +326,7 @@ public class Generator : MonoBehaviour
 			int originalIndex = originalWordIndices[i];
 			string str = mWords[originalIndex];
 
-			WordPlacement wordPlacement = mWordPlacements[originalIndex];
+			ScoredPlacement wordPlacement = mWordPlacements[originalIndex];
 
 			string partialWord = partialWords[i];
 			mWords.Add(partialWord);
@@ -586,7 +368,7 @@ public class Generator : MonoBehaviour
 	{
 		int xModifier;
 		int yModifier;
-		GetDirectionModifier(wordDirection, out xModifier, out yModifier);
+		WordDirection.GetModifiers(wordDirection, out xModifier, out yModifier);
 
 		bool isPlacementValid = true;
 		score = 0;
@@ -627,7 +409,7 @@ public class Generator : MonoBehaviour
 	{
 		int xModifier;
 		int yModifier;
-		GetDirectionModifier(wordDirection, out xModifier, out yModifier);
+		WordDirection.GetModifiers(wordDirection, out xModifier, out yModifier);
 
 		GridPosition pos = new GridPosition(position.X, position.Y);
 		int wordLength = word.Length;
@@ -643,7 +425,7 @@ public class Generator : MonoBehaviour
 	{
 		int xModifier;
 		int yModifier;
-		GetDirectionModifier(wordDirection, out xModifier, out yModifier);
+		WordDirection.GetModifiers(wordDirection, out xModifier, out yModifier);
 
 		GridPosition pos = new GridPosition(position.X, position.Y);
 
@@ -667,13 +449,6 @@ public class Generator : MonoBehaviour
 	{
 		bool isValid = position.X >= 0 && position.Y >= 0 && position.X < Width && position.Y < Height;
 		return isValid;
-	}
-
-	private void GetDirectionModifier(EWordDirection wordDirection, out int xModifier, out int yModifier)
-	{
-		MappedDirection modifiers = kMappedDirections[(int)wordDirection];
-		xModifier = modifiers.XModifier;
-		yModifier = modifiers.YModifier;
 	}
 
 	public string GetWord(GridPositionReference fromPosition, GridPositionReference toPosition, ref List<GridEntry> tiles)
