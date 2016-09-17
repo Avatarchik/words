@@ -244,6 +244,8 @@ public class Generator : MonoBehaviour
 	public int WordListPasses = 1;
 	[Range(1, 400)]
 	public int WordLimit = 100;
+	[Range(1, 17)]
+	public int MaxTileUsage = 5;
 
 	private List<EWordDirection> mWordDirections;
 	private List<GridPosition> mGridPositions;
@@ -547,7 +549,11 @@ public class Generator : MonoBehaviour
 			string partialWord = partialWords[i];
 			mWords.Add(partialWord);
 
-			PlacePartialWord(str, partialWord, wordPlacement.Position, wordPlacement.WordDirection);
+			int score = 0;
+			if (IsWordPlacementValid(partialWord, wordPlacement.Position, wordPlacement.WordDirection, out score))
+			{
+				PlacePartialWord(str, partialWord, wordPlacement.Position, wordPlacement.WordDirection);
+			}
 		}
 		Debug.Log("Extras: " + extras);
 		Debug.Log("New total: " + mWords.Count);
@@ -593,7 +599,7 @@ public class Generator : MonoBehaviour
 		{
 			character = word[characterIndex];
 			gridCharacter = mGrid[pos.X, pos.Y].Character;
-			if (gridCharacter != INVALID_CHAR && character != gridCharacter)
+			if ((gridCharacter != INVALID_CHAR && character != gridCharacter) || mGrid[pos.X, pos.Y].CharacterCount >= MaxTileUsage)
 			{
 				isPlacementValid = false;
 				break;
