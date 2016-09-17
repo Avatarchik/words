@@ -80,7 +80,6 @@ public class WordPanel : MonoBehaviour
 				UpdateTitle(sourceWord);
 
 				foundMatch = true;
-				break;
 			}
 		}
 
