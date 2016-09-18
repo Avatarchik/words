@@ -35,10 +35,10 @@ public class PuzzleContents : ScriptableObject
 #endif // UNITY_EDITOR
 	}
 
-	public void Finalise(/*GridEntry[,] generatedGrid*/)
+	public void Finalise(GridEntry[,] generatedGrid)
 	{
 		// TODO fix
-		/*Array.Resize(ref Words, WordCount);
+		Array.Resize(ref Words, WordCount);
 		Array.Resize(ref WordPlacements, WordCount);
 
 		int charCount = 0;
@@ -52,8 +52,8 @@ public class PuzzleContents : ScriptableObject
 				usage = CharGrid[charCount];
 
 				// TODO - fix
-				/ *usage.Character = entry.Character;
-				usage.NumberOfUses = entry.CharacterCount;* /
+				usage.Character = entry.Character;
+				usage.NumberOfUses = entry.NumberOfUses;
 
 				CharGrid[charCount] = usage;
 
@@ -68,7 +68,7 @@ public class PuzzleContents : ScriptableObject
 
 #if UNITY_EDITOR
 		EditorUtility.SetDirty(this);
-#endif // UNITY_EDITOR*/
+#endif // UNITY_EDITOR
 	}
 
 	public void RegisterWord(string word, GridPosition fromPosition, GridPosition toPosition)

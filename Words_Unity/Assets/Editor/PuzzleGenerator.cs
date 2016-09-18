@@ -1,18 +1,13 @@
 using UnityEngine;
+using UnityEditor;
 using System.Collections.Generic;
 
 /*
- * TODO - Make the generator run in the editor
  * TODO - Add a progress bar to the generation
  */
 
-public class Generator : MonoBehaviour
+public class PuzzleGenerator : EditorWindow
 {
-	private char INVALID_CHAR = ' ';
-	//public GridEntry[,] mGrid;
-
-	public Words WordList;
-
 	[Range(5, 32)]
 	public int Width = 7;
 	[Range(5, 32)]
@@ -24,18 +19,72 @@ public class Generator : MonoBehaviour
 	[Range(1, 17)]
 	public int MaxTileUsage = 5;
 
+	private char INVALID_CHAR = ' ';
+	private GridEntry[,] mGrid;
+
+	private Words WordList;
+
 	private List<EWordDirection> mWordDirections;
 	private List<GridPosition> mGridPositions;
 
-	[HideInInspector]
-	public int MaxCharacterUsage;
+	private List<string> mWords;
+	private List<ScoredPlacement> mWordPlacements;
 
-	private List<string> mWords = new List<string>();
-	private List<ScoredPlacement> mWordPlacements = new List<ScoredPlacement>();
+	[MenuItem("Words/Puzzle/Open Generator")]
+	static public void ShowWindow()
+	{
+		PuzzleGenerator window = GetWindow(typeof(PuzzleGenerator)) as PuzzleGenerator;
+		window.Initialise();
+	}
 
-	public PuzzleContents contents;
+	void OnGUI()
+	{
+		GUILayout.Label("Settings", EditorStyles.boldLabel);
+		GUILayout.Space(8);
 
-	void Awake()
+		Width = EditorGUILayout.IntSlider("Width", Width, 4, 32);
+		Height = EditorGUILayout.IntSlider("Height", Height, 4, 32);
+		WordListPasses = EditorGUILayout.IntSlider("Word List Passes", WordListPasses, 1, 5);
+		WordLimit = EditorGUILayout.IntSlider("WordLimit", WordLimit, 1, 1024);
+		MaxTileUsage = EditorGUILayout.IntSlider("MaxTileUsage", MaxTileUsage, 1, 17);
+
+		GUILayout.Space(8);
+		if (GUILayout.Button("Generate"))
+		{
+			Generate();
+		}
+	}
+
+	private void Initialise()
+	{
+		GameObject wordListsPrefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/Words.prefab");
+		if (wordListsPrefab)
+		{
+			WordList = wordListsPrefab.GetComponent<Words>();
+		}
+
+		mWords = new List<string>();
+		mWordPlacements = new List<ScoredPlacement>();
+}
+
+	public void Generate()
+	{
+		float startTime = Time.realtimeSinceStartup;
+
+		SetupPositionalLists();
+
+		bool wasGenerationSuccessful = GenerateInternal();
+		if (!wasGenerationSuccessful)
+		{
+			Debug.LogWarning("Generation unsuccessful!");
+		}
+
+		float endTime = Time.realtimeSinceStartup;
+		float timeTaken = endTime - startTime;
+		Debug.Log(string.Format("Time taken: {0:n2} seconds", timeTaken));
+	}
+
+	private void SetupPositionalLists()
 	{
 		mWordDirections = new List<EWordDirection>((int)EWordDirection.Count);
 		for (int directionIndex = 0, count = (int)EWordDirection.Count; directionIndex < count; ++directionIndex)
@@ -54,62 +103,19 @@ public class Generator : MonoBehaviour
 		}
 	}
 
-	void Start()
-	{
-		Generate();
-	}
-
-	public void Generate()
-	{
-		/*float startTime = Time.realtimeSinceStartup;
-
-		bool wasGenerationSuccessful = GenerateInternal();
-
-		if (!wasGenerationSuccessful)
-		{
-			Debug.LogWarning("Generation unsuccessful!");
-		}
-		else
-		{
-			MaxCharacterUsage = 0;
-			for (int x = 0; x < Width; ++x)
-			{
-				for (int y = 0; y < Height; ++y)
-				{
-					GridEntry entry = mGrid[x, y];
-					if (entry.Character != INVALID_CHAR && entry.CharacterCount > 1)
-					{
-						MaxCharacterUsage = Mathf.Max(MaxCharacterUsage, entry.CharacterCount);
-					}
-				}
-			}
-			Debug.Log("Max character usage: " + MaxCharacterUsage);
-		}
-
-		float endTime = Time.realtimeSinceStartup;
-		float timeTaken = endTime - startTime;
-		Debug.Log(string.Format("Time taken: {0:n2} seconds", timeTaken));*/
-	}
-
 	private bool GenerateInternal()
 	{
-		/*contents.Initialise(Width, Height);
+		string newPath = string.Format("Assets/Prefabs/Puzzles/New Puzzle_{0}.asset", System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss"));
+		PuzzleContents contents = CreateScriptableObjects.CreateNewPuzzleContents(newPath);
+		contents.Initialise(Width, Height);
 
-		// Creation
+		// Setup
 		mGrid = new GridEntry[Width, Height];
 		for (int x = 0; x < Width; ++x)
 		{
 			for (int y = 0; y < Height; ++y)
 			{
-				GridEntry entry = new GridEntry();
-
-				entry.Position = new GridPosition(x, y);
-				entry.Character = INVALID_CHAR;
-
-				/ *entry.PrefabInstance = Instantiate(CharacterPrefab, Vector3.zero, Quaternion.identity, transform) as GameObject;
-				entry.PrefabInstance.transform.localPosition = new Vector3(x * 32, y * 32, 0) - halfGridSize;* /
-
-				mGrid[x, y] = entry;
+				mGrid[x, y] = new GridEntry(INVALID_CHAR);
 			}
 		}
 
@@ -244,7 +250,7 @@ public class Generator : MonoBehaviour
 			}
 		}
 
-		for (int i = 0; i < originalWordIndices.Count; ++i)
+		/*for (int i = 0; i < originalWordIndices.Count; ++i)
 		{
 			int originalIndex = originalWordIndices[i];
 			string str = mWords[originalIndex];
@@ -263,11 +269,11 @@ public class Generator : MonoBehaviour
 
 				contents.RegisterWord(partialWord, wordPlacement.Position, toPosition);
 			}
-		}
+		}*/
 		Debug.Log("Extras: " + extras);
 		Debug.Log("New total: " + mWords.Count);
 
-		contents.Finalise(mGrid);*/
+		contents.Finalise(mGrid);
 
 		return true;
 	}
@@ -281,7 +287,7 @@ public class Generator : MonoBehaviour
 		bool isPlacementValid = true;
 		score = 0;
 
-		/*GridPosition pos = new GridPosition(position.X, position.Y);
+		GridPosition pos = new GridPosition(position.X, position.Y);
 		int wordLength = word.Length;
 		char character;
 		char gridCharacter;
@@ -289,7 +295,7 @@ public class Generator : MonoBehaviour
 		{
 			character = word[characterIndex];
 			gridCharacter = mGrid[pos.X, pos.Y].Character;
-			if ((gridCharacter != INVALID_CHAR && character != gridCharacter) || mGrid[pos.X, pos.Y].CharacterCount >= MaxTileUsage)
+			if ((gridCharacter != INVALID_CHAR && character != gridCharacter) || mGrid[pos.X, pos.Y].NumberOfUses >= MaxTileUsage)
 			{
 				isPlacementValid = false;
 				break;
@@ -298,7 +304,7 @@ public class Generator : MonoBehaviour
 			pos.X += xModifier;
 			pos.Y += yModifier;
 
-			if (!IsGridPositionValid(pos))
+			if (!GridHelper.IsGridPositionValid(pos, Width, Height))
 			{
 				isPlacementValid = false;
 				break;
@@ -308,7 +314,7 @@ public class Generator : MonoBehaviour
 			{
 				++score;
 			}
-		}*/
+		}
 
 		return isPlacementValid;
 	}
@@ -320,13 +326,17 @@ public class Generator : MonoBehaviour
 		WordDirection.GetModifiers(wordDirection, out xModifier, out yModifier);
 
 		toPosition = new GridPosition(position.X, position.Y);
-		/*int wordLength = word.Length;
+		GridEntry entry;
+		int wordLength = word.Length;
 		for (int characterIndex = 0; characterIndex < wordLength; ++characterIndex)
 		{
-			mGrid[toPosition.X, toPosition.Y].Character = word[characterIndex];
+			entry = mGrid[toPosition.X, toPosition.Y];
+			entry.Character = word[characterIndex];
+			++entry.NumberOfUses;
+
 			toPosition.X += xModifier;
 			toPosition.Y += yModifier;
-		}*/
+		}
 	}
 
 	private void PlacePartialWord(string word, string partialWord, GridPosition position, EWordDirection wordDirection, out GridPosition fromPosition, out GridPosition toPosition)
@@ -347,12 +357,14 @@ public class Generator : MonoBehaviour
 		GridPosition pos = fromPosition;
 		toPosition = fromPosition;
 
-		/*int partialWordLength = partialWord.Length;
+		int partialWordLength = partialWord.Length;
 		for (int characterIndex = 0; characterIndex < partialWordLength; ++characterIndex)
 		{
 			mGrid[pos.X, pos.Y].Character = partialWord[characterIndex];
 			toPosition.X += xModifier;
 			toPosition.Y += yModifier;
-		}*/
+		}
 	}
 }
+ 
+ 
