@@ -6,6 +6,7 @@ public class ColourPanel : MonoBehaviour
 {
 	public GameObject ColourPanelEntryPrefab;
 
+	[HideInInspector]
 	public ColourScheme Scheme;
 
 	private List<Image> mPanelEntries = new List<Image>();
@@ -14,7 +15,7 @@ public class ColourPanel : MonoBehaviour
 
 	void Start()
 	{
-		mMaxCharUsage = Generator.Instance.MaxCharacterUsage;
+		mMaxCharUsage = PuzzleLoader.sActivePuzzleContents.MaxCharacterUsage;
 
 		float entrySize = 24;
 		float entryGap = 4;
@@ -42,15 +43,15 @@ public class ColourPanel : MonoBehaviour
 
 	void OnEnable()
 	{
-		ColourSwitcher.OnColourSwitched += OnColourSwitched;
+		ColourSchemesManager.OnSchemeSwitched += OnSchemeSwitched;
 	}
 
 	void OnDisable()
 	{
-		ColourSwitcher.OnColourSwitched -= OnColourSwitched;
+		ColourSchemesManager.OnSchemeSwitched -= OnSchemeSwitched;
 	}
 
-	private void OnColourSwitched(ColourScheme newScheme)
+	private void OnSchemeSwitched(ColourScheme newScheme)
 	{
 		Scheme = newScheme;
 		UpdateColour();

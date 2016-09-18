@@ -10,12 +10,9 @@ using System.Collections.Generic;
 
 public class Generator : MonoBehaviour
 {
-	static public Generator Instance;
-
 	private char INVALID_CHAR = ' ';
-	public GridEntry[,] mGrid;
+	//public GridEntry[,] mGrid;
 
-	public GameObject CharacterPrefab;
 	public Words WordList;
 
 	[Range(5, 32)]
@@ -32,53 +29,16 @@ public class Generator : MonoBehaviour
 	private List<EWordDirection> mWordDirections;
 	private List<GridPosition> mGridPositions;
 
-	private ColourScheme _Scheme;
-	public ColourScheme Scheme
-	{
-		get
-		{
-			return _Scheme;
-		}
-		set
-		{
-			_Scheme = value;
-
-			for (int x = 0; x < Width; ++x)
-			{
-				for (int y = 0; y < Height; ++y)
-				{
-					GridEntry entry = mGrid[x, y];
-					entry.SetBackgroundColour(_Scheme.High, _Scheme.Low, MaxCharacterUsage);
-				}
-			}
-		}
-	}
-
 	[HideInInspector]
 	public int MaxCharacterUsage;
 
-	public WordPanel WordPanelRef;
 	private List<string> mWords = new List<string>();
 	private List<ScoredPlacement> mWordPlacements = new List<ScoredPlacement>();
-
-	[HideInInspector]
-	public bool IsRunning;
-
-	private RectTransform mRectTrans;
 
 	public PuzzleContents contents;
 
 	void Awake()
 	{
-		if (Instance != null)
-		{
-			Destroy(gameObject);
-			return;
-		}
-		Instance = this;
-
-		mRectTrans = GetComponent<RectTransform>();
-
 		mWordDirections = new List<EWordDirection>((int)EWordDirection.Count);
 		for (int directionIndex = 0, count = (int)EWordDirection.Count; directionIndex < count; ++directionIndex)
 		{
@@ -101,27 +61,15 @@ public class Generator : MonoBehaviour
 		Generate();
 	}
 
-	void OnEnable()
-	{
-		ColourSwitcher.OnColourSwitched += OnColourSwitched;
-	}
-
-	void OnDisable()
-	{
-		ColourSwitcher.OnColourSwitched -= OnColourSwitched;
-	}
-
 	public void Generate()
 	{
-		IsRunning = true;
-		float startTime = Time.realtimeSinceStartup;
+		/*float startTime = Time.realtimeSinceStartup;
 
 		bool wasGenerationSuccessful = GenerateInternal();
 
 		if (!wasGenerationSuccessful)
 		{
 			Debug.LogWarning("Generation unsuccessful!");
-			Cleanup();
 		}
 		else
 		{
@@ -138,42 +86,16 @@ public class Generator : MonoBehaviour
 				}
 			}
 			Debug.Log("Max character usage: " + MaxCharacterUsage);
-
-			for (int x = 0; x < Width; ++x)
-			{
-				for (int y = 0; y < Height; ++y)
-				{
-					GridEntry entry = mGrid[x, y];
-					entry.SetPosition(new GridPosition(x, y));
-					entry.SetBackgroundColour(Scheme.High, Scheme.Low, MaxCharacterUsage);
-				}
-			}
-
-			// Scale accordingly
-			mRectTrans.localScale = new Vector3(16f / Width, 16f / Height, 1);
 		}
 
 		float endTime = Time.realtimeSinceStartup;
 		float timeTaken = endTime - startTime;
-		Debug.Log(string.Format("Time taken: {0:n2} seconds", timeTaken));
-
-		IsRunning = false;
+		Debug.Log(string.Format("Time taken: {0:n2} seconds", timeTaken));*/
 	}
 
 	private bool GenerateInternal()
 	{
-		contents.Initialise(Width, Height);
-
-		// Cleanup
-		Cleanup();
-
-		Vector3 gridSize = new Vector3(
-			0,
-			(Height * 24) + ((Height - 1) * 8),
-			0);
-		Vector3 halfGridSize = gridSize * 0.5f;
-		halfGridSize.x -= 12;
-		halfGridSize.y -= 12;
+		/*contents.Initialise(Width, Height);
 
 		// Creation
 		mGrid = new GridEntry[Width, Height];
@@ -186,8 +108,8 @@ public class Generator : MonoBehaviour
 				entry.Position = new GridPosition(x, y);
 				entry.Character = INVALID_CHAR;
 
-				entry.PrefabInstance = Instantiate(CharacterPrefab, Vector3.zero, Quaternion.identity, transform) as GameObject;
-				entry.PrefabInstance.transform.localPosition = new Vector3(x * 32, y * 32, 0) - halfGridSize;
+				/ *entry.PrefabInstance = Instantiate(CharacterPrefab, Vector3.zero, Quaternion.identity, transform) as GameObject;
+				entry.PrefabInstance.transform.localPosition = new Vector3(x * 32, y * 32, 0) - halfGridSize;* /
 
 				mGrid[x, y] = entry;
 			}
@@ -347,25 +269,9 @@ public class Generator : MonoBehaviour
 		Debug.Log("Extras: " + extras);
 		Debug.Log("New total: " + mWords.Count);
 
-		mWords.Sort();
-		WordPanelRef.Initialise(mWords);
-
-		contents.Finalise(mGrid);
+		contents.Finalise(mGrid);*/
 
 		return true;
-	}
-
-	private void Cleanup()
-	{
-		mRectTrans.localScale = Vector3.one;
-
-		mWords.Clear();
-		mWordPlacements.Clear();
-	}
-
-	public void RemoveEntry(GridEntry entry)
-	{
-		mGrid[entry.Position.X, entry.Position.Y] = null;
 	}
 
 	private bool IsWordPlacementValid(string word, GridPosition position, EWordDirection wordDirection, out int score)
@@ -377,7 +283,7 @@ public class Generator : MonoBehaviour
 		bool isPlacementValid = true;
 		score = 0;
 
-		GridPosition pos = new GridPosition(position.X, position.Y);
+		/*GridPosition pos = new GridPosition(position.X, position.Y);
 		int wordLength = word.Length;
 		char character;
 		char gridCharacter;
@@ -404,7 +310,7 @@ public class Generator : MonoBehaviour
 			{
 				++score;
 			}
-		}
+		}*/
 
 		return isPlacementValid;
 	}
@@ -416,13 +322,13 @@ public class Generator : MonoBehaviour
 		WordDirection.GetModifiers(wordDirection, out xModifier, out yModifier);
 
 		toPosition = new GridPosition(position.X, position.Y);
-		int wordLength = word.Length;
+		/*int wordLength = word.Length;
 		for (int characterIndex = 0; characterIndex < wordLength; ++characterIndex)
 		{
 			mGrid[toPosition.X, toPosition.Y].Character = word[characterIndex];
 			toPosition.X += xModifier;
 			toPosition.Y += yModifier;
-		}
+		}*/
 	}
 
 	private void PlacePartialWord(string word, string partialWord, GridPosition position, EWordDirection wordDirection, out GridPosition fromPosition, out GridPosition toPosition)
@@ -443,84 +349,12 @@ public class Generator : MonoBehaviour
 		GridPosition pos = fromPosition;
 		toPosition = fromPosition;
 
-		int partialWordLength = partialWord.Length;
+		/*int partialWordLength = partialWord.Length;
 		for (int characterIndex = 0; characterIndex < partialWordLength; ++characterIndex)
 		{
 			mGrid[pos.X, pos.Y].Character = partialWord[characterIndex];
 			toPosition.X += xModifier;
 			toPosition.Y += yModifier;
-		}
-	}
-
-	private bool IsGridPositionValid(GridPosition position)
-	{
-		bool isValid = position.X >= 0 && position.Y >= 0 && position.X < Width && position.Y < Height;
-		return isValid;
-	}
-
-	public string GetWord(GridPositionReference fromPosition, GridPositionReference toPosition, ref List<GridEntry> tiles)
-	{
-		string word = string.Empty;
-		tiles.Clear();
-
-		int xDelta = toPosition.Position.X - fromPosition.Position.X;
-		int yDelta = toPosition.Position.Y - fromPosition.Position.Y;
-		int xModifier = MathfHelper.ClampM11(xDelta);
-		int yModifier = MathfHelper.ClampM11(yDelta);
-
-		bool isCardinal = false;
-		isCardinal |= xModifier != 0 && yModifier == 0;
-		isCardinal |= xModifier == 0 && yModifier != 0;
-		isCardinal |= Mathf.Abs(xDelta) == Mathf.Abs(yDelta);
-
-		if (!isCardinal)
-		{
-			GridEntry entry = mGrid[fromPosition.Position.X, fromPosition.Position.Y];
-			word += entry.Character;
-			tiles.Add(entry);
-			return word;
-		}
-
-		int maxDimension = Mathf.Max(Width, Height);
-
-		GridPosition pos = new GridPosition(fromPosition.Position);
-		GridPosition endPos = new GridPosition(toPosition.Position);
-		endPos.X += xModifier;
-		endPos.Y += yModifier;
-
-		int checkedEntries = 0;
-		do
-		{
-			GridEntry entry = mGrid[pos.X, pos.Y];
-			if (entry == null)
-			{
-				break;
-			}
-
-			word += entry.Character;
-			tiles.Add(entry);
-
-			pos.X += xModifier;
-			pos.Y += yModifier;
-
-			++checkedEntries;
-		}
-		while (IsGridPositionValid(pos) && pos != endPos && checkedEntries < maxDimension);
-
-		return word;
-	}
-
-	public void DecrementCharacterCount(List<GridEntry> tiles)
-	{
-		foreach (GridEntry entry in tiles)
-		{
-			int count = entry.CharacterCount;
-			entry.CharacterCount = count - 1;
-		}
-	}
-
-	private void OnColourSwitched(ColourScheme newScheme)
-	{
-		Scheme = newScheme;
+		}*/
 	}
 }

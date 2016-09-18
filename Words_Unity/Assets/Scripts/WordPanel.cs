@@ -7,19 +7,22 @@ public class WordPanel : MonoBehaviour
 
 	public WordPanelTitle Title;
 
-	private List<WordPanelPair> mWordPairs;
-	private List<Word> mWords;
+	private WordPanelPair[] mWordPanelPairs;
+	private Word[] mWords;
 
 	private int mWordCount;
 
-	public void Initialise(List<string> words)
+	public void Initialise(WordPair[] wordPairs)
 	{
-		mWordCount = words.Count;
+		//wordPairs.Sort();
+
+		mWordCount = wordPairs.Length;
 		int halfCount = Mathf.CeilToInt(mWordCount * 0.5f);
-		mWordPairs = new List<WordPanelPair>(halfCount);
-		mWords = new List<Word>(mWordCount);
+		mWordPanelPairs = new WordPanelPair[halfCount];
+		mWords = new Word[mWordCount];
 
 		Vector3 position = Vector3.zero;
+		int wordIndex = 0;
 		for (int pairIndex = 0; pairIndex < halfCount; ++pairIndex)
 		{
 			WordPanelPair newPair = Instantiate(WordPanelPairPrefab, position, Quaternion.identity, transform) as WordPanelPair;
@@ -30,15 +33,15 @@ public class WordPanel : MonoBehaviour
 			position.y = -24 + (pairIndex * -24);
 			newPairRectTrans.localPosition = position;
 
-			newPair.LeftWord.SetText(words[pairIndex]);
+			newPair.LeftWord.SetText(wordPairs[pairIndex].Forward);
 			if ((pairIndex + halfCount) < mWordCount)
 			{
-				newPair.RightWord.SetText(words[pairIndex + halfCount]);
+				newPair.RightWord.SetText(wordPairs[pairIndex + halfCount].Forward);
 			}
 
-			mWordPairs.Add(newPair);
-			mWords.Add(newPair.LeftWord);
-			mWords.Add(newPair.RightWord);
+			mWordPanelPairs[pairIndex] = newPair;
+			mWords[wordIndex++] = newPair.LeftWord;
+			mWords[wordIndex++] = newPair.RightWord;
 		}
 
 		Title.SetWordsLeftCount(mWordCount);

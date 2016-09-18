@@ -5,16 +5,16 @@ using System.IO;
 
 public class WordsUpdater
 {
-	[MenuItem("Words/Words Updater")]
-	static void UpdateWords()
+	[MenuItem("Words/List Updaters/Words")]
+	static void UpdateWordLists()
 	{
-		GameObject wordsPrefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/Words.prefab");
-		if (wordsPrefab)
+		GameObject wordListsPrefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/Words.prefab");
+		if (wordListsPrefab)
 		{
-			Words words = wordsPrefab.GetComponent<Words>();
+			Words words = wordListsPrefab.GetComponent<Words>();
 			if (words)
 			{
-				string[] wordListPaths = Directory.GetFiles(Path.Combine(Application.dataPath, "Words"), "*.txt");
+				string[] wordListPaths = Directory.GetFiles(PathHelper.Combine(Application.dataPath, "Words"), "*.txt");
 
 				int wordCount = 0;
 
@@ -36,21 +36,13 @@ public class WordsUpdater
 
 					string letter = Path.GetFileNameWithoutExtension(path);
 					words.SetList(letter, wordList.ToArray());
-
-					EditorUtility.SetDirty(wordsPrefab);
 				}
+
+				EditorUtility.SetDirty(wordListsPrefab);
 
 				Debug.Log("Word list updated");
 				Debug.Log(string.Format("Now contains {0:n0} words", wordCount));
 			}
-			else
-			{
-				Debug.LogWarning("Failed to find Words script");
-			}
-		}
-		else
-		{
-			Debug.LogWarning("Failed to find words prefab");
 		}
 	}
 

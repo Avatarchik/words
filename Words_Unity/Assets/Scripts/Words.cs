@@ -3,6 +3,8 @@ using System.Collections.Generic;
 
 public class Words : MonoBehaviour
 {
+	// TODO - this needs improving
+
 	public string[] A;
 	public string[] B;
 	public string[] C;

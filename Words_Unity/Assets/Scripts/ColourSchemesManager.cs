@@ -2,24 +2,19 @@ using UnityEngine;
 using System;
 using System.Collections.Generic;
 
-[Serializable]
-public struct ColourScheme
-{
-	public Color High;
-	public Color Low;
-	public Color Highlight;
-}
-
-public class ColourSwitcher : MonoBehaviour
+[ScriptOrder(100)]
+public class ColourSchemesManager : MonoBehaviour
 {
 	static private readonly string kChosenIndexKey = "ColourPairIndex";
 
 	public List<ColourScheme> Schemes;
 	private int mChosenIndex = 0;
 
-	static public Action<ColourScheme> OnColourSwitched;
+	static public ColourScheme sActiveColourScheme;
 
-	void Start()
+	static public Action<ColourScheme> OnSchemeSwitched;
+
+	void Awake()
 	{
 		bool requireSave = false;
 
@@ -29,7 +24,7 @@ public class ColourSwitcher : MonoBehaviour
 			requireSave = true;
 		}
 
-		SetColour(requireSave);
+		UpdateScheme(requireSave);
 	}
 
 	void Update()
@@ -37,30 +32,32 @@ public class ColourSwitcher : MonoBehaviour
 		if (Input.GetKeyUp(KeyCode.Alpha1))
 		{
 			mChosenIndex = 0;
-			SetColour(true);
+			UpdateScheme(true);
 		}
 		if (Input.GetKeyUp(KeyCode.Alpha2))
 		{
 			mChosenIndex = 1;
-			SetColour(true);
+			UpdateScheme(true);
 		}
 		if (Input.GetKeyUp(KeyCode.Alpha3))
 		{
 			mChosenIndex = 2;
-			SetColour(true);
+			UpdateScheme(true);
 		}
 		if (Input.GetKeyUp(KeyCode.Alpha4))
 		{
 			mChosenIndex = 3;
-			SetColour(true);
+			UpdateScheme(true);
 		}
 	}
 
-	private void SetColour(bool saveChange)
+	private void UpdateScheme(bool saveChange)
 	{
-		if (OnColourSwitched != null)
+		sActiveColourScheme = Schemes[mChosenIndex];
+
+		if (OnSchemeSwitched != null)
 		{
-			OnColourSwitched(Schemes[mChosenIndex]);
+			OnSchemeSwitched(sActiveColourScheme);
 		}
 
 		if (saveChange)
@@ -69,4 +66,16 @@ public class ColourSwitcher : MonoBehaviour
 			PlayerPrefs.Save();
 		}
 	}
+
+#if UNITY_EDITOR
+	public void ClearList()
+	{
+		Schemes.Clear();
+	}
+
+	public void RegisterScheme(ColourScheme newScheme)
+	{
+		Schemes.Add(newScheme);
+	}
+#endif // UNITY_EDITOR
 }

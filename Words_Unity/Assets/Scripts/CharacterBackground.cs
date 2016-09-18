@@ -9,23 +9,27 @@ public class CharacterBackground : MonoBehaviour
 	, IPointerEnterHandler
 	, IPointerExitHandler
 {
-	public Image ImageComp;
+	public Image ImageRef;
 	private Color mBaseColour;
 
-	public void AddTint(Color highlightColour)
+	public void AddHighlight(Color highlightColour)
 	{
-		mBaseColour = ImageComp.color;
-		ImageComp.color = highlightColour;
+		mBaseColour = ImageRef.color;
+		ImageRef.color = highlightColour;
 	}
 
-	public void RemoveTint()
+	public void RemoveHighlight()
 	{
-		ImageComp.color = mBaseColour;
+		ImageRef.color = mBaseColour;
 	}
 
-	public void UpdateBaseColour(Color newBaseColour)
+	public void UpdateBaseColour(int characterUsageLeft)
 	{
-		mBaseColour = newBaseColour;
+		// TODO - this should be a lookup table in each colour scheme
+		float t = (1f / (PuzzleLoader.sActivePuzzleContents.MaxCharacterUsage - 1)) * (characterUsageLeft - 1);
+		t = MathfHelper.Clamp01(t);
+		mBaseColour = ColorHelper.Blend(ColourSchemesManager.sActiveColourScheme.High, ColourSchemesManager.sActiveColourScheme.Low, t); ;
+		ImageRef.color = mBaseColour; // TODO - might be an issue here
 	}
 
 	public void OnPointerDown(PointerEventData eventData)
@@ -62,18 +66,6 @@ public class CharacterBackground : MonoBehaviour
 		if (eventData.button == PointerEventData.InputButton.Left)
 		{
 			WordHighlighter.Instance.SetTo(WordHighlighter.Instance.GetFrom());
-		}
-	}
-
-	public void OnDrawGizmosSelected()
-	{
-		GameObject From = WordHighlighter.Instance.GetFrom();
-		GameObject To = WordHighlighter.Instance.GetTo();
-
-		if (From && To)
-		{
-			Gizmos.color = Color.magenta;
-			Gizmos.DrawLine(From.transform.position, To.transform.position);
 		}
 	}
 }

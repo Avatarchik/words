@@ -21,7 +21,7 @@ GameObject:
   - 4: {fileID: 4000010088372256}
   - 114: {fileID: 114000011885149314}
   m_Layer: 0
-  m_Name: ColourSwitcher
+  m_Name: ColourSchemesManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52,15 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Schemes:
-  - High: {r: 1, g: 0.77254903, b: 0, a: 1}
-    Low: {r: 0.7607843, g: 0.08235294, b: 0, a: 1}
-    Highlight: {r: 0, g: 0.80784315, b: 0, a: 1}
-  - High: {r: 0.827451, g: 0.6156863, b: 0.21960784, a: 1}
-    Low: {r: 0.3019608, g: 0.627451, b: 0.6901961, a: 1}
-    Highlight: {r: 0, g: 0.80784315, b: 0, a: 1}
-  - High: {r: 0.95686275, g: 0.8156863, b: 0.24705882, a: 1}
-    Low: {r: 0.08627451, g: 0.627451, b: 0.52156866, a: 1}
-    Highlight: {r: 0.9098039, g: 0.26666668, b: 0.26666668, a: 1}
-  - High: {r: 0.8980392, g: 0.3647059, b: 0.5294118, a: 1}
-    Low: {r: 0.37254903, g: 0.7647059, b: 0.89411765, a: 1}
-    Highlight: {r: 0, g: 0.80784315, b: 0, a: 1}
+  - {fileID: 11400000, guid: e97aa483f5d98724f80be7933e7c6433, type: 2}
+  - {fileID: 11400000, guid: edbd053c90260294690442a84f051494, type: 2}
+  - {fileID: 11400000, guid: 26f8b096a4c26134b840de0fa381a72d, type: 2}
+  - {fileID: 11400000, guid: b83b3ccbd227ef74b92db57dab8def21, type: 2}

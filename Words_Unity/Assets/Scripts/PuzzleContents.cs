@@ -1,5 +1,7 @@
 using UnityEngine;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif // UNITY_EDITOR
 using System;
 
 public class PuzzleContents : ScriptableObject
@@ -28,12 +30,15 @@ public class PuzzleContents : ScriptableObject
 
 		CharGrid = new CharacterUsage[Width * Height];
 
+#if UNITY_EDITOR
 		EditorUtility.SetDirty(this);
+#endif // UNITY_EDITOR
 	}
 
-	public void Finalise(GridEntry[,] generatedGrid)
+	public void Finalise(/*GridEntry[,] generatedGrid*/)
 	{
-		Array.Resize(ref Words, WordCount);
+		// TODO fix
+		/*Array.Resize(ref Words, WordCount);
 		Array.Resize(ref WordPlacements, WordCount);
 
 		int charCount = 0;
@@ -46,8 +51,9 @@ public class PuzzleContents : ScriptableObject
 				entry = generatedGrid[x, y];
 				usage = CharGrid[charCount];
 
-				usage.Character = entry.Character;
-				usage.NumberOfUses = entry.CharacterCount;
+				// TODO - fix
+				/ *usage.Character = entry.Character;
+				usage.NumberOfUses = entry.CharacterCount;* /
 
 				CharGrid[charCount] = usage;
 
@@ -60,7 +66,9 @@ public class PuzzleContents : ScriptableObject
 			MaxCharacterUsage = Mathf.Max(MaxCharacterUsage, CharGrid[charIndex].NumberOfUses);
 		}
 
+#if UNITY_EDITOR
 		EditorUtility.SetDirty(this);
+#endif // UNITY_EDITOR*/
 	}
 
 	public void RegisterWord(string word, GridPosition fromPosition, GridPosition toPosition)

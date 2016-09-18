@@ -5,14 +5,13 @@ public class WordHighlighter : MonoBehaviour
 {
 	static public WordHighlighter Instance { get; private set; }
 
-	public WordPanel WordPanelComp;
-
-	private Color mHighlightColour;
+	public PuzzleLoader PuzzleLoaderRef;
+	public WordPanel WordPanelRef;
 
 	private GameObject mFrom;
 	private GameObject mTo;
 
-	private List<GridEntry> mHighlightedTiles = new List<GridEntry>();
+	private List<CharacterTile> mHighlightedTiles = new List<CharacterTile>();
 
 	void Awake()
 	{
@@ -23,16 +22,6 @@ public class WordHighlighter : MonoBehaviour
 		}
 
 		Instance = this;
-	}
-
-	void OnEnable()
-	{
-		ColourSwitcher.OnColourSwitched += OnColourSwitched;
-	}
-
-	void OnDisable()
-	{
-		ColourSwitcher.OnColourSwitched -= OnColourSwitched;
 	}
 
 	public GameObject GetFrom()
@@ -57,16 +46,11 @@ public class WordHighlighter : MonoBehaviour
 		CorrectHighlighting();
 	}
 
-	private void OnColourSwitched(ColourScheme newScheme)
-	{
-		mHighlightColour = newScheme.Highlight;
-	}
-
 	private void CorrectHighlighting()
 	{
-		foreach (GridEntry tile in mHighlightedTiles)
+		foreach (CharacterTile tile in mHighlightedTiles)
 		{
-			tile.RemoveTint();
+			tile.SetHighlight(false);
 		}
 		mHighlightedTiles.Clear();
 
@@ -75,14 +59,14 @@ public class WordHighlighter : MonoBehaviour
 			return;
 		}
 
-		GridPositionReference fromPosition = mFrom.transform.GetComponent<GridPositionReference>();
-		GridPositionReference toPosition = mTo.transform.GetComponent<GridPositionReference>();
+		CharacterTile fromTile = mFrom.GetComponent<CharacterTile>();
+		CharacterTile toTile = mTo.GetComponent<CharacterTile>();
 
-		Generator.Instance.GetWord(fromPosition, toPosition, ref mHighlightedTiles);
+		PuzzleLoaderRef.GetTilesBetween(fromTile, toTile, ref mHighlightedTiles);
 
-		foreach (GridEntry tile in mHighlightedTiles)
+		foreach (CharacterTile tile in mHighlightedTiles)
 		{
-			tile.AddTint(mHighlightColour);
+			tile.SetHighlight(true);
 		}
 	}
 
@@ -90,17 +74,28 @@ public class WordHighlighter : MonoBehaviour
 	{
 		Debug.Log(string.Format("From: {0} To: {1}", mFrom.name, mTo.name));
 
-		GridPositionReference fromPosition = mFrom.transform.GetComponent<GridPositionReference>();
-		GridPositionReference toPosition = mTo.transform.GetComponent<GridPositionReference>();
-
-		List<GridEntry> tiles = new List<GridEntry>();
-		string word = Generator.Instance.GetWord(fromPosition, toPosition, ref tiles);
-		if (WordPanelComp.RemoveWordIfExists(word))
+		string wordFromHighlightedTiles = GetWordFromHighlightedTiles();
+		if (WordPanelRef.RemoveWordIfExists(wordFromHighlightedTiles))
 		{
-			Generator.Instance.DecrementCharacterCount(tiles);
+			foreach (CharacterTile tile in mHighlightedTiles)
+			{
+				tile.DecrementUsage();
+			}
 		}
 
 		SetFrom(null);
 		SetTo(null);
+	}
+
+	private string GetWordFromHighlightedTiles()
+	{
+		string word = string.Empty;
+
+		foreach (CharacterTile tile in mHighlightedTiles)
+		{
+			word += tile.Character;
+		}
+
+		return word;
 	}
 }

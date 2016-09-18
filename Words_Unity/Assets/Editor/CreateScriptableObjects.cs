@@ -30,9 +30,17 @@ static public class CreateScriptableObjects
 		EditorUtility.FocusProjectWindow();
 	}
 
+	// Game specific functions
+
 	[MenuItem("Assets/Create/Scriptable Objects/Puzzle Contents")]
-	static public void CreatePuzzleContents()
+	static public void CreateNewPuzzleContents()
 	{
 		CreateNewScriptableObject<PuzzleContents>("New Puzzle Contents");
+	}
+
+	[MenuItem("Assets/Create/Scriptable Objects/Colour Scheme")]
+	static public void CreateNewColourScheme()
+	{
+		CreateNewScriptableObject<ColourScheme>("New Colour Scheme");
 	}
 }
