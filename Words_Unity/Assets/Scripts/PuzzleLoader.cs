@@ -2,6 +2,7 @@ using UnityEngine;
 using System;
 using System.Collections.Generic;
 
+[ScriptOrder(-100)]
 public class PuzzleLoader : UIMonoBehaviour
 {
 	public GameObject CharacterTilePrefab;

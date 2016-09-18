@@ -18,7 +18,7 @@ public class WordPanel : MonoBehaviour
 		mWordCount = wordPairs.Length;
 		int halfCount = Mathf.CeilToInt(mWordCount * 0.5f);
 		mWordPanelPairs = new WordPanelPair[halfCount];
-		mWords = new Word[mWordCount];
+		mWords = new Word[halfCount * 2];
 
 		Vector3 position = Vector3.zero;
 		int wordIndex = 0;

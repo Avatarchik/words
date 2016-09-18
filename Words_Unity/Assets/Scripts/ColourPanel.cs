@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 
+[ScriptOrder(-99)]
 public class ColourPanel : MonoBehaviour
 {
 	public GameObject ColourPanelEntryPrefab;
