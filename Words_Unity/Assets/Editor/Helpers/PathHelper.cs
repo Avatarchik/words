@@ -1,4 +1,3 @@
-using UnityEngine;
 using System.IO;
 
 static public class PathHelper

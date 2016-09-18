@@ -1,5 +1,3 @@
-using UnityEngine;
-
 public class GridEntry
 {
 	public char Character;
