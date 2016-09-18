@@ -182,6 +182,36 @@ PlayerSettings:
       m_Icon: {fileID: 0}
       m_Width: 128
       m_Height: 128
+  - m_BuildTarget: Standalone
+    m_Icons:
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: f301c06d17b9c3c4ca0ec91c2dc20934, type: 3}
+      m_Width: 1024
+      m_Height: 1024
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: 41e45e5a9d9cb4240962552bf6d50cda, type: 3}
+      m_Width: 512
+      m_Height: 512
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: c979c497a7ad41d4cb7b73ee3ab0f248, type: 3}
+      m_Width: 256
+      m_Height: 256
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: a40f58a5116e24042a45b2dec1651727, type: 3}
+      m_Width: 128
+      m_Height: 128
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: a669b8f7d3b2000449af123c70a5905d, type: 3}
+      m_Width: 48
+      m_Height: 48
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: 517bfc2696166ec4da8faf04cf3be7fe, type: 3}
+      m_Width: 32
+      m_Height: 32
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: 9297057a34454394c8dc02e94c1dd3f3, type: 3}
+      m_Width: 16
+      m_Height: 16
   m_BuildTargetBatching:
   - m_BuildTarget: Standalone
     m_StaticBatching: 0
