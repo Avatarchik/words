@@ -20,12 +20,30 @@ public class GridPosition
 
 	static public bool operator ==(GridPosition lhs, GridPosition rhs)
 	{
-		bool areEqual = lhs.X == rhs.X && lhs.Y == rhs.Y;
+		bool areEqual = (lhs.X == rhs.X) && (lhs.Y == rhs.Y);
 		return areEqual;
 	}
 
 	static public bool operator !=(GridPosition lhs, GridPosition rhs)
 	{
 		return !(lhs == rhs);
+	}
+
+	public override bool Equals(object obj)
+	{
+		if (obj == null)
+		{
+			return false;
+		}
+
+		GridPosition pos = (GridPosition)obj;
+		bool areEqual = (X == pos.X) && (Y == pos.Y);
+		return areEqual;
+	}
+
+	public override int GetHashCode()
+	{
+		// TODO - not sure if this is correct
+		return X ^ Y;
 	}
 }
