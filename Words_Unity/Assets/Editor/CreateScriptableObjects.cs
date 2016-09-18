@@ -17,25 +17,31 @@ static public class CreateScriptableObjects
 		return "Assets";
 	}
 
-	static private void CreateNewScriptableObject<T>(string name)
+	static private T CreateNewScriptableObject<T>(string name, string path = null)
 		where T : ScriptableObject
 	{
 		T scriptInst = ScriptableObject.CreateInstance<T>();
 
-		string path = PathHelper.Combine(GetSelectedAssetPath(), name + ".asset");
+		if (path == null)
+		{
+			path = PathHelper.Combine(GetSelectedAssetPath(), name + ".asset");
+		}
 		AssetDatabase.CreateAsset(scriptInst, AssetDatabase.GenerateUniqueAssetPath(path));
 		AssetDatabase.SaveAssets();
 
 		Selection.activeObject = scriptInst;
 		EditorUtility.FocusProjectWindow();
+
+		return scriptInst;
 	}
 
 	// Game specific functions
 
 	[MenuItem("Assets/Create/Scriptable Objects/Puzzle Contents")]
-	static public void CreateNewPuzzleContents()
+	static public PuzzleContents CreateNewPuzzleContents(string path = null)
 	{
-		CreateNewScriptableObject<PuzzleContents>("New Puzzle Contents");
+		PuzzleContents newContents = CreateNewScriptableObject<PuzzleContents>("New Puzzle Contents", path);
+		return newContents;
 	}
 
 	[MenuItem("Assets/Create/Scriptable Objects/Colour Scheme")]
