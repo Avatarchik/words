@@ -1,8 +1,7 @@
 using UnityEngine;
-#if UNITY_EDITOR
-using UnityEditor;
-#endif // UNITY_EDITOR
 using System;
+
+// http://uigradients.com/
 
 [Serializable]
 public class ColourScheme : ScriptableObject

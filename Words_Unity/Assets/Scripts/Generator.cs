@@ -1,8 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-// http://uigradients.com/
-
 /*
  * TODO - Make the generator run in the editor
  * TODO - Add a progress bar to the generation
