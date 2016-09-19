@@ -56,7 +56,7 @@ public class PuzzleLoader : UIMonoBehaviour
 				characterTile.transform.localPosition = new Vector3(x * 32, y * 32, 0) - halfGridSize; // TODO - fix the literals
 
 				CharacterUsage charUsage = contentsToLoad.CharGrid[(x * mWidth) + y];
-				characterTile.Initialise(charUsage, new GridPosition(x, y));
+				characterTile.Initialise(this, charUsage, new GridPosition(x, y));
 
 				mCharacterTilesGrid[x, y] = characterTile;
 			}
@@ -80,6 +80,11 @@ public class PuzzleLoader : UIMonoBehaviour
 			}
 		}
 		Array.Clear(mCharacterTilesGrid, 0, mCharacterTilesGrid.Length);
+	}
+
+	public void RemoveTile(GridPosition position)
+	{
+		mCharacterTilesGrid[position.X, position.Y] = null;
 	}
 
 	private void OnSchemeSwitched(ColourScheme newScheme)

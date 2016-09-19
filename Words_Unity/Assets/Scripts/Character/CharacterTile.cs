@@ -10,8 +10,12 @@ public class CharacterTile : MonoBehaviour
 	private int mUsageLeft;
 	public GridPosition Position;
 
-	public void Initialise(CharacterUsage charUsage, GridPosition gridPosition)
+	private PuzzleLoader mLoader;
+
+	public void Initialise(PuzzleLoader loader, CharacterUsage charUsage, GridPosition gridPosition)
 	{
+		mLoader = loader;
+
 		Character = charUsage.Character;
 		TextRef.text = Character.ToString();
 
@@ -37,7 +41,8 @@ public class CharacterTile : MonoBehaviour
 
 		if (mUsageLeft <= 0)
 		{
-			// TODO - remove and destroy
+			mLoader.RemoveTile(Position);
+			Destroy(gameObject);
 		}
 		else
 		{
