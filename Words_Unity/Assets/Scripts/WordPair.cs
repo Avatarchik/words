@@ -1,14 +1,22 @@
 using System;
 
 [Serializable]
-public class WordPair
+public class WordPair : IComparable
 {
-	public string Forward;
+	public string Forwards;
 	public string Backwards;
+	public int Length;
 
 	public WordPair(string word)
 	{
-		Forward = word;
+		Forwards = word;
 		Backwards = WordHelper.ReverseWord(word);
+		Length = word.Length;
+	}
+
+	public int CompareTo(object obj)
+	{
+		WordPair wordPair = (WordPair)obj;
+		return Forwards.CompareTo(wordPair.Forwards);
 	}
 }

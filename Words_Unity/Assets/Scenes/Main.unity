@@ -249,7 +249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1659de18b8883a4eb64ceb0232c69ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WordPanelPairPrefab: {fileID: 114000013850285510, guid: 625bf3aa8a2387b41bb1c2a802d23efe,
+  WordPanelGroupPrefab: {fileID: 114000010204794564, guid: 43ede615a7db72943b7c0820a6afe8ad,
     type: 2}
   Title: {fileID: 551711092}
 --- !u!1001 &217673525
@@ -439,7 +439,7 @@ GameObject:
   - 114: {fileID: 551711090}
   - 114: {fileID: 551711092}
   m_Layer: 5
-  m_Name: WordsLeft
+  m_Name: WordPanelTitle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -513,7 +513,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebeffb865694c4d9460d909371e3b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TextComp: {fileID: 551711090}
+  TextRef: {fileID: 551711090}
   TitleFormat: '{0} Words Left'
   AllFoundTitle: All Words Found!
 --- !u!1 &738808613

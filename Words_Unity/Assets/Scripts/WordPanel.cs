@@ -1,53 +1,42 @@
 using UnityEngine;
+using System;
+using System.Collections.Generic;
 
-public class WordPanel : MonoBehaviour
+public class WordPanel : UIMonoBehaviour
 {
-	public WordPanelPair WordPanelPairPrefab;
+	public WordPanelGroup WordPanelGroupPrefab;
 
 	public WordPanelTitle Title;
 
-	private WordPanelPair[] mWordPanelPairs;
-	private Word[] mWords;
-
-	private int mWordCount;
+	private List<WordPanelEntry> mPanelEntries;
+	private int mWordsRemaining;
 
 	public void Initialise(WordPair[] wordPairs)
 	{
-		//wordPairs.Sort();
+		mWordsRemaining = wordPairs.Length;
+		mPanelEntries = new List<WordPanelEntry>(mWordsRemaining);
 
-		mWordCount = wordPairs.Length;
-		int halfCount = Mathf.CeilToInt(mWordCount * 0.5f);
-		mWordPanelPairs = new WordPanelPair[halfCount];
-		mWords = new Word[halfCount * 2];
-
-		Vector3 position = Vector3.zero;
-		int wordIndex = 0;
-		for (int pairIndex = 0; pairIndex < halfCount; ++pairIndex)
+		Vector3 position = new Vector3(0, 38, 0); // TODO - fix the literals
+		Vector3 groupStartPosition = Vector3.zero;
+		int wordsPlaced = 0;
+		int previousGroupSize = 0;
+		for (int wordLength = 3; wordsPlaced < mWordsRemaining; ++wordLength)
 		{
-			WordPanelPair newPair = Instantiate(WordPanelPairPrefab, position, Quaternion.identity, transform) as WordPanelPair;
-			newPair.transform.SetParent(transform);
-			newPair.gameObject.name = "Pair " + (pairIndex + 1);
+			WordPair[] groupWords = Array.FindAll(wordPairs, word => word.Length == wordLength);
 
-			RectTransform newPairRectTrans = newPair.GetComponent<RectTransform>();
-			position.y = -24 + (pairIndex * -24);
-			newPairRectTrans.localPosition = position;
+			WordPanelGroup newGroup = Instantiate(WordPanelGroupPrefab, position, Quaternion.identity, transform) as WordPanelGroup;
+			newGroup.transform.SetParent(transform);
+			newGroup.rectTransform.localPosition = position;
 
-			newPair.LeftWord.SetText(wordPairs[pairIndex].Forward);
-			if ((pairIndex + halfCount) < mWordCount)
-			{
-				newPair.RightWord.SetText(wordPairs[pairIndex + halfCount].Forward);
-			}
+			groupStartPosition.y -= previousGroupSize;
+			newGroup.Initialise(wordLength, groupWords, ref mPanelEntries, groupStartPosition, out previousGroupSize);
 
-			mWordPanelPairs[pairIndex] = newPair;
-			mWords[wordIndex++] = newPair.LeftWord;
-			mWords[wordIndex++] = newPair.RightWord;
+			wordsPlaced += groupWords.Length;
 		}
 
-		Title.SetWordsLeftCount(mWordCount);
+		Title.SetTitle(mWordsRemaining);
 
-		int newHeight = ((halfCount + 1) * 24) - 12;
-		RectTransform rectTrans = GetComponent<RectTransform>();
-		rectTrans.sizeDelta = new Vector2(rectTrans.sizeDelta.x, newHeight);
+		rectTransform.sizeDelta = new Vector2(rectTransform.sizeDelta.x, Mathf.Abs(groupStartPosition.y - previousGroupSize));
 	}
 
 	public bool RemoveWordIfExists(string word)
@@ -63,14 +52,14 @@ public class WordPanel : MonoBehaviour
 
 		bool foundMatch = false;
 
-		foreach (Word sourceWord in mWords)
+		foreach (WordPanelEntry sourceWord in mPanelEntries)
 		{
 			if (sourceWord.HasBeenFound)
 			{
 				continue;
 			}
 
-			string sourceText = sourceWord.GetText();
+			string sourceText = sourceWord.Word;
 			if (sourceText == word || sourceText == reversedWord)
 			{
 				sourceWord.MarkWordAsFound();
@@ -83,9 +72,9 @@ public class WordPanel : MonoBehaviour
 		return foundMatch;
 	}
 
-	public void UpdateTitle(Word word)
+	public void UpdateTitle(WordPanelEntry word)
 	{
-		--mWordCount;
-		Title.SetWordsLeftCount(mWordCount);
+		--mWordsRemaining;
+		Title.SetTitle(mWordsRemaining);
 	}
 }

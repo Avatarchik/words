@@ -1,7 +1,7 @@
 using UnityEngine;
 
-public class WordPanelPair : MonoBehaviour
+public class WordPanelPair : UIMonoBehaviour
 {
-	public Word LeftWord;
-	public Word RightWord;
+	public WordPanelEntry LeftWord;
+	public WordPanelEntry RightWord;
 }

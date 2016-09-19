@@ -40,7 +40,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterTilePrefab: {fileID: 1000011110019902, guid: d585827988e0a2b47908bd107d88352e,
     type: 2}
-  TempContents: {fileID: 11400000, guid: ebdbde414fea54849b433e2ce8bb6ced, type: 2}
+  WordPanelRef: {fileID: 0}
+  TempContents: {fileID: 11400000, guid: cf19ca5697943a1479d5945bac6efe26, type: 2}
 --- !u!224 &224000012511579244
 RectTransform:
   m_ObjectHideFlags: 1

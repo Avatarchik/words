@@ -3,19 +3,19 @@ using UnityEngine.UI;
 
 public class WordPanelTitle : MonoBehaviour
 {
-	public Text TextComp;
+	public Text TextRef;
 	public string TitleFormat;
 	public string AllFoundTitle;
 
-	public void SetWordsLeftCount(int wordsLeft)
+	public void SetTitle(int wordsLeft)
 	{
 		if (wordsLeft > 0)
 		{
-			TextComp.text = string.Format(TitleFormat, wordsLeft);
+			TextRef.text = string.Format(TitleFormat, wordsLeft);
 		}
 		else
 		{
-			TextComp.text = AllFoundTitle;
+			TextRef.text = AllFoundTitle;
 		}
 	}
 }

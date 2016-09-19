@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c757303e4260de4cb9e22a2e723f4e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TextComp: {fileID: 114000011567742584}
+  TextRef: {fileID: 114000011567742584}
   StrikeThrough: {fileID: 224000011624505020}
 --- !u!114 &114000010368833560
 MonoBehaviour:
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c757303e4260de4cb9e22a2e723f4e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TextComp: {fileID: 114000013440800884}
+  TextRef: {fileID: 114000013440800884}
   StrikeThrough: {fileID: 224000010915273846}
 --- !u!114 &114000011567742584
 MonoBehaviour:
@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -222,7 +222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
