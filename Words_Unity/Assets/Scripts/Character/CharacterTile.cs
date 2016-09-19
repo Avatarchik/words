@@ -33,6 +33,7 @@ public class CharacterTile : MonoBehaviour
 	public void DecrementUsage()
 	{
 		--mUsageLeft;
+		UpdateName();
 
 		if (mUsageLeft <= 0)
 		{
