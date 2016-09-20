@@ -42,6 +42,8 @@ public class PuzzleGenerator : EditorWindow
 	private int mPlacedWords;
 	private int mMaxDimension;
 
+	private PuzzleContents mNewPuzzleContents;
+
 	[MenuItem("Words/Puzzle/Open Generator")]
 	static public void ShowWindow()
 	{
@@ -89,8 +91,11 @@ public class PuzzleGenerator : EditorWindow
 		if (!wasGenerationSuccessful)
 		{
 			Debug.LogWarning("Generation unsuccessful!");
-			// TODO - cleanup bad file
+
+			string contentsPath = AssetDatabase.GetAssetPath(mNewPuzzleContents);
+			AssetDatabase.DeleteAsset(contentsPath);
 		}
+		mNewPuzzleContents = null;
 
 		float endTime = Time.realtimeSinceStartup;
 		float timeTaken = endTime - startTime;
@@ -118,14 +123,21 @@ public class PuzzleGenerator : EditorWindow
 
 	private bool GenerateInternal()
 	{
+		bool userCancelled = false;
+
 		// Step 1 - initialise
-		PuzzleContents contents = InitialiseGeneration();
+		mNewPuzzleContents = InitialiseGeneration();
 
 		// Step 2 - Run over the word lists and attempt to places words
 		for (int passIndex = 0; passIndex < WordListPasses; ++passIndex)
 		{
-			bool wasSuccessful = RunWordListPass(passIndex, contents);
+			bool wasSuccessful = RunWordListPass(passIndex, out userCancelled);
 			Debug.Log(string.Format("Pass #{0} placed words: {1}", passIndex + 1, mPlacedWords));
+
+			if (userCancelled)
+			{
+				return false;
+			}
 
 			if (!wasSuccessful)
 			{
@@ -137,27 +149,29 @@ public class PuzzleGenerator : EditorWindow
 		bool foundGaps = CheckForGaps();
 		if (foundGaps)
 		{
-			string contentsPath = AssetDatabase.GetAssetPath(contents);
-			AssetDatabase.DeleteAsset(contentsPath);
 			return false;
 		}
 
 		// Step 4 - Check for partial words
-		CheckForPartialWords();
+		CheckForPartialWords(out userCancelled);
+		if (userCancelled)
+		{
+			return false;
+		}
 
 		// Step 5 - Place any partial words that were found
 		PlacePartialWords();
 
 		// Step 6 - Finish
 		Debug.Log("Word count: " + mWords.Count);
-		contents.Finalise(mGrid);
+		mNewPuzzleContents.Finalise(mGrid);
 
 		return true;
 	}
 
 	private PuzzleContents InitialiseGeneration()
 	{
-		ProgressBarHelper.Begin(false, kProgressBarTitle, "Step 1/5: Initialising the generation...");
+		ProgressBarHelper.Begin(false, kProgressBarTitle, "Step 1/5: Initialising...");
 
 		string newPath = string.Format("Assets/Resources/Puzzles/New Puzzle_{0}.asset", System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss"));
 		PuzzleContents contents = CreateScriptableObjects.CreateNewPuzzleContents(newPath);
@@ -186,15 +200,17 @@ public class PuzzleGenerator : EditorWindow
 		return contents;
 	}
 
-	private bool RunWordListPass(int passIndex, PuzzleContents contents)
+	private bool RunWordListPass(int passIndex, out bool userCancelled)
 	{
+		userCancelled = false;
+
 		if (mPlacedWords >= WordLimit)
 		{
 			return false;
 		}
 
-		string progressBarMessageFormat = "Step 2/5: Running word list pass #{0}. Words checked {1:N0}/{2:N0}";
-		string progressBarMessage = string.Format(progressBarMessageFormat, (passIndex + 1), 0, 0);
+		string progressBarMessageFormat = "Step 2/5: Word list pass #{0}/{1}. Words checked {2:N0}/{3:N0}";
+		string progressBarMessage = string.Format(progressBarMessageFormat, (passIndex + 1), (WordListPasses + 1), 0, 0);
 		ProgressBarHelper.Begin(true, kProgressBarTitle, progressBarMessage, mAllWordsCount);
 
 		mAllWords.Shuffle();
@@ -202,7 +218,12 @@ public class PuzzleGenerator : EditorWindow
 		{
 			if ((wordIndex % kWordListProgressStep) == 0)
 			{
-				ProgressBarHelper.Update(kWordListProgressStep, string.Format(progressBarMessageFormat, (passIndex + 1), wordIndex, mAllWordsCount));
+				bool isStillRunning = ProgressBarHelper.Update(kWordListProgressStep, string.Format(progressBarMessageFormat, (passIndex + 1), (WordListPasses + 1), wordIndex, mAllWordsCount));
+				if (!isStillRunning)
+				{
+					userCancelled = true;
+					return false;
+				}
 			}
 
 			string word = mAllWords[wordIndex];
@@ -266,7 +287,7 @@ public class PuzzleGenerator : EditorWindow
 				PlaceWord(word, sp.Position, sp.WordDirection, out toPosition);
 				mWords.Add(word);
 
-				contents.RegisterWord(word, sp.Position, toPosition);
+				mNewPuzzleContents.RegisterWord(word, sp.Position, toPosition);
 
 				mWordPlacements.Add(sp);
 
@@ -304,9 +325,11 @@ public class PuzzleGenerator : EditorWindow
 		return foundGap;
 	}
 
-	private void CheckForPartialWords()
+	private void CheckForPartialWords(out bool userCancelled)
 	{
-		string progressBarMessageFormat = "Step 3/5: Checking for potential partial words. Words checked {0:N0}/{1:N0}";
+		userCancelled = false;
+
+		string progressBarMessageFormat = "Step 3/5: Check for partial words {0:N0}/{1:N0}";
 		string progressBarMessage = string.Format(progressBarMessageFormat, 0, 0);
 		ProgressBarHelper.Begin(true, kProgressBarTitle, progressBarMessage, mAllWordsCount);
 
@@ -317,7 +340,12 @@ public class PuzzleGenerator : EditorWindow
 		{
 			if ((wordIndex % kWordListProgressStep) == 0)
 			{
-				ProgressBarHelper.Update(kWordListProgressStep, string.Format(progressBarMessageFormat, wordIndex, mAllWordsCount));
+				bool isStillRunning = ProgressBarHelper.Update(kWordListProgressStep, string.Format(progressBarMessageFormat, wordIndex, mAllWordsCount));
+				if (!isStillRunning)
+				{
+					userCancelled = true;
+					return;
+				}
 			}
 
 			string word = mAllWords[wordIndex];
