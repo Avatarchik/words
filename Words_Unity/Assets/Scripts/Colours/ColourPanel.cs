@@ -10,13 +10,15 @@ public class ColourPanel : MonoBehaviour
 	[HideInInspector]
 	public ColourScheme Scheme;
 
-	private List<Image> mPanelEntries = new List<Image>();
+	private List<Image> mPanelEntries;
 
 	private int mMaxCharUsage;
 
-	void Start()
+	public void Initialise(int maxCharUsage)
 	{
-		mMaxCharUsage = PuzzleLoader.sActivePuzzleContents.MaxCharacterUsage;
+		CleanUp();
+
+		mMaxCharUsage = maxCharUsage;
 
 		float entrySize = 24;
 		float entryGap = 4;
@@ -24,6 +26,7 @@ public class ColourPanel : MonoBehaviour
 
 		Vector3 pos = new Vector3(entrySize * 1.5f, totalSize * -0.5f, 0);
 
+		mPanelEntries = new List<Image>(mMaxCharUsage);
 		for (int i = 0; i < mMaxCharUsage; ++i)
 		{
 			GameObject entry = Instantiate(ColourPanelEntryPrefab, Vector3.zero, Quaternion.identity, transform) as GameObject;
@@ -40,6 +43,23 @@ public class ColourPanel : MonoBehaviour
 		}
 
 		UpdateColour();
+	}
+
+	private void CleanUp()
+	{
+		if (mPanelEntries != null)
+		{
+			for (int entryIndex = (mPanelEntries.Count - 1); entryIndex >= 0; --entryIndex)
+			{
+				if (mPanelEntries[entryIndex] != null)
+				{
+					Destroy(mPanelEntries[entryIndex]);
+				}
+			}
+			mPanelEntries = null;
+		}
+
+		mMaxCharUsage = 0;
 	}
 
 	void OnEnable()
@@ -60,14 +80,17 @@ public class ColourPanel : MonoBehaviour
 
 	private void UpdateColour()
 	{
-		for (int entryIndex = 0; entryIndex < mPanelEntries.Count; ++entryIndex)
+		if (mPanelEntries != null)
 		{
-			Image image = mPanelEntries[entryIndex];
+			for (int entryIndex = 0; entryIndex < mPanelEntries.Count; ++entryIndex)
+			{
+				Image image = mPanelEntries[entryIndex];
 
-			float t = (1f / (mMaxCharUsage - 1)) * entryIndex;
-			t = MathfHelper.Clamp01(t);
+				float t = (1f / (mMaxCharUsage - 1)) * entryIndex;
+				t = MathfHelper.Clamp01(t);
 
-			image.color = ColorHelper.Blend(Scheme.High, Scheme.Low, t);
+				image.color = ColorHelper.Blend(Scheme.High, Scheme.Low, t);
+			}
 		}
 	}
 }

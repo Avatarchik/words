@@ -354,6 +354,11 @@ Prefab:
       propertyPath: WordPanelRef
       value: 
       objectReference: {fileID: 102630649}
+    - target: {fileID: 114000010251129604, guid: c27d4f54dac0add4babddc70ba6acc5f,
+        type: 2}
+      propertyPath: ColourPanelRef
+      value: 
+      objectReference: {fileID: 643053051}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c27d4f54dac0add4babddc70ba6acc5f, type: 2}
   m_IsPrefabParent: 0
@@ -516,6 +521,12 @@ MonoBehaviour:
   TextRef: {fileID: 551711090}
   TitleFormat: '{0} Words Left'
   AllFoundTitle: All Words Found!
+--- !u!114 &643053051 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000014088124712, guid: e742ec6caa2080b4cbf6c218cb5fb486,
+    type: 2}
+  m_PrefabInternal: {fileID: 1066341492}
+  m_Script: {fileID: 11500000, guid: 69ec616421bc57f43ac498a27f19a6c5, type: 3}
 --- !u!1 &738808613
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,6 +6,7 @@ public class PuzzleLoader : UIMonoBehaviour
 {
 	public GameObject CharacterTilePrefab;
 	public WordPanel WordPanelRef;
+	public ColourPanel ColourPanelRef;
 
 	private CharacterTile[,] mCharacterTilesGrid;
 
@@ -60,6 +61,7 @@ public class PuzzleLoader : UIMonoBehaviour
 		rectTransform.localScale = new Vector3(16f / mWidth, 16f / mHeight, 1); // TODO - fix the literals
 
 		WordPanelRef.Initialise(contentsToLoad.Words);
+		ColourPanelRef.Initialise(contentsToLoad.MaxCharacterUsage);
 	}
 
 	public void CleanUp()
