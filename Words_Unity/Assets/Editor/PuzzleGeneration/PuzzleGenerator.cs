@@ -209,8 +209,8 @@ public class PuzzleGenerator : EditorWindow
 			return false;
 		}
 
-		string progressBarMessageFormat = "Step 2/5: Pass #{0}/{1}. Placed {2:N0}/{3:N0}. Checked {4:N0}/{5:N0}";
-		string progressBarMessage = string.Format(progressBarMessageFormat, (passIndex + 1), WordListPasses, 0, 0, 0, 0);
+		string progressBarMessageFormat = "Step 2/5: Pass #{0}/{1}. Placed {2:N0}/{3:N0} ({4:N1}%). Words {5:N0}/{6:N0}";
+		string progressBarMessage = string.Format(progressBarMessageFormat, (passIndex + 1), WordListPasses, 0, 0, 0, 0, 0);
 		ProgressBarHelper.Begin(true, kProgressBarTitle, progressBarMessage, 1f / mAllWordsCount);
 
 		int wordsPlacedThisPass = 0;
@@ -222,7 +222,7 @@ public class PuzzleGenerator : EditorWindow
 			{
 				progressBarMessage = string.Format(progressBarMessageFormat,
 					(passIndex + 1), WordListPasses,
-					mPlacedWords, WordLimit,
+					mPlacedWords, WordLimit, ((float)mPlacedWords / WordLimit) * 100,
 					wordIndex, mAllWordsCount);
 				bool isStillRunning = ProgressBarHelper.Update(kWordListProgressStep, progressBarMessage);
 				if (!isStillRunning)
@@ -353,7 +353,8 @@ public class PuzzleGenerator : EditorWindow
 		{
 			if ((wordIndex % kWordListProgressStep) == 0)
 			{
-				bool isStillRunning = ProgressBarHelper.Update(kWordListProgressStep, string.Format(progressBarMessageFormat, wordIndex, mAllWordsCount));
+				progressBarMessage = string.Format(progressBarMessageFormat, wordIndex, mAllWordsCount);
+				bool isStillRunning = ProgressBarHelper.Update(kWordListProgressStep, progressBarMessage);
 				if (!isStillRunning)
 				{
 					userCancelled = true;
