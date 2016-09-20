@@ -213,6 +213,8 @@ public class PuzzleGenerator : EditorWindow
 		string progressBarMessage = string.Format(progressBarMessageFormat, (passIndex + 1), WordListPasses, 0, 0, 0, 0);
 		ProgressBarHelper.Begin(true, kProgressBarTitle, progressBarMessage, mAllWordsCount);
 
+		int wordsPlacedThisPass = 0;
+
 		mAllWords.Shuffle();
 		for (int wordIndex = 0; wordIndex < mAllWordsCount; ++wordIndex)
 		{
@@ -296,6 +298,7 @@ public class PuzzleGenerator : EditorWindow
 				mWordPlacements.Add(sp);
 
 				++mPlacedWords;
+				++wordsPlacedThisPass;
 				if (mPlacedWords >= WordLimit)
 				{
 					break;
@@ -304,6 +307,12 @@ public class PuzzleGenerator : EditorWindow
 		}
 
 		ProgressBarHelper.End();
+
+		if (wordsPlacedThisPass == 0)
+		{
+			return false;
+		}
+
 		return true;
 	}
 
