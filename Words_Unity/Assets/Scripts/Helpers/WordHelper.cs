@@ -9,12 +9,13 @@ static public class WordHelper
 	{
 		Array.Clear(charArray, 0, kMaxWordLength);
 
-		for (int sourceCharIndex = (word.Length - 1), destCharIndex = 0; sourceCharIndex >= 0; --sourceCharIndex, ++destCharIndex)
+		int originalWordLength = word.Length;
+		for (int sourceCharIndex = (originalWordLength - 1), destCharIndex = 0; sourceCharIndex >= 0; --sourceCharIndex, ++destCharIndex)
 		{
 			charArray[destCharIndex] = word[sourceCharIndex];
 		}
 
-		string reversedWord = new string(charArray);
+		string reversedWord = new string(charArray, 0, originalWordLength);
 		return reversedWord;
 	}
 }
