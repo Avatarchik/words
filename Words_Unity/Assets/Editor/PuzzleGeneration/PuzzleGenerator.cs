@@ -406,7 +406,7 @@ public class PuzzleGenerator : EditorWindow
 	{
 		userCancelled = false;
 
-		string progressBarMessageFormat = "Step 3/5: Checking for partial words {0:N0}/{1:N0}";
+		/*string progressBarMessageFormat = "Step 3/5: Checking for partial words {0:N0}/{1:N0}";
 		string progressBarMessage = string.Format(progressBarMessageFormat, 0, 0);
 		ProgressBarHelper.Begin(true, kProgressBarTitle, progressBarMessage, 1f / mAllWordsCount);
 
@@ -444,7 +444,7 @@ public class PuzzleGenerator : EditorWindow
 			}
 		}
 
-		ProgressBarHelper.End();
+		ProgressBarHelper.End();*/
 	}
 
 	private void PlacePartialWords()
