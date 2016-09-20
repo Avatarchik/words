@@ -7,7 +7,7 @@ public class PuzzleListUpdater
 	[MenuItem("Words/List Updaters/Puzzles")]
 	static void UpdatePuzzleList()
 	{
-		GameObject puzzleListPrefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/Managers/PuzzleContentsManager.prefab");
+		GameObject puzzleListPrefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/Managers/PuzzleManager.prefab");
 		if (puzzleListPrefab)
 		{
 			PuzzleManager puzzleManager = puzzleListPrefab.GetComponent<PuzzleManager>();
