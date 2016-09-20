@@ -79,7 +79,7 @@ public class PuzzleGenerator : EditorWindow
 
 		mWords = new List<string>(WordLimit);
 		mWordPlacements = new List<ScoredPlacement>(WordLimit);
-}
+	}
 
 	public void Generate()
 	{
@@ -211,7 +211,7 @@ public class PuzzleGenerator : EditorWindow
 
 		string progressBarMessageFormat = "Step 2/5: Pass #{0}/{1}. Placed {2:N0}/{3:N0}. Checked {4:N0}/{5:N0}";
 		string progressBarMessage = string.Format(progressBarMessageFormat, (passIndex + 1), WordListPasses, 0, 0, 0, 0);
-		ProgressBarHelper.Begin(true, kProgressBarTitle, progressBarMessage, mAllWordsCount);
+		ProgressBarHelper.Begin(true, kProgressBarTitle, progressBarMessage, 1f / mAllWordsCount);
 
 		int wordsPlacedThisPass = 0;
 
@@ -342,9 +342,9 @@ public class PuzzleGenerator : EditorWindow
 	{
 		userCancelled = false;
 
-		string progressBarMessageFormat = "Step 3/5: Check for partial words {0:N0}/{1:N0}";
+		string progressBarMessageFormat = "Step 3/5: Checking for partial words {0:N0}/{1:N0}";
 		string progressBarMessage = string.Format(progressBarMessageFormat, 0, 0);
-		ProgressBarHelper.Begin(true, kProgressBarTitle, progressBarMessage, mAllWordsCount);
+		ProgressBarHelper.Begin(true, kProgressBarTitle, progressBarMessage, 1f / mAllWordsCount);
 
 		int extras = 0;
 		List<int> originalWordIndices = new List<int>();
