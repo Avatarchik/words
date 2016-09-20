@@ -159,7 +159,7 @@ public class PuzzleGenerator : EditorWindow
 	{
 		ProgressBarHelper.Begin(false, kProgressBarTitle, "Step 1/5: Initialising the generation...");
 
-		string newPath = string.Format("Assets/Prefabs/Puzzles/New Puzzle_{0}.asset", System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss"));
+		string newPath = string.Format("Assets/Resources/Puzzles/New Puzzle_{0}.asset", System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss"));
 		PuzzleContents contents = CreateScriptableObjects.CreateNewPuzzleContents(newPath);
 		contents.Initialise(Width, Height);
 

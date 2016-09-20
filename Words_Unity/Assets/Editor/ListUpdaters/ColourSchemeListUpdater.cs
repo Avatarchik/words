@@ -15,7 +15,7 @@ public class ColourSchemeListUpdater
 			{
 				schemeManager.ClearList();
 
-				string[] schemePaths = Directory.GetFiles(PathHelper.Combine(Application.dataPath, "Prefabs/ColourSchemes/"), "*.asset");
+				string[] schemePaths = Directory.GetFiles(PathHelper.Combine(Application.dataPath, "Resources/ColourSchemes/"), "*.asset");
 
 				foreach (string path in schemePaths)
 				{

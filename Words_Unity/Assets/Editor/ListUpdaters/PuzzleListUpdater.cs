@@ -15,7 +15,7 @@ public class PuzzleListUpdater
 			{
 				puzzleManager.ClearList();
 
-				string[] puzzlePaths = Directory.GetFiles(PathHelper.Combine(Application.dataPath, "Prefabs/Puzzles/"), "*.asset");
+				string[] puzzlePaths = Directory.GetFiles(PathHelper.Combine(Application.dataPath, "Resources/Puzzles/"), "*.asset");
 
 				foreach (string path in puzzlePaths)
 				{
