@@ -77,8 +77,8 @@ public class PuzzleGenerator : EditorWindow
 			WordList = wordListsPrefab.GetComponent<Words>();
 		}
 
-		mWords = new List<string>();
-		mWordPlacements = new List<ScoredPlacement>();
+		mWords = new List<string>(WordLimit);
+		mWordPlacements = new List<ScoredPlacement>(WordLimit);
 }
 
 	public void Generate()
@@ -209,8 +209,8 @@ public class PuzzleGenerator : EditorWindow
 			return false;
 		}
 
-		string progressBarMessageFormat = "Step 2/5: Word list pass #{0}/{1}. Words checked {2:N0}/{3:N0}";
-		string progressBarMessage = string.Format(progressBarMessageFormat, (passIndex + 1), WordListPasses, 0, 0);
+		string progressBarMessageFormat = "Step 2/5: Pass #{0}/{1}. Placed {2:N0}/{3:N0}. Checked {4:N0}/{5:N0}";
+		string progressBarMessage = string.Format(progressBarMessageFormat, (passIndex + 1), WordListPasses, 0, 0, 0, 0);
 		ProgressBarHelper.Begin(true, kProgressBarTitle, progressBarMessage, mAllWordsCount);
 
 		mAllWords.Shuffle();
@@ -218,7 +218,11 @@ public class PuzzleGenerator : EditorWindow
 		{
 			if ((wordIndex % kWordListProgressStep) == 0)
 			{
-				bool isStillRunning = ProgressBarHelper.Update(kWordListProgressStep, string.Format(progressBarMessageFormat, (passIndex + 1), WordListPasses, wordIndex, mAllWordsCount));
+				progressBarMessage = string.Format(progressBarMessageFormat,
+					(passIndex + 1), WordListPasses,
+					mPlacedWords, WordLimit,
+					wordIndex, mAllWordsCount);
+				bool isStillRunning = ProgressBarHelper.Update(kWordListProgressStep, progressBarMessage);
 				if (!isStillRunning)
 				{
 					userCancelled = true;
