@@ -56,7 +56,7 @@ static public class ProgressBarHelper
 			if (EditorUtility.DisplayCancelableProgressBar(sTitle, sMessage, sProgress))
 			{
 				End();
-				return true;
+				return false;
 			}
 		}
 		else
@@ -64,7 +64,7 @@ static public class ProgressBarHelper
 			EditorUtility.DisplayProgressBar(sTitle, sMessage, sProgress);
 		}
 
-		return false;
+		return true;
 	}
 
 	static public void End()
