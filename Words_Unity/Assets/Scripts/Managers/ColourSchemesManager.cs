@@ -5,46 +5,44 @@ using System.Collections.Generic;
 [ScriptOrder(100)]
 public class ColourSchemesManager : MonoBehaviour
 {
-	static private readonly string kChosenIndexKey = "ColourPairIndex";
+	static private readonly string kChosenIndexKey = "ColourSchemeIndex";
 
 	public List<ColourScheme> Schemes;
 	private int mChosenIndex = 0;
 
 	static public ColourScheme sActiveColourScheme;
-
 	static public Action<ColourScheme> OnSchemeSwitched;
 
 	void Awake()
 	{
-		bool requireSave = false;
-
+		bool hasLoadedKey = false;
 		if (PlayerPrefs.HasKey(kChosenIndexKey))
 		{
-			mChosenIndex = PlayerPrefs.GetInt("ColourPairIndex", 0);
-			requireSave = true;
+			mChosenIndex = PlayerPrefs.GetInt(kChosenIndexKey, 0);
+			hasLoadedKey = true;
 		}
 
-		UpdateScheme(requireSave);
+		UpdateScheme(hasLoadedKey);
 	}
 
 	void Update()
 	{
-		if (Input.GetKeyUp(KeyCode.Alpha1))
+		if (Input.GetKeyUp(KeyCode.Q))
 		{
 			mChosenIndex = 0;
 			UpdateScheme(true);
 		}
-		if (Input.GetKeyUp(KeyCode.Alpha2))
+		if (Input.GetKeyUp(KeyCode.W))
 		{
 			mChosenIndex = 1;
 			UpdateScheme(true);
 		}
-		if (Input.GetKeyUp(KeyCode.Alpha3))
+		if (Input.GetKeyUp(KeyCode.E))
 		{
 			mChosenIndex = 2;
 			UpdateScheme(true);
 		}
-		if (Input.GetKeyUp(KeyCode.Alpha4))
+		if (Input.GetKeyUp(KeyCode.R))
 		{
 			mChosenIndex = 3;
 			UpdateScheme(true);

@@ -8,8 +8,6 @@ public class PuzzleLoader : UIMonoBehaviour
 	public GameObject CharacterTilePrefab;
 	public WordPanel WordPanelRef;
 
-	public PuzzleContents TempContents;
-
 	private CharacterTile[,] mCharacterTilesGrid;
 
 	private int mWidth;
@@ -17,11 +15,6 @@ public class PuzzleLoader : UIMonoBehaviour
 	private int mMaxDimension;
 
 	static public PuzzleContents sActivePuzzleContents;
-
-	void Start()
-	{
-		LoadPuzzle(TempContents);
-	}
 
 	void OnEnable()
 	{
