@@ -2,10 +2,6 @@ using UnityEngine;
 using UnityEditor;
 using System.Collections.Generic;
 
-/*
- * TODO - Add a progress bar to the generation
- */
-
 public class PuzzleGenerator : EditorWindow
 {
 	private enum ESettings
@@ -19,9 +15,9 @@ public class PuzzleGenerator : EditorWindow
 	private const int kWordListProgressStep = 1000;
 
 	private int kWidthMin = 4;
-	private int kWidthMax = 32;
+	private int kWidthMax = 16;
 	private int kHeightMin = 4;
-	private int kHeightMax = 32;
+	private int kHeightMax = 16;
 	private int kWordListPassesMin = 1;
 	private int kWordListPassesMax = 5;
 	private int kWordLimitMin = 1;
@@ -29,11 +25,11 @@ public class PuzzleGenerator : EditorWindow
 	private int kMaxTileUsageMin = 1;
 	private int kMaxTileUsageMax = 17;
 
-	[Range(5, 32)]
+	[Range(4, 16)]
 	public int Width = 7;
-	[Range(5, 32)]
+	[Range(4, 16)]
 	public int Height = 7;
-	[Range(1, 10)]
+	[Range(1, 5)]
 	public int WordListPasses = 1;
 	[Range(1, 1024)]
 	public int WordLimit = 100;
