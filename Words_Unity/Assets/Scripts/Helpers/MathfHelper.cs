@@ -96,4 +96,16 @@ static public class MathfHelper
 
 		return value;
 	}
+
+	static public int Lerp(int a, int b, float t)
+	{
+		float value = Mathf.Lerp(a, b, t);
+		return (int)value;
+	}
+
+	static public int Lerp(float a, float b, float t)
+	{
+		float value = Mathf.Lerp(a, b, t);
+		return (int)value;
+	}
 }
