@@ -8,8 +8,26 @@ using System.Collections.Generic;
 
 public class PuzzleGenerator : EditorWindow
 {
+	private enum ESettings
+	{
+		Low = 0,
+		Mid,
+		High,
+	}
+
 	private const string kProgressBarTitle = "Puzzle Generation";
 	private const int kWordListProgressStep = 1000;
+
+	private int kWidthMin = 4;
+	private int kWidthMax = 32;
+	private int kHeightMin = 4;
+	private int kHeightMax = 32;
+	private int kWordListPassesMin = 1;
+	private int kWordListPassesMax = 5;
+	private int kWordLimitMin = 1;
+	private int kWordLimitMax = 1024;
+	private int kMaxTileUsageMin = 1;
+	private int kMaxTileUsageMax = 17;
 
 	[Range(5, 32)]
 	public int Width = 7;
@@ -56,16 +74,66 @@ public class PuzzleGenerator : EditorWindow
 		GUILayout.Label("Settings", EditorStyles.boldLabel);
 		GUILayout.Space(8);
 
-		Width = EditorGUILayout.IntSlider("Width", Width, 4, 32);
-		Height = EditorGUILayout.IntSlider("Height", Height, 4, 32);
-		WordListPasses = EditorGUILayout.IntSlider("Word List Passes", WordListPasses, 1, 5);
-		WordLimit = EditorGUILayout.IntSlider("WordLimit", WordLimit, 1, 1024);
-		MaxTileUsage = EditorGUILayout.IntSlider("MaxTileUsage", MaxTileUsage, 1, 17);
+		GUILayout.BeginHorizontal();
+		{
+			if (GUILayout.Button("Low"))
+			{
+				SetSettings(ESettings.Low);
+			}
+
+			if (GUILayout.Button("Mid"))
+			{
+				SetSettings(ESettings.Mid);
+			}
+
+			if (GUILayout.Button("High"))
+			{
+				SetSettings(ESettings.High);
+			}
+		}
+		GUILayout.EndHorizontal();
+		GUILayout.Space(8);
+
+		Width = EditorGUILayout.IntSlider("Width", Width, kWidthMin, kWidthMax);
+		Height = EditorGUILayout.IntSlider("Height", Height, kHeightMin, kHeightMax);
+		WordListPasses = EditorGUILayout.IntSlider("Word List Passes", WordListPasses, kWordListPassesMin, kWordListPassesMax);
+		WordLimit = EditorGUILayout.IntSlider("WordLimit", WordLimit, kWordLimitMin, kWordLimitMax);
+		MaxTileUsage = EditorGUILayout.IntSlider("MaxTileUsage", MaxTileUsage, kMaxTileUsageMin, kMaxTileUsageMax);
 
 		GUILayout.Space(8);
 		if (GUILayout.Button("Generate"))
 		{
 			Generate();
+		}
+	}
+
+	private void SetSettings(ESettings newSettings)
+	{
+		switch (newSettings)
+		{
+			case ESettings.Low:
+				Width = kWidthMin;
+				Height = kHeightMin;
+				WordListPasses = kWordListPassesMin;
+				WordLimit = kWordLimitMin;
+				MaxTileUsage = kMaxTileUsageMin;
+				break;
+
+			case ESettings.Mid:
+				Width = MathfHelper.Lerp(kWidthMin, kWidthMax, 0.5f);
+				Height = MathfHelper.Lerp(kHeightMin, kHeightMax, 0.5f);
+				WordListPasses = MathfHelper.Lerp(kWordListPassesMin, kWordListPassesMax, 0.5f);
+				WordLimit = MathfHelper.Lerp(kWordLimitMin, kWordLimitMax, 0.5f);
+				MaxTileUsage = MathfHelper.Lerp(kMaxTileUsageMin, kMaxTileUsageMax, 0.5f);
+				break;
+
+			case ESettings.High:
+				Width = kWidthMax;
+				Height = kHeightMax;
+				WordListPasses = kWordListPassesMax;
+				WordLimit = kWordLimitMax;
+				MaxTileUsage = kMaxTileUsageMax;
+				break;
 		}
 	}
 
