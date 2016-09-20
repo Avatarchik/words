@@ -1,0 +1,1208 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: Puzzle_3
+  m_EditorClassIdentifier: 
+  Width: 12
+  Height: 12
+  WordCount: 100
+  MaxCharacterUsage: 10
+  Words:
+  - Forwards: EXTANT
+    Backwards: TNATXE
+    Length: 6
+  - Forwards: SKYLARKS
+    Backwards: SKRALYKS
+    Length: 8
+  - Forwards: GIVINGS
+    Backwards: SGNIVIG
+    Length: 7
+  - Forwards: RHAPONTIC
+    Backwards: CITNOPAHR
+    Length: 9
+  - Forwards: APOSTOLIZE
+    Backwards: EZILOTSOPA
+    Length: 10
+  - Forwards: SUBSUME
+    Backwards: EMUSBUS
+    Length: 7
+  - Forwards: STOMATOPOD
+    Backwards: DOPOTAMOTS
+    Length: 10
+  - Forwards: OUTAGE
+    Backwards: EGATUO
+    Length: 6
+  - Forwards: BALSAS
+    Backwards: SASLAB
+    Length: 6
+  - Forwards: THYREOIDS
+    Backwards: SDIOERYHT
+    Length: 9
+  - Forwards: SYNCOPATED
+    Backwards: DETAPOCNYS
+    Length: 10
+  - Forwards: DAMMES
+    Backwards: SEMMAD
+    Length: 6
+  - Forwards: REVENANT
+    Backwards: TNANEVER
+    Length: 8
+  - Forwards: DOWNHOLE
+    Backwards: ELOHNWOD
+    Length: 8
+  - Forwards: FREQUENTS
+    Backwards: STNEUQERF
+    Length: 9
+  - Forwards: APHETISE
+    Backwards: ESITEHPA
+    Length: 8
+  - Forwards: DOZES
+    Backwards: SEZOD
+    Length: 5
+  - Forwards: BANKET
+    Backwards: TEKNAB
+    Length: 6
+  - Forwards: TAXA
+    Backwards: AXAT
+    Length: 4
+  - Forwards: BIAS
+    Backwards: SAIB
+    Length: 4
+  - Forwards: BIS
+    Backwards: SIB
+    Length: 3
+  - Forwards: TIS
+    Backwards: SIT
+    Length: 3
+  - Forwards: AXLE
+    Backwards: ELXA
+    Length: 4
+  - Forwards: DIAL
+    Backwards: LAID
+    Length: 4
+  - Forwards: SLY
+    Backwards: YLS
+    Length: 3
+  - Forwards: GATS
+    Backwards: STAG
+    Length: 4
+  - Forwards: TAY
+    Backwards: YAT
+    Length: 3
+  - Forwards: SET
+    Backwards: TES
+    Length: 3
+  - Forwards: HOE
+    Backwards: EOH
+    Length: 3
+  - Forwards: SAP
+    Backwards: PAS
+    Length: 3
+  - Forwards: SUM
+    Backwards: MUS
+    Length: 3
+  - Forwards: LOT
+    Backwards: TOL
+    Length: 3
+  - Forwards: GAD
+    Backwards: DAG
+    Length: 3
+  - Forwards: DAB
+    Backwards: BAD
+    Length: 3
+  - Forwards: POST
+    Backwards: TSOP
+    Length: 4
+  - Forwards: SEG
+    Backwards: GES
+    Length: 3
+  - Forwards: HOO
+    Backwards: OOH
+    Length: 3
+  - Forwards: NAB
+    Backwards: BAN
+    Length: 3
+  - Forwards: TAG
+    Backwards: GAT
+    Length: 3
+  - Forwards: DOP
+    Backwards: POD
+    Length: 3
+  - Forwards: BILK
+    Backwards: KLIB
+    Length: 4
+  - Forwards: INK
+    Backwards: KNI
+    Length: 3
+  - Forwards: TINEA
+    Backwards: AENIT
+    Length: 5
+  - Forwards: ROUT
+    Backwards: TUOR
+    Length: 4
+  - Forwards: SYNCOPATE
+    Backwards: ETAPOCNYS
+    Length: 9
+  - Forwards: AGE
+    Backwards: EGA
+    Length: 3
+  - Forwards: PAT
+    Backwards: TAP
+    Length: 3
+  - Forwards: STAG
+    Backwards: GATS
+    Length: 4
+  - Forwards: SKY
+    Backwards: YKS
+    Length: 3
+  - Forwards: TIC
+    Backwards: CIT
+    Length: 3
+  - Forwards: LIT
+    Backwards: TIL
+    Length: 3
+  - Forwards: OBA
+    Backwards: ABO
+    Length: 3
+  - Forwards: EAS
+    Backwards: SAE
+    Length: 3
+  - Forwards: GAE
+    Backwards: EAG
+    Length: 3
+  - Forwards: TUG
+    Backwards: GUT
+    Length: 3
+  - Forwards: THYREOID
+    Backwards: DIOERYHT
+    Length: 8
+  - Forwards: TYG
+    Backwards: GYT
+    Length: 3
+  - Forwards: AGES
+    Backwards: SEGA
+    Length: 4
+  - Forwards: CIT
+    Backwards: TIC
+    Length: 3
+  - Forwards: ANT
+    Backwards: TNA
+    Length: 3
+  - Forwards: ANTE
+    Backwards: ETNA
+    Length: 4
+  - Forwards: HAP
+    Backwards: PAH
+    Length: 3
+  - Forwards: ATOP
+    Backwards: POTA
+    Length: 4
+  - Forwards: PONTIC
+    Backwards: CITNOP
+    Length: 6
+  - Forwards: RUN
+    Backwards: NUR
+    Length: 3
+  - Forwards: ETNA
+    Backwards: ANTE
+    Length: 4
+  - Forwards: SKYLARK
+    Backwards: KRALYKS
+    Length: 7
+  - Forwards: BUST
+    Backwards: TSUB
+    Length: 4
+  - Forwards: ADOWN
+    Backwards: NWODA
+    Length: 5
+  - Forwards: AGA
+    Backwards: AGA
+    Length: 3
+  - Forwards: SORE
+    Backwards: EROS
+    Length: 4
+  - Forwards: MAT
+    Backwards: TAM
+    Length: 3
+  - Forwards: DAMME
+    Backwards: EMMAD
+    Length: 5
+  - Forwards: REV
+    Backwards: VER
+    Length: 3
+  - Forwards: WHO
+    Backwards: OHW
+    Length: 3
+  - Forwards: HOLED
+    Backwards: DELOH
+    Length: 5
+  - Forwards: EVE
+    Backwards: EVE
+    Length: 3
+  - Forwards: THY
+    Backwards: YHT
+    Length: 3
+  - Forwards: GAT
+    Backwards: TAG
+    Length: 3
+  - Forwards: ARKS
+    Backwards: SKRA
+    Length: 4
+  - Forwards: SITE
+    Backwards: ETIS
+    Length: 4
+  - Forwards: ARSE
+    Backwards: ESRA
+    Length: 4
+  - Forwards: LARKS
+    Backwards: SKRAL
+    Length: 5
+  - Forwards: YON
+    Backwards: NOY
+    Length: 3
+  - Forwards: EMU
+    Backwards: UME
+    Length: 3
+  - Forwards: TAX
+    Backwards: XAT
+    Length: 3
+  - Forwards: PONT
+    Backwards: TNOP
+    Length: 4
+  - Forwards: POS
+    Backwards: SOP
+    Length: 3
+  - Forwards: TEE
+    Backwards: EET
+    Length: 3
+  - Forwards: DAE
+    Backwards: EAD
+    Length: 3
+  - Forwards: SAE
+    Backwards: EAS
+    Length: 3
+  - Forwards: MES
+    Backwards: SEM
+    Length: 3
+  - Forwards: LAB
+    Backwards: BAL
+    Length: 3
+  - Forwards: NIB
+    Backwards: BIN
+    Length: 3
+  - Forwards: NEVER
+    Backwards: REVEN
+    Length: 5
+  - Forwards: ETA
+    Backwards: ATE
+    Length: 3
+  - Forwards: NAT
+    Backwards: TAN
+    Length: 3
+  - Forwards: AGEE
+    Backwards: EEGA
+    Length: 4
+  - Forwards: SUBS
+    Backwards: SBUS
+    Length: 4
+  - Forwards: VENA
+    Backwards: ANEV
+    Length: 4
+  WordPlacements:
+  - FromPosition:
+      X: 8
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 10
+  - FromPosition:
+      X: 1
+      Y: 7
+    ToPosition:
+      X: 9
+      Y: 7
+  - FromPosition:
+      X: 7
+      Y: 1
+    ToPosition:
+      X: 0
+      Y: 8
+  - FromPosition:
+      X: 9
+      Y: 9
+    ToPosition:
+      X: 0
+      Y: 9
+  - FromPosition:
+      X: 11
+      Y: 10
+    ToPosition:
+      X: 1
+      Y: 0
+  - FromPosition:
+      X: 1
+      Y: 7
+    ToPosition:
+      X: 1
+      Y: 0
+  - FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 10
+  - FromPosition:
+      X: 9
+      Y: 8
+    ToPosition:
+      X: 9
+      Y: 2
+  - FromPosition:
+      X: 3
+      Y: 6
+    ToPosition:
+      X: 9
+      Y: 0
+  - FromPosition:
+      X: 2
+      Y: 11
+    ToPosition:
+      X: 11
+      Y: 11
+  - FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 10
+      Y: 0
+  - FromPosition:
+      X: 11
+      Y: 11
+    ToPosition:
+      X: 11
+      Y: 5
+  - FromPosition:
+      X: 8
+      Y: 8
+    ToPosition:
+      X: 0
+      Y: 8
+  - FromPosition:
+      X: 9
+      Y: 10
+    ToPosition:
+      X: 1
+      Y: 10
+  - FromPosition:
+      X: 10
+      Y: 0
+    ToPosition:
+      X: 10
+      Y: 9
+  - FromPosition:
+      X: 11
+      Y: 0
+    ToPosition:
+      X: 11
+      Y: 8
+  - FromPosition:
+      X: 5
+      Y: 6
+    ToPosition:
+      X: 10
+      Y: 1
+  - FromPosition:
+      X: 9
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 7
+  - FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 5
+  - FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 7
+      Y: 0
+  - FromPosition:
+      X: 3
+      Y: 6
+    ToPosition:
+      X: 0
+      Y: 3
+  - FromPosition:
+      X: 11
+      Y: 4
+    ToPosition:
+      X: 11
+      Y: 7
+  - FromPosition:
+      X: 2
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 0
+  - FromPosition:
+      X: 1
+      Y: 10
+    ToPosition:
+      X: 5
+      Y: 6
+  - FromPosition:
+      X: 8
+      Y: 7
+    ToPosition:
+      X: 8
+      Y: 4
+  - FromPosition:
+      X: 3
+      Y: 1
+    ToPosition:
+      X: 7
+      Y: 1
+  - FromPosition:
+      X: 3
+      Y: 9
+    ToPosition:
+      X: 3
+      Y: 6
+  - FromPosition:
+      X: 1
+      Y: 11
+    ToPosition:
+      X: 4
+      Y: 8
+  - FromPosition:
+      X: 5
+      Y: 10
+    ToPosition:
+      X: 5
+      Y: 7
+  - FromPosition:
+      X: 10
+      Y: 11
+    ToPosition:
+      X: 10
+      Y: 8
+  - FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 1
+  - FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 8
+      Y: 7
+  - FromPosition:
+      X: 0
+      Y: 11
+    ToPosition:
+      X: 0
+      Y: 8
+  - FromPosition:
+      X: 5
+      Y: 6
+    ToPosition:
+      X: 2
+      Y: 3
+  - FromPosition:
+      X: 10
+      Y: 9
+    ToPosition:
+      X: 6
+      Y: 5
+  - FromPosition:
+      X: 11
+      Y: 6
+    ToPosition:
+      X: 8
+      Y: 3
+  - FromPosition:
+      X: 3
+      Y: 11
+    ToPosition:
+      X: 6
+      Y: 8
+  - FromPosition:
+      X: 7
+      Y: 3
+    ToPosition:
+      X: 10
+      Y: 0
+  - FromPosition:
+      X: 9
+      Y: 6
+    ToPosition:
+      X: 9
+      Y: 3
+  - FromPosition:
+      X: 0
+      Y: 9
+    ToPosition:
+      X: 0
+      Y: 6
+  - FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 7
+      Y: 4
+  - FromPosition:
+      X: 2
+      Y: 9
+    ToPosition:
+      X: 2
+      Y: 6
+  - FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 10
+      Y: 6
+  - FromPosition:
+      X: 9
+      Y: 9
+    ToPosition:
+      X: 9
+      Y: 5
+  - FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 9
+      Y: 0
+  - FromPosition:
+      X: 9
+      Y: 5
+    ToPosition:
+      X: 9
+      Y: 2
+  - FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 8
+      Y: 0
+  - FromPosition:
+      X: 6
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 1
+  - FromPosition:
+      X: 1
+      Y: 7
+    ToPosition:
+      X: 4
+      Y: 7
+  - FromPosition:
+      X: 3
+      Y: 9
+    ToPosition:
+      X: 0
+      Y: 9
+  - FromPosition:
+      X: 3
+      Y: 10
+    ToPosition:
+      X: 0
+      Y: 7
+  - FromPosition:
+      X: 0
+      Y: 6
+    ToPosition:
+      X: 3
+      Y: 3
+  - FromPosition:
+      X: 8
+      Y: 3
+    ToPosition:
+      X: 8
+      Y: 0
+  - FromPosition:
+      X: 7
+      Y: 1
+    ToPosition:
+      X: 10
+      Y: 4
+  - FromPosition:
+      X: 11
+      Y: 4
+    ToPosition:
+      X: 8
+      Y: 4
+  - FromPosition:
+      X: 2
+      Y: 11
+    ToPosition:
+      X: 10
+      Y: 11
+  - FromPosition:
+      X: 7
+      Y: 6
+    ToPosition:
+      X: 10
+      Y: 3
+  - FromPosition:
+      X: 9
+      Y: 5
+    ToPosition:
+      X: 9
+      Y: 1
+  - FromPosition:
+      X: 1
+      Y: 9
+    ToPosition:
+      X: 4
+      Y: 9
+  - FromPosition:
+      X: 2
+      Y: 4
+    ToPosition:
+      X: 5
+      Y: 7
+  - FromPosition:
+      X: 5
+      Y: 7
+    ToPosition:
+      X: 1
+      Y: 11
+  - FromPosition:
+      X: 8
+      Y: 9
+    ToPosition:
+      X: 5
+      Y: 9
+  - FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 0
+      Y: 8
+  - FromPosition:
+      X: 6
+      Y: 9
+    ToPosition:
+      X: 0
+      Y: 9
+  - FromPosition:
+      X: 8
+      Y: 8
+    ToPosition:
+      X: 11
+      Y: 5
+  - FromPosition:
+      X: 2
+      Y: 10
+    ToPosition:
+      X: 6
+      Y: 6
+  - FromPosition:
+      X: 1
+      Y: 7
+    ToPosition:
+      X: 8
+      Y: 7
+  - FromPosition:
+      X: 1
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 9
+  - FromPosition:
+      X: 10
+      Y: 10
+    ToPosition:
+      X: 5
+      Y: 10
+  - FromPosition:
+      X: 6
+      Y: 0
+    ToPosition:
+      X: 9
+      Y: 3
+  - FromPosition:
+      X: 10
+      Y: 8
+    ToPosition:
+      X: 6
+      Y: 8
+  - FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 0
+      Y: 6
+  - FromPosition:
+      X: 11
+      Y: 11
+    ToPosition:
+      X: 11
+      Y: 6
+  - FromPosition:
+      X: 8
+      Y: 8
+    ToPosition:
+      X: 5
+      Y: 8
+  - FromPosition:
+      X: 7
+      Y: 10
+    ToPosition:
+      X: 10
+      Y: 7
+  - FromPosition:
+      X: 5
+      Y: 10
+    ToPosition:
+      X: 0
+      Y: 10
+  - FromPosition:
+      X: 7
+      Y: 8
+    ToPosition:
+      X: 4
+      Y: 8
+  - FromPosition:
+      X: 2
+      Y: 11
+    ToPosition:
+      X: 5
+      Y: 11
+  - FromPosition:
+      X: 3
+      Y: 1
+    ToPosition:
+      X: 6
+      Y: 1
+  - FromPosition:
+      X: 5
+      Y: 7
+    ToPosition:
+      X: 9
+      Y: 7
+  - FromPosition:
+      X: 11
+      Y: 6
+    ToPosition:
+      X: 11
+      Y: 2
+  - FromPosition:
+      X: 11
+      Y: 0
+    ToPosition:
+      X: 7
+      Y: 4
+  - FromPosition:
+      X: 4
+      Y: 7
+    ToPosition:
+      X: 9
+      Y: 7
+  - FromPosition:
+      X: 4
+      Y: 11
+    ToPosition:
+      X: 4
+      Y: 8
+  - FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 4
+  - FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 4
+  - FromPosition:
+      X: 6
+      Y: 9
+    ToPosition:
+      X: 2
+      Y: 9
+  - FromPosition:
+      X: 10
+      Y: 9
+    ToPosition:
+      X: 7
+      Y: 6
+  - FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 1
+  - FromPosition:
+      X: 5
+      Y: 6
+    ToPosition:
+      X: 5
+      Y: 9
+  - FromPosition:
+      X: 6
+      Y: 1
+    ToPosition:
+      X: 9
+      Y: 4
+  - FromPosition:
+      X: 11
+      Y: 8
+    ToPosition:
+      X: 11
+      Y: 5
+  - FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 7
+  - FromPosition:
+      X: 3
+      Y: 5
+    ToPosition:
+      X: 0
+      Y: 5
+  - FromPosition:
+      X: 4
+      Y: 8
+    ToPosition:
+      X: 9
+      Y: 8
+  - FromPosition:
+      X: 8
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 0
+  - FromPosition:
+      X: 4
+      Y: 8
+    ToPosition:
+      X: 7
+      Y: 5
+  - FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 0
+      Y: 1
+  - FromPosition:
+      X: 1
+      Y: 7
+    ToPosition:
+      X: 1
+      Y: 3
+  - FromPosition:
+      X: 6
+      Y: 8
+    ToPosition:
+      X: 2
+      Y: 8
+  CharGrid:
+  - Character: 83
+    NumberOfUses: 3
+  - Character: 84
+    NumberOfUses: 2
+  - Character: 79
+    NumberOfUses: 1
+  - Character: 77
+    NumberOfUses: 2
+  - Character: 65
+    NumberOfUses: 3
+  - Character: 84
+    NumberOfUses: 3
+  - Character: 79
+    NumberOfUses: 3
+  - Character: 80
+    NumberOfUses: 3
+  - Character: 79
+    NumberOfUses: 2
+  - Character: 68
+    NumberOfUses: 3
+  - Character: 65
+    NumberOfUses: 1
+  - Character: 71
+    NumberOfUses: 1
+  - Character: 89
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 4
+  - Character: 77
+    NumberOfUses: 3
+  - Character: 85
+    NumberOfUses: 3
+  - Character: 83
+    NumberOfUses: 4
+  - Character: 66
+    NumberOfUses: 5
+  - Character: 85
+    NumberOfUses: 3
+  - Character: 83
+    NumberOfUses: 7
+  - Character: 84
+    NumberOfUses: 3
+  - Character: 67
+    NumberOfUses: 4
+  - Character: 68
+    NumberOfUses: 2
+  - Character: 83
+    NumberOfUses: 1
+  - Character: 78
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 4
+  - Character: 76
+    NumberOfUses: 1
+  - Character: 88
+    NumberOfUses: 1
+  - Character: 65
+    NumberOfUses: 4
+  - Character: 73
+    NumberOfUses: 2
+  - Character: 71
+    NumberOfUses: 1
+  - Character: 75
+    NumberOfUses: 4
+  - Character: 78
+    NumberOfUses: 2
+  - Character: 73
+    NumberOfUses: 7
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 84
+    NumberOfUses: 3
+  - Character: 67
+    NumberOfUses: 2
+  - Character: 71
+    NumberOfUses: 4
+  - Character: 90
+    NumberOfUses: 1
+  - Character: 88
+    NumberOfUses: 2
+  - Character: 66
+    NumberOfUses: 3
+  - Character: 78
+    NumberOfUses: 3
+  - Character: 66
+    NumberOfUses: 3
+  - Character: 89
+    NumberOfUses: 4
+  - Character: 65
+    NumberOfUses: 4
+  - Character: 84
+    NumberOfUses: 10
+  - Character: 76
+    NumberOfUses: 3
+  - Character: 72
+    NumberOfUses: 4
+  - Character: 79
+    NumberOfUses: 2
+  - Character: 65
+    NumberOfUses: 4
+  - Character: 65
+    NumberOfUses: 2
+  - Character: 73
+    NumberOfUses: 2
+  - Character: 73
+    NumberOfUses: 2
+  - Character: 65
+    NumberOfUses: 3
+  - Character: 84
+    NumberOfUses: 2
+  - Character: 76
+    NumberOfUses: 4
+  - Character: 78
+    NumberOfUses: 7
+  - Character: 78
+    NumberOfUses: 4
+  - Character: 79
+    NumberOfUses: 4
+  - Character: 89
+    NumberOfUses: 4
+  - Character: 80
+    NumberOfUses: 3
+  - Character: 84
+    NumberOfUses: 6
+  - Character: 65
+    NumberOfUses: 1
+  - Character: 86
+    NumberOfUses: 1
+  - Character: 76
+    NumberOfUses: 5
+  - Character: 69
+    NumberOfUses: 1
+  - Character: 68
+    NumberOfUses: 3
+  - Character: 65
+    NumberOfUses: 9
+  - Character: 69
+    NumberOfUses: 6
+  - Character: 79
+    NumberOfUses: 5
+  - Character: 72
+    NumberOfUses: 3
+  - Character: 82
+    NumberOfUses: 2
+  - Character: 65
+    NumberOfUses: 5
+  - Character: 83
+    NumberOfUses: 4
+  - Character: 73
+    NumberOfUses: 2
+  - Character: 83
+    NumberOfUses: 1
+  - Character: 75
+    NumberOfUses: 2
+  - Character: 79
+    NumberOfUses: 3
+  - Character: 84
+    NumberOfUses: 2
+  - Character: 82
+    NumberOfUses: 4
+  - Character: 86
+    NumberOfUses: 5
+  - Character: 80
+    NumberOfUses: 4
+  - Character: 78
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 2
+  - Character: 84
+    NumberOfUses: 4
+  - Character: 71
+    NumberOfUses: 3
+  - Character: 65
+    NumberOfUses: 2
+  - Character: 78
+    NumberOfUses: 3
+  - Character: 90
+    NumberOfUses: 1
+  - Character: 88
+    NumberOfUses: 1
+  - Character: 84
+    NumberOfUses: 4
+  - Character: 75
+    NumberOfUses: 4
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 65
+    NumberOfUses: 2
+  - Character: 87
+    NumberOfUses: 3
+  - Character: 79
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 3
+  - Character: 83
+    NumberOfUses: 2
+  - Character: 65
+    NumberOfUses: 5
+  - Character: 69
+    NumberOfUses: 4
+  - Character: 69
+    NumberOfUses: 2
+  - Character: 89
+    NumberOfUses: 2
+  - Character: 76
+    NumberOfUses: 1
+  - Character: 83
+    NumberOfUses: 7
+  - Character: 82
+    NumberOfUses: 5
+  - Character: 72
+    NumberOfUses: 3
+  - Character: 79
+    NumberOfUses: 2
+  - Character: 73
+    NumberOfUses: 2
+  - Character: 68
+    NumberOfUses: 1
+  - Character: 66
+    NumberOfUses: 2
+  - Character: 83
+    NumberOfUses: 3
+  - Character: 69
+    NumberOfUses: 4
+  - Character: 71
+    NumberOfUses: 7
+  - Character: 65
+    NumberOfUses: 5
+  - Character: 84
+    NumberOfUses: 3
+  - Character: 85
+    NumberOfUses: 3
+  - Character: 79
+    NumberOfUses: 7
+  - Character: 82
+    NumberOfUses: 2
+  - Character: 68
+    NumberOfUses: 2
+  - Character: 68
+    NumberOfUses: 2
+  - Character: 70
+    NumberOfUses: 1
+  - Character: 82
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 1
+  - Character: 81
+    NumberOfUses: 1
+  - Character: 85
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 2
+  - Character: 78
+    NumberOfUses: 2
+  - Character: 84
+    NumberOfUses: 1
+  - Character: 83
+    NumberOfUses: 2
+  - Character: 80
+    NumberOfUses: 4
+  - Character: 65
+    NumberOfUses: 2
+  - Character: 83
+    NumberOfUses: 2
+  - Character: 65
+    NumberOfUses: 2
+  - Character: 80
+    NumberOfUses: 1
+  - Character: 72
+    NumberOfUses: 1
+  - Character: 69
+    NumberOfUses: 2
+  - Character: 84
+    NumberOfUses: 4
+  - Character: 73
+    NumberOfUses: 3
+  - Character: 83
+    NumberOfUses: 6
+  - Character: 69
+    NumberOfUses: 4
+  - Character: 77
+    NumberOfUses: 3
+  - Character: 77
+    NumberOfUses: 2
+  - Character: 65
+    NumberOfUses: 3
+  - Character: 68
+    NumberOfUses: 2
