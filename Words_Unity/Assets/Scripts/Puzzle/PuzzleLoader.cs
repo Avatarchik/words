@@ -1,5 +1,4 @@
 using UnityEngine;
-using System;
 using System.Collections.Generic;
 
 [ScriptOrder(-100)]
@@ -28,6 +27,8 @@ public class PuzzleLoader : UIMonoBehaviour
 
 	public void LoadPuzzle(PuzzleContents contentsToLoad)
 	{
+		CleanUp();
+
 		sActivePuzzleContents = contentsToLoad;
 
 		mWidth = contentsToLoad.Width;
@@ -65,14 +66,20 @@ public class PuzzleLoader : UIMonoBehaviour
 	{
 		rectTransform.localScale = Vector3.one;
 
-		for (int x = 0; x < mWidth; ++x)
+		if (mCharacterTilesGrid != null)
 		{
-			for (int y = 0; y < mHeight; ++y)
+			for (int x = 0; x < mWidth; ++x)
 			{
-				Destroy(mCharacterTilesGrid[x, y].gameObject);
+				for (int y = 0; y < mHeight; ++y)
+				{
+					if (mCharacterTilesGrid[x, y] != null)
+					{
+						Destroy(mCharacterTilesGrid[x, y].gameObject);
+					}
+				}
 			}
+			mCharacterTilesGrid = null;
 		}
-		Array.Clear(mCharacterTilesGrid, 0, mCharacterTilesGrid.Length);
 	}
 
 	public void RemoveTile(GridPosition position)

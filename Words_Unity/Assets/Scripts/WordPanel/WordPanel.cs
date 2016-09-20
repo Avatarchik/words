@@ -8,12 +8,16 @@ public class WordPanel : UIMonoBehaviour
 
 	public WordPanelTitle Title;
 
-	private List<WordPanelEntry> mPanelEntries;
 	private int mWordsRemaining;
+	private List<WordPanelGroup> mPanelGroups;
+	private List<WordPanelEntry> mPanelEntries;
 
 	public void Initialise(WordPair[] wordPairs)
 	{
+		CleanUp();
+
 		mWordsRemaining = wordPairs.Length;
+		mPanelGroups = new List<WordPanelGroup>(32);
 		mPanelEntries = new List<WordPanelEntry>(mWordsRemaining);
 
 		Vector3 position = new Vector3(0, 38, 0); // TODO - fix the literals
@@ -31,12 +35,33 @@ public class WordPanel : UIMonoBehaviour
 			groupStartPosition.y -= previousGroupSize;
 			newGroup.Initialise(wordLength, groupWords, ref mPanelEntries, groupStartPosition, out previousGroupSize);
 
+			mPanelGroups.Add(newGroup);
+
 			wordsPlaced += groupWords.Length;
 		}
 
 		Title.SetTitle(mWordsRemaining);
 
 		rectTransform.sizeDelta = new Vector2(rectTransform.sizeDelta.x, Mathf.Abs(groupStartPosition.y - previousGroupSize));
+	}
+
+	private void CleanUp()
+	{
+		mWordsRemaining = 0;
+
+		if (mPanelGroups != null)
+		{
+			for (int groupIndex = (mPanelGroups.Count - 1); groupIndex >= 0; --groupIndex)
+			{
+				if (mPanelGroups[groupIndex] != null)
+				{
+					Destroy(mPanelGroups[groupIndex].gameObject);
+				}
+			}
+			mPanelGroups = null;
+		}
+
+		mPanelEntries = null;
 	}
 
 	public bool RemoveWordIfExists(string word)
