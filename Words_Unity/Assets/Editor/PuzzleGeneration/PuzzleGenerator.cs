@@ -223,9 +223,6 @@ public class PuzzleGenerator : EditorWindow
 			return false;
 		}
 
-		// Step 5 - Place any partial words that were found
-		PlacePartialWords();
-
 		// Step 6 - Finish
 		Debug.Log("Word count: " + mWords.Count);
 		mNewPuzzleContents.Finalise(mGrid);
@@ -235,7 +232,7 @@ public class PuzzleGenerator : EditorWindow
 
 	private PuzzleContents InitialiseGeneration()
 	{
-		ProgressBarHelper.Begin(false, kProgressBarTitle, "Step 1/5: Initialising...");
+		ProgressBarHelper.Begin(false, kProgressBarTitle, "Step 1/4: Initialising...");
 
 		string newPath = string.Format("Assets/Resources/Puzzles/New Puzzle_{0}.asset", System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss"));
 		PuzzleContents contents = CreateScriptableObjects.CreateNewPuzzleContents(newPath);
@@ -273,7 +270,7 @@ public class PuzzleGenerator : EditorWindow
 			return false;
 		}
 
-		string progressBarMessageFormat = "Step 2/5: Pass #{0}/{1}. Placed {2:N0}/{3:N0} ({4:N1}%). Words {5:N0}/{6:N0}";
+		string progressBarMessageFormat = "Step 2/4: Pass #{0}/{1}. Placed {2:N0}/{3:N0} ({4:N1}%). Words {5:N0}/{6:N0}";
 		string progressBarMessage = string.Format(progressBarMessageFormat, (passIndex + 1), WordListPasses, 0, 0, 0, 0, 0);
 		ProgressBarHelper.Begin(true, kProgressBarTitle, progressBarMessage, 1f / mAllWordsCount);
 
@@ -382,7 +379,7 @@ public class PuzzleGenerator : EditorWindow
 
 	private bool CheckForGaps()
 	{
-		ProgressBarHelper.Begin(false, kProgressBarTitle, "Step 3/5: Assessing puzzle validity");
+		ProgressBarHelper.Begin(false, kProgressBarTitle, "Step 3/4: Assessing puzzle validity");
 		bool foundGap = false;
 
 		// Did any tiles get missed?
@@ -406,13 +403,11 @@ public class PuzzleGenerator : EditorWindow
 	{
 		userCancelled = false;
 
-		/*string progressBarMessageFormat = "Step 3/5: Checking for partial words {0:N0}/{1:N0}";
+		string progressBarMessageFormat = "Step 4/4: Checking for partial words {0:N0}/{1:N0}";
 		string progressBarMessage = string.Format(progressBarMessageFormat, 0, 0);
 		ProgressBarHelper.Begin(true, kProgressBarTitle, progressBarMessage, 1f / mAllWordsCount);
 
-		int extras = 0;
-		List<int> originalWordIndices = new List<int>();
-		List<string> partialWords = new List<string>();
+		int partialWordsPlaced = 0;
 		for (int wordIndex = 0; wordIndex < mAllWordsCount; ++wordIndex)
 		{
 			if ((wordIndex % kWordListProgressStep) == 0)
@@ -432,44 +427,32 @@ public class PuzzleGenerator : EditorWindow
 				continue;
 			}
 
+			string alreadyPlacedWord;
 			for (int usedWordIndex = 0; usedWordIndex < mWords.Count; ++usedWordIndex)
 			{
-				if (mWords[usedWordIndex].Contains(word))
+				alreadyPlacedWord = mWords[usedWordIndex];
+
+				if (alreadyPlacedWord.Contains(word))
 				{
-					originalWordIndices.Add(usedWordIndex);
-					partialWords.Add(word);
-					++extras;
+					ScoredPlacement alreadyPlacedPlacement = mWordPlacements[usedWordIndex];
+
+					GridPosition fromPosition;
+					GridPosition toPosition;
+					PlacePartialWord(alreadyPlacedWord, word, alreadyPlacedPlacement.Position, alreadyPlacedPlacement.WordDirection, out fromPosition, out toPosition);
+
+					mNewPuzzleContents.RegisterWord(word, fromPosition, toPosition);
+
+					mWords.Add(word);
+					++partialWordsPlaced;
+
 					break;
 				}
 			}
 		}
 
-		ProgressBarHelper.End();*/
-	}
+		Debug.Log("Partial words placed: " + partialWordsPlaced);
 
-	private void PlacePartialWords()
-	{
-		// TODO - fix and add a progress bar
-		/*for (int i = 0; i < originalWordIndices.Count; ++i)
-		{
-			int originalIndex = originalWordIndices[i];
-			string str = mWords[originalIndex];
-			string partialWord = partialWords[i];
-
-			ScoredPlacement wordPlacement = mWordPlacements[originalIndex];
-
-			int score = 0;
-			if (IsWordPlacementValid(partialWord, wordPlacement.Position, wordPlacement.WordDirection, out score))
-			{
-				mWords.Add(partialWord);
-
-				GridPosition fromPosition;
-				GridPosition toPosition;
-				PlacePartialWord(str, partialWord, wordPlacement.Position, wordPlacement.WordDirection, out fromPosition, out toPosition);
-
-				contents.RegisterWord(partialWord, wordPlacement.Position, toPosition);
-			}
-		}*/
+		ProgressBarHelper.End();
 	}
 
 	private bool IsWordPlacementValid(string word, GridPosition position, EWordDirection wordDirection, out int score)
