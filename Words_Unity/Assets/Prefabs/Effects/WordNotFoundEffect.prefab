@@ -9,31 +9,31 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1000013476333522}
+  m_RootGameObject: {fileID: 1000010474480872}
   m_IsPrefabParent: 1
---- !u!1 &1000013476333522
+--- !u!1 &1000010474480872
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 4000010174147448}
-  - 198: {fileID: 198000011337138114}
-  - 199: {fileID: 199000013686031682}
+  - 4: {fileID: 4000012390652590}
+  - 198: {fileID: 198000010816424820}
+  - 199: {fileID: 199000012288060524}
   m_Layer: 0
-  m_Name: WordFoundEffect
+  m_Name: WordNotFoundEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4000010174147448
+--- !u!4 &4000012390652590
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013476333522}
+  m_GameObject: {fileID: 1000010474480872}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -41,12 +41,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!198 &198000011337138114
+--- !u!198 &198000010816424820
 ParticleSystem:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013476333522}
+  m_GameObject: {fileID: 1000010474480872}
   serializedVersion: 2
   lengthInSec: 1
   startDelay:
@@ -233,7 +233,7 @@ ParticleSystem:
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.6117647, g: 0.93333334, b: 0.47843137, a: 1}
+      maxColor: {r: 0.6117647, g: 0.47843137, b: 0.47843137, a: 1}
       minMaxState: 2
     startSize:
       scalar: 0.4
@@ -740,13 +740,13 @@ ParticleSystem:
       maxGradient:
         key0:
           serializedVersion: 2
-          rgba: 4280745728
+          rgba: 4280680703
         key1:
           serializedVersion: 2
-          rgba: 1871380344
+          rgba: 1871476991
         key2:
           serializedVersion: 2
-          rgba: 15913984
+          rgba: 25855
         key3:
           serializedVersion: 2
           rgba: 25855
@@ -1709,12 +1709,12 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199000013686031682
+--- !u!199 &199000012288060524
 ParticleSystemRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013476333522}
+  m_GameObject: {fileID: 1000010474480872}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0

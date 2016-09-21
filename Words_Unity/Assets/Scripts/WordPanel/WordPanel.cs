@@ -64,37 +64,32 @@ public class WordPanel : UIMonoBehaviour
 		mPanelEntries = null;
 	}
 
-	public bool RemoveWordIfExists(string word)
+	public void CheckWordValidity(string word, out bool wasWordRemoved, out bool wasWordAlreadyFound)
 	{
 		Debug.Log(string.Format("Checking {0} validity", word));
 
+		wasWordRemoved = false;
+		wasWordAlreadyFound = false;
+
 		if (word.Length <= 2)
 		{
-			return false;
+			return;
 		}
 
 		string reversedWord = WordHelper.ReverseWord(word);
 
-		bool foundMatch = false;
-
 		foreach (WordPanelEntry sourceWord in mPanelEntries)
 		{
-			if (sourceWord.HasBeenFound)
-			{
-				continue;
-			}
-
 			string sourceText = sourceWord.Word;
 			if (sourceText == word || sourceText == reversedWord)
 			{
+				wasWordRemoved = !sourceWord.HasBeenFound;
+				wasWordAlreadyFound = sourceWord.HasBeenFound;
+
 				sourceWord.MarkWordAsFound();
 				UpdateTitle(sourceWord);
-
-				foundMatch = true;
 			}
 		}
-
-		return foundMatch;
 	}
 
 	public void UpdateTitle(WordPanelEntry word)

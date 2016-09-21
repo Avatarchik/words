@@ -7,6 +7,7 @@ public class WordHighlighter : MonoBehaviour
 
 	public PuzzleLoader PuzzleLoaderRef;
 	public WordPanel WordPanelRef;
+	public EffectsManager EffectsManagerRef;
 
 	private GameObject mFrom;
 	private GameObject mTo;
@@ -75,11 +76,27 @@ public class WordHighlighter : MonoBehaviour
 		Debug.Log(string.Format("From: {0} To: {1}", mFrom.name, mTo.name));
 
 		string wordFromHighlightedTiles = GetWordFromHighlightedTiles();
-		if (WordPanelRef.RemoveWordIfExists(wordFromHighlightedTiles))
+		bool wasWordRemoved;
+		bool wasWordAlreadyFound;
+		WordPanelRef.CheckWordValidity(wordFromHighlightedTiles, out wasWordRemoved, out wasWordAlreadyFound);
+
+		foreach (CharacterTile tile in mHighlightedTiles)
 		{
-			foreach (CharacterTile tile in mHighlightedTiles)
+			if (wasWordRemoved)
 			{
+				EffectsManagerRef.PlayFoundEffectAt(tile.transform.position);
 				tile.DecrementUsage();
+			}
+			else
+			{
+				if (wasWordAlreadyFound)
+				{
+					EffectsManagerRef.PlayAlreadyFoundEffectAt(tile.transform.position);
+				}
+				else
+				{
+					EffectsManagerRef.PlayNotFoundEffectAt(tile.transform.position);
+				}
 			}
 		}
 
