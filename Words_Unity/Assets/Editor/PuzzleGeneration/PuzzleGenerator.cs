@@ -149,6 +149,7 @@ public class PuzzleGenerator : EditorWindow
 	{
 		float startTime = Time.realtimeSinceStartup;
 
+		Initialise();
 		SetupPositionalLists();
 
 		bool wasGenerationSuccessful = GenerateInternal();
