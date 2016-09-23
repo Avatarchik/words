@@ -10,6 +10,7 @@ public enum EWordDirection : byte
 	NorthWest,
 
 	Count,
+	Unknown,
 }
 
 public struct WordDirection

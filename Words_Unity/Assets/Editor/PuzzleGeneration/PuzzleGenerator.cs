@@ -143,6 +143,13 @@ public class PuzzleGenerator : EditorWindow
 
 		mWords = new List<string>(WordLimit);
 		mWordPlacements = new List<ScoredPlacement>(WordLimit);
+
+		mScoredPlacements = new List<ScoredPlacement>(WordLimit);
+		mHasPlacedInitialWord = false;
+
+		mPlacedWords = 0;
+
+		mNewPuzzleContents = null;
 	}
 
 	public void Generate()
@@ -224,7 +231,14 @@ public class PuzzleGenerator : EditorWindow
 			return false;
 		}
 
-		// Step 6 - Finish
+		// Step 5 - Check for naturally placed words
+		CheckForNaturallyPlacedWords(out userCancelled);
+		if (userCancelled)
+		{
+			return false;
+		}
+
+		// Finished
 		Debug.Log("Word count: " + mWords.Count);
 		mNewPuzzleContents.Finalise(mGrid);
 
@@ -233,7 +247,7 @@ public class PuzzleGenerator : EditorWindow
 
 	private PuzzleContents InitialiseGeneration()
 	{
-		ProgressBarHelper.Begin(false, kProgressBarTitle, "Step 1/4: Initialising...");
+		ProgressBarHelper.Begin(false, kProgressBarTitle, "Step 1/5: Initialising...");
 
 		string newPath = string.Format("Assets/Resources/Puzzles/New Puzzle_{0}.asset", System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss"));
 		PuzzleContents contents = CreateScriptableObjects.CreateNewPuzzleContents(newPath);
@@ -271,7 +285,7 @@ public class PuzzleGenerator : EditorWindow
 			return false;
 		}
 
-		string progressBarMessageFormat = "Step 2/4: Pass #{0}/{1}. Placed {2:N0}/{3:N0} ({4:N1}%). Words {5:N0}/{6:N0}";
+		string progressBarMessageFormat = "Step 2/5: Pass #{0}/{1}. Placed {2:N0}/{3:N0} ({4:N1}%). Words {5:N0}/{6:N0}";
 		string progressBarMessage = string.Format(progressBarMessageFormat, (passIndex + 1), WordListPasses, 0, 0, 0, 0, 0);
 		ProgressBarHelper.Begin(true, kProgressBarTitle, progressBarMessage, 1f / mAllWordsCount);
 
@@ -353,10 +367,10 @@ public class PuzzleGenerator : EditorWindow
 				ScoredPlacement sp = mScoredPlacements.LastItem();
 				GridPosition toPosition;
 				PlaceWord(word, sp.Position, sp.WordDirection, out toPosition);
-				mWords.Add(word);
 
 				mNewPuzzleContents.RegisterWord(word, sp.Position, toPosition);
 
+				mWords.Add(word);
 				mWordPlacements.Add(sp);
 
 				++mPlacedWords;
@@ -380,7 +394,7 @@ public class PuzzleGenerator : EditorWindow
 
 	private bool CheckForGaps()
 	{
-		ProgressBarHelper.Begin(false, kProgressBarTitle, "Step 3/4: Assessing puzzle validity");
+		ProgressBarHelper.Begin(false, kProgressBarTitle, "Step 3/5: Assessing puzzle validity");
 		bool foundGap = false;
 
 		// Did any tiles get missed?
@@ -404,8 +418,8 @@ public class PuzzleGenerator : EditorWindow
 	{
 		userCancelled = false;
 
-		string progressBarMessageFormat = "Step 4/4: Checking for partial words {0:N0}/{1:N0}";
-		string progressBarMessage = string.Format(progressBarMessageFormat, 0, 0);
+		string progressBarMessageFormat = "Step 4/5: Partial words {0:N0}. Words {1:N0}/{2:N0}";
+		string progressBarMessage = string.Format(progressBarMessageFormat, 0, 0, 0);
 		ProgressBarHelper.Begin(true, kProgressBarTitle, progressBarMessage, 1f / mAllWordsCount);
 
 		int partialWordsPlaced = 0;
@@ -413,7 +427,7 @@ public class PuzzleGenerator : EditorWindow
 		{
 			if ((wordIndex % kWordListProgressStep) == 0)
 			{
-				progressBarMessage = string.Format(progressBarMessageFormat, wordIndex, mAllWordsCount);
+				progressBarMessage = string.Format(progressBarMessageFormat, partialWordsPlaced, wordIndex, mAllWordsCount);
 				bool isStillRunning = ProgressBarHelper.Update(kWordListProgressStep, progressBarMessage);
 				if (!isStillRunning)
 				{
@@ -423,7 +437,7 @@ public class PuzzleGenerator : EditorWindow
 			}
 
 			string word = mAllWords[wordIndex];
-			if (mWords.Contains(word))
+			if (word.Length > mMaxDimension || mWords.Contains(word))
 			{
 				continue;
 			}
@@ -444,6 +458,7 @@ public class PuzzleGenerator : EditorWindow
 					mNewPuzzleContents.RegisterWord(word, fromPosition, toPosition);
 
 					mWords.Add(word);
+					mWordPlacements.Add(alreadyPlacedPlacement);
 					++partialWordsPlaced;
 
 					break;
@@ -451,9 +466,125 @@ public class PuzzleGenerator : EditorWindow
 			}
 		}
 
-		Debug.Log("Partial words placed: " + partialWordsPlaced);
+		Debug.Log("Partial words found: " + partialWordsPlaced);
 
 		ProgressBarHelper.End();
+	}
+
+	private void CheckForNaturallyPlacedWords(out bool userCancelled)
+	{
+		userCancelled = false;
+
+		string progressBarMessageFormat = "Step 5/5: Naturally placed words {0:N0}. Words {1:N0}/{2:N0}";
+		string progressBarMessage = string.Format(progressBarMessageFormat, 0, 0, 0);
+		ProgressBarHelper.Begin(true, kProgressBarTitle, progressBarMessage, 1f / mAllWordsCount);
+
+		int progressBarStep = mWords.Count;
+
+		string word;
+		bool foundOccurrence = false;
+		GridPosition foundPosition = null;
+		GridPosition foundPositionEnd = null;
+		EWordDirection foundWordDirection = EWordDirection.Unknown;
+
+		int naturallyPlacedWordsFound = 0;
+		for (int wordIndex = 0; wordIndex < mAllWordsCount; ++wordIndex)
+		{
+			if ((wordIndex % progressBarStep) == 0)
+			{
+				progressBarMessage = string.Format(progressBarMessageFormat, naturallyPlacedWordsFound, wordIndex, mAllWordsCount);
+				bool isStillRunning = ProgressBarHelper.Update(progressBarStep, progressBarMessage);
+				if (!isStillRunning)
+				{
+					userCancelled = true;
+					return;
+				}
+			}
+
+			word = mAllWords[wordIndex];
+			if (word.Length > mMaxDimension || mWords.Contains(word))
+			{
+				continue;
+			}
+
+			foundOccurrence = false;
+
+			foreach (GridPosition position in mGridPositions)
+			{
+				foreach (EWordDirection wordDirection in mWordDirections)
+				{
+					if (DoesPlacementContainWord(word, position, wordDirection, out foundPositionEnd))
+					{
+						foundPosition = position;
+						foundWordDirection = wordDirection;
+
+						foundOccurrence = true;
+						break;
+					}
+				}
+
+				if (foundOccurrence)
+				{
+					break;
+				}
+			}
+
+			if (foundOccurrence)
+			{
+				mNewPuzzleContents.RegisterWord(word, foundPosition, foundPositionEnd);
+				mWords.Add(word);
+				mWordPlacements.Add(new ScoredPlacement(0, foundPosition, foundWordDirection));
+				++naturallyPlacedWordsFound;
+
+				if (mWords.Count >= WordLimit)
+				{
+					break;
+				}
+			}
+		}
+
+		Debug.Log("Naturally placed words: " + naturallyPlacedWordsFound);
+
+		ProgressBarHelper.End();
+	}
+
+	private bool DoesPlacementContainWord(string word, GridPosition position, EWordDirection wordDirection, out GridPosition foundPositionEnd)
+	{
+		int xModifier;
+		int yModifier;
+		WordDirection.GetModifiers(wordDirection, out xModifier, out yModifier);
+
+		bool doesContainWord = true;
+
+		GridPosition pos = new GridPosition(position.X, position.Y);
+		int wordLength = word.Length;
+		char character;
+		char gridCharacter;
+
+		for (int characterIndex = 0; characterIndex < wordLength; ++characterIndex)
+		{
+			character = word[characterIndex];
+			gridCharacter = mGrid[pos.X, pos.Y].Character;
+
+			if (character != gridCharacter)
+			{
+				doesContainWord = false;
+				break;
+			}
+
+			pos.X += xModifier;
+			pos.Y += yModifier;
+
+			if (!GridHelper.IsGridPositionValid(pos, Width, Height))
+			{
+				doesContainWord = false;
+				break;
+			}
+		}
+
+		foundPositionEnd = pos;
+
+		return doesContainWord;
 	}
 
 	private bool IsWordPlacementValid(string word, GridPosition position, EWordDirection wordDirection, out int score)
