@@ -292,6 +292,9 @@ public class PuzzleGenerator : EditorWindow
 		int wordsPlacedThisPass = 0;
 
 		mAllWords.Shuffle();
+		mWordDirections.Shuffle();
+		mGridPositions.Shuffle();
+
 		for (int wordIndex = 0; wordIndex < mAllWordsCount; ++wordIndex)
 		{
 			if ((wordIndex % kWordListProgressStep) == 0)
@@ -313,9 +316,6 @@ public class PuzzleGenerator : EditorWindow
 			{
 				continue;
 			}
-
-			mWordDirections.Shuffle();
-			mGridPositions.Shuffle();
 
 			mScoredPlacements.Clear();
 
