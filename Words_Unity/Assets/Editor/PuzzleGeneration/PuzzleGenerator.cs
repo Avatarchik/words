@@ -256,7 +256,7 @@ public class PuzzleGenerator : EditorWindow
 			}
 
 			string word = mAllWords[wordIndex];
-			if (word == null || word.Length > mMaxDimension)
+			if (word == null)
 			{
 				continue;
 			}
@@ -359,7 +359,7 @@ public class PuzzleGenerator : EditorWindow
 			}
 
 			string word = mAllWords[wordIndex];
-			if (word == null || word.Length > mMaxDimension)
+			if (word == null)
 			{
 				continue;
 			}
@@ -430,7 +430,7 @@ public class PuzzleGenerator : EditorWindow
 			}
 
 			word = mAllWords[wordIndex];
-			if (word == null || word.Length > mMaxDimension)
+			if (word == null)
 			{
 				continue;
 			}
