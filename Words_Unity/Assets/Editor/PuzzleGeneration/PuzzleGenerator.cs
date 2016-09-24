@@ -12,7 +12,7 @@ public class PuzzleGenerator : EditorWindow
 	}
 
 	private const string kProgressBarTitle = "Puzzle Generation";
-	private const int kWordListProgressStep = 1000;
+	private const int kWordListProgressBarStep = 1000;
 
 	private int kWidthMin = 4;
 	private int kWidthMax = 16;
@@ -265,11 +265,11 @@ public class PuzzleGenerator : EditorWindow
 		mScoredPlacements = new List<ScoredPlacement>(Width * Height);
 		mHasPlacedInitialWord = false;
 
-		mAllWords = WordList.GetAllWords();
-		mAllWordsCount = mAllWords.Length;
-
 		mPlacedWords = 0;
 		mMaxDimension = Mathf.Max(Width, Height);
+
+		mAllWords = WordList.GetAllWords(mMaxDimension);
+		mAllWordsCount = mAllWords.Length;
 
 		ProgressBarHelper.End();
 
@@ -297,13 +297,13 @@ public class PuzzleGenerator : EditorWindow
 
 		for (int wordIndex = 0; wordIndex < mAllWordsCount; ++wordIndex)
 		{
-			if ((wordIndex % kWordListProgressStep) == 0)
+			if ((wordIndex % kWordListProgressBarStep) == 0)
 			{
 				progressBarMessage = string.Format(progressBarMessageFormat,
 					(passIndex + 1), WordListPasses,
 					mPlacedWords, WordLimit, ((float)mPlacedWords / WordLimit) * 100,
 					wordIndex, mAllWordsCount);
-				bool isStillRunning = ProgressBarHelper.Update(kWordListProgressStep, progressBarMessage);
+				bool isStillRunning = ProgressBarHelper.Update(kWordListProgressBarStep, progressBarMessage);
 				if (!isStillRunning)
 				{
 					userCancelled = true;
@@ -312,20 +312,19 @@ public class PuzzleGenerator : EditorWindow
 			}
 
 			string word = mAllWords[wordIndex];
-			if (mWords.Contains(word) || word.Length > mMaxDimension)
+			if (word == null || word.Length > mMaxDimension)
 			{
 				continue;
 			}
 
 			mScoredPlacements.Clear();
 
-			bool hasFoundPlacement = false;
+			int score;
 			foreach (GridPosition position in mGridPositions)
 			{
 				foreach (EWordDirection wordDirection in mWordDirections)
 				{
-					int score;
-					if (IsWordPlacementValid(word, position, wordDirection, out score))
+					if (IsWordPlacementValid(word, position.X, position.Y, wordDirection, out score))
 					{
 						mScoredPlacements.Add(new ScoredPlacement(score, position, wordDirection));
 					}
@@ -333,8 +332,7 @@ public class PuzzleGenerator : EditorWindow
 			}
 
 			mScoredPlacements.Sort((a, b) => a.Score.CompareTo(b.Score));
-			hasFoundPlacement = mScoredPlacements.Count > 0;
-
+			bool hasFoundPlacement = mScoredPlacements.Count > 0;
 			if (!hasFoundPlacement)
 			{
 				continue;
@@ -343,21 +341,6 @@ public class PuzzleGenerator : EditorWindow
 			if (!mHasPlacedInitialWord)
 			{
 				mHasPlacedInitialWord = true;
-
-				mScoredPlacements.Clear();
-
-				foreach (GridPosition position in mGridPositions)
-				{
-					foreach (EWordDirection wordDirection in mWordDirections)
-					{
-						int score;
-						if (IsWordPlacementValid(word, position, wordDirection, out score))
-						{
-							mScoredPlacements.Add(new ScoredPlacement(score, position, wordDirection));
-						}
-					}
-				}
-
 				mScoredPlacements.Shuffle();
 				hasFoundPlacement = true;
 			}
@@ -366,12 +349,14 @@ public class PuzzleGenerator : EditorWindow
 			{
 				ScoredPlacement sp = mScoredPlacements.LastItem();
 				GridPosition toPosition;
-				PlaceWord(word, sp.Position, sp.WordDirection, out toPosition);
+				PlaceWord(word, sp.Position.X, sp.Position.Y, sp.WordDirection, out toPosition);
 
 				mNewPuzzleContents.RegisterWord(word, sp.Position, toPosition);
 
 				mWords.Add(word);
 				mWordPlacements.Add(sp);
+
+				mAllWords[wordIndex] = null;
 
 				++mPlacedWords;
 				++wordsPlacedThisPass;
@@ -384,12 +369,8 @@ public class PuzzleGenerator : EditorWindow
 
 		ProgressBarHelper.End();
 
-		if (wordsPlacedThisPass == 0)
-		{
-			return false;
-		}
-
-		return true;
+		bool wasPassSuccessful = wordsPlacedThisPass > 0;
+		return wasPassSuccessful;
 	}
 
 	private bool CheckForGaps()
@@ -425,10 +406,10 @@ public class PuzzleGenerator : EditorWindow
 		int partialWordsPlaced = 0;
 		for (int wordIndex = 0; wordIndex < mAllWordsCount; ++wordIndex)
 		{
-			if ((wordIndex % kWordListProgressStep) == 0)
+			if ((wordIndex % kWordListProgressBarStep) == 0)
 			{
 				progressBarMessage = string.Format(progressBarMessageFormat, partialWordsPlaced, wordIndex, mAllWordsCount);
-				bool isStillRunning = ProgressBarHelper.Update(kWordListProgressStep, progressBarMessage);
+				bool isStillRunning = ProgressBarHelper.Update(kWordListProgressBarStep, progressBarMessage);
 				if (!isStillRunning)
 				{
 					userCancelled = true;
@@ -437,7 +418,7 @@ public class PuzzleGenerator : EditorWindow
 			}
 
 			string word = mAllWords[wordIndex];
-			if (word.Length > mMaxDimension || mWords.Contains(word))
+			if (word == null || word.Length > mMaxDimension)
 			{
 				continue;
 			}
@@ -453,12 +434,16 @@ public class PuzzleGenerator : EditorWindow
 
 					GridPosition fromPosition;
 					GridPosition toPosition;
-					PlacePartialWord(alreadyPlacedWord, word, alreadyPlacedPlacement.Position, alreadyPlacedPlacement.WordDirection, out fromPosition, out toPosition);
+					PlacePartialWord(alreadyPlacedWord, word, alreadyPlacedPlacement.Position.X, alreadyPlacedPlacement.Position.Y,
+						alreadyPlacedPlacement.WordDirection, out fromPosition, out toPosition);
 
 					mNewPuzzleContents.RegisterWord(word, fromPosition, toPosition);
 
 					mWords.Add(word);
 					mWordPlacements.Add(alreadyPlacedPlacement);
+
+					mAllWords[wordIndex] = null;
+
 					++partialWordsPlaced;
 
 					break;
@@ -475,11 +460,9 @@ public class PuzzleGenerator : EditorWindow
 	{
 		userCancelled = false;
 
-		string progressBarMessageFormat = "Step 5/5: Naturally placed words {0:N0}. Words {1:N0}/{2:N0}";
+		string progressBarMessageFormat = "Step 5/5: Natural words {0:N0}. Words {1:N0}/{2:N0}";
 		string progressBarMessage = string.Format(progressBarMessageFormat, 0, 0, 0);
 		ProgressBarHelper.Begin(true, kProgressBarTitle, progressBarMessage, 1f / mAllWordsCount);
-
-		int progressBarStep = mWords.Count;
 
 		string word;
 		bool foundOccurrence = false;
@@ -490,10 +473,10 @@ public class PuzzleGenerator : EditorWindow
 		int naturallyPlacedWordsFound = 0;
 		for (int wordIndex = 0; wordIndex < mAllWordsCount; ++wordIndex)
 		{
-			if ((wordIndex % progressBarStep) == 0)
+			if ((wordIndex % kWordListProgressBarStep) == 0)
 			{
 				progressBarMessage = string.Format(progressBarMessageFormat, naturallyPlacedWordsFound, wordIndex, mAllWordsCount);
-				bool isStillRunning = ProgressBarHelper.Update(progressBarStep, progressBarMessage);
+				bool isStillRunning = ProgressBarHelper.Update(kWordListProgressBarStep, progressBarMessage);
 				if (!isStillRunning)
 				{
 					userCancelled = true;
@@ -502,7 +485,7 @@ public class PuzzleGenerator : EditorWindow
 			}
 
 			word = mAllWords[wordIndex];
-			if (word.Length > mMaxDimension || mWords.Contains(word))
+			if (word == null || word.Length > mMaxDimension)
 			{
 				continue;
 			}
@@ -513,7 +496,7 @@ public class PuzzleGenerator : EditorWindow
 			{
 				foreach (EWordDirection wordDirection in mWordDirections)
 				{
-					if (DoesPlacementContainWord(word, position, wordDirection, out foundPositionEnd))
+					if (DoesPlacementContainWord(word, position.X, position.Y, wordDirection, out foundPositionEnd))
 					{
 						foundPosition = position;
 						foundWordDirection = wordDirection;
@@ -534,6 +517,9 @@ public class PuzzleGenerator : EditorWindow
 				mNewPuzzleContents.RegisterWord(word, foundPosition, foundPositionEnd);
 				mWords.Add(word);
 				mWordPlacements.Add(new ScoredPlacement(0, foundPosition, foundWordDirection));
+
+				mAllWords[wordIndex] = null;
+
 				++naturallyPlacedWordsFound;
 
 				if (mWords.Count >= WordLimit)
@@ -548,132 +534,133 @@ public class PuzzleGenerator : EditorWindow
 		ProgressBarHelper.End();
 	}
 
-	private bool DoesPlacementContainWord(string word, GridPosition position, EWordDirection wordDirection, out GridPosition foundPositionEnd)
+	private bool DoesPlacementContainWord(string word, int x, int y, EWordDirection wordDirection, out GridPosition foundPositionEnd)
 	{
 		int xModifier;
 		int yModifier;
 		WordDirection.GetModifiers(wordDirection, out xModifier, out yModifier);
 
 		bool doesContainWord = true;
-
-		GridPosition pos = new GridPosition(position.X, position.Y);
 		int wordLength = word.Length;
-		char character;
-		char gridCharacter;
 
-		for (int characterIndex = 0; characterIndex < wordLength; ++characterIndex)
+		if (IsPlacementWithinBounds(x, y, xModifier, yModifier, wordLength))
 		{
-			character = word[characterIndex];
-			gridCharacter = mGrid[pos.X, pos.Y].Character;
+			char character;
+			char gridCharacter;
 
-			if (character != gridCharacter)
+			for (int characterIndex = 0; characterIndex < wordLength; ++characterIndex)
 			{
-				doesContainWord = false;
-				break;
-			}
+				character = word[characterIndex];
+				gridCharacter = mGrid[x, y].Character;
 
-			pos.X += xModifier;
-			pos.Y += yModifier;
+				if (character != gridCharacter)
+				{
+					doesContainWord = false;
+					break;
+				}
 
-			if (!GridHelper.IsGridPositionValid(pos, Width, Height))
-			{
-				doesContainWord = false;
-				break;
+				x += xModifier;
+				y += yModifier;
 			}
 		}
+		else
+		{
+			doesContainWord = false;
+		}
 
-		foundPositionEnd = pos;
+		foundPositionEnd = new GridPosition(x, y);
 
 		return doesContainWord;
 	}
 
-	private bool IsWordPlacementValid(string word, GridPosition position, EWordDirection wordDirection, out int score)
+	private bool IsWordPlacementValid(string word, int x, int y, EWordDirection wordDirection, out int score)
 	{
 		int xModifier;
 		int yModifier;
 		WordDirection.GetModifiers(wordDirection, out xModifier, out yModifier);
 
 		bool isPlacementValid = true;
+		int wordLength = word.Length;
 		score = 0;
 
-		GridPosition pos = new GridPosition(position.X, position.Y);
-		int wordLength = word.Length;
-		char character;
-		char gridCharacter;
-		for (int characterIndex = 0; characterIndex < wordLength; ++characterIndex)
+		if (IsPlacementWithinBounds(x, y, xModifier, yModifier, wordLength))
 		{
-			character = word[characterIndex];
-			gridCharacter = mGrid[pos.X, pos.Y].Character;
-			if ((gridCharacter != INVALID_CHAR && character != gridCharacter) || mGrid[pos.X, pos.Y].NumberOfUses >= MaxTileUsage)
+			char character;
+			char gridCharacter;
+			for (int characterIndex = 0; characterIndex < wordLength; ++characterIndex)
 			{
-				isPlacementValid = false;
-				break;
-			}
+				character = word[characterIndex];
+				gridCharacter = mGrid[x, y].Character;
+				if ((gridCharacter != INVALID_CHAR && character != gridCharacter) || mGrid[x, y].NumberOfUses >= MaxTileUsage)
+				{
+					isPlacementValid = false;
+					break;
+				}
 
-			pos.X += xModifier;
-			pos.Y += yModifier;
+				x += xModifier;
+				y += yModifier;
 
-			if (!GridHelper.IsGridPositionValid(pos, Width, Height))
-			{
-				isPlacementValid = false;
-				break;
+				if (character == gridCharacter)
+				{
+					++score;
+				}
 			}
-
-			if (character == gridCharacter)
-			{
-				++score;
-			}
+		}
+		else
+		{
+			isPlacementValid = false;
 		}
 
 		return isPlacementValid;
 	}
 
-	private void PlaceWord(string word, GridPosition position, EWordDirection wordDirection, out GridPosition toPosition)
+	private bool IsPlacementWithinBounds(int x, int y, int xModifier, int yModifier, int wordLength)
+	{
+		x = x + (xModifier * wordLength);
+		y = y + (yModifier * wordLength);
+		return GridHelper.IsGridPositionValid(x, y, Width, Height);
+	}
+
+	private void PlaceWord(string word, int x, int y, EWordDirection wordDirection, out GridPosition toPosition)
 	{
 		int xModifier;
 		int yModifier;
 		WordDirection.GetModifiers(wordDirection, out xModifier, out yModifier);
 
-		toPosition = new GridPosition(position.X, position.Y);
 		GridEntry entry;
 		int wordLength = word.Length;
 		for (int characterIndex = 0; characterIndex < wordLength; ++characterIndex)
 		{
-			entry = mGrid[toPosition.X, toPosition.Y];
+			entry = mGrid[x, y];
 			entry.Character = word[characterIndex];
 			++entry.NumberOfUses;
 
-			toPosition.X += xModifier;
-			toPosition.Y += yModifier;
+			x += xModifier;
+			y += yModifier;
 		}
+
+		toPosition = new GridPosition(x, y);
 	}
 
-	private void PlacePartialWord(string word, string partialWord, GridPosition position, EWordDirection wordDirection, out GridPosition fromPosition, out GridPosition toPosition)
+	private void PlacePartialWord(string word, string partialWord, int x, int y, EWordDirection wordDirection, out GridPosition fromPosition, out GridPosition toPosition)
 	{
 		int xModifier;
 		int yModifier;
 		WordDirection.GetModifiers(wordDirection, out xModifier, out yModifier);
 
-		fromPosition = new GridPosition(position.X, position.Y);
-
 		int startIndex = word.IndexOf(partialWord, 0);
-		for (int i = 0; i < startIndex; ++i)
-		{
-			fromPosition.X += xModifier;
-			fromPosition.Y += yModifier;
-		}
-
-		GridPosition pos = fromPosition;
-		toPosition = fromPosition;
+		x += xModifier * startIndex;
+		y += yModifier * startIndex;
+		fromPosition = new GridPosition(x, y);
 
 		int partialWordLength = partialWord.Length;
 		for (int characterIndex = 0; characterIndex < partialWordLength; ++characterIndex)
 		{
-			mGrid[pos.X, pos.Y].Character = partialWord[characterIndex];
-			toPosition.X += xModifier;
-			toPosition.Y += yModifier;
+			mGrid[x, y].Character = partialWord[characterIndex];
+			x += xModifier;
+			y += yModifier;
 		}
+
+		toPosition = new GridPosition(x, y);
 	}
 }
- 
- 
