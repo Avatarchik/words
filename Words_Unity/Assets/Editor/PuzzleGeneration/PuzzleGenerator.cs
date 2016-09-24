@@ -643,10 +643,14 @@ public class PuzzleGenerator : EditorWindow
 		y += yModifier * startIndex;
 		fromPosition = new GridPosition(x, y);
 
+		GridEntry entry;
 		int partialWordLength = partialWord.Length;
 		for (int characterIndex = 0; characterIndex < partialWordLength; ++characterIndex)
 		{
-			mGrid[x, y].Character = partialWord[characterIndex];
+			entry = mGrid[x, y];
+			entry.Character = partialWord[characterIndex];
+			++entry.NumberOfUses;
+
 			x += xModifier;
 			y += yModifier;
 		}

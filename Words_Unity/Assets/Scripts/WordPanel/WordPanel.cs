@@ -64,7 +64,7 @@ public class WordPanel : UIMonoBehaviour
 		mPanelEntries = null;
 	}
 
-	public void CheckWordValidity(string word, out bool wasWordRemoved, out bool wasWordAlreadyFound)
+	public void CheckWordValidity(string word, List<CharacterTile> highlightedTiles, out bool wasWordRemoved, out bool wasWordAlreadyFound)
 	{
 		Debug.Log(string.Format("Checking {0} validity", word));
 
@@ -78,16 +78,27 @@ public class WordPanel : UIMonoBehaviour
 
 		string reversedWord = WordHelper.ReverseWord(word);
 
+		int wordsMatched = 0;
 		foreach (WordPanelEntry sourceWord in mPanelEntries)
 		{
 			string sourceText = sourceWord.Word;
 			if (sourceText == word || sourceText == reversedWord)
 			{
+				++wordsMatched;
+
 				wasWordRemoved = !sourceWord.HasBeenFound;
 				wasWordAlreadyFound = sourceWord.HasBeenFound;
 
 				sourceWord.MarkWordAsFound();
 				UpdateTitle(sourceWord);
+			}
+		}
+
+		if (wasWordRemoved)
+		{
+			foreach (CharacterTile tile in highlightedTiles)
+			{
+				tile.DecreaseUsage(wordsMatched);
 			}
 		}
 	}

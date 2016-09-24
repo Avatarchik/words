@@ -34,9 +34,9 @@ public class CharacterTile : MonoBehaviour
 #endif // UNITY_EDITOR
 	}
 
-	public void DecrementUsage()
+	public void DecreaseUsage(int numberOfUses)
 	{
-		--mUsageLeft;
+		mUsageLeft -= numberOfUses;
 		UpdateName();
 
 		if (mUsageLeft <= 0)

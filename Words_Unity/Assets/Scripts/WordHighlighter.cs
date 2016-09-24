@@ -78,14 +78,13 @@ public class WordHighlighter : MonoBehaviour
 		string wordFromHighlightedTiles = GetWordFromHighlightedTiles();
 		bool wasWordRemoved;
 		bool wasWordAlreadyFound;
-		WordPanelRef.CheckWordValidity(wordFromHighlightedTiles, out wasWordRemoved, out wasWordAlreadyFound);
+		WordPanelRef.CheckWordValidity(wordFromHighlightedTiles, mHighlightedTiles, out wasWordRemoved, out wasWordAlreadyFound);
 
 		foreach (CharacterTile tile in mHighlightedTiles)
 		{
 			if (wasWordRemoved)
 			{
 				EffectsManagerRef.PlayFoundEffectAt(tile.transform.position);
-				tile.DecrementUsage();
 			}
 			else
 			{
