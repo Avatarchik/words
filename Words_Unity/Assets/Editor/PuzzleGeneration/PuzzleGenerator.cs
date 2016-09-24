@@ -16,7 +16,7 @@ public class PuzzleGenerator : EditorWindow
 	private int kWordLimitMin = 1;
 	private int kWordLimitMax = 1024;
 	private int kMaxTileUsageMin = 1;
-	private int kMaxTileUsageMax = 15;
+	private int kMaxTileUsageMax = 17;
 
 	[Range(4, 16)]
 	public int Width = 7;
@@ -26,7 +26,7 @@ public class PuzzleGenerator : EditorWindow
 	public int WordListPasses = 1;
 	[Range(1, 1024)]
 	public int WordLimit = 100;
-	[Range(1, 15)]
+	[Range(1, 17)]
 	public int MaxTileUsage = 5;
 
 	private char INVALID_CHAR = ' ';
@@ -375,19 +375,23 @@ public class PuzzleGenerator : EditorWindow
 
 					GridPosition fromPosition;
 					GridPosition toPosition;
-					PlacePartialWord(alreadyPlacedWord, word, alreadyPlacedPlacement.Position.X, alreadyPlacedPlacement.Position.Y,
+					bool wasWordPlaced = PlacePartialWord(alreadyPlacedWord, word,
+						alreadyPlacedPlacement.Position.X, alreadyPlacedPlacement.Position.Y,
 						alreadyPlacedPlacement.WordDirection, out fromPosition, out toPosition);
 
-					mNewPuzzleContents.RegisterWord(word, fromPosition, toPosition);
+					if (wasWordPlaced)
+					{
+						mNewPuzzleContents.RegisterWord(word, fromPosition, toPosition);
 
-					mWords.Add(word);
-					mWordPlacements.Add(alreadyPlacedPlacement);
+						mWords.Add(word);
+						mWordPlacements.Add(alreadyPlacedPlacement);
 
-					mAllWords[wordIndex] = null;
+						mAllWords[wordIndex] = null;
 
-					++partialWordsPlaced;
+						++partialWordsPlaced;
 
-					break;
+						break;
+					}
 				}
 			}
 		}
@@ -447,17 +451,20 @@ public class PuzzleGenerator : EditorWindow
 
 			if (foundOccurrence)
 			{
-				mNewPuzzleContents.RegisterWord(word, foundPosition, foundPositionEnd);
-				mWords.Add(word);
-				mWordPlacements.Add(new ScoredWordPlacement(0, foundPosition, foundWordDirection));
-
-				mAllWords[wordIndex] = null;
-
-				++naturallyPlacedWordsFound;
-
-				if (mWords.Count >= WordLimit)
+				if (IsWordPlacementValid(word, foundPosition.X, foundPosition.Y, foundWordDirection))
 				{
-					break;
+					mNewPuzzleContents.RegisterWord(word, foundPosition, foundPositionEnd);
+					mWords.Add(word);
+					mWordPlacements.Add(new ScoredWordPlacement(0, foundPosition, foundWordDirection));
+
+					mAllWords[wordIndex] = null;
+
+					++naturallyPlacedWordsFound;
+
+					if (mWords.Count >= WordLimit)
+					{
+						break;
+					}
 				}
 			}
 		}
@@ -504,6 +511,12 @@ public class PuzzleGenerator : EditorWindow
 		foundPositionEnd = new GridPosition(x, y);
 
 		return doesContainWord;
+	}
+
+	private bool IsWordPlacementValid(string word, int x, int y, EWordDirection wordDirection)
+	{
+		int score;
+		return IsWordPlacementValid(word, x, y, wordDirection, out score);
 	}
 
 	private bool IsWordPlacementValid(string word, int x, int y, EWordDirection wordDirection, out int score)
@@ -575,7 +588,7 @@ public class PuzzleGenerator : EditorWindow
 		toPosition = new GridPosition(x, y);
 	}
 
-	private void PlacePartialWord(string word, string partialWord, int x, int y, EWordDirection wordDirection, out GridPosition fromPosition, out GridPosition toPosition)
+	private bool PlacePartialWord(string word, string partialWord, int x, int y, EWordDirection wordDirection, out GridPosition fromPosition, out GridPosition toPosition)
 	{
 		int xModifier;
 		int yModifier;
@@ -585,6 +598,12 @@ public class PuzzleGenerator : EditorWindow
 		x += xModifier * startIndex;
 		y += yModifier * startIndex;
 		fromPosition = new GridPosition(x, y);
+
+		if (!IsWordPlacementValid(partialWord, x, y, wordDirection))
+		{
+			toPosition = fromPosition;
+			return false;
+		}
 
 		GridEntry entry;
 		int partialWordLength = partialWord.Length;
@@ -599,5 +618,7 @@ public class PuzzleGenerator : EditorWindow
 		}
 
 		toPosition = new GridPosition(x, y);
+
+		return true;
 	}
 }
