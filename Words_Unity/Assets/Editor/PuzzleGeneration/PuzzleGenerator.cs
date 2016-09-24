@@ -41,13 +41,12 @@ public class PuzzleGenerator : EditorWindow
 
 	private Words WordList;
 
-	private List<EWordDirection> mWordDirections;
-	private List<GridPosition> mGridPositions;
+	private List<PotentialWordPlacement> mPotentialPlacements;
 
 	private List<string> mWords;
-	private List<ScoredPlacement> mWordPlacements;
+	private List<ScoredWordPlacement> mWordPlacements;
 
-	private List<ScoredPlacement> mScoredPlacements;
+	private List<ScoredWordPlacement> mScoredPlacements;
 	private bool mHasPlacedInitialWord;
 
 	private string[] mAllWords;
@@ -142,9 +141,9 @@ public class PuzzleGenerator : EditorWindow
 		}
 
 		mWords = new List<string>(WordLimit);
-		mWordPlacements = new List<ScoredPlacement>(WordLimit);
+		mWordPlacements = new List<ScoredWordPlacement>(WordLimit);
 
-		mScoredPlacements = new List<ScoredPlacement>(WordLimit);
+		mScoredPlacements = new List<ScoredWordPlacement>(WordLimit);
 		mHasPlacedInitialWord = false;
 
 		mPlacedWords = 0;
@@ -176,19 +175,22 @@ public class PuzzleGenerator : EditorWindow
 
 	private void SetupPositionalLists()
 	{
-		mWordDirections = new List<EWordDirection>((int)EWordDirection.Count);
-		for (int directionIndex = 0, count = (int)EWordDirection.Count; directionIndex < count; ++directionIndex)
-		{
-			mWordDirections.Add((EWordDirection)directionIndex);
-		}
-
-		mGridPositions = new List<GridPosition>(Width * Height);
+		mPotentialPlacements = new List<PotentialWordPlacement>(Width * Height * (int)EWordDirection.Count);
 		for (int x = 0; x < Width; ++x)
 		{
 			for (int y = 0; y < Height; ++y)
 			{
-				GridPosition position = new GridPosition(x, y);
-				mGridPositions.Add(position);
+				for (int directionIndex = 0, count = (int)EWordDirection.Count; directionIndex < count; ++directionIndex)
+				{
+					int xModifier;
+					int yModifier;
+					WordDirection.GetModifiers((EWordDirection)directionIndex, out xModifier, out yModifier);
+
+					if (IsPlacementWithinBounds(x, y, xModifier, yModifier, 3))
+					{
+						mPotentialPlacements.Add(new PotentialWordPlacement(new GridPosition(x, y), (EWordDirection)directionIndex));
+					}
+				}
 			}
 		}
 	}
@@ -262,7 +264,7 @@ public class PuzzleGenerator : EditorWindow
 			}
 		}
 
-		mScoredPlacements = new List<ScoredPlacement>(Width * Height);
+		mScoredPlacements = new List<ScoredWordPlacement>(Width * Height);
 		mHasPlacedInitialWord = false;
 
 		mPlacedWords = 0;
@@ -292,8 +294,7 @@ public class PuzzleGenerator : EditorWindow
 		int wordsPlacedThisPass = 0;
 
 		mAllWords.Shuffle();
-		mWordDirections.Shuffle();
-		mGridPositions.Shuffle();
+		mPotentialPlacements.Shuffle();
 
 		for (int wordIndex = 0; wordIndex < mAllWordsCount; ++wordIndex)
 		{
@@ -320,14 +321,11 @@ public class PuzzleGenerator : EditorWindow
 			mScoredPlacements.Clear();
 
 			int score;
-			foreach (GridPosition position in mGridPositions)
+			foreach (PotentialWordPlacement potentialPlacement in mPotentialPlacements)
 			{
-				foreach (EWordDirection wordDirection in mWordDirections)
+				if (IsWordPlacementValid(word, potentialPlacement.Position.X, potentialPlacement.Position.Y, potentialPlacement.WordDirection, out score))
 				{
-					if (IsWordPlacementValid(word, position.X, position.Y, wordDirection, out score))
-					{
-						mScoredPlacements.Add(new ScoredPlacement(score, position, wordDirection));
-					}
+					mScoredPlacements.Add(new ScoredWordPlacement(score, potentialPlacement.Position, potentialPlacement.WordDirection));
 				}
 			}
 
@@ -347,7 +345,7 @@ public class PuzzleGenerator : EditorWindow
 
 			if (hasFoundPlacement)
 			{
-				ScoredPlacement sp = mScoredPlacements.LastItem();
+				ScoredWordPlacement sp = mScoredPlacements.LastItem();
 				GridPosition toPosition;
 				PlaceWord(word, sp.Position.X, sp.Position.Y, sp.WordDirection, out toPosition);
 
@@ -430,7 +428,7 @@ public class PuzzleGenerator : EditorWindow
 
 				if (alreadyPlacedWord.Contains(word))
 				{
-					ScoredPlacement alreadyPlacedPlacement = mWordPlacements[usedWordIndex];
+					ScoredWordPlacement alreadyPlacedPlacement = mWordPlacements[usedWordIndex];
 
 					GridPosition fromPosition;
 					GridPosition toPosition;
@@ -492,22 +490,14 @@ public class PuzzleGenerator : EditorWindow
 
 			foundOccurrence = false;
 
-			foreach (GridPosition position in mGridPositions)
+			foreach (PotentialWordPlacement potentialPlacement in mPotentialPlacements)
 			{
-				foreach (EWordDirection wordDirection in mWordDirections)
+				if (DoesPlacementContainWord(word, potentialPlacement.Position.X, potentialPlacement.Position.Y, potentialPlacement.WordDirection, out foundPositionEnd))
 				{
-					if (DoesPlacementContainWord(word, position.X, position.Y, wordDirection, out foundPositionEnd))
-					{
-						foundPosition = position;
-						foundWordDirection = wordDirection;
+					foundPosition = potentialPlacement.Position;
+					foundWordDirection = potentialPlacement.WordDirection;
 
-						foundOccurrence = true;
-						break;
-					}
-				}
-
-				if (foundOccurrence)
-				{
+					foundOccurrence = true;
 					break;
 				}
 			}
@@ -516,7 +506,7 @@ public class PuzzleGenerator : EditorWindow
 			{
 				mNewPuzzleContents.RegisterWord(word, foundPosition, foundPositionEnd);
 				mWords.Add(word);
-				mWordPlacements.Add(new ScoredPlacement(0, foundPosition, foundWordDirection));
+				mWordPlacements.Add(new ScoredWordPlacement(0, foundPosition, foundWordDirection));
 
 				mAllWords[wordIndex] = null;
 
