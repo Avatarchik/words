@@ -19,10 +19,10 @@ public class ColourSchemeManager : MonoBehaviour
 		{
 			mChosenIndex = PlayerPrefs.GetInt(kChosenIndexKey, 0);
 		}
-		UpdateScheme(mChosenIndex);
+		SwitchScheme(mChosenIndex);
 	}
 
-	private void UpdateScheme(int newColourSchemeIndex)
+	public void SwitchScheme(int newColourSchemeIndex)
 	{
 		mChosenIndex = newColourSchemeIndex;
 
