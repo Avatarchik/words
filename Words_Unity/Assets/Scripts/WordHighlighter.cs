@@ -21,7 +21,6 @@ public class WordHighlighter : MonoBehaviour
 			Destroy(gameObject);
 			return;
 		}
-
 		Instance = this;
 	}
 
