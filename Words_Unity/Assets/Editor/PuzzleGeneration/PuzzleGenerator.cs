@@ -368,10 +368,23 @@ public class PuzzleGenerator : EditorWindow
 			for (int usedWordIndex = 0; usedWordIndex < mWords.Count; ++usedWordIndex)
 			{
 				alreadyPlacedWord = mWords[usedWordIndex];
+				string wordReversed = WordHelper.ReverseWord(word);
 
-				if (alreadyPlacedWord.Contains(word))
+				if ((alreadyPlacedWord == word) || (alreadyPlacedWord == wordReversed))
+				{
+					continue;
+				}
+
+				bool containsForwards = alreadyPlacedWord.Contains(word);
+				bool containsBackwards = alreadyPlacedWord.Contains(wordReversed);
+				if (containsForwards || containsBackwards)
 				{
 					ScoredWordPlacement alreadyPlacedPlacement = mWordPlacements[usedWordIndex];
+
+					if (containsBackwards)
+					{
+						word = wordReversed;
+					}
 
 					GridPosition fromPosition;
 					GridPosition toPosition;
@@ -381,6 +394,7 @@ public class PuzzleGenerator : EditorWindow
 
 					if (wasWordPlaced)
 					{
+						//Debug.Log(string.Format("Partial word of {0}: {1}", alreadyPlacedWord, word));
 						mNewPuzzleContents.RegisterWord(word, fromPosition, toPosition);
 
 						mWords.Add(word);
