@@ -585,7 +585,7 @@ public class PuzzleGenerator : EditorWindow
 			y += yModifier;
 		}
 
-		toPosition = new GridPosition(x, y);
+		toPosition = new GridPosition(x - xModifier, y - yModifier);
 	}
 
 	private bool PlacePartialWord(string word, string partialWord, int x, int y, EWordDirection wordDirection, out GridPosition fromPosition, out GridPosition toPosition)
@@ -617,7 +617,7 @@ public class PuzzleGenerator : EditorWindow
 			y += yModifier;
 		}
 
-		toPosition = new GridPosition(x, y);
+		toPosition = new GridPosition(x - xModifier, y - yModifier);
 
 		return true;
 	}
