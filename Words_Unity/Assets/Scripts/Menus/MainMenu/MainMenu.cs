@@ -70,7 +70,7 @@ public class MainMenu : Menu, IMenu
 			ColourSchemeSwitchButton schemeSwitchButton = newButtonGO.GetComponent<ColourSchemeSwitchButton>();
 			schemeSwitchButton.rectTransform.localPosition = new Vector3(0, 32 * schemeIndex, 0); // TODO - fix the literal
 
-			schemeSwitchButton.Initialise();
+			schemeSwitchButton.Initialise(ColourSchemeManagerRef.Schemes[schemeIndex - 1]);
 
 #if UNITY_EDITOR
 			newButtonGO.name = string.Format("Scheme #{0} - {1}", schemeIndex, ColourSchemeManagerRef.Schemes[schemeIndex - 1].Name);
