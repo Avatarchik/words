@@ -7,14 +7,11 @@ public class PuzzleLoadButton : UIMonoBehaviour
 	public Text TextRef;
 	public string TextFormat;
 
-	private MainMenu mMainMenuRef;
 	private PuzzleManager mPuzzleManagerRef;
 	private int mPuzzleIndex;
 
-	public void Initialise(MainMenu mainMenuRef, PuzzleManager puzzleManagerRef, int puzzleIndex)
+	public void Initialise(PuzzleManager puzzleManagerRef, int puzzleIndex)
 	{
-		mMainMenuRef = mainMenuRef;
-
 		mPuzzleManagerRef = puzzleManagerRef;
 		mPuzzleIndex = puzzleIndex - 1;
 
@@ -26,7 +23,7 @@ public class PuzzleLoadButton : UIMonoBehaviour
 		if (eventData.button == PointerEventData.InputButton.Left)
 		{
 			mPuzzleManagerRef.LoadPuzzle(mPuzzleIndex);
-			mMainMenuRef.gameObject.SetActive(false);
+			MenuManager.Instance.SwitchMenu(EMenuType.InGame);
 		}
 	}
 }

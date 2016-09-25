@@ -173,6 +173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 772701f9aa8e035498040f70083abc33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MenuType: 1
   PuzzleLoadButtonPrefab: {fileID: 1000012419358460, guid: 82d7bdc216822804ab8da180042866ad,
     type: 2}
   ColourSchemeButtonPrefab: {fileID: 1000011350221210, guid: e9f1f658f8003fc4ebd073246ea850a7,
@@ -651,6 +652,63 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1774229002}
   m_Script: {fileID: 11500000, guid: 0a499a780bd6ddf4484bfb983edd52a5, type: 3}
+--- !u!1001 &616797424
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1195091989}
+    m_Modifications:
+    - target: {fileID: 114000011277950346, guid: 5e54b246e7e6a7a41bf376bc8b04c2dd,
+        type: 2}
+      propertyPath: Menus.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011311725000, guid: 5e54b246e7e6a7a41bf376bc8b04c2dd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011311725000, guid: 5e54b246e7e6a7a41bf376bc8b04c2dd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011311725000, guid: 5e54b246e7e6a7a41bf376bc8b04c2dd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011311725000, guid: 5e54b246e7e6a7a41bf376bc8b04c2dd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011311725000, guid: 5e54b246e7e6a7a41bf376bc8b04c2dd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011311725000, guid: 5e54b246e7e6a7a41bf376bc8b04c2dd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011311725000, guid: 5e54b246e7e6a7a41bf376bc8b04c2dd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011311725000, guid: 5e54b246e7e6a7a41bf376bc8b04c2dd, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011277950346, guid: 5e54b246e7e6a7a41bf376bc8b04c2dd,
+        type: 2}
+      propertyPath: Menus.Array.data[0]
+      value: 
+      objectReference: {fileID: 6641437}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5e54b246e7e6a7a41bf376bc8b04c2dd, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &616797425 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4000011311725000, guid: 5e54b246e7e6a7a41bf376bc8b04c2dd,
+    type: 2}
+  m_PrefabInternal: {fileID: 616797424}
 --- !u!114 &643053051 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114000014088124712, guid: e742ec6caa2080b4cbf6c218cb5fb486,
@@ -1030,6 +1088,7 @@ Transform:
   - {fileID: 822399625}
   - {fileID: 2124364104}
   - {fileID: 1456998155}
+  - {fileID: 616797425}
   m_Father: {fileID: 0}
   m_RootOrder: 4
 --- !u!1001 &1456998154

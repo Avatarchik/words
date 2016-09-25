@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 
-public class MainMenu : MonoBehaviour
+public class MainMenu : Menu, IMenu
 {
 	public GameObject PuzzleLoadButtonPrefab;
 	public GameObject ColourSchemeButtonPrefab;
@@ -16,10 +16,23 @@ public class MainMenu : MonoBehaviour
 	private List<RectTransform> mLevels;
 	private List<RectTransform> mColourSchemes;
 
-	void OnEnable()
+	public void OnEnable()
 	{
 		SetupLevels();
 		SetupColourSchemes();
+	}
+
+	public void OnDisable()
+	{
+		for (int levelIndex = 0; levelIndex < mLevels.Count; ++levelIndex)
+		{
+			Destroy(mLevels[levelIndex].gameObject);
+		}
+
+		for (int colourSchemeIndex = 0; colourSchemeIndex < mColourSchemes.Count; ++colourSchemeIndex)
+		{
+			Destroy(mColourSchemes[colourSchemeIndex].gameObject);
+		}
 	}
 
 	private void SetupLevels()
@@ -38,7 +51,7 @@ public class MainMenu : MonoBehaviour
 			PuzzleLoadButton puzzleLoadButton = newButtonGO.GetComponent<PuzzleLoadButton>();
 			puzzleLoadButton.rectTransform.localPosition = new Vector3(0, -32 * puzzleIndex, 0); // TODO - fix the literal
 
-			puzzleLoadButton.Initialise(this, PuzzleManagerRef, puzzleIndex);
+			puzzleLoadButton.Initialise(PuzzleManagerRef, puzzleIndex);
 
 			mLevels.Add(puzzleLoadButton.rectTransform);
 		}
@@ -64,19 +77,6 @@ public class MainMenu : MonoBehaviour
 #endif // UNITY_EDITOR
 
 			mColourSchemes.Add(schemeSwitchButton.rectTransform);
-		}
-	}
-
-	void OnDisable()
-	{
-		for (int levelIndex = 0; levelIndex < mLevels.Count; ++levelIndex)
-		{
-			Destroy(mLevels[levelIndex].gameObject);
-		}
-
-		for (int colourSchemeIndex = 0; colourSchemeIndex < mColourSchemes.Count; ++colourSchemeIndex)
-		{
-			Destroy(mColourSchemes[colourSchemeIndex].gameObject);
 		}
 	}
 }
