@@ -7,10 +7,10 @@ public class ColourSchemeListUpdater
 	[MenuItem("Words/List Updaters/Colour Schemes")]
 	static void UpdateColourSchemeList()
 	{
-		GameObject colourSchemeListPrefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/Managers/ColourSchemesManager.prefab");
+		GameObject colourSchemeListPrefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/Managers/ColourSchemeManager.prefab");
 		if (colourSchemeListPrefab)
 		{
-			ColourSchemesManager schemeManager = colourSchemeListPrefab.GetComponent<ColourSchemesManager>();
+			ColourSchemeManager schemeManager = colourSchemeListPrefab.GetComponent<ColourSchemeManager>();
 			if (schemeManager)
 			{
 				schemeManager.ClearList();

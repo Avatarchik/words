@@ -31,7 +31,9 @@ public class ColourPanel : MonoBehaviour
 		{
 			GameObject entry = Instantiate(ColourPanelEntryPrefab, Vector3.zero, Quaternion.identity, transform) as GameObject;
 			entry.transform.SetParent(transform);
+#if UNITY_EDITOR
 			entry.name = "Colour #" + (i + 1);
+#endif // UNITY_EDITOR
 
 			RectTransform rectTrans = entry.GetComponent<RectTransform>();
 			rectTrans.localPosition = pos;
@@ -64,12 +66,12 @@ public class ColourPanel : MonoBehaviour
 
 	void OnEnable()
 	{
-		ColourSchemesManager.OnSchemeSwitched += OnSchemeSwitched;
+		ColourSchemeManager.OnSchemeSwitched += OnSchemeSwitched;
 	}
 
 	void OnDisable()
 	{
-		ColourSchemesManager.OnSchemeSwitched -= OnSchemeSwitched;
+		ColourSchemeManager.OnSchemeSwitched -= OnSchemeSwitched;
 	}
 
 	private void OnSchemeSwitched(ColourScheme newScheme)

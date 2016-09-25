@@ -59,7 +59,7 @@ public class CharacterTile : MonoBehaviour
 	{
 		if (isHighlighted)
 		{
-			BackgroundRef.AddHighlight(ColourSchemesManager.sActiveColourScheme.Highlight);
+			BackgroundRef.AddHighlight(ColourSchemeManager.sActiveColourScheme.Highlight);
 		}
 		else
 		{

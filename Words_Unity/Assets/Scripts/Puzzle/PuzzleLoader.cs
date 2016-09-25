@@ -18,12 +18,12 @@ public class PuzzleLoader : UIMonoBehaviour
 
 	void OnEnable()
 	{
-		ColourSchemesManager.OnSchemeSwitched += OnSchemeSwitched;
+		ColourSchemeManager.OnSchemeSwitched += OnSchemeSwitched;
 	}
 
 	void OnDisable()
 	{
-		ColourSchemesManager.OnSchemeSwitched -= OnSchemeSwitched;
+		ColourSchemeManager.OnSchemeSwitched -= OnSchemeSwitched;
 	}
 
 	public void LoadPuzzle(PuzzleContents contentsToLoad)

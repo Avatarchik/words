@@ -28,7 +28,7 @@ public class CharacterBackground : MonoBehaviour
 		// TODO - this should be a lookup table in each colour scheme
 		float t = (1f / (PuzzleLoader.sActivePuzzleContents.MaxCharacterUsage - 1)) * (characterUsageLeft - 1);
 		t = MathfHelper.Clamp01(t);
-		mBaseColour = ColorHelper.Blend(ColourSchemesManager.sActiveColourScheme.High, ColourSchemesManager.sActiveColourScheme.Low, t); ;
+		mBaseColour = ColorHelper.Blend(ColourSchemeManager.sActiveColourScheme.High, ColourSchemeManager.sActiveColourScheme.Low, t); ;
 		ImageRef.color = mBaseColour; // TODO - might be an issue here
 	}
 

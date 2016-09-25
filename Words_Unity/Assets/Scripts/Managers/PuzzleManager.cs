@@ -13,49 +13,19 @@ public class PuzzleManager : MonoBehaviour
 
 	void Awake()
 	{
-		bool hasLoadedKey = false;
 		if (PlayerPrefs.HasKey(kChosenIndexKey))
 		{
 			mChosenIndex = PlayerPrefs.GetInt(kChosenIndexKey, 0);
-			hasLoadedKey = true;
-		}
-
-		LoadPuzzle(hasLoadedKey);
-	}
-
-	void Update()
-	{
-		if (Input.GetKeyUp(KeyCode.Alpha1))
-		{
-			mChosenIndex = 0;
-			LoadPuzzle(true);
-		}
-		if (Input.GetKeyUp(KeyCode.Alpha2))
-		{
-			mChosenIndex = 1;
-			LoadPuzzle(true);
-		}
-		if (Input.GetKeyUp(KeyCode.Alpha3))
-		{
-			mChosenIndex = 2;
-			LoadPuzzle(true);
-		}
-		if (Input.GetKeyUp(KeyCode.Alpha4))
-		{
-			mChosenIndex = 3;
-			LoadPuzzle(true);
 		}
 	}
 
-	private void LoadPuzzle(bool saveChange)
+	public void LoadPuzzle(int puzzleIndexToLoad)
 	{
+		mChosenIndex = puzzleIndexToLoad;
 		LoaderRef.LoadPuzzle(Puzzles[mChosenIndex]);
 
-		if (saveChange)
-		{
-			PlayerPrefs.SetInt(kChosenIndexKey, mChosenIndex);
-			PlayerPrefs.Save();
-		}
+		PlayerPrefs.SetInt(kChosenIndexKey, mChosenIndex);
+		PlayerPrefs.Save();
 	}
 
 #if UNITY_EDITOR

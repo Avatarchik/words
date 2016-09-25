@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 
 [ScriptOrder(100)]
-public class ColourSchemesManager : MonoBehaviour
+public class ColourSchemeManager : MonoBehaviour
 {
 	static private readonly string kChosenIndexKey = "ColourSchemeIndex";
 
@@ -15,42 +15,17 @@ public class ColourSchemesManager : MonoBehaviour
 
 	void Awake()
 	{
-		bool hasLoadedKey = false;
 		if (PlayerPrefs.HasKey(kChosenIndexKey))
 		{
 			mChosenIndex = PlayerPrefs.GetInt(kChosenIndexKey, 0);
-			hasLoadedKey = true;
 		}
-
-		UpdateScheme(hasLoadedKey);
+		UpdateScheme(mChosenIndex);
 	}
 
-	void Update()
+	private void UpdateScheme(int newColourSchemeIndex)
 	{
-		if (Input.GetKeyUp(KeyCode.Q))
-		{
-			mChosenIndex = 0;
-			UpdateScheme(true);
-		}
-		if (Input.GetKeyUp(KeyCode.W))
-		{
-			mChosenIndex = 1;
-			UpdateScheme(true);
-		}
-		if (Input.GetKeyUp(KeyCode.E))
-		{
-			mChosenIndex = 2;
-			UpdateScheme(true);
-		}
-		if (Input.GetKeyUp(KeyCode.R))
-		{
-			mChosenIndex = 3;
-			UpdateScheme(true);
-		}
-	}
+		mChosenIndex = newColourSchemeIndex;
 
-	private void UpdateScheme(bool saveChange)
-	{
 		sActiveColourScheme = Schemes[mChosenIndex];
 
 		if (OnSchemeSwitched != null)
@@ -58,11 +33,8 @@ public class ColourSchemesManager : MonoBehaviour
 			OnSchemeSwitched(sActiveColourScheme);
 		}
 
-		if (saveChange)
-		{
-			PlayerPrefs.SetInt(kChosenIndexKey, mChosenIndex);
-			PlayerPrefs.Save();
-		}
+		PlayerPrefs.SetInt(kChosenIndexKey, mChosenIndex);
+		PlayerPrefs.Save();
 	}
 
 #if UNITY_EDITOR
