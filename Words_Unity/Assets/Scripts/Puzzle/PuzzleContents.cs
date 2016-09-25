@@ -73,7 +73,7 @@ public class PuzzleContents : ScriptableObject
 
 	public void RegisterWord(string word, GridPosition fromPosition, GridPosition toPosition)
 	{
-		Words[WordCount] = new WordPair(word);
+		Words[WordCount] = new WordPair(word, fromPosition, toPosition);
 		WordPlacements[WordCount] = new WordPlacement(fromPosition, toPosition);
 
 		++WordCount;

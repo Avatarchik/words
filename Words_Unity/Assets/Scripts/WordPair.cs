@@ -7,11 +7,19 @@ public class WordPair : IComparable
 	public string Backwards;
 	public int Length;
 
-	public WordPair(string word)
+	//[NonSerialized]
+	public GridPosition FromPosition;
+	//[NonSerialized]
+	public GridPosition ToPosition;
+
+	public WordPair(string word, GridPosition fromPosition, GridPosition toPosition)
 	{
 		Forwards = word;
 		Backwards = WordHelper.ReverseWord(word);
 		Length = word.Length;
+
+		FromPosition = fromPosition;
+		ToPosition = toPosition;
 	}
 
 	public int CompareTo(object obj)

@@ -2,6 +2,20 @@ using UnityEngine;
 using System;
 using System.Collections.Generic;
 
+public enum EWordValidityResult
+{
+	NoChange = 0,
+
+	InvalidWord,
+
+	CompleteMatch,
+	WrongInstance,
+	NoMatch,
+
+	WasRemoved,
+	WasAlreadyFound,
+}
+
 public class WordPanel : UIMonoBehaviour
 {
 	public WordPanelGroup WordPanelGroupPrefab;
@@ -64,43 +78,56 @@ public class WordPanel : UIMonoBehaviour
 		mPanelEntries = null;
 	}
 
-	public void CheckWordValidity(string word, List<CharacterTile> highlightedTiles, out bool wasWordRemoved, out bool wasWordAlreadyFound)
+	public EWordValidityResult CheckWordValidity(string word, List<CharacterTile> highlightedTiles)
 	{
 		Debug.Log(string.Format("Checking {0} validity", word));
 
-		wasWordRemoved = false;
-		wasWordAlreadyFound = false;
-
 		if (word.Length <= 2)
 		{
-			return;
+			return EWordValidityResult.InvalidWord;
 		}
 
 		string reversedWord = WordHelper.ReverseWord(word);
+		CharacterTile startTile = highlightedTiles.FirstItem();
+		CharacterTile endTile = highlightedTiles.LastItem();
 
-		int wordsMatched = 0;
-		foreach (WordPanelEntry sourceWord in mPanelEntries)
+		EWordValidityResult result = EWordValidityResult.NoChange;
+
+		int wordsMarkedAsFound = 0;
+		foreach (WordPanelEntry entry in mPanelEntries)
 		{
-			string sourceText = sourceWord.Word;
-			if (sourceText == word || sourceText == reversedWord)
+			result = entry.DoesMatchSelection(word, reversedWord, startTile, endTile);
+			if (result == EWordValidityResult.CompleteMatch)
 			{
-				++wordsMatched;
+				if (!entry.HasBeenFound)
+				{
+					++wordsMarkedAsFound;
+					entry.MarkWordAsFound();
+					UpdateTitle(entry);
+					result = EWordValidityResult.WasRemoved;
+				}
+				else
+				{
+					result = EWordValidityResult.WasAlreadyFound;
+				}
 
-				wasWordRemoved = !sourceWord.HasBeenFound;
-				wasWordAlreadyFound = sourceWord.HasBeenFound;
-
-				sourceWord.MarkWordAsFound();
-				UpdateTitle(sourceWord);
+				break;
+			}
+			else if (result == EWordValidityResult.WrongInstance)
+			{
+				break;
 			}
 		}
 
-		if (wasWordRemoved)
+		if (result == EWordValidityResult.WasRemoved)
 		{
 			foreach (CharacterTile tile in highlightedTiles)
 			{
-				tile.DecreaseUsage(wordsMatched);
+				tile.DecreaseUsage(wordsMarkedAsFound);
 			}
 		}
+
+		return result;
 	}
 
 	public void UpdateTitle(WordPanelEntry word)

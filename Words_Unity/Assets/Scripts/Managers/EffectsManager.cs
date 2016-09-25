@@ -5,25 +5,29 @@ public class EffectsManager : MonoBehaviour
 	private int kPoolSize = 32;
 	private readonly Vector3 kOffscreenPos = new Vector3(0, 5000, 0);
 
-	public ParticleSystem WordFoundEffectPrefab;
-	public ParticleSystem WordNotFoundEffectPrefab;
-	public ParticleSystem WordAlreadyFoundEffectPrefab;
+	public ParticleSystem FoundEffectPrefab;
+	public ParticleSystem NotFoundEffectPrefab;
+	public ParticleSystem AlreadyFoundEffectPrefab;
+	public ParticleSystem WrongInstanceEffectPrefab;
 
 	private ParticleSystem[] mFoundEffectsPool;
 	private ParticleSystem[] mNotFoundEffectsPool;
 	private ParticleSystem[] mAlreadyFoundEffectsPool;
+	private ParticleSystem[] mWrongInstanceEffectsPool;
 
 	void Awake()
 	{
 		mFoundEffectsPool = new ParticleSystem[kPoolSize];
 		mNotFoundEffectsPool = new ParticleSystem[kPoolSize];
 		mAlreadyFoundEffectsPool = new ParticleSystem[kPoolSize];
+		mWrongInstanceEffectsPool = new ParticleSystem[kPoolSize];
 
 		for (int poolIndex = 0; poolIndex < kPoolSize; ++poolIndex)
 		{
-			mFoundEffectsPool[poolIndex] = Instantiate(WordFoundEffectPrefab, kOffscreenPos, Quaternion.identity, transform) as ParticleSystem;
-			mNotFoundEffectsPool[poolIndex] = Instantiate(WordNotFoundEffectPrefab, kOffscreenPos, Quaternion.identity, transform) as ParticleSystem;
-			mAlreadyFoundEffectsPool[poolIndex] = Instantiate(WordAlreadyFoundEffectPrefab, kOffscreenPos, Quaternion.identity, transform) as ParticleSystem;
+			mFoundEffectsPool[poolIndex] = Instantiate(FoundEffectPrefab, kOffscreenPos, Quaternion.identity, transform) as ParticleSystem;
+			mNotFoundEffectsPool[poolIndex] = Instantiate(NotFoundEffectPrefab, kOffscreenPos, Quaternion.identity, transform) as ParticleSystem;
+			mAlreadyFoundEffectsPool[poolIndex] = Instantiate(AlreadyFoundEffectPrefab, kOffscreenPos, Quaternion.identity, transform) as ParticleSystem;
+			mWrongInstanceEffectsPool[poolIndex] = Instantiate(WrongInstanceEffectPrefab, kOffscreenPos, Quaternion.identity, transform) as ParticleSystem;
 		}
 	}
 
@@ -40,6 +44,11 @@ public class EffectsManager : MonoBehaviour
 	public void PlayAlreadyFoundEffectAt(Vector3 worldPosition)
 	{
 		PlayEffectAt(worldPosition, mAlreadyFoundEffectsPool);
+	}
+
+	public void PlayWrongInstanceEffectAt(Vector3 worldPosition)
+	{
+		PlayEffectAt(worldPosition, mWrongInstanceEffectsPool);
 	}
 
 	private void PlayEffectAt(Vector3 worldPosition, ParticleSystem[] effectArray)

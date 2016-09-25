@@ -43,11 +43,11 @@ public class WordPanelGroup : UIMonoBehaviour
 			position.y -= 24; // TODO - fix the literals
 			newPair.rectTransform.localPosition = position;
 
-			newPair.LeftWord.Word = groupWords[pairIndex].Forwards;
+			newPair.LeftWord.Initialise(groupWords[pairIndex]);
 			panelEntries.Add(newPair.LeftWord);
 			if ((pairIndex + halfCount) < wordsInGroup)
 			{
-				newPair.RightWord.Word = groupWords[pairIndex + halfCount].Forwards;
+				newPair.RightWord.Initialise(groupWords[pairIndex + halfCount]);
 				panelEntries.Add(newPair.RightWord);
 			}
 

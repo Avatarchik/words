@@ -76,26 +76,27 @@ public class WordHighlighter : MonoBehaviour
 		Debug.Log(string.Format("From: {0} To: {1}", mFrom.name, mTo.name));
 
 		string wordFromHighlightedTiles = GetWordFromHighlightedTiles();
-		bool wasWordRemoved;
-		bool wasWordAlreadyFound;
-		WordPanelRef.CheckWordValidity(wordFromHighlightedTiles, mHighlightedTiles, out wasWordRemoved, out wasWordAlreadyFound);
+		EWordValidityResult result = WordPanelRef.CheckWordValidity(wordFromHighlightedTiles, mHighlightedTiles);
 
 		foreach (CharacterTile tile in mHighlightedTiles)
 		{
-			if (wasWordRemoved)
+			switch (result)
 			{
-				EffectsManagerRef.PlayFoundEffectAt(tile.transform.position);
-			}
-			else
-			{
-				if (wasWordAlreadyFound)
-				{
+				case EWordValidityResult.WasRemoved:
+					EffectsManagerRef.PlayFoundEffectAt(tile.transform.position);
+					break;
+
+				case EWordValidityResult.WrongInstance:
+					EffectsManagerRef.PlayWrongInstanceEffectAt(tile.transform.position);
+					break;
+
+				case EWordValidityResult.WasAlreadyFound:
 					EffectsManagerRef.PlayAlreadyFoundEffectAt(tile.transform.position);
-				}
-				else
-				{
+					break;
+
+				default:
 					EffectsManagerRef.PlayNotFoundEffectAt(tile.transform.position);
-				}
+					break;
 			}
 		}
 
