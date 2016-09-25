@@ -109,9 +109,8 @@ public class WordPanel : UIMonoBehaviour
 				else
 				{
 					result = EWordValidityResult.WasAlreadyFound;
+					break;
 				}
-
-				break;
 			}
 			else if (result == EWordValidityResult.WrongInstance)
 			{
@@ -119,12 +118,13 @@ public class WordPanel : UIMonoBehaviour
 			}
 		}
 
-		if (result == EWordValidityResult.WasRemoved)
+		if (wordsMarkedAsFound > 0)
 		{
 			foreach (CharacterTile tile in highlightedTiles)
 			{
 				tile.DecreaseUsage(wordsMarkedAsFound);
 			}
+			result = EWordValidityResult.WasRemoved;
 		}
 
 		return result;

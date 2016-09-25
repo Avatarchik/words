@@ -7,9 +7,7 @@ public class WordPair : IComparable
 	public string Backwards;
 	public int Length;
 
-	//[NonSerialized]
 	public GridPosition FromPosition;
-	//[NonSerialized]
 	public GridPosition ToPosition;
 
 	public WordPair(string word, GridPosition fromPosition, GridPosition toPosition)

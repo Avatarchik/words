@@ -13,7 +13,6 @@ public class PuzzleContents : ScriptableObject
 	public int MaxCharacterUsage;
 
 	public WordPair[] Words;
-	public WordPlacement[] WordPlacements;
 
 	public CharacterUsage[] CharGrid;
 
@@ -26,7 +25,6 @@ public class PuzzleContents : ScriptableObject
 		MaxCharacterUsage = 0;
 
 		Words = new WordPair[1024];
-		WordPlacements = new WordPlacement[1024];
 
 		CharGrid = new CharacterUsage[Width * Height];
 
@@ -39,7 +37,6 @@ public class PuzzleContents : ScriptableObject
 	{
 		// TODO fix
 		Array.Resize(ref Words, WordCount);
-		Array.Resize(ref WordPlacements, WordCount);
 
 		int charCount = 0;
 		CharacterUsage usage;
@@ -74,8 +71,6 @@ public class PuzzleContents : ScriptableObject
 	public void RegisterWord(string word, GridPosition fromPosition, GridPosition toPosition)
 	{
 		Words[WordCount] = new WordPair(word, fromPosition, toPosition);
-		WordPlacements[WordCount] = new WordPlacement(fromPosition, toPosition);
-
 		++WordCount;
 	}
 }
