@@ -86,12 +86,10 @@ public class ColourPanel : MonoBehaviour
 		{
 			for (int entryIndex = 0; entryIndex < mPanelEntries.Count; ++entryIndex)
 			{
-				Image image = mPanelEntries[entryIndex];
-
 				float t = (1f / (mMaxCharUsage - 1)) * entryIndex;
 				t = MathfHelper.Clamp01(t);
 
-				image.color = ColorHelper.Blend(Scheme.High, Scheme.Low, t);
+				mPanelEntries[entryIndex].color = ColorHelper.Blend(Scheme.High, Scheme.Low, t);
 			}
 		}
 	}
