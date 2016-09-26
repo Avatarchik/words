@@ -13,121 +13,102 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Width: 4
   Height: 4
-  WordCount: 9
-  MaxCharacterUsage: 4
+  WordCount: 7
+  MaxCharacterUsage: 3
   Words:
-  - Forwards: HEX
-    Backwards: XEH
+  - Forwards: BOO
+    Backwards: OOB
     Length: 3
-  - Forwards: RAH
-    Backwards: HAR
-    Length: 3
-  - Forwards: ELM
-    Backwards: MLE
-    Length: 3
-  - Forwards: CAP
-    Backwards: PAC
-    Length: 3
-  - Forwards: DAW
-    Backwards: WAD
-    Length: 3
-  - Forwards: HIC
-    Backwards: CIH
-    Length: 3
-  - Forwards: AHA
-    Backwards: AHA
-    Length: 3
-  - Forwards: AXE
-    Backwards: EXA
-    Length: 3
-  - Forwards: END
-    Backwards: DNE
-    Length: 3
-  WordPlacements:
-  - FromPosition:
-      X: 0
-      Y: 0
-    ToPosition:
-      X: 3
-      Y: 0
-  - FromPosition:
-      X: 0
-      Y: 3
-    ToPosition:
-      X: 3
-      Y: 0
-  - FromPosition:
-      X: 3
-      Y: 3
-    ToPosition:
-      X: 3
-      Y: 0
-  - FromPosition:
+    FromPosition:
       X: 0
       Y: 2
     ToPosition:
-      X: 3
+      X: 2
       Y: 2
-  - FromPosition:
+  - Forwards: PIN
+    Backwards: NIP
+    Length: 3
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 3
+  - Forwards: YUG
+    Backwards: GUY
+    Length: 3
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 1
+  - Forwards: NUB
+    Backwards: BUN
+    Length: 3
+    FromPosition:
+      X: 3
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 1
+  - Forwards: BAD
+    Backwards: DAB
+    Length: 3
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  - Forwards: EGO
+    Backwards: OGE
+    Length: 3
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
       X: 1
+      Y: 2
+  - Forwards: NOG
+    Backwards: GON
+    Length: 3
+    FromPosition:
+      X: 2
       Y: 3
     ToPosition:
-      X: 1
-      Y: 0
-  - FromPosition:
-      X: 0
-      Y: 0
-    ToPosition:
-      X: 0
-      Y: 3
-  - FromPosition:
-      X: 3
-      Y: 0
-    ToPosition:
-      X: 0
-      Y: 3
-  - FromPosition:
-      X: 3
-      Y: 0
-    ToPosition:
-      X: 0
-      Y: 0
-  - FromPosition:
-      X: 3
-      Y: 3
-    ToPosition:
-      X: 0
-      Y: 3
+      X: 2
+      Y: 1
   CharGrid:
-  - Character: 72
+  - Character: 66
+    NumberOfUses: 1
+  - Character: 89
+    NumberOfUses: 1
+  - Character: 66
+    NumberOfUses: 1
+  - Character: 80
+    NumberOfUses: 1
+  - Character: 65
+    NumberOfUses: 1
+  - Character: 85
+    NumberOfUses: 1
+  - Character: 79
     NumberOfUses: 2
   - Character: 73
     NumberOfUses: 1
-  - Character: 67
-    NumberOfUses: 2
-  - Character: 82
-    NumberOfUses: 1
-  - Character: 69
-    NumberOfUses: 2
-  - Character: 87
-    NumberOfUses: 1
-  - Character: 65
-    NumberOfUses: 4
   - Character: 68
+    NumberOfUses: 1
+  - Character: 71
+    NumberOfUses: 3
+  - Character: 79
     NumberOfUses: 2
-  - Character: 88
+  - Character: 78
     NumberOfUses: 2
-  - Character: 72
-    NumberOfUses: 2
-  - Character: 80
+  - Character: 69
+    NumberOfUses: 1
+  - Character: 66
+    NumberOfUses: 1
+  - Character: 85
     NumberOfUses: 1
   - Character: 78
     NumberOfUses: 1
-  - Character: 65
-    NumberOfUses: 2
-  - Character: 77
-    NumberOfUses: 1
-  - Character: 76
-    NumberOfUses: 1
-  - Character: 69
-    NumberOfUses: 2
