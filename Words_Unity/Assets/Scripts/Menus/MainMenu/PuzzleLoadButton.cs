@@ -22,7 +22,7 @@ public class PuzzleLoadButton : UIMonoBehaviour
 	{
 		if (eventData.button == PointerEventData.InputButton.Left)
 		{
-			mPuzzleManagerRef.LoadPuzzle(mPuzzleIndex);
+			mPuzzleManagerRef.OpenPuzzle(mPuzzleIndex);
 			MenuManager.Instance.SwitchMenu(EMenuType.InGameMenu);
 		}
 	}

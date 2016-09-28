@@ -19,9 +19,11 @@ public class PuzzleManager : MonoBehaviour
 		}
 	}
 
-	public void LoadPuzzle(int puzzleIndexToLoad)
+	public void OpenPuzzle(int puzzleIndexToLoad)
 	{
 		mChosenIndex = puzzleIndexToLoad;
+
+		LoaderRef.gameObject.SetActive(true);
 		LoaderRef.LoadPuzzle(Puzzles[mChosenIndex]);
 
 		PlayerPrefs.SetInt(kChosenIndexKey, mChosenIndex);
@@ -31,6 +33,12 @@ public class PuzzleManager : MonoBehaviour
 	public void ResetPuzzle()
 	{
 		LoaderRef.LoadPuzzle(Puzzles[mChosenIndex]);
+	}
+
+	public void ClosePuzzle()
+	{
+		LoaderRef.CleanUp();
+		LoaderRef.gameObject.SetActive(false);
 	}
 
 #if UNITY_EDITOR
