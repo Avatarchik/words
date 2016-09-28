@@ -1,8 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class ExitPuzzleButton : UIMonoBehaviour
-	, IPointerClickHandler
+public class ExitPuzzleButton : UIMonoBehaviour, IPointerClickHandler
 {
 	public PuzzleManager PuzzleManagerRef;
 

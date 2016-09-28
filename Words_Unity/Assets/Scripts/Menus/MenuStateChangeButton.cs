@@ -1,8 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class MenuStateChangeButton : UIMonoBehaviour
-	, IPointerClickHandler
+public class MenuStateChangeButton : UIMonoBehaviour, IPointerClickHandler
 {
 	public EMenuType TypeToSwitchTo;
 

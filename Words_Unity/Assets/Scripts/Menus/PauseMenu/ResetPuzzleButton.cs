@@ -1,8 +1,6 @@
-using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class ResetPuzzleButton : UIMonoBehaviour
-	, IPointerClickHandler
+public class ResetPuzzleButton : UIMonoBehaviour, IPointerClickHandler
 {
 	public PuzzleManager PuzzleManagerRef;
 

@@ -1,8 +1,7 @@
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class PuzzleLoadButton : UIMonoBehaviour
-	, IPointerClickHandler
+public class PuzzleLoadButton : UIMonoBehaviour, IPointerClickHandler
 {
 	public Text TextRef;
 	public string TextFormat;

@@ -1,8 +1,7 @@
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class ColourSchemeSwitchButton : UIMonoBehaviour
-	, IPointerClickHandler
+public class ColourSchemeSwitchButton : UIMonoBehaviour, IPointerClickHandler
 {
 	public Text TextRef;
 	public Image[] ColourExamples;
