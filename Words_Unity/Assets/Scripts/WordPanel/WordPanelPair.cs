@@ -1,5 +1,3 @@
-using UnityEngine;
-
 public class WordPanelPair : UIMonoBehaviour
 {
 	public WordPanelEntry LeftWord;
