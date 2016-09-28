@@ -28,6 +28,11 @@ public class PuzzleManager : MonoBehaviour
 		PlayerPrefs.Save();
 	}
 
+	public void ResetPuzzle()
+	{
+		LoaderRef.LoadPuzzle(Puzzles[mChosenIndex]);
+	}
+
 #if UNITY_EDITOR
 	public void ClearList()
 	{

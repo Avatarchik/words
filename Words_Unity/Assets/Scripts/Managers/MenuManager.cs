@@ -6,7 +6,8 @@ public enum EMenuType
 	Invalid = 0,
 
 	MainMenu,
-	InGame,
+	InGameMenu,
+	PauseMenu,
 
 	Count,
 }
@@ -15,7 +16,7 @@ public class MenuManager : MonoBehaviour
 {
 	static public MenuManager Instance { get; private set; }
 
-	public UIScreenFade ScreenFaderRef;
+	public ScreenFade ScreenFaderRef;
 
 	public List<Menu> Menus = new List<Menu>();
 
@@ -35,6 +36,7 @@ public class MenuManager : MonoBehaviour
 		Instance = this;
 
 		mCurrentMenu = Menus.FirstItem();
+		mCurrentMenu.Open();
 		mPreviousMenu = null;
 
 		mIsFading = false;

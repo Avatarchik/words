@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using System;
 using System.Collections;
 
-public class UIScreenFade : MonoBehaviour
+public class ScreenFade : MonoBehaviour
 {
 	public Image ImageRef;
 
