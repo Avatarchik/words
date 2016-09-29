@@ -41,9 +41,13 @@ public class WordPanel : UIMonoBehaviour
 		Vector3 groupStartPosition = Vector3.zero;
 		int wordsPlaced = 0;
 		int previousGroupSize = 0;
-		for (int wordLength = 3; wordsPlaced < mWordsRemaining; ++wordLength)
+		for (int wordLength = 32; wordLength >= 3; --wordLength)
 		{
 			WordPair[] groupWords = Array.FindAll(wordPairs, word => word.Length == wordLength);
+			if (groupWords.Length <= 0)
+			{
+				continue;
+			}
 
 			WordPanelGroup newGroup = Instantiate(WordPanelGroupPrefab, position, Quaternion.identity, transform) as WordPanelGroup;
 			newGroup.transform.SetParent(transform);
