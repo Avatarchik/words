@@ -39,8 +39,13 @@ public class MainMenu : Menu, IMenu
 		int puzzleCount = PuzzleManagerRef.Puzzles.Count;
 		mLevels = new List<RectTransform>(puzzleCount);
 
+		int columnIndex = 0;
+		int rowIndex = 0;
 		for (int puzzleIndex = 1; puzzleIndex <= puzzleCount; ++puzzleIndex)
 		{
+			columnIndex = (puzzleIndex - 1) / 7; // TODO - fix the literal
+			rowIndex = ((puzzleIndex - 1) % 7) + 1; // TODO - fix the literal
+
 			GameObject newButtonGO = Instantiate(PuzzleLoadButtonPrefab, Vector3.zero, Quaternion.identity, transform) as GameObject;
 			newButtonGO.transform.SetParent(LevelsRoot);
 #if UNITY_EDITOR
@@ -48,7 +53,7 @@ public class MainMenu : Menu, IMenu
 #endif // UNITY_EDITOR
 
 			PuzzleLoadButton puzzleLoadButton = newButtonGO.GetComponent<PuzzleLoadButton>();
-			puzzleLoadButton.rectTransform.localPosition = new Vector3(0, -32 * puzzleIndex, 0); // TODO - fix the literal
+			puzzleLoadButton.rectTransform.localPosition = new Vector3(116 * columnIndex, -32 * rowIndex, 0); // TODO - fix the literals
 
 			puzzleLoadButton.Initialise(PuzzleManagerRef, puzzleIndex);
 
