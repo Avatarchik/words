@@ -1778,10 +1778,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 934237292}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f647ab9b1c046044a6a022e5d517120, type: 3}
+  m_Script: {fileID: 11500000, guid: b1e663ee1dbe90e4dad74f9aacbe8525, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TypeToSwitchTo: 1
+  PuzzleManagerRef: {fileID: 275983704}
 --- !u!114 &934237295
 MonoBehaviour:
   m_ObjectHideFlags: 0
