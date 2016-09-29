@@ -37,6 +37,11 @@ public class ColourSchemeManager : MonoBehaviour
 		PlayerPrefs.Save();
 	}
 
+	public bool IsActiveScheme(int colourSchemeIndex)
+	{
+		return mChosenIndex == colourSchemeIndex;
+	}
+
 #if UNITY_EDITOR
 	public void ClearList()
 	{

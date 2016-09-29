@@ -1,13 +1,21 @@
+using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class ColourSchemeSwitchButton : UIMonoBehaviour, IPointerClickHandler
 {
+	public Image ImageRef;
 	public Text TextRef;
+
+	public Color NonSelectedColour;
+	public Color SelectedColour;
+
 	public Image[] ColourExamples;
 
 	private ColourSchemeManager mColourSchemeManagerRef;
 	private int mSchemeIndex;
+
+	static private Image sSelectedButton;
 
 	public void Initialise(ColourSchemeManager colourSchemeManagerRef, int schemeIndex)
 	{
@@ -17,6 +25,16 @@ public class ColourSchemeSwitchButton : UIMonoBehaviour, IPointerClickHandler
 		ColourScheme scheme = colourSchemeManagerRef.Schemes[mSchemeIndex];
 		TextRef.text = scheme.Name;
 		SetupColourExamples(scheme);
+
+		if (colourSchemeManagerRef.IsActiveScheme(mSchemeIndex))
+		{
+			ImageRef.color = SelectedColour;
+			sSelectedButton = ImageRef;
+		}
+		else
+		{
+			ImageRef.color = NonSelectedColour;
+		}
 	}
 
 	private void SetupColourExamples(ColourScheme scheme)
@@ -36,6 +54,13 @@ public class ColourSchemeSwitchButton : UIMonoBehaviour, IPointerClickHandler
 		if (eventData.button == PointerEventData.InputButton.Left)
 		{
 			mColourSchemeManagerRef.SwitchScheme(mSchemeIndex);
+
+			if (sSelectedButton != null)
+			{
+				sSelectedButton.color = NonSelectedColour;
+			}
+			ImageRef.color = SelectedColour;
+			sSelectedButton = ImageRef;
 		}
 	}
 }
