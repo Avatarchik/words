@@ -60,7 +60,9 @@ public class PuzzleLoader : UIMonoBehaviour
 		// Scale accordingly
 		rectTransform.localScale = new Vector3(16f / mWidth, 16f / mHeight, 1); // TODO - fix the literals
 
+		WordPanelRef.gameObject.SetActive(true);
 		WordPanelRef.Initialise(contentsToLoad.Words);
+
 		ColourPanelRef.Initialise(contentsToLoad.MaxCharacterUsage);
 	}
 
@@ -82,6 +84,8 @@ public class PuzzleLoader : UIMonoBehaviour
 			}
 			mCharacterTilesGrid = null;
 		}
+
+		WordPanelRef.gameObject.SetActive(false);
 	}
 
 	public void RemoveTile(GridPosition position)

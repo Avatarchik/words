@@ -8,6 +8,7 @@ public enum EMenuType
 	MainMenu,
 	InGameMenu,
 	PauseMenu,
+	PuzzleCompleteMenu,
 
 	Count,
 }

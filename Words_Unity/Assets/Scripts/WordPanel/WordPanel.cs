@@ -1,5 +1,6 @@
 using UnityEngine;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 
 public enum EWordValidityResult
@@ -25,6 +26,8 @@ public class WordPanel : UIMonoBehaviour
 	private int mWordsRemaining;
 	private List<WordPanelGroup> mPanelGroups;
 	private List<WordPanelEntry> mPanelEntries;
+
+	private bool mIsPuzzleComplete;
 
 	public void Initialise(WordPair[] wordPairs)
 	{
@@ -59,6 +62,21 @@ public class WordPanel : UIMonoBehaviour
 		rectTransform.sizeDelta = new Vector2(rectTransform.sizeDelta.x, Mathf.Abs(groupStartPosition.y - previousGroupSize));
 	}
 
+	void Update()
+	{
+		if (!mIsPuzzleComplete && mWordsRemaining <= 0)
+		{
+			mIsPuzzleComplete = true;
+			StartCoroutine(SwitchToPuzzleCompleteLevel());
+		}
+	}
+
+	private IEnumerator SwitchToPuzzleCompleteLevel()
+	{
+		yield return new WaitForSeconds(2);
+		MenuManager.Instance.SwitchMenu(EMenuType.PuzzleCompleteMenu);
+	}
+
 	private void CleanUp()
 	{
 		mWordsRemaining = 0;
@@ -76,6 +94,8 @@ public class WordPanel : UIMonoBehaviour
 		}
 
 		mPanelEntries = null;
+
+		mIsPuzzleComplete = false;
 	}
 
 	public EWordValidityResult CheckWordValidity(string word, List<CharacterTile> highlightedTiles)
