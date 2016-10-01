@@ -77,6 +77,12 @@ public class WordPanel : UIMonoBehaviour
 
 	private IEnumerator SwitchToPuzzleCompleteLevel()
 	{
+		InGameMenu inGameMenu = MenuManager.Instance.CurrentMenu as InGameMenu;
+		if (inGameMenu)
+		{
+			inGameMenu.HidePauseButton();
+		}
+
 		yield return new WaitForSeconds(2);
 		MenuManager.Instance.SwitchMenu(EMenuType.PuzzleCompleteMenu);
 	}

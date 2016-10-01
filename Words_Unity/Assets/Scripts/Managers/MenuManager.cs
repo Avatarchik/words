@@ -21,7 +21,7 @@ public class MenuManager : MonoBehaviour
 
 	public List<Menu> Menus = new List<Menu>();
 
-	private Menu mCurrentMenu;
+	public Menu CurrentMenu { get; private set; }
 
 	private bool mIsFading;
 	private EMenuType mNextMenuType;
@@ -35,8 +35,8 @@ public class MenuManager : MonoBehaviour
 		}
 		Instance = this;
 
-		mCurrentMenu = Menus.FirstItem();
-		mCurrentMenu.Open();
+		CurrentMenu = Menus.FirstItem();
+		CurrentMenu.Open();
 
 		mIsFading = false;
 		mNextMenuType = EMenuType.Invalid;
@@ -56,15 +56,15 @@ public class MenuManager : MonoBehaviour
 
 	private void OnFadeOutFinished()
 	{
-		mCurrentMenu.Close();
+		CurrentMenu.Close();
 
 		for (int menuIndex = 0; menuIndex < Menus.Count; ++menuIndex)
 		{
 			Menu menu = Menus[menuIndex];
 			if (menu.MenuType == mNextMenuType)
 			{
-				mCurrentMenu = menu;
-				mCurrentMenu.Open();
+				CurrentMenu = menu;
+				CurrentMenu.Open();
 				break;
 			}
 		}
