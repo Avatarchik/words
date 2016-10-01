@@ -8,8 +8,7 @@ public class PuzzleGenerator : EditorWindow
 	private const string kProgressBarTitle = "Puzzle Generation";
 	private const int kWordListProgressBarStep = 1000;
 
-	private int mWidth = 7;
-	private int mHeight = 7;
+	private int mSize = 7;
 	private int mWordListPasses = 1;
 	private int mWordLimit = 100;
 	private int mMaxTileUsage = 5;
@@ -33,7 +32,6 @@ public class PuzzleGenerator : EditorWindow
 	private int mAllWordsCount;
 
 	private int mPlacedWords;
-	private int mMaxDimension;
 
 	private PuzzleContents mNewPuzzleContents;
 	private string mContentsPath;
@@ -50,8 +48,7 @@ public class PuzzleGenerator : EditorWindow
 		GUILayout.Label("Settings", EditorStyles.boldLabel);
 
 		GUILayout.Space(8);
-		mWidth = EditorGUILayout.IntSlider("Width", mWidth, 4, 16);
-		mHeight = EditorGUILayout.IntSlider("Height", mHeight, 4, 16);
+		mSize = EditorGUILayout.IntSlider("Size", mSize, 4, 16);
 		mWordListPasses = EditorGUILayout.IntSlider("Word List Passes", mWordListPasses, 1, 3);
 		mWordLimit = EditorGUILayout.IntSlider("Word Limit", mWordLimit, 1, 1024);
 		mMaxTileUsage = EditorGUILayout.IntSlider("Max Tile Usage", mMaxTileUsage, 1, 17);
@@ -120,15 +117,13 @@ public class PuzzleGenerator : EditorWindow
 
 	private void GenerateTestLevels()
 	{
-		int originalWidth = mWidth;
-		int originalHeight = mHeight;
+		int originalSize = mSize;
 
-		for (int i = 4; i < 7; ++i)
+		for (int i = 4; i < 17; ++i) // TODO - fix the literals
 		{
 			for (int j = 0; j < mTestLevelsPerSize; ++j)
 			{
-				mWidth = i;
-				mHeight = i;
+				mSize = i;
 
 				bool wasSuccessful = Generate();
 				if (!wasSuccessful)
@@ -138,16 +133,15 @@ public class PuzzleGenerator : EditorWindow
 			}
 		}
 
-		mWidth = originalWidth;
-		mHeight = originalHeight;
+		mSize = originalSize;
 	}
 
 	private void SetupPositionalLists()
 	{
-		mPotentialPlacements = new List<PotentialWordPlacement>(mWidth * mHeight * (int)EWordDirection.Count);
-		for (int x = 0; x < mWidth; ++x)
+		mPotentialPlacements = new List<PotentialWordPlacement>(mSize * mSize * (int)EWordDirection.Count);
+		for (int x = 0; x < mSize; ++x)
 		{
-			for (int y = 0; y < mHeight; ++y)
+			for (int y = 0; y < mSize; ++y)
 			{
 				for (int directionIndex = 0, count = (int)EWordDirection.Count; directionIndex < count; ++directionIndex)
 				{
@@ -222,24 +216,23 @@ public class PuzzleGenerator : EditorWindow
 
 		mContentsPath = string.Format("Assets/Resources/Puzzles/{0}.asset", System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss"));
 		PuzzleContents contents = CreateScriptableObjects.CreateNewPuzzleContents(mContentsPath);
-		contents.Initialise(mWidth, mHeight);
+		contents.Initialise(mSize);
 
-		mGrid = new GridEntry[mWidth, mHeight];
-		for (int x = 0; x < mWidth; ++x)
+		mGrid = new GridEntry[mSize, mSize];
+		for (int x = 0; x < mSize; ++x)
 		{
-			for (int y = 0; y < mHeight; ++y)
+			for (int y = 0; y < mSize; ++y)
 			{
 				mGrid[x, y] = new GridEntry(INVALID_CHAR);
 			}
 		}
 
-		mScoredPlacements = new List<ScoredWordPlacement>(mWidth * mHeight);
+		mScoredPlacements = new List<ScoredWordPlacement>(mSize * mSize);
 		mHasPlacedInitialWord = false;
 
 		mPlacedWords = 0;
-		mMaxDimension = Mathf.Max(mWidth, mHeight);
 
-		mAllWords = WordList.GetAllWords(mMaxDimension);
+		mAllWords = WordList.GetAllWords(mSize);
 		mAllWordsCount = mAllWords.Length;
 
 		ProgressBarHelper.End();
@@ -251,7 +244,7 @@ public class PuzzleGenerator : EditorWindow
 	{
 		bool wasFinalised = mNewPuzzleContents.Finalise(mGrid);
 
-		string searchDir = PathHelper.Combine(Application.dataPath, string.Format("Resources/Puzzles/Size {0}", mWidth));
+		string searchDir = PathHelper.Combine(Application.dataPath, string.Format("Resources/Puzzles/Size {0}", mSize));
 		string[] puzzlePaths = Directory.GetFiles(searchDir, "*.asset");
 
 		int nextID = 0;
@@ -267,7 +260,7 @@ public class PuzzleGenerator : EditorWindow
 		AssetDatabase.RenameAsset(mContentsPath, newContentsFileName);
 
 		string currentPath = AssetDatabase.GetAssetPath(mNewPuzzleContents);
-		string newPath = currentPath.Replace("/Puzzles/", string.Format("/Puzzles/Size {0}/", mWidth));
+		string newPath = currentPath.Replace("/Puzzles/", string.Format("/Puzzles/Size {0}/", mSize));
 		AssetDatabase.MoveAsset(currentPath, newPath);
 
 		return wasFinalised;
@@ -372,9 +365,9 @@ public class PuzzleGenerator : EditorWindow
 		bool foundGap = false;
 
 		// Did any tiles get missed?
-		for (int x = 0; x < mWidth; ++x)
+		for (int x = 0; x < mSize; ++x)
 		{
-			for (int y = 0; y < mHeight; ++y)
+			for (int y = 0; y < mSize; ++y)
 			{
 				if (mGrid[x, y].Character == INVALID_CHAR)
 				{
@@ -630,7 +623,7 @@ public class PuzzleGenerator : EditorWindow
 	{
 		x = x + (xModifier * wordLength);
 		y = y + (yModifier * wordLength);
-		return GridHelper.IsGridPositionValid(x, y, mWidth, mHeight);
+		return GridHelper.IsGridPositionValid(x, y, mSize);
 	}
 
 	private void PlaceWord(string word, int x, int y, EWordDirection wordDirection, out GridPosition toPosition)

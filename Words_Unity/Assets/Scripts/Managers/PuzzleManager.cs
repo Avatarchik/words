@@ -17,8 +17,8 @@ public class PuzzleManager : MonoBehaviour
 
 	public List<PuzzleList> PuzzleLists;
 
-	private int mCurrentPuzzleIndex = 0;
-	private int mCurrentPuzzleDimension;
+	private int mCurrentPuzzleSize;
+	private int mCurrentPuzzleIndex;
 
 	void Awake()
 	{
@@ -28,14 +28,14 @@ public class PuzzleManager : MonoBehaviour
 		}
 	}
 
-	public void OpenPuzzle(int puzzleDimension, int puzzleIndexToLoad)
+	public void OpenPuzzle(int puzzleSize, int puzzleIndexToLoad)
 	{
 		mCurrentPuzzleIndex = puzzleIndexToLoad;
 
 		LoaderRef.gameObject.SetActive(true);
 
-		mCurrentPuzzleDimension = puzzleDimension;
-		PuzzleContents contents = GetContentsFor(puzzleDimension, puzzleIndexToLoad);
+		mCurrentPuzzleSize = puzzleSize;
+		PuzzleContents contents = GetContentsFor(puzzleSize, puzzleIndexToLoad);
 		LoaderRef.LoadPuzzle(contents);
 
 		PlayerPrefs.SetInt(kChosenIndexKey, mCurrentPuzzleIndex);
@@ -44,7 +44,7 @@ public class PuzzleManager : MonoBehaviour
 
 	public void ResetPuzzle()
 	{
-		PuzzleContents contents = GetContentsFor(mCurrentPuzzleDimension, mCurrentPuzzleIndex);
+		PuzzleContents contents = GetContentsFor(mCurrentPuzzleSize, mCurrentPuzzleIndex);
 		LoaderRef.LoadPuzzle(contents);
 	}
 
@@ -54,28 +54,28 @@ public class PuzzleManager : MonoBehaviour
 		LoaderRef.gameObject.SetActive(false);
 	}
 
-	public int GetListIndex(int dimension)
+	public int GetListIndex(int puzzleSize)
 	{
-		return dimension - 4; // TODO - fix the literal
+		return puzzleSize - 4; // TODO - fix the literal
 	}
 
-	private PuzzleList GetListForDimension(int puzzleDimension)
+	private PuzzleList GetListForPuzzleSize(int puzzleSize)
 	{
-		int listIndex = GetListIndex(puzzleDimension);
+		int listIndex = GetListIndex(puzzleSize);
 		PuzzleList list = PuzzleLists[listIndex];
 		return list;
 	}
 
-	private PuzzleContents GetContentsFor(int puzzleDimension, int puzzleIndex)
+	private PuzzleContents GetContentsFor(int puzzleSize, int puzzleIndex)
 	{
-		PuzzleList list = GetListForDimension(puzzleDimension);
+		PuzzleList list = GetListForPuzzleSize(puzzleSize);
 		PuzzleContents contents = list.Puzzles[puzzleIndex];
 		return contents;
 	}
 
-	public int GetWordCountForPuzzle(int puzzleDimension, int puzzleIndex)
+	public int GetWordCountForPuzzle(int puzzleSize, int puzzleIndex)
 	{
-		PuzzleContents contents = GetContentsFor(puzzleDimension, puzzleIndex);
+		PuzzleContents contents = GetContentsFor(puzzleSize, puzzleIndex);
 		int wordCount = contents.WordCount;
 		return wordCount;
 	}
@@ -91,9 +91,9 @@ public class PuzzleManager : MonoBehaviour
 		}
 	}
 
-	public void RegisterPuzzle(PuzzleContents newContents, int puzzleDimension)
+	public void RegisterPuzzle(PuzzleContents newContents, int puzzleSize)
 	{
-		int listIndex = GetListIndex(puzzleDimension);
+		int listIndex = GetListIndex(puzzleSize);
 		PuzzleList list = PuzzleLists[listIndex];
 		list.Puzzles.Add(newContents);
 	}

@@ -15,16 +15,16 @@ public class PuzzleListUpdater
 			{
 				puzzleManager.InitialiseLists();
 
-				for (int dimension = 4; dimension < 17; ++dimension)
+				for (int puzzleSize = 4; puzzleSize < 17; ++puzzleSize)
 				{
-					string searchDir = PathHelper.Combine(Application.dataPath, string.Format("Resources/Puzzles/Size {0}", dimension));
+					string searchDir = PathHelper.Combine(Application.dataPath, string.Format("Resources/Puzzles/Size {0}", puzzleSize));
 					string[] puzzlePaths = Directory.GetFiles(searchDir, "*.asset");
 
 					foreach (string path in puzzlePaths)
 					{
 						string relativePath = PathHelper.MakeRelativeToAssetsFolder(path);
 						PuzzleContents puzzle = AssetDatabase.LoadAssetAtPath(relativePath, typeof(PuzzleContents)) as PuzzleContents;
-						puzzleManager.RegisterPuzzle(puzzle, dimension);
+						puzzleManager.RegisterPuzzle(puzzle, puzzleSize);
 					}
 				}
 

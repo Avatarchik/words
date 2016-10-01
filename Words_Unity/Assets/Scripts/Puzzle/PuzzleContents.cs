@@ -6,8 +6,7 @@ using System;
 
 public class PuzzleContents : ScriptableObject
 {
-	public int Width;
-	public int Height;
+	public int Size;
 
 	public int WordCount;
 	public int MaxCharacterUsage;
@@ -16,17 +15,16 @@ public class PuzzleContents : ScriptableObject
 
 	public CharacterUsage[] CharGrid;
 
-	public void Initialise(int width, int height)
+	public void Initialise(int size)
 	{
-		Width = width;
-		Height = height;
+		Size = size;
 
 		WordCount = 0;
 		MaxCharacterUsage = 0;
 
 		Words = new WordPair[1024];
 
-		CharGrid = new CharacterUsage[Width * Height];
+		CharGrid = new CharacterUsage[Size * Size];
 
 #if UNITY_EDITOR
 		EditorUtility.SetDirty(this);
@@ -61,9 +59,9 @@ public class PuzzleContents : ScriptableObject
 		int charCount = 0;
 		CharacterUsage usage;
 		GridEntry entry;
-		for (int x = 0; x < Width; ++x)
+		for (int x = 0; x < Size; ++x)
 		{
-			for (int y = 0; y < Height; ++y)
+			for (int y = 0; y < Size; ++y)
 			{
 				entry = generatedGrid[x, y];
 				usage = CharGrid[charCount];
@@ -81,7 +79,7 @@ public class PuzzleContents : ScriptableObject
 
 	private void FindMaxCharacterUsage()
 	{
-		int charCount = Width * Height;
+		int charCount = Size * Size;
 		for (int charIndex = 0; charIndex < charCount; ++charIndex)
 		{
 			MaxCharacterUsage = Mathf.Max(MaxCharacterUsage, CharGrid[charIndex].NumberOfUses);

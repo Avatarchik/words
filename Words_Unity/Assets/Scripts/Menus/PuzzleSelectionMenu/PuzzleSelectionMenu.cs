@@ -25,9 +25,9 @@ public class PuzzleSelectionMenu : Menu, IMenu
 		}
 	}
 
-	public void Initialise(int puzzleDimension)
+	public void Initialise(int puzzleSize)
 	{
-		int puzzleCount = PuzzleManagerRef.PuzzleLists[puzzleDimension].Puzzles.Count;
+		int puzzleCount = PuzzleManagerRef.PuzzleLists[puzzleSize].Puzzles.Count;
 		mPuzzles = new List<RectTransform>(puzzleCount);
 
 		int columnIndex = 0;
@@ -46,7 +46,7 @@ public class PuzzleSelectionMenu : Menu, IMenu
 			PuzzleLoadButton puzzleLoadButton = newButtonGO.GetComponent<PuzzleLoadButton>();
 			puzzleLoadButton.rectTransform.localPosition = new Vector3(116 * columnIndex, -32 * rowIndex, 0); // TODO - fix the literals
 
-			puzzleLoadButton.Initialise(PuzzleManagerRef, puzzleDimension, puzzleIndex);
+			puzzleLoadButton.Initialise(PuzzleManagerRef, puzzleSize, puzzleIndex);
 
 			mPuzzles.Add(puzzleLoadButton.rectTransform);
 		}

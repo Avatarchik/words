@@ -10,9 +10,7 @@ public class PuzzleLoader : UIMonoBehaviour
 
 	private CharacterTile[,] mCharacterTilesGrid;
 
-	private int mWidth;
-	private int mHeight;
-	private int mMaxDimension;
+	private int mSize;
 
 	static public PuzzleContents sActivePuzzleContents;
 
@@ -32,25 +30,23 @@ public class PuzzleLoader : UIMonoBehaviour
 
 		sActivePuzzleContents = contentsToLoad;
 
-		mWidth = contentsToLoad.Width;
-		mHeight = contentsToLoad.Height;
-		mMaxDimension = Mathf.Max(mWidth, mHeight);
+		mSize = contentsToLoad.Size;
 
-		Vector3 gridSize = new Vector3(0, (mHeight * 24) + ((mHeight - 1) * 8), 0); // TODO - fix the literals
+		Vector3 gridSize = new Vector3(0, (mSize * 24) + ((mSize - 1) * 8), 0); // TODO - fix the literals
 		Vector3 halfGridSize = (gridSize * 0.5f) - new Vector3(12, 12, 0); // TODO - fix the literals
 
-		mCharacterTilesGrid = new CharacterTile[mWidth, mHeight];
+		mCharacterTilesGrid = new CharacterTile[mSize, mSize];
 
-		for (int x = 0; x < mWidth; ++x)
+		for (int x = 0; x < mSize; ++x)
 		{
-			for (int y = 0; y < mHeight; ++y)
+			for (int y = 0; y < mSize; ++y)
 			{
 				GameObject newTileGO = Instantiate(CharacterTilePrefab, Vector3.zero, Quaternion.identity, transform) as GameObject;
 
 				CharacterTile characterTile = newTileGO.GetComponent<CharacterTile>();
 				characterTile.transform.localPosition = new Vector3(x * 32, y * 32, 0) - halfGridSize; // TODO - fix the literals
 
-				CharacterUsage charUsage = contentsToLoad.CharGrid[(x * mWidth) + y];
+				CharacterUsage charUsage = contentsToLoad.CharGrid[(x * mSize) + y];
 				characterTile.Initialise(this, charUsage, new GridPosition(x, y));
 
 				mCharacterTilesGrid[x, y] = characterTile;
@@ -58,7 +54,7 @@ public class PuzzleLoader : UIMonoBehaviour
 		}
 
 		// Scale accordingly
-		rectTransform.localScale = new Vector3(16f / mWidth, 16f / mHeight, 1); // TODO - fix the literals
+		rectTransform.localScale = new Vector3(16f / mSize, 16f / mSize, 1); // TODO - fix the literals
 
 		WordPanelRef.gameObject.SetActive(true);
 		WordPanelRef.Initialise(contentsToLoad.Words);
@@ -72,9 +68,9 @@ public class PuzzleLoader : UIMonoBehaviour
 
 		if (mCharacterTilesGrid != null)
 		{
-			for (int x = 0; x < mWidth; ++x)
+			for (int x = 0; x < mSize; ++x)
 			{
-				for (int y = 0; y < mHeight; ++y)
+				for (int y = 0; y < mSize; ++y)
 				{
 					if (mCharacterTilesGrid[x, y] != null)
 					{
@@ -100,9 +96,9 @@ public class PuzzleLoader : UIMonoBehaviour
 
 	private void UpdateTileBackgroundColours()
 	{
-		for (int x = 0; x < mWidth; ++x)
+		for (int x = 0; x < mSize; ++x)
 		{
-			for (int y = 0; y < mHeight; ++y)
+			for (int y = 0; y < mSize; ++y)
 			{
 				mCharacterTilesGrid[x, y].UpdateBackgroundColour();
 			}
@@ -150,6 +146,6 @@ public class PuzzleLoader : UIMonoBehaviour
 
 			++checkedEntries;
 		}
-		while (pos != endPos && checkedEntries < mMaxDimension);
+		while (pos != endPos && checkedEntries < mSize);
 	}
 }

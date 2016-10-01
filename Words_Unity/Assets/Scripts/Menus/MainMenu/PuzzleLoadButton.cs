@@ -8,17 +8,17 @@ public class PuzzleLoadButton : UIMonoBehaviour, IPointerClickHandler
 
 	private PuzzleManager mPuzzleManagerRef;
 
-	private int mPuzzleDimension;
+	private int mPuzzleSize;
 	private int mPuzzleIndex;
 
-	public void Initialise(PuzzleManager puzzleManagerRef, int puzzleDimension, int puzzleIndex)
+	public void Initialise(PuzzleManager puzzleManagerRef, int puzzleSize, int puzzleIndex)
 	{
 		mPuzzleManagerRef = puzzleManagerRef;
 
-		mPuzzleDimension = puzzleDimension;
+		mPuzzleSize = puzzleSize;
 		mPuzzleIndex = puzzleIndex - 1;
 
-		int wordCount = mPuzzleManagerRef.GetWordCountForPuzzle(puzzleDimension, mPuzzleIndex);
+		int wordCount = mPuzzleManagerRef.GetWordCountForPuzzle(puzzleSize, mPuzzleIndex);
 
 		TextRef.text = string.Format(TextFormat, puzzleIndex, wordCount);
 	}
@@ -27,7 +27,7 @@ public class PuzzleLoadButton : UIMonoBehaviour, IPointerClickHandler
 	{
 		if (eventData.button == PointerEventData.InputButton.Left)
 		{
-			mPuzzleManagerRef.OpenPuzzle(mPuzzleDimension, mPuzzleIndex);
+			mPuzzleManagerRef.OpenPuzzle(mPuzzleSize, mPuzzleIndex);
 			MenuManager.Instance.SwitchMenu(EMenuType.InGameMenu);
 		}
 	}

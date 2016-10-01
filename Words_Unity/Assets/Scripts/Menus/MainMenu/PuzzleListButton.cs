@@ -6,12 +6,12 @@ public class PuzzleListButton : UIMonoBehaviour, IPointerClickHandler
 	public Text TextRef;
 	public string TextFormat;
 
-	private int mPuzzleDimension;
+	private int mPuzzleSize;
 
-	public void Initialise(int puzzleDimension)
+	public void Initialise(int puzzleSize)
 	{
-		mPuzzleDimension = puzzleDimension;
-		TextRef.text = string.Format(TextFormat, puzzleDimension);
+		mPuzzleSize = puzzleSize;
+		TextRef.text = string.Format(TextFormat, puzzleSize);
 	}
 
 	public void OnPointerClick(PointerEventData eventData)
@@ -27,7 +27,7 @@ public class PuzzleListButton : UIMonoBehaviour, IPointerClickHandler
 		PuzzleSelectionMenu selectionMenu = MenuManager.Instance.CurrentMenu as PuzzleSelectionMenu;
 		if (selectionMenu)
 		{
-			selectionMenu.Initialise(mPuzzleDimension);
+			selectionMenu.Initialise(mPuzzleSize);
 		}
 	}
 }
