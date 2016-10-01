@@ -36,8 +36,8 @@ public class GridPosition
 			return false;
 		}
 
-		GridPosition pos = (GridPosition)obj;
-		bool areEqual = (X == pos.X) && (Y == pos.Y);
+		GridPosition rhs = (GridPosition)obj;
+		bool areEqual = (X == rhs.X) && (Y == rhs.Y);
 		return areEqual;
 	}
 
