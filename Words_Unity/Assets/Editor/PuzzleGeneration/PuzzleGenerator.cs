@@ -185,9 +185,9 @@ public class PuzzleGenerator : EditorWindow
 
 		// Finished
 		Debug.Log("Word count: " + mWords.Count);
-		mNewPuzzleContents.Finalise(mGrid);
+		bool wasFinalised = mNewPuzzleContents.Finalise(mGrid);
 
-		return true;
+		return wasFinalised;
 	}
 
 	private PuzzleContents InitialiseGeneration()
