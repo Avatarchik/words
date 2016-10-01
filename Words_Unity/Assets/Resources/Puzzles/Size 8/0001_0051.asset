@@ -1,0 +1,615 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 0001_0051
+  m_EditorClassIdentifier: 
+  Width: 8
+  Height: 8
+  WordCount: 52
+  MaxCharacterUsage: 5
+  Words:
+  - Forwards: FRUTEX
+    Backwards: XETURF
+    Length: 6
+    FromPosition:
+      X: 3
+      Y: 7
+    ToPosition:
+      X: 3
+      Y: 2
+  - Forwards: BOOBED
+    Backwards: DEBOOB
+    Length: 6
+    FromPosition:
+      X: 7
+      Y: 7
+    ToPosition:
+      X: 2
+      Y: 2
+  - Forwards: ALVEARY
+    Backwards: YRAEVLA
+    Length: 7
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 6
+      Y: 3
+  - Forwards: MITZVAH
+    Backwards: HAVZTIM
+    Length: 7
+    FromPosition:
+      X: 7
+      Y: 0
+    ToPosition:
+      X: 7
+      Y: 6
+  - Forwards: ITEMIZE
+    Backwards: EZIMETI
+    Length: 7
+    FromPosition:
+      X: 7
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 1
+  - Forwards: DEEDILY
+    Backwards: YLIDEED
+    Length: 7
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 6
+      Y: 0
+  - Forwards: WOBBLE
+    Backwards: ELBBOW
+    Length: 6
+    FromPosition:
+      X: 1
+      Y: 7
+    ToPosition:
+      X: 1
+      Y: 2
+  - Forwards: VIES
+    Backwards: SEIV
+    Length: 4
+    FromPosition:
+      X: 2
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 6
+  - Forwards: LIST
+    Backwards: TSIL
+    Length: 4
+    FromPosition:
+      X: 6
+      Y: 7
+    ToPosition:
+      X: 3
+      Y: 4
+  - Forwards: HUI
+    Backwards: IUH
+    Length: 3
+    FromPosition:
+      X: 4
+      Y: 6
+    ToPosition:
+      X: 2
+      Y: 4
+  - Forwards: GANTS
+    Backwards: STNAG
+    Length: 5
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 0
+      Y: 6
+  - Forwards: ETAS
+    Backwards: SATE
+    Length: 4
+    FromPosition:
+      X: 2
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 2
+  - Forwards: MOYL
+    Backwards: LYOM
+    Length: 4
+    FromPosition:
+      X: 6
+      Y: 5
+    ToPosition:
+      X: 6
+      Y: 2
+  - Forwards: FIE
+    Backwards: EIF
+    Length: 3
+    FromPosition:
+      X: 3
+      Y: 7
+    ToPosition:
+      X: 5
+      Y: 7
+  - Forwards: YOS
+    Backwards: SOY
+    Length: 3
+    FromPosition:
+      X: 6
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 5
+  - Forwards: OWN
+    Backwards: NWO
+    Length: 3
+    FromPosition:
+      X: 0
+      Y: 7
+    ToPosition:
+      X: 2
+      Y: 7
+  - Forwards: ENE
+    Backwards: ENE
+    Length: 3
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 3
+  - Forwards: ROO
+    Backwards: OOR
+    Length: 3
+    FromPosition:
+      X: 5
+      Y: 3
+    ToPosition:
+      X: 5
+      Y: 5
+  - Forwards: LIS
+    Backwards: SIL
+    Length: 3
+    FromPosition:
+      X: 6
+      Y: 7
+    ToPosition:
+      X: 4
+      Y: 5
+  - Forwards: DOG
+    Backwards: GOD
+    Length: 3
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 2
+  - Forwards: ETA
+    Backwards: ATE
+    Length: 3
+    FromPosition:
+      X: 2
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 3
+  - Forwards: YEN
+    Backwards: NEY
+    Length: 3
+    FromPosition:
+      X: 6
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 2
+  - Forwards: SUE
+    Backwards: EUS
+    Length: 3
+    FromPosition:
+      X: 4
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 5
+  - Forwards: VIE
+    Backwards: EIV
+    Length: 3
+    FromPosition:
+      X: 2
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 5
+  - Forwards: RUT
+    Backwards: TUR
+    Length: 3
+    FromPosition:
+      X: 3
+      Y: 6
+    ToPosition:
+      X: 3
+      Y: 4
+  - Forwards: MOY
+    Backwards: YOM
+    Length: 3
+    FromPosition:
+      X: 6
+      Y: 5
+    ToPosition:
+      X: 6
+      Y: 3
+  - Forwards: ZOO
+    Backwards: OOZ
+    Length: 3
+    FromPosition:
+      X: 7
+      Y: 3
+    ToPosition:
+      X: 5
+      Y: 5
+  - Forwards: BEDE
+    Backwards: EDEB
+    Length: 4
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 1
+  - Forwards: MNA
+    Backwards: ANM
+    Length: 3
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 3
+  - Forwards: GAN
+    Backwards: NAG
+    Length: 3
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 0
+      Y: 4
+  - Forwards: NABS
+    Backwards: SBAN
+    Length: 4
+    FromPosition:
+      X: 4
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 5
+  - Forwards: ANTS
+    Backwards: STNA
+    Length: 4
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 0
+      Y: 6
+  - Forwards: AGO
+    Backwards: OGA
+    Length: 3
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 0
+      Y: 1
+  - Forwards: MET
+    Backwards: TEM
+    Length: 3
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 6
+      Y: 1
+  - Forwards: DEED
+    Backwards: DEED
+    Length: 4
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Forwards: LEI
+    Backwards: IEL
+    Length: 3
+    FromPosition:
+      X: 6
+      Y: 7
+    ToPosition:
+      X: 4
+      Y: 7
+  - Forwards: BOO
+    Backwards: OOB
+    Length: 3
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 6
+      Y: 6
+  - Forwards: HOI
+    Backwards: IOH
+    Length: 3
+    FromPosition:
+      X: 7
+      Y: 6
+    ToPosition:
+      X: 5
+      Y: 6
+  - Forwards: HOO
+    Backwards: OOH
+    Length: 3
+    FromPosition:
+      X: 4
+      Y: 6
+    ToPosition:
+      X: 6
+      Y: 4
+  - Forwards: SOS
+    Backwards: SOS
+    Length: 3
+    FromPosition:
+      X: 0
+      Y: 6
+    ToPosition:
+      X: 2
+      Y: 6
+  - Forwards: DEE
+    Backwards: EED
+    Length: 3
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 0
+  - Forwards: ITEM
+    Backwards: METI
+    Length: 4
+    FromPosition:
+      X: 7
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 1
+  - Forwards: SUB
+    Backwards: BUS
+    Length: 3
+    FromPosition:
+      X: 2
+      Y: 6
+    ToPosition:
+      X: 4
+      Y: 4
+  - Forwards: INRO
+    Backwards: ORNI
+    Length: 4
+    FromPosition:
+      X: 3
+      Y: 1
+    ToPosition:
+      X: 6
+      Y: 4
+  - Forwards: EEL
+    Backwards: LEE
+    Length: 3
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 3
+  - Forwards: LID
+    Backwards: DIL
+    Length: 3
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Forwards: MIZ
+    Backwards: ZIM
+    Length: 3
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 1
+  - Forwards: IDE
+    Backwards: EDI
+    Length: 3
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  - Forwards: BLEE
+    Backwards: EELB
+    Length: 4
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 1
+  - Forwards: LEE
+    Backwards: EEL
+    Length: 3
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 1
+  - Forwards: GED
+    Backwards: DEG
+    Length: 3
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 2
+  - Forwards: WOB
+    Backwards: BOW
+    Length: 3
+    FromPosition:
+      X: 1
+      Y: 7
+    ToPosition:
+      X: 1
+      Y: 5
+  CharGrid:
+  - Character: 68
+    NumberOfUses: 3
+  - Character: 79
+    NumberOfUses: 2
+  - Character: 71
+    NumberOfUses: 5
+  - Character: 65
+    NumberOfUses: 5
+  - Character: 78
+    NumberOfUses: 3
+  - Character: 84
+    NumberOfUses: 2
+  - Character: 83
+    NumberOfUses: 3
+  - Character: 79
+    NumberOfUses: 1
+  - Character: 69
+    NumberOfUses: 3
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 76
+    NumberOfUses: 5
+  - Character: 66
+    NumberOfUses: 2
+  - Character: 66
+    NumberOfUses: 2
+  - Character: 79
+    NumberOfUses: 3
+  - Character: 87
+    NumberOfUses: 3
+  - Character: 69
+    NumberOfUses: 4
+  - Character: 90
+    NumberOfUses: 2
+  - Character: 68
+    NumberOfUses: 3
+  - Character: 86
+    NumberOfUses: 3
+  - Character: 73
+    NumberOfUses: 3
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 83
+    NumberOfUses: 3
+  - Character: 78
+    NumberOfUses: 1
+  - Character: 68
+    NumberOfUses: 5
+  - Character: 73
+    NumberOfUses: 3
+  - Character: 88
+    NumberOfUses: 1
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 84
+    NumberOfUses: 5
+  - Character: 85
+    NumberOfUses: 5
+  - Character: 82
+    NumberOfUses: 2
+  - Character: 70
+    NumberOfUses: 2
+  - Character: 73
+    NumberOfUses: 3
+  - Character: 77
+    NumberOfUses: 5
+  - Character: 78
+    NumberOfUses: 5
+  - Character: 65
+    NumberOfUses: 5
+  - Character: 66
+    NumberOfUses: 5
+  - Character: 83
+    NumberOfUses: 5
+  - Character: 72
+    NumberOfUses: 2
+  - Character: 73
+    NumberOfUses: 2
+  - Character: 76
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 83
+    NumberOfUses: 1
+  - Character: 82
+    NumberOfUses: 3
+  - Character: 79
+    NumberOfUses: 2
+  - Character: 79
+    NumberOfUses: 5
+  - Character: 73
+    NumberOfUses: 3
+  - Character: 69
+    NumberOfUses: 2
+  - Character: 89
+    NumberOfUses: 2
+  - Character: 84
+    NumberOfUses: 3
+  - Character: 76
+    NumberOfUses: 1
+  - Character: 89
+    NumberOfUses: 4
+  - Character: 79
+    NumberOfUses: 5
+  - Character: 77
+    NumberOfUses: 2
+  - Character: 79
+    NumberOfUses: 3
+  - Character: 76
+    NumberOfUses: 3
+  - Character: 77
+    NumberOfUses: 1
+  - Character: 73
+    NumberOfUses: 3
+  - Character: 84
+    NumberOfUses: 1
+  - Character: 90
+    NumberOfUses: 2
+  - Character: 86
+    NumberOfUses: 1
+  - Character: 65
+    NumberOfUses: 1
+  - Character: 72
+    NumberOfUses: 2
+  - Character: 66
+    NumberOfUses: 1

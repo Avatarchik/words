@@ -13,15 +13,19 @@ public class PuzzleListUpdater
 			PuzzleManager puzzleManager = puzzleListPrefab.GetComponent<PuzzleManager>();
 			if (puzzleManager)
 			{
-				puzzleManager.ClearList();
+				puzzleManager.InitialiseLists();
 
-				string[] puzzlePaths = Directory.GetFiles(PathHelper.Combine(Application.dataPath, "Resources/Puzzles/"), "*.asset");
-
-				foreach (string path in puzzlePaths)
+				for (int dimension = 4; dimension < 17; ++dimension)
 				{
-					string relativePath = PathHelper.MakeRelativeToAssetsFolder(path);
-					PuzzleContents puzzle = AssetDatabase.LoadAssetAtPath(relativePath, typeof(PuzzleContents)) as PuzzleContents;
-					puzzleManager.RegisterPuzzle(puzzle);
+					string searchDir = PathHelper.Combine(Application.dataPath, string.Format("Resources/Puzzles/Size {0}", dimension));
+					string[] puzzlePaths = Directory.GetFiles(searchDir, "*.asset");
+
+					foreach (string path in puzzlePaths)
+					{
+						string relativePath = PathHelper.MakeRelativeToAssetsFolder(path);
+						PuzzleContents puzzle = AssetDatabase.LoadAssetAtPath(relativePath, typeof(PuzzleContents)) as PuzzleContents;
+						puzzleManager.RegisterPuzzle(puzzle, dimension);
+					}
 				}
 
 				EditorUtility.SetDirty(puzzleListPrefab);

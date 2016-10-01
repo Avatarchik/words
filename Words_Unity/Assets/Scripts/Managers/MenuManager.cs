@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 using System.Collections.Generic;
 
 public enum EMenuType
@@ -9,6 +10,7 @@ public enum EMenuType
 	InGameMenu,
 	PauseMenu,
 	PuzzleCompleteMenu,
+	PuzzleSelectionMenu,
 
 	Count,
 }
@@ -25,6 +27,7 @@ public class MenuManager : MonoBehaviour
 
 	private bool mIsFading;
 	private EMenuType mNextMenuType;
+	private Action mOnMenuSwitchedCallback;
 
 	void Awake()
 	{
@@ -42,7 +45,7 @@ public class MenuManager : MonoBehaviour
 		mNextMenuType = EMenuType.Invalid;
 	}
 
-	public void SwitchMenu(EMenuType nextMenuType)
+	public void SwitchMenu(EMenuType nextMenuType, Action onMenuSwitchedCallback = null)
 	{
 		if (mIsFading)
 		{
@@ -51,6 +54,7 @@ public class MenuManager : MonoBehaviour
 
 		mIsFading = true;
 		mNextMenuType = nextMenuType;
+		mOnMenuSwitchedCallback = onMenuSwitchedCallback;
 		ScreenFaderRef.BeginFade(OnFadeOutFinished);
 	}
 
@@ -65,6 +69,12 @@ public class MenuManager : MonoBehaviour
 			{
 				CurrentMenu = menu;
 				CurrentMenu.Open();
+
+				if (mOnMenuSwitchedCallback != null)
+				{
+					mOnMenuSwitchedCallback();
+				}
+
 				break;
 			}
 		}

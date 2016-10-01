@@ -1,0 +1,204 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 0000_0015
+  m_EditorClassIdentifier: 
+  Width: 5
+  Height: 5
+  WordCount: 15
+  MaxCharacterUsage: 5
+  Words:
+  - Forwards: SUED
+    Backwards: DEUS
+    Length: 4
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 3
+  - Forwards: BEAD
+    Backwards: DAEB
+    Length: 4
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 1
+  - Forwards: LOR
+    Backwards: ROL
+    Length: 3
+    FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 2
+  - Forwards: LEP
+    Backwards: PEL
+    Length: 3
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 2
+  - Forwards: SAY
+    Backwards: YAS
+    Length: 3
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 0
+      Y: 1
+  - Forwards: FUSS
+    Backwards: SSUF
+    Length: 4
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Forwards: YIP
+    Backwards: PIY
+    Length: 3
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 2
+  - Forwards: RUD
+    Backwards: DUR
+    Length: 3
+    FromPosition:
+      X: 3
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 1
+  - Forwards: DEER
+    Backwards: REED
+    Length: 4
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 1
+  - Forwards: PRE
+    Backwards: ERP
+    Length: 3
+    FromPosition:
+      X: 4
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 2
+  - Forwards: BEL
+    Backwards: LEB
+    Length: 3
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 4
+  - Forwards: DEE
+    Backwards: EED
+    Length: 3
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 2
+  - Forwards: ODE
+    Backwards: EDO
+    Length: 3
+    FromPosition:
+      X: 3
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 3
+  - Forwards: DAE
+    Backwards: EAD
+    Length: 3
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 3
+  - Forwards: SUE
+    Backwards: EUS
+    Length: 3
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 2
+  CharGrid:
+  - Character: 70
+    NumberOfUses: 1
+  - Character: 89
+    NumberOfUses: 1
+  - Character: 65
+    NumberOfUses: 1
+  - Character: 83
+    NumberOfUses: 1
+  - Character: 68
+    NumberOfUses: 2
+  - Character: 85
+    NumberOfUses: 1
+  - Character: 68
+    NumberOfUses: 3
+  - Character: 65
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 66
+    NumberOfUses: 2
+  - Character: 83
+    NumberOfUses: 3
+  - Character: 85
+    NumberOfUses: 3
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 68
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 1
+  - Character: 83
+    NumberOfUses: 1
+  - Character: 82
+    NumberOfUses: 2
+  - Character: 82
+    NumberOfUses: 2
+  - Character: 79
+    NumberOfUses: 2
+  - Character: 76
+    NumberOfUses: 2
+  - Character: 76
+    NumberOfUses: 1
+  - Character: 69
+    NumberOfUses: 1
+  - Character: 80
+    NumberOfUses: 3
+  - Character: 73
+    NumberOfUses: 1
+  - Character: 89
+    NumberOfUses: 1

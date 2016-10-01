@@ -3,29 +3,29 @@ using System.Collections.Generic;
 
 public class MainMenu : Menu, IMenu
 {
-	public GameObject PuzzleLoadButtonPrefab;
+	public GameObject PuzzleListButtonPrefab;
 	public GameObject ColourSchemeButtonPrefab;
 
 	public PuzzleManager PuzzleManagerRef;
 	public ColourSchemeManager ColourSchemeManagerRef;
 
-	public RectTransform LevelsRoot;
+	public RectTransform PuzzleListsRoot;
 	public RectTransform ColourSchemesRoot;
 
-	private List<RectTransform> mLevels;
+	private List<RectTransform> mPuzzleLists;
 	private List<RectTransform> mColourSchemes;
 
 	public void OnEnable()
 	{
-		SetupLevels();
+		SetupPuzzleLists();
 		SetupColourSchemes();
 	}
 
 	public void OnDisable()
 	{
-		for (int levelIndex = 0; levelIndex < mLevels.Count; ++levelIndex)
+		for (int listIndex = 0; listIndex < mPuzzleLists.Count; ++listIndex)
 		{
-			Destroy(mLevels[levelIndex].gameObject);
+			Destroy(mPuzzleLists[listIndex].gameObject);
 		}
 
 		for (int colourSchemeIndex = 0; colourSchemeIndex < mColourSchemes.Count; ++colourSchemeIndex)
@@ -34,30 +34,29 @@ public class MainMenu : Menu, IMenu
 		}
 	}
 
-	private void SetupLevels()
+	private void SetupPuzzleLists()
 	{
-		int puzzleCount = PuzzleManagerRef.Puzzles.Count;
-		mLevels = new List<RectTransform>(puzzleCount);
+		int puzzleListsCount = PuzzleManagerRef.PuzzleLists.Count;
+		mPuzzleLists = new List<RectTransform>(puzzleListsCount);
 
 		int columnIndex = 0;
 		int rowIndex = 0;
-		for (int puzzleIndex = 1; puzzleIndex <= puzzleCount; ++puzzleIndex)
+		for (int listIndex = 1; listIndex <= puzzleListsCount; ++listIndex)
 		{
-			columnIndex = (puzzleIndex - 1) / 7; // TODO - fix the literal
-			rowIndex = ((puzzleIndex - 1) % 7) + 1; // TODO - fix the literal
+			columnIndex = (listIndex - 1) / 5; // TODO - fix the literal
+			rowIndex = ((listIndex - 1) % 5) + 1; // TODO - fix the literal
 
-			GameObject newButtonGO = Instantiate(PuzzleLoadButtonPrefab, Vector3.zero, Quaternion.identity, transform) as GameObject;
-			newButtonGO.transform.SetParent(LevelsRoot);
+			GameObject newButtonGO = Instantiate(PuzzleListButtonPrefab, Vector3.zero, Quaternion.identity, transform) as GameObject;
+			newButtonGO.transform.SetParent(PuzzleListsRoot);
 #if UNITY_EDITOR
-			newButtonGO.name = "Puzzle #" + puzzleIndex;
+			newButtonGO.name = "Puzzle List #" + listIndex;
 #endif // UNITY_EDITOR
 
-			PuzzleLoadButton puzzleLoadButton = newButtonGO.GetComponent<PuzzleLoadButton>();
-			puzzleLoadButton.rectTransform.localPosition = new Vector3(116 * columnIndex, -32 * rowIndex, 0); // TODO - fix the literals
+			PuzzleListButton puzzleListButton = newButtonGO.GetComponent<PuzzleListButton>();
+			puzzleListButton.rectTransform.localPosition = new Vector3(116 * columnIndex, -32 * rowIndex, 0); // TODO - fix the literals
+			puzzleListButton.Initialise(listIndex + 3); // TODO - fix the literal
 
-			puzzleLoadButton.Initialise(PuzzleManagerRef, puzzleIndex);
-
-			mLevels.Add(puzzleLoadButton.rectTransform);
+			mPuzzleLists.Add(puzzleListButton.rectTransform);
 		}
 	}
 

@@ -1,33 +1,20 @@
 using UnityEngine;
 using UnityEditor;
 using System.Collections.Generic;
+using System.IO;
 
 public class PuzzleGenerator : EditorWindow
 {
 	private const string kProgressBarTitle = "Puzzle Generation";
 	private const int kWordListProgressBarStep = 1000;
 
-	private int kWidthMin = 4;
-	private int kWidthMax = 16;
-	private int kHeightMin = 4;
-	private int kHeightMax = 16;
-	private int kWordListPassesMin = 1;
-	private int kWordListPassesMax = 3;
-	private int kWordLimitMin = 1;
-	private int kWordLimitMax = 1024;
-	private int kMaxTileUsageMin = 1;
-	private int kMaxTileUsageMax = 17;
+	private int mWidth = 7;
+	private int mHeight = 7;
+	private int mWordListPasses = 1;
+	private int mWordLimit = 100;
+	private int mMaxTileUsage = 5;
 
-	[Range(4, 16)]
-	public int Width = 7;
-	[Range(4, 16)]
-	public int Height = 7;
-	[Range(1, 3)]
-	public int WordListPasses = 1;
-	[Range(1, 1024)]
-	public int WordLimit = 100;
-	[Range(1, 17)]
-	public int MaxTileUsage = 5;
+	private int mTestLevelsPerSize = 5;
 
 	private char INVALID_CHAR = ' ';
 	private GridEntry[,] mGrid;
@@ -49,6 +36,7 @@ public class PuzzleGenerator : EditorWindow
 	private int mMaxDimension;
 
 	private PuzzleContents mNewPuzzleContents;
+	private string mContentsPath;
 
 	[MenuItem("Words/Puzzle/Open Generator")]
 	static public void ShowWindow()
@@ -60,18 +48,30 @@ public class PuzzleGenerator : EditorWindow
 	void OnGUI()
 	{
 		GUILayout.Label("Settings", EditorStyles.boldLabel);
-		GUILayout.Space(8);
 
-		Width = EditorGUILayout.IntSlider("Width", Width, kWidthMin, kWidthMax);
-		Height = EditorGUILayout.IntSlider("Height", Height, kHeightMin, kHeightMax);
-		WordListPasses = EditorGUILayout.IntSlider("Word List Passes", WordListPasses, kWordListPassesMin, kWordListPassesMax);
-		WordLimit = EditorGUILayout.IntSlider("WordLimit", WordLimit, kWordLimitMin, kWordLimitMax);
-		MaxTileUsage = EditorGUILayout.IntSlider("MaxTileUsage", MaxTileUsage, kMaxTileUsageMin, kMaxTileUsageMax);
+		GUILayout.Space(8);
+		mWidth = EditorGUILayout.IntSlider("Width", mWidth, 4, 16);
+		mHeight = EditorGUILayout.IntSlider("Height", mHeight, 4, 16);
+		mWordListPasses = EditorGUILayout.IntSlider("Word List Passes", mWordListPasses, 1, 3);
+		mWordLimit = EditorGUILayout.IntSlider("Word Limit", mWordLimit, 1, 1024);
+		mMaxTileUsage = EditorGUILayout.IntSlider("Max Tile Usage", mMaxTileUsage, 1, 17);
 
 		GUILayout.Space(8);
 		if (GUILayout.Button("Generate"))
 		{
 			Generate();
+		}
+
+		GUILayout.Space(8);
+		GUILayout.Label("Test Levels", EditorStyles.boldLabel);
+
+		GUILayout.Space(8);
+		mTestLevelsPerSize = EditorGUILayout.IntSlider("Levels Per Size", mTestLevelsPerSize, 1, 8);
+
+		GUILayout.Space(8);
+		if (GUILayout.Button("Generate Test Puzzles"))
+		{
+			GenerateTestLevels();
 		}
 	}
 
@@ -83,10 +83,10 @@ public class PuzzleGenerator : EditorWindow
 			WordList = wordListsPrefab.GetComponent<Words>();
 		}
 
-		mWords = new List<string>(WordLimit);
-		mWordPlacements = new List<ScoredWordPlacement>(WordLimit);
+		mWords = new List<string>(mWordLimit);
+		mWordPlacements = new List<ScoredWordPlacement>(mWordLimit);
 
-		mScoredPlacements = new List<ScoredWordPlacement>(WordLimit);
+		mScoredPlacements = new List<ScoredWordPlacement>(mWordLimit);
 		mHasPlacedInitialWord = false;
 
 		mPlacedWords = 0;
@@ -94,7 +94,7 @@ public class PuzzleGenerator : EditorWindow
 		mNewPuzzleContents = null;
 	}
 
-	public void Generate()
+	private bool Generate()
 	{
 		float startTime = Time.realtimeSinceStartup;
 
@@ -114,14 +114,40 @@ public class PuzzleGenerator : EditorWindow
 		float endTime = Time.realtimeSinceStartup;
 		float timeTaken = endTime - startTime;
 		Debug.Log(string.Format("Time taken: {0:n2} seconds", timeTaken));
+
+		return wasGenerationSuccessful;
+	}
+
+	private void GenerateTestLevels()
+	{
+		int originalWidth = mWidth;
+		int originalHeight = mHeight;
+
+		for (int i = 4; i < 7; ++i)
+		{
+			for (int j = 0; j < mTestLevelsPerSize; ++j)
+			{
+				mWidth = i;
+				mHeight = i;
+
+				bool wasSuccessful = Generate();
+				if (!wasSuccessful)
+				{
+					--j;
+				}
+			}
+		}
+
+		mWidth = originalWidth;
+		mHeight = originalHeight;
 	}
 
 	private void SetupPositionalLists()
 	{
-		mPotentialPlacements = new List<PotentialWordPlacement>(Width * Height * (int)EWordDirection.Count);
-		for (int x = 0; x < Width; ++x)
+		mPotentialPlacements = new List<PotentialWordPlacement>(mWidth * mHeight * (int)EWordDirection.Count);
+		for (int x = 0; x < mWidth; ++x)
 		{
-			for (int y = 0; y < Height; ++y)
+			for (int y = 0; y < mHeight; ++y)
 			{
 				for (int directionIndex = 0, count = (int)EWordDirection.Count; directionIndex < count; ++directionIndex)
 				{
@@ -146,7 +172,7 @@ public class PuzzleGenerator : EditorWindow
 		mNewPuzzleContents = InitialiseGeneration();
 
 		// Step 2 - Run over the word lists and attempt to places words
-		for (int passIndex = 0; passIndex < WordListPasses; ++passIndex)
+		for (int passIndex = 0; passIndex < mWordListPasses; ++passIndex)
 		{
 			bool wasSuccessful = RunWordListPass(passIndex, out userCancelled);
 			Debug.Log(string.Format("Pass #{0} placed words: {1}", passIndex + 1, mPlacedWords));
@@ -185,7 +211,7 @@ public class PuzzleGenerator : EditorWindow
 
 		// Finished
 		Debug.Log("Word count: " + mWords.Count);
-		bool wasFinalised = mNewPuzzleContents.Finalise(mGrid);
+		bool wasFinalised = FinaliseGeneration();
 
 		return wasFinalised;
 	}
@@ -194,24 +220,24 @@ public class PuzzleGenerator : EditorWindow
 	{
 		ProgressBarHelper.Begin(false, kProgressBarTitle, "Step 1/5: Initialising...");
 
-		string newPath = string.Format("Assets/Resources/Puzzles/New Puzzle_{0}.asset", System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss"));
-		PuzzleContents contents = CreateScriptableObjects.CreateNewPuzzleContents(newPath);
-		contents.Initialise(Width, Height);
+		mContentsPath = string.Format("Assets/Resources/Puzzles/{0}.asset", System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss"));
+		PuzzleContents contents = CreateScriptableObjects.CreateNewPuzzleContents(mContentsPath);
+		contents.Initialise(mWidth, mHeight);
 
-		mGrid = new GridEntry[Width, Height];
-		for (int x = 0; x < Width; ++x)
+		mGrid = new GridEntry[mWidth, mHeight];
+		for (int x = 0; x < mWidth; ++x)
 		{
-			for (int y = 0; y < Height; ++y)
+			for (int y = 0; y < mHeight; ++y)
 			{
 				mGrid[x, y] = new GridEntry(INVALID_CHAR);
 			}
 		}
 
-		mScoredPlacements = new List<ScoredWordPlacement>(Width * Height);
+		mScoredPlacements = new List<ScoredWordPlacement>(mWidth * mHeight);
 		mHasPlacedInitialWord = false;
 
 		mPlacedWords = 0;
-		mMaxDimension = Mathf.Max(Width, Height);
+		mMaxDimension = Mathf.Max(mWidth, mHeight);
 
 		mAllWords = WordList.GetAllWords(mMaxDimension);
 		mAllWordsCount = mAllWords.Length;
@@ -221,17 +247,43 @@ public class PuzzleGenerator : EditorWindow
 		return contents;
 	}
 
+	private bool FinaliseGeneration()
+	{
+		bool wasFinalised = mNewPuzzleContents.Finalise(mGrid);
+
+		string searchDir = PathHelper.Combine(Application.dataPath, string.Format("Resources/Puzzles/Size {0}", mWidth));
+		string[] puzzlePaths = Directory.GetFiles(searchDir, "*.asset");
+
+		int nextID = 0;
+		if (puzzlePaths.Length > 0)
+		{
+			string lastPuzzle = puzzlePaths[puzzlePaths.Length - 1];
+			string[] pathSplit = Path.GetFileName(lastPuzzle).Split('_');
+			nextID = int.Parse(pathSplit[0]);
+			++nextID;
+		}
+
+		string newContentsFileName = string.Format("{0:D4}_{1:D4}", nextID, mPlacedWords);
+		AssetDatabase.RenameAsset(mContentsPath, newContentsFileName);
+
+		string currentPath = AssetDatabase.GetAssetPath(mNewPuzzleContents);
+		string newPath = currentPath.Replace("/Puzzles/", string.Format("/Puzzles/Size {0}/", mWidth));
+		AssetDatabase.MoveAsset(currentPath, newPath);
+
+		return wasFinalised;
+	}
+
 	private bool RunWordListPass(int passIndex, out bool userCancelled)
 	{
 		userCancelled = false;
 
-		if (mPlacedWords >= WordLimit)
+		if (mPlacedWords >= mWordLimit)
 		{
 			return false;
 		}
 
 		string progressBarMessageFormat = "Step 2/5: Pass #{0}/{1}. Placed {2:N0}/{3:N0} ({4:N1}%). Words {5:N0}/{6:N0}";
-		string progressBarMessage = string.Format(progressBarMessageFormat, (passIndex + 1), WordListPasses, 0, 0, 0, 0, 0);
+		string progressBarMessage = string.Format(progressBarMessageFormat, (passIndex + 1), mWordListPasses, 0, 0, 0, 0, 0);
 		ProgressBarHelper.Begin(true, kProgressBarTitle, progressBarMessage, 1f / mAllWordsCount);
 
 		int wordsPlacedThisPass = 0;
@@ -244,8 +296,8 @@ public class PuzzleGenerator : EditorWindow
 			if ((wordIndex % kWordListProgressBarStep) == 0)
 			{
 				progressBarMessage = string.Format(progressBarMessageFormat,
-					(passIndex + 1), WordListPasses,
-					mPlacedWords, WordLimit, ((float)mPlacedWords / WordLimit) * 100,
+					(passIndex + 1), mWordListPasses,
+					mPlacedWords, mWordLimit, ((float)mPlacedWords / mWordLimit) * 100,
 					wordIndex, mAllWordsCount);
 				bool isStillRunning = ProgressBarHelper.Update(kWordListProgressBarStep, progressBarMessage);
 				if (!isStillRunning)
@@ -301,7 +353,7 @@ public class PuzzleGenerator : EditorWindow
 
 				++mPlacedWords;
 				++wordsPlacedThisPass;
-				if (mPlacedWords >= WordLimit)
+				if (mPlacedWords >= mWordLimit)
 				{
 					break;
 				}
@@ -320,9 +372,9 @@ public class PuzzleGenerator : EditorWindow
 		bool foundGap = false;
 
 		// Did any tiles get missed?
-		for (int x = 0; x < Width; ++x)
+		for (int x = 0; x < mWidth; ++x)
 		{
-			for (int y = 0; y < Height; ++y)
+			for (int y = 0; y < mHeight; ++y)
 			{
 				if (mGrid[x, y].Character == INVALID_CHAR)
 				{
@@ -475,7 +527,7 @@ public class PuzzleGenerator : EditorWindow
 
 					++naturallyPlacedWordsFound;
 
-					if (mWords.Count >= WordLimit)
+					if (mWords.Count >= mWordLimit)
 					{
 						break;
 					}
@@ -551,7 +603,7 @@ public class PuzzleGenerator : EditorWindow
 			{
 				character = word[characterIndex];
 				gridCharacter = mGrid[x, y].Character;
-				if ((gridCharacter != INVALID_CHAR && character != gridCharacter) || mGrid[x, y].NumberOfUses >= MaxTileUsage)
+				if ((gridCharacter != INVALID_CHAR && character != gridCharacter) || mGrid[x, y].NumberOfUses >= mMaxTileUsage)
 				{
 					isPlacementValid = false;
 					break;
@@ -578,7 +630,7 @@ public class PuzzleGenerator : EditorWindow
 	{
 		x = x + (xModifier * wordLength);
 		y = y + (yModifier * wordLength);
-		return GridHelper.IsGridPositionValid(x, y, Width, Height);
+		return GridHelper.IsGridPositionValid(x, y, mWidth, mHeight);
 	}
 
 	private void PlaceWord(string word, int x, int y, EWordDirection wordDirection, out GridPosition toPosition)
