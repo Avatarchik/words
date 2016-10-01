@@ -30,12 +30,13 @@ public class PuzzleSelectionMenu : Menu, IMenu
 		int puzzleCount = PuzzleManagerRef.PuzzleLists[puzzleSize].Puzzles.Count;
 		mPuzzles = new List<RectTransform>(puzzleCount);
 
+		const int puzzlesPerColumn = 7;
 		int columnIndex = 0;
 		int rowIndex = 0;
 		for (int puzzleIndex = 1; puzzleIndex <= puzzleCount; ++puzzleIndex)
 		{
-			columnIndex = (puzzleIndex - 1) / 7; // TODO - fix the literal
-			rowIndex = ((puzzleIndex - 1) % 7) + 1; // TODO - fix the literal
+			columnIndex = (puzzleIndex - 1) / puzzlesPerColumn;
+			rowIndex = ((puzzleIndex - 1) % puzzlesPerColumn) + 1;
 
 			GameObject newButtonGO = Instantiate(PuzzleLoadButtonPrefab, Vector3.zero, Quaternion.identity, transform) as GameObject;
 			newButtonGO.transform.SetParent(PuzzlesRoot);
@@ -44,7 +45,7 @@ public class PuzzleSelectionMenu : Menu, IMenu
 #endif // UNITY_EDITOR
 
 			PuzzleLoadButton puzzleLoadButton = newButtonGO.GetComponent<PuzzleLoadButton>();
-			puzzleLoadButton.rectTransform.localPosition = new Vector3(116 * columnIndex, -32 * rowIndex, 0); // TODO - fix the literals
+			puzzleLoadButton.rectTransform.localPosition = new Vector3(116 * columnIndex, -GlobalSettings.TileSizeWithSpacing * rowIndex, 0); // TODO - fix the literals
 
 			puzzleLoadButton.Initialise(PuzzleManagerRef, puzzleSize, puzzleIndex);
 

@@ -119,7 +119,7 @@ public class PuzzleGenerator : EditorWindow
 	{
 		int originalSize = mSize;
 
-		for (int i = 4; i < 17; ++i) // TODO - fix the literals
+		for (int i = GlobalSettings.PuzzleSizeMin; i < GlobalSettings.PuzzleSizeMaxPlusOne; ++i)
 		{
 			for (int j = 0; j < mTestLevelsPerSize; ++j)
 			{

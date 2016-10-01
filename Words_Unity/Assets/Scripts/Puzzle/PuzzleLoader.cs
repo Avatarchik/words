@@ -32,8 +32,8 @@ public class PuzzleLoader : UIMonoBehaviour
 
 		mSize = contentsToLoad.Size;
 
-		Vector3 gridSize = new Vector3(0, (mSize * 24) + ((mSize - 1) * 8), 0); // TODO - fix the literals
-		Vector3 halfGridSize = (gridSize * 0.5f) - new Vector3(12, 12, 0); // TODO - fix the literals
+		Vector3 gridSize = new Vector3(0, (mSize * GlobalSettings.TileSize) + ((mSize - 1) * GlobalSettings.TileSpacing), 0);
+		Vector3 halfGridSize = (gridSize * 0.5f) - new Vector3(GlobalSettings.TileSizeHalf, GlobalSettings.TileSizeHalf, 0);
 
 		mCharacterTilesGrid = new CharacterTile[mSize, mSize];
 
@@ -44,7 +44,7 @@ public class PuzzleLoader : UIMonoBehaviour
 				GameObject newTileGO = Instantiate(CharacterTilePrefab, Vector3.zero, Quaternion.identity, transform) as GameObject;
 
 				CharacterTile characterTile = newTileGO.GetComponent<CharacterTile>();
-				characterTile.transform.localPosition = new Vector3(x * 32, y * 32, 0) - halfGridSize; // TODO - fix the literals
+				characterTile.transform.localPosition = new Vector3(x * GlobalSettings.TileSizeWithSpacing, y * GlobalSettings.TileSizeWithSpacing, 0) - halfGridSize;
 
 				CharacterUsage charUsage = contentsToLoad.CharGrid[(x * mSize) + y];
 				characterTile.Initialise(this, charUsage, new GridPosition(x, y));
@@ -54,7 +54,7 @@ public class PuzzleLoader : UIMonoBehaviour
 		}
 
 		// Scale accordingly
-		rectTransform.localScale = new Vector3(16f / mSize, 16f / mSize, 1); // TODO - fix the literals
+		rectTransform.localScale = new Vector3((float)GlobalSettings.PuzzleSizeMax / mSize, (float)GlobalSettings.PuzzleSizeMax / mSize, 1);
 
 		WordPanelRef.gameObject.SetActive(true);
 		WordPanelRef.Initialise(contentsToLoad.Words);

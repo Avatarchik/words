@@ -39,12 +39,13 @@ public class MainMenu : Menu, IMenu
 		int puzzleListsCount = PuzzleManagerRef.PuzzleLists.Count;
 		mPuzzleLists = new List<RectTransform>(puzzleListsCount);
 
+		const int puzzlesPerColumn = 5;
 		int columnIndex = 0;
 		int rowIndex = 0;
 		for (int listIndex = 1; listIndex <= puzzleListsCount; ++listIndex)
 		{
-			columnIndex = (listIndex - 1) / 5; // TODO - fix the literal
-			rowIndex = ((listIndex - 1) % 5) + 1; // TODO - fix the literal
+			columnIndex = (listIndex - 1) / puzzlesPerColumn;
+			rowIndex = ((listIndex - 1) % puzzlesPerColumn) + 1;
 
 			GameObject newButtonGO = Instantiate(PuzzleListButtonPrefab, Vector3.zero, Quaternion.identity, transform) as GameObject;
 			newButtonGO.transform.SetParent(PuzzleListsRoot);
@@ -53,7 +54,7 @@ public class MainMenu : Menu, IMenu
 #endif // UNITY_EDITOR
 
 			PuzzleListButton puzzleListButton = newButtonGO.GetComponent<PuzzleListButton>();
-			puzzleListButton.rectTransform.localPosition = new Vector3(116 * columnIndex, -32 * rowIndex, 0); // TODO - fix the literals
+			puzzleListButton.rectTransform.localPosition = new Vector3(116 * columnIndex, -GlobalSettings.TileSizeWithSpacing * rowIndex, 0); // TODO - fix the literals
 			puzzleListButton.Initialise(listIndex + 3); // TODO - fix the literal
 
 			mPuzzleLists.Add(puzzleListButton.rectTransform);
@@ -71,7 +72,7 @@ public class MainMenu : Menu, IMenu
 			newButtonGO.transform.SetParent(ColourSchemesRoot);
 
 			ColourSchemeSwitchButton schemeSwitchButton = newButtonGO.GetComponent<ColourSchemeSwitchButton>();
-			schemeSwitchButton.rectTransform.localPosition = new Vector3(0, 32 * schemeIndex, 0); // TODO - fix the literal
+			schemeSwitchButton.rectTransform.localPosition = new Vector3(0, GlobalSettings.TileSizeWithSpacing * schemeIndex, 0);
 
 			schemeSwitchButton.Initialise(ColourSchemeManagerRef, schemeIndex);
 

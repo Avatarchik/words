@@ -56,7 +56,7 @@ public class PuzzleManager : MonoBehaviour
 
 	public int GetListIndex(int puzzleSize)
 	{
-		return puzzleSize - 4; // TODO - fix the literal
+		return puzzleSize - GlobalSettings.PuzzleSizeMin;
 	}
 
 	private PuzzleList GetListForPuzzleSize(int puzzleSize)
@@ -83,9 +83,8 @@ public class PuzzleManager : MonoBehaviour
 #if UNITY_EDITOR
 	public void InitialiseLists()
 	{
-		PuzzleLists = new List<PuzzleList>(13); // TODO - fix the literal
-
-		for (int i = 0; i < 13; ++i) // TODO - fix the literal
+		PuzzleLists = new List<PuzzleList>(GlobalSettings.PuzzleSizeDifference);
+		for (int listIndex = 0; listIndex < GlobalSettings.PuzzleSizeDifference; ++listIndex)
 		{
 			PuzzleLists.Add(new PuzzleList());
 		}

@@ -33,7 +33,6 @@ public class PuzzleContents : ScriptableObject
 
 	public bool Finalise(GridEntry[,] generatedGrid)
 	{
-		// TODO fix
 		Array.Resize(ref Words, WordCount);
 
 		SetCharacterUsage(generatedGrid);
@@ -66,7 +65,6 @@ public class PuzzleContents : ScriptableObject
 				entry = generatedGrid[x, y];
 				usage = CharGrid[charCount];
 
-				// TODO - fix
 				usage.Character = entry.Character;
 				usage.NumberOfUses = entry.NumberOfUses;
 
