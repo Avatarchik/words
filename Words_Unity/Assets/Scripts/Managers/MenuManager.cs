@@ -15,10 +15,8 @@ public enum EMenuType
 	Count,
 }
 
-public class MenuManager : MonoBehaviour
+public class MenuManager : SingletonMonoBehaviour<MenuManager>
 {
-	static public MenuManager Instance { get; private set; }
-
 	public ScreenFade ScreenFaderRef;
 
 	public List<Menu> Menus = new List<Menu>();
@@ -31,12 +29,10 @@ public class MenuManager : MonoBehaviour
 
 	void Awake()
 	{
-		if (Instance != null)
+		foreach (Menu menu in Menus)
 		{
-			Destroy(gameObject);
-			return;
+			menu.gameObject.SetActive(false);
 		}
-		Instance = this;
 
 		CurrentMenu = Menus.FirstItem();
 		CurrentMenu.Open();

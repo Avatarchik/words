@@ -1,10 +1,8 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-public class WordHighlighter : MonoBehaviour
+public class WordHighlighter : SingletonMonoBehaviour<WordHighlighter>
 {
-	static public WordHighlighter Instance { get; private set; }
-
 	public PuzzleLoader PuzzleLoaderRef;
 	public WordPanel WordPanelRef;
 	public EffectsManager EffectsManagerRef;
@@ -13,16 +11,6 @@ public class WordHighlighter : MonoBehaviour
 	private GameObject mTo;
 
 	private List<CharacterTile> mHighlightedTiles = new List<CharacterTile>();
-
-	void Awake()
-	{
-		if (Instance != null)
-		{
-			Destroy(gameObject);
-			return;
-		}
-		Instance = this;
-	}
 
 	public GameObject GetFrom()
 	{

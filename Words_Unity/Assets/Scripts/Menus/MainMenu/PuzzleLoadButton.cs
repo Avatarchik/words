@@ -28,7 +28,16 @@ public class PuzzleLoadButton : UIMonoBehaviour, IPointerClickHandler
 		if (eventData.button == PointerEventData.InputButton.Left)
 		{
 			mPuzzleManagerRef.OpenPuzzle(mPuzzleSize, mPuzzleIndex);
-			MenuManager.Instance.SwitchMenu(EMenuType.InGameMenu);
+
+			TimeManager.Instance.Reset();
+			ScoreManager.Instance.Reset();
+
+			MenuManager.Instance.SwitchMenu(EMenuType.InGameMenu, OnMenuSwitched);
 		}
+	}
+
+	private void OnMenuSwitched()
+	{
+		TimeManager.Instance.Start();
 	}
 }
