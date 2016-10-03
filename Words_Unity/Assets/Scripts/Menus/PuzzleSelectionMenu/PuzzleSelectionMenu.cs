@@ -27,7 +27,7 @@ public class PuzzleSelectionMenu : Menu, IMenu
 
 	public void Initialise(int puzzleSize)
 	{
-		int puzzleCount = PuzzleManagerRef.PuzzleLists[puzzleSize].Puzzles.Count;
+		int puzzleCount = PuzzleManagerRef.PuzzleLists[puzzleSize - GlobalSettings.PuzzleSizeMin].Puzzles.Count;
 		mPuzzles = new List<RectTransform>(puzzleCount);
 
 		const int puzzlesPerColumn = 7;
