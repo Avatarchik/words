@@ -87,6 +87,9 @@ public class WordHighlighter : SingletonMonoBehaviour<WordHighlighter>
 			}
 		}
 
+		// Add score
+		ScoreManager.Instance.AddScore(mHighlightedTiles.Count * 10);
+
 		SetFrom(null);
 		SetTo(null);
 	}
