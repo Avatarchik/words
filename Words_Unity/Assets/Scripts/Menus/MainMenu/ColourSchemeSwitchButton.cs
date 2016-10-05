@@ -55,6 +55,15 @@ public class ColourSchemeSwitchButton : UIMonoBehaviour, IPointerClickHandler
 		ColourExamplesRoot.transform.SetParent(transform.parent);
 	}
 
+	void OnDestroy()
+	{
+		if (ColourExamplesRoot != null)
+		{
+			Destroy(ColourExamplesRoot.gameObject);
+			ColourExamplesRoot = null;
+		}
+	}
+
 	public void OnPointerClick(PointerEventData eventData)
 	{
 		if (eventData.button == PointerEventData.InputButton.Left)
