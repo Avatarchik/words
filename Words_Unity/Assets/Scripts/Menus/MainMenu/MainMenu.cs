@@ -71,14 +71,14 @@ public class MainMenu : Menu, IMenu
 			GameObject newButtonGO = Instantiate(ColourSchemeButtonPrefab, Vector3.zero, Quaternion.identity, transform) as GameObject;
 			newButtonGO.transform.SetParent(ColourSchemesRoot);
 
+#if UNITY_EDITOR
+			newButtonGO.name = string.Format("Scheme #{0} - {1}", schemeIndex, ColourSchemeManagerRef.Schemes[schemeIndex - 1].Name);
+#endif // UNITY_EDITOR
+
 			ColourSchemeSwitchButton schemeSwitchButton = newButtonGO.GetComponent<ColourSchemeSwitchButton>();
 			schemeSwitchButton.rectTransform.localPosition = new Vector3(0, GlobalSettings.TileSizeWithSpacing * schemeIndex, 0);
 
 			schemeSwitchButton.Initialise(ColourSchemeManagerRef, schemeIndex);
-
-#if UNITY_EDITOR
-			newButtonGO.name = string.Format("Scheme #{0} - {1}", schemeIndex, ColourSchemeManagerRef.Schemes[schemeIndex - 1].Name);
-#endif // UNITY_EDITOR
 
 			mColourSchemes.Add(schemeSwitchButton.rectTransform);
 		}

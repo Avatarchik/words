@@ -10,6 +10,7 @@ public class ColourSchemeSwitchButton : UIMonoBehaviour, IPointerClickHandler
 	public Color NonSelectedColour;
 	public Color SelectedColour;
 
+	public RectTransform ColourExamplesRoot;
 	public Image[] ColourExamples;
 
 	private ColourSchemeManager mColourSchemeManagerRef;
@@ -47,6 +48,11 @@ public class ColourSchemeSwitchButton : UIMonoBehaviour, IPointerClickHandler
 
 			ColourExamples[exampleIndex].color = ColorHelper.Blend(scheme.High, scheme.Low, t);
 		}
+
+#if UNITY_EDITOR
+		ColourExamplesRoot.name = string.Format("{0} (examples)", name);
+#endif // UNITY_EDITOR
+		ColourExamplesRoot.transform.SetParent(transform.parent);
 	}
 
 	public void OnPointerClick(PointerEventData eventData)
