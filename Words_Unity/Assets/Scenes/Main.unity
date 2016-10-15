@@ -160,6 +160,7 @@ GameObject:
   - 114: {fileID: 7360709}
   - 114: {fileID: 7360708}
   - 114: {fileID: 7360707}
+  - 114: {fileID: 7360711}
   m_Layer: 5
   m_Name: ResetButton
   m_TagString: Untagged
@@ -272,6 +273,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 7360705}
+--- !u!114 &7360711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 7360705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32c0e489b9a7f2a4b8805d9acf0e8fa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonColour: {r: 1, g: 0.5686275, b: 0.02745098, a: 1}
 --- !u!1 &18783588
 GameObject:
   m_ObjectHideFlags: 0
@@ -1179,6 +1192,7 @@ GameObject:
   - 114: {fileID: 454282201}
   - 114: {fileID: 454282200}
   - 114: {fileID: 454282199}
+  - 114: {fileID: 454282203}
   m_Layer: 5
   m_Name: ExitButton
   m_TagString: Untagged
@@ -1291,6 +1305,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 454282197}
+--- !u!114 &454282203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 454282197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32c0e489b9a7f2a4b8805d9acf0e8fa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonColour: {r: 1, g: 0.5686275, b: 0.02745098, a: 1}
 --- !u!1 &519188320
 GameObject:
   m_ObjectHideFlags: 0
@@ -2222,6 +2248,7 @@ GameObject:
   - 114: {fileID: 895746193}
   - 114: {fileID: 895746192}
   - 114: {fileID: 895746191}
+  - 114: {fileID: 895746195}
   m_Layer: 5
   m_Name: ResumeButton
   m_TagString: Untagged
@@ -2333,6 +2360,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 895746189}
+--- !u!114 &895746195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 895746189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32c0e489b9a7f2a4b8805d9acf0e8fa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonColour: {r: 1, g: 0.5686275, b: 0.02745098, a: 1}
 --- !u!1 &920029236
 GameObject:
   m_ObjectHideFlags: 0
@@ -3821,6 +3860,7 @@ GameObject:
   - 114: {fileID: 1836929020}
   - 114: {fileID: 1836929019}
   - 114: {fileID: 1836929018}
+  - 114: {fileID: 1836929022}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -3933,6 +3973,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1836929016}
+--- !u!114 &1836929022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1836929016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32c0e489b9a7f2a4b8805d9acf0e8fa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonColour: {r: 1, g: 0.5686275, b: 0.02745098, a: 1}
 --- !u!1 &1874475351
 GameObject:
   m_ObjectHideFlags: 0
