@@ -29,7 +29,7 @@ public class WordPanelGroup : UIMonoBehaviour
 		mWordEntries = new WordPanelEntry[halfCount * 2];
 
 		rectTransform.localPosition = startPosition;
-		Vector3 position = new Vector3(0, -14, 0); // TODO - fix the literals
+		Vector3 position = new Vector3(0, -22, 0); // TODO - fix the literals
 
 		int wordIndex = 0;
 		for (int pairIndex = 0; pairIndex < halfCount; ++pairIndex)
