@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-public class WordHighlighter : SingletonMonoBehaviour<WordHighlighter>
+public class Highlighter : SingletonMonoBehaviour<Highlighter>
 {
 	public PuzzleLoader PuzzleLoaderRef;
 	public WordPanel WordPanelRef;

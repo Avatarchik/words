@@ -35,7 +35,7 @@ public class CharacterBackground : MonoBehaviour
 	{
 		if (eventData.button == PointerEventData.InputButton.Left)
 		{
-			WordHighlighter.Instance.SetFrom(transform.parent.gameObject);
+			Highlighter.Instance.SetFrom(transform.parent.gameObject);
 		}
 	}
 
@@ -43,12 +43,12 @@ public class CharacterBackground : MonoBehaviour
 	{
 		if (eventData.button == PointerEventData.InputButton.Left)
 		{
-			if (WordHighlighter.Instance.GetTo() == null)
+			if (Highlighter.Instance.GetTo() == null)
 			{
-				WordHighlighter.Instance.SetTo(WordHighlighter.Instance.GetFrom());
+				Highlighter.Instance.SetTo(Highlighter.Instance.GetFrom());
 			}
 
-			WordHighlighter.Instance.CheckHighlightedValidity();
+			Highlighter.Instance.CheckHighlightedValidity();
 		}
 	}
 
@@ -56,7 +56,7 @@ public class CharacterBackground : MonoBehaviour
 	{
 		if (eventData.button == PointerEventData.InputButton.Left)
 		{
-			WordHighlighter.Instance.SetTo(transform.parent.gameObject);
+			Highlighter.Instance.SetTo(transform.parent.gameObject);
 		}
 	}
 
@@ -64,7 +64,7 @@ public class CharacterBackground : MonoBehaviour
 	{
 		if (eventData.button == PointerEventData.InputButton.Left)
 		{
-			WordHighlighter.Instance.SetTo(WordHighlighter.Instance.GetFrom());
+			Highlighter.Instance.SetTo(Highlighter.Instance.GetFrom());
 		}
 	}
 }
