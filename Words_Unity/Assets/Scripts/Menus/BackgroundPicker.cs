@@ -1,11 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+[ScriptOrder(-50)]
 public class BackgroundPicker : MonoBehaviour
 {
 	public Image ImageRef;
 	public Sprite[] Backgrounds;
-	static private Sprite sChosenBackground;
+	static public Sprite sChosenBackground;
 
 	void Awake()
 	{
@@ -13,8 +14,8 @@ public class BackgroundPicker : MonoBehaviour
 		{
 			int randIndex = Random.Range(0, Backgrounds.Length);
 			sChosenBackground = Backgrounds[randIndex];
-
-			ImageRef.sprite = sChosenBackground;
 		}
+
+		ImageRef.sprite = sChosenBackground;
 	}
 }

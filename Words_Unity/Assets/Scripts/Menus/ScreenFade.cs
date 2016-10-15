@@ -12,6 +12,11 @@ public class ScreenFade : MonoBehaviour
 
 	private bool mIsFading;
 
+	void Awake()
+	{
+		ImageRef.sprite = BackgroundPicker.sChosenBackground;
+	}
+
 	public void BeginFade(Action fadeOutFinishedCallback)
 	{
 		if (mIsFading)
