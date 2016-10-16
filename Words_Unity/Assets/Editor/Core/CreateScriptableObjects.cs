@@ -38,7 +38,13 @@ static public class CreateScriptableObjects
 	// Game specific functions
 
 	[MenuItem("Assets/Create/Scriptable Objects/Puzzle Contents")]
-	static public PuzzleContents CreateNewPuzzleContents(string path = null)
+	static public PuzzleContents CreateNewPuzzleContents()
+	{
+		PuzzleContents newContents = CreateNewScriptableObject<PuzzleContents>("New Puzzle Contents");
+		return newContents;
+	}
+
+	static public PuzzleContents CreateNewPuzzleContents(string path)
 	{
 		PuzzleContents newContents = CreateNewScriptableObject<PuzzleContents>("New Puzzle Contents", path);
 		return newContents;
