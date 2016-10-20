@@ -2,6 +2,13 @@ using UnityEngine;
 using System;
 using System.Collections.Generic;
 
+[Serializable]
+public class Word
+{
+	public string ActualWord = string.Empty;
+	public string Definition = string.Empty;
+}
+
 public class Words : MonoBehaviour
 {
 	[Serializable]
@@ -25,13 +32,13 @@ public class Words : MonoBehaviour
 
 	public int WordCount;
 	public List<WordListPortion> ListPortions;
-	public string[] WordList;
+	public  Word[] WordList;
 
 	public void Initialise()
 	{
 		WordCount = 0;
 		ListPortions = new List<WordListPortion>();
-		WordList = new string[0];
+		WordList = new Word[0];
 	}
 
 	public void SetList(char initialChar, List<string> words)
@@ -44,7 +51,7 @@ public class Words : MonoBehaviour
 
 		int desiredLength = 3;
 		int placedWords = 0;
-		List<string> newWords = new List<string>(additionalWordsCount);
+		List<Word> newWords = new List<Word>(additionalWordsCount);
 		while (placedWords < additionalWordsCount)
 		{
 			newWords.Clear();
@@ -52,10 +59,12 @@ public class Words : MonoBehaviour
 			{
 				if (word.Length == desiredLength)
 				{
-					newWords.Add(word);
+					Word newWord = new Word();
+					newWord.ActualWord = word;
+					newWords.Add(newWord);
 				}
 			}
-			newWords.Sort();
+			newWords.Sort((a, b) => a.ActualWord.Length.CompareTo(b.ActualWord.Length));
 
 			int newWordsCount = newWords.Count;
 			Array.Copy(newWords.ToArray(), 0, WordList, WordCount, newWordsCount);
