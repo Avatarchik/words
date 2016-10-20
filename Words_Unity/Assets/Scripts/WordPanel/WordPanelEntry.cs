@@ -1,7 +1,9 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class WordPanelEntry : MonoBehaviour
+	, IPointerClickHandler
 {
 	public Text TextRef;
 	public RectTransform StrikeThrough;
@@ -11,6 +13,9 @@ public class WordPanelEntry : MonoBehaviour
 	private string mWord;
 	private GridPosition mFromPosition;
 	private GridPosition mToPosition;
+
+	public float DoubleTapInterval = 0.4f;
+	private float mLastTapTime = 0;
 
 	void Awake()
 	{
@@ -53,5 +58,25 @@ public class WordPanelEntry : MonoBehaviour
 
 		StrikeThrough.gameObject.SetActive(true);
 		StrikeThrough.sizeDelta = new Vector2(TextRef.preferredWidth * 1.2f, StrikeThrough.sizeDelta.y);
+	}
+
+	public void OnPointerClick(PointerEventData eventData)
+	{
+		if (eventData.button == PointerEventData.InputButton.Left)
+		{
+			// Double tap logic
+			float timeNow = Time.time;
+			if ((timeNow - mLastTapTime) <= DoubleTapInterval)
+			{
+				ShowWordDefinition();
+			}
+			mLastTapTime = timeNow;
+		}
+	}
+
+	private void ShowWordDefinition()
+	{
+		TimeManager.Instance.Stop();
+		MenuManager.Instance.SwitchMenu(EMenuType.WordDefinitionMenu);
 	}
 }
