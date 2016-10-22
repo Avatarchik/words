@@ -96,9 +96,9 @@ public class Words : MonoBehaviour
 	}
 
 	// TODO - this should all be preprocessed and stored in each puzzle's data
-	public string GetDefinitionFor(string word)
+	public bool GetDefinitionFor(string word, ref string definition)
 	{
-		string definition = null;
+		definition = string.Empty;
 
 		char initialChar = word[0];
 		int wordLength = word.Length;
@@ -120,11 +120,13 @@ public class Words : MonoBehaviour
 			}
 		}
 
+		bool hasFoundDefinition = true;
 		if (string.IsNullOrEmpty(definition))
 		{
 			definition = "We aren't quite sure. Would you like to Google it?";
+			hasFoundDefinition = false;
 		}
 
-		return definition;
+		return hasFoundDefinition;
 	}
 }
