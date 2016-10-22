@@ -1773,7 +1773,7 @@ GameObject:
   - 114: {fileID: 547773233}
   - 114: {fileID: 547773232}
   m_Layer: 5
-  m_Name: ResumeButton
+  m_Name: CloseWordDefinitionButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1818,7 +1818,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 547773230}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d95ab761038bb1d479e8d72300fc38c0, type: 3}
+  m_Script: {fileID: 11500000, guid: d40f0f9a0b45c084db98f237fd6d9ebf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &547773234
@@ -3435,7 +3435,7 @@ Prefab:
     - target: {fileID: 114000011701728224, guid: b4306da0c51d4ec4bbc4b167e1e88c9f,
         type: 2}
       propertyPath: m_Color.a
-      value: 0.7529412
+      value: 0.89411765
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b4306da0c51d4ec4bbc4b167e1e88c9f, type: 2}
