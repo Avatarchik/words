@@ -77,7 +77,7 @@ public class WordPanelEntry : MonoBehaviour
 	private void ShowWordDefinition()
 	{
 		TimeManager.Instance.Stop();
-		MenuManager.Instance.SwitchMenu(EMenuType.WordDefinitionMenu, OnMenuSwitched);
+		MenuManager.Instance.SwitchTemporaryMenu(EMenuType.WordDefinitionMenu, OnMenuSwitched);
 	}
 
 	private void OnMenuSwitched()

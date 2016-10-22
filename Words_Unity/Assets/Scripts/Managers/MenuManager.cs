@@ -23,6 +23,7 @@ public class MenuManager : SingletonMonoBehaviour<MenuManager>
 	public List<Menu> Menus = new List<Menu>();
 
 	public Menu CurrentMenu { get; private set; }
+	public Menu TemporaryMenu { get; private set; }
 
 	private bool mIsFading;
 	private EMenuType mNextMenuType;
@@ -42,7 +43,7 @@ public class MenuManager : SingletonMonoBehaviour<MenuManager>
 		mNextMenuType = EMenuType.Invalid;
 	}
 
-	public void SwitchMenu(EMenuType nextMenuType, Action onMenuSwitchedCallback = null)
+	public void SwitchMenu(EMenuType menuType, Action onMenuSwitchedCallback = null)
 	{
 		if (mIsFading)
 		{
@@ -50,13 +51,53 @@ public class MenuManager : SingletonMonoBehaviour<MenuManager>
 		}
 
 		mIsFading = true;
-		mNextMenuType = nextMenuType;
+		mNextMenuType = menuType;
 		mOnMenuSwitchedCallback = onMenuSwitchedCallback;
 		ScreenFaderRef.BeginFade(OnFadeOutFinished);
 	}
 
+	public void SwitchTemporaryMenu(EMenuType menuType, Action onMenuSwitchedCallback = null)
+	{
+		for (int menuIndex = 0; menuIndex < Menus.Count; ++menuIndex)
+		{
+			Menu menu = Menus[menuIndex];
+			if (menu.MenuType == menuType)
+			{
+				TemporaryMenu = menu;
+				TemporaryMenu.Open();
+
+				if (onMenuSwitchedCallback != null)
+				{
+					onMenuSwitchedCallback();
+				}
+
+				break;
+			}
+		}
+	}
+
+	public void CloseTemporaryMenu(Action onMenuClosedCallback = null)
+	{
+		if (TemporaryMenu)
+		{
+			TemporaryMenu.Close();
+			TemporaryMenu = null;
+
+			if (onMenuClosedCallback != null)
+			{
+				onMenuClosedCallback();
+			}
+		}
+	}
+
 	private void OnFadeOutFinished()
 	{
+		if (TemporaryMenu)
+		{
+			TemporaryMenu.Close();
+			TemporaryMenu = null;
+		}
+
 		CurrentMenu.Close();
 
 		for (int menuIndex = 0; menuIndex < Menus.Count; ++menuIndex)
