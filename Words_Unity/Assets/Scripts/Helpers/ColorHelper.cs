@@ -26,9 +26,13 @@ static public class ColorHelper
 	static public Color Blend(Color from, Color to, float t)
 	{
 		t = MathfHelper.Clamp01(t);
-		float r = (from.r * t) + to.r * (1 - t);
-		float g = (from.g * t) + to.g * (1 - t);
-		float b = (from.b * t) + to.b * (1 - t);
-		return new Color(r, g, b);
+		float oneMinusT = 1 - t;
+
+		float r = (from.r * t) + to.r * oneMinusT;
+		float g = (from.g * t) + to.g * oneMinusT;
+		float b = (from.b * t) + to.b * oneMinusT;
+		float a = (from.a * t) + to.a * oneMinusT;
+
+		return new Color(r, g, b, a);
 	}
 }
