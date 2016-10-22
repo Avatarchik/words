@@ -94,4 +94,37 @@ public class Words : MonoBehaviour
 		Array.Resize(ref foundWords, foundWordsCount);
 		return foundWords;
 	}
+
+	// TODO - this should all be preprocessed and stored in each puzzle's data
+	public string GetDefinitionFor(string word)
+	{
+		string definition = null;
+
+		char initialChar = word[0];
+		int wordLength = word.Length;
+
+		foreach (WordListPortion portion in ListPortions)
+		{
+			if ((portion.InitialChar == initialChar) && (portion.WordLength == wordLength))
+			{
+				for (int wordIndex = portion.StartIndex; wordIndex < portion.EndIndex; ++wordIndex)
+				{
+					if (WordList[wordIndex].ActualWord == word)
+					{
+						definition = WordList[wordIndex].Definition;
+						break;
+					}
+				}
+
+				break;
+			}
+		}
+
+		if (string.IsNullOrEmpty(definition))
+		{
+			definition = "We aren't quite sure. Would you like to Google it?";
+		}
+
+		return definition;
+	}
 }

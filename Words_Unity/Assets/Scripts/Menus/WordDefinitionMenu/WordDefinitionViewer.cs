@@ -6,13 +6,16 @@ public class WordDefinitionViewer : MonoBehaviour
 	public Text TextRef;
 	public string DefinitionFormat;
 
-	public void UpdateDefinitionAsMissing()
+	public Words WordsRef;
+
+	void Awake()
 	{
-		TextRef.text = string.Format(DefinitionFormat, "We aren't quite sure. Would you like to Google it?");
+		DefinitionFormat = DefinitionFormat.Replace("\\n", System.Environment.NewLine);
 	}
 
-	public void UpdateDefinition(string newDefinition)
+	public void ShowDefinitionFor(string word)
 	{
-		TextRef.text = string.Format(DefinitionFormat, newDefinition);
+		string definition = WordsRef.GetDefinitionFor(word);
+		TextRef.text = string.Format(DefinitionFormat, word, definition);
 	}
 }

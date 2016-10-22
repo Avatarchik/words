@@ -77,6 +77,16 @@ public class WordPanelEntry : MonoBehaviour
 	private void ShowWordDefinition()
 	{
 		TimeManager.Instance.Stop();
-		MenuManager.Instance.SwitchMenu(EMenuType.WordDefinitionMenu);
+		MenuManager.Instance.SwitchMenu(EMenuType.WordDefinitionMenu, OnMenuSwitched);
+	}
+
+	private void OnMenuSwitched()
+	{
+		// TODO - this is bad
+		WordDefinitionViewer defViewer = FindObjectOfType<WordDefinitionViewer>();
+		if (defViewer)
+		{
+			defViewer.ShowDefinitionFor(mWord);
+		}
 	}
 }
