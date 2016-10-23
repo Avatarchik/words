@@ -51,11 +51,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e7eea79d2dadb240810a44422b31884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FoundEffectPrefab: {fileID: 198000011337138114, guid: f1c32e2dbf3354c4aa4386264bba4823,
+  PoolSize: 32
+  FoundEffectPrefab: {fileID: 198000010060793306, guid: a83fc88b03b4d6b48b06f043032f1374,
     type: 2}
-  NotFoundEffectPrefab: {fileID: 198000010816424820, guid: 456cd9366eadadc458294b5a0ae94724,
+  NotFoundEffectPrefab: {fileID: 198000014024568354, guid: 4c2b9806f0c038346b73b335e81c5af2,
     type: 2}
-  AlreadyFoundEffectPrefab: {fileID: 198000010351579480, guid: ef69392535fc3b041b64223a7fa8d7e9,
+  AlreadyFoundEffectPrefab: {fileID: 198000014199003330, guid: 06ad1e08552155a4bb8b660c7495a81b,
     type: 2}
-  WrongInstanceEffectPrefab: {fileID: 198000012831865856, guid: 3eb24337a4e9f0849847b8816a804542,
+  WrongInstanceEffectPrefab: {fileID: 198000011241029538, guid: 7c7fc6ead8dcb454b8636c10cbc11d01,
     type: 2}

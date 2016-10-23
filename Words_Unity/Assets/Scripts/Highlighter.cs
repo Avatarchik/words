@@ -67,22 +67,25 @@ public class Highlighter : SingletonMonoBehaviour<Highlighter>
 
 		foreach (CharacterTile tile in mHighlightedTiles)
 		{
+			Vector3 effectPosition = tile.transform.position;
+			effectPosition.z -= 5;
+
 			switch (result)
 			{
 				case EWordValidityResult.WasRemoved:
-					EffectsManagerRef.PlayFoundEffectAt(tile.transform.position);
+					EffectsManagerRef.PlayFoundEffectAt(effectPosition);
 					break;
 
 				case EWordValidityResult.WrongInstance:
-					EffectsManagerRef.PlayWrongInstanceEffectAt(tile.transform.position);
+					EffectsManagerRef.PlayWrongInstanceEffectAt(effectPosition);
 					break;
 
 				case EWordValidityResult.WasAlreadyFound:
-					EffectsManagerRef.PlayAlreadyFoundEffectAt(tile.transform.position);
+					EffectsManagerRef.PlayAlreadyFoundEffectAt(effectPosition);
 					break;
 
 				default:
-					EffectsManagerRef.PlayNotFoundEffectAt(tile.transform.position);
+					EffectsManagerRef.PlayNotFoundEffectAt(effectPosition);
 					break;
 			}
 		}
