@@ -101,7 +101,7 @@ public class PuzzleGenerator : EditorWindow
 		bool wasGenerationSuccessful = GenerateInternal();
 		if (!wasGenerationSuccessful)
 		{
-			Debug.LogWarning("Generation unsuccessful!");
+			ODebug.LogWarning("Generation unsuccessful!");
 
 			string contentsPath = AssetDatabase.GetAssetPath(mNewPuzzleContents);
 			AssetDatabase.DeleteAsset(contentsPath);
@@ -110,7 +110,7 @@ public class PuzzleGenerator : EditorWindow
 
 		float endTime = Time.realtimeSinceStartup;
 		float timeTaken = endTime - startTime;
-		Debug.Log(string.Format("Time taken: {0:n2} seconds", timeTaken));
+		ODebug.Log(string.Format("Time taken: {0:n2} seconds", timeTaken));
 
 		return wasGenerationSuccessful;
 	}
@@ -169,7 +169,7 @@ public class PuzzleGenerator : EditorWindow
 		for (int passIndex = 0; passIndex < mWordListPasses; ++passIndex)
 		{
 			bool wasSuccessful = RunWordListPass(passIndex, out userCancelled);
-			Debug.Log(string.Format("Pass #{0} placed words: {1}", passIndex + 1, mPlacedWords));
+			ODebug.Log(string.Format("Pass #{0} placed words: {1}", passIndex + 1, mPlacedWords));
 
 			if (userCancelled)
 			{
@@ -204,7 +204,7 @@ public class PuzzleGenerator : EditorWindow
 		}
 
 		// Finished
-		Debug.Log("Word count: " + mWords.Count);
+		ODebug.Log("Word count: " + mWords.Count);
 		bool wasFinalised = FinaliseGeneration();
 
 		return wasFinalised;
@@ -439,7 +439,7 @@ public class PuzzleGenerator : EditorWindow
 
 					if (wasWordPlaced)
 					{
-						//Debug.Log(string.Format("Partial word of {0}: {1}", alreadyPlacedWord, word));
+						//ODebug.Log(string.Format("Partial word of {0}: {1}", alreadyPlacedWord, word));
 						mNewPuzzleContents.RegisterWord(word, fromPosition, toPosition);
 
 						mWords.Add(word);
@@ -455,7 +455,7 @@ public class PuzzleGenerator : EditorWindow
 			}
 		}
 
-		Debug.Log("Partial words found: " + partialWordsPlaced);
+		ODebug.Log("Partial words found: " + partialWordsPlaced);
 
 		ProgressBarHelper.End();
 	}
@@ -528,7 +528,7 @@ public class PuzzleGenerator : EditorWindow
 			}
 		}
 
-		Debug.Log("Naturally placed words: " + naturallyPlacedWordsFound);
+		ODebug.Log("Naturally placed words: " + naturallyPlacedWordsFound);
 
 		ProgressBarHelper.End();
 	}

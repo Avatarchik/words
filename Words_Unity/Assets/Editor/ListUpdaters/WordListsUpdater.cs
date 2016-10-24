@@ -62,8 +62,8 @@ public class WordsUpdater
 
 				EditorUtility.SetDirty(wordListsPrefab);
 
-				Debug.Log("Word list updated");
-				Debug.Log(string.Format("Now contains {0:n0} words", wordCount));
+				ODebug.Log("Word list updated");
+				ODebug.Log(string.Format("Now contains {0:n0} words", wordCount));
 			}
 		}
 	}
@@ -120,13 +120,13 @@ public class WordsUpdater
 			Thread.Sleep(1000);
 
 			float checkedPercentage = ((float)sWordsChecked / sWordsToCheck) * 100;
-			Debug.Log(string.Format(progressMessageFormat, sWordsChecked, sWordsToCheck, checkedPercentage));
+			ODebug.Log(string.Format(progressMessageFormat, sWordsChecked, sWordsToCheck, checkedPercentage));
 		}
 
 		sWords = null;
 
 		float foundPercentage = ((float)sWordDefinitionsFound / sWordsToCheck) * 100;
-		Debug.Log(string.Format("Found {0}/{1} definitions ({2:n2}%)", sWordDefinitionsFound, sWordsToCheck, foundPercentage));
+		ODebug.Log(string.Format("Found {0}/{1} definitions ({2:n2}%)", sWordDefinitionsFound, sWordsToCheck, foundPercentage));
 	}
 
 	static private void GetWordDefinitionsForPortion(object data)

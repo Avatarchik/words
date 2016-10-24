@@ -29,7 +29,7 @@ public class PuzzleListUpdater
 				}
 
 				EditorUtility.SetDirty(puzzleListPrefab);
-				Debug.Log("Puzzle list updated");
+				ODebug.Log("Puzzle list updated");
 			}
 		}
 	}

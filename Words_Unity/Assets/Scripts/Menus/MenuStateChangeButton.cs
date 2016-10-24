@@ -11,7 +11,7 @@ public class MenuStateChangeButton : UIMonoBehaviour, IPointerClickHandler
 		{
 			if (TypeToSwitchTo == EMenuType.Invalid)
 			{
-				Debug.Log("Can't switch to an invalid type");
+				ODebug.Log("Can't switch to an invalid type");
 				return;
 			}
 

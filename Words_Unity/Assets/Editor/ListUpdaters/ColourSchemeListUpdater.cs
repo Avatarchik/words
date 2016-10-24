@@ -25,7 +25,7 @@ public class ColourSchemeListUpdater
 				}
 
 				EditorUtility.SetDirty(colourSchemeListPrefab);
-				Debug.Log("Colour scheme list updated");
+				ODebug.Log("Colour scheme list updated");
 			}
 		}
 	}

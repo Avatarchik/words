@@ -60,7 +60,7 @@ public class Highlighter : SingletonMonoBehaviour<Highlighter>
 
 	public void CheckHighlightedValidity()
 	{
-		//Debug.Log(string.Format("From: {0} To: {1}", mFrom.name, mTo.name));
+		//ODebug.Log(string.Format("From: {0} To: {1}", mFrom.name, mTo.name));
 
 		string wordFromHighlightedTiles = GetWordFromHighlightedTiles();
 		WordValidityResult result = WordPanelRef.CheckWordValidity(wordFromHighlightedTiles, mHighlightedTiles);

@@ -123,7 +123,7 @@ public class WordPanel : UIMonoBehaviour
 
 	public WordValidityResult CheckWordValidity(string word, List<CharacterTile> highlightedTiles)
 	{
-		Debug.Log(string.Format("Checking {0} validity", word));
+		ODebug.Log(string.Format("Checking {0} validity", word));
 
 		WordValidityResult result = new WordValidityResult();
 
@@ -141,7 +141,7 @@ public class WordPanel : UIMonoBehaviour
 			EWordValidityResult matchResult = entry.DoesMatchSelection(word, reversedWord, startTile, endTile);
 			/*if (matchResult != EWordValidityResult.NoMatch)
 			{
-				Debug.LogWarning(string.Format("entry: {0}, result: {1}", entry.mWord, matchResult));
+				ODebug.LogWarning(string.Format("entry: {0}, result: {1}", entry.mWord, matchResult));
 			}*/
 
 			if (matchResult == EWordValidityResult.Match)
