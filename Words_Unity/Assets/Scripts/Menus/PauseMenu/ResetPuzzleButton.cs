@@ -10,6 +10,7 @@ public class ResetPuzzleButton : UIMonoBehaviour, IPointerClickHandler
 		{
 			PuzzleManagerRef.ResetPuzzle();
 			TimeManager.Instance.Reset();
+			ScoreManager.Instance.Reset();
 			MenuManager.Instance.SwitchMenu(EMenuType.InGameMenu, OnMenuSwitched);
 		}
 	}
