@@ -20,12 +20,14 @@ public class WordValidityResult
 	public int WordsFound;
 	public int WordsAlreadyFound;
 	public bool IsWrongInstance;
+	public int TileDecrements;
 
 	public WordValidityResult()
 	{
 		WordsFound = 0;
 		WordsAlreadyFound = 0;
 		IsWrongInstance = false;
+		TileDecrements = 0;
 	}
 }
 
@@ -159,6 +161,8 @@ public class WordPanel : UIMonoBehaviour
 					{
 						tile.DecreaseUsage(1);
 					}
+
+					result.TileDecrements += tiles.Count;
 				}
 				else
 				{
