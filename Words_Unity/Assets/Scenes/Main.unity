@@ -641,6 +641,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1659de18b8883a4eb64ceb0232c69ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PuzzleLoaderRef: {fileID: 1066591218}
   WordPanelGroupPrefab: {fileID: 114000010204794564, guid: 43ede615a7db72943b7c0820a6afe8ad,
     type: 2}
   Title: {fileID: 551711092}
@@ -1190,6 +1191,7 @@ GameObject:
   - 224: {fileID: 258777956}
   - 222: {fileID: 258777958}
   - 114: {fileID: 258777957}
+  - 114: {fileID: 258777959}
   m_Layer: 5
   m_Name: WordPanelRoot
   m_TagString: Untagged
@@ -1233,14 +1235,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8455882, g: 0.8455882, b: 0.8455882, a: 0.392}
+  m_Color: {r: 0.8455882, g: 0.8455882, b: 0.8455882, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 6158a1ff72f104244be388c270c46cdf, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1254,6 +1256,23 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 258777955}
+--- !u!114 &258777959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 258777955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52ceec86bf21e864f8d33e1fad5930f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FoundColour: {r: 0.12941177, g: 0.78431374, b: 0.12941177, a: 0.5019608}
+  NotFoundColour: {r: 0.8602941, g: 0.19609644, b: 0.19609644, a: 0.5019608}
+  AlreadyFoundColour: {r: 0.32156864, g: 0.52156866, b: 1, a: 0.5019608}
+  WrongInstanceColour: {r: 0.9338235, g: 0.491, b: 0.13732702, a: 0.5019608}
+  FlashTime: 0.5
+  EaseType: 2
 --- !u!1001 &274806456
 Prefab:
   m_ObjectHideFlags: 0
@@ -3483,7 +3502,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012566015510, guid: c8c48803436566243afb7e989423c4a6, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 114000013746010850, guid: c8c48803436566243afb7e989423c4a6,
         type: 2}

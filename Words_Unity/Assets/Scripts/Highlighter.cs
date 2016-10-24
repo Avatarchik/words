@@ -60,17 +60,38 @@ public class Highlighter : SingletonMonoBehaviour<Highlighter>
 
 	public void CheckHighlightedValidity()
 	{
-		Debug.Log(string.Format("From: {0} To: {1}", mFrom.name, mTo.name));
+		//Debug.Log(string.Format("From: {0} To: {1}", mFrom.name, mTo.name));
 
 		string wordFromHighlightedTiles = GetWordFromHighlightedTiles();
-		EWordValidityResult result = WordPanelRef.CheckWordValidity(wordFromHighlightedTiles, mHighlightedTiles);
+		WordValidityResult result = WordPanelRef.CheckWordValidity(wordFromHighlightedTiles, mHighlightedTiles);
+
+		EWordValidityResult overallResult = EWordValidityResult.NoMatch;
+		if (result.IsWrongInstance)
+		{
+			overallResult = EWordValidityResult.WrongInstance;
+			WordPanelFlasher.Instance.Flash(WordPanelFlasher.EFlashReason.WrongInstance);
+		}
+		else if (result.WordsFound > 0)
+		{
+			overallResult = EWordValidityResult.WasRemoved;
+			WordPanelFlasher.Instance.Flash(WordPanelFlasher.EFlashReason.Found);
+		}
+		else if (result.WordsAlreadyFound > 0)
+		{
+			overallResult = EWordValidityResult.WasAlreadyFound;
+			WordPanelFlasher.Instance.Flash(WordPanelFlasher.EFlashReason.AlreadyFound);
+		}
+		else
+		{
+			WordPanelFlasher.Instance.Flash(WordPanelFlasher.EFlashReason.NotFound);
+		}
 
 		foreach (CharacterTile tile in mHighlightedTiles)
 		{
 			Vector3 effectPosition = tile.transform.position;
 			effectPosition.z -= 5;
 
-			switch (result)
+			switch (overallResult)
 			{
 				case EWordValidityResult.WasRemoved:
 					EffectsManagerRef.PlayFoundEffectAt(effectPosition);

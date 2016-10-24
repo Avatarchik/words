@@ -7,9 +7,7 @@ public enum EWordValidityResult
 {
 	NoChange = 0,
 
-	InvalidWord,
-
-	CompleteMatch,
+	Match,
 	WrongInstance,
 	NoMatch,
 
@@ -17,8 +15,23 @@ public enum EWordValidityResult
 	WasAlreadyFound,
 }
 
+public class WordValidityResult
+{
+	public int WordsFound;
+	public int WordsAlreadyFound;
+	public bool IsWrongInstance;
+
+	public WordValidityResult()
+	{
+		WordsFound = 0;
+		WordsAlreadyFound = 0;
+		IsWrongInstance = false;
+	}
+}
+
 public class WordPanel : UIMonoBehaviour
 {
+	public PuzzleLoader PuzzleLoaderRef;
 	public WordPanelGroup WordPanelGroupPrefab;
 
 	public WordPanelTitle Title;
@@ -108,59 +121,60 @@ public class WordPanel : UIMonoBehaviour
 		mIsPuzzleComplete = false;
 	}
 
-	public EWordValidityResult CheckWordValidity(string word, List<CharacterTile> highlightedTiles)
+	public WordValidityResult CheckWordValidity(string word, List<CharacterTile> highlightedTiles)
 	{
 		Debug.Log(string.Format("Checking {0} validity", word));
 
+		WordValidityResult result = new WordValidityResult();
+
 		if (word.Length <= 2)
 		{
-			return EWordValidityResult.InvalidWord;
+			return result;
 		}
 
 		string reversedWord = WordHelper.ReverseWord(word);
 		CharacterTile startTile = highlightedTiles.FirstItem();
 		CharacterTile endTile = highlightedTiles.LastItem();
 
-		EWordValidityResult result = EWordValidityResult.NoChange;
-
-		int wordsMarkedAsFound = 0;
 		foreach (WordPanelEntry entry in mPanelEntries)
 		{
-			result = entry.DoesMatchSelection(word, reversedWord, startTile, endTile);
-			if (result == EWordValidityResult.CompleteMatch)
+			EWordValidityResult matchResult = entry.DoesMatchSelection(word, reversedWord, startTile, endTile);
+			/*if (matchResult != EWordValidityResult.NoMatch)
+			{
+				Debug.LogWarning(string.Format("entry: {0}, result: {1}", entry.mWord, matchResult));
+			}*/
+
+			if (matchResult == EWordValidityResult.Match)
 			{
 				if (!entry.HasBeenFound)
 				{
-					++wordsMarkedAsFound;
 					entry.MarkWordAsFound();
-					UpdateTitle(entry);
-					result = EWordValidityResult.WasRemoved;
+					UpdateTitle();
+
+					++result.WordsFound;
+
+					List<CharacterTile> tiles = new List<CharacterTile>();
+					PuzzleLoaderRef.GetTilesBetween(entry.FromPosition, entry.ToPosition, ref tiles);
+					foreach (CharacterTile tile in tiles)
+					{
+						tile.DecreaseUsage(1);
+					}
 				}
 				else
 				{
-					result = EWordValidityResult.WasAlreadyFound;
-					break;
+					++result.WordsAlreadyFound;
 				}
 			}
-			else if (result == EWordValidityResult.WrongInstance)
+			else if (matchResult == EWordValidityResult.WrongInstance)
 			{
-				break;
+				result.IsWrongInstance = true;
 			}
-		}
-
-		if (wordsMarkedAsFound > 0)
-		{
-			foreach (CharacterTile tile in highlightedTiles)
-			{
-				tile.DecreaseUsage(wordsMarkedAsFound);
-			}
-			result = EWordValidityResult.WasRemoved;
 		}
 
 		return result;
 	}
 
-	public void UpdateTitle(WordPanelEntry word)
+	public void UpdateTitle()
 	{
 		--mWordsRemaining;
 		Title.SetTitle(mWordsRemaining);

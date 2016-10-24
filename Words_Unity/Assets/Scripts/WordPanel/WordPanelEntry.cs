@@ -11,8 +11,8 @@ public class WordPanelEntry : MonoBehaviour
 	public bool HasBeenFound { get; private set; }
 
 	private string mWord;
-	private GridPosition mFromPosition;
-	private GridPosition mToPosition;
+	public GridPosition FromPosition { get; private set; }
+	public GridPosition ToPosition { get; private set; }
 
 	public float DoubleTapInterval = 0.4f;
 	private float mLastTapTime = 0;
@@ -27,24 +27,51 @@ public class WordPanelEntry : MonoBehaviour
 		mWord = wordPair.Forwards;
 		TextRef.text = mWord;
 
-		mFromPosition = wordPair.FromPosition;
-		mToPosition = wordPair.ToPosition;
+		FromPosition = wordPair.FromPosition;
+		ToPosition = wordPair.ToPosition;
 	}
 
 	public EWordValidityResult DoesMatchSelection(string word, string reversedWord, CharacterTile startTile, CharacterTile endTile)
 	{
 		bool stringsMatch = (mWord == word) || (mWord == reversedWord);
-		bool forwardsPositionsMatch = (mFromPosition == startTile.Position) && (mToPosition == endTile.Position);
-		bool backwardsPositionsMatch = (mFromPosition == endTile.Position) && (mToPosition == startTile.Position);
+		bool stringContains = false;
+		if (!stringsMatch)
+		{
+			stringContains = word.Contains(mWord) || reversedWord.Contains(mWord);
+		}
 
-		bool matchesCompletely = stringsMatch && (forwardsPositionsMatch || backwardsPositionsMatch);
+		bool forwardsPositionsMatch = false;
+		bool backwardsPositionsMatch = false;
+		bool isBetweenTiles = false;
+		if (stringsMatch)
+		{
+			forwardsPositionsMatch = (FromPosition == startTile.Position) && (ToPosition == endTile.Position);
+			backwardsPositionsMatch = (FromPosition == endTile.Position) && (ToPosition == startTile.Position);
+		}
+		else if (stringContains)
+		{
+			int x0 = Mathf.Min(startTile.Position.X, endTile.Position.X);
+			int x1 = Mathf.Max(startTile.Position.X, endTile.Position.X);
+			int y0 = Mathf.Min(startTile.Position.Y, endTile.Position.Y);
+			int y1 = Mathf.Max(startTile.Position.Y, endTile.Position.Y);
+
+			int x2 = Mathf.Min(FromPosition.X, ToPosition.X);
+			int x3 = Mathf.Max(FromPosition.X, ToPosition.X);
+			int y2 = Mathf.Min(FromPosition.Y, ToPosition.Y);
+			int y3 = Mathf.Max(FromPosition.Y, ToPosition.Y);
+
+			isBetweenTiles = (x2 >= x0) && (x3 <= x1) && (y2 >= y0) && (y3 <= y1);
+		}
+
+		bool completeMatch = stringsMatch && (forwardsPositionsMatch || backwardsPositionsMatch);
+		bool partialMatch = stringContains && isBetweenTiles;
 
 		EWordValidityResult result = EWordValidityResult.NoMatch;
-		if (matchesCompletely)
+		if (completeMatch || partialMatch)
 		{
-			result = EWordValidityResult.CompleteMatch;
+			result = EWordValidityResult.Match;
 		}
-		else if (stringsMatch)
+		else if (stringContains)
 		{
 			result = EWordValidityResult.WrongInstance;
 		}

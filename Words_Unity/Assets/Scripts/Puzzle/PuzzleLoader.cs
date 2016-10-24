@@ -105,6 +105,13 @@ public class PuzzleLoader : UIMonoBehaviour
 		}
 	}
 
+	public void GetTilesBetween(GridPosition fromPosition, GridPosition toPosition, ref List<CharacterTile> tiles)
+	{
+		CharacterTile fromTile = mCharacterTilesGrid[fromPosition.X, fromPosition.Y];
+		CharacterTile toTile = mCharacterTilesGrid[toPosition.X, toPosition.Y];
+		GetTilesBetween(fromTile, toTile, ref tiles);
+	}
+
 	public void GetTilesBetween(CharacterTile fromTile, CharacterTile toTile, ref List<CharacterTile> tiles)
 	{
 		tiles.Clear();
