@@ -32,7 +32,7 @@ public class Words : MonoBehaviour
 
 	public int WordCount;
 	public List<WordListPortion> ListPortions;
-	public  Word[] WordList;
+	public Word[] WordList;
 
 	public void Initialise()
 	{

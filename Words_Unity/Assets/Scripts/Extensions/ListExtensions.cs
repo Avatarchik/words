@@ -46,7 +46,7 @@ static public class ListExtensions
 		return item;
 	}
 
-	static public void Shuffle<T>(this IList<T> list)  
+	static public void Shuffle<T>(this IList<T> list)
 	{
 		int n = list.Count;
 		while (n > 1)

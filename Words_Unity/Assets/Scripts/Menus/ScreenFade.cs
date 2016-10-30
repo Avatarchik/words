@@ -27,7 +27,7 @@ public class ScreenFade : MonoBehaviour
 
 		float halfFadeDuration = FadeDuration * 0.5f;
 		StartCoroutine(Fade(0, 1, halfFadeDuration));					// Fade out
-		StartCoroutine(Fade(halfFadeDuration, 0, halfFadeDuration));    // Fade in
+		StartCoroutine(Fade(halfFadeDuration, 0, halfFadeDuration));	// Fade in
 		StartCoroutine(CallFadeOutCallback(halfFadeDuration, fadeOutFinishedCallback));
 		StartCoroutine(ResetStatus(FadeDuration));
 	}
