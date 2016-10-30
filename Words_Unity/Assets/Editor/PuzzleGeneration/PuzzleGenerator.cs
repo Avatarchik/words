@@ -257,6 +257,10 @@ public class PuzzleGenerator : EditorWindow
 		}
 
 		string newContentsFileName = string.Format("{0:D4}_{1:D4}", nextID, mPlacedWords);
+		if (!wasFinalised)
+		{
+			newContentsFileName += "_Failed";
+		}
 		AssetDatabase.RenameAsset(mContentsPath, newContentsFileName);
 
 		string currentPath = AssetDatabase.GetAssetPath(mNewPuzzleContents);
@@ -424,32 +428,36 @@ public class PuzzleGenerator : EditorWindow
 				bool containsBackwards = alreadyPlacedWord.Contains(wordReversed);
 				if (containsForwards || containsBackwards)
 				{
-					ScoredWordPlacement alreadyPlacedPlacement = mWordPlacements[usedWordIndex];
-
 					if (containsBackwards)
 					{
 						word = wordReversed;
 					}
 
-					GridPosition fromPosition;
-					GridPosition toPosition;
-					bool wasWordPlaced = PlacePartialWord(alreadyPlacedWord, word,
-						alreadyPlacedPlacement.Position.X, alreadyPlacedPlacement.Position.Y,
-						alreadyPlacedPlacement.WordDirection, out fromPosition, out toPosition);
-
-					if (wasWordPlaced)
+					if (!HasWordBeenPlaced(word))
 					{
-						//ODebug.Log(string.Format("Partial word of {0}: {1}", alreadyPlacedWord, word));
-						mNewPuzzleContents.RegisterWord(word, fromPosition, toPosition);
+						ScoredWordPlacement alreadyPlacedPlacement = mWordPlacements[usedWordIndex];
 
-						mWords.Add(word);
-						mWordPlacements.Add(alreadyPlacedPlacement);
+						GridPosition fromPosition;
+						GridPosition toPosition;
+						bool wasWordPlaced = PlacePartialWord(alreadyPlacedWord, word,
+							alreadyPlacedPlacement.Position.X, alreadyPlacedPlacement.Position.Y,
+							alreadyPlacedPlacement.WordDirection, out fromPosition, out toPosition);
 
-						mAllWords[wordIndex] = null;
+						if (wasWordPlaced)
+						{
+							//ODebug.Log(string.Format("Partial word of {0}: {1}", alreadyPlacedWord, word));
+							mNewPuzzleContents.RegisterWord(word, fromPosition, toPosition);
 
-						++partialWordsPlaced;
+							mWords.Add(word);
+							mWordPlacements.Add(alreadyPlacedPlacement);
 
-						break;
+							mAllWords[wordIndex] = null;
+
+							++mPlacedWords;
+							++partialWordsPlaced;
+
+							break;
+						}
 					}
 				}
 			}
@@ -518,6 +526,7 @@ public class PuzzleGenerator : EditorWindow
 
 					mAllWords[wordIndex] = null;
 
+					++mPlacedWords;
 					++naturallyPlacedWordsFound;
 
 					if (mWords.Count >= mWordLimit)
@@ -679,5 +688,21 @@ public class PuzzleGenerator : EditorWindow
 		toPosition = new GridPosition(x - xModifier, y - yModifier);
 
 		return true;
+	}
+
+	private bool HasWordBeenPlaced(string word)
+	{
+		bool result = false;
+
+		for (int wordIndex = 0; wordIndex < mWords.Count; ++wordIndex)
+		{
+			if (word == mWords[wordIndex])
+			{
+				result = true;
+				break;
+			}
+		}
+
+		return result;
 	}
 }

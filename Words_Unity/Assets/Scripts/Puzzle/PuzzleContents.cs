@@ -107,8 +107,14 @@ public class PuzzleContents : ScriptableObject
 				if (outerWord == innerWord)
 				{
 					foundDuplicate = true;
+					//ODebug.Log("Duplicate placement of " + innerWord.Forwards);
 					break;
 				}
+			}
+
+			if (foundDuplicate)
+			{
+				break;
 			}
 		}
 
