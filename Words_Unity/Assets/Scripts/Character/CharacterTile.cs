@@ -42,7 +42,7 @@ public class CharacterTile : MonoBehaviour
 		if (mUsageLeft <= 0)
 		{
 			mLoader.RemoveTile(Position);
-			Destroy(gameObject);
+			Destroy(gameObject, 0.2f);
 		}
 		else
 		{
