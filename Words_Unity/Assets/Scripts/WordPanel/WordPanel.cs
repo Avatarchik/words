@@ -138,9 +138,24 @@ public class WordPanel : UIMonoBehaviour
 		CharacterTile startTile = highlightedTiles.FirstItem();
 		CharacterTile endTile = highlightedTiles.LastItem();
 
+		bool isCompleteMatch = false;
 		foreach (WordPanelEntry entry in mPanelEntries)
 		{
-			EWordValidityResult matchResult = entry.DoesMatchSelection(word, reversedWord, startTile, endTile);
+			entry.DoesMatchSelection(word, reversedWord, startTile, endTile, out isCompleteMatch);
+			if (isCompleteMatch)
+			{
+				break;
+			}
+		}
+
+		if (!isCompleteMatch)
+		{
+			return result;
+		}
+
+		foreach (WordPanelEntry entry in mPanelEntries)
+		{
+			EWordValidityResult matchResult = entry.DoesMatchSelection(word, reversedWord, startTile, endTile, out isCompleteMatch);
 			/*if (matchResult != EWordValidityResult.NoMatch)
 			{
 				ODebug.LogWarning(string.Format("entry: {0}, result: {1}", entry.mWord, matchResult));

@@ -31,7 +31,7 @@ public class WordPanelEntry : MonoBehaviour
 		ToPosition = wordPair.ToPosition;
 	}
 
-	public EWordValidityResult DoesMatchSelection(string word, string reversedWord, CharacterTile startTile, CharacterTile endTile)
+	public EWordValidityResult DoesMatchSelection(string word, string reversedWord, CharacterTile startTile, CharacterTile endTile, out bool isCompleteMatch)
 	{
 		bool stringsMatch = (mWord == word) || (mWord == reversedWord);
 		bool stringContains = false;
@@ -63,11 +63,11 @@ public class WordPanelEntry : MonoBehaviour
 			isBetweenTiles = (x2 >= x0) && (x3 <= x1) && (y2 >= y0) && (y3 <= y1);
 		}
 
-		bool completeMatch = stringsMatch && (forwardsPositionsMatch || backwardsPositionsMatch);
+		isCompleteMatch = stringsMatch && (forwardsPositionsMatch || backwardsPositionsMatch);
 		bool partialMatch = stringContains && isBetweenTiles;
 
 		EWordValidityResult result = EWordValidityResult.NoMatch;
-		if (completeMatch || partialMatch)
+		if (isCompleteMatch || partialMatch)
 		{
 			result = EWordValidityResult.Match;
 		}
