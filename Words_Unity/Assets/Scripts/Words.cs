@@ -77,9 +77,9 @@ public class Words : MonoBehaviour
 		}
 	}
 
-	public string[] GetAllWords(int maxWordLength)
+	public Word[] GetAllWords(int maxWordLength)
 	{
-		string[] foundWords = new string[WordCount];
+		Word[] foundWords = new Word[WordCount];
 		int foundWordsCount = 0;
 
 		foreach (WordListPortion portion in ListPortions)

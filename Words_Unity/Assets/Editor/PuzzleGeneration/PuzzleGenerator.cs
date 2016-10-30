@@ -28,7 +28,7 @@ public class PuzzleGenerator : EditorWindow
 	private List<ScoredWordPlacement> mScoredPlacements;
 	private bool mHasPlacedInitialWord;
 
-	private string[] mAllWords;
+	private Word[] mAllWords;
 	private int mAllWordsCount;
 
 	private int mPlacedWords;
@@ -300,7 +300,7 @@ public class PuzzleGenerator : EditorWindow
 				}
 			}
 
-			string word = mAllWords[wordIndex];
+			string word = mAllWords[wordIndex].ActualWord;
 			if (word == null)
 			{
 				continue;
@@ -403,7 +403,7 @@ public class PuzzleGenerator : EditorWindow
 				}
 			}
 
-			string word = mAllWords[wordIndex];
+			string word = mAllWords[wordIndex].ActualWord;
 			if (word == null)
 			{
 				continue;
@@ -488,7 +488,7 @@ public class PuzzleGenerator : EditorWindow
 				}
 			}
 
-			word = mAllWords[wordIndex];
+			word = mAllWords[wordIndex].ActualWord;
 			if (word == null)
 			{
 				continue;
