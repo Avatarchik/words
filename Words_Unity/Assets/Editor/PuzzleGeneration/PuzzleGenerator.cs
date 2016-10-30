@@ -197,11 +197,11 @@ public class PuzzleGenerator : EditorWindow
 		}
 
 		// Step 5 - Check for naturally placed words
-		CheckForNaturallyPlacedWords(out userCancelled);
+		/*CheckForNaturallyPlacedWords(out userCancelled);
 		if (userCancelled)
 		{
 			return false;
-		}
+		}*/
 
 		// Finished
 		ODebug.Log("Word count: " + mWords.Count);
@@ -477,6 +477,7 @@ public class PuzzleGenerator : EditorWindow
 		ProgressBarHelper.Begin(true, kProgressBarTitle, progressBarMessage, 1f / mAllWordsCount);
 
 		string word;
+		string wordReversed;
 		bool foundOccurrence = false;
 		GridPosition foundPosition = null;
 		GridPosition foundPositionEnd = null;
@@ -501,12 +502,22 @@ public class PuzzleGenerator : EditorWindow
 				continue;
 			}
 			word = mAllWords[wordIndex].ActualWord;
+			wordReversed = WordHelper.ReverseWord(word);
 
 			foundOccurrence = false;
 
 			foreach (PotentialWordPlacement potentialPlacement in mPotentialPlacements)
 			{
 				if (DoesPlacementContainWord(word, potentialPlacement.Position.X, potentialPlacement.Position.Y, potentialPlacement.WordDirection, out foundPositionEnd))
+				{
+					foundPosition = potentialPlacement.Position;
+					foundWordDirection = potentialPlacement.WordDirection;
+
+					foundOccurrence = true;
+					break;
+				}
+
+				if (DoesPlacementContainWord(wordReversed, potentialPlacement.Position.X, potentialPlacement.Position.Y, potentialPlacement.WordDirection, out foundPositionEnd))
 				{
 					foundPosition = potentialPlacement.Position;
 					foundWordDirection = potentialPlacement.WordDirection;
