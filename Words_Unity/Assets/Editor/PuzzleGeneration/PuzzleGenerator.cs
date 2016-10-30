@@ -403,11 +403,11 @@ public class PuzzleGenerator : EditorWindow
 				}
 			}
 
-			string word = mAllWords[wordIndex].ActualWord;
-			if (word == null)
+			if (mAllWords[wordIndex] == null)
 			{
 				continue;
 			}
+			string word = mAllWords[wordIndex].ActualWord;
 
 			string alreadyPlacedWord;
 			for (int usedWordIndex = 0; usedWordIndex < mWords.Count; ++usedWordIndex)
@@ -488,11 +488,11 @@ public class PuzzleGenerator : EditorWindow
 				}
 			}
 
-			word = mAllWords[wordIndex].ActualWord;
-			if (word == null)
+			if (mAllWords[wordIndex] == null)
 			{
 				continue;
 			}
+			word = mAllWords[wordIndex].ActualWord;
 
 			foundOccurrence = false;
 
