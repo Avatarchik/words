@@ -122,7 +122,10 @@ public class Highlighter : SingletonMonoBehaviour<Highlighter>
 
 		// Add score
 		int score = result.TileDecrements * result.WordsFound * 10;
-		ScoreManager.Instance.AddScore(score);
+		if (score > 0)
+		{
+			ScoreManager.Instance.AddScore(score);
+		}
 
 		SetFrom(null);
 		SetTo(null);
