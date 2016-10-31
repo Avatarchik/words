@@ -83,28 +83,28 @@ namespace SecPlayerPrefs
 			PlayerPrefs.SetString(Encrypt(Key), Encrypt(Value.ToString()));
 		}
 
-		public static string GetString(string Key)
+		public static string GetString(string Key, string defaultValue = "")
 		{
 			String t = PlayerPrefs.GetString(Encrypt(Key));
-			if (t == "") return "";
+			if (t == "") return defaultValue;
 			return Decrypt(t);
 		}
-		public static int GetInt(string Key)
+		public static int GetInt(string Key, int defaultValue = 0)
 		{
 			String t = PlayerPrefs.GetString(Encrypt(Key));
-			if (t == "") return 0;
+			if (t == "") return defaultValue;
 			return int.Parse(Decrypt(t));
 		}
-		public static float GetFloat(string Key)
+		public static float GetFloat(string Key, float defaultValue = 0)
 		{
 			String t = PlayerPrefs.GetString(Encrypt(Key));
-			if (t == "") return 0;
+			if (t == "") return defaultValue;
 			return float.Parse(Decrypt(t));
 		}
-		public static bool GetBool(string Key)
+		public static bool GetBool(string Key, bool defaultValue = false)
 		{
 			String t = PlayerPrefs.GetString(Encrypt(Key));
-			if (t == "") return false;
+			if (t == "") return defaultValue;
 			return Boolean.Parse(Decrypt(t));
 		}
 		public static void DeleteKey(string Key)
