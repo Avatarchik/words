@@ -1,6 +1,8 @@
 using UnityEngine;
 using System.Collections;
 
+using SecPlayerPrefs;
+
 /* Thanks you for downloading this asset. We've tried to make this as similar to use as the PlayerPrefs
  * already in Unity, thus all you need to do to access it is use "PlayerPrefsPlus" instead of "PlayerPrefs";
  * you then have the ability to save and retreive any of the following data types.
@@ -49,7 +51,7 @@ public class PlayerPrefsPlus : MonoBehaviour
 		bool flag = false;
 		foreach (string type in types)
 		{
-			if (PlayerPrefs.HasKey(string.Format(type, key)))
+			if (SecurePlayerPrefs.HasKey(string.Format(type, key)))
 				flag = true;
 		}
 		return flag;
@@ -60,17 +62,17 @@ public class PlayerPrefsPlus : MonoBehaviour
 	//Ints stored normally just to make things nice and similar in user projects
 	public static void SetInt(string key, int value)
 	{
-		PlayerPrefs.SetInt(key, value);
+		SecurePlayerPrefs.SetInt(key, value);
 	}
 
 	public static int GetInt(string key)
 	{
-		return PlayerPrefs.GetInt(key);
+		return SecurePlayerPrefs.GetInt(key);
 	}
 
 	public static int GetInt(string key, int defaultValue)
 	{
-		return PlayerPrefs.GetInt(key, defaultValue);
+		return SecurePlayerPrefs.GetInt(key, defaultValue);
 	}
 
 	//############################################### float ##############################################
@@ -78,17 +80,17 @@ public class PlayerPrefsPlus : MonoBehaviour
 	//Floats also stored normally just to make things nice and similar in user projects
 	public static void SetFloat(string key, float value)
 	{
-		PlayerPrefs.SetFloat(key, value);
+		SecurePlayerPrefs.SetFloat(key, value);
 	}
 
 	public static float GetFloat(string key)
 	{
-		return PlayerPrefs.GetFloat(key);
+		return SecurePlayerPrefs.GetFloat(key);
 	}
 
 	public static float GetFloat(string key, float defaultValue)
 	{
-		return PlayerPrefs.GetFloat(key, defaultValue);
+		return SecurePlayerPrefs.GetFloat(key, defaultValue);
 	}
 
 	//############################################### String ##############################################
@@ -96,17 +98,17 @@ public class PlayerPrefsPlus : MonoBehaviour
 	//And strings
 	public static void SetString(string key, string value)
 	{
-		PlayerPrefs.SetString(key, value);
+		SecurePlayerPrefs.SetString(key, value);
 	}
 
 	public static string GetString(string key)
 	{
-		return PlayerPrefs.GetString(key);
+		return SecurePlayerPrefs.GetString(key);
 	}
 
 	public static string GetString(string key, string defaultValue)
 	{
-		return PlayerPrefs.GetString(key, defaultValue);
+		return SecurePlayerPrefs.GetString(key, defaultValue);
 	}
 
 	//############################################## bool ##############################################
@@ -115,9 +117,9 @@ public class PlayerPrefsPlus : MonoBehaviour
 	public static void SetBool(string key, bool value)
 	{
 		if (value)
-			PlayerPrefs.SetInt("PlayerPrefsPlus:bool:" + key, 1);
+			SecurePlayerPrefs.SetInt("PlayerPrefsPlus:bool:" + key, 1);
 		else
-			PlayerPrefs.SetInt("PlayerPrefsPlus:bool:" + key, 0);
+			SecurePlayerPrefs.SetInt("PlayerPrefsPlus:bool:" + key, 0);
 	}
 
 	public static bool GetBool(string key)
@@ -127,7 +129,7 @@ public class PlayerPrefsPlus : MonoBehaviour
 
 	public static bool GetBool(string key, bool defaultValue)
 	{
-		int value = PlayerPrefs.GetInt("PlayerPrefsPlus:bool:" + key, 2);
+		int value = SecurePlayerPrefs.GetInt("PlayerPrefsPlus:bool:" + key, 2);
 		if (value == 2)     //Return default
 			return defaultValue;
 		else if (value == 1)    //Return true
@@ -141,10 +143,10 @@ public class PlayerPrefsPlus : MonoBehaviour
 	//Store Color data as RGBA floats
 	public static void SetColour(string key, Color value)
 	{
-		PlayerPrefs.SetFloat("PlayerPrefsPlus:Colour:" + key + "-r", value.r);
-		PlayerPrefs.SetFloat("PlayerPrefsPlus:Colour:" + key + "-g", value.g);
-		PlayerPrefs.SetFloat("PlayerPrefsPlus:Colour:" + key + "-b", value.b);
-		PlayerPrefs.SetFloat("PlayerPrefsPlus:Colour:" + key + "-a", value.a);
+		SecurePlayerPrefs.SetFloat("PlayerPrefsPlus:Colour:" + key + "-r", value.r);
+		SecurePlayerPrefs.SetFloat("PlayerPrefsPlus:Colour:" + key + "-g", value.g);
+		SecurePlayerPrefs.SetFloat("PlayerPrefsPlus:Colour:" + key + "-b", value.b);
+		SecurePlayerPrefs.SetFloat("PlayerPrefsPlus:Colour:" + key + "-a", value.a);
 	}
 
 	//Rebuild Color data from RGBA floats
@@ -156,10 +158,10 @@ public class PlayerPrefsPlus : MonoBehaviour
 	public static Color GetColour(string key, Color defaultValue)
 	{
 		Color returnValue;
-		returnValue.r = PlayerPrefs.GetFloat("PlayerPrefsPlus:Colour:" + key + "-r", defaultValue.r);
-		returnValue.g = PlayerPrefs.GetFloat("PlayerPrefsPlus:Colour:" + key + "-g", defaultValue.g);
-		returnValue.b = PlayerPrefs.GetFloat("PlayerPrefsPlus:Colour:" + key + "-b", defaultValue.b);
-		returnValue.a = PlayerPrefs.GetFloat("PlayerPrefsPlus:Colour:" + key + "-a", defaultValue.a);
+		returnValue.r = SecurePlayerPrefs.GetFloat("PlayerPrefsPlus:Colour:" + key + "-r", defaultValue.r);
+		returnValue.g = SecurePlayerPrefs.GetFloat("PlayerPrefsPlus:Colour:" + key + "-g", defaultValue.g);
+		returnValue.b = SecurePlayerPrefs.GetFloat("PlayerPrefsPlus:Colour:" + key + "-b", defaultValue.b);
+		returnValue.a = SecurePlayerPrefs.GetFloat("PlayerPrefsPlus:Colour:" + key + "-a", defaultValue.a);
 		return returnValue;
 	}
 
@@ -168,10 +170,10 @@ public class PlayerPrefsPlus : MonoBehaviour
 	//Store Color32 data RGBA Ints
 	public static void SetColour32(string key, Color32 value)
 	{
-		PlayerPrefs.SetInt("PlayerPrefsPlus:Colour32:" + key + "-r", value.r);
-		PlayerPrefs.SetInt("PlayerPrefsPlus:Colour32:" + key + "-g", value.g);
-		PlayerPrefs.SetInt("PlayerPrefsPlus:Colour32:" + key + "-b", value.b);
-		PlayerPrefs.SetInt("PlayerPrefsPlus:Colour32:" + key + "-a", value.a);
+		SecurePlayerPrefs.SetInt("PlayerPrefsPlus:Colour32:" + key + "-r", value.r);
+		SecurePlayerPrefs.SetInt("PlayerPrefsPlus:Colour32:" + key + "-g", value.g);
+		SecurePlayerPrefs.SetInt("PlayerPrefsPlus:Colour32:" + key + "-b", value.b);
+		SecurePlayerPrefs.SetInt("PlayerPrefsPlus:Colour32:" + key + "-a", value.a);
 	}
 
 	//Rebuild Color32 data from RGBA Ints
@@ -183,10 +185,10 @@ public class PlayerPrefsPlus : MonoBehaviour
 	public static Color32 GetColour32(string key, Color32 defaultValue)
 	{
 		Color32 returnValue;
-		returnValue.r = (byte)PlayerPrefs.GetInt("PlayerPrefsPlus:Colour32:" + key + "-r", defaultValue.r);
-		returnValue.g = (byte)PlayerPrefs.GetInt("PlayerPrefsPlus:Colour32:" + key + "-g", defaultValue.g);
-		returnValue.b = (byte)PlayerPrefs.GetInt("PlayerPrefsPlus:Colour32:" + key + "-b", defaultValue.b);
-		returnValue.a = (byte)PlayerPrefs.GetInt("PlayerPrefsPlus:Colour32:" + key + "-a", defaultValue.a);
+		returnValue.r = (byte)SecurePlayerPrefs.GetInt("PlayerPrefsPlus:Colour32:" + key + "-r", defaultValue.r);
+		returnValue.g = (byte)SecurePlayerPrefs.GetInt("PlayerPrefsPlus:Colour32:" + key + "-g", defaultValue.g);
+		returnValue.b = (byte)SecurePlayerPrefs.GetInt("PlayerPrefsPlus:Colour32:" + key + "-b", defaultValue.b);
+		returnValue.a = (byte)SecurePlayerPrefs.GetInt("PlayerPrefsPlus:Colour32:" + key + "-a", defaultValue.a);
 		return returnValue;
 	}
 	//############################################# Vector2 #############################################
@@ -194,8 +196,8 @@ public class PlayerPrefsPlus : MonoBehaviour
 	//Store Vector2 data as as x & y floats
 	public static void SetVector2(string key, Vector2 value)
 	{
-		PlayerPrefs.SetFloat("PlayerPrefsPlus:Vector2:" + key + "-x", value.x);
-		PlayerPrefs.SetFloat("PlayerPrefsPlus:Vector2:" + key + "-y", value.y);
+		SecurePlayerPrefs.SetFloat("PlayerPrefsPlus:Vector2:" + key + "-x", value.x);
+		SecurePlayerPrefs.SetFloat("PlayerPrefsPlus:Vector2:" + key + "-y", value.y);
 	}
 
 	//Rebuild Vector2 from floats
@@ -207,8 +209,8 @@ public class PlayerPrefsPlus : MonoBehaviour
 	public static Vector2 GetVector2(string key, Vector2 defaultValue)
 	{
 		Vector2 returnValue;
-		returnValue.x = PlayerPrefs.GetFloat("PlayerPrefsPlus:Vector2:" + key + "-x", defaultValue.x);
-		returnValue.y = PlayerPrefs.GetFloat("PlayerPrefsPlus:Vector2:" + key + "-y", defaultValue.y);
+		returnValue.x = SecurePlayerPrefs.GetFloat("PlayerPrefsPlus:Vector2:" + key + "-x", defaultValue.x);
+		returnValue.y = SecurePlayerPrefs.GetFloat("PlayerPrefsPlus:Vector2:" + key + "-y", defaultValue.y);
 		return returnValue;
 	}
 
@@ -217,9 +219,9 @@ public class PlayerPrefsPlus : MonoBehaviour
 	//Store Vector3 data as as x, y & z floats
 	public static void SetVector3(string key, Vector3 value)
 	{
-		PlayerPrefs.SetFloat("PlayerPrefsPlus:Vector3:" + key + "-x", value.x);
-		PlayerPrefs.SetFloat("PlayerPrefsPlus:Vector3:" + key + "-y", value.y);
-		PlayerPrefs.SetFloat("PlayerPrefsPlus:Vector3:" + key + "-z", value.z);
+		SecurePlayerPrefs.SetFloat("PlayerPrefsPlus:Vector3:" + key + "-x", value.x);
+		SecurePlayerPrefs.SetFloat("PlayerPrefsPlus:Vector3:" + key + "-y", value.y);
+		SecurePlayerPrefs.SetFloat("PlayerPrefsPlus:Vector3:" + key + "-z", value.z);
 	}
 
 	//Rebuild Vector3 from floats
@@ -231,9 +233,9 @@ public class PlayerPrefsPlus : MonoBehaviour
 	public static Vector3 GetVector3(string key, Vector3 defaultValue)
 	{
 		Vector3 returnValue;
-		returnValue.x = PlayerPrefs.GetFloat("PlayerPrefsPlus:Vector3:" + key + "-x", defaultValue.x);
-		returnValue.y = PlayerPrefs.GetFloat("PlayerPrefsPlus:Vector3:" + key + "-y", defaultValue.y);
-		returnValue.z = PlayerPrefs.GetFloat("PlayerPrefsPlus:Vector3:" + key + "-z", defaultValue.z);
+		returnValue.x = SecurePlayerPrefs.GetFloat("PlayerPrefsPlus:Vector3:" + key + "-x", defaultValue.x);
+		returnValue.y = SecurePlayerPrefs.GetFloat("PlayerPrefsPlus:Vector3:" + key + "-y", defaultValue.y);
+		returnValue.z = SecurePlayerPrefs.GetFloat("PlayerPrefsPlus:Vector3:" + key + "-z", defaultValue.z);
 		return returnValue;
 	}
 
@@ -242,10 +244,10 @@ public class PlayerPrefsPlus : MonoBehaviour
 	//Store Vector4 data as as x, y, z & w floats
 	public static void SetVector4(string key, Vector4 value)
 	{
-		PlayerPrefs.SetFloat("PlayerPrefsPlus:Vector4:" + key + "-x", value.x);
-		PlayerPrefs.SetFloat("PlayerPrefsPlus:Vector4:" + key + "-y", value.y);
-		PlayerPrefs.SetFloat("PlayerPrefsPlus:Vector4:" + key + "-z", value.z);
-		PlayerPrefs.SetFloat("PlayerPrefsPlus:Vector4:" + key + "-w", value.w);
+		SecurePlayerPrefs.SetFloat("PlayerPrefsPlus:Vector4:" + key + "-x", value.x);
+		SecurePlayerPrefs.SetFloat("PlayerPrefsPlus:Vector4:" + key + "-y", value.y);
+		SecurePlayerPrefs.SetFloat("PlayerPrefsPlus:Vector4:" + key + "-z", value.z);
+		SecurePlayerPrefs.SetFloat("PlayerPrefsPlus:Vector4:" + key + "-w", value.w);
 	}
 
 	//Rebuild Vector4 from floats
@@ -257,10 +259,10 @@ public class PlayerPrefsPlus : MonoBehaviour
 	public static Vector4 GetVector4(string key, Vector4 defaultValue)
 	{
 		Vector4 returnValue;
-		returnValue.x = PlayerPrefs.GetFloat("PlayerPrefsPlus:Vector4:" + key + "-x", defaultValue.x);
-		returnValue.y = PlayerPrefs.GetFloat("PlayerPrefsPlus:Vector4:" + key + "-y", defaultValue.y);
-		returnValue.z = PlayerPrefs.GetFloat("PlayerPrefsPlus:Vector4:" + key + "-z", defaultValue.z);
-		returnValue.w = PlayerPrefs.GetFloat("PlayerPrefsPlus:Vector4:" + key + "-w", defaultValue.w);
+		returnValue.x = SecurePlayerPrefs.GetFloat("PlayerPrefsPlus:Vector4:" + key + "-x", defaultValue.x);
+		returnValue.y = SecurePlayerPrefs.GetFloat("PlayerPrefsPlus:Vector4:" + key + "-y", defaultValue.y);
+		returnValue.z = SecurePlayerPrefs.GetFloat("PlayerPrefsPlus:Vector4:" + key + "-z", defaultValue.z);
+		returnValue.w = SecurePlayerPrefs.GetFloat("PlayerPrefsPlus:Vector4:" + key + "-w", defaultValue.w);
 		return returnValue;
 	}
 
