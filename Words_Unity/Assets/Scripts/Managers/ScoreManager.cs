@@ -2,8 +2,10 @@ using UnityEngine.UI;
 
 public class ScoreManager : SingletonMonoBehaviour<ScoreManager>
 {
-	public Text TextRef;
+	public Text ScoreTextRef;
 	public string ScoreFormat;
+
+	public ScoreAddition ScoreAdditionRef;
 
 	private int mScore;
 
@@ -11,16 +13,20 @@ public class ScoreManager : SingletonMonoBehaviour<ScoreManager>
 	{
 		mScore += scoreToAdd;
 		UpdateText();
+
+		ScoreAdditionRef.ShowScoreAddition(scoreToAdd);
 	}
 
 	public void Reset()
 	{
 		mScore = 0;
 		UpdateText();
+
+		ScoreAdditionRef.Reset();
 	}
 
 	private void UpdateText()
 	{
-		TextRef.text = string.Format(ScoreFormat, mScore);
+		ScoreTextRef.text = string.Format(ScoreFormat, mScore);
 	}
 }
