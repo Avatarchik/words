@@ -10,6 +10,8 @@ public class PuzzleSelectionMenu : Menu, IMenu
 	public RectTransform PuzzlesRoot;
 	private List<RectTransform> mPuzzles;
 
+	static private int sLastChosenPuzzleSize;
+
 	public void OnEnable()
 	{
 	}
@@ -27,6 +29,8 @@ public class PuzzleSelectionMenu : Menu, IMenu
 
 	public void Initialise(int puzzleSize)
 	{
+		sLastChosenPuzzleSize = puzzleSize;
+
 		int puzzleCount = PuzzleManagerRef.PuzzleLists[puzzleSize - GlobalSettings.PuzzleSizeMin].Puzzles.Count;
 		mPuzzles = new List<RectTransform>(puzzleCount);
 
@@ -48,5 +52,10 @@ public class PuzzleSelectionMenu : Menu, IMenu
 
 		RectTransform rectTransform = PuzzlesRoot.GetComponent<RectTransform>();
 		rectTransform.sizeDelta = new Vector2(rectTransform.sizeDelta.x, 116 * puzzleCount); // TODO - fix the literals
+	}
+
+	public void ReturnTo()
+	{
+		Initialise(sLastChosenPuzzleSize);
 	}
 }

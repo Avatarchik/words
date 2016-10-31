@@ -9,7 +9,16 @@ public class ExitPuzzleButton : UIMonoBehaviour, IPointerClickHandler
 		if (eventData.button == PointerEventData.InputButton.Left)
 		{
 			PuzzleManagerRef.ClosePuzzle();
-			MenuManager.Instance.SwitchMenu(EMenuType.MainMenu);
+			MenuManager.Instance.SwitchMenu(EMenuType.PuzzleSelectionMenu, OnMenuSwitched);
+		}
+	}
+
+	private void OnMenuSwitched()
+	{
+		PuzzleSelectionMenu selectionMenu = MenuManager.Instance.CurrentMenu as PuzzleSelectionMenu;
+		if (selectionMenu)
+		{
+			selectionMenu.ReturnTo();
 		}
 	}
 }
