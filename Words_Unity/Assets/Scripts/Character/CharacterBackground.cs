@@ -7,7 +7,6 @@ public class CharacterBackground : MonoBehaviour
 	, IPointerUpHandler
 	, IPointerDownHandler
 	, IPointerEnterHandler
-	, IPointerExitHandler
 {
 	public Image ImageRef;
 	private Color mBaseColour;
@@ -57,14 +56,6 @@ public class CharacterBackground : MonoBehaviour
 		if (eventData.button == PointerEventData.InputButton.Left)
 		{
 			Highlighter.Instance.SetTo(transform.parent.gameObject);
-		}
-	}
-
-	public void OnPointerExit(PointerEventData eventData)
-	{
-		if (eventData.button == PointerEventData.InputButton.Left)
-		{
-			Highlighter.Instance.SetTo(Highlighter.Instance.GetFrom());
 		}
 	}
 }

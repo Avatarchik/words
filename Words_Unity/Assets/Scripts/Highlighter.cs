@@ -42,15 +42,24 @@ public class Highlighter : SingletonMonoBehaviour<Highlighter>
 		}
 		mHighlightedTiles.Clear();
 
-		if (mFrom == null || mTo == null)
+		if (mFrom == null)
 		{
 			return;
 		}
 
 		CharacterTile fromTile = mFrom.GetComponent<CharacterTile>();
-		CharacterTile toTile = mTo.GetComponent<CharacterTile>();
-
-		PuzzleLoaderRef.GetTilesBetween(fromTile, toTile, ref mHighlightedTiles);
+		if (mTo != null)
+		{
+			if (mFrom != mTo)
+			{
+				CharacterTile toTile = mTo.GetComponent<CharacterTile>();
+				PuzzleLoaderRef.GetTilesBetween(fromTile, toTile, ref mHighlightedTiles);
+			}
+			else
+			{
+				mHighlightedTiles.Add(fromTile);
+			}
+		}
 
 		foreach (CharacterTile tile in mHighlightedTiles)
 		{
