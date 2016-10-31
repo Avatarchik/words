@@ -6,6 +6,8 @@ using System;
 
 public class PuzzleContents : ScriptableObject
 {
+	public SerializableGuid Guid;
+
 	public int Size;
 
 	public int WordCount;
