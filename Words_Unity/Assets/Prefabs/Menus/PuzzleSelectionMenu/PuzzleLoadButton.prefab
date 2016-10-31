@@ -278,6 +278,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ButtonColour: {r: 1, g: 0.5686275, b: 0.02745098, a: 1}
+  SetHighlightedColour: 0
+  SetPressedColour: 1
 --- !u!114 &114000011317468824
 MonoBehaviour:
   m_ObjectHideFlags: 1
