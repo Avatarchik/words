@@ -30,26 +30,23 @@ public class PuzzleSelectionMenu : Menu, IMenu
 		int puzzleCount = PuzzleManagerRef.PuzzleLists[puzzleSize - GlobalSettings.PuzzleSizeMin].Puzzles.Count;
 		mPuzzles = new List<RectTransform>(puzzleCount);
 
-		const int puzzlesPerColumn = 7;
-		int columnIndex = 0;
-		int rowIndex = 0;
-		for (int puzzleIndex = 1; puzzleIndex <= puzzleCount; ++puzzleIndex)
+		for (int puzzleIndex = 0; puzzleIndex < puzzleCount; ++puzzleIndex)
 		{
-			columnIndex = (puzzleIndex - 1) / puzzlesPerColumn;
-			rowIndex = ((puzzleIndex - 1) % puzzlesPerColumn) + 1;
-
 			GameObject newButtonGO = Instantiate(PuzzleLoadButtonPrefab, Vector3.zero, Quaternion.identity, transform) as GameObject;
 			newButtonGO.transform.SetParent(PuzzlesRoot);
 #if UNITY_EDITOR
-			newButtonGO.name = "Puzzle #" + puzzleIndex;
+			newButtonGO.name = "Puzzle #" + (puzzleIndex + 1);
 #endif // UNITY_EDITOR
 
 			PuzzleLoadButton puzzleLoadButton = newButtonGO.GetComponent<PuzzleLoadButton>();
-			puzzleLoadButton.rectTransform.localPosition = new Vector3(116 * columnIndex, -GlobalSettings.TileSizeWithSpacing * rowIndex, 0); // TODO - fix the literals
+			puzzleLoadButton.rectTransform.localPosition = new Vector3(0, -116 * puzzleIndex, 0); // TODO - fix the literals
 
-			puzzleLoadButton.Initialise(PuzzleManagerRef, puzzleSize, puzzleIndex);
+			puzzleLoadButton.Initialise(PuzzleManagerRef, puzzleSize, puzzleIndex + 1);
 
 			mPuzzles.Add(puzzleLoadButton.rectTransform);
 		}
+
+		RectTransform rectTransform = PuzzlesRoot.GetComponent<RectTransform>();
+		rectTransform.sizeDelta = new Vector2(rectTransform.sizeDelta.x, 116 * puzzleCount); // TODO - fix the literals
 	}
 }

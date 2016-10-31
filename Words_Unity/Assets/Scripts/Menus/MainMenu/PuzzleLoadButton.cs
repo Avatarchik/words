@@ -1,10 +1,21 @@
+using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class PuzzleLoadButton : UIMonoBehaviour, IPointerClickHandler
 {
-	public Text TextRef;
-	public string TextFormat;
+	public Text TitleRef;
+	public string TitleFormat;
+	public Text TimeRef;
+	public string TimeFormat;
+	public Text ScoreRef;
+	public string ScoreFormat;
+	public RectTransform ProgressBarRef;
+	public RectTransform ProgressBarFillerRef;
+	public Text ProgressBarPercentageRef;
+	public string ProgressBarPercentageFormat;
+	public Image TickBoxIncompleteRef;
+	public Image TickBoxCompleteRef;
 
 	private PuzzleManager mPuzzleManagerRef;
 
@@ -20,7 +31,21 @@ public class PuzzleLoadButton : UIMonoBehaviour, IPointerClickHandler
 
 		int wordCount = mPuzzleManagerRef.GetWordCountForPuzzle(puzzleSize, mPuzzleIndex);
 
-		TextRef.text = string.Format(TextFormat, puzzleIndex, wordCount);
+		TitleRef.text = string.Format(TitleFormat, puzzleIndex, wordCount);
+
+		TimeRef.text = string.Format(TimeFormat, 0, 0, "-");
+		ScoreRef.text = string.Format(ScoreFormat, 0, 0, "-");
+
+		float percentageComplete = (float)Random.Range(0, 100);
+
+		Vector2 progressBarSizeDelta = ProgressBarFillerRef.sizeDelta;
+		progressBarSizeDelta.x = Mathf.Lerp(0, ProgressBarRef.rect.width, percentageComplete / 100);
+		ProgressBarFillerRef.sizeDelta = progressBarSizeDelta;
+
+		ProgressBarPercentageRef.text = string.Format(ProgressBarPercentageFormat, percentageComplete);
+
+		TickBoxIncompleteRef.gameObject.SetActive(true);
+		TickBoxCompleteRef.gameObject.SetActive(false);
 	}
 
 	public void OnPointerClick(PointerEventData eventData)
