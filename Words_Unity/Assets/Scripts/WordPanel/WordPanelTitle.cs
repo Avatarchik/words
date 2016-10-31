@@ -5,6 +5,7 @@ public class WordPanelTitle : MonoBehaviour
 {
 	public Text TextRef;
 	public string TitleFormat;
+	public string OneWordLeftTitle;
 	public string AllFoundTitle;
 	public string ForEffectTitleFormat;
 
@@ -24,9 +25,13 @@ public class WordPanelTitle : MonoBehaviour
 
 	public void SetTitle(int wordsLeft)
 	{
-		if (wordsLeft > 0)
+		if (wordsLeft > 1)
 		{
 			TextRef.text = string.Format(TitleFormat, wordsLeft);
+		}
+		else if (wordsLeft == 1)
+		{
+			TextRef.text = OneWordLeftTitle;
 		}
 		else
 		{
