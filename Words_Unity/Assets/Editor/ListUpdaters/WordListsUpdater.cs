@@ -29,7 +29,7 @@ public class WordsUpdater
 
 				int wordCount = 0;
 
-				string[] wordListPaths = Directory.GetFiles(PathHelper.Combine(Application.dataPath, "Words"), "*.txt");
+				string[] wordListPaths = Directory.GetFiles(PathHelper.Combine(Application.dataPath, "WordLists"), "*.txt");
 				foreach (string path in wordListPaths)
 				{
 					char initialChar = Path.GetFileNameWithoutExtension(path)[0];
