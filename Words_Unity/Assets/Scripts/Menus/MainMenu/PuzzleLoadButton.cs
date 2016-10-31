@@ -43,7 +43,7 @@ public class PuzzleLoadButton : UIMonoBehaviour, IPointerClickHandler
 
 		ProgressBarPercentageRef.text = string.Format(ProgressBarPercentageFormat, percentageComplete);
 
-		TickRef.gameObject.SetActive(false);
+		TickRef.gameObject.SetActive(percentageComplete >= 100);
 	}
 
 	public void OnPointerClick(PointerEventData eventData)
