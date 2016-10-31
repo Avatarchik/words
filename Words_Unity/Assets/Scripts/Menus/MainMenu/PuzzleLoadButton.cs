@@ -14,8 +14,7 @@ public class PuzzleLoadButton : UIMonoBehaviour, IPointerClickHandler
 	public RectTransform ProgressBarFillerRef;
 	public Text ProgressBarPercentageRef;
 	public string ProgressBarPercentageFormat;
-	public Image TickBoxIncompleteRef;
-	public Image TickBoxCompleteRef;
+	public Image TickRef;
 
 	private PuzzleManager mPuzzleManagerRef;
 
@@ -34,7 +33,7 @@ public class PuzzleLoadButton : UIMonoBehaviour, IPointerClickHandler
 		TitleRef.text = string.Format(TitleFormat, puzzleIndex, wordCount);
 
 		TimeRef.text = string.Format(TimeFormat, 0, 0, "-");
-		ScoreRef.text = string.Format(ScoreFormat, 0, 0, "-");
+		ScoreRef.text = string.Format(ScoreFormat, 0, "-");
 
 		float percentageComplete = (float)Random.Range(0, 100);
 
@@ -44,8 +43,7 @@ public class PuzzleLoadButton : UIMonoBehaviour, IPointerClickHandler
 
 		ProgressBarPercentageRef.text = string.Format(ProgressBarPercentageFormat, percentageComplete);
 
-		TickBoxIncompleteRef.gameObject.SetActive(true);
-		TickBoxCompleteRef.gameObject.SetActive(false);
+		TickRef.gameObject.SetActive(false);
 	}
 
 	public void OnPointerClick(PointerEventData eventData)

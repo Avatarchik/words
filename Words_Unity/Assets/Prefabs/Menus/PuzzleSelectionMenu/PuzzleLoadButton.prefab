@@ -39,7 +39,7 @@ GameObject:
   - 222: {fileID: 222000012270242722}
   - 114: {fileID: 114000011812574920}
   m_Layer: 5
-  m_Name: TickBox_Incomplete
+  m_Name: TickBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107,7 +107,7 @@ GameObject:
   - 222: {fileID: 222000011073195190}
   - 114: {fileID: 114000010499502320}
   m_Layer: 5
-  m_Name: TickBox_Complete
+  m_Name: Tick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -238,8 +238,7 @@ MonoBehaviour:
   ProgressBarFillerRef: {fileID: 224000012656804994}
   ProgressBarPercentageRef: {fileID: 114000010006102684}
   ProgressBarPercentageFormat: '{0:N1}%'
-  TickBoxIncompleteRef: {fileID: 114000011812574920}
-  TickBoxCompleteRef: {fileID: 114000010499502320}
+  TickRef: {fileID: 114000010499502320}
 --- !u!114 &114000010499502320
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -318,7 +317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7294118, g: 0.7294118, b: 0.7294118, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -665,7 +664,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 14, y: -34}
+  m_AnchoredPosition: {x: 14, y: -56}
   m_SizeDelta: {x: 420, y: 22}
   m_Pivot: {x: 0, y: 1}
 --- !u!224 &224000012013216182
@@ -703,7 +702,7 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 14, y: -56}
+  m_AnchoredPosition: {x: 14, y: -34}
   m_SizeDelta: {x: 420, y: 22}
   m_Pivot: {x: 0, y: 1}
 --- !u!224 &224000012656804994
