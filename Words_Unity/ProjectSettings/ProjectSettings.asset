@@ -143,12 +143,13 @@ PlayerSettings:
   tvOSSmallIconLayers: []
   tvOSLargeIconLayers: []
   tvOSTopShelfImageLayers: []
-  iOSLaunchScreenType: 3
+  iOSLaunchScreenType: 1
   iOSLaunchScreenPortrait: {fileID: 0}
-  iOSLaunchScreenLandscape: {fileID: 0}
+  iOSLaunchScreenLandscape: {fileID: 2800000, guid: eda53b677890fbd438966cc6429f5c74,
+    type: 3}
   iOSLaunchScreenBackgroundColor:
     serializedVersion: 2
-    rgba: 4292927712
+    rgba: 4294967295
   iOSLaunchScreenFillPct: 80
   iOSLaunchScreenSize: 100
   iOSLaunchScreenCustomXibPath: 
@@ -446,7 +447,8 @@ PlayerSettings:
   psp2UseDebugIl2cppLibs: 0
   psmSplashimage: {fileID: 0}
   spritePackerPolicy: 
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    7: 
   metroPackageName: Words_Unity
   metroPackageVersion: 
   metroCertificatePath: 
