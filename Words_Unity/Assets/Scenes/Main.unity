@@ -285,6 +285,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ButtonColour: {r: 1, g: 0.5686275, b: 0.02745098, a: 1}
+  SetHighlightedColour: 1
+  SetPressedColour: 1
 --- !u!1 &18783588
 GameObject:
   m_ObjectHideFlags: 0
@@ -1620,6 +1622,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ButtonColour: {r: 1, g: 0.5686275, b: 0.02745098, a: 1}
+  SetHighlightedColour: 1
+  SetPressedColour: 1
 --- !u!1 &519188320
 GameObject:
   m_ObjectHideFlags: 0
@@ -1829,6 +1833,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ButtonColour: {r: 1, g: 0.5686275, b: 0.02745098, a: 1}
+  SetHighlightedColour: 1
+  SetPressedColour: 1
 --- !u!114 &547773233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2003,6 +2009,8 @@ MonoBehaviour:
   TextRef: {fileID: 551711090}
   TitleFormat: '{0} Words Left'
   AllFoundTitle: All Words Found!
+  ForEffectTitleFormat: '{0} Words Found'
+  IsForEffect: 0
 --- !u!114 &571071681 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114000011885149314, guid: a646b54b36cd02d4ca0b2765da06b195,
@@ -2965,6 +2973,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ButtonColour: {r: 1, g: 0.5686275, b: 0.02745098, a: 1}
+  SetHighlightedColour: 1
+  SetPressedColour: 1
 --- !u!1 &920029236
 GameObject:
   m_ObjectHideFlags: 0
@@ -3651,7 +3661,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012566015510, guid: c8c48803436566243afb7e989423c4a6, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114000013746010850, guid: c8c48803436566243afb7e989423c4a6,
         type: 2}
@@ -3851,6 +3861,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ButtonColour: {r: 1, g: 0.5686275, b: 0.02745098, a: 1}
+  SetHighlightedColour: 1
+  SetPressedColour: 1
 --- !u!114 &1285168431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4413,6 +4425,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ButtonColour: {r: 1, g: 0.5686275, b: 0.02745098, a: 1}
+  SetHighlightedColour: 1
+  SetPressedColour: 1
 --- !u!114 &1672829756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5143,6 +5157,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ButtonColour: {r: 1, g: 0.5686275, b: 0.02745098, a: 1}
+  SetHighlightedColour: 1
+  SetPressedColour: 1
 --- !u!1 &1874475351
 GameObject:
   m_ObjectHideFlags: 0

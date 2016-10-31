@@ -153,6 +153,8 @@ public class WordPanel : UIMonoBehaviour
 			return result;
 		}
 
+		bool updateTitle = false;
+
 		foreach (WordPanelEntry entry in mPanelEntries)
 		{
 			EWordValidityResult matchResult = entry.DoesMatchSelection(word, reversedWord, startTile, endTile, out isCompleteMatch);
@@ -165,10 +167,13 @@ public class WordPanel : UIMonoBehaviour
 			{
 				if (!entry.HasBeenFound)
 				{
+					--mWordsRemaining;
+
 					entry.MarkWordAsFound();
-					UpdateTitle();
 
 					++result.WordsFound;
+
+					updateTitle = true;
 
 					List<CharacterTile> tiles = new List<CharacterTile>();
 					PuzzleLoaderRef.GetTilesBetween(entry.FromPosition, entry.ToPosition, ref tiles);
@@ -190,12 +195,11 @@ public class WordPanel : UIMonoBehaviour
 			}
 		}
 
-		return result;
-	}
+		if (updateTitle)
+		{
+			Title.WordsRemoved(result.WordsFound, mWordsRemaining);
+		}
 
-	public void UpdateTitle()
-	{
-		--mWordsRemaining;
-		Title.SetTitle(mWordsRemaining);
+		return result;
 	}
 }
