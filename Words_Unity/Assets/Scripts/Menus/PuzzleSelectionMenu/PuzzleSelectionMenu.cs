@@ -27,6 +27,11 @@ public class PuzzleSelectionMenu : Menu, IMenu
 		}
 	}
 
+	public void Initialise()
+	{
+		Initialise(sLastChosenPuzzleSize);
+	}
+
 	public void Initialise(int puzzleSize)
 	{
 		sLastChosenPuzzleSize = puzzleSize;
@@ -52,10 +57,5 @@ public class PuzzleSelectionMenu : Menu, IMenu
 
 		RectTransform rectTransform = PuzzlesRoot.GetComponent<RectTransform>();
 		rectTransform.sizeDelta = new Vector2(rectTransform.sizeDelta.x, 116 * puzzleCount); // TODO - fix the literals
-	}
-
-	public void ReturnTo()
-	{
-		Initialise(sLastChosenPuzzleSize);
 	}
 }

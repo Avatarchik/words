@@ -18,7 +18,7 @@ public class ExitPuzzleButton : UIMonoBehaviour, IPointerClickHandler
 		PuzzleSelectionMenu selectionMenu = MenuManager.Instance.CurrentMenu as PuzzleSelectionMenu;
 		if (selectionMenu)
 		{
-			selectionMenu.ReturnTo();
+			selectionMenu.Initialise();
 		}
 	}
 }
