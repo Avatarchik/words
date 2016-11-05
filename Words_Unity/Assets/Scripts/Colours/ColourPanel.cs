@@ -24,7 +24,7 @@ public class ColourPanel : MonoBehaviour
 		float entryGap = 4;
 		float totalSize = (entrySize * (mMaxCharUsage - 1)) + (entryGap * (mMaxCharUsage - 1));
 
-		Vector3 pos = new Vector3(entrySize * 1.5f, totalSize * -0.5f, 0);
+		Vector3 pos = new Vector3(0, totalSize * -0.5f, 0);
 
 		mPanelEntries = new List<Image>(mMaxCharUsage);
 		for (int i = 0; i < mMaxCharUsage; ++i)
