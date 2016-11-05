@@ -5,6 +5,7 @@ public class Highlighter : SingletonMonoBehaviour<Highlighter>
 {
 	public PuzzleLoader PuzzleLoaderRef;
 	public WordPanel WordPanelRef;
+	public LastSelectionChecked LastSelectionCheckedRef;
 	public EffectsManager EffectsManagerRef;
 
 	private GameObject mFrom;
@@ -72,6 +73,9 @@ public class Highlighter : SingletonMonoBehaviour<Highlighter>
 		//ODebug.Log(string.Format("From: {0} To: {1}", mFrom.name, mTo.name));
 
 		string wordFromHighlightedTiles = GetWordFromHighlightedTiles();
+
+		LastSelectionCheckedRef.SetSelection(wordFromHighlightedTiles, mHighlightedTiles);
+
 		WordValidityResult result = WordPanelRef.CheckWordValidity(wordFromHighlightedTiles, mHighlightedTiles);
 
 		EWordValidityResult overallResult = EWordValidityResult.NoMatch;

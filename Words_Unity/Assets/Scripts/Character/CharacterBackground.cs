@@ -30,6 +30,11 @@ public class CharacterBackground : MonoBehaviour
 		ImageRef.color = mBaseColour; // TODO - might be an issue here
 	}
 
+	public Color GetBaseColour()
+	{
+		return mBaseColour;
+	}
+
 	public void OnPointerDown(PointerEventData eventData)
 	{
 		if (eventData.button == PointerEventData.InputButton.Left)

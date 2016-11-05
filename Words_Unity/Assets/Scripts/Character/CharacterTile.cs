@@ -66,4 +66,9 @@ public class CharacterTile : MonoBehaviour
 			BackgroundRef.RemoveHighlight();
 		}
 	}
+
+	public Color GetBackgroundColour()
+	{
+		return BackgroundRef.GetBaseColour();
+	}
 }
