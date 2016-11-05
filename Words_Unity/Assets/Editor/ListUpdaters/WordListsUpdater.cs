@@ -76,6 +76,7 @@ public class WordsUpdater
 
 		isValid &= !string.IsNullOrEmpty(word);
 		isValid &= word.Length > 2;
+		isValid &= word.Length < 13;
 		isValid &= !word.Contains(" ");
 
 		foreach (char character in word)
