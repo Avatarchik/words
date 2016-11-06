@@ -17,18 +17,19 @@ public class WordPanelEntry : MonoBehaviour
 	public float DoubleTapInterval = 0.4f;
 	private float mLastTapTime = 0;
 
-	void Awake()
+	private WordPanelGroup mPanelGroupRef;
+
+	public void Initialise(WordPanelGroup panelGroupRef, WordPair wordPair)
 	{
 		HasBeenFound = false;
-	}
 
-	public void Initialise(WordPair wordPair)
-	{
 		mWord = wordPair.Forwards;
 		TextRef.text = mWord;
 
 		FromPosition = wordPair.FromPosition;
 		ToPosition = wordPair.ToPosition;
+
+		mPanelGroupRef = panelGroupRef;
 	}
 
 	public EWordValidityResult DoesMatchSelection(string word, string reversedWord, CharacterTile startTile, CharacterTile endTile, out bool isCompleteMatch)
@@ -85,6 +86,8 @@ public class WordPanelEntry : MonoBehaviour
 
 		StrikeThrough.gameObject.SetActive(true);
 		StrikeThrough.sizeDelta = new Vector2(TextRef.preferredWidth * 1.2f, StrikeThrough.sizeDelta.y);
+
+		mPanelGroupRef.IncrementWordsFound();
 	}
 
 	public void OnPointerClick(PointerEventData eventData)

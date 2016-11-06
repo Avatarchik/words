@@ -44,6 +44,8 @@ public class WordPanel : UIMonoBehaviour
 
 	private bool mIsPuzzleComplete;
 
+	private float mPanelSize;
+
 	public void Initialise(WordPair[] wordPairs)
 	{
 		CleanUp();
@@ -69,7 +71,8 @@ public class WordPanel : UIMonoBehaviour
 			newGroup.rectTransform.localPosition = position;
 
 			groupStartPosition.y -= previousGroupSize;
-			newGroup.Initialise(wordLength, groupWords, ref mPanelEntries, groupStartPosition, out previousGroupSize);
+			newGroup.Initialise(this, wordLength, groupWords, ref mPanelEntries, groupStartPosition);
+			previousGroupSize = newGroup.Height;
 
 			mPanelGroups.Add(newGroup);
 
@@ -78,7 +81,8 @@ public class WordPanel : UIMonoBehaviour
 
 		Title.SetTitle(mWordsRemaining);
 
-		rectTransform.sizeDelta = new Vector2(rectTransform.sizeDelta.x, Mathf.Abs(groupStartPosition.y - previousGroupSize));
+		mPanelSize = Mathf.Abs(groupStartPosition.y - previousGroupSize);
+		rectTransform.sizeDelta = new Vector2(rectTransform.sizeDelta.x, mPanelSize);
 	}
 
 	void Update()
@@ -201,5 +205,31 @@ public class WordPanel : UIMonoBehaviour
 		}
 
 		return result;
+	}
+
+	public void ToggleGroup(WordPanelGroup group)
+	{
+		group.ToggleCollapsedState();
+
+		float deltaModifier = group.IsCollapsed ? group.HeightMinusTitle : -group.HeightMinusTitle;
+
+		bool modifyDelta = false;
+		for (int groupIndex = 0; groupIndex < mPanelGroups.Count; ++groupIndex)
+		{
+			WordPanelGroup otherGroup = mPanelGroups[groupIndex];
+			if (otherGroup == group)
+			{
+				modifyDelta = true;
+				continue;
+			}
+
+			if (modifyDelta)
+			{
+				otherGroup.ModifyYDelta(deltaModifier);
+			}
+		}
+
+		mPanelSize -= deltaModifier;
+		rectTransform.sizeDelta = new Vector2(rectTransform.sizeDelta.x, mPanelSize);
 	}
 }
