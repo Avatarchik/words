@@ -1034,10 +1034,6 @@ Prefab:
       propertyPath: ColourPanelRef
       value: 
       objectReference: {fileID: 643053051}
-    - target: {fileID: 1000013488520998, guid: c27d4f54dac0add4babddc70ba6acc5f, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 114000010251129604, guid: c27d4f54dac0add4babddc70ba6acc5f,
         type: 2}
       propertyPath: LastSelectionCheckedRef
@@ -1131,6 +1127,7 @@ GameObject:
   - 222: {fileID: 241386174}
   - 114: {fileID: 241386173}
   - 114: {fileID: 241386172}
+  - 114: {fileID: 241386175}
   m_Layer: 5
   m_Name: PauseButton
   m_TagString: Untagged
@@ -1200,6 +1197,36 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 241386170}
+--- !u!114 &241386175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 241386170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a4254b0913bbad4995302cf6f620901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RectTransRef: {fileID: 241386171}
+  Left:
+    PosX: 8
+    PosY: -8
+    AnchoredMinX: 0
+    AnchoredMinY: 1
+    AnchoredMaxX: 0
+    AnchoredMaxY: 1
+    PivotX: 0
+    PivotY: 1
+  Right:
+    PosX: -8
+    PosY: -8
+    AnchoredMinX: 1
+    AnchoredMinY: 1
+    AnchoredMaxX: 1
+    AnchoredMaxY: 1
+    PivotX: 1
+    PivotY: 1
 --- !u!1 &258777955
 GameObject:
   m_ObjectHideFlags: 0
@@ -1211,6 +1238,7 @@ GameObject:
   - 222: {fileID: 258777958}
   - 114: {fileID: 258777957}
   - 114: {fileID: 258777959}
+  - 114: {fileID: 258777960}
   m_Layer: 5
   m_Name: WordPanelRoot
   m_TagString: Untagged
@@ -1292,6 +1320,36 @@ MonoBehaviour:
   WrongInstanceColour: {r: 0.9338235, g: 0.491, b: 0.13732702, a: 0.5019608}
   FlashTime: 0.5
   EaseType: 2
+--- !u!114 &258777960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 258777955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a4254b0913bbad4995302cf6f620901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RectTransRef: {fileID: 258777956}
+  Left:
+    PosX: 24
+    PosY: 0
+    AnchoredMinX: 0
+    AnchoredMinY: 0.5
+    AnchoredMaxX: 0
+    AnchoredMaxY: 0.5
+    PivotX: 0
+    PivotY: 0.5
+  Right:
+    PosX: -24
+    PosY: 0
+    AnchoredMinX: 1
+    AnchoredMinY: 0.5
+    AnchoredMaxX: 1
+    AnchoredMaxY: 0.5
+    PivotX: 1
+    PivotY: 0.5
 --- !u!1001 &274806456
 Prefab:
   m_ObjectHideFlags: 0
@@ -2517,6 +2575,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MenuType: 2
   PauseButton: {fileID: 241386173}
+  HandedPositionPairs:
+  - {fileID: 258777960}
+  - {fileID: 241386175}
+  - {fileID: 1756672313}
+  - {fileID: 677279169}
+--- !u!114 &677279169 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000013639363818, guid: c27d4f54dac0add4babddc70ba6acc5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 217673525}
+  m_Script: {fileID: 11500000, guid: 7a4254b0913bbad4995302cf6f620901, type: 3}
 --- !u!1001 &685955053
 Prefab:
   m_ObjectHideFlags: 0
@@ -4315,41 +4384,6 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 114000014088124712, guid: e742ec6caa2080b4cbf6c218cb5fb486,
-        type: 2}
-      propertyPath: FromColour.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000014088124712, guid: e742ec6caa2080b4cbf6c218cb5fb486,
-        type: 2}
-      propertyPath: FromColour.g
-      value: 0.77254903
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000014088124712, guid: e742ec6caa2080b4cbf6c218cb5fb486,
-        type: 2}
-      propertyPath: FromColour.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000014088124712, guid: e742ec6caa2080b4cbf6c218cb5fb486,
-        type: 2}
-      propertyPath: ToColour.r
-      value: 0.7607843
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000014088124712, guid: e742ec6caa2080b4cbf6c218cb5fb486,
-        type: 2}
-      propertyPath: ToColour.g
-      value: 0.08235294
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000014088124712, guid: e742ec6caa2080b4cbf6c218cb5fb486,
-        type: 2}
-      propertyPath: ToColour.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000014088124712, guid: e742ec6caa2080b4cbf6c218cb5fb486,
-        type: 2}
-      propertyPath: GeneratorRef
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e742ec6caa2080b4cbf6c218cb5fb486, type: 2}
   m_IsPrefabParent: 0
@@ -6125,6 +6159,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224000011604792504, guid: b4306da0c51d4ec4bbc4b167e1e88c9f,
     type: 2}
   m_PrefabInternal: {fileID: 1168931533}
+--- !u!114 &1756672313 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000010471289206, guid: e742ec6caa2080b4cbf6c218cb5fb486,
+    type: 2}
+  m_PrefabInternal: {fileID: 1066341492}
+  m_Script: {fileID: 11500000, guid: 7a4254b0913bbad4995302cf6f620901, type: 3}
 --- !u!1001 &1761724761
 Prefab:
   m_ObjectHideFlags: 0

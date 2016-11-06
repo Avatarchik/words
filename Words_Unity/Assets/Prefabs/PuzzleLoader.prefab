@@ -20,13 +20,14 @@ GameObject:
   m_Component:
   - 224: {fileID: 224000012511579244}
   - 114: {fileID: 114000010251129604}
+  - 114: {fileID: 114000013639363818}
   m_Layer: 5
   m_Name: PuzzleLoader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &114000010251129604
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -41,7 +42,38 @@ MonoBehaviour:
   CharacterTilePrefab: {fileID: 1000011110019902, guid: d585827988e0a2b47908bd107d88352e,
     type: 2}
   WordPanelRef: {fileID: 0}
-  TempContents: {fileID: 11400000, guid: 7faee39e38be5a84bbd3724d24c676d3, type: 2}
+  ColourPanelRef: {fileID: 0}
+  LastSelectionCheckedRef: {fileID: 0}
+--- !u!114 &114000013639363818
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013488520998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a4254b0913bbad4995302cf6f620901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RectTransRef: {fileID: 224000012511579244}
+  Left:
+    PosX: -568
+    PosY: 0
+    AnchoredMinX: 1
+    AnchoredMinY: 0.5
+    AnchoredMaxX: 1
+    AnchoredMaxY: 0.5
+    PivotX: 0.5
+    PivotY: 0.5
+  Right:
+    PosX: 72
+    PosY: 0
+    AnchoredMinX: 0
+    AnchoredMinY: 0.5
+    AnchoredMaxX: 0
+    AnchoredMaxY: 0.5
+    PivotX: 0.5
+    PivotY: 0.5
 --- !u!224 &224000012511579244
 RectTransform:
   m_ObjectHideFlags: 1
