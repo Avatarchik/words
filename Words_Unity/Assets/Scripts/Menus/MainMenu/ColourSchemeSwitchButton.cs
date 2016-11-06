@@ -21,7 +21,7 @@ public class ColourSchemeSwitchButton : UIMonoBehaviour, IPointerClickHandler
 	public void Initialise(ColourSchemeManager colourSchemeManagerRef, int schemeIndex)
 	{
 		mColourSchemeManagerRef = colourSchemeManagerRef;
-		mSchemeIndex = schemeIndex - 1;
+		mSchemeIndex = schemeIndex;
 
 		ColourScheme scheme = colourSchemeManagerRef.Schemes[mSchemeIndex];
 		TextRef.text = scheme.Name;
@@ -74,7 +74,6 @@ public class ColourSchemeSwitchButton : UIMonoBehaviour, IPointerClickHandler
 			{
 				sSelectedButton.color = NonSelectedColour;
 			}
-			ImageRef.color = SelectedColour;
 			sSelectedButton = ImageRef;
 		}
 	}

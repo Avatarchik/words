@@ -162,7 +162,7 @@ MonoBehaviour:
   ImageRef: {fileID: 114000012129705034}
   TextRef: {fileID: 114000013292889762}
   NonSelectedColour: {r: 1, g: 1, b: 1, a: 1}
-  SelectedColour: {r: 0, g: 0.8862745, b: 0, a: 1}
+  SelectedColour: {r: 1, g: 0.5686275, b: 0.02745098, a: 1}
   ColourExamplesRoot: {fileID: 224000012560862944}
   ColourExamples:
   - {fileID: 114000014169871076}
@@ -245,7 +245,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -304,6 +304,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ButtonColour: {r: 1, g: 0.5686275, b: 0.02745098, a: 1}
+  SetHighlightedColour: 1
+  SetPressedColour: 0
 --- !u!114 &114000012411430912
 MonoBehaviour:
   m_ObjectHideFlags: 1

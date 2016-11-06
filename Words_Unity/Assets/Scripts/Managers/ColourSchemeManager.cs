@@ -2,7 +2,7 @@ using UnityEngine;
 using System;
 using System.Collections.Generic;
 
-[ScriptOrder(100)]
+[ScriptOrder(-101)]
 public class ColourSchemeManager : MonoBehaviour
 {
 	static private readonly string kChosenIndexKey = "ColourSchemeIndex";
@@ -15,9 +15,9 @@ public class ColourSchemeManager : MonoBehaviour
 
 	void Awake()
 	{
-		if (PlayerPrefs.HasKey(kChosenIndexKey))
+		if (PlayerPrefsPlus.HasKey(kChosenIndexKey))
 		{
-			mChosenIndex = PlayerPrefs.GetInt(kChosenIndexKey, 0);
+			mChosenIndex = PlayerPrefsPlus.GetInt(kChosenIndexKey, 0);
 		}
 		SwitchScheme(mChosenIndex);
 	}
@@ -33,8 +33,8 @@ public class ColourSchemeManager : MonoBehaviour
 			OnSchemeSwitched(sActiveColourScheme);
 		}
 
-		PlayerPrefs.SetInt(kChosenIndexKey, mChosenIndex);
-		PlayerPrefs.Save();
+		PlayerPrefsPlus.SetInt(kChosenIndexKey, mChosenIndex);
+		PlayerPrefsPlus.Save();
 	}
 
 	public bool IsActiveScheme(int colourSchemeIndex)

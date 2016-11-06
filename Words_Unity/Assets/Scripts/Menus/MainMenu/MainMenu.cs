@@ -66,17 +66,17 @@ public class MainMenu : Menu, IMenu
 		int schemeCount = ColourSchemeManagerRef.Schemes.Count;
 		mColourSchemes = new List<RectTransform>(schemeCount);
 
-		for (int schemeIndex = 1; schemeIndex <= schemeCount; ++schemeIndex)
+		for (int schemeIndex = 0; schemeIndex < schemeCount; ++schemeIndex)
 		{
 			GameObject newButtonGO = Instantiate(ColourSchemeButtonPrefab, Vector3.zero, Quaternion.identity, transform) as GameObject;
 			newButtonGO.transform.SetParent(ColourSchemesRoot);
 
 #if UNITY_EDITOR
-			newButtonGO.name = string.Format("Scheme #{0} - {1}", schemeIndex, ColourSchemeManagerRef.Schemes[schemeIndex - 1].Name);
+			newButtonGO.name = string.Format("Scheme #{0} - {1}", schemeIndex, ColourSchemeManagerRef.Schemes[schemeIndex].Name);
 #endif // UNITY_EDITOR
 
 			ColourSchemeSwitchButton schemeSwitchButton = newButtonGO.GetComponent<ColourSchemeSwitchButton>();
-			schemeSwitchButton.rectTransform.localPosition = new Vector3(0, GlobalSettings.TileSizeWithSpacing * schemeIndex, 0);
+			schemeSwitchButton.rectTransform.localPosition = new Vector3(0, GlobalSettings.TileSizeWithSpacing * (schemeIndex + 1), 0);
 
 			schemeSwitchButton.Initialise(ColourSchemeManagerRef, schemeIndex);
 

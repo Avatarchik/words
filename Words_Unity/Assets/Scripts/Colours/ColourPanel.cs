@@ -7,8 +7,7 @@ public class ColourPanel : MonoBehaviour
 {
 	public GameObject ColourPanelEntryPrefab;
 
-	[HideInInspector]
-	public ColourScheme Scheme;
+	private ColourScheme mScheme;
 
 	private List<Image> mPanelEntries;
 
@@ -17,6 +16,8 @@ public class ColourPanel : MonoBehaviour
 	public void Initialise(int maxCharUsage)
 	{
 		CleanUp();
+
+		mScheme = ColourSchemeManager.sActiveColourScheme;
 
 		mMaxCharUsage = maxCharUsage;
 
@@ -76,7 +77,7 @@ public class ColourPanel : MonoBehaviour
 
 	private void OnSchemeSwitched(ColourScheme newScheme)
 	{
-		Scheme = newScheme;
+		mScheme = newScheme;
 		UpdateColour();
 	}
 
@@ -89,7 +90,7 @@ public class ColourPanel : MonoBehaviour
 				float t = (1f / (mMaxCharUsage - 1)) * entryIndex;
 				t = MathfHelper.Clamp01(t);
 
-				mPanelEntries[entryIndex].color = ColorHelper.Blend(Scheme.High, Scheme.Low, t);
+				mPanelEntries[entryIndex].color = ColorHelper.Blend(mScheme.High, mScheme.Low, t);
 			}
 		}
 	}
