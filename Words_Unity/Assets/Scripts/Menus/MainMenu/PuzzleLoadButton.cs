@@ -35,7 +35,7 @@ public class PuzzleLoadButton : UIMonoBehaviour, IPointerClickHandler
 		TimeRef.text = string.Format(TimeFormat, 0, 0, "-");
 		ScoreRef.text = string.Format(ScoreFormat, 0, "-");
 
-		float percentageComplete = Random.Range(0, 100);
+		float percentageComplete = Random.Range(0, 101);
 
 		Vector2 progressBarSizeDelta = ProgressBarFillerRef.sizeDelta;
 		progressBarSizeDelta.x = Mathf.Lerp(0, ProgressBarRef.rect.width, percentageComplete / 100);
