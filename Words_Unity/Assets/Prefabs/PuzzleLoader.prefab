@@ -57,20 +57,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RectTransRef: {fileID: 224000012511579244}
   Left:
-    PosX: -568
-    PosY: 0
-    AnchoredMinX: 1
-    AnchoredMinY: 0.5
-    AnchoredMaxX: 1
-    AnchoredMaxY: 0.5
-    PivotX: 0.5
-    PivotY: 0.5
-  Right:
     PosX: 72
     PosY: 0
     AnchoredMinX: 0
     AnchoredMinY: 0.5
     AnchoredMaxX: 0
+    AnchoredMaxY: 0.5
+    PivotX: 0.5
+    PivotY: 0.5
+  Right:
+    PosX: -568
+    PosY: 0
+    AnchoredMinX: 1
+    AnchoredMinY: 0.5
+    AnchoredMaxX: 1
     AnchoredMaxY: 0.5
     PivotX: 0.5
     PivotY: 0.5

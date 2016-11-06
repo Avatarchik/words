@@ -41,20 +41,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RectTransRef: {fileID: 224000012213406524}
   Left:
-    PosX: -32
-    PosY: 0
-    AnchoredMinX: 1
-    AnchoredMinY: 0.5
-    AnchoredMaxX: 1
-    AnchoredMaxY: 0.5
-    PivotX: 0.5
-    PivotY: 0.5
-  Right:
     PosX: 32
     PosY: 0
     AnchoredMinX: 0
     AnchoredMinY: 0.5
     AnchoredMaxX: 0
+    AnchoredMaxY: 0.5
+    PivotX: 0.5
+    PivotY: 0.5
+  Right:
+    PosX: -32
+    PosY: 0
+    AnchoredMinX: 1
+    AnchoredMinY: 0.5
+    AnchoredMaxX: 1
     AnchoredMaxY: 0.5
     PivotX: 0.5
     PivotY: 0.5
@@ -71,7 +71,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ColourPanelEntryPrefab: {fileID: 1000011520488058, guid: 39e10a8bbbeeb0e4eac3ca2a6c1e5bf0,
     type: 2}
-  Scheme: {fileID: 0}
 --- !u!224 &224000012213406524
 RectTransform:
   m_ObjectHideFlags: 1

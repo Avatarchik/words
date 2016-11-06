@@ -10,6 +10,12 @@ public class InGameMenu : Menu, IMenu
 	public void OnEnable()
 	{
 		PauseButton.gameObject.SetActive(true);
+
+		// TODO: Temporary
+		foreach (HandedPositionPair pair in HandedPositionPairs)
+		{
+			pair.SwitchTo(HandedPosition.EHandedPositionType.Right);
+		}
 	}
 
 	public void OnDisable()
@@ -23,6 +29,7 @@ public class InGameMenu : Menu, IMenu
 
 	void Update()
 	{
+		// TODO: Temporary
 		if (Input.GetKeyUp(KeyCode.L))
 		{
 			foreach (HandedPositionPair pair in HandedPositionPairs)

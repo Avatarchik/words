@@ -1210,15 +1210,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RectTransRef: {fileID: 241386171}
   Left:
-    PosX: 8
-    PosY: -8
-    AnchoredMinX: 0
-    AnchoredMinY: 1
-    AnchoredMaxX: 0
-    AnchoredMaxY: 1
-    PivotX: 0
-    PivotY: 1
-  Right:
     PosX: -8
     PosY: -8
     AnchoredMinX: 1
@@ -1226,6 +1217,15 @@ MonoBehaviour:
     AnchoredMaxX: 1
     AnchoredMaxY: 1
     PivotX: 1
+    PivotY: 1
+  Right:
+    PosX: 8
+    PosY: -8
+    AnchoredMinX: 0
+    AnchoredMinY: 1
+    AnchoredMaxX: 0
+    AnchoredMaxY: 1
+    PivotX: 0
     PivotY: 1
 --- !u!1 &258777955
 GameObject:
@@ -1333,15 +1333,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RectTransRef: {fileID: 258777956}
   Left:
-    PosX: 24
-    PosY: 0
-    AnchoredMinX: 0
-    AnchoredMinY: 0.5
-    AnchoredMaxX: 0
-    AnchoredMaxY: 0.5
-    PivotX: 0
-    PivotY: 0.5
-  Right:
     PosX: -24
     PosY: 0
     AnchoredMinX: 1
@@ -1349,6 +1340,15 @@ MonoBehaviour:
     AnchoredMaxX: 1
     AnchoredMaxY: 0.5
     PivotX: 1
+    PivotY: 0.5
+  Right:
+    PosX: 24
+    PosY: 0
+    AnchoredMinX: 0
+    AnchoredMinY: 0.5
+    AnchoredMaxX: 0
+    AnchoredMaxY: 0.5
+    PivotX: 0
     PivotY: 0.5
 --- !u!1001 &274806456
 Prefab:
