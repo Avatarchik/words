@@ -41,6 +41,11 @@ using SecPlayerPrefs;
 
 public class PlayerPrefsPlus : MonoBehaviour
 {
+	//############################################## Save ##############################################
+	public static void Save()
+	{
+		SecurePlayerPrefs.Save();
+	}
 
 	//############################################# HasKey #############################################
 
@@ -48,13 +53,15 @@ public class PlayerPrefsPlus : MonoBehaviour
 	public static bool HasKey(string key)
 	{
 		string[] types = { "{0}", "PlayerPrefsPlus:bool:{0}", "PlayerPrefsPlus:Colour:{0}-r", "PlayerPrefsPlus:Colour32:{0}-r", "PlayerPrefsPlus:Vector2:{0}-x", "PlayerPrefsPlus:Vector3:{0}-x", "PlayerPrefsPlus:Vector4:{0}-x", "PlayerPrefsPlus:Vector3:Quaternion:{0}-x", "PlayerPrefsPlus:Vector4:Rect:{0}-x" };
-		bool flag = false;
+
 		foreach (string type in types)
 		{
 			if (SecurePlayerPrefs.HasKey(string.Format(type, key)))
-				flag = true;
+			{
+				return true;
+			}
 		}
-		return flag;
+		return false;
 	}
 
 	//############################################### int ##############################################
