@@ -125,7 +125,7 @@ public class WordPanel : UIMonoBehaviour
 
 	public WordValidityResult CheckWordValidity(string word, List<CharacterTile> highlightedTiles)
 	{
-		ODebug.Log(string.Format("Checking {0} validity", word));
+		//ODebug.Log(string.Format("Checking {0} validity", word));
 
 		WordValidityResult result = new WordValidityResult();
 
