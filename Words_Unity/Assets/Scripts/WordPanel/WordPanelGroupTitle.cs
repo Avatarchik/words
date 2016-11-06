@@ -3,7 +3,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class WordPanelGroupTitle : MonoBehaviour
-	, IPointerDownHandler
+	, IPointerClickHandler
 {
 	public Text TextRef;
 	public string TitleFormat;
@@ -18,7 +18,7 @@ public class WordPanelGroupTitle : MonoBehaviour
 		TextRef.text = string.Format(TitleFormat, groupWordLength);
 	}
 
-	public void OnPointerDown(PointerEventData eventData)
+	public void OnPointerClick(PointerEventData eventData)
 	{
 		if (eventData.button == PointerEventData.InputButton.Left)
 		{
