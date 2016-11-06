@@ -7,6 +7,7 @@ public class PuzzleLoader : UIMonoBehaviour
 	public GameObject CharacterTilePrefab;
 	public WordPanel WordPanelRef;
 	public ColourPanel ColourPanelRef;
+	public LastSelectionChecked LastSelectionCheckedRef;
 
 	private CharacterTile[,] mCharacterTilesGrid;
 
@@ -60,6 +61,8 @@ public class PuzzleLoader : UIMonoBehaviour
 		WordPanelRef.Initialise(contentsToLoad.Words);
 
 		ColourPanelRef.Initialise(contentsToLoad.MaxCharacterUsage);
+
+		LastSelectionCheckedRef.Reset();
 	}
 
 	public void CleanUp()

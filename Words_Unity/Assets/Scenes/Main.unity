@@ -1038,6 +1038,11 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010251129604, guid: c27d4f54dac0add4babddc70ba6acc5f,
+        type: 2}
+      propertyPath: LastSelectionCheckedRef
+      value: 
+      objectReference: {fileID: 1066267457}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c27d4f54dac0add4babddc70ba6acc5f, type: 2}
   m_IsPrefabParent: 0

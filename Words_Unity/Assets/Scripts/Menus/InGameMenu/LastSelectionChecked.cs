@@ -10,7 +10,11 @@ public class LastSelectionChecked : MonoBehaviour
 	void Awake()
 	{
 		mTileCount = LetterTiles.Length;
+		Reset();
+	}
 
+	public void Reset()
+	{
 		for (int tileIndex = 0; tileIndex < mTileCount; ++tileIndex)
 		{
 			LetterTiles[tileIndex].SetVisibility(false);
