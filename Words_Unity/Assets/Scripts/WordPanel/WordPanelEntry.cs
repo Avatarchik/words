@@ -19,7 +19,9 @@ public class WordPanelEntry : MonoBehaviour
 
 	private WordPanelGroup mPanelGroupRef;
 
-	public void Initialise(WordPanelGroup panelGroupRef, WordPair wordPair)
+	public int WordIndex = 0;
+
+	public void Initialise(WordPanelGroup panelGroupRef, WordPair wordPair, int wordIndex)
 	{
 		HasBeenFound = false;
 
@@ -30,6 +32,8 @@ public class WordPanelEntry : MonoBehaviour
 		ToPosition = wordPair.ToPosition;
 
 		mPanelGroupRef = panelGroupRef;
+
+		WordIndex = wordIndex;
 	}
 
 	public EWordValidityResult DoesMatchSelection(string word, string reversedWord, CharacterTile startTile, CharacterTile endTile, out bool isCompleteMatch)

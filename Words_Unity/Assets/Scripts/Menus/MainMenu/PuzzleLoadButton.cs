@@ -32,10 +32,13 @@ public class PuzzleLoadButton : UIMonoBehaviour, IPointerClickHandler
 
 		TitleRef.text = string.Format(TitleFormat, puzzleIndex, wordCount);
 
-		TimeRef.text = string.Format(TimeFormat, 0, 0, "-");
-		ScoreRef.text = string.Format(ScoreFormat, 0, "-");
+		SerializableGuid puzzleGuid = mPuzzleManagerRef.GetGuidForPuzzle(puzzleSize, mPuzzleIndex);
+		PuzzleState currentState = SaveGameManager.Instance.GetPuzzleStateFor(puzzleGuid);
 
-		float percentageComplete = Random.Range(0, 101);
+		TimeRef.text = string.Format(TimeFormat, currentState.TimeMins, currentState.TimeSeconds, "-");
+		ScoreRef.text = string.Format(ScoreFormat, currentState.Score, "-");
+
+		float percentageComplete = Mathf.Clamp(currentState.PercentageComplete, 0, 100);
 
 		Vector2 progressBarSizeDelta = ProgressBarFillerRef.sizeDelta;
 		progressBarSizeDelta.x = Mathf.Lerp(0, ProgressBarRef.rect.width, percentageComplete / 100);
@@ -43,17 +46,17 @@ public class PuzzleLoadButton : UIMonoBehaviour, IPointerClickHandler
 
 		ProgressBarPercentageRef.text = string.Format(ProgressBarPercentageFormat, percentageComplete);
 
-		TickRef.gameObject.SetActive(percentageComplete >= 100);
+		TickRef.gameObject.SetActive(currentState.IsCompleted);
 	}
 
 	public void OnPointerClick(PointerEventData eventData)
 	{
 		if (eventData.button == PointerEventData.InputButton.Left)
 		{
-			mPuzzleManagerRef.OpenPuzzle(mPuzzleSize, mPuzzleIndex);
-
 			TimeManager.Instance.Reset();
 			ScoreManager.Instance.Reset();
+
+			mPuzzleManagerRef.OpenPuzzle(mPuzzleSize, mPuzzleIndex);
 
 			MenuManager.Instance.SwitchMenu(EMenuType.InGameMenu, OnMenuSwitched);
 		}

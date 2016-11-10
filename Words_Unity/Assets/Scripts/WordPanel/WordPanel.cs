@@ -38,7 +38,9 @@ public class WordPanel : UIMonoBehaviour
 
 	public WordPanelTitle Title;
 
+	private int mWordCount;
 	private int mWordsRemaining;
+
 	private List<WordPanelGroup> mPanelGroups;
 	private List<WordPanelEntry> mPanelEntries;
 
@@ -50,9 +52,10 @@ public class WordPanel : UIMonoBehaviour
 	{
 		CleanUp();
 
-		mWordsRemaining = wordPairs.Length;
+		mWordCount = wordPairs.Length;
+		mWordsRemaining = mWordCount;
 		mPanelGroups = new List<WordPanelGroup>(32);
-		mPanelEntries = new List<WordPanelEntry>(mWordsRemaining);
+		mPanelEntries = new List<WordPanelEntry>(mWordCount);
 
 		Vector3 position = new Vector3(0, 38, 0); // TODO - fix the literals
 		Vector3 groupStartPosition = Vector3.zero;
@@ -79,10 +82,22 @@ public class WordPanel : UIMonoBehaviour
 			wordsPlaced += groupWords.Length;
 		}
 
-		Title.SetTitle(mWordsRemaining);
-
 		mPanelSize = Mathf.Abs(groupStartPosition.y - previousGroupSize);
 		rectTransform.sizeDelta = new Vector2(rectTransform.sizeDelta.x, mPanelSize);
+
+		SaveGameManager.Instance.ActivePuzzleState.EnsureInitialisation(PuzzleLoaderRef.GetCurrentPuzzleSize(), mWordCount);
+
+		bool[] wordsFoundSavedState = SaveGameManager.Instance.ActivePuzzleState.WordsFoundStates;
+		for (int foundStateIndex = 0; foundStateIndex < mWordCount; ++foundStateIndex)
+		{
+			if (wordsFoundSavedState[foundStateIndex])
+			{
+				mPanelEntries[foundStateIndex].MarkWordAsFound();
+				--mWordsRemaining;
+			}
+		}
+
+		Title.SetTitle(mWordsRemaining);
 	}
 
 	void Update()
@@ -108,6 +123,7 @@ public class WordPanel : UIMonoBehaviour
 
 	private void CleanUp()
 	{
+		mWordCount = 0;
 		mWordsRemaining = 0;
 
 		if (mPanelGroups != null)
@@ -177,6 +193,8 @@ public class WordPanel : UIMonoBehaviour
 
 					++result.WordsFound;
 
+					SaveGameManager.Instance.ActivePuzzleState.MarkWordAsFound(entry.WordIndex);
+
 					updateTitle = true;
 
 					List<CharacterTile> tiles = new List<CharacterTile>();
@@ -231,5 +249,12 @@ public class WordPanel : UIMonoBehaviour
 
 		mPanelSize -= deltaModifier;
 		rectTransform.sizeDelta = new Vector2(rectTransform.sizeDelta.x, mPanelSize);
+	}
+
+	public float GetCompletePercentage()
+	{
+		float percentage = (float)(mWordCount - mWordsRemaining) / mWordCount;
+		percentage *= 100;
+		return percentage;
 	}
 }

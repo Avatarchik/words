@@ -13,7 +13,8 @@ public class PuzzleManager : MonoBehaviour
 {
 	static private readonly string kChosenIndexKey = "PuzzleIndex";
 
-	public PuzzleLoader LoaderRef;
+	public PuzzleLoader PuzzleLoaderRef;
+	public WordPanel WordPanelRef;
 
 	public List<PuzzleList> PuzzleLists;
 
@@ -22,36 +23,47 @@ public class PuzzleManager : MonoBehaviour
 
 	void Awake()
 	{
-		if (PlayerPrefs.HasKey(kChosenIndexKey))
+		if (PlayerPrefsPlus.HasKey(kChosenIndexKey))
 		{
-			mCurrentPuzzleIndex = PlayerPrefs.GetInt(kChosenIndexKey, 0);
+			mCurrentPuzzleIndex = PlayerPrefsPlus.GetInt(kChosenIndexKey, 0);
 		}
 	}
 
 	public void OpenPuzzle(int puzzleSize, int puzzleIndexToLoad)
 	{
 		mCurrentPuzzleIndex = puzzleIndexToLoad;
+		PlayerPrefsPlus.SetInt(kChosenIndexKey, mCurrentPuzzleIndex);
+		PlayerPrefsPlus.Save();
 
-		LoaderRef.gameObject.SetActive(true);
+		PuzzleLoaderRef.gameObject.SetActive(true);
 
 		mCurrentPuzzleSize = puzzleSize;
 		PuzzleContents contents = GetContentsFor(puzzleSize, puzzleIndexToLoad);
-		LoaderRef.LoadPuzzle(contents);
+		PuzzleState state = SaveGameManager.Instance.SetActivePuzzle(contents.Guid);
+		PuzzleLoaderRef.LoadPuzzle(contents);
 
-		PlayerPrefs.SetInt(kChosenIndexKey, mCurrentPuzzleIndex);
-		PlayerPrefs.Save();
+		TimeManager.Instance.SetTime(state.TimeMins, state.TimeSeconds);
+		ScoreManager.Instance.SetScore(state.Score);
 	}
 
 	public void ResetPuzzle()
 	{
+		SaveGameManager.Instance.ResetActivePuzzleState();
 		PuzzleContents contents = GetContentsFor(mCurrentPuzzleSize, mCurrentPuzzleIndex);
-		LoaderRef.LoadPuzzle(contents);
+		PuzzleLoaderRef.LoadPuzzle(contents);
 	}
 
 	public void ClosePuzzle()
 	{
-		LoaderRef.CleanUp();
-		LoaderRef.gameObject.SetActive(false);
+		PuzzleState state = SaveGameManager.Instance.ActivePuzzleState;
+		state.Score = ScoreManager.Instance.CurrentScore;
+		state.TimeMins = TimeManager.Instance.GetCurrentMinutes();
+		state.TimeSeconds = TimeManager.Instance.GetCurrentSeconds();
+		state.PercentageComplete = WordPanelRef.GetCompletePercentage();
+		SaveGameManager.Instance.SaveActivePuzzleState();
+
+		PuzzleLoaderRef.CleanUp();
+		PuzzleLoaderRef.gameObject.SetActive(false);
 	}
 
 	public int GetListIndex(int puzzleSize)
@@ -78,6 +90,25 @@ public class PuzzleManager : MonoBehaviour
 		PuzzleContents contents = GetContentsFor(puzzleSize, puzzleIndex);
 		int wordCount = contents.WordCount;
 		return wordCount;
+	}
+
+	public SerializableGuid GetGuidForPuzzle(int puzzleSize, int puzzleIndex)
+	{
+		PuzzleContents contents = GetContentsFor(puzzleSize, puzzleIndex);
+		return contents.Guid;
+	}
+
+	public void PopulateGuidList(ref List<SerializableGuid> mGuids)
+	{
+		mGuids.Clear();
+
+		foreach (PuzzleList puzzleList in PuzzleLists)
+		{
+			foreach (PuzzleContents puzzleContents in puzzleList.Puzzles)
+			{
+				mGuids.Add(puzzleContents.Guid);
+			}
+		}
 	}
 
 #if UNITY_EDITOR

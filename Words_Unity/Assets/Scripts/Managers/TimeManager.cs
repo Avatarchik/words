@@ -31,6 +31,13 @@ public class TimeManager : SingletonMonoBehaviour<TimeManager>
 		UpdateText();
 	}
 
+	public void SetTime(int minutes, int seconds)
+	{
+		mCurrentTime = (minutes * 60) + seconds;
+		mCurrentTimeInSeconds = (int)mCurrentTime;
+		UpdateText();
+	}
+
 	void Update()
 	{
 		if (mIsTicking)
@@ -51,5 +58,15 @@ public class TimeManager : SingletonMonoBehaviour<TimeManager>
 		int minutes = mCurrentTimeInSeconds / 60;
 		int seconds = mCurrentTimeInSeconds % 60;
 		TextRef.text = string.Format(TimeFormat, minutes, seconds);
+	}
+
+	public int GetCurrentMinutes()
+	{
+		return mCurrentTimeInSeconds / 60;
+	}
+
+	public int GetCurrentSeconds()
+	{
+		return mCurrentTimeInSeconds % 60;
 	}
 }

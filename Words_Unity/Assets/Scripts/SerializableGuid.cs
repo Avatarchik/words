@@ -5,7 +5,7 @@ using System;
 public class SerializableGuid
 {
 	[SerializeField]
-	private string Value;
+	public string Value;
 
 	public SerializableGuid()
 	{

@@ -63,6 +63,21 @@ public class PuzzleLoader : UIMonoBehaviour
 		ColourPanelRef.Initialise(contentsToLoad.MaxCharacterUsage);
 
 		LastSelectionCheckedRef.Reset();
+
+		int[] charUsesRemainingSavedState = SaveGameManager.Instance.ActivePuzzleState.CharUsageLeftStates;
+		int charCount = mSize * mSize;
+		for (int charStateIndex = 0; charStateIndex < charCount; ++charStateIndex)
+		{
+			int usageLeft = charUsesRemainingSavedState[charStateIndex];
+
+			if (usageLeft != -1)
+			{
+				int x = charStateIndex / mSize;
+				int y = charStateIndex % mSize;
+
+				mCharacterTilesGrid[x, y].SetUsage(usageLeft);
+			}
+		}
 	}
 
 	public void CleanUp()
@@ -157,5 +172,10 @@ public class PuzzleLoader : UIMonoBehaviour
 			++checkedEntries;
 		}
 		while (pos != endPos && checkedEntries < mSize);
+	}
+
+	public int GetCurrentPuzzleSize()
+	{
+		return mSize;
 	}
 }

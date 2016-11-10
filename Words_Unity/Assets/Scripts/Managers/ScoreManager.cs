@@ -8,8 +8,15 @@ public class ScoreManager : SingletonMonoBehaviour<ScoreManager>
 
 	public ScoreAddition ScoreAdditionRef;
 
-	private int mScore;
+	public int CurrentScore { get; private set; }
 	private int mTargetScore;
+
+	public void SetScore(int newScore)
+	{
+		CurrentScore = newScore;
+		mTargetScore = CurrentScore;
+		UpdateText();
+	}
 
 	public void AddScore(int scoreToAdd)
 	{
@@ -21,18 +28,18 @@ public class ScoreManager : SingletonMonoBehaviour<ScoreManager>
 
 	void Update()
 	{
-		if (mScore < mTargetScore)
+		if (CurrentScore < mTargetScore)
 		{
-			float delta = mTargetScore - mScore;
+			float delta = mTargetScore - CurrentScore;
 			int scoreToAdd = (int)(delta * 0.05f);
 
 			if (scoreToAdd > 0)
 			{
-				mScore = Mathf.Clamp(mScore + scoreToAdd, mScore, mTargetScore);
+				CurrentScore = Mathf.Clamp(CurrentScore + scoreToAdd, CurrentScore, mTargetScore);
 			}
 			else
 			{
-				mScore = mTargetScore;
+				CurrentScore = mTargetScore;
 			}
 
 			UpdateText();
@@ -41,7 +48,7 @@ public class ScoreManager : SingletonMonoBehaviour<ScoreManager>
 
 	public void Reset()
 	{
-		mScore = 0;
+		CurrentScore = 0;
 		mTargetScore = 0;
 
 		UpdateText();
@@ -51,6 +58,6 @@ public class ScoreManager : SingletonMonoBehaviour<ScoreManager>
 
 	private void UpdateText()
 	{
-		ScoreTextRef.text = string.Format(ScoreFormat, mScore);
+		ScoreTextRef.text = string.Format(ScoreFormat, CurrentScore);
 	}
 }

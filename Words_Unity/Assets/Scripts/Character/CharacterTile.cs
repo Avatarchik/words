@@ -34,10 +34,18 @@ public class CharacterTile : MonoBehaviour
 #endif // UNITY_EDITOR
 	}
 
+	public void SetUsage(int newUsage)
+	{
+		DecreaseUsage(mUsageLeft - newUsage);
+	}
+
 	public void DecreaseUsage(int numberOfUses)
 	{
 		mUsageLeft -= numberOfUses;
 		UpdateName();
+
+		int charIndex = (mLoader.GetCurrentPuzzleSize() * Position.X) + Position.Y;
+		SaveGameManager.Instance.ActivePuzzleState.SetCharacterUsageLeft(charIndex, mUsageLeft);
 
 		if (mUsageLeft <= 0)
 		{
