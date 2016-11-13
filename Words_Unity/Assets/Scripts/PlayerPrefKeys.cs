@@ -1,10 +1,9 @@
 static public class PlayerPrefKeys
 {
-	// Main menu
-	static public readonly string ColourSchemeIndex = "ColourSchemeIndex";
+	// State
+	static public readonly string CurrentPuzzleGuid = "State CurrentPuzzleGuid";
 
-	static public readonly string PuzzleIndex = "PuzzleIndex";
-
-	// Option menu
-	static public readonly string PuzzleLayout = "PuzzleLayout";
+	// Options
+	static public readonly string ColourSchemeIndex = "Option ChosenColourScheme";
+	static public readonly string PuzzleLayout = "Option PuzzleLayout";
 }

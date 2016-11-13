@@ -20,9 +20,9 @@ public class PuzzleManager : MonoBehaviour
 
 	void Awake()
 	{
-		if (PlayerPrefsPlus.HasKey(PlayerPrefKeys.PuzzleIndex))
+		if (PlayerPrefsPlus.HasKey(PlayerPrefKeys.CurrentPuzzleGuid))
 		{
-			mCurrentPuzzleGuid = PlayerPrefsPlus.GetString(PlayerPrefKeys.PuzzleIndex, string.Empty);
+			mCurrentPuzzleGuid = PlayerPrefsPlus.GetString(PlayerPrefKeys.CurrentPuzzleGuid, string.Empty);
 		}
 	}
 
@@ -30,7 +30,7 @@ public class PuzzleManager : MonoBehaviour
 	{
 		mCurrentPuzzleGuid = GetGuidForPuzzle(puzzleSize, puzzleIndex);
 
-		PlayerPrefsPlus.SetString(PlayerPrefKeys.PuzzleIndex, mCurrentPuzzleGuid.Value);
+		PlayerPrefsPlus.SetString(PlayerPrefKeys.CurrentPuzzleGuid, mCurrentPuzzleGuid.Value);
 		PlayerPrefsPlus.Save();
 
 		PuzzleLoaderRef.gameObject.SetActive(true);
