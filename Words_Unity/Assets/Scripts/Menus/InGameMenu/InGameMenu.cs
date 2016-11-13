@@ -11,10 +11,10 @@ public class InGameMenu : Menu, IMenu
 	{
 		PauseButton.gameObject.SetActive(true);
 
-		// TODO: Temporary
+		int layoutOption = PlayerPrefsPlus.GetInt("PuzzleLayout", 1);
 		foreach (HandedPositionPair pair in HandedPositionPairs)
 		{
-			pair.SwitchTo(HandedPosition.EHandedPositionType.Right);
+			pair.SwitchTo((HandedPosition.EHandedPositionType)layoutOption);
 		}
 	}
 
@@ -25,24 +25,5 @@ public class InGameMenu : Menu, IMenu
 	public void HidePauseButton()
 	{
 		PauseButton.gameObject.SetActive(false);
-	}
-
-	void Update()
-	{
-		// TODO: Temporary
-		if (Input.GetKeyUp(KeyCode.L))
-		{
-			foreach (HandedPositionPair pair in HandedPositionPairs)
-			{
-				pair.SwitchTo(HandedPosition.EHandedPositionType.Left);
-			}
-		}
-		else if (Input.GetKeyUp(KeyCode.R))
-		{
-			foreach (HandedPositionPair pair in HandedPositionPairs)
-			{
-				pair.SwitchTo(HandedPosition.EHandedPositionType.Right);
-			}
-		}
 	}
 }
