@@ -18,7 +18,7 @@ public class WordPanelEntry : MonoBehaviour, IPointerClickHandler
 
 	private WordPanelGroup mPanelGroupRef;
 
-	public int WordIndex = 0;
+	public int WordIndex { get; private set; }
 
 	public void Initialise(WordPanelGroup panelGroupRef, WordPair wordPair, int wordIndex)
 	{
