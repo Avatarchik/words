@@ -11,7 +11,7 @@ public class PuzzleLayoutOption : MonoBehaviour
 
 	void Awake()
 	{
-		int optionValue = PlayerPrefsPlus.GetInt("PuzzleLayout", 1);
+		int optionValue = PlayerPrefsPlus.GetInt(PlayerPrefKeys.PuzzleLayout, 1);
 		UpdateUI(optionValue);
 	}
 
@@ -25,14 +25,14 @@ public class PuzzleLayoutOption : MonoBehaviour
 	public void OnLeftHandedSelected()
 	{
 		UpdateUI(0);
-		PlayerPrefsPlus.SetInt("PuzzleLayout", 0);
+		PlayerPrefsPlus.SetInt(PlayerPrefKeys.PuzzleLayout, 0);
 		PlayerPrefsPlus.Save();
 	}
 
 	public void OnRightHandedSelected()
 	{
 		UpdateUI(1);
-		PlayerPrefsPlus.SetInt("PuzzleLayout", 1);
+		PlayerPrefsPlus.SetInt(PlayerPrefKeys.PuzzleLayout, 1);
 		PlayerPrefsPlus.Save();
 	}
 }

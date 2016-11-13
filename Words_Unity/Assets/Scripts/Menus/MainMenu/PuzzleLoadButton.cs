@@ -30,12 +30,12 @@ public class PuzzleLoadButton : UIMonoBehaviour, IPointerClickHandler
 		mPuzzleSize = puzzleSize;
 		mPuzzleIndex = puzzleIndex;
 
-		int wordCount = mPuzzleManagerRef.GetWordCountForPuzzle(puzzleSize, mPuzzleIndex);
-
-		TitleRef.text = string.Format(TitleFormat, puzzleIndex + 1, wordCount);
-
 		SerializableGuid puzzleGuid = mPuzzleManagerRef.GetGuidForPuzzle(puzzleSize, mPuzzleIndex);
 		mCurrentState = SaveGameManager.Instance.GetPuzzleStateFor(puzzleGuid);
+
+		int wordCount = mPuzzleManagerRef.GetWordCountForPuzzle(puzzleGuid);
+
+		TitleRef.text = string.Format(TitleFormat, puzzleIndex + 1, wordCount);
 
 		TimeRef.text = string.Format(TimeFormat, mCurrentState.TimeMins, mCurrentState.TimeSeconds, "-");
 		ScoreRef.text = string.Format(ScoreFormat, mCurrentState.Score, "-");

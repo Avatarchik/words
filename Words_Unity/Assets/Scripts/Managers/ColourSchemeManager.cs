@@ -5,8 +5,6 @@ using System.Collections.Generic;
 [ScriptOrder(-101)]
 public class ColourSchemeManager : MonoBehaviour
 {
-	static private readonly string kChosenIndexKey = "ColourSchemeIndex";
-
 	public List<ColourScheme> Schemes;
 	private int mChosenIndex = 0;
 
@@ -15,9 +13,9 @@ public class ColourSchemeManager : MonoBehaviour
 
 	void Awake()
 	{
-		if (PlayerPrefsPlus.HasKey(kChosenIndexKey))
+		if (PlayerPrefsPlus.HasKey(PlayerPrefKeys.ColourSchemeIndex))
 		{
-			mChosenIndex = PlayerPrefsPlus.GetInt(kChosenIndexKey, 0);
+			mChosenIndex = PlayerPrefsPlus.GetInt(PlayerPrefKeys.ColourSchemeIndex, 0);
 		}
 		SwitchScheme(mChosenIndex);
 	}
@@ -33,7 +31,7 @@ public class ColourSchemeManager : MonoBehaviour
 			OnSchemeSwitched(sActiveColourScheme);
 		}
 
-		PlayerPrefsPlus.SetInt(kChosenIndexKey, mChosenIndex);
+		PlayerPrefsPlus.SetInt(PlayerPrefKeys.ColourSchemeIndex, mChosenIndex);
 		PlayerPrefsPlus.Save();
 	}
 

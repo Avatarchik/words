@@ -11,7 +11,7 @@ public class InGameMenu : Menu, IMenu
 	{
 		PauseButton.gameObject.SetActive(true);
 
-		int layoutOption = PlayerPrefsPlus.GetInt("PuzzleLayout", 1);
+		int layoutOption = PlayerPrefsPlus.GetInt(PlayerPrefKeys.PuzzleLayout, 1);
 		foreach (HandedPositionPair pair in HandedPositionPairs)
 		{
 			pair.SwitchTo((HandedPosition.EHandedPositionType)layoutOption);

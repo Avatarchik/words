@@ -17,6 +17,11 @@ public class SerializableGuid
 		return new SerializableGuid { Value = rhs.ToString("D") };
 	}
 
+	public static implicit operator SerializableGuid(string rhs)
+	{
+		return new SerializableGuid { Value = rhs };
+	}
+
 	public static implicit operator Guid(SerializableGuid rhs)
 	{
 		if (rhs.Value == null)

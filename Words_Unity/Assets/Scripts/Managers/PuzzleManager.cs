@@ -11,34 +11,31 @@ public class PuzzleList
 [ScriptOrder(101)]
 public class PuzzleManager : MonoBehaviour
 {
-	static private readonly string kChosenIndexKey = "PuzzleIndex";
-
 	public PuzzleLoader PuzzleLoaderRef;
 	public WordPanel WordPanelRef;
 
 	public List<PuzzleList> PuzzleLists;
 
-	private int mCurrentPuzzleSize;
-	private int mCurrentPuzzleIndex;
+	private SerializableGuid mCurrentPuzzleGuid;
 
 	void Awake()
 	{
-		if (PlayerPrefsPlus.HasKey(kChosenIndexKey))
+		if (PlayerPrefsPlus.HasKey(PlayerPrefKeys.PuzzleIndex))
 		{
-			mCurrentPuzzleIndex = PlayerPrefsPlus.GetInt(kChosenIndexKey, 0);
+			mCurrentPuzzleGuid = PlayerPrefsPlus.GetString(PlayerPrefKeys.PuzzleIndex, string.Empty);
 		}
 	}
 
-	public void OpenPuzzle(int puzzleSize, int puzzleIndexToLoad)
+	public void OpenPuzzle(int puzzleSize, int puzzleIndex)
 	{
-		mCurrentPuzzleIndex = puzzleIndexToLoad;
-		PlayerPrefsPlus.SetInt(kChosenIndexKey, mCurrentPuzzleIndex);
+		mCurrentPuzzleGuid = GetGuidForPuzzle(puzzleSize, puzzleIndex);
+
+		PlayerPrefsPlus.SetString(PlayerPrefKeys.PuzzleIndex, mCurrentPuzzleGuid.Value);
 		PlayerPrefsPlus.Save();
 
 		PuzzleLoaderRef.gameObject.SetActive(true);
 
-		mCurrentPuzzleSize = puzzleSize;
-		PuzzleContents contents = GetContentsFor(puzzleSize, puzzleIndexToLoad);
+		PuzzleContents contents = GetContentsFor(mCurrentPuzzleGuid);
 		PuzzleState state = SaveGameManager.Instance.SetActivePuzzle(contents.Guid);
 		PuzzleLoaderRef.LoadPuzzle(contents);
 
@@ -49,7 +46,7 @@ public class PuzzleManager : MonoBehaviour
 	public void ResetPuzzle()
 	{
 		SaveGameManager.Instance.ResetActivePuzzleState();
-		PuzzleContents contents = GetContentsFor(mCurrentPuzzleSize, mCurrentPuzzleIndex);
+		PuzzleContents contents = GetContentsFor(mCurrentPuzzleGuid);
 		PuzzleLoaderRef.LoadPuzzle(contents);
 	}
 
@@ -71,31 +68,35 @@ public class PuzzleManager : MonoBehaviour
 		return puzzleSize - GlobalSettings.PuzzleSizeMin;
 	}
 
-	private PuzzleList GetListForPuzzleSize(int puzzleSize)
+	private PuzzleContents GetContentsFor(SerializableGuid puzzleGuid)
 	{
-		int listIndex = GetListIndex(puzzleSize);
-		PuzzleList list = PuzzleLists[listIndex];
-		return list;
+		foreach (PuzzleList puzzleList in PuzzleLists)
+		{
+			foreach (PuzzleContents puzzleContents in puzzleList.Puzzles)
+			{
+				if (puzzleContents.Guid == puzzleGuid)
+				{
+					return puzzleContents;
+				}
+			}
+		}
+
+		ODebug.Assert(false);
+		return null;
 	}
 
-	private PuzzleContents GetContentsFor(int puzzleSize, int puzzleIndex)
+	public int GetWordCountForPuzzle(SerializableGuid puzzleGuid)
 	{
-		PuzzleList list = GetListForPuzzleSize(puzzleSize);
-		PuzzleContents contents = list.Puzzles[puzzleIndex];
-		return contents;
-	}
-
-	public int GetWordCountForPuzzle(int puzzleSize, int puzzleIndex)
-	{
-		PuzzleContents contents = GetContentsFor(puzzleSize, puzzleIndex);
+		PuzzleContents contents = GetContentsFor(puzzleGuid);
 		int wordCount = contents.WordCount;
 		return wordCount;
 	}
 
 	public SerializableGuid GetGuidForPuzzle(int puzzleSize, int puzzleIndex)
 	{
-		PuzzleContents contents = GetContentsFor(puzzleSize, puzzleIndex);
-		return contents.Guid;
+		PuzzleList puzzleList = PuzzleLists[puzzleSize - GlobalSettings.PuzzleSizeMin];
+		PuzzleContents puzzleContents = puzzleList.Puzzles[puzzleIndex];
+		return puzzleContents.Guid;
 	}
 
 	public void PopulateGuidList(ref List<SerializableGuid> mGuids)
