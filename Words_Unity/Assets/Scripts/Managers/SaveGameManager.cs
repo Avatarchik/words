@@ -40,15 +40,26 @@ public class SaveGameManager : SingletonMonoBehaviour<SaveGameManager>
 
 	public void SaveActivePuzzleState()
 	{
-		SecureDataManager<PuzzleState> dm = new SecureDataManager<PuzzleState>("PuzzleState:" + mActivePuzzleGuid.Value);
+		SavePuzzleState(mActivePuzzleGuid);
+	}
+
+	public void SavePuzzleState(SerializableGuid puzzleGuid)
+	{
+		SecureDataManager<PuzzleState> dm = new SecureDataManager<PuzzleState>("PuzzleState:" + puzzleGuid.Value);
 		dm.Save(ActivePuzzleState);
 		SecurePlayerPrefs.Save();
 	}
 
 	public void ResetActivePuzzleState()
 	{
-		ActivePuzzleState.Reset();
-		SaveActivePuzzleState();
+		ResetPuzzleState(mActivePuzzleGuid);
+	}
+
+	public void ResetPuzzleState(SerializableGuid puzzleGuid)
+	{
+		PuzzleState state = GetPuzzleStateFor(puzzleGuid);
+		state.Reset();
+		SavePuzzleState(puzzleGuid);
 	}
 
 	public PuzzleState GetPuzzleStateFor(SerializableGuid puzzleGuid)
