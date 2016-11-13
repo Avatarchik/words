@@ -2,8 +2,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class WordPanelEntry : MonoBehaviour
-	, IPointerClickHandler
+public class WordPanelEntry : MonoBehaviour, IPointerClickHandler
 {
 	public Text TextRef;
 	public RectTransform StrikeThrough;

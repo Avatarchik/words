@@ -1,6 +1,7 @@
+using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class PauseButton : UIMonoBehaviour, IPointerClickHandler
+public class PauseButton : MonoBehaviour, IPointerClickHandler
 {
 	public void OnPointerClick(PointerEventData eventData)
 	{

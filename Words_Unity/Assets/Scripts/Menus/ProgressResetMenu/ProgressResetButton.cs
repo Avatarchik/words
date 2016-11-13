@@ -1,6 +1,7 @@
+using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class ProgressResetButton : UIMonoBehaviour, IPointerClickHandler
+public class ProgressResetButton : MonoBehaviour, IPointerClickHandler
 {
 	public void OnPointerClick(PointerEventData eventData)
 	{

@@ -2,8 +2,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class WordPanelGroupTitle : MonoBehaviour
-	, IPointerClickHandler
+public class WordPanelGroupTitle : MonoBehaviour, IPointerClickHandler
 {
 	public Text TextRef;
 	public string TitleFormat;

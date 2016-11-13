@@ -1,6 +1,7 @@
+using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class CompleteContinueButton : UIMonoBehaviour, IPointerClickHandler
+public class CompleteContinueButton : MonoBehaviour, IPointerClickHandler
 {
 	public PuzzleManager PuzzleManagerRef;
 
