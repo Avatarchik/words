@@ -48,16 +48,22 @@ public class PuzzleState
 		TimeSeconds = 0;
 		PercentageComplete = 0;
 
-		int wordCount = WordsFoundStates.Length;
-		for (int wordIndex = 0; wordIndex < wordCount; ++wordIndex)
+		if (WordsFoundStates != null && WordsFoundStates.Length > 0)
 		{
-			WordsFoundStates[wordIndex] = false;
+			int wordCount = WordsFoundStates.Length;
+			for (int wordIndex = 0; wordIndex < wordCount; ++wordIndex)
+			{
+				WordsFoundStates[wordIndex] = false;
+			}
 		}
 
-		int charCount = CharUsageLeftStates.Length;
-		for (int charIndex = 0; charIndex < charCount; ++charIndex)
+		if (CharUsageLeftStates != null && CharUsageLeftStates.Length > 0)
 		{
-			CharUsageLeftStates[charIndex] = -1;
+			int charCount = CharUsageLeftStates.Length;
+			for (int charIndex = 0; charIndex < charCount; ++charIndex)
+			{
+				CharUsageLeftStates[charIndex] = -1;
+			}
 		}
 	}
 

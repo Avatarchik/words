@@ -23,7 +23,7 @@ public class SaveGameManager : SingletonMonoBehaviour<SaveGameManager>
 		mPuzzleStates = new List<PuzzleState>(mPuzzleGuids.Count);
 		foreach (SerializableGuid puzzleGuid in mPuzzleGuids)
 		{
-			SecureDataManager<PuzzleState> dm = new SecureDataManager<PuzzleState>("PuzzleState:" + puzzleGuid.Value);
+			SecureDataManager<PuzzleState> dm = new SecureDataManager<PuzzleState>("PuzzleState " + puzzleGuid.Value);
 			mPuzzleStates.Add(dm.Get());
 		}
 	}
@@ -45,7 +45,7 @@ public class SaveGameManager : SingletonMonoBehaviour<SaveGameManager>
 
 	public void SavePuzzleState(SerializableGuid puzzleGuid)
 	{
-		SecureDataManager<PuzzleState> dm = new SecureDataManager<PuzzleState>("PuzzleState:" + puzzleGuid.Value);
+		SecureDataManager<PuzzleState> dm = new SecureDataManager<PuzzleState>("PuzzleState " + puzzleGuid.Value);
 		dm.Save(ActivePuzzleState);
 		SecurePlayerPrefs.Save();
 	}
@@ -60,6 +60,15 @@ public class SaveGameManager : SingletonMonoBehaviour<SaveGameManager>
 		PuzzleState state = GetPuzzleStateFor(puzzleGuid);
 		state.Reset();
 		SavePuzzleState(puzzleGuid);
+	}
+
+	public void ResetAll()
+	{
+		for (int puzzleIndex = 0; puzzleIndex < mPuzzleStates.Count; ++puzzleIndex)
+		{
+			mPuzzleStates[puzzleIndex].Reset();
+			SecurePlayerPrefs.DeleteKey("PuzzleState " + mPuzzleGuids[puzzleIndex].Value);
+		}
 	}
 
 	public PuzzleState GetPuzzleStateFor(SerializableGuid puzzleGuid)
