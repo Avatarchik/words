@@ -60,6 +60,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ButtonColour: {r: 1, g: 0.5686275, b: 0.02745098, a: 1}
+  SetHighlightedColour: 1
+  SetPressedColour: 1
 --- !u!114 &114000011481858638
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -127,7 +129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
