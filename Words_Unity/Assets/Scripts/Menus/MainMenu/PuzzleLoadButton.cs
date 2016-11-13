@@ -21,24 +21,26 @@ public class PuzzleLoadButton : UIMonoBehaviour, IPointerClickHandler
 	private int mPuzzleSize;
 	private int mPuzzleIndex;
 
+	private PuzzleState mCurrentState;
+
 	public void Initialise(PuzzleManager puzzleManagerRef, int puzzleSize, int puzzleIndex)
 	{
 		mPuzzleManagerRef = puzzleManagerRef;
 
 		mPuzzleSize = puzzleSize;
-		mPuzzleIndex = puzzleIndex - 1;
+		mPuzzleIndex = puzzleIndex;
 
 		int wordCount = mPuzzleManagerRef.GetWordCountForPuzzle(puzzleSize, mPuzzleIndex);
 
-		TitleRef.text = string.Format(TitleFormat, puzzleIndex, wordCount);
+		TitleRef.text = string.Format(TitleFormat, puzzleIndex + 1, wordCount);
 
 		SerializableGuid puzzleGuid = mPuzzleManagerRef.GetGuidForPuzzle(puzzleSize, mPuzzleIndex);
-		PuzzleState currentState = SaveGameManager.Instance.GetPuzzleStateFor(puzzleGuid);
+		mCurrentState = SaveGameManager.Instance.GetPuzzleStateFor(puzzleGuid);
 
-		TimeRef.text = string.Format(TimeFormat, currentState.TimeMins, currentState.TimeSeconds, "-");
-		ScoreRef.text = string.Format(ScoreFormat, currentState.Score, "-");
+		TimeRef.text = string.Format(TimeFormat, mCurrentState.TimeMins, mCurrentState.TimeSeconds, "-");
+		ScoreRef.text = string.Format(ScoreFormat, mCurrentState.Score, "-");
 
-		float percentageComplete = Mathf.Clamp(currentState.PercentageComplete, 0, 100);
+		float percentageComplete = Mathf.Clamp(mCurrentState.PercentageComplete, 0, 100);
 
 		Vector2 progressBarSizeDelta = ProgressBarFillerRef.sizeDelta;
 		progressBarSizeDelta.x = Mathf.Lerp(0, ProgressBarRef.rect.width, percentageComplete / 100);
@@ -46,24 +48,46 @@ public class PuzzleLoadButton : UIMonoBehaviour, IPointerClickHandler
 
 		ProgressBarPercentageRef.text = string.Format(ProgressBarPercentageFormat, percentageComplete);
 
-		TickRef.gameObject.SetActive(currentState.IsCompleted);
+		TickRef.gameObject.SetActive(mCurrentState.IsCompleted);
+	}
+
+	public void Reinitialise()
+	{
+		Initialise(mPuzzleManagerRef, mPuzzleSize, mPuzzleIndex);
 	}
 
 	public void OnPointerClick(PointerEventData eventData)
 	{
 		if (eventData.button == PointerEventData.InputButton.Left)
 		{
-			TimeManager.Instance.Reset();
-			ScoreManager.Instance.Reset();
+			if (!mCurrentState.IsCompleted)
+			{
+				TimeManager.Instance.Reset();
+				ScoreManager.Instance.Reset();
 
-			mPuzzleManagerRef.OpenPuzzle(mPuzzleSize, mPuzzleIndex);
+				mPuzzleManagerRef.OpenPuzzle(mPuzzleSize, mPuzzleIndex);
 
-			MenuManager.Instance.SwitchMenu(EMenuType.InGameMenu, OnMenuSwitched);
+				MenuManager.Instance.SwitchMenu(EMenuType.InGameMenu, OnMenuSwitchedToInGame);
+			}
+			else
+			{
+				MenuManager.Instance.SwitchTemporaryMenu(EMenuType.PuzzleResetMenu, OnMenuSwitchedToResetQuestion);
+			}
 		}
 	}
 
-	private void OnMenuSwitched()
+	private void OnMenuSwitchedToInGame()
 	{
 		TimeManager.Instance.Start();
+	}
+
+	private void OnMenuSwitchedToResetQuestion()
+	{
+		PuzzleResetMenu resetMenu = MenuManager.Instance.TemporaryMenu as PuzzleResetMenu;
+		if (resetMenu)
+		{
+			SerializableGuid puzzleGuid = mPuzzleManagerRef.GetGuidForPuzzle(mPuzzleSize, mPuzzleIndex);
+			resetMenu.InitialiseForPuzzle(puzzleGuid, this);
+		}
 	}
 }

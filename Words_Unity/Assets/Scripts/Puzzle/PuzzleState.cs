@@ -23,13 +23,13 @@ public class PuzzleState
 	{
 		bool shouldReset = false;
 
-		if (WordsFoundStates == null)
+		if (WordsFoundStates == null || WordsFoundStates.Length == 0)
 		{
 			WordsFoundStates = new bool[wordCount];
 			shouldReset = true;
 		}
 
-		if (CharUsageLeftStates == null)
+		if (CharUsageLeftStates == null || CharUsageLeftStates.Length == 0)
 		{
 			CharUsageLeftStates = new int[puzzleSize * puzzleSize];
 			shouldReset = true;

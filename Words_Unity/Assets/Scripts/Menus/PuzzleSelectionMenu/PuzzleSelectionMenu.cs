@@ -50,7 +50,7 @@ public class PuzzleSelectionMenu : Menu, IMenu
 			PuzzleLoadButton puzzleLoadButton = newButtonGO.GetComponent<PuzzleLoadButton>();
 			puzzleLoadButton.rectTransform.localPosition = new Vector3(0, -116 * puzzleIndex, 0); // TODO - fix the literals
 
-			puzzleLoadButton.Initialise(PuzzleManagerRef, puzzleSize, puzzleIndex + 1);
+			puzzleLoadButton.Initialise(PuzzleManagerRef, puzzleSize, puzzleIndex);
 
 			mPuzzles.Add(puzzleLoadButton.rectTransform);
 		}

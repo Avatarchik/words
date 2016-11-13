@@ -12,6 +12,7 @@ public enum EMenuType
 	PuzzleCompleteMenu,
 	PuzzleSelectionMenu,
 	WordDefinitionMenu,
+	PuzzleResetMenu,
 
 	Count,
 }
