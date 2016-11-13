@@ -6,7 +6,7 @@ public class BackgroundPicker : MonoBehaviour
 {
 	public Image ImageRef;
 	public Sprite[] Backgrounds;
-	static public Sprite sChosenBackground;
+	static public Sprite sChosenBackground { get; private set; }
 
 	void Awake()
 	{

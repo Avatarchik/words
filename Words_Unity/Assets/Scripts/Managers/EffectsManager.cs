@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class EffectsManager : MonoBehaviour
 {
-	public int PoolSize = 32;
 	private readonly Vector3 kOffscreenPos = new Vector3(0, 5000, 0);
+
+	[Range(1, 64)]
+	public int PoolSize = 32;
 
 	public ParticleSystem FoundEffectPrefab;
 	public ParticleSystem NotFoundEffectPrefab;

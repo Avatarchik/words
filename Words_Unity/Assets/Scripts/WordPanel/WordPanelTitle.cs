@@ -9,12 +9,11 @@ public class WordPanelTitle : MonoBehaviour
 	public string AllFoundTitle;
 	public string ForEffectTitleFormat;
 
-	[HideInInspector]
-	public bool IsForEffect = false;
+	private bool mIsForEffect;
 
 	void Update()
 	{
-		if (IsForEffect)
+		if (mIsForEffect)
 		{
 			if (transform.localPosition.y < -700)
 			{
@@ -50,7 +49,7 @@ public class WordPanelTitle : MonoBehaviour
 
 	private void MarkAsForEffect(int wordsRemoved)
 	{
-		IsForEffect = true;
+		mIsForEffect = true;
 		TextRef.text = string.Format(ForEffectTitleFormat, wordsRemoved);
 	}
 }

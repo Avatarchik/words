@@ -8,7 +8,7 @@ public class CharacterTile : MonoBehaviour
 
 	public char Character { get; private set; }
 	private int mUsageLeft;
-	public GridPosition Position;
+	public GridPosition Position { get; private set; }
 
 	private PuzzleLoader mLoader;
 

@@ -6,6 +6,7 @@ public class ScoreAddition : MonoBehaviour
 	public Text TextRef;
 	public string TextFormat;
 
+	[Range(0f, 5f)]
 	public float FadeTime = 1f;
 	public Color StartColour = ColorHelper.SetAlpha(Color.black, 1);
 	public Color EndColour = ColorHelper.SetAlpha(Color.black, 0);
