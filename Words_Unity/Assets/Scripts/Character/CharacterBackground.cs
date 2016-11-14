@@ -39,7 +39,7 @@ public class CharacterBackground : MonoBehaviour
 	{
 		if (eventData.button == PointerEventData.InputButton.Left)
 		{
-			Highlighter.Instance.SetFrom(transform.parent.gameObject);
+			Highlighter.Instance.SetFrom(transform.gameObject);
 		}
 	}
 
@@ -60,7 +60,7 @@ public class CharacterBackground : MonoBehaviour
 	{
 		if (eventData.button == PointerEventData.InputButton.Left)
 		{
-			Highlighter.Instance.SetTo(transform.parent.gameObject);
+			Highlighter.Instance.SetTo(transform.gameObject);
 		}
 	}
 }
