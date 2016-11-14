@@ -16,7 +16,7 @@ public class PuzzleGenerator : EditorWindow
 	private int mTestLevelsPerSize = 5;
 
 	private char INVALID_CHAR = ' ';
-	private GridEntry[,] mGrid;
+	private CharacterUsage[,] mGrid;
 
 	private Words WordList;
 
@@ -218,12 +218,12 @@ public class PuzzleGenerator : EditorWindow
 		PuzzleContents contents = CreateScriptableObjects.CreateNewPuzzleContents(mContentsPath);
 		contents.Initialise(mSize);
 
-		mGrid = new GridEntry[mSize, mSize];
+		mGrid = new CharacterUsage[mSize, mSize];
 		for (int x = 0; x < mSize; ++x)
 		{
 			for (int y = 0; y < mSize; ++y)
 			{
-				mGrid[x, y] = new GridEntry(INVALID_CHAR);
+				mGrid[x, y] = new CharacterUsage(INVALID_CHAR);
 			}
 		}
 
@@ -652,7 +652,7 @@ public class PuzzleGenerator : EditorWindow
 		int yModifier;
 		WordDirection.GetModifiers(wordDirection, out xModifier, out yModifier);
 
-		GridEntry entry;
+		CharacterUsage entry;
 		int wordLength = word.Length;
 		for (int characterIndex = 0; characterIndex < wordLength; ++characterIndex)
 		{
@@ -684,7 +684,7 @@ public class PuzzleGenerator : EditorWindow
 			return false;
 		}
 
-		GridEntry entry;
+		CharacterUsage entry;
 		int partialWordLength = partialWord.Length;
 		for (int characterIndex = 0; characterIndex < partialWordLength; ++characterIndex)
 		{

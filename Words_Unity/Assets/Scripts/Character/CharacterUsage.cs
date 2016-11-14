@@ -1,7 +1,7 @@
 using System;
 
 [Serializable]
-public struct CharacterUsage
+public class CharacterUsage
 {
 	public char Character;
 	public int NumberOfUses;

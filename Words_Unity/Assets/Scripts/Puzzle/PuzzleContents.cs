@@ -33,7 +33,7 @@ public class PuzzleContents : ScriptableObject
 #endif // UNITY_EDITOR
 	}
 
-	public bool Finalise(GridEntry[,] generatedGrid)
+	public bool Finalise(CharacterUsage[,] generatedGrid)
 	{
 		Array.Resize(ref Words, WordCount);
 
@@ -55,23 +55,14 @@ public class PuzzleContents : ScriptableObject
 		++WordCount;
 	}
 
-	private void SetCharacterUsage(GridEntry[,] generatedGrid)
+	private void SetCharacterUsage(CharacterUsage[,] generatedGrid)
 	{
 		int charCount = 0;
-		CharacterUsage usage;
-		GridEntry entry;
 		for (int x = 0; x < Size; ++x)
 		{
 			for (int y = 0; y < Size; ++y)
 			{
-				entry = generatedGrid[x, y];
-				usage = CharGrid[charCount];
-
-				usage.Character = entry.Character;
-				usage.NumberOfUses = entry.NumberOfUses;
-
-				CharGrid[charCount] = usage;
-
+				CharGrid[charCount] = generatedGrid[x, y];
 				++charCount;
 			}
 		}
