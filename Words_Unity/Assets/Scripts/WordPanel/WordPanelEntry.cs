@@ -9,7 +9,7 @@ public class WordPanelEntry : MonoBehaviour, IPointerClickHandler
 
 	public bool HasBeenFound { get; private set; }
 
-	private string mWord;
+	private WordPair mWordPair;
 	public GridPosition FromPosition { get; private set; }
 	public GridPosition ToPosition { get; private set; }
 
@@ -24,8 +24,8 @@ public class WordPanelEntry : MonoBehaviour, IPointerClickHandler
 	{
 		HasBeenFound = false;
 
-		mWord = wordPair.Forwards;
-		TextRef.text = mWord;
+		mWordPair = wordPair;
+		TextRef.text = mWordPair.Forwards;
 
 		FromPosition = wordPair.FromPosition;
 		ToPosition = wordPair.ToPosition;
@@ -35,13 +35,13 @@ public class WordPanelEntry : MonoBehaviour, IPointerClickHandler
 		WordIndex = wordIndex;
 	}
 
-	public EWordValidityResult DoesMatchSelection(string word, string reversedWord, CharacterTile startTile, CharacterTile endTile, out bool isCompleteMatch)
+	public EWordValidityResult DoesMatchSelection(string word, CharacterTile startTile, CharacterTile endTile, out bool isCompleteMatch)
 	{
-		bool stringsMatch = (mWord == word) || (mWord == reversedWord);
+		bool stringsMatch = (mWordPair.Forwards == word) || (mWordPair.Backwards == word);
 		bool stringContains = false;
 		if (!stringsMatch)
 		{
-			stringContains = word.Contains(mWord) || reversedWord.Contains(mWord);
+			stringContains = word.Contains(mWordPair.Forwards) || word.Contains(mWordPair.Backwards);
 		}
 
 		bool forwardsPositionsMatch = false;
@@ -119,7 +119,7 @@ public class WordPanelEntry : MonoBehaviour, IPointerClickHandler
 		WordDefinitionViewer defViewer = FindObjectOfType<WordDefinitionViewer>();
 		if (defViewer)
 		{
-			defViewer.ShowDefinitionFor(mWord);
+			defViewer.ShowDefinitionFor(mWordPair.Definition);
 		}
 	}
 }
