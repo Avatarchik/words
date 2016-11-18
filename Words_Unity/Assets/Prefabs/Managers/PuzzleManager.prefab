@@ -51,7 +51,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 971e41525fcae95449042e8e6d680555, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LoaderRef: {fileID: 0}
+  PuzzleLoaderRef: {fileID: 0}
+  WordPanelRef: {fileID: 0}
   PuzzleLists:
   - Puzzles:
     - {fileID: 11400000, guid: 6985b5867600aeb4fadd7741fcd95c9a, type: 2}
@@ -107,27 +108,3 @@ MonoBehaviour:
     - {fileID: 11400000, guid: cf8f50e2bacc7764a86f9cacaa252a82, type: 2}
     - {fileID: 11400000, guid: c83e177119f3d8e43a8608e5af5332b9, type: 2}
     - {fileID: 11400000, guid: cbd1fe5e2bc526c4db0e860921168e4c, type: 2}
-  - Puzzles:
-    - {fileID: 11400000, guid: 6c2e7197a4e6ae748af1f8a3534c0b9a, type: 2}
-    - {fileID: 11400000, guid: 50981003f31ecf741b0298f5f69a6ab1, type: 2}
-    - {fileID: 11400000, guid: eaa9fc64eef7c9940ace621051cf8432, type: 2}
-    - {fileID: 11400000, guid: 0f9d15691fbe09e46bc053df3df9b25a, type: 2}
-    - {fileID: 11400000, guid: cb2b14ddf3d15b84ab789acd57836d04, type: 2}
-  - Puzzles:
-    - {fileID: 11400000, guid: fe5b388ea9f2f1540aa6e07d4f1d6f75, type: 2}
-    - {fileID: 11400000, guid: 257cdc31c9e5b72448787c6df6913e5d, type: 2}
-    - {fileID: 11400000, guid: b84510be1e712c748b088b3e347a7571, type: 2}
-    - {fileID: 11400000, guid: 4b421a79ac943914aa1bb01e86a92899, type: 2}
-    - {fileID: 11400000, guid: bf73b967d4f812645a5a8f529cfbe50f, type: 2}
-  - Puzzles:
-    - {fileID: 11400000, guid: d8669530feaba28459b720d14f184c23, type: 2}
-    - {fileID: 11400000, guid: ab55d4f5459a497498c3c7b4652cad7b, type: 2}
-    - {fileID: 11400000, guid: 9d5d84867f7bfdb44801c9f918731b46, type: 2}
-    - {fileID: 11400000, guid: 0f6ea7cd8594f4a4c960e7f46f32d63c, type: 2}
-    - {fileID: 11400000, guid: 8b97a16372a505648b864910181f02bd, type: 2}
-  - Puzzles:
-    - {fileID: 11400000, guid: 0574eb86b5b7cf64684b287f9783947a, type: 2}
-    - {fileID: 11400000, guid: e36641cfddc03c6428e3fb81106377d0, type: 2}
-    - {fileID: 11400000, guid: 2ed6cf080b64d7341a0f722269a49b5f, type: 2}
-    - {fileID: 11400000, guid: 7f512a861df4f964da897084b2720b6a, type: 2}
-    - {fileID: 11400000, guid: d79bd783aa05b814b8d1d5e0d3b5e127, type: 2}

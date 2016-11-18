@@ -16,7 +16,7 @@ public class PuzzleListUpdater
 			{
 				puzzleManager.InitialiseLists();
 
-				for (int puzzleSize = GlobalSettings.PuzzleSizeMin; puzzleSize < GlobalSettings.PuzzleSizeMax; ++puzzleSize)
+				for (int puzzleSize = GlobalSettings.PuzzleSizeMin; puzzleSize < GlobalSettings.PuzzleSizeMaxPlusOne; ++puzzleSize)
 				{
 					string searchDir = PathHelper.Combine(Application.dataPath, string.Format("Resources/Puzzles/Size {0}", puzzleSize));
 					string[] puzzlePaths = Directory.GetFiles(searchDir, "*.asset");

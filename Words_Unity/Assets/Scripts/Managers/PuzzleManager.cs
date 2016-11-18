@@ -116,7 +116,7 @@ public class PuzzleManager : MonoBehaviour
 	public void InitialiseLists()
 	{
 		PuzzleLists = new List<PuzzleList>(GlobalSettings.PuzzleSizeDifference);
-		for (int listIndex = 0; listIndex < GlobalSettings.PuzzleSizeDifference; ++listIndex)
+		for (int listIndex = 0; listIndex < (GlobalSettings.PuzzleSizeDifference + 1); ++listIndex)
 		{
 			PuzzleLists.Add(new PuzzleList());
 		}
