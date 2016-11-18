@@ -17,468 +17,585 @@ MonoBehaviour:
   WordCount: 52
   MaxCharacterUsage: 5
   Words:
-  - Forwards: FRUTEX
+  - Length: 6
+    Forwards: FRUTEX
     Backwards: XETURF
-    Length: 6
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 7
     ToPosition:
       X: 3
       Y: 2
-  - Forwards: BOOBED
+  - Length: 6
+    Forwards: BOOBED
     Backwards: DEBOOB
-    Length: 6
+    Definition: "A woman\u2019s breast."
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 7
     ToPosition:
       X: 2
       Y: 2
-  - Forwards: ALVEARY
+  - Length: 7
+    Forwards: ALVEARY
     Backwards: YRAEVLA
-    Length: 7
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 3
     ToPosition:
       X: 6
       Y: 3
-  - Forwards: MITZVAH
+  - Length: 7
+    Forwards: MITZVAH
     Backwards: HAVZTIM
-    Length: 7
+    Definition: The religious ceremony held when a Jewish girl reaches the age of
+      13 and is considered an adult in her religion.
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 0
     ToPosition:
       X: 7
       Y: 6
-  - Forwards: ITEMIZE
+  - Length: 7
+    Forwards: ITEMIZE
     Backwards: EZIMETI
-    Length: 7
+    Definition: A single thing in a set, group, or list.
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 1
     ToPosition:
       X: 1
       Y: 1
-  - Forwards: DEEDILY
+  - Length: 7
+    Forwards: DEEDILY
     Backwards: YLIDEED
-    Length: 7
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 6
       Y: 0
-  - Forwards: WOBBLE
+  - Length: 6
+    Forwards: WOBBLE
     Backwards: ELBBOW
-    Length: 6
+    Definition: To move in an unsteady way from side to side.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 7
     ToPosition:
       X: 1
       Y: 2
-  - Forwards: VIES
+  - Length: 4
+    Forwards: VIES
     Backwards: SEIV
-    Length: 4
+    Definition: To compete very hard with someone in order to get something.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 3
     ToPosition:
       X: 2
       Y: 6
-  - Forwards: LIST
+  - Length: 4
+    Forwards: LIST
     Backwards: TSIL
-    Length: 4
+    Definition: To write a list, or mention things one after the other.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 7
     ToPosition:
       X: 3
       Y: 4
-  - Forwards: HUI
+  - Length: 3
+    Forwards: HUI
     Backwards: IUH
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 6
     ToPosition:
       X: 2
       Y: 4
-  - Forwards: GANTS
+  - Length: 5
+    Forwards: GANTS
     Backwards: STNAG
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 2
     ToPosition:
       X: 0
       Y: 6
-  - Forwards: ETAS
+  - Length: 4
+    Forwards: ETAS
     Backwards: SATE
-    Length: 4
+    Definition: The seventh letter of the Greek alphabet.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 5
     ToPosition:
       X: 5
       Y: 2
-  - Forwards: MOYL
+  - Length: 4
+    Forwards: MOYL
     Backwards: LYOM
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 5
     ToPosition:
       X: 6
       Y: 2
-  - Forwards: FIE
+  - Length: 3
+    Forwards: FIE
     Backwards: EIF
-    Length: 3
+    Definition: Used to express anger or disapproval toward someone.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 7
     ToPosition:
       X: 5
       Y: 7
-  - Forwards: YOS
+  - Length: 3
+    Forwards: YOS
     Backwards: SOY
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 3
     ToPosition:
       X: 4
       Y: 5
-  - Forwards: OWN
+  - Length: 3
+    Forwards: OWN
     Backwards: NWO
-    Length: 3
+    Definition: To legally have something because you have bought it, been given it,
+      etc.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 7
     ToPosition:
       X: 2
       Y: 7
-  - Forwards: ENE
+  - Length: 3
+    Forwards: ENE
     Backwards: ENE
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 5
       Y: 1
     ToPosition:
       X: 3
       Y: 3
-  - Forwards: ROO
+  - Length: 3
+    Forwards: ROO
     Backwards: OOR
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 5
       Y: 3
     ToPosition:
       X: 5
       Y: 5
-  - Forwards: LIS
+  - Length: 3
+    Forwards: LIS
     Backwards: SIL
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 7
     ToPosition:
       X: 4
       Y: 5
-  - Forwards: DOG
+  - Length: 3
+    Forwards: DOG
     Backwards: GOD
-    Length: 3
+    Definition: A very common animal with four legs that is often kept as a pet or
+      used for guarding buildings.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 0
       Y: 2
-  - Forwards: ETA
+  - Length: 3
+    Forwards: ETA
     Backwards: ATE
-    Length: 3
+    Definition: The seventh letter of the Greek alphabet.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 5
     ToPosition:
       X: 4
       Y: 3
-  - Forwards: YEN
+  - Length: 3
+    Forwards: YEN
     Backwards: NEY
-    Length: 3
+    Definition: The standard unit of money in Japan.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 0
     ToPosition:
       X: 4
       Y: 2
-  - Forwards: SUE
+  - Length: 3
+    Forwards: SUE
     Backwards: EUS
-    Length: 3
+    Definition: To make a legal claim against someone, especially for money, because
+      he or she has harmed you in some way.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 5
     ToPosition:
       X: 2
       Y: 5
-  - Forwards: VIE
+  - Length: 3
+    Forwards: VIE
     Backwards: EIV
-    Length: 3
+    Definition: To compete very hard with someone in order to get something.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 3
     ToPosition:
       X: 2
       Y: 5
-  - Forwards: RUT
+  - Length: 3
+    Forwards: RUT
     Backwards: TUR
-    Length: 3
+    Definition: A deep narrow track left in soft ground by a wheel.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 6
     ToPosition:
       X: 3
       Y: 4
-  - Forwards: MOY
+  - Length: 3
+    Forwards: MOY
     Backwards: YOM
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 5
     ToPosition:
       X: 6
       Y: 3
-  - Forwards: ZOO
+  - Length: 3
+    Forwards: ZOO
     Backwards: OOZ
-    Length: 3
+    Definition: A place, usually in a city, where many kinds of animals are kept so
+      that people can go to look at them.
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 3
     ToPosition:
       X: 5
       Y: 5
-  - Forwards: BEDE
+  - Length: 4
+    Forwards: BEDE
     Backwards: EDEB
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 4
     ToPosition:
       X: 1
       Y: 1
-  - Forwards: MNA
+  - Length: 3
+    Forwards: MNA
     Backwards: ANM
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 1
     ToPosition:
       X: 4
       Y: 3
-  - Forwards: GAN
+  - Length: 3
+    Forwards: GAN
     Backwards: NAG
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 2
     ToPosition:
       X: 0
       Y: 4
-  - Forwards: NABS
+  - Length: 4
+    Forwards: NABS
     Backwards: SBAN
-    Length: 4
+    Definition: To catch someone who has done or is doing something illegal or wrong.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 2
     ToPosition:
       X: 4
       Y: 5
-  - Forwards: ANTS
+  - Length: 4
+    Forwards: ANTS
     Backwards: STNA
-    Length: 4
+    Definition: A small insect that lives in large groups.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
     ToPosition:
       X: 0
       Y: 6
-  - Forwards: AGO
+  - Length: 3
+    Forwards: AGO
     Backwards: OGA
-    Length: 3
+    Definition: Used to show how far back in the past something happened.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
     ToPosition:
       X: 0
       Y: 1
-  - Forwards: MET
+  - Length: 3
+    Forwards: MET
     Backwards: TEM
-    Length: 3
+    Definition: The past tense and past participle of meet.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 1
     ToPosition:
       X: 6
       Y: 1
-  - Forwards: DEED
+  - Length: 4
+    Forwards: DEED
     Backwards: DEED
-    Length: 4
+    Definition: Something that you do, especially something that is very good or very
+      bad.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 3
       Y: 0
-  - Forwards: LEI
+  - Length: 3
+    Forwards: LEI
     Backwards: IEL
-    Length: 3
+    Definition: "A circle made of flowers that you put around someone\u2019s neck
+      as a greeting, especially in Hawaii."
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 7
     ToPosition:
       X: 4
       Y: 7
-  - Forwards: BOO
+  - Length: 3
+    Forwards: BOO
     Backwards: OOB
-    Length: 3
+    Definition: "To shout \u201Cboo\u201D to show that you do not like a person, performance,
+      idea, etc."
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 4
     ToPosition:
       X: 6
       Y: 6
-  - Forwards: HOI
+  - Length: 3
+    Forwards: HOI
     Backwards: IOH
-    Length: 3
+    Definition: An insulting phrase for ordinary people.
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 6
     ToPosition:
       X: 5
       Y: 6
-  - Forwards: HOO
+  - Length: 3
+    Forwards: HOO
     Backwards: OOH
-    Length: 3
+    Definition: Noisy talk or excitement that seems too much for the thing it is about.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 6
     ToPosition:
       X: 6
       Y: 4
-  - Forwards: SOS
+  - Length: 3
+    Forwards: SOS
     Backwards: SOS
-    Length: 3
+    Definition: A signal that a ship or aircraft sends to say that it is in danger
+      and needs help quickly.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 6
     ToPosition:
       X: 2
       Y: 6
-  - Forwards: DEE
+  - Length: 3
+    Forwards: DEE
     Backwards: EED
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 0
     ToPosition:
       X: 1
       Y: 0
-  - Forwards: ITEM
+  - Length: 4
+    Forwards: ITEM
     Backwards: METI
-    Length: 4
+    Definition: A single thing in a set, group, or list.
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 1
     ToPosition:
       X: 4
       Y: 1
-  - Forwards: SUB
+  - Length: 3
+    Forwards: SUB
     Backwards: BUS
-    Length: 3
+    Definition: A submarine.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 6
     ToPosition:
       X: 4
       Y: 4
-  - Forwards: INRO
+  - Length: 4
+    Forwards: INRO
     Backwards: ORNI
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 1
     ToPosition:
       X: 6
       Y: 4
-  - Forwards: EEL
+  - Length: 3
+    Forwards: EEL
     Backwards: LEE
-    Length: 3
+    Definition: A long thin fish that looks like a snake and can be eaten.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 1
     ToPosition:
       X: 1
       Y: 3
-  - Forwards: LID
+  - Length: 3
+    Forwards: LID
     Backwards: DIL
-    Length: 3
+    Definition: A lidded container, pot, etc. has a lid.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0
     ToPosition:
       X: 3
       Y: 0
-  - Forwards: MIZ
+  - Length: 3
+    Forwards: MIZ
     Backwards: ZIM
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 1
     ToPosition:
       X: 2
       Y: 1
-  - Forwards: IDE
+  - Length: 3
+    Forwards: IDE
     Backwards: EDI
-    Length: 3
+    Definition: A date or period of time around the middle of the month in the ancient
+      Roman calendar.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 0
     ToPosition:
       X: 2
       Y: 0
-  - Forwards: BLEE
+  - Length: 4
+    Forwards: BLEE
     Backwards: EELB
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 4
     ToPosition:
       X: 1
       Y: 1
-  - Forwards: LEE
+  - Length: 3
+    Forwards: LEE
     Backwards: EEL
-    Length: 3
+    Definition: The side of something that is away from the wind or provides shelter
+      from it.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 3
     ToPosition:
       X: 1
       Y: 1
-  - Forwards: GED
+  - Length: 3
+    Forwards: GED
     Backwards: DEG
-    Length: 3
+    Definition: In the US, a series of tests that are designed to provide a qualification
+      equal to a high school diploma, for people who left high school without completing
+      their education.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 2
     ToPosition:
       X: 2
       Y: 2
-  - Forwards: WOB
+  - Length: 3
+    Forwards: WOB
     Backwards: BOW
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 7

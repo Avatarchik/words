@@ -17,288 +17,359 @@ MonoBehaviour:
   WordCount: 32
   MaxCharacterUsage: 5
   Words:
-  - Forwards: VENDS
+  - Length: 5
+    Forwards: VENDS
     Backwards: SDNEV
-    Length: 5
+    Definition: To sell something.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 5
     ToPosition:
       X: 4
       Y: 1
-  - Forwards: OREAD
+  - Length: 5
+    Forwards: OREAD
     Backwards: DAERO
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 5
       Y: 5
     ToPosition:
       X: 5
       Y: 1
-  - Forwards: YGOE
+  - Length: 4
+    Forwards: YGOE
     Backwards: EOGY
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 4
     ToPosition:
       X: 1
       Y: 4
-  - Forwards: WAIVE
+  - Length: 5
+    Forwards: WAIVE
     Backwards: EVIAW
-    Length: 5
+    Definition: To state officially that a right, rule, etc. can be ignored, because
+      at this time it is not useful or important.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 0
     ToPosition:
       X: 1
       Y: 4
-  - Forwards: MOLL
+  - Length: 4
+    Forwards: MOLL
     Backwards: LLOM
-    Length: 4
+    Definition: "A criminal\u2019s girlfriend."
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 5
     ToPosition:
       X: 4
       Y: 2
-  - Forwards: FOOTY
+  - Length: 5
+    Forwards: FOOTY
     Backwards: YTOOF
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 0
       Y: 4
-  - Forwards: RAHS
+  - Length: 4
+    Forwards: RAHS
     Backwards: SHAR
-    Length: 4
+    Definition: Supporting something without thinking about it enough.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0
     ToPosition:
       X: 2
       Y: 0
-  - Forwards: JISM
+  - Length: 4
+    Forwards: JISM
     Backwards: MSIJ
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 5
     ToPosition:
       X: 1
       Y: 5
-  - Forwards: AILS
+  - Length: 4
+    Forwards: AILS
     Backwards: SLIA
-    Length: 4
+    Definition: An ailing company or economy is having a lot of problems and is not
+      successful.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 1
     ToPosition:
       X: 4
       Y: 1
-  - Forwards: RAD
+  - Length: 3
+    Forwards: RAD
     Backwards: DAR
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 5
       Y: 4
     ToPosition:
       X: 3
       Y: 2
-  - Forwards: FARL
+  - Length: 4
+    Forwards: FARL
     Backwards: LRAF
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 3
       Y: 3
-  - Forwards: VEND
+  - Length: 4
+    Forwards: VEND
     Backwards: DNEV
-    Length: 4
+    Definition: To sell something.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 5
     ToPosition:
       X: 3
       Y: 2
-  - Forwards: TOO
+  - Length: 3
+    Forwards: TOO
     Backwards: OOT
-    Length: 3
+    Definition: More than is needed, wanted, or possible, or more than is reasonable.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
     ToPosition:
       X: 0
       Y: 1
-  - Forwards: END
+  - Length: 3
+    Forwards: END
     Backwards: DNE
-    Length: 3
+    Definition: If a situation or activity ends, or someone ends it, it finishes or
+      stops.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 4
     ToPosition:
       X: 3
       Y: 2
-  - Forwards: ORE
+  - Length: 3
+    Forwards: ORE
     Backwards: ERO
-    Length: 3
+    Definition: Rock or earth from which metal can be obtained.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 5
     ToPosition:
       X: 5
       Y: 3
-  - Forwards: LAY
+  - Length: 3
+    Forwards: LAY
     Backwards: YAL
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 2
     ToPosition:
       X: 4
       Y: 4
-  - Forwards: SON
+  - Length: 3
+    Forwards: SON
     Backwards: NOS
-    Length: 3
+    Definition: "Someone\u2019s male child."
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 5
     ToPosition:
       X: 2
       Y: 3
-  - Forwards: ISM
+  - Length: 3
+    Forwards: ISM
     Backwards: MSI
-    Length: 3
+    Definition: A religion, political belief, or style of art based on a particular
+      principle or the teachings of a particular person.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 5
     ToPosition:
       X: 1
       Y: 5
-  - Forwards: FOOT
+  - Length: 4
+    Forwards: FOOT
     Backwards: TOOF
-    Length: 4
+    Definition: The part of your body that you stand on and walk on.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 0
       Y: 3
-  - Forwards: FAR
+  - Length: 3
+    Forwards: FAR
     Backwards: RAF
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 2
       Y: 2
-  - Forwards: RAH
+  - Length: 3
+    Forwards: RAH
     Backwards: HAR
-    Length: 3
+    Definition: Supporting something without thinking about it enough.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0
     ToPosition:
       X: 3
       Y: 0
-  - Forwards: MOL
+  - Length: 3
+    Forwards: MOL
     Backwards: LOM
-    Length: 3
+    Definition: Another spelling of mole.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 5
     ToPosition:
       X: 3
       Y: 3
-  - Forwards: ELL
+  - Length: 3
+    Forwards: ELL
     Backwards: LLE
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 5
       Y: 3
     ToPosition:
       X: 3
       Y: 1
-  - Forwards: AHS
+  - Length: 3
+    Forwards: AHS
     Backwards: SHA
-    Length: 3
+    Definition: Used in order to show your surprise, anger, pain, happiness, agreement,
+      etc.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 0
     ToPosition:
       X: 2
       Y: 0
-  - Forwards: ALS
+  - Length: 3
+    Forwards: ALS
     Backwards: SLA
-    Length: 3
+    Definition: The written abbreviation of alabama.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 3
     ToPosition:
       X: 4
       Y: 1
-  - Forwards: SIR
+  - Length: 3
+    Forwards: SIR
     Backwards: RIS
-    Length: 3
+    Definition: Used when speaking to a man in order to be polite or to show respect.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 0
     ToPosition:
       X: 2
       Y: 2
-  - Forwards: AIL
+  - Length: 3
+    Forwards: AIL
     Backwards: LIA
-    Length: 3
+    Definition: An ailing company or economy is having a lot of problems and is not
+      successful.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 1
     ToPosition:
       X: 3
       Y: 1
-  - Forwards: READ
+  - Length: 4
+    Forwards: READ
     Backwards: DAER
-    Length: 4
+    Definition: The activity of looking at and understanding written words.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 4
     ToPosition:
       X: 5
       Y: 1
-  - Forwards: DAE
+  - Length: 3
+    Forwards: DAE
     Backwards: EAD
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 5
       Y: 1
     ToPosition:
       X: 5
       Y: 3
-  - Forwards: YGO
+  - Length: 3
+    Forwards: YGO
     Backwards: OGY
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 4
     ToPosition:
       X: 2
       Y: 4
-  - Forwards: SLAY
+  - Length: 4
+    Forwards: SLAY
     Backwards: YALS
-    Length: 4
+    Definition: "To kill someone violently \u2013 used especially in newspapers or
+      old stories."
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 1
     ToPosition:
       X: 4
       Y: 4
-  - Forwards: FOO
+  - Length: 3
+    Forwards: FOO
     Backwards: OOF
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 0

@@ -17,594 +17,737 @@ MonoBehaviour:
   WordCount: 66
   MaxCharacterUsage: 5
   Words:
-  - Forwards: REFER
+  - Length: 5
+    Forwards: REFER
     Backwards: REFER
-    Length: 5
+    Definition: To mention or speak about someone or something.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 8
     ToPosition:
       X: 4
       Y: 4
-  - Forwards: UNFAULTY
+  - Length: 8
+    Forwards: UNFAULTY
     Backwards: YTLUAFNU
-    Length: 8
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 6
     ToPosition:
       X: 7
       Y: 6
-  - Forwards: STYRENES
+  - Length: 8
+    Forwards: STYRENES
     Backwards: SENERYTS
-    Length: 8
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 7
       Y: 8
     ToPosition:
       X: 7
       Y: 1
-  - Forwards: BUR
+  - Length: 3
+    Forwards: BUR
     Backwards: RUB
-    Length: 3
+    Definition: A burly man is big and strong.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 4
     ToPosition:
       X: 4
       Y: 4
-  - Forwards: DISRATED
+  - Length: 8
+    Forwards: DISRATED
     Backwards: DETARSID
-    Length: 8
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 8
       Y: 0
     ToPosition:
       X: 1
       Y: 0
-  - Forwards: MOOLVIES
+  - Length: 8
+    Forwards: MOOLVIES
     Backwards: SEIVLOOM
-    Length: 8
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 1
     ToPosition:
       X: 7
       Y: 1
-  - Forwards: NUCLEOLI
+  - Length: 8
+    Forwards: NUCLEOLI
     Backwards: ILOELCUN
-    Length: 8
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 8
       Y: 8
     ToPosition:
       X: 8
       Y: 1
-  - Forwards: STREPS
+  - Length: 6
+    Forwards: STREPS
     Backwards: SPERTS
-    Length: 6
+    Definition: An illness caused by streptococcus in which your throat is very painful.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 8
     ToPosition:
       X: 7
       Y: 8
-  - Forwards: CRATUR
+  - Length: 6
+    Forwards: CRATUR
     Backwards: RUTARC
-    Length: 6
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 2
     ToPosition:
       X: 0
       Y: 7
-  - Forwards: POOD
+  - Length: 4
+    Forwards: POOD
     Backwards: DOOP
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 3
       Y: 3
-  - Forwards: WOOING
+  - Length: 6
+    Forwards: WOOING
     Backwards: GNIOOW
-    Length: 6
+    Definition: To try to persuade someone to buy something from you, do something
+      for you, work for you, etc.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 2
     ToPosition:
       X: 6
       Y: 2
-  - Forwards: TITER
+  - Length: 5
+    Forwards: TITER
     Backwards: RETIT
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 5
     ToPosition:
       X: 4
       Y: 5
-  - Forwards: POINTE
+  - Length: 6
+    Forwards: POINTE
     Backwards: ETNIOP
-    Length: 6
+    Definition: Having a point at the end.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 7
     ToPosition:
       X: 1
       Y: 7
-  - Forwards: WEB
+  - Length: 3
+    Forwards: WEB
     Backwards: BEW
-    Length: 3
+    Definition: Webbed feet or toes have skin between the toes.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 2
     ToPosition:
       X: 1
       Y: 4
-  - Forwards: ADVEW
+  - Length: 5
+    Forwards: ADVEW
     Backwards: WEVDA
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 2
       Y: 3
     ToPosition:
       X: 6
       Y: 3
-  - Forwards: USE
+  - Length: 3
+    Forwards: USE
     Backwards: ESU
-    Length: 3
+    Definition: The state of being useful.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 4
     ToPosition:
       X: 7
       Y: 4
-  - Forwards: FAULT
+  - Length: 5
+    Forwards: FAULT
     Backwards: TLUAF
-    Length: 5
+    Definition: To criticize someone or something for doing something wrong.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 6
     ToPosition:
       X: 6
       Y: 6
-  - Forwards: ROC
+  - Length: 3
+    Forwards: ROC
     Backwards: COR
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 7
       Y: 5
     ToPosition:
       X: 5
       Y: 5
-  - Forwards: UDO
+  - Length: 3
+    Forwards: UDO
     Backwards: ODU
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 4
     ToPosition:
       X: 3
       Y: 2
-  - Forwards: ETA
+  - Length: 3
+    Forwards: ETA
     Backwards: ATE
-    Length: 3
+    Definition: The seventh letter of the Greek alphabet.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 0
     ToPosition:
       X: 4
       Y: 0
-  - Forwards: ITA
+  - Length: 3
+    Forwards: ITA
     Backwards: ATI
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 8
     ToPosition:
       X: 3
       Y: 6
-  - Forwards: POINT
+  - Length: 5
+    Forwards: POINT
     Backwards: TNIOP
-    Length: 5
+    Definition: Having a point at the end.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 7
     ToPosition:
       X: 2
       Y: 7
-  - Forwards: WOO
+  - Length: 3
+    Forwards: WOO
     Backwards: OOW
-    Length: 3
+    Definition: To try to persuade someone to buy something from you, do something
+      for you, work for you, etc.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 2
     ToPosition:
       X: 3
       Y: 2
-  - Forwards: RATE
+  - Length: 4
+    Forwards: RATE
     Backwards: ETAR
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 5
       Y: 0
     ToPosition:
       X: 2
       Y: 0
-  - Forwards: ERE
+  - Length: 3
+    Forwards: ERE
     Backwards: ERE
-    Length: 3
+    Definition: Before.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 5
     ToPosition:
       X: 5
       Y: 3
-  - Forwards: DISRATE
+  - Length: 7
+    Forwards: DISRATE
     Backwards: ETARSID
-    Length: 7
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 8
       Y: 0
     ToPosition:
       X: 2
       Y: 0
-  - Forwards: SOT
+  - Length: 3
+    Forwards: SOT
     Backwards: TOS
-    Length: 3
+    Definition: Someone who is drunk all the time.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 4
     ToPosition:
       X: 6
       Y: 6
-  - Forwards: MOOLVI
+  - Length: 6
+    Forwards: MOOLVI
     Backwards: IVLOOM
-    Length: 6
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 1
     ToPosition:
       X: 5
       Y: 1
-  - Forwards: OINT
+  - Length: 4
+    Forwards: OINT
     Backwards: TNIO
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 5
       Y: 7
     ToPosition:
       X: 2
       Y: 7
-  - Forwards: FAULTY
+  - Length: 6
+    Forwards: FAULTY
     Backwards: YTLUAF
-    Length: 6
+    Definition: Something such as a machine that is faulty has something wrong with
+      it that stops it from working correctly, or it was not made correctly.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 6
     ToPosition:
       X: 7
       Y: 6
-  - Forwards: DOW
+  - Length: 3
+    Forwards: DOW
     Backwards: WOD
-    Length: 3
+    Definition: The dow jones industrial average.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 0
     ToPosition:
       X: 1
       Y: 2
-  - Forwards: BINE
+  - Length: 4
+    Forwards: BINE
     Backwards: ENIB
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 4
     ToPosition:
       X: 1
       Y: 7
-  - Forwards: SEIL
+  - Length: 4
+    Forwards: SEIL
     Backwards: LIES
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 4
     ToPosition:
       X: 3
       Y: 1
-  - Forwards: FERE
+  - Length: 4
+    Forwards: FERE
     Backwards: EREF
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 2
       Y: 6
     ToPosition:
       X: 5
       Y: 3
-  - Forwards: TIL
+  - Length: 3
+    Forwards: TIL
     Backwards: LIT
-    Length: 3
+    Definition: Another spelling of till.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 8
     ToPosition:
       X: 5
       Y: 6
-  - Forwards: SEG
+  - Length: 3
+    Forwards: SEG
     Backwards: GES
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 0
     ToPosition:
       X: 6
       Y: 2
-  - Forwards: ROT
+  - Length: 3
+    Forwards: ROT
     Backwards: TOR
-    Length: 3
+    Definition: The natural process of decaying, or the part of something that has
+      decayed.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 8
     ToPosition:
       X: 6
       Y: 6
-  - Forwards: OWE
+  - Length: 3
+    Forwards: OWE
     Backwards: EWO
-    Length: 3
+    Definition: To have to pay someone for something that he or she has done for you
+      or sold to you, or to have to give someone back money that he or she has lent
+      you.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 1
     ToPosition:
       X: 1
       Y: 3
-  - Forwards: RATED
+  - Length: 5
+    Forwards: RATED
     Backwards: DETAR
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 5
       Y: 0
     ToPosition:
       X: 1
       Y: 0
-  - Forwards: DAE
+  - Length: 3
+    Forwards: DAE
     Backwards: EAD
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 3
     ToPosition:
       X: 1
       Y: 3
-  - Forwards: LIES
+  - Length: 4
+    Forwards: LIES
     Backwards: SEIL
-    Length: 4
+    Definition: To deliberately tell someone something that is not true.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 1
     ToPosition:
       X: 6
       Y: 4
-  - Forwards: TITE
+  - Length: 4
+    Forwards: TITE
     Backwards: ETIT
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 5
     ToPosition:
       X: 3
       Y: 5
-  - Forwards: STY
+  - Length: 3
+    Forwards: STY
     Backwards: YTS
-    Length: 3
+    Definition: An infected place on the edge of your eyelid, which becomes red and
+      swollen.
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 8
     ToPosition:
       X: 7
       Y: 6
-  - Forwards: POI
+  - Length: 3
+    Forwards: POI
     Backwards: IOP
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 7
     ToPosition:
       X: 4
       Y: 7
-  - Forwards: READ
+  - Length: 4
+    Forwards: READ
     Backwards: DAER
-    Length: 4
+    Definition: The activity of looking at and understanding written words.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
     ToPosition:
       X: 3
       Y: 3
-  - Forwards: PERT
+  - Length: 4
+    Forwards: PERT
     Backwards: TREP
-    Length: 4
+    Definition: "A part of someone\u2019s body that is pert looks young and firm."
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 8
     ToPosition:
       X: 3
       Y: 8
-  - Forwards: STREP
+  - Length: 5
+    Forwards: STREP
     Backwards: PERTS
-    Length: 5
+    Definition: An illness caused by streptococcus in which your throat is very painful.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 8
     ToPosition:
       X: 6
       Y: 8
-  - Forwards: YOU
+  - Length: 3
+    Forwards: YOU
     Backwards: UOY
-    Length: 3
+    Definition: The person or people someone is speaking or writing to.
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 6
     ToPosition:
       X: 5
       Y: 4
-  - Forwards: RIN
+  - Length: 3
+    Forwards: RIN
     Backwards: NIR
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 5
       Y: 0
     ToPosition:
       X: 5
       Y: 2
-  - Forwards: REN
+  - Length: 3
+    Forwards: REN
     Backwards: NER
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 7
       Y: 5
     ToPosition:
       X: 7
       Y: 3
-  - Forwards: DOO
+  - Length: 3
+    Forwards: DOO
     Backwards: OOD
-    Length: 3
+    Definition: A word for solid waste from your body, used especially by or when
+      speaking to children.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 0
     ToPosition:
       X: 3
       Y: 2
-  - Forwards: RET
+  - Length: 3
+    Forwards: RET
     Backwards: TER
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 7
     ToPosition:
       X: 2
       Y: 7
-  - Forwards: TAR
+  - Length: 3
+    Forwards: TAR
     Backwards: RAT
-    Length: 3
+    Definition: A black substance, thick and sticky when hot but hard when cold, used
+      especially for making road surfaces.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 5
     ToPosition:
       X: 0
       Y: 3
-  - Forwards: LEW
+  - Length: 3
+    Forwards: LEW
     Backwards: WEL
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 8
       Y: 5
     ToPosition:
       X: 6
       Y: 3
-  - Forwards: RAT
+  - Length: 3
+    Forwards: RAT
     Backwards: TAR
-    Length: 3
+    Definition: An animal that looks like a large mouse with a long tail.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
     ToPosition:
       X: 0
       Y: 5
-  - Forwards: REP
+  - Length: 3
+    Forwards: REP
     Backwards: PER
-    Length: 3
+    Definition: Someone who speaks officially for a company or organization.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 8
     ToPosition:
       X: 6
       Y: 8
-  - Forwards: LEG
+  - Length: 3
+    Forwards: LEG
     Backwards: GEL
-    Length: 3
+    Definition: "Women\u2019s tight pants that stretch to fit the shape of the body,
+      and that have no zipper."
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 2
     ToPosition:
       X: 6
       Y: 2
-  - Forwards: URUS
+  - Length: 4
+    Forwards: URUS
     Backwards: SURU
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 4
     ToPosition:
       X: 6
       Y: 4
-  - Forwards: BIN
+  - Length: 3
+    Forwards: BIN
     Backwards: NIB
-    Length: 3
+    Definition: A large container for storing things, such as goods in a store or
+      substances in a factory.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 4
     ToPosition:
       X: 1
       Y: 6
-  - Forwards: VIE
+  - Length: 3
+    Forwards: VIE
     Backwards: EIV
-    Length: 3
+    Definition: To compete very hard with someone in order to get something.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 1
     ToPosition:
       X: 6
       Y: 1
-  - Forwards: ENE
+  - Length: 3
+    Forwards: ENE
     Backwards: ENE
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 7
       Y: 2
     ToPosition:
       X: 7
       Y: 4
-  - Forwards: NIB
+  - Length: 3
+    Forwards: NIB
     Backwards: BIN
-    Length: 3
+    Definition: The pointed metal part at the end of a pen.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 6
     ToPosition:
       X: 1
       Y: 4
-  - Forwards: SEI
+  - Length: 3
+    Forwards: SEI
     Backwards: IES
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 7
       Y: 1
     ToPosition:
       X: 5
       Y: 1
-  - Forwards: SEN
+  - Length: 3
+    Forwards: SEN
     Backwards: NES
-    Length: 3
+    Definition: The written abbreviation of senator.
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 1
     ToPosition:
       X: 7
       Y: 3
-  - Forwards: ARC
+  - Length: 3
+    Forwards: ARC
     Backwards: CRA
-    Length: 3
+    Definition: A curved shape.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 4
     ToPosition:
       X: 0
       Y: 2
-  - Forwards: COR
+  - Length: 3
+    Forwards: COR
     Backwards: ROC
-    Length: 3
+    Definition: "Used instead of con- before the letter \u201Cr\u201D."
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 5

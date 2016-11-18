@@ -17,180 +17,223 @@ MonoBehaviour:
   WordCount: 20
   MaxCharacterUsage: 5
   Words:
-  - Forwards: MORA
+  - Length: 4
+    Forwards: MORA
     Backwards: AROM
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 1
     ToPosition:
       X: 1
       Y: 1
-  - Forwards: REAP
+  - Length: 4
+    Forwards: REAP
     Backwards: PAER
-    Length: 4
+    Definition: To get something as a result of what you have done.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 0
     ToPosition:
       X: 1
       Y: 0
-  - Forwards: PEER
+  - Length: 4
+    Forwards: PEER
     Backwards: REEP
-    Length: 4
+    Definition: To look very carefully or hard, especially because you cannot see
+      something well.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 4
     ToPosition:
       X: 2
       Y: 1
-  - Forwards: SERR
+  - Length: 4
+    Forwards: SERR
     Backwards: RRES
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 4
     ToPosition:
       X: 0
       Y: 1
-  - Forwards: BAN
+  - Length: 3
+    Forwards: BAN
     Backwards: NAB
-    Length: 3
+    Definition: Not officially allowed to meet, exist, or be used.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 4
     ToPosition:
       X: 1
       Y: 2
-  - Forwards: RUD
+  - Length: 3
+    Forwards: RUD
     Backwards: DUR
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 4
     ToPosition:
       X: 3
       Y: 2
-  - Forwards: CAN
+  - Length: 3
+    Forwards: CAN
     Backwards: NAC
-    Length: 3
+    Definition: To have the skill, opportunity, time, equipment, strength, etc. that
+      you need in order to do something.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 4
     ToPosition:
       X: 4
       Y: 2
-  - Forwards: ANA
+  - Length: 3
+    Forwards: ANA
     Backwards: ANA
-    Length: 3
+    Definition: A collection of objects, papers, etc., relating to someone or something.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 3
     ToPosition:
       X: 1
       Y: 1
-  - Forwards: NAE
+  - Length: 3
+    Forwards: NAE
     Backwards: EAN
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 2
       Y: 2
-  - Forwards: NED
+  - Length: 3
+    Forwards: NED
     Backwards: DEN
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 2
     ToPosition:
       X: 3
       Y: 2
-  - Forwards: MNA
+  - Length: 3
+    Forwards: MNA
     Backwards: ANM
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 1
     ToPosition:
       X: 4
       Y: 3
-  - Forwards: REN
+  - Length: 3
+    Forwards: REN
     Backwards: NER
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 4
     ToPosition:
       X: 1
       Y: 2
-  - Forwards: SAE
+  - Length: 3
+    Forwards: SAE
     Backwards: EAS
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 4
     ToPosition:
       X: 2
       Y: 2
-  - Forwards: ARE
+  - Length: 3
+    Forwards: ARE
     Backwards: ERA
-    Length: 3
+    Definition: "The present tense plural form of \u201Cbe\u201D."
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 0
     ToPosition:
       X: 2
       Y: 2
-  - Forwards: MOR
+  - Length: 3
+    Forwards: MOR
     Backwards: ROM
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 1
     ToPosition:
       X: 2
       Y: 1
-  - Forwards: ERN
+  - Length: 3
+    Forwards: ERN
     Backwards: NRE
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 0
     ToPosition:
       X: 1
       Y: 2
-  - Forwards: UDO
+  - Length: 3
+    Forwards: UDO
     Backwards: ODU
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 3
     ToPosition:
       X: 3
       Y: 1
-  - Forwards: BED
+  - Length: 3
+    Forwards: BED
     Backwards: DEB
-    Length: 3
+    Definition: Sheets, covers, etc. that you put on a bed.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 4
     ToPosition:
       X: 3
       Y: 2
-  - Forwards: ERR
+  - Length: 3
+    Forwards: ERR
     Backwards: RRE
-    Length: 3
+    Definition: To be more careful, safe, etc. than is necessary rather than risk
+      making a mistake.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
     ToPosition:
       X: 0
       Y: 1
-  - Forwards: SER
+  - Length: 3
+    Forwards: SER
     Backwards: RES
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 4

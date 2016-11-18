@@ -17,81 +17,103 @@ MonoBehaviour:
   WordCount: 9
   MaxCharacterUsage: 3
   Words:
-  - Forwards: WAD
+  - Length: 3
+    Forwards: WAD
     Backwards: DAW
-    Length: 3
+    Definition: To press something such as a piece of paper or cloth into a small
+      tight ball.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 2
     ToPosition:
       X: 1
       Y: 2
-  - Forwards: PIT
+  - Length: 3
+    Forwards: PIT
     Backwards: TIP
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 0
       Y: 2
-  - Forwards: TOD
+  - Length: 3
+    Forwards: TOD
     Backwards: DOT
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 0
     ToPosition:
       X: 1
       Y: 2
-  - Forwards: ADS
+  - Length: 3
+    Forwards: ADS
     Backwards: SDA
-    Length: 3
+    Definition: Words, a picture, or a short movie that advertises a thing or service
+      that is available or for sale.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
     ToPosition:
       X: 2
       Y: 1
-  - Forwards: JUS
+  - Length: 3
+    Forwards: JUS
     Backwards: SUJ
-    Length: 3
+    Definition: Served with a thin sauce made from the natural juices that come out
+      of meat as it is cooking.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 3
     ToPosition:
       X: 1
       Y: 3
-  - Forwards: MET
+  - Length: 3
+    Forwards: MET
     Backwards: TEM
-    Length: 3
+    Definition: The past tense and past participle of meet.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 0
     ToPosition:
       X: 1
       Y: 0
-  - Forwards: MAW
+  - Length: 3
+    Forwards: MAW
     Backwards: WAM
-    Length: 3
+    Definition: Something that seems to take control over or use up things or people
+      completely.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 0
     ToPosition:
       X: 3
       Y: 2
-  - Forwards: IOS
+  - Length: 3
+    Forwards: IOS
     Backwards: SOI
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 1
     ToPosition:
       X: 2
       Y: 1
-  - Forwards: POA
+  - Length: 3
+    Forwards: POA
     Backwards: AOP
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 0

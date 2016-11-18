@@ -17,270 +17,335 @@ MonoBehaviour:
   WordCount: 30
   MaxCharacterUsage: 5
   Words:
-  - Forwards: MIRED
+  - Length: 5
+    Forwards: MIRED
     Backwards: DERIM
-    Length: 5
+    Definition: Deep mud.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0
     ToPosition:
       X: 1
       Y: 4
-  - Forwards: ETWEE
+  - Length: 5
+    Forwards: ETWEE
     Backwards: EEWTE
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 2
       Y: 0
     ToPosition:
       X: 2
       Y: 4
-  - Forwards: NARCO
+  - Length: 5
+    Forwards: NARCO
     Backwards: OCRAN
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 0
     ToPosition:
       X: 3
       Y: 4
-  - Forwards: TRAIN
+  - Length: 5
+    Forwards: TRAIN
     Backwards: NIART
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 5
     ToPosition:
       X: 4
       Y: 5
-  - Forwards: CAGES
+  - Length: 5
+    Forwards: CAGES
     Backwards: SEGAC
-    Length: 5
+    Definition: A structure made of wires or bars in which birds or animals can be
+      kept.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 0
       Y: 4
-  - Forwards: NAT
+  - Length: 3
+    Forwards: NAT
     Backwards: TAN
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 5
     ToPosition:
       X: 4
       Y: 3
-  - Forwards: MIL
+  - Length: 3
+    Forwards: MIL
     Backwards: LIM
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 5
       Y: 0
     ToPosition:
       X: 5
       Y: 2
-  - Forwards: BAS
+  - Length: 3
+    Forwards: BAS
     Backwards: SAB
-    Length: 3
+    Definition: A style of art in which stone or wood is cut so that shapes are raised
+      above the surrounding surface.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 5
     ToPosition:
       X: 5
       Y: 3
-  - Forwards: LANX
+  - Length: 4
+    Forwards: LANX
     Backwards: XNAL
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 0
     ToPosition:
       X: 1
       Y: 3
-  - Forwards: ECU
+  - Length: 3
+    Forwards: ECU
     Backwards: UCE
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 2
       Y: 4
     ToPosition:
       X: 4
       Y: 2
-  - Forwards: MIR
+  - Length: 3
+    Forwards: MIR
     Backwards: RIM
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 5
       Y: 0
     ToPosition:
       X: 3
       Y: 2
-  - Forwards: ARCO
+  - Length: 4
+    Forwards: ARCO
     Backwards: OCRA
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 1
     ToPosition:
       X: 3
       Y: 4
-  - Forwards: HAW
+  - Length: 3
+    Forwards: HAW
     Backwards: WAH
-    Length: 3
+    Definition: Another spelling of ha.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 0
     ToPosition:
       X: 2
       Y: 2
-  - Forwards: CAW
+  - Length: 3
+    Forwards: CAW
     Backwards: WAC
-    Length: 3
+    Definition: If a bird, especially a crow, caws, it makes a loud sound.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 2
       Y: 2
-  - Forwards: RAIN
+  - Length: 4
+    Forwards: RAIN
     Backwards: NIAR
-    Length: 4
+    Definition: Water that falls in small drops from clouds in the sky.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 5
     ToPosition:
       X: 4
       Y: 5
-  - Forwards: ARC
+  - Length: 3
+    Forwards: ARC
     Backwards: CRA
-    Length: 3
+    Definition: A curved shape.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 1
     ToPosition:
       X: 3
       Y: 3
-  - Forwards: SEG
+  - Length: 3
+    Forwards: SEG
     Backwards: GES
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 4
     ToPosition:
       X: 0
       Y: 2
-  - Forwards: WEE
+  - Length: 3
+    Forwards: WEE
     Backwards: EEW
-    Length: 3
+    Definition: The early hours of the morning, just after midnight.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 2
     ToPosition:
       X: 2
       Y: 4
-  - Forwards: TAI
+  - Length: 3
+    Forwards: TAI
     Backwards: IAT
-    Length: 3
+    Definition: A Chinese form of physical exercise that trains your mind and body
+      in balance and control.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 1
     ToPosition:
       X: 4
       Y: 1
-  - Forwards: AGES
+  - Length: 4
+    Forwards: AGES
     Backwards: SEGA
-    Length: 4
+    Definition: Between 5 and 10, 16 and 18, etc. years old.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 1
     ToPosition:
       X: 0
       Y: 4
-  - Forwards: TWEE
+  - Length: 4
+    Forwards: TWEE
     Backwards: EEWT
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 2
       Y: 1
     ToPosition:
       X: 2
       Y: 4
-  - Forwards: AGE
+  - Length: 3
+    Forwards: AGE
     Backwards: EGA
-    Length: 3
+    Definition: Between 5 and 10, 16 and 18, etc. years old.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 1
     ToPosition:
       X: 0
       Y: 3
-  - Forwards: ANE
+  - Length: 3
+    Forwards: ANE
     Backwards: ENA
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 1
     ToPosition:
       X: 2
       Y: 3
-  - Forwards: CAGE
+  - Length: 4
+    Forwards: CAGE
     Backwards: EGAC
-    Length: 4
+    Definition: A structure made of wires or bars in which birds or animals can be
+      kept.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 0
       Y: 3
-  - Forwards: TUI
+  - Length: 3
+    Forwards: TUI
     Backwards: IUT
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 3
     ToPosition:
       X: 4
       Y: 1
-  - Forwards: MILS
+  - Length: 4
+    Forwards: MILS
     Backwards: SLIM
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 5
       Y: 0
     ToPosition:
       X: 5
       Y: 3
-  - Forwards: AIN
+  - Length: 3
+    Forwards: AIN
     Backwards: NIA
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 2
       Y: 5
     ToPosition:
       X: 4
       Y: 5
-  - Forwards: REC
+  - Length: 3
+    Forwards: REC
     Backwards: CER
-    Length: 3
+    Definition: A public room, for example in a hospital, used for social activities
+      or games.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 5
     ToPosition:
       X: 3
       Y: 3
-  - Forwards: RAI
+  - Length: 3
+    Forwards: RAI
     Backwards: IAR
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 5
     ToPosition:
       X: 3
       Y: 5
-  - Forwards: TRA
+  - Length: 3
+    Forwards: TRA
     Backwards: ART
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 5

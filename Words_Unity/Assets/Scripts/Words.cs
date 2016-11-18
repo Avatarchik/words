@@ -2,43 +2,17 @@ using UnityEngine;
 using System;
 using System.Collections.Generic;
 
-[Serializable]
-public class Word
-{
-	public string ActualWord = string.Empty;
-	public string Definition = string.Empty;
-}
-
 public class Words : MonoBehaviour
 {
-	[Serializable]
-	public class WordListPortion
-	{
-		public char InitialChar;
-		public int WordLength;
-		public int StartIndex;
-		public int EndIndex;
-		public int ContainedWordsCount;
-
-		public WordListPortion(char initialChar, int wordLength, int startIndex, int endIndex)
-		{
-			InitialChar = initialChar;
-			WordLength = wordLength;
-			StartIndex = startIndex;
-			EndIndex = endIndex;
-			ContainedWordsCount = EndIndex - StartIndex;
-		}
-	}
-
 	public int WordCount;
 	public List<WordListPortion> ListPortions;
-	public Word[] WordList;
+	public string[] WordList;
 
 	public void Initialise()
 	{
 		WordCount = 0;
 		ListPortions = new List<WordListPortion>();
-		WordList = new Word[0];
+		WordList = new string[0];
 	}
 
 	public void SetList(char initialChar, List<string> words)
@@ -51,7 +25,7 @@ public class Words : MonoBehaviour
 
 		int desiredLength = 3;
 		int placedWords = 0;
-		List<Word> newWords = new List<Word>(additionalWordsCount);
+		List<string> newWords = new List<string>(additionalWordsCount);
 		while (placedWords < additionalWordsCount)
 		{
 			newWords.Clear();
@@ -59,12 +33,10 @@ public class Words : MonoBehaviour
 			{
 				if (word.Length == desiredLength)
 				{
-					Word newWord = new Word();
-					newWord.ActualWord = word;
-					newWords.Add(newWord);
+					newWords.Add(word);
 				}
 			}
-			newWords.Sort((a, b) => a.ActualWord.Length.CompareTo(b.ActualWord.Length));
+			newWords.Sort((a, b) => a.Length.CompareTo(b.Length));
 
 			int newWordsCount = newWords.Count;
 			Array.Copy(newWords.ToArray(), 0, WordList, WordCount, newWordsCount);
@@ -77,9 +49,9 @@ public class Words : MonoBehaviour
 		}
 	}
 
-	public Word[] GetAllWords(int maxWordLength)
+	public string[] GetAllWords(int maxWordLength)
 	{
-		Word[] foundWords = new Word[WordCount];
+		string[] foundWords = new string[WordCount];
 		int foundWordsCount = 0;
 
 		foreach (WordListPortion portion in ListPortions)
@@ -93,40 +65,5 @@ public class Words : MonoBehaviour
 
 		Array.Resize(ref foundWords, foundWordsCount);
 		return foundWords;
-	}
-
-	// TODO - this should all be preprocessed and stored in each puzzle's data
-	public bool GetDefinitionFor(string word, ref string definition)
-	{
-		definition = string.Empty;
-
-		char initialChar = word[0];
-		int wordLength = word.Length;
-
-		foreach (WordListPortion portion in ListPortions)
-		{
-			if ((portion.InitialChar == initialChar) && (portion.WordLength == wordLength))
-			{
-				for (int wordIndex = portion.StartIndex; wordIndex < portion.EndIndex; ++wordIndex)
-				{
-					if (WordList[wordIndex].ActualWord == word)
-					{
-						definition = WordList[wordIndex].Definition;
-						break;
-					}
-				}
-
-				break;
-			}
-		}
-
-		bool hasFoundDefinition = true;
-		if (string.IsNullOrEmpty(definition))
-		{
-			definition = "We aren't quite sure. Would you like to Google it?";
-			hasFoundDefinition = false;
-		}
-
-		return hasFoundDefinition;
 	}
 }

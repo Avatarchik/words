@@ -17,369 +17,460 @@ MonoBehaviour:
   WordCount: 41
   MaxCharacterUsage: 5
   Words:
-  - Forwards: HOH
+  - Length: 3
+    Forwards: HOH
     Backwards: HOH
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 2
     ToPosition:
       X: 3
       Y: 4
-  - Forwards: SPIT
+  - Length: 4
+    Forwards: SPIT
     Backwards: TIPS
-    Length: 4
+    Definition: The watery liquid that is produced in your mouth.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 4
     ToPosition:
       X: 3
       Y: 1
-  - Forwards: ANISES
+  - Length: 6
+    Forwards: ANISES
     Backwards: SESINA
-    Length: 6
+    Definition: The strong-tasting seeds of a plant used in alcoholic drinks and in
+      candy, especially licorice.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 0
     ToPosition:
       X: 4
       Y: 5
-  - Forwards: LARDED
+  - Length: 6
+    Forwards: LARDED
     Backwards: DEDRAL
-    Length: 6
+    Definition: White fat from pigs that is used in cooking.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 5
       Y: 5
-  - Forwards: SQUIT
+  - Length: 5
+    Forwards: SQUIT
     Backwards: TIUQS
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 5
       Y: 6
     ToPosition:
       X: 1
       Y: 6
-  - Forwards: WOOERS
+  - Length: 6
+    Forwards: WOOERS
     Backwards: SREOOW
-    Length: 6
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 6
     ToPosition:
       X: 0
       Y: 1
-  - Forwards: PROWL
+  - Length: 5
+    Forwards: PROWL
     Backwards: LWORP
-    Length: 5
+    Definition: If an animal prowls, it moves around an area quietly, especially because
+      it is hunting another animal.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 1
     ToPosition:
       X: 2
       Y: 5
-  - Forwards: VAGUS
+  - Length: 5
+    Forwards: VAGUS
     Backwards: SUGAV
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 0
     ToPosition:
       X: 6
       Y: 4
-  - Forwards: HES
+  - Length: 3
+    Forwards: HES
     Backwards: SEH
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 4
     ToPosition:
       X: 5
       Y: 4
-  - Forwards: CAROB
+  - Length: 5
+    Forwards: CAROB
     Backwards: BORAC
-    Length: 5
+    Definition: The fruit of a Mediterranean tree, that tastes similar to chocolate
+      and is sometimes eaten instead of chocolate.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0
     ToPosition:
       X: 1
       Y: 0
-  - Forwards: SPAS
+  - Length: 4
+    Forwards: SPAS
     Backwards: SAPS
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 5
       Y: 4
     ToPosition:
       X: 5
       Y: 1
-  - Forwards: HYPS
+  - Length: 4
+    Forwards: HYPS
     Backwards: SPYH
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 2
     ToPosition:
       X: 1
       Y: 5
-  - Forwards: UDS
+  - Length: 3
+    Forwards: UDS
     Backwards: SDU
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 5
     ToPosition:
       X: 4
       Y: 5
-  - Forwards: POO
+  - Length: 3
+    Forwards: POO
     Backwards: OOP
-    Length: 3
+    Definition: Poop.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 4
     ToPosition:
       X: 3
       Y: 2
-  - Forwards: SPA
+  - Length: 3
+    Forwards: SPA
     Backwards: APS
-    Length: 3
+    Definition: A place where people go in order to improve their health or beauty,
+      especially through swimming, exercise, beauty treatments, etc.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 4
     ToPosition:
       X: 5
       Y: 2
-  - Forwards: SWY
+  - Length: 3
+    Forwards: SWY
     Backwards: YWS
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 5
     ToPosition:
       X: 1
       Y: 3
-  - Forwards: SOP
+  - Length: 3
+    Forwards: SOP
     Backwards: POS
-    Length: 3
+    Definition: To remove liquid from a surface by using something that absorbstakes
+      the liquid into itself the liquid.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 3
     ToPosition:
       X: 2
       Y: 1
-  - Forwards: SAPS
+  - Length: 4
+    Forwards: SAPS
     Backwards: SPAS
-    Length: 4
+    Definition: To gradually take away something such as strength or energy.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 1
     ToPosition:
       X: 5
       Y: 4
-  - Forwards: ODS
+  - Length: 3
+    Forwards: ODS
     Backwards: SDO
-    Length: 3
+    Definition: To take too much of a dangerous drug.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 3
     ToPosition:
       X: 4
       Y: 3
-  - Forwards: UPS
+  - Length: 3
+    Forwards: UPS
     Backwards: SPU
-    Length: 3
+    Definition: To increase the amount or level of something.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 3
     ToPosition:
       X: 4
       Y: 3
-  - Forwards: POS
+  - Length: 3
+    Forwards: POS
     Backwards: SOP
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 2
       Y: 1
     ToPosition:
       X: 4
       Y: 3
-  - Forwards: DOT
+  - Length: 3
+    Forwards: DOT
     Backwards: TOD
-    Length: 3
+    Definition: A round mark or spot.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 3
     ToPosition:
       X: 3
       Y: 1
-  - Forwards: SAP
+  - Length: 3
+    Forwards: SAP
     Backwards: PAS
-    Length: 3
+    Definition: To gradually take away something such as strength or energy.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 1
     ToPosition:
       X: 2
       Y: 1
-  - Forwards: TRY
+  - Length: 3
+    Forwards: TRY
     Backwards: YRT
-    Length: 3
+    Definition: Three.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 1
     ToPosition:
       X: 1
       Y: 3
-  - Forwards: OON
+  - Length: 3
+    Forwards: OON
     Backwards: NOO
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 2
       Y: 3
     ToPosition:
       X: 4
       Y: 1
-  - Forwards: WOOER
+  - Length: 5
+    Forwards: WOOER
     Backwards: REOOW
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 6
     ToPosition:
       X: 0
       Y: 2
-  - Forwards: ERS
+  - Length: 3
+    Forwards: ERS
     Backwards: SRE
-    Length: 3
+    Definition: A sound you make when you pause to correct something you have just
+      said, or when you do not know exactly what to say.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
     ToPosition:
       X: 0
       Y: 1
-  - Forwards: APT
+  - Length: 3
+    Forwards: APT
     Backwards: TPA
-    Length: 3
+    Definition: To have a tendency to do something.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 1
     ToPosition:
       X: 3
       Y: 1
-  - Forwards: LARD
+  - Length: 4
+    Forwards: LARD
     Backwards: DRAL
-    Length: 4
+    Definition: White fat from pigs that is used in cooking.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 3
       Y: 3
-  - Forwards: WUS
+  - Length: 3
+    Forwards: WUS
     Backwards: SUW
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 6
     ToPosition:
       X: 6
       Y: 4
-  - Forwards: QUIT
+  - Length: 4
+    Forwards: QUIT
     Backwards: TIUQ
-    Length: 4
+    Definition: Very, but not extremely.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 6
     ToPosition:
       X: 1
       Y: 6
-  - Forwards: ARD
+  - Length: 3
+    Forwards: ARD
     Backwards: DRA
-    Length: 3
+    Definition: Someone who is usually or always in a particular state.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 1
     ToPosition:
       X: 3
       Y: 3
-  - Forwards: BOR
+  - Length: 3
+    Forwards: BOR
     Backwards: ROB
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 0
     ToPosition:
       X: 3
       Y: 0
-  - Forwards: ROB
+  - Length: 3
+    Forwards: ROB
     Backwards: BOR
-    Length: 3
+    Definition: To steal money or property from a person, bank, etc.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 0
     ToPosition:
       X: 1
       Y: 0
-  - Forwards: SPY
+  - Length: 3
+    Forwards: SPY
     Backwards: YPS
-    Length: 3
+    Definition: Someone whose job it is to find out secret information about another
+      country, organization, or group.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 5
     ToPosition:
       X: 1
       Y: 3
-  - Forwards: GUS
+  - Length: 3
+    Forwards: GUS
     Backwards: SUG
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 2
     ToPosition:
       X: 6
       Y: 4
-  - Forwards: CAR
+  - Length: 3
+    Forwards: CAR
     Backwards: RAC
-    Length: 3
+    Definition: A vehicle with four wheels and an engine, that you use to travel from
+      one place to another.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0
     ToPosition:
       X: 3
       Y: 0
-  - Forwards: HYP
+  - Length: 3
+    Forwards: HYP
     Backwards: PYH
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 2
     ToPosition:
       X: 1
       Y: 4
-  - Forwards: BORA
+  - Length: 4
+    Forwards: BORA
     Backwards: AROB
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 0
     ToPosition:
       X: 4
       Y: 0
-  - Forwards: ANI
+  - Length: 3
+    Forwards: ANI
     Backwards: INA
-    Length: 3
+    Definition: Some or even the smallest amount.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 0
     ToPosition:
       X: 4
       Y: 2
-  - Forwards: WOO
+  - Length: 3
+    Forwards: WOO
     Backwards: OOW
-    Length: 3
+    Definition: To try to persuade someone to buy something from you, do something
+      for you, work for you, etc.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 6

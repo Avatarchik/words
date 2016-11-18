@@ -998,7 +998,7 @@ MonoBehaviour:
   SearchGoogleButtonRef: {fileID: 1285168431}
   TextRef: {fileID: 108673000}
   DefinitionFormat: Definition of {0}\n\n{1}
-  WordsRef: {fileID: 114000012454526320, guid: 62b65c3a6f2a3b542922f22240114c09, type: 2}
+  NoDefinitionMessage: We aren't quite sure. Would you like to Google it?
 --- !u!114 &108673000
 MonoBehaviour:
   m_ObjectHideFlags: 0

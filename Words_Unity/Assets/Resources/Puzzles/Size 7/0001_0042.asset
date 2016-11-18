@@ -17,387 +17,484 @@ MonoBehaviour:
   WordCount: 43
   MaxCharacterUsage: 5
   Words:
-  - Forwards: PEKOE
+  - Length: 5
+    Forwards: PEKOE
     Backwards: EOKEP
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 0
       Y: 4
-  - Forwards: DEUS
+  - Length: 4
+    Forwards: DEUS
     Backwards: SUED
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 0
     ToPosition:
       X: 4
       Y: 3
-  - Forwards: DIZZY
+  - Length: 5
+    Forwards: DIZZY
     Backwards: YZZID
-    Length: 5
+    Definition: Making someone feel confused or excited.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 0
     ToPosition:
       X: 1
       Y: 4
-  - Forwards: MENDER
+  - Length: 6
+    Forwards: MENDER
     Backwards: REDNEM
-    Length: 6
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 2
       Y: 0
     ToPosition:
       X: 2
       Y: 5
-  - Forwards: PUBS
+  - Length: 4
+    Forwards: PUBS
     Backwards: SBUP
-    Length: 4
+    Definition: A comfortable bar that often serves food, especially one in the U.K.
+      or Ireland.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 0
     ToPosition:
       X: 4
       Y: 3
-  - Forwards: DEPORT
+  - Length: 6
+    Forwards: DEPORT
     Backwards: TROPED
-    Length: 6
+    Definition: To make a person from a foreign country return to the country he or
+      she was born in.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 5
     ToPosition:
       X: 1
       Y: 5
-  - Forwards: STEWS
+  - Length: 5
+    Forwards: STEWS
     Backwards: SWETS
-    Length: 5
+    Definition: A cooked dish, made of meat and vegetables that are cooked slowly
+      together in liquid.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 6
     ToPosition:
       X: 2
       Y: 6
-  - Forwards: HUES
+  - Length: 4
+    Forwards: HUES
     Backwards: SEUH
-    Length: 4
+    Definition: A color or type of color.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 1
     ToPosition:
       X: 3
       Y: 4
-  - Forwards: NOONED
+  - Length: 6
+    Forwards: NOONED
     Backwards: DENOON
-    Length: 6
+    Definition: "O\u2019clock in the middle of the day."
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 0
     ToPosition:
       X: 6
       Y: 5
-  - Forwards: CANS
+  - Length: 4
+    Forwards: CANS
     Backwards: SNAC
-    Length: 4
+    Definition: To have the skill, opportunity, time, equipment, strength, etc. that
+      you need in order to do something.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 4
     ToPosition:
       X: 5
       Y: 1
-  - Forwards: EMS
+  - Length: 3
+    Forwards: EMS
     Backwards: SME
-    Length: 3
+    Definition: "A short form of \u201Cthem\u201D."
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 6
     ToPosition:
       X: 2
       Y: 6
-  - Forwards: SESE
+  - Length: 4
+    Forwards: SESE
     Backwards: ESES
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 6
     ToPosition:
       X: 3
       Y: 3
-  - Forwards: MUN
+  - Length: 3
+    Forwards: MUN
     Backwards: NUM
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 0
     ToPosition:
       X: 5
       Y: 2
-  - Forwards: SUE
+  - Length: 3
+    Forwards: SUE
     Backwards: EUS
-    Length: 3
+    Definition: To make a legal claim against someone, especially for money, because
+      he or she has harmed you in some way.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 3
     ToPosition:
       X: 2
       Y: 1
-  - Forwards: SEN
+  - Length: 3
+    Forwards: SEN
     Backwards: NES
-    Length: 3
+    Definition: The written abbreviation of senator.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 4
     ToPosition:
       X: 2
       Y: 2
-  - Forwards: ERE
+  - Length: 3
+    Forwards: ERE
     Backwards: ERE
-    Length: 3
+    Definition: Before.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 6
     ToPosition:
       X: 0
       Y: 4
-  - Forwards: MEND
+  - Length: 4
+    Forwards: MEND
     Backwards: DNEM
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 2
       Y: 0
     ToPosition:
       X: 2
       Y: 3
-  - Forwards: MEN
+  - Length: 3
+    Forwards: MEN
     Backwards: NEM
-    Length: 3
+    Definition: The plural of man.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 0
     ToPosition:
       X: 2
       Y: 2
-  - Forwards: TEW
+  - Length: 3
+    Forwards: TEW
     Backwards: WET
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 5
       Y: 6
     ToPosition:
       X: 3
       Y: 6
-  - Forwards: OON
+  - Length: 3
+    Forwards: OON
     Backwards: NOO
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 1
     ToPosition:
       X: 6
       Y: 3
-  - Forwards: HUE
+  - Length: 3
+    Forwards: HUE
     Backwards: EUH
-    Length: 3
+    Definition: A color or type of color.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 1
     ToPosition:
       X: 3
       Y: 3
-  - Forwards: YES
+  - Length: 3
+    Forwards: YES
     Backwards: SEY
-    Length: 3
+    Definition: Used as an answer to say that something is true, that you agree, that
+      you want something, or that you are willing to do something.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 4
     ToPosition:
       X: 3
       Y: 4
-  - Forwards: SED
+  - Length: 3
+    Forwards: SED
     Backwards: DES
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 3
     ToPosition:
       X: 2
       Y: 3
-  - Forwards: WET
+  - Length: 3
+    Forwards: WET
     Backwards: TEW
-    Length: 3
+    Definition: Covered in or full of water or another liquid.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 6
     ToPosition:
       X: 5
       Y: 6
-  - Forwards: OPE
+  - Length: 3
+    Forwards: OPE
     Backwards: EPO
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 5
     ToPosition:
       X: 5
       Y: 5
-  - Forwards: STEW
+  - Length: 4
+    Forwards: STEW
     Backwards: WETS
-    Length: 4
+    Definition: A cooked dish, made of meat and vegetables that are cooked slowly
+      together in liquid.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 6
     ToPosition:
       X: 3
       Y: 6
-  - Forwards: NIP
+  - Length: 3
+    Forwards: NIP
     Backwards: PIN
-    Length: 3
+    Definition: A small sharp bite, or the action of biting someone or something.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 0
     ToPosition:
       X: 4
       Y: 0
-  - Forwards: WRY
+  - Length: 3
+    Forwards: WRY
     Backwards: YRW
-    Length: 3
+    Definition: Showing that you know a situation is bad but that you also think it
+      is slightly amusing.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 6
     ToPosition:
       X: 1
       Y: 4
-  - Forwards: ESS
+  - Length: 3
+    Forwards: ESS
     Backwards: SSE
-    Length: 3
+    Definition: A woman who does something, or a female.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 4
     ToPosition:
       X: 4
       Y: 4
-  - Forwards: NED
+  - Length: 3
+    Forwards: NED
     Backwards: DEN
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 3
     ToPosition:
       X: 6
       Y: 5
-  - Forwards: ONE
+  - Length: 3
+    Forwards: ONE
     Backwards: ENO
-    Length: 3
+    Definition: A piece of paper money worth $1.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 2
     ToPosition:
       X: 6
       Y: 4
-  - Forwards: ROPE
+  - Length: 4
+    Forwards: ROPE
     Backwards: EPOR
-    Length: 4
+    Definition: To tie things together using rope.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 5
     ToPosition:
       X: 5
       Y: 5
-  - Forwards: PUB
+  - Length: 3
+    Forwards: PUB
     Backwards: BUP
-    Length: 3
+    Definition: A comfortable bar that often serves food, especially one in the U.K.
+      or Ireland.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 0
     ToPosition:
       X: 4
       Y: 2
-  - Forwards: EYE
+  - Length: 3
+    Forwards: EYE
     Backwards: EYE
-    Length: 3
+    Definition: One of the two parts of the body that you see with.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 4
     ToPosition:
       X: 2
       Y: 4
-  - Forwards: NUB
+  - Length: 3
+    Forwards: NUB
     Backwards: BUN
-    Length: 3
+    Definition: The central or main part of something.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 2
     ToPosition:
       X: 4
       Y: 2
-  - Forwards: SOS
+  - Length: 3
+    Forwards: SOS
     Backwards: SOS
-    Length: 3
+    Definition: A signal that a ship or aircraft sends to say that it is in danger
+      and needs help quickly.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 6
     ToPosition:
       X: 4
       Y: 4
-  - Forwards: ONS
+  - Length: 3
+    Forwards: ONS
     Backwards: SNO
-    Length: 3
+    Definition: Touching or supported by a particular surface.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 1
     ToPosition:
       X: 4
       Y: 3
-  - Forwards: CAN
+  - Length: 3
+    Forwards: CAN
     Backwards: NAC
-    Length: 3
+    Definition: To have the skill, opportunity, time, equipment, strength, etc. that
+      you need in order to do something.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 4
     ToPosition:
       X: 5
       Y: 2
-  - Forwards: SEY
+  - Length: 3
+    Forwards: SEY
     Backwards: YES
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 4
     ToPosition:
       X: 1
       Y: 4
-  - Forwards: TROPE
+  - Length: 5
+    Forwards: TROPE
     Backwards: EPORT
-    Length: 5
+    Definition: A figure of speech.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 5
     ToPosition:
       X: 5
       Y: 5
-  - Forwards: NOON
+  - Length: 4
+    Forwards: NOON
     Backwards: NOON
-    Length: 4
+    Definition: "O\u2019clock in the middle of the day."
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 0
     ToPosition:
       X: 6
       Y: 3
-  - Forwards: OKE
+  - Length: 3
+    Forwards: OKE
     Backwards: EKO
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 3
     ToPosition:
       X: 0
       Y: 1
-  - Forwards: PEK
+  - Length: 3
+    Forwards: PEK
     Backwards: KEP
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 0

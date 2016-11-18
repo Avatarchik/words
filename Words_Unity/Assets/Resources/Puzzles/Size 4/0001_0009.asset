@@ -17,81 +17,101 @@ MonoBehaviour:
   WordCount: 9
   MaxCharacterUsage: 4
   Words:
-  - Forwards: FUG
+  - Length: 3
+    Forwards: FUG
     Backwards: GUF
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 3
     ToPosition:
       X: 0
       Y: 1
-  - Forwards: JAB
+  - Length: 3
+    Forwards: JAB
     Backwards: BAJ
-    Length: 3
+    Definition: To push something into or towards something else with short quick
+      movements.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 0
     ToPosition:
       X: 1
       Y: 2
-  - Forwards: EFF
+  - Length: 3
+    Forwards: EFF
     Backwards: FFE
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 0
     ToPosition:
       X: 3
       Y: 2
-  - Forwards: JAY
+  - Length: 3
+    Forwards: JAY
     Backwards: YAJ
-    Length: 3
+    Definition: A type of noisy bird.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 2
       Y: 2
-  - Forwards: FOR
+  - Length: 3
+    Forwards: FOR
     Backwards: ROF
-    Length: 3
+    Definition: Used to introduce the reason for something.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
     ToPosition:
       X: 2
       Y: 3
-  - Forwards: SLY
+  - Length: 3
+    Forwards: SLY
     Backwards: YLS
-    Length: 3
+    Definition: A smile, look, etc. that shows that you are hiding something you know
+      from other people.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 0
     ToPosition:
       X: 2
       Y: 2
-  - Forwards: FRO
+  - Length: 3
+    Forwards: FRO
     Backwards: ORF
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 3
     ToPosition:
       X: 1
       Y: 3
-  - Forwards: GAL
+  - Length: 3
+    Forwards: GAL
     Backwards: LAG
-    Length: 3
+    Definition: The written abbreviation ofgallon.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 1
     ToPosition:
       X: 2
       Y: 1
-  - Forwards: OBA
+  - Length: 3
+    Forwards: OBA
     Backwards: ABO
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 3

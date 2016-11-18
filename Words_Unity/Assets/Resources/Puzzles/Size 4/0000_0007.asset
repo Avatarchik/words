@@ -17,63 +17,79 @@ MonoBehaviour:
   WordCount: 7
   MaxCharacterUsage: 2
   Words:
-  - Forwards: JOR
+  - Length: 3
+    Forwards: JOR
     Backwards: ROJ
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 1
     ToPosition:
       X: 2
       Y: 1
-  - Forwards: IDS
+  - Length: 3
+    Forwards: IDS
     Backwards: SDI
-    Length: 3
+    Definition: A document or card that shows your name, date of birth, etc., usually
+      with a photograph.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 2
     ToPosition:
       X: 2
       Y: 2
-  - Forwards: SAR
+  - Length: 3
+    Forwards: SAR
     Backwards: RAS
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 2
       Y: 0
-  - Forwards: JAW
+  - Length: 3
+    Forwards: JAW
     Backwards: WAJ
-    Length: 3
+    Definition: To talk.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 3
     ToPosition:
       X: 1
       Y: 3
-  - Forwards: DAD
+  - Length: 3
+    Forwards: DAD
     Backwards: DAD
-    Length: 3
+    Definition: Father.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 0
     ToPosition:
       X: 3
       Y: 2
-  - Forwards: SOS
+  - Length: 3
+    Forwards: SOS
     Backwards: SOS
-    Length: 3
+    Definition: A signal that a ship or aircraft sends to say that it is in danger
+      and needs help quickly.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 2
       Y: 2
-  - Forwards: TWA
+  - Length: 3
+    Forwards: TWA
     Backwards: AWT
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 3

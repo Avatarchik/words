@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class WordDefinitionViewer : MonoBehaviour
 {
@@ -9,27 +10,26 @@ public class WordDefinitionViewer : MonoBehaviour
 
 	public Text TextRef;
 	public string DefinitionFormat;
-
-	public Words WordsRef;
+	public string NoDefinitionMessage;
 
 	void Awake()
 	{
-		DefinitionFormat = DefinitionFormat.Replace("\\n", System.Environment.NewLine);
+		DefinitionFormat = DefinitionFormat.Replace("\\n", Environment.NewLine);
 	}
 
-	public void ShowDefinitionFor(string word)
+	public void ShowDefinitionFor(WordPair word)
 	{
-		string definition = string.Empty;
-		bool hasValidDefinition = WordsRef.GetDefinitionFor(word, ref definition);
-
-		TextRef.text = string.Format(DefinitionFormat, word, definition);
-
-		ValidDefinitionButtonSetRoot.SetActive(hasValidDefinition);
-		InvalidDefinitionButtonSetRoot.SetActive(!hasValidDefinition);
-
-		if (!hasValidDefinition)
+		if (word.HasDefinition)
 		{
-			SearchGoogleButtonRef.Initialise(word);
+			TextRef.text = string.Format(DefinitionFormat, word.Forwards, word.Definition);
 		}
+		else
+		{
+			TextRef.text = string.Format(DefinitionFormat, word.Forwards, NoDefinitionMessage);
+			SearchGoogleButtonRef.Initialise(word.Forwards);
+		}
+
+		ValidDefinitionButtonSetRoot.SetActive(word.HasDefinition);
+		InvalidDefinitionButtonSetRoot.SetActive(!word.HasDefinition);
 	}
 }

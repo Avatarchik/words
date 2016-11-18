@@ -17,594 +17,736 @@ MonoBehaviour:
   WordCount: 66
   MaxCharacterUsage: 5
   Words:
-  - Forwards: WAG
+  - Length: 3
+    Forwards: WAG
     Backwards: GAW
-    Length: 3
+    Definition: Someone who says amusing things.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 3
     ToPosition:
       X: 1
       Y: 5
-  - Forwards: ETERNE
+  - Length: 6
+    Forwards: ETERNE
     Backwards: ENRETE
-    Length: 6
+    Definition: A very long time, or a period of time that seems very long because
+      you are annoyed, anxious, etc.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 6
     ToPosition:
       X: 1
       Y: 1
-  - Forwards: YOUNG
+  - Length: 5
+    Forwards: YOUNG
     Backwards: GNUOY
-    Length: 5
+    Definition: Not yet old or not as old as other people.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 2
     ToPosition:
       X: 1
       Y: 2
-  - Forwards: LEASES
+  - Length: 6
+    Forwards: LEASES
     Backwards: SESAEL
-    Length: 6
+    Definition: To use or let someone use buildings, property, etc. on a lease.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 7
     ToPosition:
       X: 6
       Y: 2
-  - Forwards: DUMP
+  - Length: 4
+    Forwards: DUMP
     Backwards: PMUD
-    Length: 4
+    Definition: A place where unwanted waste is taken and left.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 1
     ToPosition:
       X: 5
       Y: 4
-  - Forwards: TRIDENT
+  - Length: 7
+    Forwards: TRIDENT
     Backwards: TNEDIRT
-    Length: 7
+    Definition: A weapon with three points that looks like a large fork.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 0
       Y: 6
-  - Forwards: UNFAMED
+  - Length: 7
+    Forwards: UNFAMED
     Backwards: DEMAFNU
-    Length: 7
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 7
       Y: 0
     ToPosition:
       X: 7
       Y: 6
-  - Forwards: VISTOS
+  - Length: 6
+    Forwards: VISTOS
     Backwards: SOTSIV
-    Length: 6
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 7
     ToPosition:
       X: 5
       Y: 7
-  - Forwards: DEAFEN
+  - Length: 6
+    Forwards: DEAFEN
     Backwards: NEFAED
-    Length: 6
+    Definition: To make it difficult for you to hear anything.
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 6
     ToPosition:
       X: 2
       Y: 6
-  - Forwards: TANKAS
+  - Length: 6
+    Forwards: TANKAS
     Backwards: SAKNAT
-    Length: 6
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 5
       Y: 0
-  - Forwards: SPEWY
+  - Length: 5
+    Forwards: SPEWY
     Backwards: YWEPS
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 4
     ToPosition:
       X: 2
       Y: 4
-  - Forwards: ANCE
+  - Length: 4
+    Forwards: ANCE
     Backwards: ECNA
-    Length: 4
+    Definition: Used to make nouns from verbs, to show a state, a quality, or a fact.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 1
     ToPosition:
       X: 6
       Y: 1
-  - Forwards: GAGA
+  - Length: 4
+    Forwards: GAGA
     Backwards: AGAG
-    Length: 4
+    Definition: Having a strong but often temporary feeling of love for someone, or
+      having a strong liking for something.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 5
     ToPosition:
       X: 4
       Y: 5
-  - Forwards: SKEG
+  - Length: 4
+    Forwards: SKEG
     Backwards: GEKS
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 2
     ToPosition:
       X: 3
       Y: 5
-  - Forwards: ENE
+  - Length: 3
+    Forwards: ENE
     Backwards: ENE
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 6
     ToPosition:
       X: 3
       Y: 6
-  - Forwards: WET
+  - Length: 3
+    Forwards: WET
     Backwards: TEW
-    Length: 3
+    Definition: Covered in or full of water or another liquid.
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 7
     ToPosition:
       X: 5
       Y: 5
-  - Forwards: UMS
+  - Length: 3
+    Forwards: UMS
     Backwards: SMU
-    Length: 3
+    Definition: Used when you are thinking about what to say next.
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 0
     ToPosition:
       X: 5
       Y: 0
-  - Forwards: AWA
+  - Length: 3
+    Forwards: AWA
     Backwards: AWA
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 2
       Y: 3
     ToPosition:
       X: 4
       Y: 5
-  - Forwards: LEASE
+  - Length: 5
+    Forwards: LEASE
     Backwards: ESAEL
-    Length: 5
+    Definition: To use or let someone use buildings, property, etc. on a lease.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 7
     ToPosition:
       X: 6
       Y: 3
-  - Forwards: KEG
+  - Length: 3
+    Forwards: KEG
     Backwards: GEK
-    Length: 3
+    Definition: A large round container, used especially for storing beer.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 3
     ToPosition:
       X: 3
       Y: 5
-  - Forwards: WAGE
+  - Length: 4
+    Forwards: WAGE
     Backwards: EGAW
-    Length: 4
+    Definition: Money you earn that is paid according to the number of hours, days,
+      or weeks that you work.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 3
     ToPosition:
       X: 1
       Y: 6
-  - Forwards: GAG
+  - Length: 3
+    Forwards: GAG
     Backwards: GAG
-    Length: 3
+    Definition: To feel sick in a way that makes you feel as though you might vomitbring
+      food from your stomach back through your mouth.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 5
     ToPosition:
       X: 3
       Y: 5
-  - Forwards: AGA
+  - Length: 3
+    Forwards: AGA
     Backwards: AGA
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 5
     ToPosition:
       X: 2
       Y: 5
-  - Forwards: SPEW
+  - Length: 4
+    Forwards: SPEW
     Backwards: WEPS
-    Length: 4
+    Definition: To flow out of something in quantities that are too large, or to make
+      something, especially something unwanted, flow out in this way.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 4
     ToPosition:
       X: 3
       Y: 4
-  - Forwards: GNU
+  - Length: 3
+    Forwards: GNU
     Backwards: UNG
-    Length: 3
+    Definition: A wildebeest.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 2
     ToPosition:
       X: 3
       Y: 2
-  - Forwards: NED
+  - Length: 3
+    Forwards: NED
     Backwards: DEN
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 5
     ToPosition:
       X: 0
       Y: 3
-  - Forwards: UEY
+  - Length: 3
+    Forwards: UEY
     Backwards: YEU
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 7
       Y: 0
     ToPosition:
       X: 5
       Y: 2
-  - Forwards: DEN
+  - Length: 3
+    Forwards: DEN
     Backwards: NED
-    Length: 3
+    Definition: A room in a house where people relax, read, watch television, etc.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
     ToPosition:
       X: 0
       Y: 5
-  - Forwards: RAW
+  - Length: 3
+    Forwards: RAW
     Backwards: WAR
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 3
     ToPosition:
       X: 1
       Y: 3
-  - Forwards: FAMED
+  - Length: 5
+    Forwards: FAMED
     Backwards: DEMAF
-    Length: 5
+    Definition: The state of being known about by a lot of people because of your
+      achievements.
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 2
     ToPosition:
       X: 7
       Y: 6
-  - Forwards: SOT
+  - Length: 3
+    Forwards: SOT
     Backwards: TOS
-    Length: 3
+    Definition: Someone who is drunk all the time.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 7
     ToPosition:
       X: 3
       Y: 7
-  - Forwards: TANKA
+  - Length: 5
+    Forwards: TANKA
     Backwards: AKNAT
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 4
       Y: 0
-  - Forwards: SOTS
+  - Length: 4
+    Forwards: SOTS
     Backwards: STOS
-    Length: 4
+    Definition: Someone who is drunk all the time.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 7
     ToPosition:
       X: 2
       Y: 7
-  - Forwards: MESE
+  - Length: 4
+    Forwards: MESE
     Backwards: ESEM
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 0
     ToPosition:
       X: 6
       Y: 3
-  - Forwards: DANCE
+  - Length: 5
+    Forwards: DANCE
     Backwards: ECNAD
-    Length: 5
+    Definition: To move your feet and body in a way that matches the style and speed
+      of music.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 1
     ToPosition:
       X: 6
       Y: 1
-  - Forwards: RIDENT
+  - Length: 6
+    Forwards: RIDENT
     Backwards: TNEDIR
-    Length: 6
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 1
     ToPosition:
       X: 0
       Y: 6
-  - Forwards: MES
+  - Length: 3
+    Forwards: MES
     Backwards: SEM
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 0
     ToPosition:
       X: 6
       Y: 2
-  - Forwards: DAP
+  - Length: 3
+    Forwards: DAP
     Backwards: PAD
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 7
       Y: 6
     ToPosition:
       X: 5
       Y: 4
-  - Forwards: NYE
+  - Length: 3
+    Forwards: NYE
     Backwards: EYN
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 1
     ToPosition:
       X: 6
       Y: 3
-  - Forwards: TANK
+  - Length: 4
+    Forwards: TANK
     Backwards: KNAT
-    Length: 4
+    Definition: Drunk or affected by drugs.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 3
       Y: 0
-  - Forwards: KOA
+  - Length: 3
+    Forwards: KOA
     Backwards: AOK
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 5
       Y: 3
     ToPosition:
       X: 3
       Y: 1
-  - Forwards: RID
+  - Length: 3
+    Forwards: RID
     Backwards: DIR
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 1
     ToPosition:
       X: 0
       Y: 3
-  - Forwards: COR
+  - Length: 3
+    Forwards: COR
     Backwards: ROC
-    Length: 3
+    Definition: "Used instead of con- before the letter \u201Cr\u201D."
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 1
     ToPosition:
       X: 3
       Y: 3
-  - Forwards: FAME
+  - Length: 4
+    Forwards: FAME
     Backwards: EMAF
-    Length: 4
+    Definition: The state of being known about by a lot of people because of your
+      achievements.
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 2
     ToPosition:
       X: 7
       Y: 5
-  - Forwards: DAN
+  - Length: 3
+    Forwards: DAN
     Backwards: NAD
-    Length: 3
+    Definition: In the Bible, the head of one of the 12 tribes of Israel.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 1
     ToPosition:
       X: 4
       Y: 1
-  - Forwards: AGE
+  - Length: 3
+    Forwards: AGE
     Backwards: EGA
-    Length: 3
+    Definition: Between 5 and 10, 16 and 18, etc. years old.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 4
     ToPosition:
       X: 1
       Y: 6
-  - Forwards: YOU
+  - Length: 3
+    Forwards: YOU
     Backwards: UOY
-    Length: 3
+    Definition: The person or people someone is speaking or writing to.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 2
     ToPosition:
       X: 3
       Y: 2
-  - Forwards: SAT
+  - Length: 3
+    Forwards: SAT
     Backwards: TAS
-    Length: 3
+    Definition: A written abbreviation of saturday.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 7
     ToPosition:
       X: 5
       Y: 5
-  - Forwards: VIS
+  - Length: 3
+    Forwards: VIS
     Backwards: SIV
-    Length: 3
+    Definition: In relation to or in comparison with something or someone.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 7
     ToPosition:
       X: 2
       Y: 7
-  - Forwards: TEN
+  - Length: 3
+    Forwards: TEN
     Backwards: NET
-    Length: 3
+    Definition: A piece of paper money worth $10.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 6
     ToPosition:
       X: 2
       Y: 6
-  - Forwards: MUD
+  - Length: 3
+    Forwards: MUD
     Backwards: DUM
-    Length: 3
+    Definition: Wet earth that has become soft and sticky.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 3
     ToPosition:
       X: 2
       Y: 1
-  - Forwards: SEA
+  - Length: 3
+    Forwards: SEA
     Backwards: AES
-    Length: 3
+    Definition: A large area of salty water that is mostly enclosed by land.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 7
     ToPosition:
       X: 4
       Y: 5
-  - Forwards: MAA
+  - Length: 3
+    Forwards: MAA
     Backwards: AAM
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 7
       Y: 4
     ToPosition:
       X: 5
       Y: 6
-  - Forwards: ARM
+  - Length: 3
+    Forwards: ARM
     Backwards: MRA
-    Length: 3
+    Definition: Carrying weapons, especially a gun.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 3
     ToPosition:
       X: 4
       Y: 3
-  - Forwards: VISTO
+  - Length: 5
+    Forwards: VISTO
     Backwards: OTSIV
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 7
     ToPosition:
       X: 4
       Y: 7
-  - Forwards: NEF
+  - Length: 3
+    Forwards: NEF
     Backwards: FEN
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 2
       Y: 6
     ToPosition:
       X: 4
       Y: 6
-  - Forwards: WAE
+  - Length: 3
+    Forwards: WAE
     Backwards: EAW
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 4
     ToPosition:
       X: 1
       Y: 6
-  - Forwards: NAY
+  - Length: 3
+    Forwards: NAY
     Backwards: YAN
-    Length: 3
+    Definition: Used when you are adding something to emphasize what you have just
+      said.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 2
     ToPosition:
       X: 2
       Y: 4
-  - Forwards: WAR
+  - Length: 3
+    Forwards: WAR
     Backwards: RAW
-    Length: 3
+    Definition: At war or fighting each other.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 3
     ToPosition:
       X: 3
       Y: 3
-  - Forwards: OYS
+  - Length: 3
+    Forwards: OYS
     Backwards: SYO
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 2
     ToPosition:
       X: 6
       Y: 2
-  - Forwards: EAT
+  - Length: 3
+    Forwards: EAT
     Backwards: TAE
-    Length: 3
+    Definition: To put food in your mouth and swallow it.
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 5
     ToPosition:
       X: 5
       Y: 5
-  - Forwards: RED
+  - Length: 3
+    Forwards: RED
     Backwards: DER
-    Length: 3
+    Definition: The color of blood.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 1
     ToPosition:
       X: 2
       Y: 1
-  - Forwards: APE
+  - Length: 3
+    Forwards: APE
     Backwards: EPA
-    Length: 3
+    Definition: A large monkey without a tail, or with a very short tail, such as
+      a gorilla or a chimpanzee.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 5
     ToPosition:
       X: 6
       Y: 3
-  - Forwards: FEN
+  - Length: 3
+    Forwards: FEN
     Backwards: NEF
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 6
     ToPosition:
       X: 2
       Y: 6
-  - Forwards: KAS
+  - Length: 3
+    Forwards: KAS
     Backwards: SAK
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 0
     ToPosition:
       X: 5
       Y: 0
-  - Forwards: TAN
+  - Length: 3
+    Forwards: TAN
     Backwards: NAT
-    Length: 3
+    Definition: Having a pale yellowish brown color.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0

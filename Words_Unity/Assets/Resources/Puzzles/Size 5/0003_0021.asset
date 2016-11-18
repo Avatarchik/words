@@ -17,198 +17,245 @@ MonoBehaviour:
   WordCount: 22
   MaxCharacterUsage: 5
   Words:
-  - Forwards: FUN
+  - Length: 3
+    Forwards: FUN
     Backwards: NUF
-    Length: 3
+    Definition: An experience or activity that is very enjoyable and exciting.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 4
     ToPosition:
       X: 2
       Y: 4
-  - Forwards: SURD
+  - Length: 4
+    Forwards: SURD
     Backwards: DRUS
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 3
     ToPosition:
       X: 3
       Y: 3
-  - Forwards: SHAW
+  - Length: 4
+    Forwards: SHAW
     Backwards: WAHS
-    Length: 4
+    Definition: An Irish writer famous especially for his funny plays which criticized
+      society and the moral values of the time.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 2
     ToPosition:
       X: 3
       Y: 2
-  - Forwards: ELM
+  - Length: 3
+    Forwards: ELM
     Backwards: MLE
-    Length: 3
+    Definition: A type of large tree with broad leaves, or the wood from this tree.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 2
       Y: 0
-  - Forwards: SENA
+  - Length: 4
+    Forwards: SENA
     Backwards: ANES
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 0
     ToPosition:
       X: 4
       Y: 3
-  - Forwards: RIAS
+  - Length: 4
+    Forwards: RIAS
     Backwards: SAIR
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 1
     ToPosition:
       X: 3
       Y: 1
-  - Forwards: FUNS
+  - Length: 4
+    Forwards: FUNS
     Backwards: SNUF
-    Length: 4
+    Definition: An experience or activity that is very enjoyable and exciting.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 4
     ToPosition:
       X: 1
       Y: 4
-  - Forwards: URD
+  - Length: 3
+    Forwards: URD
     Backwards: DRU
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 3
     ToPosition:
       X: 3
       Y: 3
-  - Forwards: FAN
+  - Length: 3
+    Forwards: FAN
     Backwards: NAF
-    Length: 3
+    Definition: Someone who likes a particular sport, kind of music, etc. very much,
+      or who admires a famous person.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 4
     ToPosition:
       X: 4
       Y: 2
-  - Forwards: SAI
+  - Length: 3
+    Forwards: SAI
     Backwards: IAS
-    Length: 3
+    Definition: A good quality that you cannot easily describe.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 1
     ToPosition:
       X: 1
       Y: 1
-  - Forwards: SIM
+  - Length: 3
+    Forwards: SIM
     Backwards: MIS
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 0
     ToPosition:
       X: 2
       Y: 0
-  - Forwards: ERS
+  - Length: 3
+    Forwards: ERS
     Backwards: SRE
-    Length: 3
+    Definition: A sound you make when you pause to correct something you have just
+      said, or when you do not know exactly what to say.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 0
       Y: 2
-  - Forwards: ASS
+  - Length: 3
+    Forwards: ASS
     Backwards: SSA
-    Length: 3
+    Definition: The part of your body that you sit on.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 4
     ToPosition:
       X: 0
       Y: 2
-  - Forwards: HAW
+  - Length: 3
+    Forwards: HAW
     Backwards: WAH
-    Length: 3
+    Definition: Another spelling of ha.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 2
     ToPosition:
       X: 3
       Y: 2
-  - Forwards: FANE
+  - Length: 4
+    Forwards: FANE
     Backwards: ENAF
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 4
     ToPosition:
       X: 4
       Y: 1
-  - Forwards: AWA
+  - Length: 3
+    Forwards: AWA
     Backwards: AWA
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 3
     ToPosition:
       X: 2
       Y: 1
-  - Forwards: MAA
+  - Length: 3
+    Forwards: MAA
     Backwards: AAM
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 2
       Y: 0
     ToPosition:
       X: 2
       Y: 2
-  - Forwards: RIA
+  - Length: 3
+    Forwards: RIA
     Backwards: AIR
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 1
     ToPosition:
       X: 2
       Y: 1
-  - Forwards: ANE
+  - Length: 3
+    Forwards: ANE
     Backwards: ENA
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 3
     ToPosition:
       X: 4
       Y: 1
-  - Forwards: UNS
+  - Length: 3
+    Forwards: UNS
     Backwards: SNU
-    Length: 3
+    Definition: Used to show an opposite state or a negative.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 4
     ToPosition:
       X: 1
       Y: 4
-  - Forwards: SEN
+  - Length: 3
+    Forwards: SEN
     Backwards: NES
-    Length: 3
+    Definition: The written abbreviation of senator.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 0
     ToPosition:
       X: 4
       Y: 2
-  - Forwards: SHA
+  - Length: 3
+    Forwards: SHA
     Backwards: AHS
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 2

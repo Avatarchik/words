@@ -17,396 +17,492 @@ MonoBehaviour:
   WordCount: 44
   MaxCharacterUsage: 5
   Words:
-  - Forwards: SPALDS
+  - Length: 6
+    Forwards: SPALDS
     Backwards: SDLAPS
-    Length: 6
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 1
     ToPosition:
       X: 1
       Y: 1
-  - Forwards: TATIES
+  - Length: 6
+    Forwards: TATIES
     Backwards: SEITAT
-    Length: 6
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 6
     ToPosition:
       X: 1
       Y: 1
-  - Forwards: BETOSS
+  - Length: 6
+    Forwards: BETOSS
     Backwards: SSOTEB
-    Length: 6
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 6
     ToPosition:
       X: 1
       Y: 1
-  - Forwards: AWAKE
+  - Length: 5
+    Forwards: AWAKE
     Backwards: EKAWA
-    Length: 5
+    Definition: Not sleeping.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 5
     ToPosition:
       X: 5
       Y: 5
-  - Forwards: GYRATE
+  - Length: 6
+    Forwards: GYRATE
     Backwards: ETARYG
-    Length: 6
+    Definition: To turn around fast in circles.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 0
       Y: 5
-  - Forwards: SILKEN
+  - Length: 6
+    Forwards: SILKEN
     Backwards: NEKLIS
-    Length: 6
+    Definition: Soft, smooth, and shiny like silk.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 0
     ToPosition:
       X: 1
       Y: 0
-  - Forwards: PURL
+  - Length: 4
+    Forwards: PURL
     Backwards: LRUP
-    Length: 4
+    Definition: One of the types of stitch that you use when you knitmake clothes
+      from wool.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 4
     ToPosition:
       X: 3
       Y: 1
-  - Forwards: JUROR
+  - Length: 5
+    Forwards: JUROR
     Backwards: RORUJ
-    Length: 5
+    Definition: A member of a jury.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 3
     ToPosition:
       X: 2
       Y: 3
-  - Forwards: IOS
+  - Length: 3
+    Forwards: IOS
     Backwards: SOI
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 4
     ToPosition:
       X: 3
       Y: 2
-  - Forwards: QUIRT
+  - Length: 5
+    Forwards: QUIRT
     Backwards: TRIUQ
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 5
       Y: 6
     ToPosition:
       X: 1
       Y: 6
-  - Forwards: TUM
+  - Length: 3
+    Forwards: TUM
     Backwards: MUT
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 5
       Y: 2
     ToPosition:
       X: 5
       Y: 4
-  - Forwards: LET
+  - Length: 3
+    Forwards: LET
     Backwards: TEL
-    Length: 3
+    Definition: A smaller type of something.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 6
     ToPosition:
       X: 0
       Y: 4
-  - Forwards: RIVA
+  - Length: 4
+    Forwards: RIVA
     Backwards: AVIR
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 2
     ToPosition:
       X: 3
       Y: 5
-  - Forwards: RAT
+  - Length: 3
+    Forwards: RAT
     Backwards: TAR
-    Length: 3
+    Definition: An animal that looks like a large mouse with a long tail.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 6
     ToPosition:
       X: 4
       Y: 4
-  - Forwards: KAW
+  - Length: 3
+    Forwards: KAW
     Backwards: WAK
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 5
     ToPosition:
       X: 2
       Y: 5
-  - Forwards: ATE
+  - Length: 3
+    Forwards: ATE
     Backwards: ETA
-    Length: 3
+    Definition: The past tense of eat.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
     ToPosition:
       X: 0
       Y: 5
-  - Forwards: JUS
+  - Length: 3
+    Forwards: JUS
     Backwards: SUJ
-    Length: 3
+    Definition: Served with a thin sauce made from the natural juices that come out
+      of meat as it is cooking.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 3
     ToPosition:
       X: 6
       Y: 1
-  - Forwards: BOP
+  - Length: 3
+    Forwards: BOP
     Backwards: POB
-    Length: 3
+    Definition: To hit someone without much force, or as a joke.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 6
     ToPosition:
       X: 6
       Y: 4
-  - Forwards: PUR
+  - Length: 3
+    Forwards: PUR
     Backwards: RUP
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 4
     ToPosition:
       X: 4
       Y: 2
-  - Forwards: RATE
+  - Length: 4
+    Forwards: RATE
     Backwards: ETAR
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 2
     ToPosition:
       X: 0
       Y: 5
-  - Forwards: SOT
+  - Length: 3
+    Forwards: SOT
     Backwards: TOS
-    Length: 3
+    Definition: Someone who is drunk all the time.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 2
     ToPosition:
       X: 4
       Y: 4
-  - Forwards: AIR
+  - Length: 3
+    Forwards: AIR
     Backwards: RIA
-    Length: 3
+    Definition: The mixture of gases surrounding the Earth, that we breathe.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
     ToPosition:
       X: 2
       Y: 3
-  - Forwards: EMU
+  - Length: 3
+    Forwards: EMU
     Backwards: UME
-    Length: 3
+    Definition: A large Australian bird that can run very fast, but cannot fly.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 5
     ToPosition:
       X: 5
       Y: 3
-  - Forwards: PAL
+  - Length: 3
+    Forwards: PAL
     Backwards: LAP
-    Length: 3
+    Definition: A close friend.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 1
     ToPosition:
       X: 3
       Y: 1
-  - Forwards: ESS
+  - Length: 3
+    Forwards: ESS
     Backwards: SSE
-    Length: 3
+    Definition: A woman who does something, or a female.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 2
     ToPosition:
       X: 3
       Y: 2
-  - Forwards: KIR
+  - Length: 3
+    Forwards: KIR
     Backwards: RIK
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 5
     ToPosition:
       X: 2
       Y: 3
-  - Forwards: TAR
+  - Length: 3
+    Forwards: TAR
     Backwards: RAT
-    Length: 3
+    Definition: A black substance, thick and sticky when hot but hard when cold, used
+      especially for making road surfaces.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 4
     ToPosition:
       X: 0
       Y: 2
-  - Forwards: NEK
+  - Length: 3
+    Forwards: NEK
     Backwards: KEN
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 0
     ToPosition:
       X: 3
       Y: 0
-  - Forwards: WAKE
+  - Length: 4
+    Forwards: WAKE
     Backwards: EKAW
-    Length: 4
+    Definition: If something, especially something bad, happens in the wake of an
+      event, it happens afterward and usually as a result of it.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 5
     ToPosition:
       X: 5
       Y: 5
-  - Forwards: PRO
+  - Length: 3
+    Forwards: PRO
     Backwards: ORP
-    Length: 3
+    Definition: Doing a job, sport, or activity for money.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 1
     ToPosition:
       X: 3
       Y: 3
-  - Forwards: KEN
+  - Length: 3
+    Forwards: KEN
     Backwards: NEK
-    Length: 3
+    Definition: "Outside someone\u2019s knowledge or understanding."
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 0
     ToPosition:
       X: 1
       Y: 0
-  - Forwards: LAV
+  - Length: 3
+    Forwards: LAV
     Backwards: VAL
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 6
     ToPosition:
       X: 2
       Y: 4
-  - Forwards: BET
+  - Length: 3
+    Forwards: BET
     Backwards: TEB
-    Length: 3
+    Definition: An agreement to risk money on the result of a race, game, competition,
+      etc.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 6
     ToPosition:
       X: 4
       Y: 4
-  - Forwards: RES
+  - Length: 3
+    Forwards: RES
     Backwards: SER
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 2
     ToPosition:
       X: 2
       Y: 2
-  - Forwards: LAP
+  - Length: 3
+    Forwards: LAP
     Backwards: PAL
-    Length: 3
+    Definition: If water laps something or laps against something such as the shore
+      or a boat, it moves against it or hits it in small waves.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 1
     ToPosition:
       X: 5
       Y: 1
-  - Forwards: ITA
+  - Length: 3
+    Forwards: ITA
     Backwards: ATI
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 3
     ToPosition:
       X: 1
       Y: 5
-  - Forwards: LAR
+  - Length: 3
+    Forwards: LAR
     Backwards: RAL
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 0
     ToPosition:
       X: 4
       Y: 2
-  - Forwards: SILK
+  - Length: 4
+    Forwards: SILK
     Backwards: KLIS
-    Length: 4
+    Definition: A thin smooth soft cloth made from very thin thread which is produced
+      by a silkworm.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 0
     ToPosition:
       X: 3
       Y: 0
-  - Forwards: TIES
+  - Length: 4
+    Forwards: TIES
     Backwards: SEIT
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 4
     ToPosition:
       X: 1
       Y: 1
-  - Forwards: ILK
+  - Length: 3
+    Forwards: ILK
     Backwards: KLI
-    Length: 3
+    Definition: Of that type, his type, etc.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0
     ToPosition:
       X: 3
       Y: 0
-  - Forwards: TAT
+  - Length: 3
+    Forwards: TAT
     Backwards: TAT
-    Length: 3
+    Definition: A type of lace that you make by hand, or the process of making it.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 6
     ToPosition:
       X: 1
       Y: 4
-  - Forwards: SPA
+  - Length: 3
+    Forwards: SPA
     Backwards: APS
-    Length: 3
+    Definition: A place where people go in order to improve their health or beauty,
+      especially through swimming, exercise, beauty treatments, etc.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 1
     ToPosition:
       X: 4
       Y: 1
-  - Forwards: IRE
+  - Length: 3
+    Forwards: IRE
     Backwards: ERI
-    Length: 3
+    Definition: Anger.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 4
     ToPosition:
       X: 1
       Y: 2
-  - Forwards: SIL
+  - Length: 3
+    Forwards: SIL
     Backwards: LIS
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 0

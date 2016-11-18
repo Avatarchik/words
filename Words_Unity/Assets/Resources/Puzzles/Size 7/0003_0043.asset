@@ -17,396 +17,497 @@ MonoBehaviour:
   WordCount: 44
   MaxCharacterUsage: 5
   Words:
-  - Forwards: IDIOMS
+  - Length: 6
+    Forwards: IDIOMS
     Backwards: SMOIDI
-    Length: 6
+    Definition: A group of words that has a special meaning that is different from
+      the ordinary meaning of each separate word.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 0
     ToPosition:
       X: 4
       Y: 5
-  - Forwards: CLASPS
+  - Length: 6
+    Forwards: CLASPS
     Backwards: SPSALC
-    Length: 6
+    Definition: To hold someone or something tightly, closing your fingers or arms
+      around him, her, or it.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 0
     ToPosition:
       X: 1
       Y: 5
-  - Forwards: TOSSER
+  - Length: 6
+    Forwards: TOSSER
     Backwards: RESSOT
-    Length: 6
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 5
       Y: 6
     ToPosition:
       X: 5
       Y: 1
-  - Forwards: GRAIN
+  - Length: 5
+    Forwards: GRAIN
     Backwards: NIARG
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 0
     ToPosition:
       X: 3
       Y: 4
-  - Forwards: VEGETE
+  - Length: 6
+    Forwards: VEGETE
     Backwards: ETEGEV
-    Length: 6
+    Definition: A plant such as a bean, carrot, or potato which is eaten raw or cooked.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 6
     ToPosition:
       X: 2
       Y: 1
-  - Forwards: AVID
+  - Length: 4
+    Forwards: AVID
     Backwards: DIVA
-    Length: 4
+    Definition: Doing something as much as you can, because you enjoy it very much.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 6
     ToPosition:
       X: 4
       Y: 6
-  - Forwards: JEZAIL
+  - Length: 6
+    Forwards: JEZAIL
     Backwards: LIAZEJ
-    Length: 6
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 6
     ToPosition:
       X: 6
       Y: 1
-  - Forwards: HOGTIE
+  - Length: 6
+    Forwards: HOGTIE
     Backwards: EITGOH
-    Length: 6
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 6
     ToPosition:
       X: 0
       Y: 1
-  - Forwards: SEN
+  - Length: 3
+    Forwards: SEN
     Backwards: NES
-    Length: 3
+    Definition: The written abbreviation of senator.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 5
     ToPosition:
       X: 3
       Y: 5
-  - Forwards: ASS
+  - Length: 3
+    Forwards: ASS
     Backwards: SSA
-    Length: 3
+    Definition: The part of your body that you sit on.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 3
     ToPosition:
       X: 4
       Y: 5
-  - Forwards: ULT
+  - Length: 3
+    Forwards: ULT
     Backwards: TLU
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 2
       Y: 2
-  - Forwards: UNI
+  - Length: 3
+    Forwards: UNI
     Backwards: INU
-    Length: 3
+    Definition: One.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 0
     ToPosition:
       X: 4
       Y: 0
-  - Forwards: ESS
+  - Length: 3
+    Forwards: ESS
     Backwards: SSE
-    Length: 3
+    Definition: A woman who does something, or a female.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 2
     ToPosition:
       X: 5
       Y: 4
-  - Forwards: SENS
+  - Length: 4
+    Forwards: SENS
     Backwards: SNES
-    Length: 4
+    Definition: The written abbreviation of senator.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 5
     ToPosition:
       X: 4
       Y: 5
-  - Forwards: NIGH
+  - Length: 4
+    Forwards: NIGH
     Backwards: HGIN
-    Length: 4
+    Definition: Near.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0
     ToPosition:
       X: 2
       Y: 0
-  - Forwards: TIE
+  - Length: 3
+    Forwards: TIE
     Backwards: EIT
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 3
     ToPosition:
       X: 0
       Y: 1
-  - Forwards: GET
+  - Length: 3
+    Forwards: GET
     Backwards: TEG
-    Length: 3
+    Definition: To start having something by finding it, asking for it, being given
+      it, etc.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 4
     ToPosition:
       X: 2
       Y: 2
-  - Forwards: AIL
+  - Length: 3
+    Forwards: AIL
     Backwards: LIA
-    Length: 3
+    Definition: An ailing company or economy is having a lot of problems and is not
+      successful.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 3
     ToPosition:
       X: 6
       Y: 1
-  - Forwards: TAI
+  - Length: 3
+    Forwards: TAI
     Backwards: IAT
-    Length: 3
+    Definition: A Chinese form of physical exercise that trains your mind and body
+      in balance and control.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 2
     ToPosition:
       X: 4
       Y: 2
-  - Forwards: TOSS
+  - Length: 4
+    Forwards: TOSS
     Backwards: SSOT
-    Length: 4
+    Definition: To throw something, especially something light, without much force.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 6
     ToPosition:
       X: 5
       Y: 3
-  - Forwards: DAE
+  - Length: 3
+    Forwards: DAE
     Backwards: EAD
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 1
     ToPosition:
       X: 2
       Y: 3
-  - Forwards: ISM
+  - Length: 3
+    Forwards: ISM
     Backwards: MSI
-    Length: 3
+    Definition: A religion, political belief, or style of art based on a particular
+      principle or the teachings of a particular person.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 2
     ToPosition:
       X: 4
       Y: 4
-  - Forwards: IOS
+  - Length: 3
+    Forwards: IOS
     Backwards: SOI
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 3
     ToPosition:
       X: 5
       Y: 3
-  - Forwards: OMIT
+  - Length: 4
+    Forwards: OMIT
     Backwards: TIMO
-    Length: 4
+    Definition: To not include someone or something, either deliberately or because
+      you forget to do it.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 5
     ToPosition:
       X: 2
       Y: 2
-  - Forwards: SAL
+  - Length: 3
+    Forwards: SAL
     Backwards: LAS
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 3
     ToPosition:
       X: 1
       Y: 1
-  - Forwards: DIV
+  - Length: 3
+    Forwards: DIV
     Backwards: VID
-    Length: 3
+    Definition: The written abbreviation of division.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 6
     ToPosition:
       X: 2
       Y: 6
-  - Forwards: IDIOM
+  - Length: 5
+    Forwards: IDIOM
     Backwards: MOIDI
-    Length: 5
+    Definition: A group of words that has a special meaning that is different from
+      the ordinary meaning of each separate word.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 0
     ToPosition:
       X: 4
       Y: 4
-  - Forwards: EON
+  - Length: 3
+    Forwards: EON
     Backwards: NOE
-    Length: 3
+    Definition: An extremely long period of time.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 2
     ToPosition:
       X: 3
       Y: 4
-  - Forwards: HOG
+  - Length: 3
+    Forwards: HOG
     Backwards: GOH
-    Length: 3
+    Definition: To keep or use all of something when you should share it.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 6
     ToPosition:
       X: 0
       Y: 4
-  - Forwards: MOI
+  - Length: 3
+    Forwards: MOI
     Backwards: IOM
-    Length: 3
+    Definition: "A Vietnamese word used to describe the social, political, and economic
+      changes that happened in Vietnam from 1986, which led to improvements in people\u2019s
+      living standards and personal freedom."
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 4
     ToPosition:
       X: 4
       Y: 2
-  - Forwards: LAS
+  - Length: 3
+    Forwards: LAS
     Backwards: SAL
-    Length: 3
+    Definition: A city in the desert of the U.S. state of Nevada.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 1
     ToPosition:
       X: 1
       Y: 3
-  - Forwards: TAE
+  - Length: 3
+    Forwards: TAE
     Backwards: EAT
-    Length: 3
+    Definition: A type of exercise that combines dancing, kicking, and quick hand
+      movements.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
     ToPosition:
       X: 2
       Y: 1
-  - Forwards: RAIN
+  - Length: 4
+    Forwards: RAIN
     Backwards: NIAR
-    Length: 4
+    Definition: Water that falls in small drops from clouds in the sky.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 1
     ToPosition:
       X: 3
       Y: 4
-  - Forwards: GIN
+  - Length: 3
+    Forwards: GIN
     Backwards: NIG
-    Length: 3
+    Definition: A strong alcoholic drink made mainly from grain, or a glass of this
+      drink.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 0
     ToPosition:
       X: 5
       Y: 0
-  - Forwards: AIN
+  - Length: 3
+    Forwards: AIN
     Backwards: NIA
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 2
     ToPosition:
       X: 3
       Y: 4
-  - Forwards: INN
+  - Length: 3
+    Forwards: INN
     Backwards: NNI
-    Length: 3
+    Definition: A word used in the names of some hotels and restaurants.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 6
     ToPosition:
       X: 3
       Y: 4
-  - Forwards: ASPS
+  - Length: 4
+    Forwards: ASPS
     Backwards: SPSA
-    Length: 4
+    Definition: A small poisonous snake from North Africa.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 6
     ToPosition:
       X: 1
       Y: 3
-  - Forwards: CLASP
+  - Length: 5
+    Forwards: CLASP
     Backwards: PSALC
-    Length: 5
+    Definition: To hold someone or something tightly, closing your fingers or arms
+      around him, her, or it.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 0
     ToPosition:
       X: 1
       Y: 4
-  - Forwards: VEG
+  - Length: 3
+    Forwards: VEG
     Backwards: GEV
-    Length: 3
+    Definition: To relax by doing something that needs very little effort.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 6
     ToPosition:
       X: 2
       Y: 4
-  - Forwards: OPE
+  - Length: 3
+    Forwards: OPE
     Backwards: EPO
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 5
     ToPosition:
       X: 2
       Y: 3
-  - Forwards: DIVA
+  - Length: 4
+    Forwards: DIVA
     Backwards: AVID
-    Length: 4
+    Definition: A woman who is a very good singer, especially of opera music.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 6
     ToPosition:
       X: 1
       Y: 6
-  - Forwards: ASP
+  - Length: 3
+    Forwards: ASP
     Backwards: PSA
-    Length: 3
+    Definition: A small poisonous snake from North Africa.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 6
     ToPosition:
       X: 1
       Y: 4
-  - Forwards: ENS
+  - Length: 3
+    Forwards: ENS
     Backwards: SNE
-    Length: 3
+    Definition: Made of a particular material or substance.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 5
     ToPosition:
       X: 4
       Y: 5
-  - Forwards: TOS
+  - Length: 3
+    Forwards: TOS
     Backwards: SOT
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 5
       Y: 6

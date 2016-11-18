@@ -3,18 +3,25 @@ using System;
 [Serializable]
 public class WordPair : IComparable
 {
+	public int Length;
+
 	public string Forwards;
 	public string Backwards;
-	public int Length;
+
+	public string Definition;
+	public bool HasDefinition;
 
 	public GridPosition FromPosition;
 	public GridPosition ToPosition;
 
-	public WordPair(string word, GridPosition fromPosition, GridPosition toPosition)
+	public WordPair(string word, string definition, GridPosition fromPosition, GridPosition toPosition)
 	{
+		Length = word.Length;
+
 		Forwards = word;
 		Backwards = WordHelper.ReverseWord(word);
-		Length = word.Length;
+
+		Definition = definition;
 
 		FromPosition = fromPosition;
 		ToPosition = toPosition;
@@ -22,8 +29,8 @@ public class WordPair : IComparable
 
 	public int CompareTo(object obj)
 	{
-		WordPair wordPair = (WordPair)obj;
-		return Forwards.CompareTo(wordPair.Forwards);
+		WordPair rhs = (WordPair)obj;
+		return Forwards.CompareTo(rhs.Forwards);
 	}
 
 	static public bool operator ==(WordPair lhs, WordPair rhs)

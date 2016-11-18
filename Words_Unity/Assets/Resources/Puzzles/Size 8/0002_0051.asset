@@ -17,459 +17,570 @@ MonoBehaviour:
   WordCount: 51
   MaxCharacterUsage: 5
   Words:
-  - Forwards: LINK
+  - Length: 4
+    Forwards: LINK
     Backwards: KNIL
-    Length: 4
+    Definition: A relationship between two things or ideas, in which one is caused
+      or affected by the other.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 3
     ToPosition:
       X: 1
       Y: 6
-  - Forwards: SARD
+  - Length: 4
+    Forwards: SARD
     Backwards: DRAS
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 0
     ToPosition:
       X: 6
       Y: 3
-  - Forwards: STADE
+  - Length: 5
+    Forwards: STADE
     Backwards: EDATS
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 0
     ToPosition:
       X: 2
       Y: 0
-  - Forwards: DOCTOR
+  - Length: 6
+    Forwards: DOCTOR
     Backwards: ROTCOD
-    Length: 6
+    Definition: Relating to or done as part of work for the university degree of doctor.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 2
     ToPosition:
       X: 6
       Y: 2
-  - Forwards: ABJURE
+  - Length: 6
+    Forwards: ABJURE
     Backwards: ERUJBA
-    Length: 6
+    Definition: To state publicly that you will give up a particular belief or way
+      of behaving.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 1
     ToPosition:
       X: 1
       Y: 1
-  - Forwards: MAENADS
+  - Length: 7
+    Forwards: MAENADS
     Backwards: SDANEAM
-    Length: 7
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 7
       Y: 7
     ToPosition:
       X: 7
       Y: 1
-  - Forwards: RELIVES
+  - Length: 7
+    Forwards: RELIVES
     Backwards: SEVILER
-    Length: 7
+    Definition: To remember or imagine something that happened in the past so clearly
+      that you experience the same emotions again.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 4
     ToPosition:
       X: 6
       Y: 4
-  - Forwards: CIGGIE
+  - Length: 6
+    Forwards: CIGGIE
     Backwards: EIGGIC
-    Length: 6
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 7
     ToPosition:
       X: 5
       Y: 7
-  - Forwards: ADOWN
+  - Length: 5
+    Forwards: ADOWN
     Backwards: NWODA
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 7
       Y: 6
     ToPosition:
       X: 3
       Y: 6
-  - Forwards: BONED
+  - Length: 5
+    Forwards: BONED
     Backwards: DENOB
-    Length: 5
+    Definition: One of the hard parts that form the frame of a human or animal body.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 1
     ToPosition:
       X: 5
       Y: 5
-  - Forwards: DRUXY
+  - Length: 5
+    Forwards: DRUXY
     Backwards: YXURD
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 5
     ToPosition:
       X: 0
       Y: 1
-  - Forwards: BEDYES
+  - Length: 6
+    Forwards: BEDYES
     Backwards: SEYDEB
-    Length: 6
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 0
     ToPosition:
       X: 1
       Y: 5
-  - Forwards: YOGIS
+  - Length: 5
+    Forwards: YOGIS
     Backwards: SIGOY
-    Length: 5
+    Definition: Someone who is very good at yoga and has a lot of knowledge about
+      it, and who often teaches it to other people.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 7
     ToPosition:
       X: 2
       Y: 3
-  - Forwards: EDGY
+  - Length: 4
+    Forwards: EDGY
     Backwards: YGDE
-    Length: 4
+    Definition: Nervous and worried.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 5
     ToPosition:
       X: 3
       Y: 5
-  - Forwards: GED
+  - Length: 3
+    Forwards: GED
     Backwards: DEG
-    Length: 3
+    Definition: In the US, a series of tests that are designed to provide a qualification
+      equal to a high school diploma, for people who left high school without completing
+      their education.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 5
     ToPosition:
       X: 6
       Y: 3
-  - Forwards: SEY
+  - Length: 3
+    Forwards: SEY
     Backwards: YES
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 5
     ToPosition:
       X: 1
       Y: 3
-  - Forwards: URE
+  - Length: 3
+    Forwards: URE
     Backwards: ERU
-    Length: 3
+    Definition: Used to make nouns that show actions or results.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 1
     ToPosition:
       X: 1
       Y: 1
-  - Forwards: CUD
+  - Length: 3
+    Forwards: CUD
     Backwards: DUC
-    Length: 3
+    Definition: Food that a cow has eaten, swallowed, and brought back into its mouth
+      to chew a second time.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 7
     ToPosition:
       X: 0
       Y: 5
-  - Forwards: VOE
+  - Length: 3
+    Forwards: VOE
     Backwards: EOV
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 3
     ToPosition:
       X: 1
       Y: 1
-  - Forwards: ODE
+  - Length: 3
+    Forwards: ODE
     Backwards: EDO
-    Length: 3
+    Definition: A poem or song that is written in order to praise a person or thing.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 6
     ToPosition:
       X: 5
       Y: 4
-  - Forwards: KON
+  - Length: 3
+    Forwards: KON
     Backwards: NOK
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 6
     ToPosition:
       X: 3
       Y: 6
-  - Forwards: TOR
+  - Length: 3
+    Forwards: TOR
     Backwards: ROT
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 2
     ToPosition:
       X: 6
       Y: 2
-  - Forwards: NIL
+  - Length: 3
+    Forwards: NIL
     Backwards: LIN
-    Length: 3
+    Definition: Nothing or zero.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 5
     ToPosition:
       X: 4
       Y: 3
-  - Forwards: DYES
+  - Length: 4
+    Forwards: DYES
     Backwards: SEYD
-    Length: 4
+    Definition: A substance you use to change the color of your clothes, hair, etc.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 2
     ToPosition:
       X: 1
       Y: 5
-  - Forwards: PST
+  - Length: 3
+    Forwards: PST
     Backwards: TSP
-    Length: 3
+    Definition: The abbreviation of pacific standard time.
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 0
     ToPosition:
       X: 5
       Y: 0
-  - Forwards: VILE
+  - Length: 4
+    Forwards: VILE
     Backwards: ELIV
-    Length: 4
+    Definition: Very bad or disgusting.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 4
     ToPosition:
       X: 1
       Y: 4
-  - Forwards: ANE
+  - Length: 3
+    Forwards: ANE
     Backwards: ENA
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 7
       Y: 3
     ToPosition:
       X: 7
       Y: 5
-  - Forwards: PYX
+  - Length: 3
+    Forwards: PYX
     Backwards: XYP
-    Length: 3
+    Definition: A small container in which the holy bread used for the Christian ceremony
+      of communion is kept.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 0
       Y: 2
-  - Forwards: YOU
+  - Length: 3
+    Forwards: YOU
     Backwards: UOY
-    Length: 3
+    Definition: The person or people someone is speaking or writing to.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 3
     ToPosition:
       X: 3
       Y: 1
-  - Forwards: NED
+  - Length: 3
+    Forwards: NED
     Backwards: DEN
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 5
       Y: 3
     ToPosition:
       X: 5
       Y: 5
-  - Forwards: CIG
+  - Length: 3
+    Forwards: CIG
     Backwards: GIC
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 7
     ToPosition:
       X: 2
       Y: 7
-  - Forwards: DEB
+  - Length: 3
+    Forwards: DEB
     Backwards: BED
-    Length: 3
+    Definition: A debutante.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 0
     ToPosition:
       X: 1
       Y: 0
-  - Forwards: SAB
+  - Length: 3
+    Forwards: SAB
     Backwards: BAS
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 7
       Y: 1
     ToPosition:
       X: 5
       Y: 1
-  - Forwards: INN
+  - Length: 3
+    Forwards: INN
     Backwards: NNI
-    Length: 3
+    Definition: A word used in the names of some hotels and restaurants.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 7
     ToPosition:
       X: 2
       Y: 5
-  - Forwards: SNY
+  - Length: 3
+    Forwards: SNY
     Backwards: YNS
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 5
     ToPosition:
       X: 3
       Y: 5
-  - Forwards: ARDS
+  - Length: 4
+    Forwards: ARDS
     Backwards: SDRA
-    Length: 4
+    Definition: Someone who is usually or always in a particular state.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 1
     ToPosition:
       X: 6
       Y: 4
-  - Forwards: ARB
+  - Length: 3
+    Forwards: ARB
     Backwards: BRA
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 7
       Y: 3
     ToPosition:
       X: 5
       Y: 1
-  - Forwards: TAD
+  - Length: 3
+    Forwards: TAD
     Backwards: DAT
-    Length: 3
+    Definition: A small amount, or to a small degree.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0
     ToPosition:
       X: 3
       Y: 0
-  - Forwards: JURE
+  - Length: 4
+    Forwards: JURE
     Backwards: ERUJ
-    Length: 4
+    Definition: True or right because of a law.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 1
     ToPosition:
       X: 1
       Y: 1
-  - Forwards: DAN
+  - Length: 3
+    Forwards: DAN
     Backwards: NAD
-    Length: 3
+    Definition: In the Bible, the head of one of the 12 tribes of Israel.
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 2
     ToPosition:
       X: 7
       Y: 4
-  - Forwards: OWN
+  - Length: 3
+    Forwards: OWN
     Backwards: NWO
-    Length: 3
+    Definition: To legally have something because you have bought it, been given it,
+      etc.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 6
     ToPosition:
       X: 3
       Y: 6
-  - Forwards: MAENAD
+  - Length: 6
+    Forwards: MAENAD
     Backwards: DANEAM
-    Length: 6
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 7
       Y: 7
     ToPosition:
       X: 7
       Y: 2
-  - Forwards: GIE
+  - Length: 3
+    Forwards: GIE
     Backwards: EIG
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 7
     ToPosition:
       X: 5
       Y: 7
-  - Forwards: ADO
+  - Length: 3
+    Forwards: ADO
     Backwards: ODA
-    Length: 3
+    Definition: Without delaying anymore, or wasting any more time.
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 6
     ToPosition:
       X: 5
       Y: 6
-  - Forwards: SED
+  - Length: 3
+    Forwards: SED
     Backwards: DES
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 4
     ToPosition:
       X: 6
       Y: 6
-  - Forwards: MAE
+  - Length: 3
+    Forwards: MAE
     Backwards: EAM
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 7
       Y: 7
     ToPosition:
       X: 7
       Y: 5
-  - Forwards: DOC
+  - Length: 3
+    Forwards: DOC
     Backwards: COD
-    Length: 3
+    Definition: A short form of doctor.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 2
     ToPosition:
       X: 3
       Y: 2
-  - Forwards: BED
+  - Length: 3
+    Forwards: BED
     Backwards: DEB
-    Length: 3
+    Definition: Sheets, covers, etc. that you put on a bed.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 0
     ToPosition:
       X: 3
       Y: 0
-  - Forwards: NOB
+  - Length: 3
+    Forwards: NOB
     Backwards: BON
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 5
       Y: 3
     ToPosition:
       X: 5
       Y: 1
-  - Forwards: URD
+  - Length: 3
+    Forwards: URD
     Backwards: DRU
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 3
     ToPosition:
       X: 0
       Y: 5
-  - Forwards: COD
+  - Length: 3
+    Forwards: COD
     Backwards: DOC
-    Length: 3
+    Definition: A large ocean fish that lives in the North Atlantic.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 2

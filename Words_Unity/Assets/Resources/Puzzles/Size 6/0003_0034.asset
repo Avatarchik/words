@@ -17,315 +17,397 @@ MonoBehaviour:
   WordCount: 35
   MaxCharacterUsage: 5
   Words:
-  - Forwards: PRIMS
+  - Length: 5
+    Forwards: PRIMS
     Backwards: SMIRP
-    Length: 5
+    Definition: Very formal and careful in the way you behave, and easily shocked
+      by anything offensive, sexual, etc.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 5
     ToPosition:
       X: 4
       Y: 1
-  - Forwards: SOARS
+  - Length: 5
+    Forwards: SOARS
     Backwards: SRAOS
-    Length: 5
+    Definition: To increase quickly to a high level.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 1
     ToPosition:
       X: 4
       Y: 1
-  - Forwards: GRIME
+  - Length: 5
+    Forwards: GRIME
     Backwards: EMIRG
-    Length: 5
+    Definition: Oily dirt that forms a black layer on surfaces.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 2
     ToPosition:
       X: 4
       Y: 2
-  - Forwards: PALLA
+  - Length: 5
+    Forwards: PALLA
     Backwards: ALLAP
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 5
     ToPosition:
       X: 4
       Y: 5
-  - Forwards: ATOM
+  - Length: 4
+    Forwards: ATOM
     Backwards: MOTA
-    Length: 4
+    Definition: Relating to the energy produced by splitting atoms or the weapons
+      that use this energy.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 4
     ToPosition:
       X: 5
       Y: 1
-  - Forwards: NIDAL
+  - Length: 5
+    Forwards: NIDAL
     Backwards: LADIN
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 5
       Y: 0
     ToPosition:
       X: 1
       Y: 0
-  - Forwards: PRAU
+  - Length: 4
+    Forwards: PRAU
     Backwards: UARP
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 4
     ToPosition:
       X: 3
       Y: 4
-  - Forwards: COY
+  - Length: 3
+    Forwards: COY
     Backwards: YOC
-    Length: 3
+    Definition: Pretending to be shy in order to attract interest, or to avoid dealing
+      with something difficult.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 5
     ToPosition:
       X: 3
       Y: 3
-  - Forwards: PRIM
+  - Length: 4
+    Forwards: PRIM
     Backwards: MIRP
-    Length: 4
+    Definition: Very formal and careful in the way you behave, and easily shocked
+      by anything offensive, sexual, etc.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 5
     ToPosition:
       X: 3
       Y: 2
-  - Forwards: ARK
+  - Length: 3
+    Forwards: ARK
     Backwards: KRA
-    Length: 3
+    Definition: In the Bible, the large boat built by Noah to save his family and
+      the animals from a flood that covered the Earth.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 5
     ToPosition:
       X: 1
       Y: 3
-  - Forwards: RIM
+  - Length: 3
+    Forwards: RIM
     Backwards: MIR
-    Length: 3
+    Definition: To be around the edge of something.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 2
     ToPosition:
       X: 3
       Y: 2
-  - Forwards: BLAD
+  - Length: 4
+    Forwards: BLAD
     Backwards: DALB
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 3
       Y: 0
-  - Forwards: NID
+  - Length: 3
+    Forwards: NID
     Backwards: DIN
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 5
       Y: 0
     ToPosition:
       X: 3
       Y: 0
-  - Forwards: CALLA
+  - Length: 5
+    Forwards: CALLA
     Backwards: ALLAC
-    Length: 5
+    Definition: A U.S.opera singer who is considered one of the greatest opera singers
+      of the 20th century.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 5
     ToPosition:
       X: 1
       Y: 5
-  - Forwards: SEA
+  - Length: 3
+    Forwards: SEA
     Backwards: AES
-    Length: 3
+    Definition: A large area of salty water that is mostly enclosed by land.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 1
     ToPosition:
       X: 4
       Y: 3
-  - Forwards: PEG
+  - Length: 3
+    Forwards: PEG
     Backwards: GEP
-    Length: 3
+    Definition: A short piece of wood, metal, etc. that fits into a hole or is fastened
+      to a wall, used especially for hanging things on, or instead of nails for fastening
+      things together.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 4
     ToPosition:
       X: 0
       Y: 2
-  - Forwards: TAY
+  - Length: 3
+    Forwards: TAY
     Backwards: YAT
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 5
       Y: 3
     ToPosition:
       X: 3
       Y: 3
-  - Forwards: PAL
+  - Length: 3
+    Forwards: PAL
     Backwards: LAP
-    Length: 3
+    Definition: A close friend.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 5
     ToPosition:
       X: 2
       Y: 5
-  - Forwards: OARS
+  - Length: 4
+    Forwards: OARS
     Backwards: SRAO
-    Length: 4
+    Definition: A long pole with a wide flat blade at one end, used for rowing a boat.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 1
     ToPosition:
       X: 4
       Y: 1
-  - Forwards: CALL
+  - Length: 4
+    Forwards: CALL
     Backwards: LLAC
-    Length: 4
+    Definition: A strong desire or feeling of duty to do a particular kind of work,
+      especially work that helps other people.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 5
     ToPosition:
       X: 2
       Y: 5
-  - Forwards: SMIR
+  - Length: 4
+    Forwards: SMIR
     Backwards: RIMS
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 1
     ToPosition:
       X: 1
       Y: 4
-  - Forwards: MOT
+  - Length: 3
+    Forwards: MOT
     Backwards: TOM
-    Length: 3
+    Definition: Exactly the right word or phrase.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 1
     ToPosition:
       X: 5
       Y: 3
-  - Forwards: ARE
+  - Length: 3
+    Forwards: ARE
     Backwards: ERA
-    Length: 3
+    Definition: "The present tense plural form of \u201Cbe\u201D."
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 0
     ToPosition:
       X: 4
       Y: 2
-  - Forwards: KIR
+  - Length: 3
+    Forwards: KIR
     Backwards: RIK
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 3
     ToPosition:
       X: 3
       Y: 1
-  - Forwards: DAL
+  - Length: 3
+    Forwards: DAL
     Backwards: LAD
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 0
     ToPosition:
       X: 1
       Y: 0
-  - Forwards: LOR
+  - Length: 3
+    Forwards: LOR
     Backwards: ROL
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 0
     ToPosition:
       X: 1
       Y: 2
-  - Forwards: OAR
+  - Length: 3
+    Forwards: OAR
     Backwards: RAO
-    Length: 3
+    Definition: A long pole with a wide flat blade at one end, used for rowing a boat.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 1
     ToPosition:
       X: 3
       Y: 1
-  - Forwards: CAT
+  - Length: 3
+    Forwards: CAT
     Backwards: TAC
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 5
       Y: 5
     ToPosition:
       X: 5
       Y: 3
-  - Forwards: PALL
+  - Length: 4
+    Forwards: PALL
     Backwards: LLAP
-    Length: 4
+    Definition: To gradually become uninteresting or unenjoyable.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 5
     ToPosition:
       X: 3
       Y: 5
-  - Forwards: ERA
+  - Length: 3
+    Forwards: ERA
     Backwards: ARE
-    Length: 3
+    Definition: A period of time that is associated with particular events or qualities,
+      or that begins with a particular date or event.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
     ToPosition:
       X: 2
       Y: 1
-  - Forwards: LAD
+  - Length: 3
+    Forwards: LAD
     Backwards: DAL
-    Length: 3
+    Definition: A boy or young man.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 0
     ToPosition:
       X: 3
       Y: 0
-  - Forwards: PEGS
+  - Length: 4
+    Forwards: PEGS
     Backwards: SGEP
-    Length: 4
+    Definition: A short piece of wood, metal, etc. that fits into a hole or is fastened
+      to a wall, used especially for hanging things on, or instead of nails for fastening
+      things together.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 4
     ToPosition:
       X: 0
       Y: 1
-  - Forwards: AYE
+  - Length: 3
+    Forwards: AYE
     Backwards: EYA
-    Length: 3
+    Definition: Used to say yes, especially when voting.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 4
     ToPosition:
       X: 4
       Y: 2
-  - Forwards: TOM
+  - Length: 3
+    Forwards: TOM
     Backwards: MOT
-    Length: 3
+    Definition: A tomcat.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 3
     ToPosition:
       X: 5
       Y: 1
-  - Forwards: CAL
+  - Length: 3
+    Forwards: CAL
     Backwards: LAC
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 5
       Y: 5

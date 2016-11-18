@@ -17,207 +17,255 @@ MonoBehaviour:
   WordCount: 23
   MaxCharacterUsage: 5
   Words:
-  - Forwards: WOWS
+  - Length: 4
+    Forwards: WOWS
     Backwards: SWOW
-    Length: 4
+    Definition: To make people admire you very much.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 4
     ToPosition:
       X: 4
       Y: 1
-  - Forwards: ARID
+  - Length: 4
+    Forwards: ARID
     Backwards: DIRA
-    Length: 4
+    Definition: Getting very little rain, and therefore very dry.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
     ToPosition:
       X: 3
       Y: 3
-  - Forwards: EMU
+  - Length: 3
+    Forwards: EMU
     Backwards: UME
-    Length: 3
+    Definition: A large Australian bird that can run very fast, but cannot fly.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 0
     ToPosition:
       X: 3
       Y: 0
-  - Forwards: EURO
+  - Length: 4
+    Forwards: EURO
     Backwards: ORUE
-    Length: 4
+    Definition: The unit of money used in the European Union.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 1
     ToPosition:
       X: 3
       Y: 1
-  - Forwards: DATE
+  - Length: 4
+    Forwards: DATE
     Backwards: ETAD
-    Length: 4
+    Definition: To write or print the date on something.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 4
     ToPosition:
       X: 0
       Y: 1
-  - Forwards: SOT
+  - Length: 3
+    Forwards: SOT
     Backwards: TOS
-    Length: 3
+    Definition: Someone who is drunk all the time.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 0
     ToPosition:
       X: 2
       Y: 2
-  - Forwards: NAS
+  - Length: 3
+    Forwards: NAS
     Backwards: SAN
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 4
     ToPosition:
       X: 3
       Y: 4
-  - Forwards: SKI
+  - Length: 3
+    Forwards: SKI
     Backwards: IKS
-    Length: 3
+    Definition: The sport of moving down hills or across land in the snow, wearing
+      skis.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 1
     ToPosition:
       X: 2
       Y: 3
-  - Forwards: RET
+  - Length: 3
+    Forwards: RET
     Backwards: TER
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 0
       Y: 2
-  - Forwards: SIS
+  - Length: 3
+    Forwards: SIS
     Backwards: SIS
-    Length: 3
+    Definition: A name used when speaking to your sister.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 4
     ToPosition:
       X: 1
       Y: 2
-  - Forwards: AIT
+  - Length: 3
+    Forwards: AIT
     Backwards: TIA
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 2
       Y: 4
     ToPosition:
       X: 2
       Y: 2
-  - Forwards: REM
+  - Length: 3
+    Forwards: REM
     Backwards: MER
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 2
       Y: 0
-  - Forwards: ETA
+  - Length: 3
+    Forwards: ETA
     Backwards: ATE
-    Length: 3
+    Definition: The seventh letter of the Greek alphabet.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 1
     ToPosition:
       X: 0
       Y: 3
-  - Forwards: SUM
+  - Length: 3
+    Forwards: SUM
     Backwards: MUS
-    Length: 3
+    Definition: To give the main information contained in a report, speech, discussion,
+      etc. in a short statement at the end.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 0
     ToPosition:
       X: 2
       Y: 0
-  - Forwards: URS
+  - Length: 3
+    Forwards: URS
     Backwards: SRU
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 0
     ToPosition:
       X: 1
       Y: 2
-  - Forwards: RID
+  - Length: 3
+    Forwards: RID
     Backwards: DIR
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 3
     ToPosition:
       X: 3
       Y: 3
-  - Forwards: OWS
+  - Length: 3
+    Forwards: OWS
     Backwards: SWO
-    Length: 3
+    Definition: Said to show that something hurts you.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 3
     ToPosition:
       X: 4
       Y: 1
-  - Forwards: SAN
+  - Length: 3
+    Forwards: SAN
     Backwards: NAS
-    Length: 3
+    Definition: Without.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 4
     ToPosition:
       X: 1
       Y: 4
-  - Forwards: ATE
+  - Length: 3
+    Forwards: ATE
     Backwards: ETA
-    Length: 3
+    Definition: The past tense of eat.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
     ToPosition:
       X: 0
       Y: 1
-  - Forwards: WOW
+  - Length: 3
+    Forwards: WOW
     Backwards: WOW
-    Length: 3
+    Definition: To make people admire you very much.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 4
     ToPosition:
       X: 4
       Y: 2
-  - Forwards: ERK
+  - Length: 3
+    Forwards: ERK
     Backwards: KRE
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 0
     ToPosition:
       X: 3
       Y: 2
-  - Forwards: RUT
+  - Length: 3
+    Forwards: RUT
     Backwards: TUR
-    Length: 3
+    Definition: A deep narrow track left in soft ground by a wheel.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 2
       Y: 2
-  - Forwards: DAT
+  - Length: 3
+    Forwards: DAT
     Backwards: TAD
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 4

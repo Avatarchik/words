@@ -49,9 +49,18 @@ public class PuzzleContents : ScriptableObject
 		return wasSuccessful;
 	}
 
-	public void RegisterWord(string word, GridPosition fromPosition, GridPosition toPosition)
+	public void UpdateDefinitions(WordDefinitions definitions)
 	{
-		Words[WordCount] = new WordPair(word, fromPosition, toPosition);
+		foreach (WordPair word in Words)
+		{
+			definitions.GetDefinitionFor(word.Forwards, ref word.Definition);
+			word.HasDefinition = !string.IsNullOrEmpty(word.Definition);
+		}
+	}
+
+	public void RegisterWord(string word, string definition, GridPosition fromPosition, GridPosition toPosition)
+	{
+		Words[WordCount] = new WordPair(word, definition, fromPosition, toPosition);
 		++WordCount;
 	}
 

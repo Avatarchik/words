@@ -17,189 +17,238 @@ MonoBehaviour:
   WordCount: 21
   MaxCharacterUsage: 5
   Words:
-  - Forwards: ROPY
+  - Length: 4
+    Forwards: ROPY
     Backwards: YPOR
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 2
       Y: 0
     ToPosition:
       X: 2
       Y: 3
-  - Forwards: NAY
+  - Length: 3
+    Forwards: NAY
     Backwards: YAN
-    Length: 3
+    Definition: Used when you are adding something to emphasize what you have just
+      said.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
     ToPosition:
       X: 2
       Y: 3
-  - Forwards: GAIT
+  - Length: 4
+    Forwards: GAIT
     Backwards: TIAG
-    Length: 4
+    Definition: The way someone walks.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 4
     ToPosition:
       X: 1
       Y: 1
-  - Forwards: DURO
+  - Length: 4
+    Forwards: DURO
     Backwards: ORUD
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 0
     ToPosition:
       X: 1
       Y: 0
-  - Forwards: EWER
+  - Length: 4
+    Forwards: EWER
     Backwards: REWE
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 4
     ToPosition:
       X: 3
       Y: 1
-  - Forwards: BAPS
+  - Length: 4
+    Forwards: BAPS
     Backwards: SPAB
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 4
     ToPosition:
       X: 4
       Y: 1
-  - Forwards: AYU
+  - Length: 3
+    Forwards: AYU
     Backwards: UYA
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 0
       Y: 2
-  - Forwards: LAP
+  - Length: 3
+    Forwards: LAP
     Backwards: PAL
-    Length: 3
+    Definition: If water laps something or laps against something such as the shore
+      or a boat, it moves against it or hits it in small waves.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 4
     ToPosition:
       X: 2
       Y: 2
-  - Forwards: GYP
+  - Length: 3
+    Forwards: GYP
     Backwards: PYG
-    Length: 3
+    Definition: Something that you were tricked into buying, or a situation in which
+      you feel you have been cheated.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 4
     ToPosition:
       X: 2
       Y: 2
-  - Forwards: ROT
+  - Length: 3
+    Forwards: ROT
     Backwards: TOR
-    Length: 3
+    Definition: The natural process of decaying, or the part of something that has
+      decayed.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 1
     ToPosition:
       X: 1
       Y: 1
-  - Forwards: SPA
+  - Length: 3
+    Forwards: SPA
     Backwards: APS
-    Length: 3
+    Definition: A place where people go in order to improve their health or beauty,
+      especially through swimming, exercise, beauty treatments, etc.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 1
     ToPosition:
       X: 4
       Y: 3
-  - Forwards: EGG
+  - Length: 3
+    Forwards: EGG
     Backwards: GGE
-    Length: 3
+    Definition: To encourage someone to do something, especially something that he
+      or she should not do or does not want to do.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 4
     ToPosition:
       X: 1
       Y: 4
-  - Forwards: EWE
+  - Length: 3
+    Forwards: EWE
     Backwards: EWE
-    Length: 3
+    Definition: A female sheep.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 4
     ToPosition:
       X: 3
       Y: 2
-  - Forwards: AIT
+  - Length: 3
+    Forwards: AIT
     Backwards: TIA
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 3
     ToPosition:
       X: 1
       Y: 1
-  - Forwards: BEG
+  - Length: 3
+    Forwards: BEG
     Backwards: GEB
-    Length: 3
+    Definition: To ask for something in an anxious or urgent way, because you want
+      it very much.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 4
     ToPosition:
       X: 2
       Y: 4
-  - Forwards: BAP
+  - Length: 3
+    Forwards: BAP
     Backwards: PAB
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 4
     ToPosition:
       X: 4
       Y: 2
-  - Forwards: PEP
+  - Length: 3
+    Forwards: PEP
     Backwards: PEP
-    Length: 3
+    Definition: Physical energy.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 2
     ToPosition:
       X: 2
       Y: 2
-  - Forwards: URE
+  - Length: 3
+    Forwards: URE
     Backwards: ERU
-    Length: 3
+    Definition: Used to make nouns that show actions or results.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 0
     ToPosition:
       X: 3
       Y: 2
-  - Forwards: TOR
+  - Length: 3
+    Forwards: TOR
     Backwards: ROT
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 1
     ToPosition:
       X: 3
       Y: 1
-  - Forwards: REW
+  - Length: 3
+    Forwards: REW
     Backwards: WER
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 1
     ToPosition:
       X: 3
       Y: 3
-  - Forwards: DUR
+  - Length: 3
+    Forwards: DUR
     Backwards: RUD
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 0

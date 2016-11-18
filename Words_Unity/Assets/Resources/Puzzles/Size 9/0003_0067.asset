@@ -17,603 +17,751 @@ MonoBehaviour:
   WordCount: 67
   MaxCharacterUsage: 5
   Words:
-  - Forwards: NARRATED
+  - Length: 8
+    Forwards: NARRATED
     Backwards: DETARRAN
-    Length: 8
+    Definition: A spoken description or explanation that someone gives during a movie,
+      play, etc.
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 0
     ToPosition:
       X: 7
       Y: 7
-  - Forwards: DISCANTS
+  - Length: 8
+    Forwards: DISCANTS
     Backwards: STNACSID
-    Length: 8
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 5
       Y: 8
     ToPosition:
       X: 5
       Y: 1
-  - Forwards: AGONY
+  - Length: 5
+    Forwards: AGONY
     Backwards: YNOGA
-    Length: 5
+    Definition: Very severe pain.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 3
     ToPosition:
       X: 6
       Y: 3
-  - Forwards: CAHIER
+  - Length: 6
+    Forwards: CAHIER
     Backwards: REIHAC
-    Length: 6
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 4
     ToPosition:
       X: 1
       Y: 4
-  - Forwards: LUGSAIL
+  - Length: 7
+    Forwards: LUGSAIL
     Backwards: LIASGUL
-    Length: 7
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 7
     ToPosition:
       X: 6
       Y: 7
-  - Forwards: ABJURERS
+  - Length: 8
+    Forwards: ABJURERS
     Backwards: SRERUJBA
-    Length: 8
+    Definition: To state publicly that you will give up a particular belief or way
+      of behaving.
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 8
     ToPosition:
       X: 8
       Y: 1
-  - Forwards: HATCHED
+  - Length: 7
+    Forwards: HATCHED
     Backwards: DEHCTAH
-    Length: 7
+    Definition: Fine lines drawn on or cut into a surface.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 6
       Y: 0
-  - Forwards: REDDING
+  - Length: 7
+    Forwards: REDDING
     Backwards: GNIDDER
-    Length: 7
+    Definition: The color of blood.
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 8
     ToPosition:
       X: 1
       Y: 8
-  - Forwards: FLUKED
+  - Length: 6
+    Forwards: FLUKED
     Backwards: DEKULF
-    Length: 6
+    Definition: Something that only happens because of chance or luck.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 8
     ToPosition:
       X: 0
       Y: 3
-  - Forwards: HEALD
+  - Length: 5
+    Forwards: HEALD
     Backwards: DLAEH
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 2
       Y: 5
     ToPosition:
       X: 2
       Y: 1
-  - Forwards: LOBUS
+  - Length: 5
+    Forwards: LOBUS
     Backwards: SUBOL
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 6
     ToPosition:
       X: 5
       Y: 6
-  - Forwards: TRONS
+  - Length: 5
+    Forwards: TRONS
     Backwards: SNORT
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 5
     ToPosition:
       X: 1
       Y: 1
-  - Forwards: NAOS
+  - Length: 4
+    Forwards: NAOS
     Backwards: SOAN
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 5
     ToPosition:
       X: 3
       Y: 2
-  - Forwards: RUTHS
+  - Length: 5
+    Forwards: RUTHS
     Backwards: SHTUR
-    Length: 5
+    Definition: A book in the Old Testament of the Christian Bible.
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 2
     ToPosition:
       X: 3
       Y: 2
-  - Forwards: BAY
+  - Length: 3
+    Forwards: BAY
     Backwards: YAB
-    Length: 3
+    Definition: A part of the ocean that is enclosed by a curve in the land.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 5
     ToPosition:
       X: 6
       Y: 3
-  - Forwards: SEW
+  - Length: 3
+    Forwards: SEW
     Backwards: WES
-    Length: 3
+    Definition: To use a needle and thread to fasten pieces of cloth together, or
+      to attach something such as a button to clothes.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 1
     ToPosition:
       X: 3
       Y: 1
-  - Forwards: HAN
+  - Length: 3
+    Forwards: HAN
     Backwards: NAH
-    Length: 3
+    Definition: A German painter who painted pictures for churches and was the father
+      of Hans Holbein the Younger.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 0
       Y: 2
-  - Forwards: BIG
+  - Length: 3
+    Forwards: BIG
     Backwards: GIB
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 5
     ToPosition:
       X: 3
       Y: 3
-  - Forwards: NID
+  - Length: 3
+    Forwards: NID
     Backwards: DIN
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 2
       Y: 8
     ToPosition:
       X: 4
       Y: 8
-  - Forwards: TED
+  - Length: 3
+    Forwards: TED
     Backwards: DET
-    Length: 3
+    Definition: A U.S. baseball player known for his skill as a batter.
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 5
     ToPosition:
       X: 7
       Y: 7
-  - Forwards: NAT
+  - Length: 3
+    Forwards: NAT
     Backwards: TAN
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 7
       Y: 0
     ToPosition:
       X: 5
       Y: 2
-  - Forwards: ELF
+  - Length: 3
+    Forwards: ELF
     Backwards: FLE
-    Length: 3
+    Definition: A small imaginary person with pointed ears and magical powers.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 8
     ToPosition:
       X: 6
       Y: 6
-  - Forwards: ERE
+  - Length: 3
+    Forwards: ERE
     Backwards: ERE
-    Length: 3
+    Definition: Before.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 4
     ToPosition:
       X: 2
       Y: 4
-  - Forwards: DISCANT
+  - Length: 7
+    Forwards: DISCANT
     Backwards: TNACSID
-    Length: 7
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 5
       Y: 8
     ToPosition:
       X: 5
       Y: 2
-  - Forwards: AND
+  - Length: 3
+    Forwards: AND
     Backwards: DNA
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 1
     ToPosition:
       X: 0
       Y: 3
-  - Forwards: HAND
+  - Length: 4
+    Forwards: HAND
     Backwards: DNAH
-    Length: 4
+    Definition: An amount that you can hold in your hand.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 0
       Y: 3
-  - Forwards: SUB
+  - Length: 3
+    Forwards: SUB
     Backwards: BUS
-    Length: 3
+    Definition: A submarine.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 6
     ToPosition:
       X: 3
       Y: 6
-  - Forwards: AREDD
+  - Length: 5
+    Forwards: AREDD
     Backwards: DDERA
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 8
       Y: 8
     ToPosition:
       X: 4
       Y: 8
-  - Forwards: RASE
+  - Length: 4
+    Forwards: RASE
     Backwards: ESAR
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 4
     ToPosition:
       X: 4
       Y: 1
-  - Forwards: HOH
+  - Length: 3
+    Forwards: HOH
     Backwards: HOH
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 2
     ToPosition:
       X: 4
       Y: 4
-  - Forwards: IOTA
+  - Length: 4
+    Forwards: IOTA
     Backwards: ATOI
-    Length: 4
+    Definition: Not even a small amount.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 4
     ToPosition:
       X: 6
       Y: 1
-  - Forwards: AGO
+  - Length: 3
+    Forwards: AGO
     Backwards: OGA
-    Length: 3
+    Definition: Used to show how far back in the past something happened.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 3
     ToPosition:
       X: 4
       Y: 3
-  - Forwards: NARRATE
+  - Length: 7
+    Forwards: NARRATE
     Backwards: ETARRAN
-    Length: 7
+    Definition: A spoken description or explanation that someone gives during a movie,
+      play, etc.
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 0
     ToPosition:
       X: 7
       Y: 6
-  - Forwards: RATED
+  - Length: 5
+    Forwards: RATED
     Backwards: DETAR
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 7
       Y: 3
     ToPosition:
       X: 7
       Y: 7
-  - Forwards: LUGS
+  - Length: 4
+    Forwards: LUGS
     Backwards: SGUL
-    Length: 4
+    Definition: To pull or carry something heavy with difficulty.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 7
     ToPosition:
       X: 3
       Y: 7
-  - Forwards: RATE
+  - Length: 4
+    Forwards: RATE
     Backwards: ETAR
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 7
       Y: 3
     ToPosition:
       X: 7
       Y: 6
-  - Forwards: SAIL
+  - Length: 4
+    Forwards: SAIL
     Backwards: LIAS
-    Length: 4
+    Definition: To travel across an area of water in a boat or ship.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 7
     ToPosition:
       X: 6
       Y: 7
-  - Forwards: ADS
+  - Length: 3
+    Forwards: ADS
     Backwards: SDA
-    Length: 3
+    Definition: Words, a picture, or a short movie that advertises a thing or service
+      that is available or for sale.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 0
     ToPosition:
       X: 3
       Y: 2
-  - Forwards: HOG
+  - Length: 3
+    Forwards: HOG
     Backwards: GOH
-    Length: 3
+    Definition: To keep or use all of something when you should share it.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 5
     ToPosition:
       X: 2
       Y: 7
-  - Forwards: SAI
+  - Length: 3
+    Forwards: SAI
     Backwards: IAS
-    Length: 3
+    Definition: A good quality that you cannot easily describe.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 7
     ToPosition:
       X: 5
       Y: 7
-  - Forwards: SOT
+  - Length: 3
+    Forwards: SOT
     Backwards: TOS
-    Length: 3
+    Definition: Someone who is drunk all the time.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 7
     ToPosition:
       X: 1
       Y: 5
-  - Forwards: GIB
+  - Length: 3
+    Forwards: GIB
     Backwards: BIG
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 3
     ToPosition:
       X: 3
       Y: 5
-  - Forwards: HAT
+  - Length: 3
+    Forwards: HAT
     Backwards: TAH
-    Length: 3
+    Definition: A piece of clothing that you wear on your head.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 2
       Y: 0
-  - Forwards: DING
+  - Length: 4
+    Forwards: DING
     Backwards: GNID
-    Length: 4
+    Definition: To damage something slightly by hitting it.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 8
     ToPosition:
       X: 1
       Y: 8
-  - Forwards: KED
+  - Length: 3
+    Forwards: KED
     Backwards: DEK
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 5
     ToPosition:
       X: 0
       Y: 3
-  - Forwards: ABJURER
+  - Length: 7
+    Forwards: ABJURER
     Backwards: RERUJBA
-    Length: 7
+    Definition: To state publicly that you will give up a particular belief or way
+      of behaving.
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 8
     ToPosition:
       X: 8
       Y: 2
-  - Forwards: ULT
+  - Length: 3
+    Forwards: ULT
     Backwards: TLU
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 7
     ToPosition:
       X: 1
       Y: 5
-  - Forwards: DAUB
+  - Length: 4
+    Forwards: DAUB
     Backwards: BUAD
-    Length: 4
+    Definition: A small amount of a soft or sticky substance.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 8
     ToPosition:
       X: 4
       Y: 5
-  - Forwards: ARE
+  - Length: 3
+    Forwards: ARE
     Backwards: ERA
-    Length: 3
+    Definition: "The present tense plural form of \u201Cbe\u201D."
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 8
     ToPosition:
       X: 6
       Y: 8
-  - Forwards: GAU
+  - Length: 3
+    Forwards: GAU
     Backwards: UAG
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 8
       Y: 0
     ToPosition:
       X: 6
       Y: 2
-  - Forwards: EAR
+  - Length: 3
+    Forwards: EAR
     Backwards: RAE
-    Length: 3
+    Definition: Having long, short, etc. ears.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0
     ToPosition:
       X: 7
       Y: 2
-  - Forwards: ARED
+  - Length: 4
+    Forwards: ARED
     Backwards: DERA
-    Length: 4
+    Definition: "The present tense plural form of \u201Cbe\u201D."
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 8
     ToPosition:
       X: 5
       Y: 8
-  - Forwards: LUKE
+  - Length: 4
+    Forwards: LUKE
     Backwards: EKUL
-    Length: 4
+    Definition: One of the four books in the New Testament of the Christian Bible
+      that describe the life and teaching of Jesus.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 7
     ToPosition:
       X: 0
       Y: 4
-  - Forwards: LOB
+  - Length: 3
+    Forwards: LOB
     Backwards: BOL
-    Length: 3
+    Definition: To throw something somewhere in a high curve, especially over a wall,
+      fence, etc.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 6
     ToPosition:
       X: 3
       Y: 6
-  - Forwards: UKE
+  - Length: 3
+    Forwards: UKE
     Backwards: EKU
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 6
     ToPosition:
       X: 0
       Y: 4
-  - Forwards: CHE
+  - Length: 3
+    Forwards: CHE
     Backwards: EHC
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 0
     ToPosition:
       X: 5
       Y: 0
-  - Forwards: HEAL
+  - Length: 4
+    Forwards: HEAL
     Backwards: LAEH
-    Length: 4
+    Definition: The process of becoming well again after an illness or of feeling
+      happy again after a bad experience, or the process of helping someone to do
+      this.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 5
     ToPosition:
       X: 2
       Y: 2
-  - Forwards: FLU
+  - Length: 3
+    Forwards: FLU
     Backwards: ULF
-    Length: 3
+    Definition: A common infectious disease that makes your throat sore, makes it
+      difficult for you to breathe, gives you a fever, and makes you feel very tired.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 8
     ToPosition:
       X: 0
       Y: 6
-  - Forwards: HATCH
+  - Length: 5
+    Forwards: HATCH
     Backwards: HCTAH
-    Length: 5
+    Definition: Fine lines drawn on or cut into a surface.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 4
       Y: 0
-  - Forwards: HIE
+  - Length: 3
+    Forwards: HIE
     Backwards: EIH
-    Length: 3
+    Definition: To make yourself hurry, or go quickly.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 4
     ToPosition:
       X: 2
       Y: 4
-  - Forwards: BUS
+  - Length: 3
+    Forwards: BUS
     Backwards: SUB
-    Length: 3
+    Definition: A large road vehicle that can carry many people.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 6
     ToPosition:
       X: 5
       Y: 6
-  - Forwards: TRON
+  - Length: 4
+    Forwards: TRON
     Backwards: NORT
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 5
     ToPosition:
       X: 1
       Y: 2
-  - Forwards: ERS
+  - Length: 3
+    Forwards: ERS
     Backwards: SRE
-    Length: 3
+    Definition: A sound you make when you pause to correct something you have just
+      said, or when you do not know exactly what to say.
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 3
     ToPosition:
       X: 8
       Y: 1
-  - Forwards: URE
+  - Length: 3
+    Forwards: URE
     Backwards: ERU
-    Length: 3
+    Definition: Used to make nouns that show actions or results.
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 5
     ToPosition:
       X: 8
       Y: 3
-  - Forwards: GAUN
+  - Length: 4
+    Forwards: GAUN
     Backwards: NUAG
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 8
       Y: 0
     ToPosition:
       X: 5
       Y: 3
-  - Forwards: ERA
+  - Length: 3
+    Forwards: ERA
     Backwards: ARE
-    Length: 3
+    Definition: A period of time that is associated with particular events or qualities,
+      or that begins with a particular date or event.
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 3
     ToPosition:
       X: 6
       Y: 1
-  - Forwards: ONS
+  - Length: 3
+    Forwards: ONS
     Backwards: SNO
-    Length: 3
+    Definition: Touching or supported by a particular surface.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 3

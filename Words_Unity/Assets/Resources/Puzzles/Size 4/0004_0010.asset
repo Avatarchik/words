@@ -17,90 +17,111 @@ MonoBehaviour:
   WordCount: 10
   MaxCharacterUsage: 3
   Words:
-  - Forwards: BOA
+  - Length: 3
+    Forwards: BOA
     Backwards: AOB
-    Length: 3
+    Definition: A large snake that is not poisonous, but kills animals by crushing
+      them.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 0
     ToPosition:
       X: 1
       Y: 2
-  - Forwards: BOG
+  - Length: 3
+    Forwards: BOG
     Backwards: GOB
-    Length: 3
+    Definition: An area of low wet ground, sometimes containing bushes or grasses.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 0
     ToPosition:
       X: 2
       Y: 2
-  - Forwards: SAB
+  - Length: 3
+    Forwards: SAB
     Backwards: BAS
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 2
       Y: 0
-  - Forwards: MAE
+  - Length: 3
+    Forwards: MAE
     Backwards: EAM
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 3
     ToPosition:
       X: 1
       Y: 1
-  - Forwards: SEY
+  - Length: 3
+    Forwards: SEY
     Backwards: YES
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 0
       Y: 2
-  - Forwards: PIS
+  - Length: 3
+    Forwards: PIS
     Backwards: SIP
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 3
     ToPosition:
       X: 3
       Y: 1
-  - Forwards: BYE
+  - Length: 3
+    Forwards: BYE
     Backwards: EYB
-    Length: 3
+    Definition: Goodbye.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
     ToPosition:
       X: 0
       Y: 1
-  - Forwards: AGO
+  - Length: 3
+    Forwards: AGO
     Backwards: OGA
-    Length: 3
+    Definition: Used to show how far back in the past something happened.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 3
     ToPosition:
       X: 2
       Y: 1
-  - Forwards: SEG
+  - Length: 3
+    Forwards: SEG
     Backwards: GES
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 2
       Y: 2
-  - Forwards: PAM
+  - Length: 3
+    Forwards: PAM
     Backwards: MAP
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 3

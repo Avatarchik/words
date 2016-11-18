@@ -119,7 +119,7 @@ public class WordPanelEntry : MonoBehaviour, IPointerClickHandler
 		WordDefinitionViewer defViewer = FindObjectOfType<WordDefinitionViewer>();
 		if (defViewer)
 		{
-			defViewer.ShowDefinitionFor(mWordPair.Definition);
+			defViewer.ShowDefinitionFor(mWordPair);
 		}
 	}
 }

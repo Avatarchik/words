@@ -17,423 +17,529 @@ MonoBehaviour:
   WordCount: 47
   MaxCharacterUsage: 5
   Words:
-  - Forwards: BILE
+  - Length: 4
+    Forwards: BILE
     Backwards: ELIB
-    Length: 4
+    Definition: A bitter green-brown liquid formed in the liver, which helps you to
+      digest fats.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 3
     ToPosition:
       X: 4
       Y: 6
-  - Forwards: CLASHED
+  - Length: 7
+    Forwards: CLASHED
     Backwards: DEHSALC
-    Length: 7
+    Definition: A short fight between two armies or groups of people.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 7
     ToPosition:
       X: 6
       Y: 1
-  - Forwards: FLAKED
+  - Length: 6
+    Forwards: FLAKED
     Backwards: DEKALF
-    Length: 6
+    Definition: To break off or come off in small thin pieces.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 1
     ToPosition:
       X: 6
       Y: 1
-  - Forwards: BEHESTS
+  - Length: 7
+    Forwards: BEHESTS
     Backwards: STSEHEB
-    Length: 7
+    Definition: Because someone has asked for something or ordered something to happen.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0
     ToPosition:
       X: 5
       Y: 6
-  - Forwards: UNSEAMS
+  - Length: 7
+    Forwards: UNSEAMS
     Backwards: SMAESNU
-    Length: 7
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 7
       Y: 0
     ToPosition:
       X: 7
       Y: 6
-  - Forwards: THICKIE
+  - Length: 7
+    Forwards: THICKIE
     Backwards: EIKCIHT
-    Length: 7
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 0
       Y: 6
-  - Forwards: TURKEY
+  - Length: 6
+    Forwards: TURKEY
     Backwards: YEKRUT
-    Length: 6
+    Definition: A bird that looks like a large chicken and is often eaten at Christmas
+      and at Thanksgiving.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 7
     ToPosition:
       X: 5
       Y: 7
-  - Forwards: FEARS
+  - Length: 5
+    Forwards: FEARS
     Backwards: SRAEF
-    Length: 5
+    Definition: Frightened that something might happen.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 2
     ToPosition:
       X: 5
       Y: 6
-  - Forwards: WAGS
+  - Length: 4
+    Forwards: WAGS
     Backwards: SGAW
-    Length: 4
+    Definition: Someone who says amusing things.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 3
     ToPosition:
       X: 1
       Y: 6
-  - Forwards: ZAXES
+  - Length: 5
+    Forwards: ZAXES
     Backwards: SEXAZ
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 2
       Y: 0
     ToPosition:
       X: 6
       Y: 4
-  - Forwards: WEIGH
+  - Length: 5
+    Forwards: WEIGH
     Backwards: HGIEW
-    Length: 5
+    Definition: To have a particular weight.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 2
     ToPosition:
       X: 2
       Y: 6
-  - Forwards: RAUN
+  - Length: 4
+    Forwards: RAUN
     Backwards: NUAR
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 0
     ToPosition:
       X: 3
       Y: 3
-  - Forwards: BARS
+  - Length: 4
+    Forwards: BARS
     Backwards: SRAB
-    Length: 4
+    Definition: Unless something happens.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 3
     ToPosition:
       X: 1
       Y: 6
-  - Forwards: HEWN
+  - Length: 4
+    Forwards: HEWN
     Backwards: NWEH
-    Length: 4
+    Definition: The past participle of hew.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 3
     ToPosition:
       X: 3
       Y: 3
-  - Forwards: OFF
+  - Length: 3
+    Forwards: OFF
     Backwards: FFO
-    Length: 3
+    Definition: Away or from where something is.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 0
     ToPosition:
       X: 1
       Y: 2
-  - Forwards: IRE
+  - Length: 3
+    Forwards: IRE
     Backwards: ERI
-    Length: 3
+    Definition: Anger.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 4
     ToPosition:
       X: 4
       Y: 6
-  - Forwards: DAW
+  - Length: 3
+    Forwards: DAW
     Backwards: WAD
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 0
     ToPosition:
       X: 2
       Y: 2
-  - Forwards: SEAM
+  - Length: 4
+    Forwards: SEAM
     Backwards: MAES
-    Length: 4
+    Definition: A line where two pieces of cloth, leather, etc. have been stitched
+      together.
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 2
     ToPosition:
       X: 7
       Y: 5
-  - Forwards: SEA
+  - Length: 3
+    Forwards: SEA
     Backwards: AES
-    Length: 3
+    Definition: A large area of salty water that is mostly enclosed by land.
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 2
     ToPosition:
       X: 7
       Y: 4
-  - Forwards: AXES
+  - Length: 4
+    Forwards: AXES
     Backwards: SEXA
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 1
     ToPosition:
       X: 6
       Y: 4
-  - Forwards: PLAN
+  - Length: 4
+    Forwards: PLAN
     Backwards: NALP
-    Length: 4
+    Definition: To think carefully about something you want to achieve, and decide
+      exactly how you will do it.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 6
     ToPosition:
       X: 3
       Y: 3
-  - Forwards: KETS
+  - Length: 4
+    Forwards: KETS
     Backwards: STEK
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 7
     ToPosition:
       X: 6
       Y: 4
-  - Forwards: HESTS
+  - Length: 5
+    Forwards: HESTS
     Backwards: STSEH
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 5
       Y: 2
     ToPosition:
       X: 5
       Y: 6
-  - Forwards: REX
+  - Length: 3
+    Forwards: REX
     Backwards: XER
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 0
     ToPosition:
       X: 4
       Y: 2
-  - Forwards: BAR
+  - Length: 3
+    Forwards: BAR
     Backwards: RAB
-    Length: 3
+    Definition: Unless something happens.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 3
     ToPosition:
       X: 1
       Y: 5
-  - Forwards: DEE
+  - Length: 3
+    Forwards: DEE
     Backwards: EED
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 0
     ToPosition:
       X: 6
       Y: 2
-  - Forwards: SHED
+  - Length: 4
+    Forwards: SHED
     Backwards: DEHS
-    Length: 4
+    Definition: To get rid of something that you do not need or want anymore.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 4
     ToPosition:
       X: 6
       Y: 1
-  - Forwards: FEAR
+  - Length: 4
+    Forwards: FEAR
     Backwards: RAEF
-    Length: 4
+    Definition: Frightened that something might happen.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 2
     ToPosition:
       X: 4
       Y: 5
-  - Forwards: UNS
+  - Length: 3
+    Forwards: UNS
     Backwards: SNU
-    Length: 3
+    Definition: Used to show an opposite state or a negative.
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 0
     ToPosition:
       X: 7
       Y: 2
-  - Forwards: AIA
+  - Length: 3
+    Forwards: AIA
     Backwards: AIA
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 4
     ToPosition:
       X: 1
       Y: 4
-  - Forwards: THICK
+  - Length: 5
+    Forwards: THICK
     Backwards: KCIHT
-    Length: 5
+    Definition: Measuring a large distance or a larger distance than usual, between
+      two opposite surfaces or sides.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 0
       Y: 4
-  - Forwards: KAI
+  - Length: 3
+    Forwards: KAI
     Backwards: IAK
-    Length: 3
+    Definition: A Chinese soldier and politician, leader of the Chinese nationalist
+      Party, who was forced to move from mainland China to the island of Taiwan by
+      the Communists in 1949, and ruled Taiwan as president until he died.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 4
     ToPosition:
       X: 2
       Y: 4
-  - Forwards: ICY
+  - Length: 3
+    Forwards: ICY
     Backwards: YCI
-    Length: 3
+    Definition: Extremely cold.
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 7
     ToPosition:
       X: 5
       Y: 7
-  - Forwards: KEY
+  - Length: 3
+    Forwards: KEY
     Backwards: YEK
-    Length: 3
+    Definition: Very important and necessary for success or to understand something.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 7
     ToPosition:
       X: 5
       Y: 7
-  - Forwards: SEAMS
+  - Length: 5
+    Forwards: SEAMS
     Backwards: SMAES
-    Length: 5
+    Definition: A line where two pieces of cloth, leather, etc. have been stitched
+      together.
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 2
     ToPosition:
       X: 7
       Y: 6
-  - Forwards: KED
+  - Length: 3
+    Forwards: KED
     Backwards: DEK
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 1
     ToPosition:
       X: 6
       Y: 1
-  - Forwards: MAE
+  - Length: 3
+    Forwards: MAE
     Backwards: EAM
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 7
       Y: 5
     ToPosition:
       X: 7
       Y: 3
-  - Forwards: HICK
+  - Length: 4
+    Forwards: HICK
     Backwards: KCIH
-    Length: 4
+    Definition: Someone who lives in the country and is thought to be uneducated or
+      stupid.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 1
     ToPosition:
       X: 0
       Y: 4
-  - Forwards: BEN
+  - Length: 3
+    Forwards: BEN
     Backwards: NEB
-    Length: 3
+    Definition: A U.S. golf player.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 3
     ToPosition:
       X: 3
       Y: 3
-  - Forwards: WIRE
+  - Length: 4
+    Forwards: WIRE
     Backwards: ERIW
-    Length: 4
+    Definition: To connect the wires inside a building or a piece of equipment so
+      that electricity can pass through.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 3
     ToPosition:
       X: 4
       Y: 6
-  - Forwards: ISM
+  - Length: 3
+    Forwards: ISM
     Backwards: MSI
-    Length: 3
+    Definition: A religion, political belief, or style of art based on a particular
+      principle or the teachings of a particular person.
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 7
     ToPosition:
       X: 7
       Y: 5
-  - Forwards: HIC
+  - Length: 3
+    Forwards: HIC
     Backwards: CIH
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 1
     ToPosition:
       X: 0
       Y: 3
-  - Forwards: KET
+  - Length: 3
+    Forwards: KET
     Backwards: TEK
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 7
     ToPosition:
       X: 5
       Y: 5
-  - Forwards: NIT
+  - Length: 3
+    Forwards: NIT
     Backwards: TIN
-    Length: 3
+    Definition: "An egg of a lousea small insect, that is sometimes found in people\u2019s
+      hair."
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 3
     ToPosition:
       X: 5
       Y: 5
-  - Forwards: EUK
+  - Length: 3
+    Forwards: EUK
     Backwards: KUE
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 2
       Y: 3
     ToPosition:
       X: 4
       Y: 1
-  - Forwards: LIB
+  - Length: 3
+    Forwards: LIB
     Backwards: BIL
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 5
     ToPosition:
       X: 1
       Y: 3
-  - Forwards: TUR
+  - Length: 3
+    Forwards: TUR
     Backwards: RUT
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 7

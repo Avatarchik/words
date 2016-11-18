@@ -17,657 +17,817 @@ MonoBehaviour:
   WordCount: 73
   MaxCharacterUsage: 5
   Words:
-  - Forwards: BULLIES
+  - Length: 7
+    Forwards: BULLIES
     Backwards: SEILLUB
-    Length: 7
+    Definition: Someone who uses his or her strength or power to frighten or hurt
+      someone who is weaker.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 6
     ToPosition:
       X: 6
       Y: 6
-  - Forwards: MOTHY
+  - Length: 5
+    Forwards: MOTHY
     Backwards: YHTOM
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 7
       Y: 5
     ToPosition:
       X: 3
       Y: 1
-  - Forwards: DENAY
+  - Length: 5
+    Forwards: DENAY
     Backwards: YANED
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 7
       Y: 1
     ToPosition:
       X: 3
       Y: 1
-  - Forwards: EURIPUS
+  - Length: 7
+    Forwards: EURIPUS
     Backwards: SUPIRUE
-    Length: 7
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 1
     ToPosition:
       X: 1
       Y: 7
-  - Forwards: ETHIC
+  - Length: 5
+    Forwards: ETHIC
     Backwards: CIHTE
-    Length: 5
+    Definition: Relating to principles of what is right and wrong.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 1
     ToPosition:
       X: 2
       Y: 5
-  - Forwards: BELGAS
+  - Length: 6
+    Forwards: BELGAS
     Backwards: SAGLEB
-    Length: 6
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 5
       Y: 5
-  - Forwards: ACADEMES
+  - Length: 8
+    Forwards: ACADEMES
     Backwards: SEMEDACA
-    Length: 8
+    Definition: Relating to education, especially in a college or university.
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 7
     ToPosition:
       X: 1
       Y: 7
-  - Forwards: STATABLE
+  - Length: 8
+    Forwards: STATABLE
     Backwards: ELBATATS
-    Length: 8
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 8
       Y: 0
     ToPosition:
       X: 1
       Y: 0
-  - Forwards: DIPLOMA
+  - Length: 7
+    Forwards: DIPLOMA
     Backwards: AMOLPID
-    Length: 7
+    Definition: An official paper showing that a student has successfully completed
+      their high school or college education.
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 1
     ToPosition:
       X: 8
       Y: 7
-  - Forwards: MENSCHES
+  - Length: 8
+    Forwards: MENSCHES
     Backwards: SEHCSNEM
-    Length: 8
+    Definition: Someone that you like and admire, especially because he or she has
+      done something good for you.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 8
     ToPosition:
       X: 7
       Y: 8
-  - Forwards: FOSS
+  - Length: 4
+    Forwards: FOSS
     Backwards: SSOF
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 3
     ToPosition:
       X: 6
       Y: 6
-  - Forwards: DYING
+  - Length: 5
+    Forwards: DYING
     Backwards: GNIYD
-    Length: 5
+    Definition: The present participle of die.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 1
     ToPosition:
       X: 0
       Y: 5
-  - Forwards: BLAME
+  - Length: 5
+    Forwards: BLAME
     Backwards: EMALB
-    Length: 5
+    Definition: Responsibility for a mistake or for something bad.
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 2
     ToPosition:
       X: 7
       Y: 6
-  - Forwards: OES
+  - Length: 3
+    Forwards: OES
     Backwards: SEO
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 5
     ToPosition:
       X: 5
       Y: 5
-  - Forwards: CEP
+  - Length: 3
+    Forwards: CEP
     Backwards: PEC
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 2
       Y: 5
     ToPosition:
       X: 2
       Y: 3
-  - Forwards: OFT
+  - Length: 3
+    Forwards: OFT
     Backwards: TFO
-    Length: 3
+    Definition: Often.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 4
     ToPosition:
       X: 6
       Y: 2
-  - Forwards: OBA
+  - Length: 3
+    Forwards: OBA
     Backwards: ABO
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 4
     ToPosition:
       X: 4
       Y: 4
-  - Forwards: ELK
+  - Length: 3
+    Forwards: ELK
     Backwards: KLE
-    Length: 3
+    Definition: A large deer with a lot of hair around its neck.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 0
     ToPosition:
       X: 3
       Y: 2
-  - Forwards: PEG
+  - Length: 3
+    Forwards: PEG
     Backwards: GEP
-    Length: 3
+    Definition: A short piece of wood, metal, etc. that fits into a hole or is fastened
+      to a wall, used especially for hanging things on, or instead of nails for fastening
+      things together.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 5
     ToPosition:
       X: 3
       Y: 3
-  - Forwards: PEGH
+  - Length: 4
+    Forwards: PEGH
     Backwards: HGEP
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 5
     ToPosition:
       X: 4
       Y: 2
-  - Forwards: MAL
+  - Length: 3
+    Forwards: MAL
     Backwards: LAM
-    Length: 3
+    Definition: Bad or badly.
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 5
     ToPosition:
       X: 7
       Y: 3
-  - Forwards: FOSSA
+  - Length: 5
+    Forwards: FOSSA
     Backwards: ASSOF
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 3
     ToPosition:
       X: 6
       Y: 7
-  - Forwards: ACADEME
+  - Length: 7
+    Forwards: ACADEME
     Backwards: EMEDACA
-    Length: 7
+    Definition: Relating to education, especially in a college or university.
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 7
     ToPosition:
       X: 2
       Y: 7
-  - Forwards: OAF
+  - Length: 3
+    Forwards: OAF
     Backwards: FAO
-    Length: 3
+    Definition: A stupid awkward man or boy.
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 5
     ToPosition:
       X: 6
       Y: 3
-  - Forwards: RAM
+  - Length: 3
+    Forwards: RAM
     Backwards: MAR
-    Length: 3
+    Definition: To run or drive into something very hard.
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 8
     ToPosition:
       X: 8
       Y: 6
-  - Forwards: GUE
+  - Length: 3
+    Forwards: GUE
     Backwards: EUG
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 5
     ToPosition:
       X: 2
       Y: 7
-  - Forwards: LAM
+  - Length: 3
+    Forwards: LAM
     Backwards: MAL
-    Length: 3
+    Definition: Escaping or hiding from someone, especially the police.
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 3
     ToPosition:
       X: 7
       Y: 5
-  - Forwards: CADE
+  - Length: 4
+    Forwards: CADE
     Backwards: EDAC
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 7
       Y: 7
     ToPosition:
       X: 4
       Y: 7
-  - Forwards: LIES
+  - Length: 4
+    Forwards: LIES
     Backwards: SEIL
-    Length: 4
+    Definition: To deliberately tell someone something that is not true.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 6
     ToPosition:
       X: 6
       Y: 6
-  - Forwards: EMES
+  - Length: 4
+    Forwards: EMES
     Backwards: SEME
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 7
     ToPosition:
       X: 1
       Y: 7
-  - Forwards: SAE
+  - Length: 3
+    Forwards: SAE
     Backwards: EAS
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 7
       Y: 8
     ToPosition:
       X: 5
       Y: 6
-  - Forwards: DEME
+  - Length: 4
+    Forwards: DEME
     Backwards: EMED
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 5
       Y: 7
     ToPosition:
       X: 2
       Y: 7
-  - Forwards: HES
+  - Length: 3
+    Forwards: HES
     Backwards: SEH
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 5
       Y: 8
     ToPosition:
       X: 7
       Y: 8
-  - Forwards: SEI
+  - Length: 3
+    Forwards: SEI
     Backwards: IES
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 6
     ToPosition:
       X: 4
       Y: 6
-  - Forwards: ABLE
+  - Length: 4
+    Forwards: ABLE
     Backwards: ELBA
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 0
     ToPosition:
       X: 1
       Y: 0
-  - Forwards: DEN
+  - Length: 3
+    Forwards: DEN
     Backwards: NED
-    Length: 3
+    Definition: A room in a house where people relax, read, watch television, etc.
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 1
     ToPosition:
       X: 5
       Y: 1
-  - Forwards: PEC
+  - Length: 3
+    Forwards: PEC
     Backwards: CEP
-    Length: 3
+    Definition: Pectorals.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 3
     ToPosition:
       X: 2
       Y: 5
-  - Forwards: MEN
+  - Length: 3
+    Forwards: MEN
     Backwards: NEM
-    Length: 3
+    Definition: The plural of man.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 8
     ToPosition:
       X: 2
       Y: 8
-  - Forwards: TAT
+  - Length: 3
+    Forwards: TAT
     Backwards: TAT
-    Length: 3
+    Definition: A type of lace that you make by hand, or the process of making it.
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 0
     ToPosition:
       X: 5
       Y: 0
-  - Forwards: PUS
+  - Length: 3
+    Forwards: PUS
     Backwards: SUP
-    Length: 3
+    Definition: A thick yellowish liquid produced in an infected part of your body.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 5
     ToPosition:
       X: 1
       Y: 7
-  - Forwards: ANE
+  - Length: 3
+    Forwards: ANE
     Backwards: ENA
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 1
     ToPosition:
       X: 6
       Y: 1
-  - Forwards: NED
+  - Length: 3
+    Forwards: NED
     Backwards: DEN
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 5
       Y: 1
     ToPosition:
       X: 7
       Y: 1
-  - Forwards: PAS
+  - Length: 3
+    Forwards: PAS
     Backwards: SAP
-    Length: 3
+    Definition: An embarrassing mistake in a social situation.
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 3
     ToPosition:
       X: 6
       Y: 5
-  - Forwards: RIP
+  - Length: 3
+    Forwards: RIP
     Backwards: PIR
-    Length: 3
+    Definition: A long tear or cut.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 3
     ToPosition:
       X: 1
       Y: 5
-  - Forwards: RUC
+  - Length: 3
+    Forwards: RUC
     Backwards: CUR
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 7
     ToPosition:
       X: 2
       Y: 5
-  - Forwards: MOL
+  - Length: 3
+    Forwards: MOL
     Backwards: LOM
-    Length: 3
+    Definition: Another spelling of mole.
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 6
     ToPosition:
       X: 8
       Y: 4
-  - Forwards: ESS
+  - Length: 3
+    Forwards: ESS
     Backwards: SSE
-    Length: 3
+    Definition: A woman who does something, or a female.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 5
     ToPosition:
       X: 6
       Y: 5
-  - Forwards: LIE
+  - Length: 3
+    Forwards: LIE
     Backwards: EIL
-    Length: 3
+    Definition: To deliberately tell someone something that is not true.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 6
     ToPosition:
       X: 5
       Y: 6
-  - Forwards: SAG
+  - Length: 3
+    Forwards: SAG
     Backwards: GAS
-    Length: 3
+    Definition: To hang down or bend in the middle, especially because of the weight
+      of something.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 5
     ToPosition:
       X: 3
       Y: 3
-  - Forwards: CHE
+  - Length: 3
+    Forwards: CHE
     Backwards: EHC
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 8
     ToPosition:
       X: 6
       Y: 8
-  - Forwards: THY
+  - Length: 3
+    Forwards: THY
     Backwards: YHT
-    Length: 3
+    Definition: Your.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 3
     ToPosition:
       X: 3
       Y: 1
-  - Forwards: OMS
+  - Length: 3
+    Forwards: OMS
     Backwards: SMO
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 8
       Y: 5
     ToPosition:
       X: 6
       Y: 5
-  - Forwards: GAS
+  - Length: 3
+    Forwards: GAS
     Backwards: SAG
-    Length: 3
+    Definition: A liquid made from petroleum, used mainly for producing power in the
+      engines of cars, trucks, etc.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 3
     ToPosition:
       X: 5
       Y: 5
-  - Forwards: ENS
+  - Length: 3
+    Forwards: ENS
     Backwards: SNE
-    Length: 3
+    Definition: Made of a particular material or substance.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 8
     ToPosition:
       X: 3
       Y: 8
-  - Forwards: YIN
+  - Length: 3
+    Forwards: YIN
     Backwards: NIY
-    Length: 3
+    Definition: The female principle in Chinese philosophy which is inactive, dark,
+      and negative, and which combines with yangthe male principle to influence everything
+      in the world.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 2
     ToPosition:
       X: 0
       Y: 4
-  - Forwards: DEL
+  - Length: 3
+    Forwards: DEL
     Backwards: LED
-    Length: 3
+    Definition: A group of islands near the south coast of South America, which belong
+      to Chile and Argentina.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 1
     ToPosition:
       X: 2
       Y: 1
-  - Forwards: DIP
+  - Length: 3
+    Forwards: DIP
     Backwards: PID
-    Length: 3
+    Definition: To put something into a liquid and quickly lift it out again.
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 1
     ToPosition:
       X: 8
       Y: 3
-  - Forwards: PIE
+  - Length: 3
+    Forwards: PIE
     Backwards: EIP
-    Length: 3
+    Definition: A pied bird or animal has spots of two or more different colors, usually
+      black and white.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 3
     ToPosition:
       X: 4
       Y: 5
-  - Forwards: TABLE
+  - Length: 5
+    Forwards: TABLE
     Backwards: ELBAT
-    Length: 5
+    Definition: To delay considering a proposal until a later time.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0
     ToPosition:
       X: 1
       Y: 0
-  - Forwards: BEL
+  - Length: 3
+    Forwards: BEL
     Backwards: LEB
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 2
       Y: 2
-  - Forwards: OLM
+  - Length: 3
+    Forwards: OLM
     Backwards: MLO
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 5
     ToPosition:
       X: 3
       Y: 7
-  - Forwards: BAT
+  - Length: 3
+    Forwards: BAT
     Backwards: TAB
-    Length: 3
+    Definition: A small animal like a mouse that flies around at night.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 0
     ToPosition:
       X: 5
       Y: 0
-  - Forwards: AAH
+  - Length: 3
+    Forwards: AAH
     Backwards: HAA
-    Length: 3
+    Definition: Another spelling of ah.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 0
     ToPosition:
       X: 4
       Y: 2
-  - Forwards: GIP
+  - Length: 3
+    Forwards: GIP
     Backwards: PIG
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 5
     ToPosition:
       X: 2
       Y: 3
-  - Forwards: TAO
+  - Length: 3
+    Forwards: TAO
     Backwards: OAT
-    Length: 3
+    Definition: The natural force that unites all things in the universe, according
+      to Taoism.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 3
     ToPosition:
       X: 3
       Y: 5
-  - Forwards: MENSCH
+  - Length: 6
+    Forwards: MENSCH
     Backwards: HCSNEM
-    Length: 6
+    Definition: Someone that you like and admire, especially because he or she has
+      done something good for you.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 8
     ToPosition:
       X: 5
       Y: 8
-  - Forwards: DUP
+  - Length: 3
+    Forwards: DUP
     Backwards: PUD
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 1
     ToPosition:
       X: 2
       Y: 3
-  - Forwards: RUE
+  - Length: 3
+    Forwards: RUE
     Backwards: EUR
-    Length: 3
+    Definition: To wish that you had not done something.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 3
     ToPosition:
       X: 1
       Y: 1
-  - Forwards: LOMA
+  - Length: 4
+    Forwards: LOMA
     Backwards: AMOL
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 8
       Y: 4
     ToPosition:
       X: 8
       Y: 7
-  - Forwards: HIC
+  - Length: 3
+    Forwards: HIC
     Backwards: CIH
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 3
     ToPosition:
       X: 2
       Y: 5
-  - Forwards: NAY
+  - Length: 3
+    Forwards: NAY
     Backwards: YAN
-    Length: 3
+    Definition: Used when you are adding something to emphasize what you have just
+      said.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 1
     ToPosition:
       X: 3
       Y: 1
-  - Forwards: ILL
+  - Length: 3
+    Forwards: ILL
     Backwards: LLI
-    Length: 3
+    Definition: Harm, evil, or bad luck.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 6
     ToPosition:
       X: 2
       Y: 6
-  - Forwards: STAT
+  - Length: 4
+    Forwards: STAT
     Backwards: TATS
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 8
       Y: 0

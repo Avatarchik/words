@@ -17,81 +17,99 @@ MonoBehaviour:
   WordCount: 9
   MaxCharacterUsage: 3
   Words:
-  - Forwards: CHI
+  - Length: 3
+    Forwards: CHI
     Backwards: IHC
-    Length: 3
+    Definition: The 22nd letter of the Greek alphabet.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 0
     ToPosition:
       X: 1
       Y: 0
-  - Forwards: BOG
+  - Length: 3
+    Forwards: BOG
     Backwards: GOB
-    Length: 3
+    Definition: An area of low wet ground, sometimes containing bushes or grasses.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 3
     ToPosition:
       X: 1
       Y: 1
-  - Forwards: URD
+  - Length: 3
+    Forwards: URD
     Backwards: DRU
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 3
     ToPosition:
       X: 2
       Y: 3
-  - Forwards: NAG
+  - Length: 3
+    Forwards: NAG
     Backwards: GAN
-    Length: 3
+    Definition: Making you worry or feel pain all the time.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 1
     ToPosition:
       X: 1
       Y: 1
-  - Forwards: NUT
+  - Length: 3
+    Forwards: NUT
     Backwards: TUN
-    Length: 3
+    Definition: Crazy.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 0
       Y: 2
-  - Forwards: MOW
+  - Length: 3
+    Forwards: MOW
     Backwards: WOM
-    Length: 3
+    Definition: To cut grass using a special machine or tool.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 2
     ToPosition:
       X: 1
       Y: 2
-  - Forwards: UTU
+  - Length: 3
+    Forwards: UTU
     Backwards: UTU
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 3
     ToPosition:
       X: 0
       Y: 1
-  - Forwards: CAW
+  - Length: 3
+    Forwards: CAW
     Backwards: WAC
-    Length: 3
+    Definition: If a bird, especially a crow, caws, it makes a loud sound.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 0
     ToPosition:
       X: 1
       Y: 2
-  - Forwards: TWO
+  - Length: 3
+    Forwards: TWO
     Backwards: OWT
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 2

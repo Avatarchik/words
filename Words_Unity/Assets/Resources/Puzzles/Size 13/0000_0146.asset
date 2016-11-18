@@ -17,1314 +17,1655 @@ MonoBehaviour:
   WordCount: 146
   MaxCharacterUsage: 5
   Words:
-  - Forwards: BAGGIEST
+  - Length: 8
+    Forwards: BAGGIEST
     Backwards: TSEIGGAB
-    Length: 8
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 8
     ToPosition:
       X: 11
       Y: 8
-  - Forwards: ASYMPTOTES
+  - Length: 10
+    Forwards: ASYMPTOTES
     Backwards: SETOTPMYSA
-    Length: 10
+    Definition: A straight line on a graph that a curved line continuously moves closer
+      to but never touches.
+    HasDefinition: 1
     FromPosition:
       X: 11
       Y: 1
     ToPosition:
       X: 11
       Y: 10
-  - Forwards: LAYAWAYS
+  - Length: 8
+    Forwards: LAYAWAYS
     Backwards: SYAWAYAL
-    Length: 8
+    Definition: A method of buying goods in which you give the seller a small amount
+      of money to keep the goods until you can pay the full price.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 9
     ToPosition:
       X: 11
       Y: 2
-  - Forwards: ENDINGS
+  - Length: 7
+    Forwards: ENDINGS
     Backwards: SGNIDNE
-    Length: 7
+    Definition: If a situation or activity ends, or someone ends it, it finishes or
+      stops.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 3
     ToPosition:
       X: 7
       Y: 9
-  - Forwards: HETAIRIA
+  - Length: 8
+    Forwards: HETAIRIA
     Backwards: AIRIATEH
-    Length: 8
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 10
       Y: 9
     ToPosition:
       X: 3
       Y: 2
-  - Forwards: PERSONATE
+  - Length: 9
+    Forwards: PERSONATE
     Backwards: ETANOSREP
-    Length: 9
+    Definition: Used to emphasize that you are only giving your own opinion about
+      something.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 2
     ToPosition:
       X: 5
       Y: 10
-  - Forwards: IMPAINTS
+  - Length: 8
+    Forwards: IMPAINTS
     Backwards: STNIAPMI
-    Length: 8
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 12
       Y: 12
     ToPosition:
       X: 5
       Y: 5
-  - Forwards: DEFECTIVES
+  - Length: 10
+    Forwards: DEFECTIVES
     Backwards: SEVITCEFED
-    Length: 10
+    Definition: Something bad or wrong in the way an object, machine, idea, etc. is
+      made or developed that means it is not perfect or not good enough.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 0
     ToPosition:
       X: 1
       Y: 9
-  - Forwards: UPBRAIDING
+  - Length: 10
+    Forwards: UPBRAIDING
     Backwards: GNIDIARBPU
-    Length: 10
+    Definition: To tell someone angrily that he or she has done something wrong.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 12
     ToPosition:
       X: 2
       Y: 3
-  - Forwards: CEREBRUMS
+  - Length: 9
+    Forwards: CEREBRUMS
     Backwards: SMURBEREC
-    Length: 9
+    Definition: The front, larger part of the brain, where thought and decision-making
+      processes happen, and which also controls movements of the body.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 0
     ToPosition:
       X: 10
       Y: 8
-  - Forwards: JAILER
+  - Length: 6
+    Forwards: JAILER
     Backwards: RELIAJ
-    Length: 6
+    Definition: Someone whose job is to guard a prison or prisoners.
+    HasDefinition: 1
     FromPosition:
       X: 12
       Y: 0
     ToPosition:
       X: 7
       Y: 5
-  - Forwards: LEASH
+  - Length: 5
+    Forwards: LEASH
     Backwards: HSAEL
-    Length: 5
+    Definition: To put a leash on a dog.
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 5
     ToPosition:
       X: 10
       Y: 9
-  - Forwards: RESISTING
+  - Length: 9
+    Forwards: RESISTING
     Backwards: GNITSISER
-    Length: 9
+    Definition: Not damaged or affected by something.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 1
     ToPosition:
       X: 10
       Y: 1
-  - Forwards: COMFREYS
+  - Length: 8
+    Forwards: COMFREYS
     Backwards: SYERFMOC
-    Length: 8
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 2
       Y: 0
     ToPosition:
       X: 9
       Y: 0
-  - Forwards: FEVER
+  - Length: 5
+    Forwards: FEVER
     Backwards: REVEF
-    Length: 5
+    Definition: Extremely excited or worried.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 4
       Y: 4
-  - Forwards: VERMIFUGES
+  - Length: 10
+    Forwards: VERMIFUGES
     Backwards: SEGUFIMREV
-    Length: 10
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 11
     ToPosition:
       X: 0
       Y: 2
-  - Forwards: LEWISSONS
+  - Length: 9
+    Forwards: LEWISSONS
     Backwards: SNOSSIWEL
-    Length: 9
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 12
       Y: 2
     ToPosition:
       X: 12
       Y: 10
-  - Forwards: SCATCH
+  - Length: 6
+    Forwards: SCATCH
     Backwards: HCTACS
-    Length: 6
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 6
     ToPosition:
       X: 8
       Y: 11
-  - Forwards: REGIVES
+  - Length: 7
+    Forwards: REGIVES
     Backwards: SEVIGER
-    Length: 7
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 12
     ToPosition:
       X: 3
       Y: 6
-  - Forwards: SCENED
+  - Length: 6
+    Forwards: SCENED
     Backwards: DENECS
-    Length: 6
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 12
     ToPosition:
       X: 11
       Y: 12
-  - Forwards: THRILL
+  - Length: 6
+    Forwards: THRILL
     Backwards: LLIRHT
-    Length: 6
+    Definition: Interesting and exciting.
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 11
     ToPosition:
       X: 4
       Y: 11
-  - Forwards: ARETS
+  - Length: 5
+    Forwards: ARETS
     Backwards: STERA
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 7
       Y: 6
     ToPosition:
       X: 7
       Y: 2
-  - Forwards: DIGS
+  - Length: 4
+    Forwards: DIGS
     Backwards: SGID
-    Length: 4
+    Definition: To break and move earth, stone, snow, etc. with a tool, your hands,
+      or a machine, making a hole in it.
+    HasDefinition: 1
     FromPosition:
       X: 11
       Y: 12
     ToPosition:
       X: 8
       Y: 9
-  - Forwards: SERFS
+  - Length: 5
+    Forwards: SERFS
     Backwards: SFRES
-    Length: 5
+    Definition: Someone who lived and worked on someone else's land and who had to
+      obey the owner of this land, during the Middle Ages in Western Europe and until
+      the 1800s in Eastern Europe and Russia.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 6
     ToPosition:
       X: 7
       Y: 2
-  - Forwards: NEURONS
+  - Length: 7
+    Forwards: NEURONS
     Backwards: SNORUEN
-    Length: 7
+    Definition: A type of cell in the nervous system that sends messages to muscles
+      and other parts of the body, and sends messages in the brain about feelings,
+      sights, smells, etc.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 12
     ToPosition:
       X: 6
       Y: 12
-  - Forwards: SISTS
+  - Length: 5
+    Forwards: SISTS
     Backwards: STSIS
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 11
       Y: 2
     ToPosition:
       X: 7
       Y: 2
-  - Forwards: REH
+  - Length: 3
+    Forwards: REH
     Backwards: HER
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 4
     ToPosition:
       X: 6
       Y: 2
-  - Forwards: EMYS
+  - Length: 4
+    Forwards: EMYS
     Backwards: SYME
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 12
     ToPosition:
       X: 1
       Y: 9
-  - Forwards: ACRE
+  - Length: 4
+    Forwards: ACRE
     Backwards: ERCA
-    Length: 4
+    Definition: A unit for measuring areas of land, equal to 4,840 square yards (4,047
+      square meters).
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 10
     ToPosition:
       X: 5
       Y: 10
-  - Forwards: HEW
+  - Length: 3
+    Forwards: HEW
     Backwards: WEH
-    Length: 3
+    Definition: To cut something with a cutting tool.
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 3
     ToPosition:
       X: 8
       Y: 5
-  - Forwards: ELK
+  - Length: 3
+    Forwards: ELK
     Backwards: KLE
-    Length: 3
+    Definition: A large deer with a lot of hair around its neck.
+    HasDefinition: 1
     FromPosition:
       X: 12
       Y: 3
     ToPosition:
       X: 12
       Y: 1
-  - Forwards: ETH
+  - Length: 3
+    Forwards: ETH
     Backwards: HTE
-    Length: 3
+    Definition: Used to form the third person singular of verbs.
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 4
     ToPosition:
       X: 6
       Y: 2
-  - Forwards: GEO
+  - Length: 3
+    Forwards: GEO
     Backwards: OEG
-    Length: 3
+    Definition: Relating to the Earth or its surface.
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 5
     ToPosition:
       X: 11
       Y: 7
-  - Forwards: LOP
+  - Length: 3
+    Forwards: LOP
     Backwards: POL
-    Length: 3
+    Definition: To cut branches from a tree, especially with a single strong movement.
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 3
     ToPosition:
       X: 11
       Y: 5
-  - Forwards: SAG
+  - Length: 3
+    Forwards: SAG
     Backwards: GAS
-    Length: 3
+    Definition: To hang down or bend in the middle, especially because of the weight
+      of something.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 1
     ToPosition:
       X: 2
       Y: 3
-  - Forwards: WIS
+  - Length: 3
+    Forwards: WIS
     Backwards: SIW
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 12
       Y: 4
     ToPosition:
       X: 12
       Y: 6
-  - Forwards: OAT
+  - Length: 3
+    Forwards: OAT
     Backwards: TAO
-    Length: 3
+    Definition: A grain that is eaten by people and animals.
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 6
     ToPosition:
       X: 11
       Y: 8
-  - Forwards: DIPS
+  - Length: 4
+    Forwards: DIPS
     Backwards: SPID
-    Length: 4
+    Definition: To put something into a liquid and quickly lift it out again.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 4
     ToPosition:
       X: 6
       Y: 1
-  - Forwards: JAP
+  - Length: 3
+    Forwards: JAP
     Backwards: PAJ
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 12
       Y: 0
     ToPosition:
       X: 10
       Y: 0
-  - Forwards: LAG
+  - Length: 3
+    Forwards: LAG
     Backwards: GAL
-    Length: 3
+    Definition: A delay or period of waiting between one event and a second event.
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 3
     ToPosition:
       X: 9
       Y: 5
-  - Forwards: DEFECTIVE
+  - Length: 9
+    Forwards: DEFECTIVE
     Backwards: EVITCEFED
-    Length: 9
+    Definition: Something bad or wrong in the way an object, machine, idea, etc. is
+      made or developed that means it is not perfect or not good enough.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 0
     ToPosition:
       X: 1
       Y: 8
-  - Forwards: LEI
+  - Length: 3
+    Forwards: LEI
     Backwards: IEL
-    Length: 3
+    Definition: "A circle made of flowers that you put around someone\u2019s neck
+      as a greeting, especially in Hawaii."
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 9
     ToPosition:
       X: 6
       Y: 11
-  - Forwards: ILL
+  - Length: 3
+    Forwards: ILL
     Backwards: LLI
-    Length: 3
+    Definition: Harm, evil, or bad luck.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 11
     ToPosition:
       X: 4
       Y: 11
-  - Forwards: ELL
+  - Length: 3
+    Forwards: ELL
     Backwards: LLE
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 11
     ToPosition:
       X: 5
       Y: 11
-  - Forwards: SIC
+  - Length: 3
+    Forwards: SIC
     Backwards: CIS
-    Length: 3
+    Definition: Used to tell a dog to attack someone.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 6
     ToPosition:
       X: 1
       Y: 4
-  - Forwards: TOTES
+  - Length: 5
+    Forwards: TOTES
     Backwards: SETOT
-    Length: 5
+    Definition: A large bag for carrying things.
+    HasDefinition: 1
     FromPosition:
       X: 11
       Y: 6
     ToPosition:
       X: 11
       Y: 10
-  - Forwards: BIT
+  - Length: 3
+    Forwards: BIT
     Backwards: TIB
-    Length: 3
+    Definition: Slightly, but not very.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 4
     ToPosition:
       X: 6
       Y: 6
-  - Forwards: DEN
+  - Length: 3
+    Forwards: DEN
     Backwards: NED
-    Length: 3
+    Definition: A room in a house where people relax, read, watch television, etc.
+    HasDefinition: 1
     FromPosition:
       X: 11
       Y: 12
     ToPosition:
       X: 9
       Y: 12
-  - Forwards: NITS
+  - Length: 4
+    Forwards: NITS
     Backwards: STIN
-    Length: 4
+    Definition: "An egg of a lousea small insect, that is sometimes found in people\u2019s
+      hair."
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 1
     ToPosition:
       X: 6
       Y: 1
-  - Forwards: SHET
+  - Length: 4
+    Forwards: SHET
     Backwards: TEHS
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 11
       Y: 10
     ToPosition:
       X: 8
       Y: 7
-  - Forwards: SLY
+  - Length: 3
+    Forwards: SLY
     Backwards: YLS
-    Length: 3
+    Definition: A smile, look, etc. that shows that you are hiding something you know
+      from other people.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 12
     ToPosition:
       X: 4
       Y: 10
-  - Forwards: BRA
+  - Length: 3
+    Forwards: BRA
     Backwards: ARB
-    Length: 3
+    Definition: A piece of underwear that a woman wears to support her breasts.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 10
     ToPosition:
       X: 2
       Y: 8
-  - Forwards: NOR
+  - Length: 3
+    Forwards: NOR
     Backwards: RON
-    Length: 3
+    Definition: "Used after a negative statement, especially to add information, and
+      meaning \u201Cand not,\u201D \u201Cor not,\u201D \u201Cneither,\u201D or \u201Cnot
+      either\u201D."
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 12
     ToPosition:
       X: 3
       Y: 12
-  - Forwards: RANG
+  - Length: 4
+    Forwards: RANG
     Backwards: GNAR
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 7
       Y: 5
     ToPosition:
       X: 7
       Y: 8
-  - Forwards: RES
+  - Length: 3
+    Forwards: RES
     Backwards: SER
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 2
       Y: 1
     ToPosition:
       X: 4
       Y: 1
-  - Forwards: CEREBRUM
+  - Length: 8
+    Forwards: CEREBRUM
     Backwards: MURBEREC
-    Length: 8
+    Definition: The front, larger part of the brain, where thought and decision-making
+      processes happen, and which also controls movements of the body.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 0
     ToPosition:
       X: 9
       Y: 7
-  - Forwards: OLM
+  - Length: 3
+    Forwards: OLM
     Backwards: MLO
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 9
       Y: 6
     ToPosition:
       X: 11
       Y: 4
-  - Forwards: IMP
+  - Length: 3
+    Forwards: IMP
     Backwards: PMI
-    Length: 3
+    Definition: A child who behaves badly, but in a way that is funny.
+    HasDefinition: 1
     FromPosition:
       X: 12
       Y: 12
     ToPosition:
       X: 10
       Y: 10
-  - Forwards: GAS
+  - Length: 3
+    Forwards: GAS
     Backwards: SAG
-    Length: 3
+    Definition: A liquid made from petroleum, used mainly for producing power in the
+      engines of cars, trucks, etc.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 3
     ToPosition:
       X: 4
       Y: 1
-  - Forwards: SCENE
+  - Length: 5
+    Forwards: SCENE
     Backwards: ENECS
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 12
     ToPosition:
       X: 10
       Y: 12
-  - Forwards: AMI
+  - Length: 3
+    Forwards: AMI
     Backwards: IMA
-    Length: 3
+    Definition: A U.S. poet.
+    HasDefinition: 1
     FromPosition:
       X: 12
       Y: 11
     ToPosition:
       X: 10
       Y: 11
-  - Forwards: TIN
+  - Length: 3
+    Forwards: TIN
     Backwards: NIT
-    Length: 3
+    Definition: A soft white metal that is an element and is often used to cover and
+      protect iron and steel.
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 1
     ToPosition:
       X: 9
       Y: 1
-  - Forwards: SEG
+  - Length: 3
+    Forwards: SEG
     Backwards: GES
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 2
     ToPosition:
       X: 0
       Y: 4
-  - Forwards: TAI
+  - Length: 3
+    Forwards: TAI
     Backwards: IAT
-    Length: 3
+    Definition: A Chinese form of physical exercise that trains your mind and body
+      in balance and control.
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 7
     ToPosition:
       X: 6
       Y: 5
-  - Forwards: BED
+  - Length: 3
+    Forwards: BED
     Backwards: DEB
-    Length: 3
+    Definition: Sheets, covers, etc. that you put on a bed.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 8
     ToPosition:
       X: 2
       Y: 6
-  - Forwards: ESS
+  - Length: 3
+    Forwards: ESS
     Backwards: SSE
-    Length: 3
+    Definition: A woman who does something, or a female.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
     ToPosition:
       X: 0
       Y: 1
-  - Forwards: TIDES
+  - Length: 5
+    Forwards: TIDES
     Backwards: SEDIT
-    Length: 5
+    Definition: News.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 5
     ToPosition:
       X: 5
       Y: 5
-  - Forwards: NIS
+  - Length: 3
+    Forwards: NIS
     Backwards: SIN
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 9
       Y: 12
     ToPosition:
       X: 11
       Y: 10
-  - Forwards: HALT
+  - Length: 4
+    Forwards: HALT
     Backwards: TLAH
-    Length: 4
+    Definition: A stop or pause.
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 3
     ToPosition:
       X: 11
       Y: 6
-  - Forwards: RAID
+  - Length: 4
+    Forwards: RAID
     Backwards: DIAR
-    Length: 4
+    Definition: A quick attack on a place by soldiers, airplanes, or ships, intended
+      to cause damage but not take control.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 9
     ToPosition:
       X: 2
       Y: 6
-  - Forwards: GET
+  - Length: 3
+    Forwards: GET
     Backwards: TEG
-    Length: 3
+    Definition: To start having something by finding it, asking for it, being given
+      it, etc.
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 5
     ToPosition:
       X: 7
       Y: 3
-  - Forwards: RILL
+  - Length: 4
+    Forwards: RILL
     Backwards: LLIR
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 7
       Y: 11
     ToPosition:
       X: 4
       Y: 11
-  - Forwards: AGO
+  - Length: 3
+    Forwards: AGO
     Backwards: OGA
-    Length: 3
+    Definition: Used to show how far back in the past something happened.
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 4
     ToPosition:
       X: 9
       Y: 6
-  - Forwards: RENT
+  - Length: 4
+    Forwards: RENT
     Backwards: TNER
-    Length: 4
+    Definition: To regularly pay money to live in a house or room that belongs to
+      someone else or use something that belongs to someone else.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 2
     ToPosition:
       X: 1
       Y: 5
-  - Forwards: REV
+  - Length: 3
+    Forwards: REV
     Backwards: VER
-    Length: 3
+    Definition: A complete turn of a wheel or engine part, used as a unit for measuring
+      the speed of an engine.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 4
     ToPosition:
       X: 2
       Y: 2
-  - Forwards: TOTE
+  - Length: 4
+    Forwards: TOTE
     Backwards: ETOT
-    Length: 4
+    Definition: A large bag for carrying things.
+    HasDefinition: 1
     FromPosition:
       X: 11
       Y: 6
     ToPosition:
       X: 11
       Y: 9
-  - Forwards: VIE
+  - Length: 3
+    Forwards: VIE
     Backwards: EIV
-    Length: 3
+    Definition: To compete very hard with someone in order to get something.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 7
     ToPosition:
       X: 3
       Y: 7
-  - Forwards: REGIVE
+  - Length: 6
+    Forwards: REGIVE
     Backwards: EVIGER
-    Length: 6
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 12
     ToPosition:
       X: 3
       Y: 7
-  - Forwards: YIN
+  - Length: 3
+    Forwards: YIN
     Backwards: NIY
-    Length: 3
+    Definition: The female principle in Chinese philosophy which is inactive, dark,
+      and negative, and which combines with yangthe male principle to influence everything
+      in the world.
+    HasDefinition: 1
     FromPosition:
       X: 11
       Y: 3
     ToPosition:
       X: 9
       Y: 1
-  - Forwards: ATE
+  - Length: 3
+    Forwards: ATE
     Backwards: ETA
-    Length: 3
+    Definition: The past tense of eat.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 8
     ToPosition:
       X: 5
       Y: 10
-  - Forwards: UPBRAID
+  - Length: 7
+    Forwards: UPBRAID
     Backwards: DIARBPU
-    Length: 7
+    Definition: To tell someone angrily that he or she has done something wrong.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 12
     ToPosition:
       X: 2
       Y: 6
-  - Forwards: ARB
+  - Length: 3
+    Forwards: ARB
     Backwards: BRA
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 2
       Y: 8
     ToPosition:
       X: 2
       Y: 10
-  - Forwards: LET
+  - Length: 3
+    Forwards: LET
     Backwards: TEL
-    Length: 3
+    Definition: A smaller type of something.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 11
     ToPosition:
       X: 6
       Y: 9
-  - Forwards: EAT
+  - Length: 3
+    Forwards: EAT
     Backwards: TAE
-    Length: 3
+    Definition: To put food in your mouth and swallow it.
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 8
     ToPosition:
       X: 11
       Y: 6
-  - Forwards: SON
+  - Length: 3
+    Forwards: SON
     Backwards: NOS
-    Length: 3
+    Definition: "Someone\u2019s male child."
+    HasDefinition: 1
     FromPosition:
       X: 12
       Y: 7
     ToPosition:
       X: 12
       Y: 9
-  - Forwards: DEBT
+  - Length: 4
+    Forwards: DEBT
     Backwards: TBED
-    Length: 4
+    Definition: Money that you owe.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 6
     ToPosition:
       X: 5
       Y: 9
-  - Forwards: SIM
+  - Length: 3
+    Forwards: SIM
     Backwards: MIS
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 7
       Y: 9
     ToPosition:
       X: 9
       Y: 7
-  - Forwards: EDIT
+  - Length: 4
+    Forwards: EDIT
     Backwards: TIDE
-    Length: 4
+    Definition: The form in which a book, newspaper, product, etc. is printed or made
+      at a particular time.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 5
     ToPosition:
       X: 1
       Y: 5
-  - Forwards: LEWISSON
+  - Length: 8
+    Forwards: LEWISSON
     Backwards: NOSSIWEL
-    Length: 8
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 12
       Y: 2
     ToPosition:
       X: 12
       Y: 9
-  - Forwards: ASH
+  - Length: 3
+    Forwards: ASH
     Backwards: HSA
-    Length: 3
+    Definition: The soft gray powder that remains after something has been burned.
+    HasDefinition: 1
     FromPosition:
       X: 12
       Y: 11
     ToPosition:
       X: 10
       Y: 9
-  - Forwards: RAI
+  - Length: 3
+    Forwards: RAI
     Backwards: IAR
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 2
       Y: 1
     ToPosition:
       X: 4
       Y: 3
-  - Forwards: EVE
+  - Length: 3
+    Forwards: EVE
     Backwards: EVE
-    Length: 3
+    Definition: The night or day before an important religious day or holiday.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 1
     ToPosition:
       X: 1
       Y: 3
-  - Forwards: SHE
+  - Length: 3
+    Forwards: SHE
     Backwards: EHS
-    Length: 3
+    Definition: A female.
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 2
     ToPosition:
       X: 7
       Y: 4
-  - Forwards: PERSON
+  - Length: 6
+    Forwards: PERSON
     Backwards: NOSREP
-    Length: 6
+    Definition: Used to emphasize that you are only giving your own opinion about
+      something.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 2
     ToPosition:
       X: 5
       Y: 7
-  - Forwards: LOY
+  - Length: 3
+    Forwards: LOY
     Backwards: YOL
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 10
       Y: 5
     ToPosition:
       X: 10
       Y: 3
-  - Forwards: PAIN
+  - Length: 4
+    Forwards: PAIN
     Backwards: NIAP
-    Length: 4
+    Definition: It is very difficult and upsetting for someone to have to do something.
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 10
     ToPosition:
       X: 7
       Y: 7
-  - Forwards: SONS
+  - Length: 4
+    Forwards: SONS
     Backwards: SNOS
-    Length: 4
+    Definition: "Someone\u2019s male child."
+    HasDefinition: 1
     FromPosition:
       X: 12
       Y: 7
     ToPosition:
       X: 12
       Y: 10
-  - Forwards: EVER
+  - Length: 4
+    Forwards: EVER
     Backwards: REVE
-    Length: 4
+    Definition: "At any time \u2013 used mostly in questions, negatives, comparisons,
+      or sentences with \u201Cif\u201D."
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 1
     ToPosition:
       X: 4
       Y: 4
-  - Forwards: AIL
+  - Length: 3
+    Forwards: AIL
     Backwards: LIA
-    Length: 3
+    Definition: An ailing company or economy is having a lot of problems and is not
+      successful.
+    HasDefinition: 1
     FromPosition:
       X: 11
       Y: 1
     ToPosition:
       X: 9
       Y: 3
-  - Forwards: STING
+  - Length: 5
+    Forwards: STING
     Backwards: GNITS
-    Length: 5
+    Definition: If an insect or a plant stings you, it causes a sharp pain and that
+      part of your body swells.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 1
     ToPosition:
       X: 10
       Y: 1
-  - Forwards: GOY
+  - Length: 3
+    Forwards: GOY
     Backwards: YOG
-    Length: 3
+    Definition: A word used by Jewish people to talk about someone who is not Jewish.
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 5
     ToPosition:
       X: 11
       Y: 3
-  - Forwards: EAS
+  - Length: 3
+    Forwards: EAS
     Backwards: SAE
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 10
       Y: 6
     ToPosition:
       X: 10
       Y: 8
-  - Forwards: IMPAINT
+  - Length: 7
+    Forwards: IMPAINT
     Backwards: TNIAPMI
-    Length: 7
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 12
       Y: 12
     ToPosition:
       X: 6
       Y: 6
-  - Forwards: DEF
+  - Length: 3
+    Forwards: DEF
     Backwards: FED
-    Length: 3
+    Definition: Very good, fashionable, attractive, etc.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 0
     ToPosition:
       X: 1
       Y: 2
-  - Forwards: ETA
+  - Length: 3
+    Forwards: ETA
     Backwards: ATE
-    Length: 3
+    Definition: The seventh letter of the Greek alphabet.
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 12
     ToPosition:
       X: 8
       Y: 10
-  - Forwards: DIG
+  - Length: 3
+    Forwards: DIG
     Backwards: GID
-    Length: 3
+    Definition: To break and move earth, stone, snow, etc. with a tool, your hands,
+      or a machine, making a hole in it.
+    HasDefinition: 1
     FromPosition:
       X: 11
       Y: 12
     ToPosition:
       X: 9
       Y: 10
-  - Forwards: DENE
+  - Length: 4
+    Forwards: DENE
     Backwards: ENED
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 11
       Y: 12
     ToPosition:
       X: 8
       Y: 12
-  - Forwards: NEURON
+  - Length: 6
+    Forwards: NEURON
     Backwards: NORUEN
-    Length: 6
+    Definition: A type of cell in the nervous system that sends messages to muscles
+      and other parts of the body, and sends messages in the brain about feelings,
+      sights, smells, etc.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 12
     ToPosition:
       X: 5
       Y: 12
-  - Forwards: NID
+  - Length: 3
+    Forwards: NID
     Backwards: DIN
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 5
       Y: 7
     ToPosition:
       X: 3
       Y: 5
-  - Forwards: AYS
+  - Length: 3
+    Forwards: AYS
     Backwards: SYA
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 9
       Y: 4
     ToPosition:
       X: 11
       Y: 2
-  - Forwards: IDES
+  - Length: 4
+    Forwards: IDES
     Backwards: SEDI
-    Length: 4
+    Definition: A date or period of time around the middle of the month in the ancient
+      Roman calendar.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 5
     ToPosition:
       X: 5
       Y: 5
-  - Forwards: BIB
+  - Length: 3
+    Forwards: BIB
     Backwards: BIB
-    Length: 3
+    Definition: "A piece of cloth or plastic tied under a baby\u2019s chin to keep
+      food from falling on his or her clothes."
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 8
     ToPosition:
       X: 2
       Y: 10
-  - Forwards: ONS
+  - Length: 3
+    Forwards: ONS
     Backwards: SNO
-    Length: 3
+    Definition: Touching or supported by a particular surface.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 12
     ToPosition:
       X: 6
       Y: 12
-  - Forwards: SERF
+  - Length: 4
+    Forwards: SERF
     Backwards: FRES
-    Length: 4
+    Definition: Someone who lived and worked on someone else's land and who had to
+      obey the owner of this land, during the Middle Ages in Western Europe and until
+      the 1800s in Eastern Europe and Russia.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 6
     ToPosition:
       X: 6
       Y: 3
-  - Forwards: HAS
+  - Length: 3
+    Forwards: HAS
     Backwards: SAH
-    Length: 3
+    Definition: The third person singular of the present tense of have.
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 11
     ToPosition:
       X: 8
       Y: 9
-  - Forwards: SIS
+  - Length: 3
+    Forwards: SIS
     Backwards: SIS
-    Length: 3
+    Definition: A name used when speaking to your sister.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 1
     ToPosition:
       X: 6
       Y: 1
-  - Forwards: LEWIS
+  - Length: 5
+    Forwards: LEWIS
     Backwards: SIWEL
-    Length: 5
+    Definition: "A British writer and university professor, known especially for his
+      children\u2019s stories with a spiritual meaning."
+    HasDefinition: 1
     FromPosition:
       X: 12
       Y: 2
     ToPosition:
       X: 12
       Y: 6
-  - Forwards: SPA
+  - Length: 3
+    Forwards: SPA
     Backwards: APS
-    Length: 3
+    Definition: A place where people go in order to improve their health or beauty,
+      especially through swimming, exercise, beauty treatments, etc.
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 0
     ToPosition:
       X: 11
       Y: 0
-  - Forwards: JAPS
+  - Length: 4
+    Forwards: JAPS
     Backwards: SPAJ
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 12
       Y: 0
     ToPosition:
       X: 9
       Y: 0
-  - Forwards: LEW
+  - Length: 3
+    Forwards: LEW
     Backwards: WEL
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 12
       Y: 2
     ToPosition:
       X: 12
       Y: 4
-  - Forwards: OWE
+  - Length: 3
+    Forwards: OWE
     Backwards: EWO
-    Length: 3
+    Definition: To have to pay someone for something that he or she has done for you
+      or sold to you, or to have to give someone back money that he or she has lent
+      you.
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 6
     ToPosition:
       X: 7
       Y: 4
-  - Forwards: EHS
+  - Length: 3
+    Forwards: EHS
     Backwards: SHE
-    Length: 3
+    Definition: Used when you want someone to reply to you or agree with something
+      you have said.
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 4
     ToPosition:
       X: 9
       Y: 2
-  - Forwards: UEY
+  - Length: 3
+    Forwards: UEY
     Backwards: YEU
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 2
       Y: 12
     ToPosition:
       X: 4
       Y: 10
-  - Forwards: GNU
+  - Length: 3
+    Forwards: GNU
     Backwards: UNG
-    Length: 3
+    Definition: A wildebeest.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 8
     ToPosition:
       X: 8
       Y: 6
-  - Forwards: TYG
+  - Length: 3
+    Forwards: TYG
     Backwards: GYT
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 6
     ToPosition:
       X: 6
       Y: 8
-  - Forwards: SYE
+  - Length: 3
+    Forwards: SYE
     Backwards: EYS
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 9
       Y: 0
     ToPosition:
       X: 7
       Y: 0
-  - Forwards: VERMIFUGE
+  - Length: 9
+    Forwards: VERMIFUGE
     Backwards: EGUFIMREV
-    Length: 9
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 11
     ToPosition:
       X: 0
       Y: 3
-  - Forwards: ERF
+  - Length: 3
+    Forwards: ERF
     Backwards: FRE
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 7
       Y: 0
     ToPosition:
       X: 5
       Y: 0
-  - Forwards: THEW
+  - Length: 4
+    Forwards: THEW
     Backwards: WEHT
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 8
       Y: 2
     ToPosition:
       X: 8
       Y: 5
-  - Forwards: FEW
+  - Length: 3
+    Forwards: FEW
     Backwards: WEF
-    Length: 3
+    Definition: A small number of something.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 3
     ToPosition:
       X: 8
       Y: 5
-  - Forwards: JAIL
+  - Length: 4
+    Forwards: JAIL
     Backwards: LIAJ
-    Length: 4
+    Definition: A place where criminals are kept as part of their punishment, or where
+      people who have been charged with a crime are kept before they are judged in
+      a court of law.
+    HasDefinition: 1
     FromPosition:
       X: 12
       Y: 0
     ToPosition:
       X: 9
       Y: 3
-  - Forwards: LEAS
+  - Length: 4
+    Forwards: LEAS
     Backwards: SAEL
-    Length: 4
+    Definition: An area of land with grass.
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 5
     ToPosition:
       X: 10
       Y: 8
-  - Forwards: COMFREY
+  - Length: 7
+    Forwards: COMFREY
     Backwards: YERFMOC
-    Length: 7
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 2
       Y: 0
     ToPosition:
       X: 8
       Y: 0
-  - Forwards: TYE
+  - Length: 3
+    Forwards: TYE
     Backwards: EYT
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 5
       Y: 9
     ToPosition:
       X: 3
       Y: 11
-  - Forwards: ERR
+  - Length: 3
+    Forwards: ERR
     Backwards: RRE
-    Length: 3
+    Definition: To be more careful, safe, etc. than is necessary rather than risk
+      making a mistake.
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 12
     ToPosition:
       X: 6
       Y: 10
-  - Forwards: SAT
+  - Length: 3
+    Forwards: SAT
     Backwards: TAS
-    Length: 3
+    Definition: A written abbreviation of saturday.
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 9
     ToPosition:
       X: 9
       Y: 11
-  - Forwards: TAS
+  - Length: 3
+    Forwards: TAS
     Backwards: SAT
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 9
       Y: 11
     ToPosition:
       X: 7
       Y: 9
-  - Forwards: ORF
+  - Length: 3
+    Forwards: ORF
     Backwards: FRO
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 3
       Y: 0
     ToPosition:
       X: 1
       Y: 2
-  - Forwards: HET
+  - Length: 3
+    Forwards: HET
     Backwards: TEH
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 10
       Y: 9
     ToPosition:
       X: 8
       Y: 7
-  - Forwards: DIP
+  - Length: 3
+    Forwards: DIP
     Backwards: PID
-    Length: 3
+    Definition: To put something into a liquid and quickly lift it out again.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 4
     ToPosition:
       X: 5
       Y: 2
-  - Forwards: REN
+  - Length: 3
+    Forwards: REN
     Backwards: NER
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 4
       Y: 2
     ToPosition:
       X: 2
       Y: 4
-  - Forwards: NOS
+  - Length: 3
+    Forwards: NOS
     Backwards: SON
-    Length: 3
+    Definition: The written abbreviation ofnumbers.
+    HasDefinition: 1
     FromPosition:
       X: 12
       Y: 9
     ToPosition:
       X: 12
       Y: 7
-  - Forwards: MYS
+  - Length: 3
+    Forwards: MYS
     Backwards: SYM
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 11
     ToPosition:
       X: 1
       Y: 9
-  - Forwards: FUG
+  - Length: 3
+    Forwards: FUG
     Backwards: GUF
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 6
     ToPosition:
       X: 0
       Y: 4
-  - Forwards: ASS
+  - Length: 3
+    Forwards: ASS
     Backwards: SSA
-    Length: 3
+    Definition: The part of your body that you sit on.
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 9
     ToPosition:
       X: 7
       Y: 9
-  - Forwards: SEN
+  - Length: 3
+    Forwards: SEN
     Backwards: NES
-    Length: 3
+    Definition: The written abbreviation of senator.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 2

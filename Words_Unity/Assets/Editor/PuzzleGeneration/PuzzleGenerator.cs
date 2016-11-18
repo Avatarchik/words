@@ -28,13 +28,15 @@ public class PuzzleGenerator : EditorWindow
 	private List<ScoredWordPlacement> mScoredPlacements;
 	private bool mHasPlacedInitialWord;
 
-	private Word[] mAllWords;
+	private string[] mAllWords;
 	private int mAllWordsCount;
 
 	private int mPlacedWords;
 
 	private PuzzleContents mNewPuzzleContents;
 	private string mContentsPath;
+
+	private WordDefinitions mDefinitions;
 
 	[MenuItem("Words/Puzzle/Open Generator")]
 	static public void ShowWindow()
@@ -48,10 +50,10 @@ public class PuzzleGenerator : EditorWindow
 		GUILayout.Label("Settings", EditorStyles.boldLabel);
 
 		GUILayout.Space(8);
-		mSize = EditorGUILayout.IntSlider("Size", mSize, 4, 16);
+		mSize = EditorGUILayout.IntSlider("Size", mSize, GlobalSettings.PuzzleSizeMin, GlobalSettings.PuzzleSizeMax);
 		mWordListPasses = EditorGUILayout.IntSlider("Word List Passes", mWordListPasses, 1, 3);
 		mWordLimit = EditorGUILayout.IntSlider("Word Limit", mWordLimit, 1, 1024);
-		mMaxTileUsage = EditorGUILayout.IntSlider("Max Tile Usage", mMaxTileUsage, 1, 17);
+		mMaxTileUsage = EditorGUILayout.IntSlider("Max Tile Usage", mMaxTileUsage, 1, GlobalSettings.PuzzleSizeMaxTileUsage);
 
 		GUILayout.Space(8);
 		if (GUILayout.Button("Generate"))
@@ -89,6 +91,12 @@ public class PuzzleGenerator : EditorWindow
 		mPlacedWords = 0;
 
 		mNewPuzzleContents = null;
+
+		GameObject wordDefinitionsPrefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/WordDefinitions.prefab");
+		if (wordDefinitionsPrefab)
+		{
+			mDefinitions = wordDefinitionsPrefab.GetComponent<WordDefinitions>();
+		}
 	}
 
 	private bool Generate()
@@ -111,6 +119,8 @@ public class PuzzleGenerator : EditorWindow
 		float endTime = Time.realtimeSinceStartup;
 		float timeTaken = endTime - startTime;
 		ODebug.Log(string.Format("Time taken: {0:n2} seconds", timeTaken));
+
+		mDefinitions = null;
 
 		return wasGenerationSuccessful;
 	}
@@ -304,7 +314,7 @@ public class PuzzleGenerator : EditorWindow
 				}
 			}
 
-			string word = mAllWords[wordIndex].ActualWord;
+			string word = mAllWords[wordIndex];
 			if (word == null)
 			{
 				continue;
@@ -341,7 +351,9 @@ public class PuzzleGenerator : EditorWindow
 				GridPosition toPosition;
 				PlaceWord(word, sp.Position.X, sp.Position.Y, sp.WordDirection, out toPosition);
 
-				mNewPuzzleContents.RegisterWord(word, sp.Position, toPosition);
+				string definition = null;
+				mDefinitions.GetDefinitionFor(word, ref definition);
+				mNewPuzzleContents.RegisterWord(word, definition, sp.Position, toPosition);
 
 				mWords.Add(word);
 				mWordPlacements.Add(sp);
@@ -411,7 +423,7 @@ public class PuzzleGenerator : EditorWindow
 			{
 				continue;
 			}
-			string word = mAllWords[wordIndex].ActualWord;
+			string word = mAllWords[wordIndex];
 
 			string alreadyPlacedWord;
 			for (int usedWordIndex = 0; usedWordIndex < mWords.Count; ++usedWordIndex)
@@ -446,7 +458,10 @@ public class PuzzleGenerator : EditorWindow
 						if (wasWordPlaced)
 						{
 							//ODebug.Log(string.Format("Partial word of {0}: {1}", alreadyPlacedWord, word));
-							mNewPuzzleContents.RegisterWord(word, fromPosition, toPosition);
+
+							string definition = null;
+							mDefinitions.GetDefinitionFor(word, ref definition);
+							mNewPuzzleContents.RegisterWord(word, definition, fromPosition, toPosition);
 
 							mWords.Add(word);
 							mWordPlacements.Add(alreadyPlacedPlacement);
@@ -501,7 +516,7 @@ public class PuzzleGenerator : EditorWindow
 			{
 				continue;
 			}
-			word = mAllWords[wordIndex].ActualWord;
+			word = mAllWords[wordIndex];
 			wordReversed = WordHelper.ReverseWord(word);
 
 			foundOccurrence = false;
@@ -531,7 +546,10 @@ public class PuzzleGenerator : EditorWindow
 			{
 				if (IsWordPlacementValid(word, foundPosition.X, foundPosition.Y, foundWordDirection))
 				{
-					mNewPuzzleContents.RegisterWord(word, foundPosition, foundPositionEnd);
+					string definition = null;
+					mDefinitions.GetDefinitionFor(word, ref definition);
+					mNewPuzzleContents.RegisterWord(word, definition, foundPosition, foundPositionEnd);
+
 					mWords.Add(word);
 					mWordPlacements.Add(new ScoredWordPlacement(0, foundPosition, foundWordDirection));
 

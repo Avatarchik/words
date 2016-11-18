@@ -17,405 +17,511 @@ MonoBehaviour:
   WordCount: 45
   MaxCharacterUsage: 5
   Words:
-  - Forwards: GIGGLE
+  - Length: 6
+    Forwards: GIGGLE
     Backwards: ELGGIG
-    Length: 6
+    Definition: To laugh quickly and quietly in a high voice because you think something
+      is very funny or because you are nervous.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 6
     ToPosition:
       X: 1
       Y: 1
-  - Forwards: KANTAR
+  - Length: 6
+    Forwards: KANTAR
     Backwards: RATNAK
-    Length: 6
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 6
     ToPosition:
       X: 0
       Y: 1
-  - Forwards: WOFUL
+  - Length: 5
+    Forwards: WOFUL
     Backwards: LUFOW
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 2
     ToPosition:
       X: 2
       Y: 2
-  - Forwards: MOOT
+  - Length: 4
+    Forwards: MOOT
     Backwards: TOOM
-    Length: 4
+    Definition: A problem, decision, result, etc. that is moot does not matter anymore
+      because the situation has changed.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0
     ToPosition:
       X: 5
       Y: 3
-  - Forwards: RIDDEN
+  - Length: 6
+    Forwards: RIDDEN
     Backwards: NEDDIR
-    Length: 6
+    Definition: The past participle of ride.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 5
     ToPosition:
       X: 1
       Y: 5
-  - Forwards: OMELET
+  - Length: 6
+    Forwards: OMELET
     Backwards: TELEMO
-    Length: 6
+    Definition: Eggs mixed together and cooked in a pan, and then folded over cheese,
+      vegetables, etc.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 0
     ToPosition:
       X: 1
       Y: 0
-  - Forwards: PSHAW
+  - Length: 5
+    Forwards: PSHAW
     Backwards: WAHSP
-    Length: 5
+    Definition: Said to show annoyance, disapproval, or disagreement.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 6
     ToPosition:
       X: 1
       Y: 6
-  - Forwards: RECCY
+  - Length: 5
+    Forwards: RECCY
     Backwards: YCCER
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 1
     ToPosition:
       X: 4
       Y: 1
-  - Forwards: UNGUM
+  - Length: 5
+    Forwards: UNGUM
     Backwards: MUGNU
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 4
     ToPosition:
       X: 2
       Y: 4
-  - Forwards: TOP
+  - Length: 3
+    Forwards: TOP
     Backwards: POT
-    Length: 3
+    Definition: In the highest place or position.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
     ToPosition:
       X: 2
       Y: 3
-  - Forwards: SOS
+  - Length: 3
+    Forwards: SOS
     Backwards: SOS
-    Length: 3
+    Definition: A signal that a ship or aircraft sends to say that it is in danger
+      and needs help quickly.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 1
     ToPosition:
       X: 4
       Y: 3
-  - Forwards: OOZE
+  - Length: 4
+    Forwards: OOZE
     Backwards: EZOO
-    Length: 4
+    Definition: If a liquid oozes from something or if something oozes a liquid, the
+      liquid flows out very slowly.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 4
     ToPosition:
       X: 1
       Y: 1
-  - Forwards: RUB
+  - Length: 3
+    Forwards: RUB
     Backwards: BUR
-    Length: 3
+    Definition: To move your hand, a cloth, etc. backward and forward over a surface
+      while pressing against it.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 5
     ToPosition:
       X: 6
       Y: 3
-  - Forwards: SEL
+  - Length: 3
+    Forwards: SEL
     Backwards: LES
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 2
       Y: 2
-  - Forwards: ANTA
+  - Length: 4
+    Forwards: ANTA
     Backwards: ATNA
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 5
     ToPosition:
       X: 0
       Y: 2
-  - Forwards: MUG
+  - Length: 3
+    Forwards: MUG
     Backwards: GUM
-    Length: 3
+    Definition: To attack someone and rob him or her in a public place.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 4
     ToPosition:
       X: 4
       Y: 4
-  - Forwards: PIN
+  - Length: 3
+    Forwards: PIN
     Backwards: NIP
-    Length: 3
+    Definition: To fasten something somewhere, or to join two things together, using
+      a pin.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 6
     ToPosition:
       X: 5
       Y: 4
-  - Forwards: KANT
+  - Length: 4
+    Forwards: KANT
     Backwards: TNAK
-    Length: 4
+    Definition: A German philosopher who believed that moral decisions must be based
+      on reason.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 6
     ToPosition:
       X: 0
       Y: 3
-  - Forwards: AHS
+  - Length: 3
+    Forwards: AHS
     Backwards: SHA
-    Length: 3
+    Definition: Used in order to show your surprise, anger, pain, happiness, agreement,
+      etc.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 6
     ToPosition:
       X: 4
       Y: 6
-  - Forwards: SHAW
+  - Length: 4
+    Forwards: SHAW
     Backwards: WAHS
-    Length: 4
+    Definition: An Irish writer famous especially for his funny plays which criticized
+      society and the moral values of the time.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 6
     ToPosition:
       X: 1
       Y: 6
-  - Forwards: LEM
+  - Length: 3
+    Forwards: LEM
     Backwards: MEL
-    Length: 3
+    Definition: A small rat-like animal that many people believe kills itself by following
+      other lemmings and jumping into the ocean in large numbers.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 0
     ToPosition:
       X: 5
       Y: 0
-  - Forwards: REC
+  - Length: 3
+    Forwards: REC
     Backwards: CER
-    Length: 3
+    Definition: A public room, for example in a hospital, used for social activities
+      or games.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 1
     ToPosition:
       X: 2
       Y: 1
-  - Forwards: SOY
+  - Length: 3
+    Forwards: SOY
     Backwards: YOS
-    Length: 3
+    Definition: Soy beans.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 1
     ToPosition:
       X: 4
       Y: 1
-  - Forwards: OOF
+  - Length: 3
+    Forwards: OOF
     Backwards: FOO
-    Length: 3
+    Definition: The sound that you make when you have been hit, especially in the
+      stomach.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 0
     ToPosition:
       X: 4
       Y: 2
-  - Forwards: STELE
+  - Length: 5
+    Forwards: STELE
     Backwards: ELETS
-    Length: 5
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 0
     ToPosition:
       X: 4
       Y: 0
-  - Forwards: PINT
+  - Length: 4
+    Forwards: PINT
     Backwards: TNIP
-    Length: 4
+    Definition: A unit for measuring liquid, equal to 16 fluid ounces or 0.4732 liters.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 6
     ToPosition:
       X: 5
       Y: 3
-  - Forwards: YUP
+  - Length: 3
+    Forwards: YUP
     Backwards: PUY
-    Length: 3
+    Definition: Yes.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 1
     ToPosition:
       X: 2
       Y: 3
-  - Forwards: DEN
+  - Length: 3
+    Forwards: DEN
     Backwards: NED
-    Length: 3
+    Definition: A room in a house where people relax, read, watch television, etc.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 5
     ToPosition:
       X: 1
       Y: 5
-  - Forwards: TOO
+  - Length: 3
+    Forwards: TOO
     Backwards: OOT
-    Length: 3
+    Definition: More than is needed, wanted, or possible, or more than is reasonable.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 3
     ToPosition:
       X: 5
       Y: 1
-  - Forwards: BUR
+  - Length: 3
+    Forwards: BUR
     Backwards: RUB
-    Length: 3
+    Definition: A burly man is big and strong.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 3
     ToPosition:
       X: 6
       Y: 5
-  - Forwards: PINTO
+  - Length: 5
+    Forwards: PINTO
     Backwards: OTNIP
-    Length: 5
+    Definition: A horse with irregular areas of two or more colors on it.
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 6
     ToPosition:
       X: 5
       Y: 2
-  - Forwards: ANT
+  - Length: 3
+    Forwards: ANT
     Backwards: TNA
-    Length: 3
+    Definition: A small insect that lives in large groups.
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 5
     ToPosition:
       X: 0
       Y: 3
-  - Forwards: OON
+  - Length: 3
+    Forwards: OON
     Backwards: NOO
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 3
     ToPosition:
       X: 1
       Y: 5
-  - Forwards: HAW
+  - Length: 3
+    Forwards: HAW
     Backwards: WAH
-    Length: 3
+    Definition: Another spelling of ha.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 6
     ToPosition:
       X: 1
       Y: 6
-  - Forwards: DUG
+  - Length: 3
+    Forwards: DUG
     Backwards: GUD
-    Length: 3
+    Definition: The past tense and past participle of dig.
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 5
     ToPosition:
       X: 3
       Y: 3
-  - Forwards: ZOON
+  - Length: 4
+    Forwards: ZOON
     Backwards: NOOZ
-    Length: 4
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 2
     ToPosition:
       X: 1
       Y: 5
-  - Forwards: NED
+  - Length: 3
+    Forwards: NED
     Backwards: DEN
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 1
       Y: 5
     ToPosition:
       X: 3
       Y: 5
-  - Forwards: TEL
+  - Length: 3
+    Forwards: TEL
     Backwards: LET
-    Length: 3
+    Definition: "The written abbreviation of \u201Ctelephone number\u201D."
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 0
     ToPosition:
       X: 3
       Y: 0
-  - Forwards: GRUB
+  - Length: 4
+    Forwards: GRUB
     Backwards: BURG
-    Length: 4
+    Definition: Food.
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 6
     ToPosition:
       X: 6
       Y: 3
-  - Forwards: MEL
+  - Length: 3
+    Forwards: MEL
     Backwards: LEM
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 5
       Y: 0
     ToPosition:
       X: 3
       Y: 0
-  - Forwards: PUD
+  - Length: 3
+    Forwards: PUD
     Backwards: DUP
-    Length: 3
+    Definition: A thick sweet creamy food, made with milk, eggs, sugar, and a little
+      flour, and usually served cold.
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 3
     ToPosition:
       X: 4
       Y: 5
-  - Forwards: PUY
+  - Length: 3
+    Forwards: PUY
     Backwards: YUP
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 2
       Y: 3
     ToPosition:
       X: 4
       Y: 1
-  - Forwards: GUM
+  - Length: 3
+    Forwards: GUM
     Backwards: MUG
-    Length: 3
+    Definition: A sweet sticky type of candy that you chew for a long time but do
+      not swallow.
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 4
     ToPosition:
       X: 2
       Y: 4
-  - Forwards: ZOO
+  - Length: 3
+    Forwards: ZOO
     Backwards: OOZ
-    Length: 3
+    Definition: A place, usually in a city, where many kinds of animals are kept so
+      that people can go to look at them.
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 2
     ToPosition:
       X: 1
       Y: 4
-  - Forwards: UNG
+  - Length: 3
+    Forwards: UNG
     Backwards: GNU
-    Length: 3
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 6
       Y: 4
