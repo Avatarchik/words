@@ -262,11 +262,11 @@ public class PuzzleGenerator : EditorWindow
 		{
 			string lastPuzzle = puzzlePaths[puzzlePaths.Length - 1];
 			string[] pathSplit = Path.GetFileName(lastPuzzle).Split('_');
-			nextID = int.Parse(pathSplit[0]);
+			nextID = int.Parse(pathSplit[1]);
 			++nextID;
 		}
 
-		string newContentsFileName = string.Format("{0:D4}_{1:D4}", nextID, mPlacedWords);
+		string newContentsFileName = string.Format("{0:D2}_{1:D4}_{2:D4}", mSize, nextID, mPlacedWords);
 		if (!wasFinalised)
 		{
 			newContentsFileName += "_Failed";

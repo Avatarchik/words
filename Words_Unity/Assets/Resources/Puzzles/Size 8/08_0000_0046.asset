@@ -1,0 +1,677 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 08_0000_0046
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: c910fd2b-3aee-4771-9271-f623baef45e9
+  Size: 8
+  WordCount: 47
+  MaxCharacterUsage: 5
+  Words:
+  - Length: 4
+    Forwards: BILE
+    Backwards: ELIB
+    Definition: A bitter green-brown liquid formed in the liver, which helps you to
+      digest fats.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 6
+  - Length: 7
+    Forwards: CLASHED
+    Backwards: DEHSALC
+    Definition: A short fight between two armies or groups of people.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 7
+    ToPosition:
+      X: 6
+      Y: 1
+  - Length: 6
+    Forwards: FLAKED
+    Backwards: DEKALF
+    Definition: To break off or come off in small thin pieces.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 6
+      Y: 1
+  - Length: 7
+    Forwards: BEHESTS
+    Backwards: STSEHEB
+    Definition: Because someone has asked for something or ordered something to happen.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 6
+  - Length: 7
+    Forwards: UNSEAMS
+    Backwards: SMAESNU
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 7
+      Y: 0
+    ToPosition:
+      X: 7
+      Y: 6
+  - Length: 7
+    Forwards: THICKIE
+    Backwards: EIKCIHT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 6
+  - Length: 6
+    Forwards: TURKEY
+    Backwards: YEKRUT
+    Definition: A bird that looks like a large chicken and is often eaten at Christmas
+      and at Thanksgiving.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 7
+    ToPosition:
+      X: 5
+      Y: 7
+  - Length: 5
+    Forwards: FEARS
+    Backwards: SRAEF
+    Definition: Frightened that something might happen.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 2
+    ToPosition:
+      X: 5
+      Y: 6
+  - Length: 4
+    Forwards: WAGS
+    Backwards: SGAW
+    Definition: Someone who says amusing things.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 6
+  - Length: 5
+    Forwards: ZAXES
+    Backwards: SEXAZ
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 6
+      Y: 4
+  - Length: 5
+    Forwards: WEIGH
+    Backwards: HGIEW
+    Definition: To have a particular weight.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 6
+  - Length: 4
+    Forwards: RAUN
+    Backwards: NUAR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 4
+    Forwards: BARS
+    Backwards: SRAB
+    Definition: Unless something happens.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 6
+  - Length: 4
+    Forwards: HEWN
+    Backwards: NWEH
+    Definition: The past participle of hew.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: OFF
+    Backwards: FFO
+    Definition: Away or from where something is.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: IRE
+    Backwards: ERI
+    Definition: Anger.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 6
+  - Length: 3
+    Forwards: DAW
+    Backwards: WAD
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 4
+    Forwards: SEAM
+    Backwards: MAES
+    Definition: A line where two pieces of cloth, leather, etc. have been stitched
+      together.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 2
+    ToPosition:
+      X: 7
+      Y: 5
+  - Length: 3
+    Forwards: SEA
+    Backwards: AES
+    Definition: A large area of salty water that is mostly enclosed by land.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 2
+    ToPosition:
+      X: 7
+      Y: 4
+  - Length: 4
+    Forwards: AXES
+    Backwards: SEXA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 1
+    ToPosition:
+      X: 6
+      Y: 4
+  - Length: 4
+    Forwards: PLAN
+    Backwards: NALP
+    Definition: To think carefully about something you want to achieve, and decide
+      exactly how you will do it.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 6
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 4
+    Forwards: KETS
+    Backwards: STEK
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 7
+    ToPosition:
+      X: 6
+      Y: 4
+  - Length: 5
+    Forwards: HESTS
+    Backwards: STSEH
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 2
+    ToPosition:
+      X: 5
+      Y: 6
+  - Length: 3
+    Forwards: REX
+    Backwards: XER
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: BAR
+    Backwards: RAB
+    Definition: Unless something happens.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 5
+  - Length: 3
+    Forwards: DEE
+    Backwards: EED
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 6
+      Y: 2
+  - Length: 4
+    Forwards: SHED
+    Backwards: DEHS
+    Definition: To get rid of something that you do not need or want anymore.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 4
+    ToPosition:
+      X: 6
+      Y: 1
+  - Length: 4
+    Forwards: FEAR
+    Backwards: RAEF
+    Definition: Frightened that something might happen.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 3
+    Forwards: UNS
+    Backwards: SNU
+    Definition: Used to show an opposite state or a negative.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 0
+    ToPosition:
+      X: 7
+      Y: 2
+  - Length: 3
+    Forwards: AIA
+    Backwards: AIA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 5
+    Forwards: THICK
+    Backwards: KCIHT
+    Definition: Measuring a large distance or a larger distance than usual, between
+      two opposite surfaces or sides.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 4
+  - Length: 3
+    Forwards: KAI
+    Backwards: IAK
+    Definition: A Chinese soldier and politician, leader of the Chinese nationalist
+      Party, who was forced to move from mainland China to the island of Taiwan by
+      the Communists in 1949, and ruled Taiwan as president until he died.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: ICY
+    Backwards: YCI
+    Definition: Extremely cold.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 7
+    ToPosition:
+      X: 5
+      Y: 7
+  - Length: 3
+    Forwards: KEY
+    Backwards: YEK
+    Definition: Very important and necessary for success or to understand something.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 7
+    ToPosition:
+      X: 5
+      Y: 7
+  - Length: 5
+    Forwards: SEAMS
+    Backwards: SMAES
+    Definition: A line where two pieces of cloth, leather, etc. have been stitched
+      together.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 2
+    ToPosition:
+      X: 7
+      Y: 6
+  - Length: 3
+    Forwards: KED
+    Backwards: DEK
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 6
+      Y: 1
+  - Length: 3
+    Forwards: MAE
+    Backwards: EAM
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 7
+      Y: 5
+    ToPosition:
+      X: 7
+      Y: 3
+  - Length: 4
+    Forwards: HICK
+    Backwards: KCIH
+    Definition: Someone who lives in the country and is thought to be uneducated or
+      stupid.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 0
+      Y: 4
+  - Length: 3
+    Forwards: BEN
+    Backwards: NEB
+    Definition: A U.S. golf player.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 4
+    Forwards: WIRE
+    Backwards: ERIW
+    Definition: To connect the wires inside a building or a piece of equipment so
+      that electricity can pass through.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 6
+  - Length: 3
+    Forwards: ISM
+    Backwards: MSI
+    Definition: A religion, political belief, or style of art based on a particular
+      principle or the teachings of a particular person.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 7
+    ToPosition:
+      X: 7
+      Y: 5
+  - Length: 3
+    Forwards: HIC
+    Backwards: CIH
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 0
+      Y: 3
+  - Length: 3
+    Forwards: KET
+    Backwards: TEK
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 7
+    ToPosition:
+      X: 5
+      Y: 5
+  - Length: 3
+    Forwards: NIT
+    Backwards: TIN
+    Definition: "An egg of a lousea small insect, that is sometimes found in people\u2019s
+      hair."
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 3
+    ToPosition:
+      X: 5
+      Y: 5
+  - Length: 3
+    Forwards: EUK
+    Backwards: KUE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 3
+    Forwards: LIB
+    Backwards: BIL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: TUR
+    Backwards: RUT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 7
+    ToPosition:
+      X: 2
+      Y: 7
+  CharGrid:
+  - Character: 84
+    NumberOfUses: 2
+  - Character: 72
+    NumberOfUses: 4
+  - Character: 73
+    NumberOfUses: 4
+  - Character: 67
+    NumberOfUses: 4
+  - Character: 75
+    NumberOfUses: 4
+  - Character: 73
+    NumberOfUses: 1
+  - Character: 69
+    NumberOfUses: 1
+  - Character: 84
+    NumberOfUses: 2
+  - Character: 79
+    NumberOfUses: 1
+  - Character: 70
+    NumberOfUses: 2
+  - Character: 70
+    NumberOfUses: 3
+  - Character: 66
+    NumberOfUses: 5
+  - Character: 65
+    NumberOfUses: 4
+  - Character: 82
+    NumberOfUses: 2
+  - Character: 83
+    NumberOfUses: 2
+  - Character: 85
+    NumberOfUses: 2
+  - Character: 90
+    NumberOfUses: 1
+  - Character: 76
+    NumberOfUses: 1
+  - Character: 87
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 73
+    NumberOfUses: 5
+  - Character: 71
+    NumberOfUses: 2
+  - Character: 72
+    NumberOfUses: 1
+  - Character: 82
+    NumberOfUses: 2
+  - Character: 82
+    NumberOfUses: 1
+  - Character: 65
+    NumberOfUses: 5
+  - Character: 85
+    NumberOfUses: 2
+  - Character: 78
+    NumberOfUses: 5
+  - Character: 65
+    NumberOfUses: 5
+  - Character: 76
+    NumberOfUses: 3
+  - Character: 80
+    NumberOfUses: 1
+  - Character: 75
+    NumberOfUses: 4
+  - Character: 68
+    NumberOfUses: 2
+  - Character: 75
+    NumberOfUses: 3
+  - Character: 88
+    NumberOfUses: 3
+  - Character: 87
+    NumberOfUses: 3
+  - Character: 73
+    NumberOfUses: 3
+  - Character: 82
+    NumberOfUses: 4
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 69
+    NumberOfUses: 2
+  - Character: 66
+    NumberOfUses: 1
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 72
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 83
+    NumberOfUses: 2
+  - Character: 84
+    NumberOfUses: 5
+  - Character: 83
+    NumberOfUses: 3
+  - Character: 89
+    NumberOfUses: 3
+  - Character: 82
+    NumberOfUses: 1
+  - Character: 68
+    NumberOfUses: 4
+  - Character: 69
+    NumberOfUses: 3
+  - Character: 72
+    NumberOfUses: 3
+  - Character: 83
+    NumberOfUses: 5
+  - Character: 65
+    NumberOfUses: 1
+  - Character: 76
+    NumberOfUses: 1
+  - Character: 67
+    NumberOfUses: 2
+  - Character: 85
+    NumberOfUses: 2
+  - Character: 78
+    NumberOfUses: 2
+  - Character: 83
+    NumberOfUses: 5
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 65
+    NumberOfUses: 5
+  - Character: 77
+    NumberOfUses: 5
+  - Character: 83
+    NumberOfUses: 3
+  - Character: 73
+    NumberOfUses: 2

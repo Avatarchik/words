@@ -1,0 +1,489 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 06_0003_0034
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: b3fdc0a3-27cf-4a0b-a94d-5e173e052ce9
+  Size: 6
+  WordCount: 35
+  MaxCharacterUsage: 5
+  Words:
+  - Length: 5
+    Forwards: PRIMS
+    Backwards: SMIRP
+    Definition: Very formal and careful in the way you behave, and easily shocked
+      by anything offensive, sexual, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 5
+    Forwards: SOARS
+    Backwards: SRAOS
+    Definition: To increase quickly to a high level.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 5
+    Forwards: GRIME
+    Backwards: EMIRG
+    Definition: Oily dirt that forms a black layer on surfaces.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 5
+    Forwards: PALLA
+    Backwards: ALLAP
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 4
+    Forwards: ATOM
+    Backwards: MOTA
+    Definition: Relating to the energy produced by splitting atoms or the weapons
+      that use this energy.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 5
+      Y: 1
+  - Length: 5
+    Forwards: NIDAL
+    Backwards: LADIN
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 0
+  - Length: 4
+    Forwards: PRAU
+    Backwards: UARP
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: COY
+    Backwards: YOC
+    Definition: Pretending to be shy in order to attract interest, or to avoid dealing
+      with something difficult.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 4
+    Forwards: PRIM
+    Backwards: MIRP
+    Definition: Very formal and careful in the way you behave, and easily shocked
+      by anything offensive, sexual, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: ARK
+    Backwards: KRA
+    Definition: In the Bible, the large boat built by Noah to save his family and
+      the animals from a flood that covered the Earth.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: RIM
+    Backwards: MIR
+    Definition: To be around the edge of something.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 4
+    Forwards: BLAD
+    Backwards: DALB
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Length: 3
+    Forwards: NID
+    Backwards: DIN
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Length: 5
+    Forwards: CALLA
+    Backwards: ALLAC
+    Definition: A U.S.opera singer who is considered one of the greatest opera singers
+      of the 20th century.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 5
+  - Length: 3
+    Forwards: SEA
+    Backwards: AES
+    Definition: A large area of salty water that is mostly enclosed by land.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: PEG
+    Backwards: GEP
+    Definition: A short piece of wood, metal, etc. that fits into a hole or is fastened
+      to a wall, used especially for hanging things on, or instead of nails for fastening
+      things together.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 3
+    Forwards: TAY
+    Backwards: YAT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: PAL
+    Backwards: LAP
+    Definition: A close friend.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 5
+  - Length: 4
+    Forwards: OARS
+    Backwards: SRAO
+    Definition: A long pole with a wide flat blade at one end, used for rowing a boat.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 4
+    Forwards: CALL
+    Backwards: LLAC
+    Definition: A strong desire or feeling of duty to do a particular kind of work,
+      especially work that helps other people.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 5
+  - Length: 4
+    Forwards: SMIR
+    Backwards: RIMS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 3
+    Forwards: MOT
+    Backwards: TOM
+    Definition: Exactly the right word or phrase.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 3
+    Forwards: ARE
+    Backwards: ERA
+    Definition: "The present tense plural form of \u201Cbe\u201D."
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: KIR
+    Backwards: RIK
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 3
+    Forwards: DAL
+    Backwards: LAD
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 0
+  - Length: 3
+    Forwards: LOR
+    Backwards: ROL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: OAR
+    Backwards: RAO
+    Definition: A long pole with a wide flat blade at one end, used for rowing a boat.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 3
+    Forwards: CAT
+    Backwards: TAC
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 4
+    Forwards: PALL
+    Backwards: LLAP
+    Definition: To gradually become uninteresting or unenjoyable.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 5
+  - Length: 3
+    Forwards: ERA
+    Backwards: ARE
+    Definition: A period of time that is associated with particular events or qualities,
+      or that begins with a particular date or event.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: LAD
+    Backwards: DAL
+    Definition: A boy or young man.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Length: 4
+    Forwards: PEGS
+    Backwards: SGEP
+    Definition: A short piece of wood, metal, etc. that fits into a hole or is fastened
+      to a wall, used especially for hanging things on, or instead of nails for fastening
+      things together.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 0
+      Y: 1
+  - Length: 3
+    Forwards: AYE
+    Backwards: EYA
+    Definition: Used to say yes, especially when voting.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: TOM
+    Backwards: MOT
+    Definition: A tomcat.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 3
+    ToPosition:
+      X: 5
+      Y: 1
+  - Length: 3
+    Forwards: CAL
+    Backwards: LAC
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 5
+  CharGrid:
+  - Character: 66
+    NumberOfUses: 1
+  - Character: 83
+    NumberOfUses: 2
+  - Character: 71
+    NumberOfUses: 3
+  - Character: 69
+    NumberOfUses: 3
+  - Character: 80
+    NumberOfUses: 3
+  - Character: 80
+    NumberOfUses: 5
+  - Character: 76
+    NumberOfUses: 5
+  - Character: 79
+    NumberOfUses: 4
+  - Character: 82
+    NumberOfUses: 4
+  - Character: 75
+    NumberOfUses: 2
+  - Character: 82
+    NumberOfUses: 5
+  - Character: 65
+    NumberOfUses: 5
+  - Character: 65
+    NumberOfUses: 5
+  - Character: 65
+    NumberOfUses: 4
+  - Character: 73
+    NumberOfUses: 3
+  - Character: 73
+    NumberOfUses: 3
+  - Character: 65
+    NumberOfUses: 2
+  - Character: 76
+    NumberOfUses: 5
+  - Character: 68
+    NumberOfUses: 5
+  - Character: 82
+    NumberOfUses: 5
+  - Character: 77
+    NumberOfUses: 5
+  - Character: 89
+    NumberOfUses: 3
+  - Character: 85
+    NumberOfUses: 1
+  - Character: 76
+    NumberOfUses: 5
+  - Character: 73
+    NumberOfUses: 2
+  - Character: 83
+    NumberOfUses: 5
+  - Character: 69
+    NumberOfUses: 4
+  - Character: 65
+    NumberOfUses: 2
+  - Character: 79
+    NumberOfUses: 1
+  - Character: 65
+    NumberOfUses: 4
+  - Character: 78
+    NumberOfUses: 2
+  - Character: 77
+    NumberOfUses: 3
+  - Character: 79
+    NumberOfUses: 3
+  - Character: 84
+    NumberOfUses: 5
+  - Character: 65
+    NumberOfUses: 2
+  - Character: 67
+    NumberOfUses: 5

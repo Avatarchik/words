@@ -1,0 +1,610 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 07_0002_0043
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: fcf4c75a-4ad5-4544-8207-e6947eb56815
+  Size: 7
+  WordCount: 44
+  MaxCharacterUsage: 5
+  Words:
+  - Length: 6
+    Forwards: SPALDS
+    Backwards: SDLAPS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 6
+    Forwards: TATIES
+    Backwards: SEITAT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 6
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 6
+    Forwards: BETOSS
+    Backwards: SSOTEB
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 6
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 5
+    Forwards: AWAKE
+    Backwards: EKAWA
+    Definition: Not sleeping.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 5
+  - Length: 6
+    Forwards: GYRATE
+    Backwards: ETARYG
+    Definition: To turn around fast in circles.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 5
+  - Length: 6
+    Forwards: SILKEN
+    Backwards: NEKLIS
+    Definition: Soft, smooth, and shiny like silk.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 0
+  - Length: 4
+    Forwards: PURL
+    Backwards: LRUP
+    Definition: One of the types of stitch that you use when you knitmake clothes
+      from wool.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 5
+    Forwards: JUROR
+    Backwards: RORUJ
+    Definition: A member of a jury.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: IOS
+    Backwards: SOI
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 5
+    Forwards: QUIRT
+    Backwards: TRIUQ
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 6
+    ToPosition:
+      X: 1
+      Y: 6
+  - Length: 3
+    Forwards: TUM
+    Backwards: MUT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 2
+    ToPosition:
+      X: 5
+      Y: 4
+  - Length: 3
+    Forwards: LET
+    Backwards: TEL
+    Definition: A smaller type of something.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 6
+    ToPosition:
+      X: 0
+      Y: 4
+  - Length: 4
+    Forwards: RIVA
+    Backwards: AVIR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 5
+  - Length: 3
+    Forwards: RAT
+    Backwards: TAR
+    Definition: An animal that looks like a large mouse with a long tail.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 6
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 3
+    Forwards: KAW
+    Backwards: WAK
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 5
+  - Length: 3
+    Forwards: ATE
+    Backwards: ETA
+    Definition: The past tense of eat.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 0
+      Y: 5
+  - Length: 3
+    Forwards: JUS
+    Backwards: SUJ
+    Definition: Served with a thin sauce made from the natural juices that come out
+      of meat as it is cooking.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 3
+    ToPosition:
+      X: 6
+      Y: 1
+  - Length: 3
+    Forwards: BOP
+    Backwards: POB
+    Definition: To hit someone without much force, or as a joke.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 6
+    ToPosition:
+      X: 6
+      Y: 4
+  - Length: 3
+    Forwards: PUR
+    Backwards: RUP
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 4
+    Forwards: RATE
+    Backwards: ETAR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 0
+      Y: 5
+  - Length: 3
+    Forwards: SOT
+    Backwards: TOS
+    Definition: Someone who is drunk all the time.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 3
+    Forwards: AIR
+    Backwards: RIA
+    Definition: The mixture of gases surrounding the Earth, that we breathe.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: EMU
+    Backwards: UME
+    Definition: A large Australian bird that can run very fast, but cannot fly.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 3
+    Forwards: PAL
+    Backwards: LAP
+    Definition: A close friend.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 3
+    Forwards: ESS
+    Backwards: SSE
+    Definition: A woman who does something, or a female.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: KIR
+    Backwards: RIK
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: TAR
+    Backwards: RAT
+    Definition: A black substance, thick and sticky when hot but hard when cold, used
+      especially for making road surfaces.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 3
+    Forwards: NEK
+    Backwards: KEN
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Length: 4
+    Forwards: WAKE
+    Backwards: EKAW
+    Definition: If something, especially something bad, happens in the wake of an
+      event, it happens afterward and usually as a result of it.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 5
+  - Length: 3
+    Forwards: PRO
+    Backwards: ORP
+    Definition: Doing a job, sport, or activity for money.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: KEN
+    Backwards: NEK
+    Definition: "Outside someone\u2019s knowledge or understanding."
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 0
+  - Length: 3
+    Forwards: LAV
+    Backwards: VAL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 6
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: BET
+    Backwards: TEB
+    Definition: An agreement to risk money on the result of a race, game, competition,
+      etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 6
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 3
+    Forwards: RES
+    Backwards: SER
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: LAP
+    Backwards: PAL
+    Definition: If water laps something or laps against something such as the shore
+      or a boat, it moves against it or hits it in small waves.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 1
+    ToPosition:
+      X: 5
+      Y: 1
+  - Length: 3
+    Forwards: ITA
+    Backwards: ATI
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 5
+  - Length: 3
+    Forwards: LAR
+    Backwards: RAL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 4
+    Forwards: SILK
+    Backwards: KLIS
+    Definition: A thin smooth soft cloth made from very thin thread which is produced
+      by a silkworm.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Length: 4
+    Forwards: TIES
+    Backwards: SEIT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 3
+    Forwards: ILK
+    Backwards: KLI
+    Definition: Of that type, his type, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Length: 3
+    Forwards: TAT
+    Backwards: TAT
+    Definition: A type of lace that you make by hand, or the process of making it.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 6
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 3
+    Forwards: SPA
+    Backwards: APS
+    Definition: A place where people go in order to improve their health or beauty,
+      especially through swimming, exercise, beauty treatments, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 3
+    Forwards: IRE
+    Backwards: ERI
+    Definition: Anger.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: SIL
+    Backwards: LIS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 0
+  CharGrid:
+  - Character: 71
+    NumberOfUses: 1
+  - Character: 89
+    NumberOfUses: 1
+  - Character: 82
+    NumberOfUses: 5
+  - Character: 65
+    NumberOfUses: 5
+  - Character: 84
+    NumberOfUses: 5
+  - Character: 69
+    NumberOfUses: 4
+  - Character: 76
+    NumberOfUses: 2
+  - Character: 78
+    NumberOfUses: 3
+  - Character: 83
+    NumberOfUses: 4
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 73
+    NumberOfUses: 5
+  - Character: 84
+    NumberOfUses: 4
+  - Character: 65
+    NumberOfUses: 5
+  - Character: 84
+    NumberOfUses: 3
+  - Character: 69
+    NumberOfUses: 3
+  - Character: 68
+    NumberOfUses: 1
+  - Character: 83
+    NumberOfUses: 4
+  - Character: 82
+    NumberOfUses: 4
+  - Character: 86
+    NumberOfUses: 2
+  - Character: 87
+    NumberOfUses: 3
+  - Character: 82
+    NumberOfUses: 2
+  - Character: 75
+    NumberOfUses: 5
+  - Character: 76
+    NumberOfUses: 4
+  - Character: 83
+    NumberOfUses: 2
+  - Character: 79
+    NumberOfUses: 5
+  - Character: 73
+    NumberOfUses: 3
+  - Character: 65
+    NumberOfUses: 5
+  - Character: 73
+    NumberOfUses: 1
+  - Character: 76
+    NumberOfUses: 5
+  - Character: 65
+    NumberOfUses: 5
+  - Character: 82
+    NumberOfUses: 4
+  - Character: 82
+    NumberOfUses: 1
+  - Character: 84
+    NumberOfUses: 4
+  - Character: 75
+    NumberOfUses: 4
+  - Character: 85
+    NumberOfUses: 1
+  - Character: 73
+    NumberOfUses: 4
+  - Character: 80
+    NumberOfUses: 5
+  - Character: 84
+    NumberOfUses: 1
+  - Character: 85
+    NumberOfUses: 5
+  - Character: 77
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 81
+    NumberOfUses: 1
+  - Character: 83
+    NumberOfUses: 3
+  - Character: 83
+    NumberOfUses: 3
+  - Character: 85
+    NumberOfUses: 1
+  - Character: 74
+    NumberOfUses: 2
+  - Character: 80
+    NumberOfUses: 3
+  - Character: 79
+    NumberOfUses: 1
+  - Character: 66
+    NumberOfUses: 3

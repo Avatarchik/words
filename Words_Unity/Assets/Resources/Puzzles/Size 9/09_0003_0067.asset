@@ -1,0 +1,933 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 09_0003_0067
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: 24dd4cf4-4118-4dcf-a2f6-b3c3f23c7a0d
+  Size: 9
+  WordCount: 67
+  MaxCharacterUsage: 5
+  Words:
+  - Length: 8
+    Forwards: NARRATED
+    Backwards: DETARRAN
+    Definition: A spoken description or explanation that someone gives during a movie,
+      play, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 0
+    ToPosition:
+      X: 7
+      Y: 7
+  - Length: 8
+    Forwards: DISCANTS
+    Backwards: STNACSID
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 8
+    ToPosition:
+      X: 5
+      Y: 1
+  - Length: 5
+    Forwards: AGONY
+    Backwards: YNOGA
+    Definition: Very severe pain.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 3
+    ToPosition:
+      X: 6
+      Y: 3
+  - Length: 6
+    Forwards: CAHIER
+    Backwards: REIHAC
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 7
+    Forwards: LUGSAIL
+    Backwards: LIASGUL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 7
+    ToPosition:
+      X: 6
+      Y: 7
+  - Length: 8
+    Forwards: ABJURERS
+    Backwards: SRERUJBA
+    Definition: To state publicly that you will give up a particular belief or way
+      of behaving.
+    HasDefinition: 1
+    FromPosition:
+      X: 8
+      Y: 8
+    ToPosition:
+      X: 8
+      Y: 1
+  - Length: 7
+    Forwards: HATCHED
+    Backwards: DEHCTAH
+    Definition: Fine lines drawn on or cut into a surface.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 6
+      Y: 0
+  - Length: 7
+    Forwards: REDDING
+    Backwards: GNIDDER
+    Definition: The color of blood.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 8
+    ToPosition:
+      X: 1
+      Y: 8
+  - Length: 6
+    Forwards: FLUKED
+    Backwards: DEKULF
+    Definition: Something that only happens because of chance or luck.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 8
+    ToPosition:
+      X: 0
+      Y: 3
+  - Length: 5
+    Forwards: HEALD
+    Backwards: DLAEH
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 5
+    Forwards: LOBUS
+    Backwards: SUBOL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 6
+    ToPosition:
+      X: 5
+      Y: 6
+  - Length: 5
+    Forwards: TRONS
+    Backwards: SNORT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 4
+    Forwards: NAOS
+    Backwards: SOAN
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 5
+    Forwards: RUTHS
+    Backwards: SHTUR
+    Definition: A book in the Old Testament of the Christian Bible.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: BAY
+    Backwards: YAB
+    Definition: A part of the ocean that is enclosed by a curve in the land.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 5
+    ToPosition:
+      X: 6
+      Y: 3
+  - Length: 3
+    Forwards: SEW
+    Backwards: WES
+    Definition: To use a needle and thread to fasten pieces of cloth together, or
+      to attach something such as a button to clothes.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 3
+    Forwards: HAN
+    Backwards: NAH
+    Definition: A German painter who painted pictures for churches and was the father
+      of Hans Holbein the Younger.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 3
+    Forwards: BIG
+    Backwards: GIB
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: NID
+    Backwards: DIN
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 8
+    ToPosition:
+      X: 4
+      Y: 8
+  - Length: 3
+    Forwards: TED
+    Backwards: DET
+    Definition: A U.S. baseball player known for his skill as a batter.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 5
+    ToPosition:
+      X: 7
+      Y: 7
+  - Length: 3
+    Forwards: NAT
+    Backwards: TAN
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 7
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 3
+    Forwards: ELF
+    Backwards: FLE
+    Definition: A small imaginary person with pointed ears and magical powers.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 8
+    ToPosition:
+      X: 6
+      Y: 6
+  - Length: 3
+    Forwards: ERE
+    Backwards: ERE
+    Definition: Before.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 7
+    Forwards: DISCANT
+    Backwards: TNACSID
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 8
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 3
+    Forwards: AND
+    Backwards: DNA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 0
+      Y: 3
+  - Length: 4
+    Forwards: HAND
+    Backwards: DNAH
+    Definition: An amount that you can hold in your hand.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 3
+  - Length: 3
+    Forwards: SUB
+    Backwards: BUS
+    Definition: A submarine.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 6
+    ToPosition:
+      X: 3
+      Y: 6
+  - Length: 5
+    Forwards: AREDD
+    Backwards: DDERA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 8
+      Y: 8
+    ToPosition:
+      X: 4
+      Y: 8
+  - Length: 4
+    Forwards: RASE
+    Backwards: ESAR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 3
+    Forwards: HOH
+    Backwards: HOH
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 4
+    Forwards: IOTA
+    Backwards: ATOI
+    Definition: Not even a small amount.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 6
+      Y: 1
+  - Length: 3
+    Forwards: AGO
+    Backwards: OGA
+    Definition: Used to show how far back in the past something happened.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 7
+    Forwards: NARRATE
+    Backwards: ETARRAN
+    Definition: A spoken description or explanation that someone gives during a movie,
+      play, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 0
+    ToPosition:
+      X: 7
+      Y: 6
+  - Length: 5
+    Forwards: RATED
+    Backwards: DETAR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 7
+      Y: 3
+    ToPosition:
+      X: 7
+      Y: 7
+  - Length: 4
+    Forwards: LUGS
+    Backwards: SGUL
+    Definition: To pull or carry something heavy with difficulty.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 7
+    ToPosition:
+      X: 3
+      Y: 7
+  - Length: 4
+    Forwards: RATE
+    Backwards: ETAR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 7
+      Y: 3
+    ToPosition:
+      X: 7
+      Y: 6
+  - Length: 4
+    Forwards: SAIL
+    Backwards: LIAS
+    Definition: To travel across an area of water in a boat or ship.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 7
+    ToPosition:
+      X: 6
+      Y: 7
+  - Length: 3
+    Forwards: ADS
+    Backwards: SDA
+    Definition: Words, a picture, or a short movie that advertises a thing or service
+      that is available or for sale.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: HOG
+    Backwards: GOH
+    Definition: To keep or use all of something when you should share it.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 7
+  - Length: 3
+    Forwards: SAI
+    Backwards: IAS
+    Definition: A good quality that you cannot easily describe.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 7
+    ToPosition:
+      X: 5
+      Y: 7
+  - Length: 3
+    Forwards: SOT
+    Backwards: TOS
+    Definition: Someone who is drunk all the time.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 7
+    ToPosition:
+      X: 1
+      Y: 5
+  - Length: 3
+    Forwards: GIB
+    Backwards: BIG
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 5
+  - Length: 3
+    Forwards: HAT
+    Backwards: TAH
+    Definition: A piece of clothing that you wear on your head.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  - Length: 4
+    Forwards: DING
+    Backwards: GNID
+    Definition: To damage something slightly by hitting it.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 8
+    ToPosition:
+      X: 1
+      Y: 8
+  - Length: 3
+    Forwards: KED
+    Backwards: DEK
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 0
+      Y: 3
+  - Length: 7
+    Forwards: ABJURER
+    Backwards: RERUJBA
+    Definition: To state publicly that you will give up a particular belief or way
+      of behaving.
+    HasDefinition: 1
+    FromPosition:
+      X: 8
+      Y: 8
+    ToPosition:
+      X: 8
+      Y: 2
+  - Length: 3
+    Forwards: ULT
+    Backwards: TLU
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 7
+    ToPosition:
+      X: 1
+      Y: 5
+  - Length: 4
+    Forwards: DAUB
+    Backwards: BUAD
+    Definition: A small amount of a soft or sticky substance.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 8
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 3
+    Forwards: ARE
+    Backwards: ERA
+    Definition: "The present tense plural form of \u201Cbe\u201D."
+    HasDefinition: 1
+    FromPosition:
+      X: 8
+      Y: 8
+    ToPosition:
+      X: 6
+      Y: 8
+  - Length: 3
+    Forwards: GAU
+    Backwards: UAG
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 8
+      Y: 0
+    ToPosition:
+      X: 6
+      Y: 2
+  - Length: 3
+    Forwards: EAR
+    Backwards: RAE
+    Definition: Having long, short, etc. ears.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 7
+      Y: 2
+  - Length: 4
+    Forwards: ARED
+    Backwards: DERA
+    Definition: "The present tense plural form of \u201Cbe\u201D."
+    HasDefinition: 1
+    FromPosition:
+      X: 8
+      Y: 8
+    ToPosition:
+      X: 5
+      Y: 8
+  - Length: 4
+    Forwards: LUKE
+    Backwards: EKUL
+    Definition: One of the four books in the New Testament of the Christian Bible
+      that describe the life and teaching of Jesus.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 7
+    ToPosition:
+      X: 0
+      Y: 4
+  - Length: 3
+    Forwards: LOB
+    Backwards: BOL
+    Definition: To throw something somewhere in a high curve, especially over a wall,
+      fence, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 6
+    ToPosition:
+      X: 3
+      Y: 6
+  - Length: 3
+    Forwards: UKE
+    Backwards: EKU
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 6
+    ToPosition:
+      X: 0
+      Y: 4
+  - Length: 3
+    Forwards: CHE
+    Backwards: EHC
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 0
+  - Length: 4
+    Forwards: HEAL
+    Backwards: LAEH
+    Definition: The process of becoming well again after an illness or of feeling
+      happy again after a bad experience, or the process of helping someone to do
+      this.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: FLU
+    Backwards: ULF
+    Definition: A common infectious disease that makes your throat sore, makes it
+      difficult for you to breathe, gives you a fever, and makes you feel very tired.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 8
+    ToPosition:
+      X: 0
+      Y: 6
+  - Length: 5
+    Forwards: HATCH
+    Backwards: HCTAH
+    Definition: Fine lines drawn on or cut into a surface.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 0
+  - Length: 3
+    Forwards: HIE
+    Backwards: EIH
+    Definition: To make yourself hurry, or go quickly.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: BUS
+    Backwards: SUB
+    Definition: A large road vehicle that can carry many people.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 6
+    ToPosition:
+      X: 5
+      Y: 6
+  - Length: 4
+    Forwards: TRON
+    Backwards: NORT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: ERS
+    Backwards: SRE
+    Definition: A sound you make when you pause to correct something you have just
+      said, or when you do not know exactly what to say.
+    HasDefinition: 1
+    FromPosition:
+      X: 8
+      Y: 3
+    ToPosition:
+      X: 8
+      Y: 1
+  - Length: 3
+    Forwards: URE
+    Backwards: ERU
+    Definition: Used to make nouns that show actions or results.
+    HasDefinition: 1
+    FromPosition:
+      X: 8
+      Y: 5
+    ToPosition:
+      X: 8
+      Y: 3
+  - Length: 4
+    Forwards: GAUN
+    Backwards: NUAG
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 8
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 3
+    Forwards: ERA
+    Backwards: ARE
+    Definition: A period of time that is associated with particular events or qualities,
+      or that begins with a particular date or event.
+    HasDefinition: 1
+    FromPosition:
+      X: 8
+      Y: 3
+    ToPosition:
+      X: 6
+      Y: 1
+  - Length: 3
+    Forwards: ONS
+    Backwards: SNO
+    Definition: Touching or supported by a particular surface.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 1
+  CharGrid:
+  - Character: 72
+    NumberOfUses: 5
+  - Character: 65
+    NumberOfUses: 3
+  - Character: 78
+    NumberOfUses: 3
+  - Character: 68
+    NumberOfUses: 4
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 75
+    NumberOfUses: 4
+  - Character: 85
+    NumberOfUses: 4
+  - Character: 76
+    NumberOfUses: 5
+  - Character: 70
+    NumberOfUses: 2
+  - Character: 65
+    NumberOfUses: 4
+  - Character: 83
+    NumberOfUses: 2
+  - Character: 78
+    NumberOfUses: 3
+  - Character: 79
+    NumberOfUses: 3
+  - Character: 82
+    NumberOfUses: 5
+  - Character: 84
+    NumberOfUses: 4
+  - Character: 76
+    NumberOfUses: 3
+  - Character: 85
+    NumberOfUses: 3
+  - Character: 71
+    NumberOfUses: 2
+  - Character: 84
+    NumberOfUses: 3
+  - Character: 68
+    NumberOfUses: 2
+  - Character: 76
+    NumberOfUses: 2
+  - Character: 65
+    NumberOfUses: 5
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 72
+    NumberOfUses: 3
+  - Character: 79
+    NumberOfUses: 4
+  - Character: 71
+    NumberOfUses: 3
+  - Character: 78
+    NumberOfUses: 3
+  - Character: 67
+    NumberOfUses: 3
+  - Character: 87
+    NumberOfUses: 1
+  - Character: 83
+    NumberOfUses: 4
+  - Character: 71
+    NumberOfUses: 4
+  - Character: 73
+    NumberOfUses: 5
+  - Character: 66
+    NumberOfUses: 2
+  - Character: 66
+    NumberOfUses: 4
+  - Character: 83
+    NumberOfUses: 5
+  - Character: 73
+    NumberOfUses: 3
+  - Character: 72
+    NumberOfUses: 3
+  - Character: 69
+    NumberOfUses: 2
+  - Character: 72
+    NumberOfUses: 2
+  - Character: 79
+    NumberOfUses: 5
+  - Character: 72
+    NumberOfUses: 3
+  - Character: 66
+    NumberOfUses: 2
+  - Character: 85
+    NumberOfUses: 4
+  - Character: 65
+    NumberOfUses: 4
+  - Character: 68
+    NumberOfUses: 5
+  - Character: 69
+    NumberOfUses: 3
+  - Character: 83
+    NumberOfUses: 2
+  - Character: 84
+    NumberOfUses: 5
+  - Character: 78
+    NumberOfUses: 4
+  - Character: 65
+    NumberOfUses: 5
+  - Character: 67
+    NumberOfUses: 2
+  - Character: 83
+    NumberOfUses: 5
+  - Character: 73
+    NumberOfUses: 5
+  - Character: 68
+    NumberOfUses: 5
+  - Character: 68
+    NumberOfUses: 1
+  - Character: 65
+    NumberOfUses: 4
+  - Character: 85
+    NumberOfUses: 3
+  - Character: 89
+    NumberOfUses: 2
+  - Character: 67
+    NumberOfUses: 1
+  - Character: 78
+    NumberOfUses: 1
+  - Character: 70
+    NumberOfUses: 1
+  - Character: 76
+    NumberOfUses: 3
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 78
+    NumberOfUses: 3
+  - Character: 65
+    NumberOfUses: 4
+  - Character: 82
+    NumberOfUses: 5
+  - Character: 82
+    NumberOfUses: 4
+  - Character: 65
+    NumberOfUses: 4
+  - Character: 84
+    NumberOfUses: 5
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 68
+    NumberOfUses: 3
+  - Character: 82
+    NumberOfUses: 4
+  - Character: 71
+    NumberOfUses: 2
+  - Character: 83
+    NumberOfUses: 2
+  - Character: 82
+    NumberOfUses: 3
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 82
+    NumberOfUses: 3
+  - Character: 85
+    NumberOfUses: 3
+  - Character: 74
+    NumberOfUses: 2
+  - Character: 66
+    NumberOfUses: 2
+  - Character: 65
+    NumberOfUses: 5

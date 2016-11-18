@@ -1,0 +1,615 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 07_0003_0043
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: 2bbd2627-cb2f-442f-b973-4e95757b9551
+  Size: 7
+  WordCount: 44
+  MaxCharacterUsage: 5
+  Words:
+  - Length: 6
+    Forwards: IDIOMS
+    Backwards: SMOIDI
+    Definition: A group of words that has a special meaning that is different from
+      the ordinary meaning of each separate word.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 6
+    Forwards: CLASPS
+    Backwards: SPSALC
+    Definition: To hold someone or something tightly, closing your fingers or arms
+      around him, her, or it.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 5
+  - Length: 6
+    Forwards: TOSSER
+    Backwards: RESSOT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 6
+    ToPosition:
+      X: 5
+      Y: 1
+  - Length: 5
+    Forwards: GRAIN
+    Backwards: NIARG
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 6
+    Forwards: VEGETE
+    Backwards: ETEGEV
+    Definition: A plant such as a bean, carrot, or potato which is eaten raw or cooked.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 6
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 4
+    Forwards: AVID
+    Backwards: DIVA
+    Definition: Doing something as much as you can, because you enjoy it very much.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 6
+    ToPosition:
+      X: 4
+      Y: 6
+  - Length: 6
+    Forwards: JEZAIL
+    Backwards: LIAZEJ
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 6
+    ToPosition:
+      X: 6
+      Y: 1
+  - Length: 6
+    Forwards: HOGTIE
+    Backwards: EITGOH
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 6
+    ToPosition:
+      X: 0
+      Y: 1
+  - Length: 3
+    Forwards: SEN
+    Backwards: NES
+    Definition: The written abbreviation of senator.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 5
+  - Length: 3
+    Forwards: ASS
+    Backwards: SSA
+    Definition: The part of your body that you sit on.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 3
+    Forwards: ULT
+    Backwards: TLU
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: UNI
+    Backwards: INU
+    Definition: One.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 0
+  - Length: 3
+    Forwards: ESS
+    Backwards: SSE
+    Definition: A woman who does something, or a female.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 2
+    ToPosition:
+      X: 5
+      Y: 4
+  - Length: 4
+    Forwards: SENS
+    Backwards: SNES
+    Definition: The written abbreviation of senator.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 4
+    Forwards: NIGH
+    Backwards: HGIN
+    Definition: Near.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  - Length: 3
+    Forwards: TIE
+    Backwards: EIT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 0
+      Y: 1
+  - Length: 3
+    Forwards: GET
+    Backwards: TEG
+    Definition: To start having something by finding it, asking for it, being given
+      it, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: AIL
+    Backwards: LIA
+    Definition: An ailing company or economy is having a lot of problems and is not
+      successful.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 3
+    ToPosition:
+      X: 6
+      Y: 1
+  - Length: 3
+    Forwards: TAI
+    Backwards: IAT
+    Definition: A Chinese form of physical exercise that trains your mind and body
+      in balance and control.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 4
+    Forwards: TOSS
+    Backwards: SSOT
+    Definition: To throw something, especially something light, without much force.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 6
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 3
+    Forwards: DAE
+    Backwards: EAD
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: ISM
+    Backwards: MSI
+    Definition: A religion, political belief, or style of art based on a particular
+      principle or the teachings of a particular person.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 3
+    Forwards: IOS
+    Backwards: SOI
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 3
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 4
+    Forwards: OMIT
+    Backwards: TIMO
+    Definition: To not include someone or something, either deliberately or because
+      you forget to do it.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: SAL
+    Backwards: LAS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 3
+    Forwards: DIV
+    Backwards: VID
+    Definition: The written abbreviation of division.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 6
+    ToPosition:
+      X: 2
+      Y: 6
+  - Length: 5
+    Forwards: IDIOM
+    Backwards: MOIDI
+    Definition: A group of words that has a special meaning that is different from
+      the ordinary meaning of each separate word.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 3
+    Forwards: EON
+    Backwards: NOE
+    Definition: An extremely long period of time.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: HOG
+    Backwards: GOH
+    Definition: To keep or use all of something when you should share it.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 6
+    ToPosition:
+      X: 0
+      Y: 4
+  - Length: 3
+    Forwards: MOI
+    Backwards: IOM
+    Definition: "A Vietnamese word used to describe the social, political, and economic
+      changes that happened in Vietnam from 1986, which led to improvements in people\u2019s
+      living standards and personal freedom."
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: LAS
+    Backwards: SAL
+    Definition: A city in the desert of the U.S. state of Nevada.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: TAE
+    Backwards: EAT
+    Definition: A type of exercise that combines dancing, kicking, and quick hand
+      movements.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 4
+    Forwards: RAIN
+    Backwards: NIAR
+    Definition: Water that falls in small drops from clouds in the sky.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: GIN
+    Backwards: NIG
+    Definition: A strong alcoholic drink made mainly from grain, or a glass of this
+      drink.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 0
+  - Length: 3
+    Forwards: AIN
+    Backwards: NIA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: INN
+    Backwards: NNI
+    Definition: A word used in the names of some hotels and restaurants.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 6
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 4
+    Forwards: ASPS
+    Backwards: SPSA
+    Definition: A small poisonous snake from North Africa.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 6
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 5
+    Forwards: CLASP
+    Backwards: PSALC
+    Definition: To hold someone or something tightly, closing your fingers or arms
+      around him, her, or it.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 3
+    Forwards: VEG
+    Backwards: GEV
+    Definition: To relax by doing something that needs very little effort.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 6
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: OPE
+    Backwards: EPO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 4
+    Forwards: DIVA
+    Backwards: AVID
+    Definition: A woman who is a very good singer, especially of opera music.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 6
+    ToPosition:
+      X: 1
+      Y: 6
+  - Length: 3
+    Forwards: ASP
+    Backwards: PSA
+    Definition: A small poisonous snake from North Africa.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 6
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 3
+    Forwards: ENS
+    Backwards: SNE
+    Definition: Made of a particular material or substance.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 3
+    Forwards: TOS
+    Backwards: SOT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 6
+    ToPosition:
+      X: 5
+      Y: 4
+  CharGrid:
+  - Character: 85
+    NumberOfUses: 1
+  - Character: 69
+    NumberOfUses: 2
+  - Character: 73
+    NumberOfUses: 2
+  - Character: 84
+    NumberOfUses: 3
+  - Character: 71
+    NumberOfUses: 2
+  - Character: 79
+    NumberOfUses: 3
+  - Character: 72
+    NumberOfUses: 2
+  - Character: 67
+    NumberOfUses: 2
+  - Character: 76
+    NumberOfUses: 5
+  - Character: 65
+    NumberOfUses: 5
+  - Character: 83
+    NumberOfUses: 5
+  - Character: 80
+    NumberOfUses: 5
+  - Character: 83
+    NumberOfUses: 5
+  - Character: 65
+    NumberOfUses: 4
+  - Character: 72
+    NumberOfUses: 1
+  - Character: 69
+    NumberOfUses: 2
+  - Character: 84
+    NumberOfUses: 5
+  - Character: 69
+    NumberOfUses: 4
+  - Character: 71
+    NumberOfUses: 3
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 86
+    NumberOfUses: 5
+  - Character: 71
+    NumberOfUses: 3
+  - Character: 82
+    NumberOfUses: 2
+  - Character: 65
+    NumberOfUses: 5
+  - Character: 73
+    NumberOfUses: 5
+  - Character: 78
+    NumberOfUses: 5
+  - Character: 78
+    NumberOfUses: 4
+  - Character: 73
+    NumberOfUses: 4
+  - Character: 73
+    NumberOfUses: 5
+  - Character: 68
+    NumberOfUses: 3
+  - Character: 73
+    NumberOfUses: 4
+  - Character: 79
+    NumberOfUses: 5
+  - Character: 77
+    NumberOfUses: 5
+  - Character: 83
+    NumberOfUses: 4
+  - Character: 68
+    NumberOfUses: 3
+  - Character: 78
+    NumberOfUses: 3
+  - Character: 82
+    NumberOfUses: 1
+  - Character: 69
+    NumberOfUses: 3
+  - Character: 83
+    NumberOfUses: 5
+  - Character: 83
+    NumberOfUses: 5
+  - Character: 79
+    NumberOfUses: 4
+  - Character: 84
+    NumberOfUses: 3
+  - Character: 85
+    NumberOfUses: 1
+  - Character: 76
+    NumberOfUses: 2
+  - Character: 73
+    NumberOfUses: 3
+  - Character: 65
+    NumberOfUses: 3
+  - Character: 90
+    NumberOfUses: 1
+  - Character: 69
+    NumberOfUses: 1
+  - Character: 74
+    NumberOfUses: 1

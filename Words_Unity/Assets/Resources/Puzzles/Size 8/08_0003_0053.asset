@@ -1,0 +1,737 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 08_0003_0053
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: c013f827-b716-46b1-ac61-e1d0f5222d8c
+  Size: 8
+  WordCount: 53
+  MaxCharacterUsage: 5
+  Words:
+  - Length: 6
+    Forwards: LIMPID
+    Backwards: DIPMIL
+    Definition: Clear or transparent.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 7
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 7
+    Forwards: OUTGUSH
+    Backwards: HSUGTUO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 7
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 4
+    Forwards: ESSE
+    Backwards: ESSE
+    Definition: A woman who does something, or a female.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 5
+    Forwards: LOOMS
+    Backwards: SMOOL
+    Definition: A frame or machine on which thread is woven into cloth.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 6
+  - Length: 5
+    Forwards: KYLIE
+    Backwards: EILYK
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 6
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 6
+    Forwards: BIVIUM
+    Backwards: MUIVIB
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 5
+  - Length: 5
+    Forwards: WHIST
+    Backwards: TSIHW
+    Definition: A card game for four players in two pairs, in which each pair tries
+      to win the most tricks.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 7
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 4
+    Forwards: TEME
+    Backwards: EMET
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 0
+  - Length: 5
+    Forwards: COIGN
+    Backwards: NGIOC
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 7
+    ToPosition:
+      X: 1
+      Y: 7
+  - Length: 5
+    Forwards: LAMIA
+    Backwards: AIMAL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 7
+      Y: 2
+    ToPosition:
+      X: 7
+      Y: 6
+  - Length: 4
+    Forwards: CALP
+    Backwards: PLAC
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 6
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 4
+    Forwards: CLOG
+    Backwards: GOLC
+    Definition: To physically block something, or become blocked in this way, especially
+      so that a movement or flow of something is stopped.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 5
+    ToPosition:
+      X: 6
+      Y: 2
+  - Length: 3
+    Forwards: PUB
+    Backwards: BUP
+    Definition: A comfortable bar that often serves food, especially one in the U.K.
+      or Ireland.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 3
+    Forwards: ALS
+    Backwards: SLA
+    Definition: The written abbreviation of alabama.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 6
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 3
+    Forwards: NTH
+    Backwards: HTN
+    Definition: Extremely, or as much as possible.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: ELL
+    Backwards: LLE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 6
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: SIS
+    Backwards: SIS
+    Definition: A name used when speaking to your sister.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: OKE
+    Backwards: EKO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: HIS
+    Backwards: SIH
+    Definition: The thing or things belonging to or relating to a male person or animal
+      that has been mentioned or is known about.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 6
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 6
+    Forwards: KYLIES
+    Backwards: SEILYK
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 6
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: REM
+    Backwards: MER
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 7
+    ToPosition:
+      X: 0
+      Y: 5
+  - Length: 3
+    Forwards: OMS
+    Backwards: SMO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 6
+  - Length: 4
+    Forwards: GUSH
+    Backwards: HSUG
+    Definition: If a liquid gushes from something, or if something gushes it, it flows
+      or pours out quickly in large quantities.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 3
+    Forwards: LOO
+    Backwards: OOL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 7
+      Y: 2
+    ToPosition:
+      X: 5
+      Y: 4
+  - Length: 3
+    Forwards: HET
+    Backwards: TEH
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: LOG
+    Backwards: GOL
+    Definition: To make an official record of events, facts, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 4
+    ToPosition:
+      X: 6
+      Y: 2
+  - Length: 3
+    Forwards: TAN
+    Backwards: NAT
+    Definition: Having a pale yellowish brown color.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 6
+      Y: 0
+  - Length: 3
+    Forwards: GIO
+    Backwards: OIG
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 7
+    ToPosition:
+      X: 4
+      Y: 7
+  - Length: 3
+    Forwards: ETA
+    Backwards: ATE
+    Definition: The seventh letter of the Greek alphabet.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 0
+  - Length: 3
+    Forwards: OUT
+    Backwards: TUO
+    Definition: From inside to the outside of something.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 1
+    ToPosition:
+      X: 5
+      Y: 1
+  - Length: 3
+    Forwards: AMI
+    Backwards: IMA
+    Definition: A U.S. poet.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 5
+  - Length: 3
+    Forwards: LAM
+    Backwards: MAL
+    Definition: Escaping or hiding from someone, especially the police.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 2
+    ToPosition:
+      X: 7
+      Y: 4
+  - Length: 4
+    Forwards: LIES
+    Backwards: SEIL
+    Definition: To deliberately tell someone something that is not true.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: APT
+    Backwards: TPA
+    Definition: To have a tendency to do something.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: AIM
+    Backwards: MIA
+    Definition: To try or intend to achieve something.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 6
+    ToPosition:
+      X: 7
+      Y: 4
+  - Length: 3
+    Forwards: HES
+    Backwards: SEH
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 3
+    Forwards: RAY
+    Backwards: YAR
+    Definition: A narrow beam of light from the Sun or from something such as a lamp.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 7
+    ToPosition:
+      X: 2
+      Y: 5
+  - Length: 3
+    Forwards: KAS
+    Backwards: SAK
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 6
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 3
+    Forwards: ATE
+    Backwards: ETA
+    Definition: The past tense of eat.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Length: 3
+    Forwards: SED
+    Backwards: DES
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 2
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: YAM
+    Backwards: MAY
+    Definition: A sweet potato.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 3
+    Forwards: KET
+    Backwards: TEK
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 4
+    Forwards: HIST
+    Backwards: TSIH
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 6
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: NAT
+    Backwards: TAN
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 0
+  - Length: 3
+    Forwards: EMU
+    Backwards: UME
+    Definition: A large Australian bird that can run very fast, but cannot fly.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 6
+    ToPosition:
+      X: 0
+      Y: 4
+  - Length: 3
+    Forwards: EME
+    Backwards: EME
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 0
+  - Length: 3
+    Forwards: SKA
+    Backwards: AKS
+    Definition: A kind of popular music originally from Jamaica with a fast regular
+      beat, similar to reggae.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 6
+    ToPosition:
+      X: 1
+      Y: 6
+  - Length: 3
+    Forwards: ILK
+    Backwards: KLI
+    Definition: Of that type, his type, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 3
+    Forwards: OES
+    Backwards: SEO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: KOI
+    Backwards: IOK
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 3
+    ToPosition:
+      X: 5
+      Y: 5
+  - Length: 3
+    Forwards: HIC
+    Backwards: CIH
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 6
+    ToPosition:
+      X: 4
+      Y: 6
+  - Length: 3
+    Forwards: MAL
+    Backwards: LAM
+    Definition: Bad or badly.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 4
+    ToPosition:
+      X: 7
+      Y: 2
+  - Length: 4
+    Forwards: HICS
+    Backwards: SCIH
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 6
+    ToPosition:
+      X: 3
+      Y: 6
+  CharGrid:
+  - Character: 66
+    NumberOfUses: 1
+  - Character: 73
+    NumberOfUses: 1
+  - Character: 86
+    NumberOfUses: 1
+  - Character: 73
+    NumberOfUses: 1
+  - Character: 85
+    NumberOfUses: 2
+  - Character: 77
+    NumberOfUses: 3
+  - Character: 69
+    NumberOfUses: 3
+  - Character: 82
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 3
+  - Character: 72
+    NumberOfUses: 3
+  - Character: 68
+    NumberOfUses: 2
+  - Character: 80
+    NumberOfUses: 1
+  - Character: 83
+    NumberOfUses: 2
+  - Character: 76
+    NumberOfUses: 2
+  - Character: 65
+    NumberOfUses: 3
+  - Character: 78
+    NumberOfUses: 1
+  - Character: 77
+    NumberOfUses: 2
+  - Character: 83
+    NumberOfUses: 5
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 73
+    NumberOfUses: 5
+  - Character: 76
+    NumberOfUses: 5
+  - Character: 89
+    NumberOfUses: 4
+  - Character: 75
+    NumberOfUses: 4
+  - Character: 71
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 4
+  - Character: 85
+    NumberOfUses: 2
+  - Character: 83
+    NumberOfUses: 4
+  - Character: 84
+    NumberOfUses: 5
+  - Character: 80
+    NumberOfUses: 2
+  - Character: 65
+    NumberOfUses: 5
+  - Character: 83
+    NumberOfUses: 4
+  - Character: 73
+    NumberOfUses: 2
+  - Character: 84
+    NumberOfUses: 5
+  - Character: 71
+    NumberOfUses: 2
+  - Character: 72
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 83
+    NumberOfUses: 5
+  - Character: 77
+    NumberOfUses: 5
+  - Character: 67
+    NumberOfUses: 3
+  - Character: 79
+    NumberOfUses: 2
+  - Character: 65
+    NumberOfUses: 4
+  - Character: 84
+    NumberOfUses: 3
+  - Character: 66
+    NumberOfUses: 1
+  - Character: 75
+    NumberOfUses: 4
+  - Character: 79
+    NumberOfUses: 5
+  - Character: 73
+    NumberOfUses: 5
+  - Character: 73
+    NumberOfUses: 3
+  - Character: 67
+    NumberOfUses: 1
+  - Character: 78
+    NumberOfUses: 3
+  - Character: 85
+    NumberOfUses: 3
+  - Character: 71
+    NumberOfUses: 2
+  - Character: 79
+    NumberOfUses: 5
+  - Character: 76
+    NumberOfUses: 3
+  - Character: 67
+    NumberOfUses: 1
+  - Character: 72
+    NumberOfUses: 5
+  - Character: 76
+    NumberOfUses: 1
+  - Character: 80
+    NumberOfUses: 1
+  - Character: 79
+    NumberOfUses: 2
+  - Character: 76
+    NumberOfUses: 5
+  - Character: 65
+    NumberOfUses: 3
+  - Character: 77
+    NumberOfUses: 4
+  - Character: 73
+    NumberOfUses: 3
+  - Character: 65
+    NumberOfUses: 2
+  - Character: 87
+    NumberOfUses: 1
