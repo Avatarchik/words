@@ -50,10 +50,10 @@ public class PuzzleGenerator : EditorWindow
 		GUILayout.Label("Settings", EditorStyles.boldLabel);
 
 		GUILayout.Space(8);
-		mSize = EditorGUILayout.IntSlider("Size", mSize, GlobalSettings.PuzzleSizeMin, GlobalSettings.PuzzleSizeMax);
+		mSize = EditorGUILayout.IntSlider("Size", mSize, GlobalSettings.Instance.PuzzleSizeMin, GlobalSettings.Instance.PuzzleSizeMax);
 		mWordListPasses = EditorGUILayout.IntSlider("Word List Passes", mWordListPasses, 1, 3);
 		mWordLimit = EditorGUILayout.IntSlider("Word Limit", mWordLimit, 1, 1024);
-		mMaxTileUsage = EditorGUILayout.IntSlider("Max Tile Usage", mMaxTileUsage, 1, GlobalSettings.PuzzleSizeMaxTileUsage);
+		mMaxTileUsage = EditorGUILayout.IntSlider("Max Tile Usage", mMaxTileUsage, 1, GlobalSettings.Instance.PuzzleSizeMaxTileUsage);
 
 		GUILayout.Space(8);
 		if (GUILayout.Button("Generate"))
@@ -129,7 +129,7 @@ public class PuzzleGenerator : EditorWindow
 	{
 		int originalSize = mSize;
 
-		for (int i = GlobalSettings.PuzzleSizeMin; i < GlobalSettings.PuzzleSizeMaxPlusOne; ++i)
+		for (int i = GlobalSettings.Instance.PuzzleSizeMin; i < GlobalSettings.Instance.PuzzleSizeMaxPlusOne; ++i)
 		{
 			for (int j = 0; j < mTestLevelsPerSize; ++j)
 			{

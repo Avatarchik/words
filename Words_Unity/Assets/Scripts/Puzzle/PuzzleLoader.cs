@@ -33,8 +33,8 @@ public class PuzzleLoader : UIMonoBehaviour
 
 		mSize = contentsToLoad.Size;
 
-		Vector3 gridSize = new Vector3(0, (mSize * GlobalSettings.TileSize) + ((mSize - 1) * GlobalSettings.TileSpacing), 0);
-		Vector3 halfGridSize = (gridSize * 0.5f) - new Vector3(GlobalSettings.TileSizeHalf, GlobalSettings.TileSizeHalf, 0);
+		Vector3 gridSize = new Vector3(0, (mSize * GlobalSettings.Instance.TileSize) + ((mSize - 1) * GlobalSettings.Instance.TileSpacing), 0);
+		Vector3 halfGridSize = (gridSize * 0.5f) - new Vector3(GlobalSettings.Instance.TileSizeHalf, GlobalSettings.Instance.TileSizeHalf, 0);
 
 		mCharacterTilesGrid = new CharacterTile[mSize, mSize];
 
@@ -45,7 +45,7 @@ public class PuzzleLoader : UIMonoBehaviour
 				GameObject newTileGO = Instantiate(CharacterTilePrefab, Vector3.zero, Quaternion.identity, transform) as GameObject;
 
 				CharacterTile characterTile = newTileGO.GetComponent<CharacterTile>();
-				characterTile.transform.localPosition = new Vector3(x * GlobalSettings.TileSizeWithSpacing, y * GlobalSettings.TileSizeWithSpacing, 0) - halfGridSize;
+				characterTile.transform.localPosition = new Vector3(x * GlobalSettings.Instance.TileSizeWithSpacing, y * GlobalSettings.Instance.TileSizeWithSpacing, 0) - halfGridSize;
 
 				CharacterUsage charUsage = contentsToLoad.CharGrid[(x * mSize) + y];
 				characterTile.Initialise(this, charUsage, new GridPosition(x, y));

@@ -99,30 +99,16 @@ public class Highlighter : SingletonMonoBehaviour<Highlighter>
 			WordPanelFlasher.Instance.Flash(WordPanelFlasher.EFlashReason.NotFound);
 		}
 
-		foreach (CharacterTile tile in mHighlightedTiles)
+		// Play an effect
+		Vector3 effectStart = mHighlightedTiles[0].transform.position;
+		effectStart.z -= 5;
+		Vector3 effectEnd = effectStart;
+		if (mHighlightedTiles.Count > 1)
 		{
-			Vector3 effectPosition = tile.transform.position;
-			effectPosition.z -= 5;
-
-			switch (overallResult)
-			{
-				case EWordValidityResult.WasRemoved:
-					EffectsManagerRef.PlayFoundEffectAt(effectPosition);
-					break;
-
-				case EWordValidityResult.WrongInstance:
-					EffectsManagerRef.PlayWrongInstanceEffectAt(effectPosition);
-					break;
-
-				case EWordValidityResult.WasAlreadyFound:
-					EffectsManagerRef.PlayAlreadyFoundEffectAt(effectPosition);
-					break;
-
-				default:
-					EffectsManagerRef.PlayNotFoundEffectAt(effectPosition);
-					break;
-			}
+			effectEnd = mHighlightedTiles[mHighlightedTiles.Count - 1].transform.position;
+			effectEnd.z -= 5;
 		}
+		EffectsManagerRef.PlayWordValidityEffectAt(overallResult, effectStart, effectEnd);
 
 		// Add score
 		int score = result.TileDecrements * result.WordsFound * 10;

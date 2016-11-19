@@ -12,11 +12,6 @@ public class WordPanelFlasher : SingletonMonoBehaviour<WordPanelFlasher>
 		WrongInstance,
 	}
 
-	public Color FoundColour;
-	public Color NotFoundColour;
-	public Color AlreadyFoundColour;
-	public Color WrongInstanceColour;
-
 	public float FlashTime = 1f;
 	public EasingType EaseType = EasingType.Sine;
 
@@ -41,10 +36,10 @@ public class WordPanelFlasher : SingletonMonoBehaviour<WordPanelFlasher>
 
 			switch (reason)
 			{
-				case EFlashReason.Found: flashColour = FoundColour; break;
-				case EFlashReason.NotFound: flashColour = NotFoundColour; break;
-				case EFlashReason.AlreadyFound: flashColour = AlreadyFoundColour; break;
-				case EFlashReason.WrongInstance: flashColour = WrongInstanceColour; break;
+				case EFlashReason.Found: flashColour = GlobalSettings.Instance.FoundColour; break;
+				case EFlashReason.NotFound: flashColour = GlobalSettings.Instance.NotFoundColour; break;
+				case EFlashReason.AlreadyFound: flashColour = GlobalSettings.Instance.AlreadyFoundColour; break;
+				case EFlashReason.WrongInstance: flashColour = GlobalSettings.Instance.WrongInstanceColour; break;
 				default: foundFlashColour = false; break;
 			}
 

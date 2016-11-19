@@ -5,66 +5,86 @@ public class EffectsManager : MonoBehaviour
 	private readonly Vector3 kOffscreenPos = new Vector3(0, 5000, 0);
 
 	[Range(1, 64)]
-	public int PoolSize = 32;
+	public int PoolSize = 8;
 
-	public ParticleSystem FoundEffectPrefab;
-	public ParticleSystem NotFoundEffectPrefab;
-	public ParticleSystem AlreadyFoundEffectPrefab;
-	public ParticleSystem WrongInstanceEffectPrefab;
-
-	private ParticleSystem[] mFoundEffectsPool;
-	private ParticleSystem[] mNotFoundEffectsPool;
-	private ParticleSystem[] mAlreadyFoundEffectsPool;
-	private ParticleSystem[] mWrongInstanceEffectsPool;
+	public ParticleSystem WordValidityEffectPrefab;
+	private ParticleSystem[] mWordValidityEffectsPool;
 
 	void Awake()
 	{
-		mFoundEffectsPool = new ParticleSystem[PoolSize];
-		mNotFoundEffectsPool = new ParticleSystem[PoolSize];
-		mAlreadyFoundEffectsPool = new ParticleSystem[PoolSize];
-		mWrongInstanceEffectsPool = new ParticleSystem[PoolSize];
+		mWordValidityEffectsPool = new ParticleSystem[PoolSize];
 
 		for (int poolIndex = 0; poolIndex < PoolSize; ++poolIndex)
 		{
-			mFoundEffectsPool[poolIndex] = Instantiate(FoundEffectPrefab, kOffscreenPos, Quaternion.identity, transform) as ParticleSystem;
-			mNotFoundEffectsPool[poolIndex] = Instantiate(NotFoundEffectPrefab, kOffscreenPos, Quaternion.identity, transform) as ParticleSystem;
-			mAlreadyFoundEffectsPool[poolIndex] = Instantiate(AlreadyFoundEffectPrefab, kOffscreenPos, Quaternion.identity, transform) as ParticleSystem;
-			mWrongInstanceEffectsPool[poolIndex] = Instantiate(WrongInstanceEffectPrefab, kOffscreenPos, Quaternion.identity, transform) as ParticleSystem;
+			mWordValidityEffectsPool[poolIndex] = CreateEffectInstance(WordValidityEffectPrefab, poolIndex);
 		}
 	}
 
-	public void PlayFoundEffectAt(Vector3 worldPosition)
+	private ParticleSystem CreateEffectInstance(ParticleSystem effectPrefab, int poolIndex)
 	{
-		PlayEffectAt(worldPosition, mFoundEffectsPool);
+		ParticleSystem psInstance = Instantiate(effectPrefab, kOffscreenPos, Quaternion.identity, transform) as ParticleSystem;
+
+#if UNITY_EDITOR
+		psInstance.gameObject.name = string.Format("{0} #{1}", effectPrefab.name, poolIndex);
+#endif // UNITY_EDITOR
+
+		return psInstance;
 	}
 
-	public void PlayNotFoundEffectAt(Vector3 worldPosition)
-	{
-		PlayEffectAt(worldPosition, mNotFoundEffectsPool);
-	}
-
-	public void PlayAlreadyFoundEffectAt(Vector3 worldPosition)
-	{
-		PlayEffectAt(worldPosition, mAlreadyFoundEffectsPool);
-	}
-
-	public void PlayWrongInstanceEffectAt(Vector3 worldPosition)
-	{
-		PlayEffectAt(worldPosition, mWrongInstanceEffectsPool);
-	}
-
-	private void PlayEffectAt(Vector3 worldPosition, ParticleSystem[] effectArray)
+	public void PlayWordValidityEffectAt(EWordValidityResult validityResult, Vector3 fromPosition, Vector3 toPosition)
 	{
 		ParticleSystem ps;
 		for (int effectIndex = 0; effectIndex < PoolSize; ++effectIndex)
 		{
-			ps = effectArray[effectIndex];
+			ps = mWordValidityEffectsPool[effectIndex];
 			if (!ps.isPlaying)
 			{
-				ps.transform.position = worldPosition;
+				Vector3 midPoint = Vector3.Lerp(fromPosition, toPosition, 0.5f);
+				Vector3 difference = toPosition - fromPosition;
+
+				float radius = difference.magnitude * 0.5f;
+				short particlesPerBurst = (short)(radius * 32);
+
+				ps.transform.position = midPoint;
+
+				ParticleSystem.Burst[] bursts = new ParticleSystem.Burst[]
+				{
+					new ParticleSystem.Burst(0, particlesPerBurst, particlesPerBurst),
+				};
+				ParticleSystem.EmissionModule em = ps.emission;
+				em.SetBursts(bursts);
+
+				ParticleSystem.ShapeModule sm = ps.shape;
+				sm.radius = radius;
+
+				Vector3 rotation = ps.transform.rotation.eulerAngles;
+				float angle = Vector3.Angle(Vector3.right, difference);
+				rotation.z = angle;
+				ps.transform.eulerAngles = rotation;
+
+				ps.startColor = GetWordValidityEffectColour(validityResult);
+
 				ps.Play();
 				break;
 			}
+		}
+	}
+
+	private Color GetWordValidityEffectColour(EWordValidityResult validityResult)
+	{
+		switch (validityResult)
+		{
+			case EWordValidityResult.WasRemoved:
+				return GlobalSettings.Instance.FoundColour;
+
+			case EWordValidityResult.WrongInstance:
+				return GlobalSettings.Instance.WrongInstanceColour;
+
+			case EWordValidityResult.WasAlreadyFound:
+				return GlobalSettings.Instance.AlreadyFoundColour;
+
+			default:
+				return GlobalSettings.Instance.NotFoundColour;
 		}
 	}
 }

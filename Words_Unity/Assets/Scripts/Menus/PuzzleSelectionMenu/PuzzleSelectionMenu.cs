@@ -36,7 +36,7 @@ public class PuzzleSelectionMenu : Menu, IMenu
 	{
 		sLastChosenPuzzleSize = puzzleSize;
 
-		int puzzleCount = PuzzleManagerRef.PuzzleLists[puzzleSize - GlobalSettings.PuzzleSizeMin].Puzzles.Count;
+		int puzzleCount = PuzzleManagerRef.PuzzleLists[puzzleSize - GlobalSettings.Instance.PuzzleSizeMin].Puzzles.Count;
 		mPuzzles = new List<RectTransform>(puzzleCount);
 
 		for (int puzzleIndex = 0; puzzleIndex < puzzleCount; ++puzzleIndex)

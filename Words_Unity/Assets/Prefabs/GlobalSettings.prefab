@@ -9,30 +9,30 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1000014184738164}
+  m_RootGameObject: {fileID: 1000012637719458}
   m_IsPrefabParent: 1
---- !u!1 &1000014184738164
+--- !u!1 &1000012637719458
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 4000012955840092}
-  - 114: {fileID: 114000011161258750}
+  - 4: {fileID: 4000014057289276}
+  - 114: {fileID: 114000010084307110}
   m_Layer: 0
-  m_Name: EffectsManager
+  m_Name: GlobalSettings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4000012955840092
+--- !u!4 &4000014057289276
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000014184738164}
+  m_GameObject: {fileID: 1000012637719458}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -40,17 +40,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &114000011161258750
+--- !u!114 &114000010084307110
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000014184738164}
+  m_GameObject: {fileID: 1000012637719458}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e7eea79d2dadb240810a44422b31884, type: 3}
+  m_Script: {fileID: 11500000, guid: ddb225c90847b8d449002de5a4999be9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PoolSize: 8
-  WordValidityEffectPrefab: {fileID: 198000012533978756, guid: 28f2fee3ec924334aaf4723f34e41965,
-    type: 2}
+  PuzzleSizeMin: 4
+  PuzzleSizeMax: 12
+  PuzzleSizeMaxPlusOne: 0
+  PuzzleSizeDifference: 0
+  PuzzleSizeMaxTileUsage: 12
+  TileSize: 24
+  TileSizeHalf: 0
+  TileSpacing: 8
+  TileSizeWithSpacing: 0
+  FoundColour: {r: 0.12941177, g: 0.78431374, b: 0.12941177, a: 0.5019608}
+  NotFoundColour: {r: 0.85882354, g: 0.19607843, b: 0.19607843, a: 0.5019608}
+  AlreadyFoundColour: {r: 0.32156864, g: 0.52156866, b: 1, a: 0.5019608}
+  WrongInstanceColour: {r: 0.93333334, g: 0.49019608, b: 0.13725491, a: 0.5019608}

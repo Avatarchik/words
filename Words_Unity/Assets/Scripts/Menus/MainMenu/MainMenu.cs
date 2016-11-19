@@ -54,7 +54,7 @@ public class MainMenu : Menu, IMenu
 #endif // UNITY_EDITOR
 
 			PuzzleListButton puzzleListButton = newButtonGO.GetComponent<PuzzleListButton>();
-			puzzleListButton.rectTransform.localPosition = new Vector3(116 * columnIndex, -GlobalSettings.TileSizeWithSpacing * rowIndex, 0); // TODO - fix the literals
+			puzzleListButton.rectTransform.localPosition = new Vector3(116 * columnIndex, -GlobalSettings.Instance.TileSizeWithSpacing * rowIndex, 0); // TODO - fix the literals
 			puzzleListButton.Initialise(listIndex + 3); // TODO - fix the literal
 
 			mPuzzleLists.Add(puzzleListButton.rectTransform);
@@ -76,7 +76,7 @@ public class MainMenu : Menu, IMenu
 #endif // UNITY_EDITOR
 
 			ColourSchemeSwitchButton schemeSwitchButton = newButtonGO.GetComponent<ColourSchemeSwitchButton>();
-			schemeSwitchButton.rectTransform.localPosition = new Vector3(0, GlobalSettings.TileSizeWithSpacing * (schemeIndex + 1), 0);
+			schemeSwitchButton.rectTransform.localPosition = new Vector3(0, GlobalSettings.Instance.TileSizeWithSpacing * (schemeIndex + 1), 0);
 
 			schemeSwitchButton.Initialise(ColourSchemeManagerRef, schemeIndex);
 

@@ -1,13 +1,34 @@
-static public class GlobalSettings
-{
-	public const int PuzzleSizeMin = 4;
-	public const int PuzzleSizeMax = 12;
-	public const int PuzzleSizeMaxPlusOne = PuzzleSizeMax + 1;
-	public const int PuzzleSizeDifference = PuzzleSizeMax - PuzzleSizeMin;
-	public const int PuzzleSizeMaxTileUsage = 12;
+using UnityEngine;
 
-	public const int TileSize = 24;
-	public const int TileSizeHalf = TileSize / 2;
-	public const int TileSpacing = 8;
-	public const int TileSizeWithSpacing = TileSize + TileSpacing;
+[ScriptOrder(-9999)]
+public class GlobalSettings : SingletonMonoBehaviour<GlobalSettings>
+{
+	public int PuzzleSizeMin = 4;
+	public int PuzzleSizeMax = 12;
+	[HideInInspector]
+	public int PuzzleSizeMaxPlusOne;
+	[HideInInspector]
+	public int PuzzleSizeDifference;
+	public int PuzzleSizeMaxTileUsage = 12;
+
+	public int TileSize = 24;
+	[HideInInspector]
+	public int TileSizeHalf;
+	public int TileSpacing = 8;
+	[HideInInspector]
+	public int TileSizeWithSpacing;
+
+	public Color FoundColour;
+	public Color NotFoundColour;
+	public Color AlreadyFoundColour;
+	public Color WrongInstanceColour;
+
+	private void Awake()
+	{
+		PuzzleSizeMaxPlusOne = PuzzleSizeMax + 1;
+		PuzzleSizeDifference = PuzzleSizeMax - PuzzleSizeMin;
+
+		TileSizeHalf = TileSize / 2;
+		TileSizeWithSpacing = TileSize + TileSpacing;
+	}
 }

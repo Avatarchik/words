@@ -65,7 +65,7 @@ public class PuzzleManager : MonoBehaviour
 
 	public int GetListIndex(int puzzleSize)
 	{
-		return puzzleSize - GlobalSettings.PuzzleSizeMin;
+		return puzzleSize - GlobalSettings.Instance.PuzzleSizeMin;
 	}
 
 	private PuzzleContents GetContentsFor(SerializableGuid puzzleGuid)
@@ -94,7 +94,7 @@ public class PuzzleManager : MonoBehaviour
 
 	public SerializableGuid GetGuidForPuzzle(int puzzleSize, int puzzleIndex)
 	{
-		PuzzleList puzzleList = PuzzleLists[puzzleSize - GlobalSettings.PuzzleSizeMin];
+		PuzzleList puzzleList = PuzzleLists[puzzleSize - GlobalSettings.Instance.PuzzleSizeMin];
 		PuzzleContents puzzleContents = puzzleList.Puzzles[puzzleIndex];
 		return puzzleContents.Guid;
 	}
@@ -115,8 +115,8 @@ public class PuzzleManager : MonoBehaviour
 #if UNITY_EDITOR
 	public void InitialiseLists()
 	{
-		PuzzleLists = new List<PuzzleList>(GlobalSettings.PuzzleSizeDifference);
-		for (int listIndex = 0; listIndex < (GlobalSettings.PuzzleSizeDifference + 1); ++listIndex)
+		PuzzleLists = new List<PuzzleList>(GlobalSettings.Instance.PuzzleSizeDifference);
+		for (int listIndex = 0; listIndex < (GlobalSettings.Instance.PuzzleSizeDifference + 1); ++listIndex)
 		{
 			PuzzleLists.Add(new PuzzleList());
 		}
