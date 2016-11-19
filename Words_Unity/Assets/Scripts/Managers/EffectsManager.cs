@@ -39,6 +39,13 @@ public class EffectsManager : MonoBehaviour
 			ps = mWordValidityEffectsPool[effectIndex];
 			if (!ps.isPlaying)
 			{
+				if (toPosition.y < fromPosition.y)
+				{
+					Vector3 temp = fromPosition;
+					fromPosition = toPosition;
+					toPosition = temp;
+				}
+
 				Vector3 midPoint = Vector3.Lerp(fromPosition, toPosition, 0.5f);
 				Vector3 difference = toPosition - fromPosition;
 
@@ -58,8 +65,7 @@ public class EffectsManager : MonoBehaviour
 				sm.radius = radius;
 
 				Vector3 rotation = ps.transform.rotation.eulerAngles;
-				float angle = Vector3.Angle(Vector3.right, difference);
-				rotation.z = angle;
+				rotation.z = Vector3.Angle(difference, Vector3.right);
 				ps.transform.eulerAngles = rotation;
 
 				ps.startColor = GetWordValidityEffectColour(validityResult);
