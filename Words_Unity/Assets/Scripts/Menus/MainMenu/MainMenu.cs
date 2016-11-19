@@ -39,7 +39,7 @@ public class MainMenu : Menu, IMenu
 		int puzzleListsCount = PuzzleManagerRef.PuzzleLists.Count;
 		mPuzzleLists = new List<RectTransform>(puzzleListsCount);
 
-		const int puzzlesPerColumn = 5;
+		const int puzzlesPerColumn = 3;
 		int columnIndex = 0;
 		int rowIndex = 0;
 		for (int listIndex = 1; listIndex <= puzzleListsCount; ++listIndex)
