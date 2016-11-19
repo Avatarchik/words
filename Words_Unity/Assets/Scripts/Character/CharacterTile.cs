@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class CharacterTile : MonoBehaviour
 {
@@ -50,7 +51,8 @@ public class CharacterTile : MonoBehaviour
 		if (mUsageLeft <= 0)
 		{
 			mLoader.RemoveTile(Position);
-			Destroy(gameObject, 0.2f);
+			enabled = false;
+			transform.DOScale(0, 1f).OnComplete(() => Destroy(gameObject));
 		}
 		else
 		{
