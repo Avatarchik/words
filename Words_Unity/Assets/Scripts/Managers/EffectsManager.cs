@@ -81,16 +81,16 @@ public class EffectsManager : MonoBehaviour
 		switch (validityResult)
 		{
 			case EWordValidityResult.WasRemoved:
-				return GlobalSettings.Instance.FoundColour;
+				return GlobalSettings.Instance.WordFoundColour;
 
 			case EWordValidityResult.WrongInstance:
-				return GlobalSettings.Instance.WrongInstanceColour;
+				return GlobalSettings.Instance.WordWrongInstanceColour;
 
 			case EWordValidityResult.WasAlreadyFound:
-				return GlobalSettings.Instance.AlreadyFoundColour;
+				return GlobalSettings.Instance.WordAlreadyFoundColour;
 
 			default:
-				return GlobalSettings.Instance.NotFoundColour;
+				return GlobalSettings.Instance.WordNotFoundColour;
 		}
 	}
 }

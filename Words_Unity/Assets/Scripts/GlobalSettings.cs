@@ -18,10 +18,10 @@ public class GlobalSettings : SingletonMonoBehaviour<GlobalSettings>
 	[HideInInspector]
 	public int TileSizeWithSpacing;
 
-	public Color FoundColour;
-	public Color NotFoundColour;
-	public Color AlreadyFoundColour;
-	public Color WrongInstanceColour;
+	public Color WordFoundColour;
+	public Color WordNotFoundColour;
+	public Color WordAlreadyFoundColour;
+	public Color WordWrongInstanceColour;
 
 	private void Awake()
 	{

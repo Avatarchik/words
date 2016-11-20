@@ -36,10 +36,10 @@ public class WordPanelFlasher : SingletonMonoBehaviour<WordPanelFlasher>
 
 			switch (reason)
 			{
-				case EFlashReason.Found: flashColour = GlobalSettings.Instance.FoundColour; break;
-				case EFlashReason.NotFound: flashColour = GlobalSettings.Instance.NotFoundColour; break;
-				case EFlashReason.AlreadyFound: flashColour = GlobalSettings.Instance.AlreadyFoundColour; break;
-				case EFlashReason.WrongInstance: flashColour = GlobalSettings.Instance.WrongInstanceColour; break;
+				case EFlashReason.Found: flashColour = GlobalSettings.Instance.WordFoundColour; break;
+				case EFlashReason.NotFound: flashColour = GlobalSettings.Instance.WordNotFoundColour; break;
+				case EFlashReason.AlreadyFound: flashColour = GlobalSettings.Instance.WordAlreadyFoundColour; break;
+				case EFlashReason.WrongInstance: flashColour = GlobalSettings.Instance.WordWrongInstanceColour; break;
 				default: foundFlashColour = false; break;
 			}
 
