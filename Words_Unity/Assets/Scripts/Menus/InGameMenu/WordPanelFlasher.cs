@@ -43,6 +43,8 @@ public class WordPanelFlasher : SingletonMonoBehaviour<WordPanelFlasher>
 				default: foundFlashColour = false; break;
 			}
 
+			flashColour = ColorHelper.SetAlpha255(flashColour, 128);
+
 			if (foundFlashColour)
 			{
 				StartCoroutine(FlashInternal(flashColour));
