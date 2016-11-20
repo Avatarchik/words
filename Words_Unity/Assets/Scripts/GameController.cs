@@ -9,6 +9,8 @@ public class GameController : MonoBehaviour
 #if !UNITY_EDITOR
 		ODebug.IsEnabled = false;
 #endif // !UNITY_EDITOR
+
+		Application.targetFrameRate = 60;
 	}
 
 	void Update()
