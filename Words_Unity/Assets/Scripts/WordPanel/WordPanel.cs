@@ -161,7 +161,7 @@ public class WordPanel : UIMonoBehaviour
 		foreach (WordPanelEntry entry in mPanelEntries)
 		{
 			entry.DoesMatchSelection(word, startTile, endTile, out isCompleteMatch);
-			if (isCompleteMatch)
+			if (isCompleteMatch || result.IsWrongInstance)
 			{
 				break;
 			}
@@ -209,10 +209,6 @@ public class WordPanel : UIMonoBehaviour
 				{
 					++result.WordsAlreadyFound;
 				}
-			}
-			else if (matchResult == EWordValidityResult.WrongInstance)
-			{
-				result.IsWrongInstance = true;
 			}
 		}
 
