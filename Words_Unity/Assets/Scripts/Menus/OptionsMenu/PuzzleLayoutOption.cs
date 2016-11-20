@@ -6,11 +6,14 @@ public class PuzzleLayoutOption : MonoBehaviour
 	public Image LeftHandedLayout;
 	public Image RightHandedLayout;
 
-	public Color EnabledColour = Color.white;
-	public Color DisabledColour = Color.white;
+	private Color mEnabledColour;
+	private Color mDisabledColour;
 
 	void Awake()
 	{
+		mEnabledColour = GlobalSettings.Instance.UIHightlightColour;
+		mDisabledColour = GlobalSettings.Instance.UIDisabledHighlightColour;
+
 		int optionValue = PlayerPrefsPlus.GetInt(PlayerPrefKeys.PuzzleLayout, 1);
 		UpdateUI(optionValue);
 	}
@@ -18,8 +21,8 @@ public class PuzzleLayoutOption : MonoBehaviour
 	private void UpdateUI(int optionValue)
 	{
 		bool isRightHandedChosen = optionValue == 1;
-		LeftHandedLayout.color = isRightHandedChosen ? DisabledColour : EnabledColour;
-		RightHandedLayout.color = isRightHandedChosen ? EnabledColour : DisabledColour;
+		LeftHandedLayout.color = isRightHandedChosen ? mDisabledColour : mEnabledColour;
+		RightHandedLayout.color = isRightHandedChosen ? mEnabledColour : mDisabledColour;
 	}
 
 	public void OnLeftHandedSelected()

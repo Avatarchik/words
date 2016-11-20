@@ -19,6 +19,7 @@ public class GlobalSettings : SingletonMonoBehaviour<GlobalSettings>
 	public int TileSizeWithSpacing;
 
 	public Color UIHightlightColour;
+	public Color UIDisabledHighlightColour;
 
 	public Color WordFoundColour;
 	public Color WordNotFoundColour;
