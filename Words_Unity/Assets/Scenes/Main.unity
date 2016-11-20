@@ -1958,7 +1958,6 @@ GameObject:
   - 224: {fileID: 258777956}
   - 222: {fileID: 258777958}
   - 114: {fileID: 258777957}
-  - 114: {fileID: 258777959}
   - 114: {fileID: 258777960}
   m_Layer: 5
   m_Name: WordPanelRoot
@@ -2024,19 +2023,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 258777955}
---- !u!114 &258777959
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 258777955}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52ceec86bf21e864f8d33e1fad5930f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FlashTime: 0.5
-  EaseType: 2
 --- !u!114 &258777960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4697,6 +4683,7 @@ GameObject:
   - 222: {fileID: 738808617}
   - 114: {fileID: 738808616}
   - 114: {fileID: 738808615}
+  - 114: {fileID: 738808619}
   m_Layer: 5
   m_Name: WordPanelMask
   m_TagString: Untagged
@@ -4800,6 +4787,19 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.ScrollRect+ScrollRectEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &738808619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 738808613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52ceec86bf21e864f8d33e1fad5930f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FlashTime: 0.5
+  EaseType: 2
 --- !u!1 &754516508
 GameObject:
   m_ObjectHideFlags: 0
