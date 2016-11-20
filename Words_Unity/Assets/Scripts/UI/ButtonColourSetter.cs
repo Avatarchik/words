@@ -3,7 +3,6 @@ using UnityEngine.UI;
 
 public class ButtonColourSetter : MonoBehaviour
 {
-	public Color ButtonColour;
 	private Button mButtonRef;
 
 	public bool SetHighlightedColour = true;
@@ -22,11 +21,11 @@ public class ButtonColourSetter : MonoBehaviour
 
 		if (SetHighlightedColour)
 		{
-			colourBlock.highlightedColor = ButtonColour;
+			colourBlock.highlightedColor = GlobalSettings.Instance.UIHightlightColour;
 		}
 		if (SetPressedColour)
 		{
-			colourBlock.pressedColor = ButtonColour;
+			colourBlock.pressedColor = GlobalSettings.Instance.UIHightlightColour;
 		}
 
 		mButtonRef.colors = colourBlock;

@@ -285,7 +285,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c0e489b9a7f2a4b8805d9acf0e8fa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtonColour: {r: 1, g: 0.5686275, b: 0.02745098, a: 1}
   SetHighlightedColour: 1
   SetPressedColour: 1
 --- !u!114 &17510603 stripped
@@ -1122,7 +1121,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c0e489b9a7f2a4b8805d9acf0e8fa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtonColour: {r: 1, g: 0.5686275, b: 0.02745098, a: 1}
   SetHighlightedColour: 1
   SetPressedColour: 1
 --- !u!114 &137763028
@@ -2180,6 +2178,7 @@ GameObject:
   - 222: {fileID: 268362377}
   - 114: {fileID: 268362376}
   - 114: {fileID: 268362375}
+  - 114: {fileID: 268362378}
   m_Layer: 5
   m_Name: Scrollbar
   m_TagString: Untagged
@@ -2285,6 +2284,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 268362373}
+--- !u!114 &268362378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 268362373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd4fe80a5470ecd48afc4588ceb6338d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SetNormalColour: 1
+  SetHighlightedColour: 1
+  SetPressedColour: 1
 --- !u!1 &274764546
 GameObject:
   m_ObjectHideFlags: 0
@@ -3122,7 +3135,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c0e489b9a7f2a4b8805d9acf0e8fa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtonColour: {r: 1, g: 0.5686275, b: 0.02745098, a: 1}
   SetHighlightedColour: 1
   SetPressedColour: 1
 --- !u!114 &443099228
@@ -3346,7 +3358,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c0e489b9a7f2a4b8805d9acf0e8fa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtonColour: {r: 1, g: 0.5686275, b: 0.02745098, a: 1}
   SetHighlightedColour: 1
   SetPressedColour: 1
 --- !u!114 &478097031 stripped
@@ -3569,7 +3580,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c0e489b9a7f2a4b8805d9acf0e8fa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtonColour: {r: 1, g: 0.5686275, b: 0.02745098, a: 1}
   SetHighlightedColour: 1
   SetPressedColour: 1
 --- !u!114 &543977898
@@ -3707,7 +3717,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c0e489b9a7f2a4b8805d9acf0e8fa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtonColour: {r: 1, g: 0.5686275, b: 0.02745098, a: 1}
   SetHighlightedColour: 1
   SetPressedColour: 1
 --- !u!114 &547773233
@@ -4080,6 +4089,7 @@ GameObject:
   - 222: {fileID: 618889351}
   - 114: {fileID: 618889350}
   - 114: {fileID: 618889349}
+  - 114: {fileID: 618889352}
   - 114: {fileID: 618889348}
   m_Layer: 5
   m_Name: RewardsButton
@@ -4117,7 +4127,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c0e489b9a7f2a4b8805d9acf0e8fa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtonColour: {r: 1, g: 0.5686275, b: 0.02745098, a: 1}
   SetHighlightedColour: 1
   SetPressedColour: 1
 --- !u!114 &618889349
@@ -4194,6 +4203,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 618889346}
+--- !u!114 &618889352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 618889346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ded6022f50fd0264c822df94d3bf6396, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &634915317 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224000011604792504, guid: b4306da0c51d4ec4bbc4b167e1e88c9f,
@@ -5696,7 +5716,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c0e489b9a7f2a4b8805d9acf0e8fa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtonColour: {r: 1, g: 0.5686275, b: 0.02745098, a: 1}
   SetHighlightedColour: 1
   SetPressedColour: 1
 --- !u!1 &908030559
@@ -5749,7 +5768,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c0e489b9a7f2a4b8805d9acf0e8fa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtonColour: {r: 1, g: 0.5686275, b: 0.02745098, a: 1}
   SetHighlightedColour: 1
   SetPressedColour: 1
 --- !u!114 &908030562
@@ -6653,6 +6671,7 @@ GameObject:
   - 222: {fileID: 1052835126}
   - 114: {fileID: 1052835125}
   - 114: {fileID: 1052835124}
+  - 114: {fileID: 1052835127}
   m_Layer: 5
   m_Name: Scrollbar
   m_TagString: Untagged
@@ -6758,6 +6777,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1052835122}
+--- !u!114 &1052835127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1052835122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd4fe80a5470ecd48afc4588ceb6338d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SetNormalColour: 1
+  SetHighlightedColour: 1
+  SetPressedColour: 1
 --- !u!1 &1066267455
 GameObject:
   m_ObjectHideFlags: 0
@@ -7756,7 +7789,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c0e489b9a7f2a4b8805d9acf0e8fa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtonColour: {r: 1, g: 0.5686275, b: 0.02745098, a: 1}
   SetHighlightedColour: 1
   SetPressedColour: 1
 --- !u!114 &1285168431
@@ -8751,6 +8783,7 @@ GameObject:
   - 114: {fileID: 1571137498}
   - 114: {fileID: 1571137497}
   - 114: {fileID: 1571137496}
+  - 114: {fileID: 1571137500}
   - 114: {fileID: 1571137495}
   m_Layer: 5
   m_Name: SettingsButton
@@ -8788,7 +8821,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c0e489b9a7f2a4b8805d9acf0e8fa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtonColour: {r: 1, g: 0.5686275, b: 0.02745098, a: 1}
   SetHighlightedColour: 1
   SetPressedColour: 1
 --- !u!114 &1571137496
@@ -8876,6 +8908,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1571137493}
+--- !u!114 &1571137500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1571137493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ded6022f50fd0264c822df94d3bf6396, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1603163549
 GameObject:
   m_ObjectHideFlags: 0
@@ -8926,7 +8969,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c0e489b9a7f2a4b8805d9acf0e8fa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtonColour: {r: 1, g: 0.5686275, b: 0.02745098, a: 1}
   SetHighlightedColour: 1
   SetPressedColour: 1
 --- !u!114 &1603163552
@@ -9289,6 +9331,7 @@ GameObject:
   - 222: {fileID: 1635261809}
   - 114: {fileID: 1635261808}
   - 114: {fileID: 1635261807}
+  - 114: {fileID: 1635261810}
   - 114: {fileID: 1635261806}
   m_Layer: 5
   m_Name: GiftButton
@@ -9326,7 +9369,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c0e489b9a7f2a4b8805d9acf0e8fa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtonColour: {r: 1, g: 0.5686275, b: 0.02745098, a: 1}
   SetHighlightedColour: 1
   SetPressedColour: 1
 --- !u!114 &1635261807
@@ -9403,6 +9445,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1635261804}
+--- !u!114 &1635261810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1635261804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ded6022f50fd0264c822df94d3bf6396, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1635503584
 GameObject:
   m_ObjectHideFlags: 0
@@ -9526,7 +9579,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c0e489b9a7f2a4b8805d9acf0e8fa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtonColour: {r: 1, g: 0.5686275, b: 0.02745098, a: 1}
   SetHighlightedColour: 1
   SetPressedColour: 1
 --- !u!114 &1672829756
@@ -9996,7 +10048,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c0e489b9a7f2a4b8805d9acf0e8fa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtonColour: {r: 1, g: 0.5686275, b: 0.02745098, a: 1}
   SetHighlightedColour: 1
   SetPressedColour: 1
 --- !u!114 &1745594625
@@ -11091,7 +11142,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c0e489b9a7f2a4b8805d9acf0e8fa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtonColour: {r: 1, g: 0.5686275, b: 0.02745098, a: 1}
   SetHighlightedColour: 1
   SetPressedColour: 1
 --- !u!1 &1842413304

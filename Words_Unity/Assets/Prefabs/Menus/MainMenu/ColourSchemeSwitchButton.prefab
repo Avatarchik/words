@@ -74,6 +74,7 @@ GameObject:
   - 114: {fileID: 114000012129705034}
   - 114: {fileID: 114000011956194566}
   - 114: {fileID: 114000010577824364}
+  - 114: {fileID: 114000011018190002}
   - 114: {fileID: 114000012252560990}
   m_Layer: 5
   m_Name: ColourSchemeSwitchButton
@@ -161,8 +162,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ImageRef: {fileID: 114000012129705034}
   TextRef: {fileID: 114000013292889762}
-  NonSelectedColour: {r: 1, g: 1, b: 1, a: 1}
-  SelectedColour: {r: 1, g: 0.5686275, b: 0.02745098, a: 1}
   ColourExamplesRoot: {fileID: 224000012560862944}
   ColourExamples:
   - {fileID: 114000014169871076}
@@ -170,6 +169,17 @@ MonoBehaviour:
   - {fileID: 114000012411430912}
   - {fileID: 114000011265659032}
   - {fileID: 114000011454895916}
+--- !u!114 &114000011018190002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011350221210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ded6022f50fd0264c822df94d3bf6396, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114000011265659032
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -303,7 +313,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c0e489b9a7f2a4b8805d9acf0e8fa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtonColour: {r: 1, g: 0.5686275, b: 0.02745098, a: 1}
   SetHighlightedColour: 1
   SetPressedColour: 0
 --- !u!114 &114000012411430912

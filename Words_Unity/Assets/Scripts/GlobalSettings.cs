@@ -18,6 +18,8 @@ public class GlobalSettings : SingletonMonoBehaviour<GlobalSettings>
 	[HideInInspector]
 	public int TileSizeWithSpacing;
 
+	public Color UIHightlightColour;
+
 	public Color WordFoundColour;
 	public Color WordNotFoundColour;
 	public Color WordAlreadyFoundColour;

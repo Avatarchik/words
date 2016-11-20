@@ -7,9 +7,6 @@ public class ColourSchemeSwitchButton : UIMonoBehaviour, IPointerClickHandler
 	public Image ImageRef;
 	public Text TextRef;
 
-	public Color NonSelectedColour;
-	public Color SelectedColour;
-
 	public RectTransform ColourExamplesRoot;
 	public Image[] ColourExamples;
 
@@ -29,12 +26,12 @@ public class ColourSchemeSwitchButton : UIMonoBehaviour, IPointerClickHandler
 
 		if (colourSchemeManagerRef.IsActiveScheme(mSchemeIndex))
 		{
-			ImageRef.color = SelectedColour;
+			ImageRef.color = GlobalSettings.Instance.UIHightlightColour;
 			sSelectedButton = ImageRef;
 		}
 		else
 		{
-			ImageRef.color = NonSelectedColour;
+			ImageRef.color = Color.white;
 		}
 	}
 
@@ -72,7 +69,7 @@ public class ColourSchemeSwitchButton : UIMonoBehaviour, IPointerClickHandler
 
 			if (sSelectedButton != null)
 			{
-				sSelectedButton.color = NonSelectedColour;
+				sSelectedButton.color = Color.white;
 			}
 			sSelectedButton = ImageRef;
 		}
