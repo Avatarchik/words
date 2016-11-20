@@ -72,6 +72,7 @@ GameObject:
   - 224: {fileID: 224000012656804994}
   - 222: {fileID: 222000013979804398}
   - 114: {fileID: 114000012106841338}
+  - 114: {fileID: 114000012151716080}
   m_Layer: 5
   m_Name: ProgressBar_Filler
   m_TagString: Untagged
@@ -106,6 +107,7 @@ GameObject:
   - 224: {fileID: 224000012925329026}
   - 222: {fileID: 222000011073195190}
   - 114: {fileID: 114000010499502320}
+  - 114: {fileID: 114000012475118356}
   m_Layer: 5
   m_Name: Tick
   m_TagString: Untagged
@@ -277,7 +279,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c0e489b9a7f2a4b8805d9acf0e8fa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtonColour: {r: 1, g: 0.5686275, b: 0.02745098, a: 1}
   SetHighlightedColour: 0
   SetPressedColour: 1
 --- !u!114 &114000011317468824
@@ -319,7 +320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7294118, g: 0.7294118, b: 0.7294118, a: 1}
+  m_Color: {r: 0.6431373, g: 0.6431373, b: 0.6431373, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -402,6 +403,17 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114000012151716080
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011124399912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ded6022f50fd0264c822df94d3bf6396, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114000012270348204
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -435,6 +447,17 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Puzzle #{0} - {1} Words'
+--- !u!114 &114000012475118356
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012165667690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ded6022f50fd0264c822df94d3bf6396, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114000012529597474
 MonoBehaviour:
   m_ObjectHideFlags: 1
