@@ -14,6 +14,7 @@ public enum EMenuType
 	PuzzleResetMenu,
 	OptionsMenu,
 	ProgressResetMenu,
+	StatsMenu,
 
 	Count,
 }
