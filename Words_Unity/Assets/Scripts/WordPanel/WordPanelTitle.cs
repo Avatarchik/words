@@ -3,24 +3,12 @@ using UnityEngine.UI;
 
 public class WordPanelTitle : MonoBehaviour
 {
+	public WordPanelFoundWord FoundWordPrefab;
+
 	public Text TextRef;
 	public string TitleFormat;
 	public string OneWordLeftTitle;
 	public string AllFoundTitle;
-	public string ForEffectTitleFormat;
-
-	private bool mIsForEffect;
-
-	void Update()
-	{
-		if (mIsForEffect)
-		{
-			if (transform.localPosition.y < -700)
-			{
-				Destroy(gameObject);
-			}
-		}
-	}
 
 	public void SetTitle(int wordsLeft)
 	{
@@ -38,18 +26,18 @@ public class WordPanelTitle : MonoBehaviour
 		}
 	}
 
-	public void WordsRemoved(int wordsRemoved, int nowRemaining)
+	public void WordsRemoved(WordValidityResult validityResult, int wordsNowRemaining)
 	{
-		WordPanelTitle titleCopy = Instantiate(this, transform.parent, true) as WordPanelTitle;
-		titleCopy.gameObject.AddComponent<Rigidbody2D>();
-		titleCopy.MarkAsForEffect(wordsRemoved);
+		WordPanelFoundWord foundWordsInst = Instantiate(FoundWordPrefab, transform.position, Quaternion.identity, transform) as WordPanelFoundWord;
+		foundWordsInst.SetAsFoundWords(validityResult.WordsFound, 0);
 
-		SetTitle(nowRemaining);
-	}
+		int wordCount = validityResult.WordsFound;
+		for (int wordIndex = 0; wordIndex < wordCount; ++wordIndex)
+		{
+			WordPanelFoundWord foundWordInst = Instantiate(FoundWordPrefab, transform.position, Quaternion.identity, transform) as WordPanelFoundWord;
+			foundWordInst.SetAsFoundWord(validityResult.Words[wordIndex], (wordIndex + 1) * 0.08f);
+		}
 
-	private void MarkAsForEffect(int wordsRemoved)
-	{
-		mIsForEffect = true;
-		TextRef.text = string.Format(ForEffectTitleFormat, wordsRemoved);
+		SetTitle(wordsNowRemaining);
 	}
 }

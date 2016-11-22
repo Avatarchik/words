@@ -22,6 +22,8 @@ public class WordValidityResult
 	public bool IsWrongInstance;
 	public int TileDecrements;
 
+	public List<string> Words = new List<string>();
+
 	public WordValidityResult()
 	{
 		WordsFound = 0;
@@ -191,6 +193,7 @@ public class WordPanel : UIMonoBehaviour
 					entry.MarkWordAsFound();
 
 					++result.WordsFound;
+					result.Words.Add(entry.GetWord());
 
 					SaveGameManager.Instance.ActivePuzzleState.MarkWordAsFound(entry.WordIndex);
 
@@ -214,7 +217,7 @@ public class WordPanel : UIMonoBehaviour
 
 		if (updateTitle)
 		{
-			Title.WordsRemoved(result.WordsFound, mWordsRemaining);
+			Title.WordsRemoved(result, mWordsRemaining);
 		}
 
 		return result;

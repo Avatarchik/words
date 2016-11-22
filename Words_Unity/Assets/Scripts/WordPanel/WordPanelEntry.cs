@@ -122,4 +122,9 @@ public class WordPanelEntry : MonoBehaviour, IPointerClickHandler
 			defViewer.ShowDefinitionFor(mWordPair);
 		}
 	}
+
+	public string GetWord()
+	{
+		return mWordPair.Forwards;
+	}
 }
