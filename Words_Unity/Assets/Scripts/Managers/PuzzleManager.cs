@@ -115,8 +115,9 @@ public class PuzzleManager : MonoBehaviour
 #if UNITY_EDITOR
 	public void InitialiseLists()
 	{
-		PuzzleLists = new List<PuzzleList>(GlobalSettings.Instance.PuzzleSizeDifference);
-		for (int listIndex = 0; listIndex < (GlobalSettings.Instance.PuzzleSizeDifference + 1); ++listIndex)
+		int puzzleSizeDifference = GlobalSettings.Instance.PuzzleSizeMax - GlobalSettings.Instance.PuzzleSizeMin;
+		PuzzleLists = new List<PuzzleList>(puzzleSizeDifference);
+		for (int listIndex = 0; listIndex < (puzzleSizeDifference + 1); ++listIndex)
 		{
 			PuzzleLists.Add(new PuzzleList());
 		}

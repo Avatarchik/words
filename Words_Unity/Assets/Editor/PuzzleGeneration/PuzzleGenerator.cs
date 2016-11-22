@@ -129,7 +129,7 @@ public class PuzzleGenerator : EditorWindow
 	{
 		int originalSize = mSize;
 
-		for (int i = GlobalSettings.Instance.PuzzleSizeMin; i < GlobalSettings.Instance.PuzzleSizeMaxPlusOne; ++i)
+		for (int i = GlobalSettings.Instance.PuzzleSizeMin; i < (GlobalSettings.Instance.PuzzleSizeMax + 1); ++i)
 		{
 			for (int j = 0; j < mTestLevelsPerSize; ++j)
 			{
@@ -255,10 +255,14 @@ public class PuzzleGenerator : EditorWindow
 		bool wasFinalised = mNewPuzzleContents.Finalise(mGrid);
 
 		string searchDir = PathHelper.Combine(Application.dataPath, string.Format("Resources/Puzzles/Size {0}", mSize));
-		string[] puzzlePaths = Directory.GetFiles(searchDir, "*.asset");
+		string[] puzzlePaths = null;
+		if (Directory.Exists(searchDir))
+		{
+			puzzlePaths = Directory.GetFiles(searchDir, "*.asset");
+		}
 
 		int nextID = 0;
-		if (puzzlePaths.Length > 0)
+		if (puzzlePaths != null && puzzlePaths.Length > 0)
 		{
 			string lastPuzzle = puzzlePaths[puzzlePaths.Length - 1];
 			string[] pathSplit = Path.GetFileName(lastPuzzle).Split('_');
@@ -275,6 +279,12 @@ public class PuzzleGenerator : EditorWindow
 
 		string currentPath = AssetDatabase.GetAssetPath(mNewPuzzleContents);
 		string newPath = currentPath.Replace("/Puzzles/", string.Format("/Puzzles/Size {0}/", mSize));
+		string newPathParent = Path.GetDirectoryName(newPath);
+		if (!Directory.Exists(newPathParent))
+		{
+			Directory.CreateDirectory(newPathParent);
+			AssetDatabase.Refresh();
+		}
 		AssetDatabase.MoveAsset(currentPath, newPath);
 
 		return wasFinalised;
