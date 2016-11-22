@@ -1,0 +1,292 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 05_0006_0020
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: 046a16f2-3977-42f2-8cad-4e6550866714
+  Size: 5
+  WordCount: 20
+  MaxCharacterUsage: 5
+  Words:
+  - Length: 4
+    Forwards: GUDE
+    Backwards: EDUG
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 4
+    Forwards: HONK
+    Backwards: KNOH
+    Definition: Used to emphasize that something is very large.
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 4
+    Forwards: BRAG
+    Backwards: GARB
+    Definition: To talk too proudly about what you have done, what you own, etc.
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 3
+  - Length: 4
+    Forwards: ALTS
+    Backwards: STLA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 3
+    Forwards: TAT
+    Backwards: TAT
+    Definition: A type of lace that you make by hand, or the process of making it.
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Length: 3
+    Forwards: ENS
+    Backwards: SNE
+    Definition: Made of a particular material or substance.
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 4
+    Forwards: SUID
+    Backwards: DIUS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 3
+    Forwards: ADZ
+    Backwards: ZDA
+    Definition: A sharp tool with the blade at a right angle to the handle, used in
+      order to shape pieces of wood.
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: DAE
+    Backwards: EAD
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: HON
+    Backwards: NOH
+    Definition: A short form of honey, used to address someone you love.
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: SUI
+    Backwards: IUS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: GEN
+    Backwards: NEG
+    Definition: The written abbreviation of general.
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: ALT
+    Backwards: TLA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: RAG
+    Backwards: GAR
+    Definition: To make jokes and laugh at someone in order to embarrass him or her.
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 0
+      Y: 3
+  - Length: 3
+    Forwards: GAR
+    Backwards: RAG
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 0
+      Y: 1
+  - Length: 3
+    Forwards: AID
+    Backwards: DIA
+    Definition: A very serious disease caused by a virus that makes your body unable
+      to defend itself against infections.
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: RAN
+    Backwards: NAR
+    Definition: The past tense of run.
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 4
+    Forwards: GENS
+    Backwards: SNEG
+    Definition: The written abbreviation of general.
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: BRA
+    Backwards: ARB
+    Definition: A piece of underwear that a woman wears to support her breasts.
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 3
+    Forwards: GUD
+    Backwards: DUG
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 2
+  CharGrid:
+  - Character: 66
+    NumberOfUses: 2
+  - Character: 82
+    NumberOfUses: 5
+  - Character: 65
+    NumberOfUses: 4
+  - Character: 71
+    NumberOfUses: 5
+  - Character: 72
+    NumberOfUses: 2
+  - Character: 84
+    NumberOfUses: 1
+  - Character: 68
+    NumberOfUses: 2
+  - Character: 65
+    NumberOfUses: 3
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 79
+    NumberOfUses: 2
+  - Character: 65
+    NumberOfUses: 2
+  - Character: 73
+    NumberOfUses: 3
+  - Character: 68
+    NumberOfUses: 4
+  - Character: 78
+    NumberOfUses: 4
+  - Character: 78
+    NumberOfUses: 2
+  - Character: 84
+    NumberOfUses: 1
+  - Character: 85
+    NumberOfUses: 4
+  - Character: 90
+    NumberOfUses: 1
+  - Character: 83
+    NumberOfUses: 2
+  - Character: 75
+    NumberOfUses: 1
+  - Character: 71
+    NumberOfUses: 2
+  - Character: 83
+    NumberOfUses: 3
+  - Character: 84
+    NumberOfUses: 2
+  - Character: 76
+    NumberOfUses: 2
+  - Character: 65
+    NumberOfUses: 2

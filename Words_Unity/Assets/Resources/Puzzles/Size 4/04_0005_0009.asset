@@ -1,0 +1,152 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 04_0005_0009
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: 2f278b8a-f8e8-4f52-a4a0-c9c2e558db33
+  Size: 4
+  WordCount: 9
+  MaxCharacterUsage: 5
+  Words:
+  - Length: 3
+    Forwards: VAN
+    Backwards: NAV
+    Definition: A large box-like car that can carry a lot of people.
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 3
+    Forwards: ALE
+    Backwards: ELA
+    Definition: A type of beer with a slightly bitter taste.
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 0
+      Y: 1
+  - Length: 3
+    Forwards: FRA
+    Backwards: ARF
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: AHS
+    Backwards: SHA
+    Definition: Used in order to show your surprise, anger, pain, happiness, agreement,
+      etc.
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: TAS
+    Backwards: SAT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 2
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: PIT
+    Backwards: TIP
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: ANA
+    Backwards: ANA
+    Definition: A collection of objects, papers, etc., relating to someone or something.
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: ONS
+    Backwards: SNO
+    Definition: Touching or supported by a particular surface.
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: SAR
+    Backwards: RAS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 1
+  CharGrid:
+  - Character: 65
+    NumberOfUses: 1
+  - Character: 69
+    NumberOfUses: 1
+  - Character: 76
+    NumberOfUses: 1
+  - Character: 65
+    NumberOfUses: 2
+  - Character: 79
+    NumberOfUses: 1
+  - Character: 78
+    NumberOfUses: 3
+  - Character: 83
+    NumberOfUses: 2
+  - Character: 72
+    NumberOfUses: 1
+  - Character: 70
+    NumberOfUses: 1
+  - Character: 82
+    NumberOfUses: 2
+  - Character: 65
+    NumberOfUses: 5
+  - Character: 83
+    NumberOfUses: 2
+  - Character: 80
+    NumberOfUses: 1
+  - Character: 73
+    NumberOfUses: 1
+  - Character: 84
+    NumberOfUses: 2
+  - Character: 86
+    NumberOfUses: 1

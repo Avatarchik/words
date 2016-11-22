@@ -1,0 +1,455 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 06_0006_0032
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: 574d3792-656b-4d25-8653-b2bfa0a9280a
+  Size: 6
+  WordCount: 32
+  MaxCharacterUsage: 5
+  Words:
+  - Length: 5
+    Forwards: COMMY
+    Backwards: YMMOC
+    Definition: An insulting word for a communist.
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 4
+    Forwards: METE
+    Backwards: ETEM
+    Definition: To give someone a punishment.
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 0
+  - Length: 5
+    Forwards: HAUTE
+    Backwards: ETUAH
+    Definition: Cooking of a very high standard, especially French cooking.
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 4
+    Forwards: OWES
+    Backwards: SEWO
+    Definition: To have to pay someone for something that he or she has done for you
+      or sold to you, or to have to give someone back money that he or she has lent
+      you.
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 5
+  - Length: 5
+    Forwards: PARDY
+    Backwards: YDRAP
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 5
+    Forwards: SHUNT
+    Backwards: TNUHS
+    Definition: To move someone or something to another place, especially in a way
+      that seems unfair.
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 1
+  - Length: 5
+    Forwards: ALBEE
+    Backwards: EEBLA
+    Definition: A U.S. writer of dramatic plays.
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 4
+    Forwards: RORE
+    Backwards: EROR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 3
+    Forwards: LAY
+    Backwards: YAL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 4
+    Forwards: PARD
+    Backwards: DRAP
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: LED
+    Backwards: DEL
+    Definition: The past tense and past participle of lead.
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 4
+    Forwards: HAUT
+    Backwards: TUAH
+    Definition: Cooking of a very high standard, especially French cooking.
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 4
+    Forwards: HUNT
+    Backwards: TNUH
+    Definition: The act of chasing and killing animals for food or for sport.
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 5
+      Y: 1
+  - Length: 3
+    Forwards: YAP
+    Backwards: PAY
+    Definition: If a small dog yaps, it makes short loud sounds in an excited way.
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 3
+    Forwards: SAM
+    Backwards: MAS
+    Definition: A U.S. soldier and politician who fought to make Texas independent
+      from Mexico and was president of the Republic of Texas from 1836 until it became
+      a state of the U.S. in 1845.
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: SUM
+    Backwards: MUS
+    Definition: To give the main information contained in a report, speech, discussion,
+      etc. in a short statement at the end.
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: ORC
+    Backwards: CRO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 0
+      Y: 3
+  - Length: 3
+    Forwards: BEE
+    Backwards: EEB
+    Definition: A black and yellow flying insect with a round body that makes honey
+      and can sting you.
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 4
+    Forwards: SHUN
+    Backwards: NUHS
+    Definition: To avoid someone or something deliberately.
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 3
+    Forwards: PAR
+    Backwards: RAP
+    Definition: At the same level or standard.
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: ARD
+    Backwards: DRA
+    Definition: Someone who is usually or always in a particular state.
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: SEW
+    Backwards: WES
+    Definition: To use a needle and thread to fasten pieces of cloth together, or
+      to attach something such as a button to clothes.
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 5
+  - Length: 4
+    Forwards: ALBE
+    Backwards: EBLA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 3
+    Forwards: POT
+    Backwards: TOP
+    Definition: A potted plant grows indoors in a pot.
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: OWE
+    Backwards: EWO
+    Definition: To have to pay someone for something that he or she has done for you
+      or sold to you, or to have to give someone back money that he or she has lent
+      you.
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 5
+  - Length: 3
+    Forwards: RET
+    Backwards: TER
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: YET
+    Backwards: TEY
+    Definition: Used to introduce a statement that is surprising after what you have
+      just said.
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  - Length: 3
+    Forwards: ALB
+    Backwards: BLA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: LUM
+    Backwards: MUL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: TEE
+    Backwards: EET
+    Definition: To hit the ball off the tee in a game of golf.
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 3
+    Forwards: CAB
+    Backwards: BAC
+    Definition: A car in which you pay the driver to take you somewhere.
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: MET
+    Backwards: TEM
+    Definition: The past tense and past participle of meet.
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  CharGrid:
+  - Character: 89
+    NumberOfUses: 2
+  - Character: 65
+    NumberOfUses: 4
+  - Character: 80
+    NumberOfUses: 5
+  - Character: 67
+    NumberOfUses: 3
+  - Character: 82
+    NumberOfUses: 3
+  - Character: 79
+    NumberOfUses: 3
+  - Character: 69
+    NumberOfUses: 2
+  - Character: 76
+    NumberOfUses: 3
+  - Character: 65
+    NumberOfUses: 5
+  - Character: 79
+    NumberOfUses: 3
+  - Character: 69
+    NumberOfUses: 2
+  - Character: 87
+    NumberOfUses: 3
+  - Character: 84
+    NumberOfUses: 3
+  - Character: 66
+    NumberOfUses: 5
+  - Character: 82
+    NumberOfUses: 5
+  - Character: 77
+    NumberOfUses: 2
+  - Character: 84
+    NumberOfUses: 4
+  - Character: 69
+    NumberOfUses: 3
+  - Character: 69
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 68
+    NumberOfUses: 4
+  - Character: 77
+    NumberOfUses: 3
+  - Character: 85
+    NumberOfUses: 4
+  - Character: 83
+    NumberOfUses: 3
+  - Character: 77
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 4
+  - Character: 89
+    NumberOfUses: 1
+  - Character: 89
+    NumberOfUses: 2
+  - Character: 65
+    NumberOfUses: 4
+  - Character: 76
+    NumberOfUses: 2
+  - Character: 76
+    NumberOfUses: 1
+  - Character: 84
+    NumberOfUses: 3
+  - Character: 78
+    NumberOfUses: 3
+  - Character: 85
+    NumberOfUses: 3
+  - Character: 72
+    NumberOfUses: 5
+  - Character: 83
+    NumberOfUses: 3

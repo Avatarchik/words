@@ -1,0 +1,534 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 07_0005_0037
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: 9cd94359-650a-41c8-b306-8a43c45af191
+  Size: 7
+  WordCount: 37
+  MaxCharacterUsage: 5
+  Words:
+  - Length: 5
+    Forwards: OWNER
+    Backwards: RENWO
+    Definition: Someone who owns something.
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 6
+    Forwards: SATORI
+    Backwards: IROTAS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 6
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 6
+    Forwards: SILTED
+    Backwards: DETLIS
+    Definition: To fill or become filled with silt.
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 5
+      Y: 1
+  - Length: 4
+    Forwards: MAUN
+    Backwards: NUAM
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 6
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 6
+    Forwards: ALMOST
+    Backwards: TSOMLA
+    Definition: Only a little less than completely.
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 0
+  - Length: 6
+    Forwards: TOEING
+    Backwards: GNIEOT
+    Definition: To do what other people in a job or organization say you should do,
+      whether you agree with them or not.
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 6
+    ToPosition:
+      X: 6
+      Y: 1
+  - Length: 6
+    Forwards: RECEDE
+    Backwards: EDECER
+    Definition: If something you can see or hear recedes, it gets further and further
+      away until it disappears.
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 6
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 5
+    Forwards: DWANG
+    Backwards: GNAWD
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 6
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 5
+    Forwards: YERKS
+    Backwards: SKREY
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 0
+      Y: 1
+  - Length: 3
+    Forwards: OBS
+    Backwards: SBO
+    Definition: The part of medical science that deals with obstetrics and gynecology.
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 6
+    ToPosition:
+      X: 5
+      Y: 4
+  - Length: 3
+    Forwards: KYU
+    Backwards: UYK
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 6
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: NIS
+    Backwards: SIN
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: NED
+    Backwards: DEN
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: IRE
+    Backwards: ERI
+    Definition: Anger.
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 4
+    Forwards: YERK
+    Backwards: KREY
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 3
+    Forwards: TED
+    Backwards: DET
+    Definition: A U.S. baseball player known for his skill as a batter.
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 1
+    ToPosition:
+      X: 5
+      Y: 1
+  - Length: 4
+    Forwards: SILT
+    Backwards: TLIS
+    Definition: To fill or become filled with silt.
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 3
+    Forwards: ERK
+    Backwards: KRE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 3
+    Forwards: REN
+    Backwards: NER
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: GEE
+    Backwards: EEG
+    Definition: Used to show that you are surprised or annoyed.
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 4
+    Forwards: TIRO
+    Backwards: ORIT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: TOE
+    Backwards: EOT
+    Definition: To do what other people in a job or organization say you should do,
+      whether you agree with them or not.
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 6
+    ToPosition:
+      X: 6
+      Y: 4
+  - Length: 3
+    Forwards: RED
+    Backwards: DER
+    Definition: The color of blood.
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 3
+    ToPosition:
+      X: 5
+      Y: 1
+  - Length: 3
+    Forwards: ERS
+    Backwards: SRE
+    Definition: A sound you make when you pause to correct something you have just
+      said, or when you do not know exactly what to say.
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 2
+    ToPosition:
+      X: 5
+      Y: 4
+  - Length: 5
+    Forwards: MAUND
+    Backwards: DNUAM
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 6
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: ROT
+    Backwards: TOR
+    Definition: The natural process of decaying, or the part of something that has
+      decayed.
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 2
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 3
+    Forwards: REC
+    Backwards: CER
+    Definition: A public room, for example in a hospital, used for social activities
+      or games.
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 6
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 4
+    Forwards: ROTA
+    Backwards: ATOR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 2
+    ToPosition:
+      X: 1
+      Y: 5
+  - Length: 3
+    Forwards: WAE
+    Backwards: EAW
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 3
+    Forwards: LEG
+    Backwards: GEL
+    Definition: "Women\u2019s tight pants that stretch to fit the shape of the body,
+      and that have no zipper."
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 4
+    Forwards: MOST
+    Backwards: TSOM
+    Definition: Used before many adjectives and adverbs that have two or more syllables
+      in order to make the superlative.
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 0
+  - Length: 3
+    Forwards: ADD
+    Backwards: DDA
+    Definition: To put something with another thing or group to increase the amount,
+      size, or cost.
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: WEB
+    Backwards: BEW
+    Definition: Webbed feet or toes have skin between the toes.
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 5
+  - Length: 3
+    Forwards: TOR
+    Backwards: ROT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 6
+    ToPosition:
+      X: 4
+      Y: 6
+  - Length: 3
+    Forwards: SAT
+    Backwards: TAS
+    Definition: A written abbreviation of saturday.
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 6
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 3
+    Forwards: ORD
+    Backwards: DRO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 6
+    ToPosition:
+      X: 3
+      Y: 6
+  - Length: 4
+    Forwards: ERKS
+    Backwards: SKRE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 0
+      Y: 1
+  CharGrid:
+  - Character: 78
+    NumberOfUses: 1
+  - Character: 83
+    NumberOfUses: 4
+  - Character: 75
+    NumberOfUses: 4
+  - Character: 82
+    NumberOfUses: 4
+  - Character: 69
+    NumberOfUses: 4
+  - Character: 89
+    NumberOfUses: 2
+  - Character: 77
+    NumberOfUses: 2
+  - Character: 84
+    NumberOfUses: 3
+  - Character: 73
+    NumberOfUses: 5
+  - Character: 82
+    NumberOfUses: 4
+  - Character: 79
+    NumberOfUses: 5
+  - Character: 84
+    NumberOfUses: 4
+  - Character: 65
+    NumberOfUses: 5
+  - Character: 83
+    NumberOfUses: 2
+  - Character: 83
+    NumberOfUses: 2
+  - Character: 76
+    NumberOfUses: 2
+  - Character: 83
+    NumberOfUses: 1
+  - Character: 87
+    NumberOfUses: 2
+  - Character: 85
+    NumberOfUses: 3
+  - Character: 89
+    NumberOfUses: 1
+  - Character: 75
+    NumberOfUses: 1
+  - Character: 79
+    NumberOfUses: 2
+  - Character: 84
+    NumberOfUses: 3
+  - Character: 71
+    NumberOfUses: 2
+  - Character: 78
+    NumberOfUses: 5
+  - Character: 65
+    NumberOfUses: 2
+  - Character: 87
+    NumberOfUses: 2
+  - Character: 68
+    NumberOfUses: 2
+  - Character: 77
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 4
+  - Character: 68
+    NumberOfUses: 4
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 67
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 4
+  - Character: 82
+    NumberOfUses: 4
+  - Character: 76
+    NumberOfUses: 2
+  - Character: 68
+    NumberOfUses: 4
+  - Character: 69
+    NumberOfUses: 4
+  - Character: 82
+    NumberOfUses: 5
+  - Character: 83
+    NumberOfUses: 2
+  - Character: 66
+    NumberOfUses: 2
+  - Character: 79
+    NumberOfUses: 3
+  - Character: 65
+    NumberOfUses: 2
+  - Character: 71
+    NumberOfUses: 2
+  - Character: 78
+    NumberOfUses: 2
+  - Character: 73
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 2
+  - Character: 79
+    NumberOfUses: 2
+  - Character: 84
+    NumberOfUses: 3

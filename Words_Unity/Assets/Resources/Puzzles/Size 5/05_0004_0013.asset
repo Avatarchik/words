@@ -1,0 +1,215 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 05_0004_0013
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: 560da3a2-a428-4ab8-abaf-ed85734864f6
+  Size: 5
+  WordCount: 13
+  MaxCharacterUsage: 5
+  Words:
+  - Length: 4
+    Forwards: NAAN
+    Backwards: NAAN
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 4
+    Forwards: MIRE
+    Backwards: ERIM
+    Definition: Deep mud.
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 4
+    Forwards: GOGO
+    Backwards: OGOG
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 4
+    Forwards: PONY
+    Backwards: YNOP
+    Definition: A small horse.
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Length: 3
+    Forwards: SAY
+    Backwards: YAS
+    Definition: To use particular words to tell someone a thought, opinion, explanation,
+      etc.
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 4
+    Forwards: SINS
+    Backwards: SNIS
+    Definition: "To break God\u2019s laws."
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: ORB
+    Backwards: BRO
+    Definition: A bright ball-shaped object, especially the sun or the moon.
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: IRE
+    Backwards: ERI
+    Definition: Anger.
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: SAR
+    Backwards: RAS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: BRO
+    Backwards: ORB
+    Definition: Your brother.
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 3
+    Forwards: ANA
+    Backwards: ANA
+    Definition: A collection of objects, papers, etc., relating to someone or something.
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: INS
+    Backwards: SNI
+    Definition: Used with the name of a container, place, or area to show where someone
+      or something is.
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: SIN
+    Backwards: NIS
+    Definition: "To break God\u2019s laws."
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 4
+  CharGrid:
+  - Character: 80
+    NumberOfUses: 1
+  - Character: 71
+    NumberOfUses: 1
+  - Character: 77
+    NumberOfUses: 1
+  - Character: 83
+    NumberOfUses: 1
+  - Character: 83
+    NumberOfUses: 3
+  - Character: 79
+    NumberOfUses: 1
+  - Character: 79
+    NumberOfUses: 3
+  - Character: 73
+    NumberOfUses: 2
+  - Character: 65
+    NumberOfUses: 2
+  - Character: 73
+    NumberOfUses: 3
+  - Character: 78
+    NumberOfUses: 1
+  - Character: 71
+    NumberOfUses: 1
+  - Character: 82
+    NumberOfUses: 5
+  - Character: 89
+    NumberOfUses: 1
+  - Character: 78
+    NumberOfUses: 3
+  - Character: 89
+    NumberOfUses: 1
+  - Character: 79
+    NumberOfUses: 1
+  - Character: 69
+    NumberOfUses: 2
+  - Character: 66
+    NumberOfUses: 2
+  - Character: 83
+    NumberOfUses: 2
+  - Character: 78
+    NumberOfUses: 1
+  - Character: 65
+    NumberOfUses: 1
+  - Character: 65
+    NumberOfUses: 2
+  - Character: 78
+    NumberOfUses: 2
+  - Character: 65
+    NumberOfUses: 1
