@@ -20,27 +20,36 @@ public class ScoreManager : SingletonMonoBehaviour<ScoreManager>
 
 	public void AddScore(int scoreToAdd)
 	{
-		mTargetScore += scoreToAdd;
-		UpdateText();
+		if (scoreToAdd != 0)
+		{
+			mTargetScore += scoreToAdd;
+			UpdateText();
 
-		ScoreAdditionRef.ShowScoreAddition(scoreToAdd);
+			ScoreAdditionRef.ShowScoreAddition(scoreToAdd);
+		}
 	}
 
 	void Update()
 	{
-		if (CurrentScore < mTargetScore)
+		if (CurrentScore != mTargetScore)
 		{
 			float delta = mTargetScore - CurrentScore;
-			int scoreToAdd = (int)(delta * 0.05f);
+			int scoreChange = (int)(delta * 0.05f);
 
-			if (scoreToAdd > 0)
+			if (scoreChange > 0)
 			{
-				CurrentScore = Mathf.Clamp(CurrentScore + scoreToAdd, CurrentScore, mTargetScore);
+				CurrentScore = Mathf.Clamp(CurrentScore + scoreChange, CurrentScore, mTargetScore);
+			}
+			else if (scoreChange < 0)
+			{
+				CurrentScore = Mathf.Clamp(CurrentScore + scoreChange, mTargetScore, CurrentScore);
 			}
 			else
 			{
 				CurrentScore = mTargetScore;
 			}
+
+			CurrentScore = Mathf.Clamp(CurrentScore, 0, int.MaxValue);
 
 			UpdateText();
 		}

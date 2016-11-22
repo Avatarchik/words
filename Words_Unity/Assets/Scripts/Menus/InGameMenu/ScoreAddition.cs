@@ -4,7 +4,6 @@ using UnityEngine.UI;
 public class ScoreAddition : MonoBehaviour
 {
 	public Text TextRef;
-	public string TextFormat;
 
 	[Range(0f, 5f)]
 	public float FadeTime = 1f;
@@ -27,9 +26,11 @@ public class ScoreAddition : MonoBehaviour
 		}
 	}
 
-	public void ShowScoreAddition(int scoreAddition)
+	public void ShowScoreAddition(int scoreChange)
 	{
-		TextRef.text = string.Format(TextFormat, scoreAddition);
+		TextRef.text = (scoreChange > 0) ? "+ " : "- ";
+		TextRef.text += Mathf.Abs(scoreChange);
+
 		TextRef.color = StartColour;
 		mIsFading = true;
 		mFadeStartTime = Time.time;
