@@ -12,6 +12,7 @@ public class WordPanelFlasher : SingletonMonoBehaviour<WordPanelFlasher>
 		WrongInstance,
 	}
 
+	public bool IsEnabled = true;
 	public float FlashTime = 1f;
 	public EasingType EaseType = EasingType.Sine;
 
@@ -27,6 +28,11 @@ public class WordPanelFlasher : SingletonMonoBehaviour<WordPanelFlasher>
 
 	public void Flash(EFlashReason reason)
 	{
+		if (!IsEnabled)
+		{
+			return;
+		}
+
 		if (!mIsFlashing)
 		{
 			mIsFlashing = true;
