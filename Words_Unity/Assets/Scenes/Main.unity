@@ -4034,7 +4034,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebeffb865694c4d9460d909371e3b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FoundWordPrefab: {fileID: 114000013000020850, guid: 8f25bb489b34cc54b9758f083f4f9dab,
+  FoundWordPrefab: {fileID: 114000010090339290, guid: 8f25bb489b34cc54b9758f083f4f9dab,
     type: 2}
   TextRef: {fileID: 551711090}
   TitleFormat: '{0} Words Remaining'
@@ -8695,7 +8695,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextRef: {fileID: 1414869221}
-  TextFormat: + {0}
   FadeTime: 1.4
   StartColour: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   EndColour: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0}

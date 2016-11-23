@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class WordPanelFoundWord : MonoBehaviour
 {
 	public Rigidbody2D RigidBodyRef;
+	public Image HighlightRef;
 	public Text TextRef;
 	public string FoundWordFormat;
 	public string FoundWordsFormat;
@@ -28,7 +29,7 @@ public class WordPanelFoundWord : MonoBehaviour
 
 	public void SetAsFoundWord(string word, float fallDelay)
 	{
-		TextRef.text = word;
+		UpdateText(word);
 		mDelayedStartTime = Time.time + fallDelay;
 
 #if UNITY_EDITOR
@@ -40,17 +41,34 @@ public class WordPanelFoundWord : MonoBehaviour
 	{
 		if (wordsFound > 1)
 		{
-			TextRef.text = string.Format(FoundWordsFormat, wordsFound);
+			UpdateText(string.Format(FoundWordsFormat, wordsFound));
 		}
 		else
 		{
-			TextRef.text = FoundWordFormat;
+			UpdateText(FoundWordFormat);
 		}
 
 		mDelayedStartTime = Time.time + fallDelay;
 
+		HighlightRef.enabled = false;
+
 #if UNITY_EDITOR
 		name = TextRef.text;
 #endif // UNITY_EDITOR
+	}
+
+	private void UpdateText(string newText)
+	{
+		TextRef.text = newText;
+
+		float textWidth = TextRef.preferredWidth;
+
+		Vector2 textSizeDelta = TextRef.rectTransform.sizeDelta;
+		textSizeDelta.x = textWidth;
+		TextRef.rectTransform.sizeDelta = textSizeDelta;
+
+		Vector2 highlightSizeDelta = HighlightRef.rectTransform.sizeDelta;
+		highlightSizeDelta.x = textWidth + 64;
+		HighlightRef.rectTransform.sizeDelta = highlightSizeDelta;
 	}
 }
