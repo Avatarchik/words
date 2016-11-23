@@ -19,8 +19,9 @@ public class WordValidityResult
 {
 	public int WordsFound;
 	public int WordsAlreadyFound;
-	public bool IsWrongInstance;
 	public int TileDecrements;
+	public bool IsWrongInstance;
+	public bool WasInvalidLength;
 
 	public List<string> Words = new List<string>();
 
@@ -28,8 +29,9 @@ public class WordValidityResult
 	{
 		WordsFound = 0;
 		WordsAlreadyFound = 0;
-		IsWrongInstance = false;
 		TileDecrements = 0;
+		IsWrongInstance = false;
+		WasInvalidLength = false;
 	}
 }
 
@@ -153,6 +155,7 @@ public class WordPanel : UIMonoBehaviour
 
 		if (word.Length <= 2)
 		{
+			result.WasInvalidLength = true;
 			return result;
 		}
 

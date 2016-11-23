@@ -111,14 +111,17 @@ public class Highlighter : SingletonMonoBehaviour<Highlighter>
 		EffectsManagerRef.PlayWordValidityEffectAt(overallResult, effectStart, effectEnd);
 
 		// Add score. Possibly negative if the word wasn't a valid word
-		int score;
+		int score = 0;
 		if (result.WordsFound > 0)
 		{
 			score = result.TileDecrements * result.WordsFound * 10;
 		}
 		else
 		{
-			score = wordFromHighlightedTiles.Length * -50;
+			if (!result.WasInvalidLength)
+			{
+				score = wordFromHighlightedTiles.Length * -50;
+			}
 		}
 		ScoreManager.Instance.AddScore(score);
 
