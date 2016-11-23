@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [ScriptOrder(-50)]
-public class BackgroundPicker : MonoBehaviour
+public class BackgroundPicker : ScreenStretchedUIMonoBehaviour
 {
 	public Image ImageRef;
 	public Sprite[] Backgrounds;

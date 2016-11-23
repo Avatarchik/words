@@ -26,6 +26,9 @@ public class GlobalSettings : SingletonMonoBehaviour<GlobalSettings>
 	public Color WordAlreadyFoundColour;
 	public Color WordWrongInstanceColour;
 
+	public int DefaultPuzzleLandscapeLayout = 1;
+	public int DefaultPuzzlePortraitLayout = 0;
+
 	private void Awake()
 	{
 		PuzzleSizeMaxPlusOne = PuzzleSizeMax + 1;

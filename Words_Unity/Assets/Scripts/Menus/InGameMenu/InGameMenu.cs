@@ -4,21 +4,16 @@ public class InGameMenu : Menu, IMenu
 {
 	public Image PauseButton;
 
-	public HandedPositionPair[] HandedPositionPairs;
-
-	public void OnEnable()
+	public override void OnEnable()
 	{
-		PauseButton.gameObject.SetActive(true);
+		base.OnEnable();
 
-		int layoutOption = PlayerPrefsPlus.GetInt(PlayerPrefKeys.PuzzleLayout, 1);
-		foreach (HandedPositionPair pair in HandedPositionPairs)
-		{
-			pair.SwitchTo((HandedPosition.EHandedPositionType)layoutOption);
-		}
+		PauseButton.gameObject.SetActive(true);
 	}
 
-	public void OnDisable()
+	public override void OnDisable()
 	{
+		base.OnDisable();
 	}
 
 	public void HidePauseButton()

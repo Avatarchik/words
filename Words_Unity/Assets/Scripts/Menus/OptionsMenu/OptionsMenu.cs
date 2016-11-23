@@ -1,10 +1,12 @@
 public class OptionsMenu : Menu, IMenu
 {
-	public void OnEnable()
+	public override void OnEnable()
 	{
+		base.OnEnable();
 	}
 
-	public void OnDisable()
+	public override void OnDisable()
 	{
+		base.OnDisable();
 	}
 }

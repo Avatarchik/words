@@ -5,5 +5,6 @@ static public class PlayerPrefKeys
 
 	// Options
 	static public readonly string ColourSchemeIndex = "Option ChosenColourScheme";
-	static public readonly string PuzzleLayout = "Option PuzzleLayout";
+	static public readonly string PuzzleLandscapeLayout = "Option PuzzleLandscapeLayout";
+	static public readonly string PuzzlePortraitLayout = "Option PuzzlePortraitLayout";
 }

@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using System;
 using System.Collections;
 
-public class ScreenFade : MonoBehaviour
+public class ScreenFade : ScreenStretchedUIMonoBehaviour
 {
 	public Image ImageRef;
 

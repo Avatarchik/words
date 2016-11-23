@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 
-public class WordDefinitionViewer : MonoBehaviour
+public class WordDefinitionViewer : UIMonoBehaviour
 {
 	public GameObject ValidDefinitionButtonSetRoot;
 	public GameObject InvalidDefinitionButtonSetRoot;
@@ -28,6 +28,10 @@ public class WordDefinitionViewer : MonoBehaviour
 			TextRef.text = string.Format(DefinitionFormat, word.Forwards, NoDefinitionMessage);
 			SearchGoogleButtonRef.Initialise(word.Forwards);
 		}
+
+		Vector2 sizeDelta = rectTransform.sizeDelta;
+		sizeDelta.y = TextRef.preferredHeight;
+		rectTransform.sizeDelta = sizeDelta;
 
 		ValidDefinitionButtonSetRoot.SetActive(word.HasDefinition);
 		InvalidDefinitionButtonSetRoot.SetActive(!word.HasDefinition);

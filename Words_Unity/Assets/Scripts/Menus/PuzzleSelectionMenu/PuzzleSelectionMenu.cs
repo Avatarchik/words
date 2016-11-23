@@ -12,12 +12,15 @@ public class PuzzleSelectionMenu : Menu, IMenu
 
 	static private int sLastChosenPuzzleSize;
 
-	public void OnEnable()
+	public override void OnEnable()
 	{
+		base.OnEnable();
 	}
 
-	public void OnDisable()
+	public override void OnDisable()
 	{
+		base.OnDisable();
+
 		if (mPuzzles != null)
 		{
 			for (int puzzleIndex = 0; puzzleIndex < mPuzzles.Count; ++puzzleIndex)

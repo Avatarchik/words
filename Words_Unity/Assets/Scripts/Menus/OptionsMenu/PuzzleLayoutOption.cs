@@ -3,18 +3,40 @@ using UnityEngine.UI;
 
 public class PuzzleLayoutOption : MonoBehaviour
 {
+	public enum ePuzzleOrientation
+	{
+		Landscape = 0,
+		Portrait,
+	}
+
+	public ePuzzleOrientation Orientation;
+
 	public Image LeftHandedLayout;
 	public Image RightHandedLayout;
 
 	private Color mEnabledColour;
 	private Color mDisabledColour;
 
+	private string mPlayerPrefsKey;
+
 	void Awake()
 	{
 		mEnabledColour = GlobalSettings.Instance.UIHightlightColour;
 		mDisabledColour = GlobalSettings.Instance.UIDisabledHighlightColour;
 
-		int optionValue = PlayerPrefsPlus.GetInt(PlayerPrefKeys.PuzzleLayout, 1);
+		int defaultValue;
+		if (Orientation == ePuzzleOrientation.Landscape)
+		{
+			mPlayerPrefsKey = PlayerPrefKeys.PuzzleLandscapeLayout;
+			defaultValue = 1;
+		}
+		else
+		{
+			mPlayerPrefsKey = PlayerPrefKeys.PuzzlePortraitLayout;
+			defaultValue = 0;
+		}
+
+		int optionValue = PlayerPrefsPlus.GetInt(PlayerPrefKeys.PuzzleLandscapeLayout, defaultValue);
 		UpdateUI(optionValue);
 	}
 
@@ -28,14 +50,14 @@ public class PuzzleLayoutOption : MonoBehaviour
 	public void OnLeftHandedSelected()
 	{
 		UpdateUI(0);
-		PlayerPrefsPlus.SetInt(PlayerPrefKeys.PuzzleLayout, 0);
+		PlayerPrefsPlus.SetInt(mPlayerPrefsKey, 0);
 		PlayerPrefsPlus.Save();
 	}
 
 	public void OnRightHandedSelected()
 	{
 		UpdateUI(1);
-		PlayerPrefsPlus.SetInt(PlayerPrefKeys.PuzzleLayout, 1);
+		PlayerPrefsPlus.SetInt(mPlayerPrefsKey, 1);
 		PlayerPrefsPlus.Save();
 	}
 }

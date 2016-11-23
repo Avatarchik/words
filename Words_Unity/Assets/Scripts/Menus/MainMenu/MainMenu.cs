@@ -15,14 +15,18 @@ public class MainMenu : Menu, IMenu
 	private List<RectTransform> mPuzzleLists;
 	private List<RectTransform> mColourSchemes;
 
-	public void OnEnable()
+	public override void OnEnable()
 	{
+		base.OnEnable();
+
 		SetupPuzzleLists();
 		SetupColourSchemes();
 	}
 
-	public void OnDisable()
+	public override void OnDisable()
 	{
+		base.OnDisable();
+
 		for (int listIndex = 0; listIndex < mPuzzleLists.Count; ++listIndex)
 		{
 			Destroy(mPuzzleLists[listIndex].gameObject);
