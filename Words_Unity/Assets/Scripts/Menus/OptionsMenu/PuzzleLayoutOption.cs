@@ -28,12 +28,12 @@ public class PuzzleLayoutOption : MonoBehaviour
 		if (Orientation == ePuzzleOrientation.Landscape)
 		{
 			mPlayerPrefsKey = PlayerPrefKeys.PuzzleLandscapeLayout;
-			defaultValue = 1;
+			defaultValue = GlobalSettings.Instance.DefaultPuzzleLandscapeLayout;
 		}
 		else
 		{
 			mPlayerPrefsKey = PlayerPrefKeys.PuzzlePortraitLayout;
-			defaultValue = 0;
+			defaultValue = GlobalSettings.Instance.DefaultPuzzlePortraitLayout;
 		}
 
 		int optionValue = PlayerPrefsPlus.GetInt(PlayerPrefKeys.PuzzleLandscapeLayout, defaultValue);
@@ -55,6 +55,20 @@ public class PuzzleLayoutOption : MonoBehaviour
 	}
 
 	public void OnRightHandedSelected()
+	{
+		UpdateUI(1);
+		PlayerPrefsPlus.SetInt(mPlayerPrefsKey, 1);
+		PlayerPrefsPlus.Save();
+	}
+
+	public void OnTopHandedSelected()
+	{
+		UpdateUI(0);
+		PlayerPrefsPlus.SetInt(mPlayerPrefsKey, 0);
+		PlayerPrefsPlus.Save();
+	}
+
+	public void OnBottomHandedSelected()
 	{
 		UpdateUI(1);
 		PlayerPrefsPlus.SetInt(mPlayerPrefsKey, 1);
