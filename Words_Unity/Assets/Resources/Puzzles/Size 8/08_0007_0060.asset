@@ -21,7 +21,7 @@ MonoBehaviour:
     Forwards: ELMS
     Backwards: SMLE
     Definition: A type of large tree with broad leaves, or the wood from this tree.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 7
@@ -32,7 +32,7 @@ MonoBehaviour:
     Forwards: BRAY
     Backwards: YARB
     Definition: If a donkey brays, it makes a loud sound.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 0
@@ -43,7 +43,7 @@ MonoBehaviour:
     Forwards: IRIDIUM
     Backwards: MUIDIRI
     Definition: A rare metal that is an element and is used in medicine.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 0
@@ -109,7 +109,7 @@ MonoBehaviour:
     Forwards: RAZEE
     Backwards: EEZAR
     Definition: To completely destroy a town or building.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 0
@@ -121,7 +121,7 @@ MonoBehaviour:
     Backwards: TNED
     Definition: If you dent something, or if it dents, you hit or press it so that
       its surface is bent and marked.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 2
@@ -143,7 +143,7 @@ MonoBehaviour:
     Forwards: LAWN
     Backwards: NWAL
     Definition: An area of ground in a yard or park, that is covered with short grass.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 1
@@ -154,7 +154,7 @@ MonoBehaviour:
     Forwards: GRIP
     Backwards: PIRG
     Definition: The way you hold something tightly, or your ability to do this.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 6
@@ -166,7 +166,7 @@ MonoBehaviour:
     Backwards: EIP
     Definition: A pied bird or animal has spots of two or more different colors, usually
       black and white.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 1
@@ -199,7 +199,7 @@ MonoBehaviour:
     Forwards: PEE
     Backwards: EEP
     Definition: To pass liquid waste from your body.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 5
@@ -210,7 +210,7 @@ MonoBehaviour:
     Forwards: SEN
     Backwards: NES
     Definition: The written abbreviation of senator.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 2
@@ -244,7 +244,7 @@ MonoBehaviour:
     Backwards: GEL
     Definition: "Women\u2019s tight pants that stretch to fit the shape of the body,
       and that have no zipper."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 7
@@ -255,7 +255,7 @@ MonoBehaviour:
     Forwards: VET
     Backwards: TEV
     Definition: A veterinarian.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 3
@@ -266,7 +266,7 @@ MonoBehaviour:
     Forwards: YEA
     Backwards: AEY
     Definition: Yes.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 3
@@ -288,7 +288,7 @@ MonoBehaviour:
     Forwards: DIV
     Backwards: VID
     Definition: The written abbreviation of division.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 5
@@ -310,7 +310,7 @@ MonoBehaviour:
     Forwards: SAI
     Backwards: IAS
     Definition: A good quality that you cannot easily describe.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 6
@@ -333,7 +333,7 @@ MonoBehaviour:
     Backwards: NAP
     Definition: A round metal container used for cooking, usually with one long handle
       and sometimes a lid.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 6
@@ -345,7 +345,7 @@ MonoBehaviour:
     Backwards: DIA
     Definition: A very serious disease caused by a virus that makes your body unable
       to defend itself against infections.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 2
@@ -367,7 +367,7 @@ MonoBehaviour:
     Forwards: BRA
     Backwards: ARB
     Definition: A piece of underwear that a woman wears to support her breasts.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 0
@@ -391,7 +391,7 @@ MonoBehaviour:
     Definition: The female principle in Chinese philosophy which is inactive, dark,
       and negative, and which combines with yangthe male principle to influence everything
       in the world.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 3
@@ -402,7 +402,7 @@ MonoBehaviour:
     Forwards: TEE
     Backwards: EET
     Definition: To hit the ball off the tee in a game of golf.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 5
@@ -413,7 +413,7 @@ MonoBehaviour:
     Forwards: SITE
     Backwards: ETIS
     Definition: Be placed or built in a particular place.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 7
@@ -424,7 +424,7 @@ MonoBehaviour:
     Forwards: DAN
     Backwards: NAD
     Definition: In the Bible, the head of one of the 12 tribes of Israel.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 3
@@ -446,7 +446,7 @@ MonoBehaviour:
     Forwards: RAY
     Backwards: YAR
     Definition: A narrow beam of light from the Sun or from something such as a lamp.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 1
@@ -502,7 +502,7 @@ MonoBehaviour:
     Backwards: NWA
     Definition: A sheet of material hanging over a window, especially on a store,
       to keep off the sun or the rain.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 1
@@ -513,7 +513,7 @@ MonoBehaviour:
     Forwards: SIR
     Backwards: RIS
     Definition: Used when speaking to a man in order to be polite or to show respect.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
@@ -535,7 +535,7 @@ MonoBehaviour:
     Forwards: AIM
     Backwards: MIA
     Definition: To try or intend to achieve something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 5
@@ -546,7 +546,7 @@ MonoBehaviour:
     Forwards: RISE
     Backwards: ESIR
     Definition: To increase in number, amount, or value.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 5
@@ -557,7 +557,7 @@ MonoBehaviour:
     Forwards: LAW
     Backwards: WAL
     Definition: Allowed or officially accepted by the law.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 1
@@ -568,7 +568,7 @@ MonoBehaviour:
     Forwards: RAZE
     Backwards: EZAR
     Definition: To completely destroy a town or building.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 0
@@ -579,7 +579,7 @@ MonoBehaviour:
     Forwards: RAT
     Backwards: TAR
     Definition: An animal that looks like a large mouse with a long tail.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 5
@@ -590,7 +590,7 @@ MonoBehaviour:
     Forwards: GEL
     Backwards: LEG
     Definition: Another spelling of jell.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 7
@@ -601,7 +601,7 @@ MonoBehaviour:
     Forwards: SIT
     Backwards: TIS
     Definition: During one continuous period when you are sitting in a chair.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
@@ -612,7 +612,7 @@ MonoBehaviour:
     Forwards: RIP
     Backwards: PIR
     Definition: A long tear or cut.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 6
@@ -623,7 +623,7 @@ MonoBehaviour:
     Forwards: UNI
     Backwards: INU
     Definition: One.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 0
@@ -634,7 +634,7 @@ MonoBehaviour:
     Forwards: ELM
     Backwards: MLE
     Definition: A type of large tree with broad leaves, or the wood from this tree.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 7
@@ -645,7 +645,7 @@ MonoBehaviour:
     Forwards: COR
     Backwards: ROC
     Definition: "Used instead of con- before the letter \u201Cr\u201D."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -657,7 +657,7 @@ MonoBehaviour:
     Backwards: RIUM
     Definition: A U.S. naturalist born in Scotland who encouraged the development
       of national parks.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0
@@ -668,7 +668,7 @@ MonoBehaviour:
     Forwards: LIP
     Backwards: PIL
     Definition: With lips that are thin, round, etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 7

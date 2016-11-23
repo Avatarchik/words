@@ -32,7 +32,7 @@ MonoBehaviour:
     Forwards: OUTBIDS
     Backwards: SDIBTUO
     Definition: To offer a higher price than someone else, especially at an auction.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 1
@@ -54,7 +54,7 @@ MonoBehaviour:
     Forwards: OUTBURSTS
     Backwards: STSRUBTUO
     Definition: A sudden powerful expression of strong emotion, especially anger.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 1
@@ -66,7 +66,7 @@ MonoBehaviour:
     Backwards: DELBMUTS
     Definition: To hit your foot against something or put your foot down awkwardly
       while you are walking or running so that you almost fall.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 6
@@ -89,7 +89,7 @@ MonoBehaviour:
     Backwards: LUFTNUAV
     Definition: A vaunted achievement, plan, quality, etc. is one that people say
       is very good, important, etc., especially with too much pride.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 3
@@ -112,7 +112,7 @@ MonoBehaviour:
     Backwards: SKRA
     Definition: In the Bible, the large boat built by Noah to save his family and
       the animals from a flood that covered the Earth.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 7
@@ -124,7 +124,7 @@ MonoBehaviour:
     Backwards: LAES
     Definition: A large sea animal that has smooth fur, eats fish, and lives around
       coasts, especially in cold areas.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 9
@@ -135,7 +135,7 @@ MonoBehaviour:
     Forwards: DOLLHOUSE
     Backwards: ESUOHLLOD
     Definition: A small toy house for dolls.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 10
@@ -157,7 +157,7 @@ MonoBehaviour:
     Forwards: DISTANTLY
     Backwards: YLTNATSID
     Definition: Far away from where you are now.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 8
@@ -212,7 +212,7 @@ MonoBehaviour:
     Forwards: IDOL
     Backwards: LODI
     Definition: Someone or something that you love or admire very much.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 10
@@ -223,7 +223,7 @@ MonoBehaviour:
     Forwards: WOK
     Backwards: KOW
     Definition: A wide pan shaped like a bowl, used in Chinese cooking.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 3
@@ -235,7 +235,7 @@ MonoBehaviour:
     Backwards: AERU
     Definition: A substance containing nitrogen that is in urine yellow liquid waste
       that comes out of your body.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 9
@@ -247,7 +247,7 @@ MonoBehaviour:
     Backwards: OLIS
     Definition: A tall structure like a tower that is used for storing grain, winter
       food for farm animals, etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 1
@@ -258,7 +258,7 @@ MonoBehaviour:
     Forwards: ONS
     Backwards: SNO
     Definition: Touching or supported by a particular surface.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 1
@@ -270,7 +270,7 @@ MonoBehaviour:
     Backwards: SDUC
     Definition: Food that a cow has eaten, swallowed, and brought back into its mouth
       to chew a second time.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 10
@@ -281,7 +281,7 @@ MonoBehaviour:
     Forwards: DOLL
     Backwards: LLOD
     Definition: "A child\u2019s toy that looks like a small person or baby."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 10
@@ -314,7 +314,7 @@ MonoBehaviour:
     Forwards: USE
     Backwards: ESU
     Definition: The state of being useful.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 10
@@ -347,7 +347,7 @@ MonoBehaviour:
     Forwards: LAS
     Backwards: SAL
     Definition: A city in the desert of the U.S. state of Nevada.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 2
@@ -370,7 +370,7 @@ MonoBehaviour:
     Backwards: DUC
     Definition: Food that a cow has eaten, swallowed, and brought back into its mouth
       to chew a second time.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 10
@@ -381,7 +381,7 @@ MonoBehaviour:
     Forwards: DIB
     Backwards: BID
     Definition: The right to have, use, or do something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 6
@@ -392,7 +392,7 @@ MonoBehaviour:
     Forwards: URE
     Backwards: ERU
     Definition: Used to make nouns that show actions or results.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 9
@@ -426,7 +426,7 @@ MonoBehaviour:
     Backwards: NIB
     Definition: A large container for storing things, such as goods in a store or
       substances in a factory.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 6
@@ -437,7 +437,7 @@ MonoBehaviour:
     Forwards: SNOT
     Backwards: TONS
     Definition: The thick mucusliquid produced in your nose.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 1
@@ -459,7 +459,7 @@ MonoBehaviour:
     Forwards: ETA
     Backwards: ATE
     Definition: The seventh letter of the Greek alphabet.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 5
@@ -481,7 +481,7 @@ MonoBehaviour:
     Forwards: LIT
     Backwards: TIL
     Definition: The abbreviation of literature or literary.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 1
@@ -492,7 +492,7 @@ MonoBehaviour:
     Forwards: LAM
     Backwards: MAL
     Definition: Escaping or hiding from someone, especially the police.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 2
@@ -515,7 +515,7 @@ MonoBehaviour:
     Backwards: TAET
     Definition: "One of the small parts on a female animal\u2019s body that her babies
       suck milk from."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 6
@@ -538,7 +538,7 @@ MonoBehaviour:
     Backwards: SDI
     Definition: A document or card that shows your name, date of birth, etc., usually
       with a photograph.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 5
@@ -549,7 +549,7 @@ MonoBehaviour:
     Forwards: BID
     Backwards: DIB
     Definition: To say good morning, good afternoon, etc. to someone.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 4
@@ -560,7 +560,7 @@ MonoBehaviour:
     Forwards: RAN
     Backwards: NAR
     Definition: The past tense of run.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 4
@@ -594,7 +594,7 @@ MonoBehaviour:
     Backwards: YAN
     Definition: Used when you are adding something to emphasize what you have just
       said.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 9
@@ -606,7 +606,7 @@ MonoBehaviour:
     Backwards: OAT
     Definition: The natural force that unites all things in the universe, according
       to Taoism.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 3
@@ -618,7 +618,7 @@ MonoBehaviour:
     Backwards: KRA
     Definition: In the Bible, the large boat built by Noah to save his family and
       the animals from a flood that covered the Earth.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 7
@@ -629,7 +629,7 @@ MonoBehaviour:
     Forwards: SAI
     Backwards: IAS
     Definition: A good quality that you cannot easily describe.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 6
@@ -651,7 +651,7 @@ MonoBehaviour:
     Forwards: UTS
     Backwards: STU
     Definition: The written abbreviation of utah.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 6
@@ -662,7 +662,7 @@ MonoBehaviour:
     Forwards: SOB
     Backwards: BOS
     Definition: To cry loudly while breathing in short sudden bursts.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 4
@@ -707,7 +707,7 @@ MonoBehaviour:
     Backwards: RYTAS
     Definition: A creature in ancient Greek literature who was half human and half
       goat and represented pleasure and enjoyment.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 7
@@ -720,7 +720,7 @@ MonoBehaviour:
     Definition: To have to pay someone for something that he or she has done for you
       or sold to you, or to have to give someone back money that he or she has lent
       you.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 4
@@ -731,7 +731,7 @@ MonoBehaviour:
     Forwards: AIM
     Backwards: MIA
     Definition: To try or intend to achieve something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 4
@@ -742,7 +742,7 @@ MonoBehaviour:
     Forwards: KEA
     Backwards: AEK
     Definition: A mountain on the island of Hawaii that is an active volcano.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 5
@@ -764,7 +764,7 @@ MonoBehaviour:
     Forwards: NUT
     Backwards: TUN
     Definition: Crazy.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 3
@@ -808,7 +808,7 @@ MonoBehaviour:
     Forwards: OUS
     Backwards: SUO
     Definition: Having a particular quality.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 10
@@ -841,7 +841,7 @@ MonoBehaviour:
     Forwards: AIR
     Backwards: RIA
     Definition: The mixture of gases surrounding the Earth, that we breathe.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 7
@@ -853,7 +853,7 @@ MonoBehaviour:
     Backwards: NRU
     Definition: A decorated container, especially one that is used for holding the
       ashes of a dead body.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 6
@@ -864,7 +864,7 @@ MonoBehaviour:
     Forwards: SEA
     Backwards: AES
     Definition: A large area of salty water that is mostly enclosed by land.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 9
@@ -941,7 +941,7 @@ MonoBehaviour:
     Forwards: LOUT
     Backwards: TUOL
     Definition: A man who is very impolite or offensive.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 0
@@ -975,7 +975,7 @@ MonoBehaviour:
     Backwards: TSE
     Definition: The written abbreviation of established used after the names of a
       business to show when it was started.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 9
@@ -986,7 +986,7 @@ MonoBehaviour:
     Forwards: REAP
     Backwards: PAER
     Definition: To get something as a result of what you have done.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 9
@@ -997,7 +997,7 @@ MonoBehaviour:
     Forwards: LAT
     Backwards: TAL
     Definition: The written abbreviation of latitude.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 10
@@ -1008,7 +1008,7 @@ MonoBehaviour:
     Forwards: BUR
     Backwards: RUB
     Definition: A burly man is big and strong.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 4
@@ -1031,7 +1031,7 @@ MonoBehaviour:
     Backwards: ILOS
     Definition: The right to be a citizen of a particular country if you were born
       in that country.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 1
@@ -1042,7 +1042,7 @@ MonoBehaviour:
     Forwards: HEN
     Backwards: NEH
     Definition: An adult female chicken.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 5
@@ -1054,7 +1054,7 @@ MonoBehaviour:
     Backwards: OBO
     Definition: A wooden musical instrument, shaped like a narrow tube, which you
       play by blowing air through a reed.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 4
@@ -1066,7 +1066,7 @@ MonoBehaviour:
     Backwards: SOBO
     Definition: A wooden musical instrument, shaped like a narrow tube, which you
       play by blowing air through a reed.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 4
@@ -1077,7 +1077,7 @@ MonoBehaviour:
     Forwards: MAL
     Backwards: LAM
     Definition: Bad or badly.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 0
@@ -1088,7 +1088,7 @@ MonoBehaviour:
     Forwards: MUD
     Backwards: DUM
     Definition: Wet earth that has become soft and sticky.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
@@ -1099,7 +1099,7 @@ MonoBehaviour:
     Forwards: PRE
     Backwards: ERP
     Definition: Before a particular event or period of time.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 0
@@ -1121,7 +1121,7 @@ MonoBehaviour:
     Forwards: OUT
     Backwards: TUO
     Definition: From inside to the outside of something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 1
@@ -1132,7 +1132,7 @@ MonoBehaviour:
     Forwards: MICRO
     Backwards: ORCIM
     Definition: Extremely small compared with others of the same type.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -1154,7 +1154,7 @@ MonoBehaviour:
     Forwards: HOUSE
     Backwards: ESUOH
     Definition: A large number of people or things in your house.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 10
@@ -1165,7 +1165,7 @@ MonoBehaviour:
     Forwards: MICROS
     Backwards: SORCIM
     Definition: Extremely small compared with others of the same type.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0

@@ -33,7 +33,7 @@ MonoBehaviour:
     Backwards: POTDRAH
     Definition: "A car\u2019s metal roof, which cannot be removed, or a car with this
       type of roof."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 1
@@ -89,7 +89,7 @@ MonoBehaviour:
     Backwards: EMALFNI
     Definition: An inflamed part of your body is red and swollen, because it is hurt
       or infected.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 0
@@ -111,7 +111,7 @@ MonoBehaviour:
     Forwards: BEMUSE
     Backwards: ESUMEB
     Definition: Someone who is bemused is slightly confused.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 2
@@ -145,7 +145,7 @@ MonoBehaviour:
     Backwards: SPOHC
     Definition: A small flat piece of meat on a bone, usually cut from a sheep or
       pig.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 6
@@ -156,7 +156,7 @@ MonoBehaviour:
     Forwards: GELID
     Backwards: DILEG
     Definition: Very cold.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 4
@@ -189,7 +189,7 @@ MonoBehaviour:
     Forwards: SEA
     Backwards: AES
     Definition: A large area of salty water that is mostly enclosed by land.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 7
@@ -211,7 +211,7 @@ MonoBehaviour:
     Forwards: SIN
     Backwards: NIS
     Definition: "To break God\u2019s laws."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -222,7 +222,7 @@ MonoBehaviour:
     Forwards: SUD
     Backwards: DUS
     Definition: The bubbles formed on the top of water with soap in it.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 6
@@ -245,7 +245,7 @@ MonoBehaviour:
     Backwards: YTS
     Definition: An infected place on the edge of your eyelid, which becomes red and
       swollen.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 6
@@ -256,7 +256,7 @@ MonoBehaviour:
     Forwards: GOSH
     Backwards: HSOG
     Definition: Used to express surprise.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 7
@@ -268,7 +268,7 @@ MonoBehaviour:
     Backwards: TIT
     Definition: Something bad that you do to someone because he or she has done something
       bad to you.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 5
@@ -280,7 +280,7 @@ MonoBehaviour:
     Backwards: TUP
     Definition: To move something to a particular place or position, especially using
       your hands.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 1
@@ -303,7 +303,7 @@ MonoBehaviour:
     Backwards: POM
     Definition: A thing used for washing floors, made of a long stick with threads
       of thick string or a sponge fastened to one end.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 5
@@ -336,7 +336,7 @@ MonoBehaviour:
     Forwards: SIC
     Backwards: CIS
     Definition: Used to tell a dog to attack someone.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 8
@@ -348,7 +348,7 @@ MonoBehaviour:
     Backwards: LLUP
     Definition: To use your hands to make someone or something move toward you or
       in the direction of your hand.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 1
@@ -360,7 +360,7 @@ MonoBehaviour:
     Backwards: SPOH
     Definition: To move by jumping on one foot or by making short quick jumps on both
       feet.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 6
@@ -371,7 +371,7 @@ MonoBehaviour:
     Forwards: NOS
     Backwards: SON
     Definition: The written abbreviation ofnumbers.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 8
@@ -393,7 +393,7 @@ MonoBehaviour:
     Forwards: MAT
     Backwards: TAM
     Definition: Another spelling of matte.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 8
@@ -416,7 +416,7 @@ MonoBehaviour:
     Backwards: SNI
     Definition: Used with the name of a container, place, or area to show where someone
       or something is.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 1
@@ -438,7 +438,7 @@ MonoBehaviour:
     Forwards: LIE
     Backwards: EIL
     Definition: To deliberately tell someone something that is not true.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 4
@@ -471,7 +471,7 @@ MonoBehaviour:
     Forwards: FLAME
     Backwards: EMALF
     Definition: To become or be bright red or orange.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 0
@@ -493,7 +493,7 @@ MonoBehaviour:
     Forwards: SEN
     Backwards: NES
     Definition: The written abbreviation of senator.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 8
@@ -504,7 +504,7 @@ MonoBehaviour:
     Forwards: ACE
     Backwards: ECA
     Definition: To do very well on a test, a piece of written work, etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 2
@@ -516,7 +516,7 @@ MonoBehaviour:
     Backwards: MHO
     Definition: A unit of electrical resistance, used to measure how easily an electric
       current flows through a material.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 5
@@ -538,7 +538,7 @@ MonoBehaviour:
     Forwards: LIST
     Backwards: TSIL
     Definition: To write a list, or mention things one after the other.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 0
@@ -550,7 +550,7 @@ MonoBehaviour:
     Backwards: TSIM
     Definition: To cover something with very small drops of liquid in order to keep
       it wet.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 8
@@ -562,7 +562,7 @@ MonoBehaviour:
     Backwards: NIP
     Definition: To fasten something somewhere, or to join two things together, using
       a pin.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 1
@@ -574,7 +574,7 @@ MonoBehaviour:
     Backwards: NUTS
     Definition: To surprise or upset someone so much that he or she does not react
       immediately.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 8
@@ -585,7 +585,7 @@ MonoBehaviour:
     Forwards: UTS
     Backwards: STU
     Definition: The written abbreviation of utah.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 8
@@ -596,7 +596,7 @@ MonoBehaviour:
     Forwards: USE
     Backwards: ESU
     Definition: The state of being useful.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 2
@@ -609,7 +609,7 @@ MonoBehaviour:
     Definition: A wheel with small parts shaped like teeth sticking out around the
       edge, which fit together with the teeth of another wheel as they turn around
       in a machine.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 6
@@ -620,7 +620,7 @@ MonoBehaviour:
     Forwards: NUT
     Backwards: TUN
     Definition: Crazy.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 5
@@ -633,7 +633,7 @@ MonoBehaviour:
     Definition: "An artist\u2019s, musician\u2019s, etc. muse is the force or person
       that makes him or her want to write, paint, or make music, and helps him or
       her to have good ideas."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 2
@@ -645,7 +645,7 @@ MonoBehaviour:
     Backwards: SKOOB
     Definition: An arrangement in which a hotel, theater, airline, etc. agrees to
       let you use a particular room, seat, etc. at a particular time in the future.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 2
@@ -667,7 +667,7 @@ MonoBehaviour:
     Forwards: CEIL
     Backwards: LIEC
     Definition: The inner surface of the top part of a room.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 1
@@ -692,7 +692,7 @@ MonoBehaviour:
       the west coast of South America that happens every three to eight years, leading
       to severe changes in the weather in many parts of the world, especially to countries
       in or near the Pacific Ocean.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 4
@@ -703,7 +703,7 @@ MonoBehaviour:
     Forwards: POSE
     Backwards: ESOP
     Definition: To exist in a way that may cause a problem, danger, difficulty, etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 7
@@ -714,7 +714,7 @@ MonoBehaviour:
     Forwards: COP
     Backwards: POC
     Definition: A police officer.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 1
@@ -725,7 +725,7 @@ MonoBehaviour:
     Forwards: LAME
     Backwards: EMAL
     Definition: Unable to walk well because your leg or foot is injured or weak.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 0
@@ -747,7 +747,7 @@ MonoBehaviour:
     Forwards: IMP
     Backwards: PMI
     Definition: A child who behaves badly, but in a way that is funny.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 3
@@ -758,7 +758,7 @@ MonoBehaviour:
     Forwards: MIS
     Backwards: SIM
     Definition: Bad or badly.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 8
@@ -769,7 +769,7 @@ MonoBehaviour:
     Forwards: MAL
     Backwards: LAM
     Definition: Bad or badly.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 0
@@ -781,7 +781,7 @@ MonoBehaviour:
     Backwards: PMUH
     Definition: A large round shape that rises above the surface of the ground or
       a surface.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 4
@@ -804,7 +804,7 @@ MonoBehaviour:
     Backwards: GEL
     Definition: "Women\u2019s tight pants that stretch to fit the shape of the body,
       and that have no zipper."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 4
@@ -815,7 +815,7 @@ MonoBehaviour:
     Forwards: EGOS
     Backwards: SOGE
     Definition: The opinion that you have about yourself.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 8
@@ -826,7 +826,7 @@ MonoBehaviour:
     Forwards: UNI
     Backwards: INU
     Definition: One.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 5
@@ -859,7 +859,7 @@ MonoBehaviour:
     Forwards: OPT
     Backwards: TPO
     Definition: To choose one thing or one course of action instead of another.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 7
@@ -871,7 +871,7 @@ MonoBehaviour:
     Backwards: OOB
     Definition: "To shout \u201Cboo\u201D to show that you do not like a person, performance,
       idea, etc."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 2
@@ -883,7 +883,7 @@ MonoBehaviour:
     Backwards: KOOB
     Definition: An arrangement in which a hotel, theater, airline, etc. agrees to
       let you use a particular room, seat, etc. at a particular time in the future.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 2
@@ -895,7 +895,7 @@ MonoBehaviour:
     Backwards: STI
     Definition: Belonging or relating to a thing, situation, person, or idea that
       has been mentioned or is known about.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 5

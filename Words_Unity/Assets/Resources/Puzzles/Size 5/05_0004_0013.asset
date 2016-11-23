@@ -32,7 +32,7 @@ MonoBehaviour:
     Forwards: MIRE
     Backwards: ERIM
     Definition: Deep mud.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 2
@@ -54,7 +54,7 @@ MonoBehaviour:
     Forwards: PONY
     Backwards: YNOP
     Definition: A small horse.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -66,7 +66,7 @@ MonoBehaviour:
     Backwards: YAS
     Definition: To use particular words to tell someone a thought, opinion, explanation,
       etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
@@ -77,7 +77,7 @@ MonoBehaviour:
     Forwards: SINS
     Backwards: SNIS
     Definition: "To break God\u2019s laws."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 4
@@ -88,7 +88,7 @@ MonoBehaviour:
     Forwards: ORB
     Backwards: BRO
     Definition: A bright ball-shaped object, especially the sun or the moon.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 1
@@ -99,7 +99,7 @@ MonoBehaviour:
     Forwards: IRE
     Backwards: ERI
     Definition: Anger.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 2
@@ -121,7 +121,7 @@ MonoBehaviour:
     Forwards: BRO
     Backwards: ORB
     Definition: Your brother.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 3
@@ -132,7 +132,7 @@ MonoBehaviour:
     Forwards: ANA
     Backwards: ANA
     Definition: A collection of objects, papers, etc., relating to someone or something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 4
@@ -144,7 +144,7 @@ MonoBehaviour:
     Backwards: SNI
     Definition: Used with the name of a container, place, or area to show where someone
       or something is.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 4
@@ -155,7 +155,7 @@ MonoBehaviour:
     Forwards: SIN
     Backwards: NIS
     Definition: "To break God\u2019s laws."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 4

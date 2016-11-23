@@ -21,7 +21,7 @@ MonoBehaviour:
     Forwards: WIDEN
     Backwards: NEDIW
     Definition: To become wider, or to make something wider.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0
@@ -55,7 +55,7 @@ MonoBehaviour:
     Backwards: NIP
     Definition: To fasten something somewhere, or to join two things together, using
       a pin.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 0
@@ -66,7 +66,7 @@ MonoBehaviour:
     Forwards: SAP
     Backwards: PAS
     Definition: To gradually take away something such as strength or energy.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 0
@@ -77,7 +77,7 @@ MonoBehaviour:
     Forwards: FOAL
     Backwards: LAOF
     Definition: To give birth to a foal.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 5
@@ -100,7 +100,7 @@ MonoBehaviour:
     Backwards: SDDA
     Definition: To put something with another thing or group to increase the amount,
       size, or cost.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 0
@@ -111,7 +111,7 @@ MonoBehaviour:
     Forwards: GUN
     Backwards: NUG
     Definition: To make a car go very fast by pressing the accelerator very hard.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 4
@@ -144,7 +144,7 @@ MonoBehaviour:
     Forwards: SEN
     Backwards: NES
     Definition: The written abbreviation of senator.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 3
@@ -155,7 +155,7 @@ MonoBehaviour:
     Forwards: PRE
     Backwards: ERP
     Definition: Before a particular event or period of time.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -167,7 +167,7 @@ MonoBehaviour:
     Backwards: YHS
     Definition: Nervous and embarrassed about talking to other people, especially
       people you do not know.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 3
@@ -179,7 +179,7 @@ MonoBehaviour:
     Backwards: EDIW
     Definition: "Used with nouns that are places or organizations to mean \u201Caffecting
       all the people in that place or organization\u201D."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0
@@ -190,7 +190,7 @@ MonoBehaviour:
     Forwards: USE
     Backwards: ESU
     Definition: The state of being useful.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 3
@@ -201,7 +201,7 @@ MonoBehaviour:
     Forwards: SOD
     Backwards: DOS
     Definition: A piece of dirt with grass growing on top of it.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 0
@@ -212,7 +212,7 @@ MonoBehaviour:
     Forwards: PAS
     Backwards: SAP
     Definition: An embarrassing mistake in a social situation.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -223,7 +223,7 @@ MonoBehaviour:
     Forwards: PREY
     Backwards: YERP
     Definition: To try to influence, deceive, or harm weaker people.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -234,7 +234,7 @@ MonoBehaviour:
     Forwards: SOAP
     Backwards: PAOS
     Definition: The substance that you use to wash your body or other things.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 0
@@ -245,7 +245,7 @@ MonoBehaviour:
     Forwards: UNI
     Backwards: INU
     Definition: One.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 3
@@ -257,7 +257,7 @@ MonoBehaviour:
     Backwards: GUH
     Definition: To put your arms around someone and hold him or her tightly to show
       love or friendship.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 2
@@ -281,7 +281,7 @@ MonoBehaviour:
     Definition: A short piece of wood, metal, etc. that fits into a hole or is fastened
       to a wall, used especially for hanging things on, or instead of nails for fastening
       things together.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 2
@@ -292,7 +292,7 @@ MonoBehaviour:
     Forwards: RYE
     Backwards: EYR
     Definition: A type of grain that is used for making bread and whiskey.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 4
@@ -303,7 +303,7 @@ MonoBehaviour:
     Forwards: LUSH
     Backwards: HSUL
     Definition: Plants that are lush grow many leaves and look healthy and strong.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 5
@@ -315,7 +315,7 @@ MonoBehaviour:
     Backwards: YRW
     Definition: Showing that you know a situation is bad but that you also think it
       is slightly amusing.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 5

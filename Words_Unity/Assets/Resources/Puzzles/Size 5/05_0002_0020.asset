@@ -33,7 +33,7 @@ MonoBehaviour:
     Backwards: TSIW
     Definition: Feeling a little sad, especially because you are thinking of something
       that you would like but cannot have.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -56,7 +56,7 @@ MonoBehaviour:
     Backwards: ERAC
     Definition: Trying very hard to avoid causing something bad to happen, such as
       damaging or losing something or getting hurt.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 0
@@ -67,7 +67,7 @@ MonoBehaviour:
     Forwards: AIRS
     Backwards: SRIA
     Definition: The mixture of gases surrounding the Earth, that we breathe.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 4
@@ -90,7 +90,7 @@ MonoBehaviour:
     Backwards: RUOP
     Definition: To make a liquid or a substance such as salt or sand flow out of or
       into something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 0
@@ -101,7 +101,7 @@ MonoBehaviour:
     Forwards: MAKE
     Backwards: EKAM
     Definition: A particular type of product, made by one company.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 4
@@ -113,7 +113,7 @@ MonoBehaviour:
     Backwards: RAC
     Definition: A vehicle with four wheels and an engine, that you use to travel from
       one place to another.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 0
@@ -146,7 +146,7 @@ MonoBehaviour:
     Forwards: ARE
     Backwards: ERA
     Definition: "The present tense plural form of \u201Cbe\u201D."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 1
@@ -157,7 +157,7 @@ MonoBehaviour:
     Forwards: GNU
     Backwards: UNG
     Definition: A wildebeest.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 4
@@ -169,7 +169,7 @@ MonoBehaviour:
     Backwards: RRE
     Definition: To be more careful, safe, etc. than is necessary rather than risk
       making a mistake.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 4
@@ -192,7 +192,7 @@ MonoBehaviour:
     Backwards: RUO
     Definition: The thing or things belonging or relating to the person who is speaking
       and one or more other people.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 1
@@ -203,7 +203,7 @@ MonoBehaviour:
     Forwards: SUN
     Backwards: NUS
     Definition: To sit or lie outside while the sun is shining.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 1
@@ -225,7 +225,7 @@ MonoBehaviour:
     Forwards: AIR
     Backwards: RIA
     Definition: The mixture of gases surrounding the Earth, that we breathe.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 4
@@ -237,7 +237,7 @@ MonoBehaviour:
     Backwards: ARE
     Definition: A period of time that is associated with particular events or qualities,
       or that begins with a particular date or event.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 3

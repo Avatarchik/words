@@ -99,7 +99,7 @@ MonoBehaviour:
     Backwards: STATSORDYH
     Definition: A supporting structure inside the bodies of creatures such as jellyfish
       and worms, that consists of an enclosed space filled with liquid.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 10
@@ -110,7 +110,7 @@ MonoBehaviour:
     Forwards: CONQUEST
     Backwards: TSEUQNOC
     Definition: The act of defeating an army or taking land by fighting.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 2
@@ -143,7 +143,7 @@ MonoBehaviour:
     Forwards: HELD
     Backwards: DLEH
     Definition: The past tense and past participle of hold.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 8
@@ -154,7 +154,7 @@ MonoBehaviour:
     Forwards: RIDINGS
     Backwards: SGNIDIR
     Definition: To sit on a bicycle or motorcycle and make it move along.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 0
@@ -165,7 +165,7 @@ MonoBehaviour:
     Forwards: HYPO
     Backwards: OPYH
     Definition: Under or below something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 2
@@ -176,7 +176,7 @@ MonoBehaviour:
     Forwards: MUST
     Backwards: TSUM
     Definition: Something that you must do or must have.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 5
@@ -187,7 +187,7 @@ MonoBehaviour:
     Forwards: BED
     Backwards: DEB
     Definition: Sheets, covers, etc. that you put on a bed.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 3
@@ -209,7 +209,7 @@ MonoBehaviour:
     Forwards: MID
     Backwards: DIM
     Definition: In the middle of something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 2
@@ -220,7 +220,7 @@ MonoBehaviour:
     Forwards: DISS
     Backwards: SSID
     Definition: Another spelling of dis.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 9
@@ -231,7 +231,7 @@ MonoBehaviour:
     Forwards: BOOR
     Backwards: ROOB
     Definition: A man who behaves in a very rude way.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 5
@@ -243,7 +243,7 @@ MonoBehaviour:
     Backwards: SCER
     Definition: A public room, for example in a hospital, used for social activities
       or games.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 5
@@ -254,7 +254,7 @@ MonoBehaviour:
     Forwards: ULNA
     Backwards: ANLU
     Definition: The inner bone of your lower arm, on the side opposite to your thumb.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 6
@@ -266,7 +266,7 @@ MonoBehaviour:
     Backwards: PIH
     Definition: One of the two parts on each side of your body between the top of
       your leg and your waist.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 10
@@ -277,7 +277,7 @@ MonoBehaviour:
     Forwards: RARE
     Backwards: ERAR
     Definition: Not seen or found very often, or not happening very often.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 8
@@ -310,7 +310,7 @@ MonoBehaviour:
     Forwards: SEE
     Backwards: EES
     Definition: An area governed by a bishop.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 7
@@ -321,7 +321,7 @@ MonoBehaviour:
     Forwards: GOD
     Backwards: DOG
     Definition: Obeying God and leading a good life.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 7
@@ -332,7 +332,7 @@ MonoBehaviour:
     Forwards: MUSTS
     Backwards: STSUM
     Definition: Something that you must do or must have.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 5
@@ -354,7 +354,7 @@ MonoBehaviour:
     Forwards: QUEST
     Backwards: TSEUQ
     Definition: A long search for something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 5
@@ -377,7 +377,7 @@ MonoBehaviour:
     Backwards: STI
     Definition: Belonging or relating to a thing, situation, person, or idea that
       has been mentioned or is known about.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 0
@@ -388,7 +388,7 @@ MonoBehaviour:
     Forwards: COD
     Backwards: DOC
     Definition: A large ocean fish that lives in the North Atlantic.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 3
@@ -399,7 +399,7 @@ MonoBehaviour:
     Forwards: HUM
     Backwards: MUH
     Definition: A low continuous sound.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -411,7 +411,7 @@ MonoBehaviour:
     Backwards: ERAD
     Definition: Involving danger, or willing to do something that is dangerous or
       that involves a lot of risk.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 6
@@ -422,7 +422,7 @@ MonoBehaviour:
     Forwards: LAM
     Backwards: MAL
     Definition: Escaping or hiding from someone, especially the police.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 6
@@ -433,7 +433,7 @@ MonoBehaviour:
     Forwards: ROBE
     Backwards: EBOR
     Definition: A long loose piece of clothing, especially one worn for official ceremonies.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 7
@@ -444,7 +444,7 @@ MonoBehaviour:
     Forwards: TED
     Backwards: DET
     Definition: A U.S. baseball player known for his skill as a batter.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
@@ -456,7 +456,7 @@ MonoBehaviour:
     Backwards: GOD
     Definition: A very common animal with four legs that is often kept as a pet or
       used for guarding buildings.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 5
@@ -467,7 +467,7 @@ MonoBehaviour:
     Forwards: ISH
     Backwards: HSI
     Definition: The people or language of a particular country or place.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0
@@ -478,7 +478,7 @@ MonoBehaviour:
     Forwards: MAL
     Backwards: LAM
     Definition: Bad or badly.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 4
@@ -489,7 +489,7 @@ MonoBehaviour:
     Forwards: LISTS
     Backwards: STSIL
     Definition: To write a list, or mention things one after the other.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 5
@@ -501,7 +501,7 @@ MonoBehaviour:
     Backwards: SRE
     Definition: A sound you make when you pause to correct something you have just
       said, or when you do not know exactly what to say.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 7
@@ -513,7 +513,7 @@ MonoBehaviour:
     Backwards: LETRAC
     Definition: A group of companies who agree to sell something they produce for
       a particular price in order to limit competition and increase their own profits.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 0
@@ -524,7 +524,7 @@ MonoBehaviour:
     Forwards: ETA
     Backwards: ATE
     Definition: The seventh letter of the Greek alphabet.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 2
@@ -557,7 +557,7 @@ MonoBehaviour:
     Forwards: GOB
     Backwards: BOG
     Definition: A mass of something wet and sticky.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 3
@@ -568,7 +568,7 @@ MonoBehaviour:
     Forwards: ART
     Backwards: TRA
     Definition: Showing or resulting from a lot of skill and artistic ability.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 1
@@ -602,7 +602,7 @@ MonoBehaviour:
     Backwards: RAM
     Definition: "The small red planet that is fourth in order from the Sun and is
       the first planet outside Earth\u2019s orbit."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 4
@@ -625,7 +625,7 @@ MonoBehaviour:
     Backwards: IAT
     Definition: A Chinese form of physical exercise that trains your mind and body
       in balance and control.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
@@ -636,7 +636,7 @@ MonoBehaviour:
     Forwards: DIM
     Backwards: MID
     Definition: Fairly dark or not giving much light so that you cannot see well.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 2
@@ -648,7 +648,7 @@ MonoBehaviour:
     Backwards: TSEP
     Definition: A small animal or insect that harms people or destroys things, especially
       crops or food supplies.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 4
@@ -670,7 +670,7 @@ MonoBehaviour:
     Forwards: ARD
     Backwards: DRA
     Definition: Someone who is usually or always in a particular state.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 3
@@ -681,7 +681,7 @@ MonoBehaviour:
     Forwards: TAD
     Backwards: DAT
     Definition: A small amount, or to a small degree.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 1
@@ -692,7 +692,7 @@ MonoBehaviour:
     Forwards: ASS
     Backwards: SSA
     Definition: The part of your body that you sit on.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 3
@@ -703,7 +703,7 @@ MonoBehaviour:
     Forwards: CON
     Backwards: NOC
     Definition: "A trick to get someone\u2019s money or make him or her do something."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 2
@@ -714,7 +714,7 @@ MonoBehaviour:
     Forwards: DYE
     Backwards: EYD
     Definition: A substance you use to change the color of your clothes, hair, etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 2
@@ -725,7 +725,7 @@ MonoBehaviour:
     Forwards: RIDING
     Backwards: GNIDIR
     Definition: To sit on a bicycle or motorcycle and make it move along.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 0
@@ -736,7 +736,7 @@ MonoBehaviour:
     Forwards: TAT
     Backwards: TAT
     Definition: A type of lace that you make by hand, or the process of making it.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 10
@@ -758,7 +758,7 @@ MonoBehaviour:
     Forwards: LUMP
     Backwards: PMUL
     Definition: A small piece of something solid, that does not have a definite shape.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 7
@@ -769,7 +769,7 @@ MonoBehaviour:
     Forwards: HYDROS
     Backwards: SORDYH
     Definition: Relating to water, or using water.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 10
@@ -780,7 +780,7 @@ MonoBehaviour:
     Forwards: LAT
     Backwards: TAL
     Definition: The written abbreviation of latitude.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 4
@@ -803,7 +803,7 @@ MonoBehaviour:
     Backwards: MULP
     Definition: A small round juicy fruit that is purple, red, or yellow and has a
       single large seed, or the tree that produces this fruit.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 8
@@ -826,7 +826,7 @@ MonoBehaviour:
     Backwards: CER
     Definition: A public room, for example in a hospital, used for social activities
       or games.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 5
@@ -859,7 +859,7 @@ MonoBehaviour:
     Forwards: DING
     Backwards: GNID
     Definition: To damage something slightly by hitting it.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 0
@@ -871,7 +871,7 @@ MonoBehaviour:
     Backwards: DAS
     Definition: Not happy, especially because something bad has happened to you or
       someone else.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 0
@@ -883,7 +883,7 @@ MonoBehaviour:
     Backwards: GIR
     Definition: To arrange or influence an election, competition, etc. in a dishonest
       way, so that you get the result that you want.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 5
@@ -894,7 +894,7 @@ MonoBehaviour:
     Forwards: RAM
     Backwards: MAR
     Definition: To run or drive into something very hard.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 8
@@ -916,7 +916,7 @@ MonoBehaviour:
     Forwards: ARM
     Backwards: MRA
     Definition: Carrying weapons, especially a gun.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 4
@@ -939,7 +939,7 @@ MonoBehaviour:
     Backwards: MUS
     Definition: To give the main information contained in a report, speech, discussion,
       etc. in a short statement at the end.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 7
@@ -950,7 +950,7 @@ MonoBehaviour:
     Forwards: ARE
     Backwards: ERA
     Definition: "The present tense plural form of \u201Cbe\u201D."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 8
@@ -1005,7 +1005,7 @@ MonoBehaviour:
     Forwards: SOL
     Backwards: LOS
     Definition: So5.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 6
@@ -1016,7 +1016,7 @@ MonoBehaviour:
     Forwards: ORB
     Backwards: BRO
     Definition: A bright ball-shaped object, especially the sun or the moon.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 5
@@ -1028,7 +1028,7 @@ MonoBehaviour:
     Backwards: SOL
     Definition: A town in the U.S. state of New Mexico where the first atom bomb and
       hydrogen bomb were developed.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 6
@@ -1040,7 +1040,7 @@ MonoBehaviour:
     Backwards: LIO
     Definition: A smooth thick mineral liquid that is burned to produce heat, or used
       to make machines run easily.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 3
@@ -1073,7 +1073,7 @@ MonoBehaviour:
     Forwards: DIMS
     Backwards: SMID
     Definition: Fairly dark or not giving much light so that you cannot see well.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 6
@@ -1085,7 +1085,7 @@ MonoBehaviour:
     Backwards: GAG
     Definition: To feel sick in a way that makes you feel as though you might vomitbring
       food from your stomach back through your mouth.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 7
@@ -1097,7 +1097,7 @@ MonoBehaviour:
     Backwards: TATSORDYH
     Definition: A supporting structure inside the bodies of creatures such as jellyfish
       and worms, that consists of an enclosed space filled with liquid.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 10
@@ -1108,7 +1108,7 @@ MonoBehaviour:
     Forwards: TATS
     Backwards: STAT
     Definition: A type of lace that you make by hand, or the process of making it.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 10
@@ -1131,7 +1131,7 @@ MonoBehaviour:
     Backwards: PMULP
     Definition: To make cushions, pillows, etc. softer and rounder by shaking or hitting
       them.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 8
@@ -1142,7 +1142,7 @@ MonoBehaviour:
     Forwards: BUD
     Backwards: DUB
     Definition: A young tightly rolled-up flower or leaf before it opens.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 0
@@ -1153,7 +1153,7 @@ MonoBehaviour:
     Forwards: BUDGE
     Backwards: EGDUB
     Definition: To move, or make someone or something move.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 0
@@ -1165,7 +1165,7 @@ MonoBehaviour:
     Backwards: TSE
     Definition: The written abbreviation of established used after the names of a
       business to show when it was started.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 7

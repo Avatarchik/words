@@ -21,7 +21,7 @@ MonoBehaviour:
     Forwards: VAN
     Backwards: NAV
     Definition: A large box-like car that can carry a lot of people.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 3
@@ -32,7 +32,7 @@ MonoBehaviour:
     Forwards: ALE
     Backwards: ELA
     Definition: A type of beer with a slightly bitter taste.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
@@ -55,7 +55,7 @@ MonoBehaviour:
     Backwards: SHA
     Definition: Used in order to show your surprise, anger, pain, happiness, agreement,
       etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
@@ -88,7 +88,7 @@ MonoBehaviour:
     Forwards: ANA
     Backwards: ANA
     Definition: A collection of objects, papers, etc., relating to someone or something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -99,7 +99,7 @@ MonoBehaviour:
     Forwards: ONS
     Backwards: SNO
     Definition: Touching or supported by a particular surface.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 0

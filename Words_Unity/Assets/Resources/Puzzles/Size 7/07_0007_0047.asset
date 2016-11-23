@@ -21,7 +21,7 @@ MonoBehaviour:
     Forwards: CAMPUS
     Backwards: SUPMAC
     Definition: The land and buildings of a school, college, or university.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 5
@@ -54,7 +54,7 @@ MonoBehaviour:
     Forwards: PROF
     Backwards: FORP
     Definition: A professor.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 3
@@ -65,7 +65,7 @@ MonoBehaviour:
     Forwards: LOANED
     Backwards: DENAOL
     Definition: To let someone borrow something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 2
@@ -76,7 +76,7 @@ MonoBehaviour:
     Forwards: ELATES
     Backwards: SETALE
     Definition: Extremely happy and excited, especially because you have been successful.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -87,7 +87,7 @@ MonoBehaviour:
     Forwards: DUGS
     Backwards: SGUD
     Definition: The past tense and past participle of dig.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 1
@@ -98,7 +98,7 @@ MonoBehaviour:
     Forwards: GUMBO
     Backwards: OBMUG
     Definition: A thick soup made with meat, fish, and okra.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 4
@@ -121,7 +121,7 @@ MonoBehaviour:
     Backwards: EMAD
     Definition: A title of honor given by the British king or queen to a woman as
       a reward for the good things she has done.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 6
@@ -143,7 +143,7 @@ MonoBehaviour:
     Forwards: AGO
     Backwards: OGA
     Definition: Used to show how far back in the past something happened.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 5
@@ -154,7 +154,7 @@ MonoBehaviour:
     Forwards: ACORN
     Backwards: NROCA
     Definition: The nut of the oak tree.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 6
@@ -199,7 +199,7 @@ MonoBehaviour:
     Backwards: TES
     Definition: The place where something is or where something happens, and the general
       environment surrounding the thing or event.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0
@@ -222,7 +222,7 @@ MonoBehaviour:
     Backwards: MEL
     Definition: A small rat-like animal that many people believe kills itself by following
       other lemmings and jumping into the ocean in large numbers.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 2
@@ -233,7 +233,7 @@ MonoBehaviour:
     Forwards: LAT
     Backwards: TAL
     Definition: The written abbreviation of latitude.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 0
@@ -245,7 +245,7 @@ MonoBehaviour:
     Backwards: PMAC
     Definition: A place where people stay in temporary shelters, such as tents, especially
       for a short time and in mountains or forests.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 5
@@ -256,7 +256,7 @@ MonoBehaviour:
     Forwards: MON
     Backwards: NOM
     Definition: The written abbreviation of monday.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 4
@@ -267,7 +267,7 @@ MonoBehaviour:
     Forwards: ATE
     Backwards: ETA
     Definition: The past tense of eat.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 0
@@ -290,7 +290,7 @@ MonoBehaviour:
     Backwards: GOD
     Definition: A very common animal with four legs that is often kept as a pet or
       used for guarding buildings.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 2
@@ -312,7 +312,7 @@ MonoBehaviour:
     Forwards: DUG
     Backwards: GUD
     Definition: The past tense and past participle of dig.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 1
@@ -323,7 +323,7 @@ MonoBehaviour:
     Forwards: ETA
     Backwards: ATE
     Definition: The seventh letter of the Greek alphabet.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 0
@@ -356,7 +356,7 @@ MonoBehaviour:
     Forwards: SUN
     Backwards: NUS
     Definition: To sit or lie outside while the sun is shining.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0
@@ -378,7 +378,7 @@ MonoBehaviour:
     Forwards: FOR
     Backwards: ROF
     Definition: Used to introduce the reason for something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 3
@@ -389,7 +389,7 @@ MonoBehaviour:
     Forwards: PUS
     Backwards: SUP
     Definition: A thick yellowish liquid produced in an infected part of your body.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 5
@@ -400,7 +400,7 @@ MonoBehaviour:
     Forwards: MUG
     Backwards: GUM
     Definition: To attack someone and rob him or her in a public place.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 4
@@ -411,7 +411,7 @@ MonoBehaviour:
     Forwards: MOB
     Backwards: BOM
     Definition: If a place is mobbed, there is a big crowd of people there.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 4
@@ -433,7 +433,7 @@ MonoBehaviour:
     Forwards: GEO
     Backwards: OEG
     Definition: Relating to the Earth or its surface.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 1
@@ -466,7 +466,7 @@ MonoBehaviour:
     Forwards: AMP
     Backwards: PMA
     Definition: An amplifier.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 5
@@ -478,7 +478,7 @@ MonoBehaviour:
     Backwards: POS
     Definition: To remove liquid from a surface by using something that absorbstakes
       the liquid into itself the liquid.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 5
@@ -489,7 +489,7 @@ MonoBehaviour:
     Forwards: YON
     Backwards: NOY
     Definition: Yonder.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 6
@@ -501,7 +501,7 @@ MonoBehaviour:
     Backwards: MAD
     Definition: A special wall built across a river, stream, etc. to stop the water
       from flowing, especially to make a lake or produce electricity.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 6
@@ -512,7 +512,7 @@ MonoBehaviour:
     Forwards: GOD
     Backwards: DOG
     Definition: Obeying God and leading a good life.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 4

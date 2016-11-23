@@ -21,7 +21,7 @@ MonoBehaviour:
     Forwards: FLESHY
     Backwards: YHSELF
     Definition: Having a lot of flesh.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -33,7 +33,7 @@ MonoBehaviour:
     Backwards: DECNIZ
     Definition: A bluish-white metal that is an element and is used to make brass
       and to cover and protect objects made of iron.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
@@ -44,7 +44,7 @@ MonoBehaviour:
     Forwards: MELLED
     Backwards: DELLEM
     Definition: Running or moving in a fast uncontrolled way.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 1
@@ -78,7 +78,7 @@ MonoBehaviour:
     Backwards: SEHCA
     Definition: A continuous pain that is not sharp, for example the pain you feel
       after you have used part of your body too much.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 6
@@ -89,7 +89,7 @@ MonoBehaviour:
     Forwards: OAFS
     Backwards: SFAO
     Definition: A stupid awkward man or boy.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 5
@@ -101,7 +101,7 @@ MonoBehaviour:
     Backwards: SMUG
     Definition: A sweet sticky type of candy that you chew for a long time but do
       not swallow.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 0
@@ -112,7 +112,7 @@ MonoBehaviour:
     Forwards: POP
     Backwards: POP
     Definition: The written abbreviation ofpopulation.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 6
@@ -146,7 +146,7 @@ MonoBehaviour:
     Backwards: DIA
     Definition: A very serious disease caused by a virus that makes your body unable
       to defend itself against infections.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 6
@@ -157,7 +157,7 @@ MonoBehaviour:
     Forwards: JOE
     Backwards: EOJ
     Definition: An ordinary average man.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 5
@@ -169,7 +169,7 @@ MonoBehaviour:
     Backwards: MAD
     Definition: A special wall built across a river, stream, etc. to stop the water
       from flowing, especially to make a lake or produce electricity.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 2
@@ -180,7 +180,7 @@ MonoBehaviour:
     Forwards: GEM
     Backwards: MEG
     Definition: A beautiful stone that has been cut into a special shape.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 2
@@ -214,7 +214,7 @@ MonoBehaviour:
     Backwards: EHCA
     Definition: A continuous pain that is not sharp, for example the pain you feel
       after you have used part of your body too much.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 6
@@ -225,7 +225,7 @@ MonoBehaviour:
     Forwards: ELM
     Backwards: MLE
     Definition: A type of large tree with broad leaves, or the wood from this tree.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 0
@@ -236,7 +236,7 @@ MonoBehaviour:
     Forwards: AIS
     Backwards: SIA
     Definition: The abbreviation of artificial intelligence.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 2
@@ -258,7 +258,7 @@ MonoBehaviour:
     Forwards: ALE
     Backwards: ELA
     Definition: A type of beer with a slightly bitter taste.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 5
@@ -269,7 +269,7 @@ MonoBehaviour:
     Forwards: OAF
     Backwards: FAO
     Definition: A stupid awkward man or boy.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 5
@@ -291,7 +291,7 @@ MonoBehaviour:
     Forwards: BOD
     Backwards: DOB
     Definition: "Someone\u2019s body."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 4
@@ -313,7 +313,7 @@ MonoBehaviour:
     Forwards: DIE
     Backwards: EID
     Definition: The present participle of die.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 2
@@ -325,7 +325,7 @@ MonoBehaviour:
     Backwards: GEL
     Definition: "Women\u2019s tight pants that stretch to fit the shape of the body,
       and that have no zipper."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 4
@@ -337,7 +337,7 @@ MonoBehaviour:
     Backwards: YHS
     Definition: Nervous and embarrassed about talking to other people, especially
       people you do not know.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 0
@@ -359,7 +359,7 @@ MonoBehaviour:
     Forwards: UMS
     Backwards: SMU
     Definition: Used when you are thinking about what to say next.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 1
@@ -382,7 +382,7 @@ MonoBehaviour:
     Backwards: MUG
     Definition: A sweet sticky type of candy that you chew for a long time but do
       not swallow.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 0
@@ -394,7 +394,7 @@ MonoBehaviour:
     Backwards: LED
     Definition: A group of islands near the south coast of South America, which belong
       to Chile and Argentina.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 3
@@ -406,7 +406,7 @@ MonoBehaviour:
     Backwards: NAM
     Definition: Having qualities that people expect and admire in a man, such as being
       brave and strong.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 1
@@ -428,7 +428,7 @@ MonoBehaviour:
     Forwards: DELL
     Backwards: LLED
     Definition: A small valley with grass and trees.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 1
@@ -451,7 +451,7 @@ MonoBehaviour:
     Backwards: CNIZ
     Definition: A bluish-white metal that is an element and is used to make brass
       and to cover and protect objects made of iron.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
@@ -473,7 +473,7 @@ MonoBehaviour:
     Forwards: MELL
     Backwards: LLEM
     Definition: Running or moving in a fast uncontrolled way.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 1
@@ -484,7 +484,7 @@ MonoBehaviour:
     Forwards: FLESH
     Backwards: HSELF
     Definition: Physical, especially sexual.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -496,7 +496,7 @@ MonoBehaviour:
     Backwards: SOS
     Definition: A signal that a ship or aircraft sends to say that it is in danger
       and needs help quickly.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 3

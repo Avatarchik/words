@@ -21,7 +21,7 @@ MonoBehaviour:
     Forwards: PAYEE
     Backwards: EEYAP
     Definition: The person to whom money, especially a check, should be paid.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 2
@@ -43,7 +43,7 @@ MonoBehaviour:
     Forwards: AMASSES
     Backwards: SESSAMA
     Definition: To gradually collect a large amount of money, knowledge, or information.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 3
@@ -54,7 +54,7 @@ MonoBehaviour:
     Forwards: UNSURE
     Backwards: ERUSNU
     Definition: Not confident that you know something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 6
@@ -87,7 +87,7 @@ MonoBehaviour:
     Forwards: EDGES
     Backwards: SEGDE
     Definition: Something that forms an edge or border.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 6
@@ -109,7 +109,7 @@ MonoBehaviour:
     Forwards: SOFTENS
     Backwards: SNETFOS
     Definition: To become less hard or firm, or to make something less hard or firm.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 7
@@ -120,7 +120,7 @@ MonoBehaviour:
     Forwards: BUZZ
     Backwards: ZZUB
     Definition: To make a continuous sound, like the sound of a bee.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 5
@@ -154,7 +154,7 @@ MonoBehaviour:
     Backwards: GAG
     Definition: To feel sick in a way that makes you feel as though you might vomitbring
       food from your stomach back through your mouth.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -166,7 +166,7 @@ MonoBehaviour:
     Backwards: DDA
     Definition: To put something with another thing or group to increase the amount,
       size, or cost.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 7
@@ -221,7 +221,7 @@ MonoBehaviour:
     Forwards: FIX
     Backwards: XIF
     Definition: To repair something that is broken or not working correctly.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 1
@@ -265,7 +265,7 @@ MonoBehaviour:
     Forwards: TEN
     Backwards: NET
     Definition: A piece of paper money worth $10.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 7
@@ -287,7 +287,7 @@ MonoBehaviour:
     Forwards: ENS
     Backwards: SNE
     Definition: Made of a particular material or substance.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 7
@@ -298,7 +298,7 @@ MonoBehaviour:
     Forwards: URE
     Backwards: ERU
     Definition: Used to make nouns that show actions or results.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 6
@@ -342,7 +342,7 @@ MonoBehaviour:
     Forwards: OFT
     Backwards: TFO
     Definition: Often.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 7
@@ -353,7 +353,7 @@ MonoBehaviour:
     Forwards: SUB
     Backwards: BUS
     Definition: A submarine.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 7
@@ -375,7 +375,7 @@ MonoBehaviour:
     Forwards: ASS
     Backwards: SSA
     Definition: The part of your body that you sit on.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 1
@@ -387,7 +387,7 @@ MonoBehaviour:
     Backwards: SNOT
     Definition: A unit for measuring weight, equal to 2,000 pounds or 907.2 kilograms
       in the U.S.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 0
@@ -398,7 +398,7 @@ MonoBehaviour:
     Forwards: DYE
     Backwards: EYD
     Definition: A substance you use to change the color of your clothes, hair, etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 5
@@ -409,7 +409,7 @@ MonoBehaviour:
     Forwards: SEDGES
     Backwards: SEGDES
     Definition: A plant similar to grass that grows in groups on low wet ground.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 7
@@ -421,7 +421,7 @@ MonoBehaviour:
     Backwards: SGAG
     Definition: To feel sick in a way that makes you feel as though you might vomitbring
       food from your stomach back through your mouth.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -444,7 +444,7 @@ MonoBehaviour:
     Backwards: NOT
     Definition: A unit for measuring weight, equal to 2,000 pounds or 907.2 kilograms
       in the U.S.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 0
@@ -466,7 +466,7 @@ MonoBehaviour:
     Forwards: GEN
     Backwards: NEG
     Definition: The written abbreviation of general.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -477,7 +477,7 @@ MonoBehaviour:
     Forwards: GENET
     Backwards: TENEG
     Definition: Relating to genes or genetics.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -499,7 +499,7 @@ MonoBehaviour:
     Forwards: GILD
     Backwards: DLIG
     Definition: To cover something with a thin layer of gold or gold paint.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 5
@@ -510,7 +510,7 @@ MonoBehaviour:
     Forwards: ONS
     Backwards: SNO
     Definition: Touching or supported by a particular surface.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 1
@@ -532,7 +532,7 @@ MonoBehaviour:
     Forwards: UNS
     Backwards: SNU
     Definition: Used to show an opposite state or a negative.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 6

@@ -21,7 +21,7 @@ MonoBehaviour:
     Forwards: HIE
     Backwards: EIH
     Definition: To make yourself hurry, or go quickly.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 1
@@ -32,7 +32,7 @@ MonoBehaviour:
     Forwards: MAT
     Backwards: TAM
     Definition: Another spelling of matte.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
@@ -43,7 +43,7 @@ MonoBehaviour:
     Forwards: COZ
     Backwards: ZOC
     Definition: Used when speaking to your cousin.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 0
@@ -55,7 +55,7 @@ MonoBehaviour:
     Backwards: MAD
     Definition: A special wall built across a river, stream, etc. to stop the water
       from flowing, especially to make a lake or produce electricity.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 2
@@ -78,7 +78,7 @@ MonoBehaviour:
     Backwards: MIH
     Definition: Used to talk about a man, boy, or male animal that has been mentioned
       or is known about.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0

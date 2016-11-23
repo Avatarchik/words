@@ -32,7 +32,7 @@ MonoBehaviour:
     Forwards: RUTS
     Backwards: STUR
     Definition: A deep narrow track left in soft ground by a wheel.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 5
@@ -43,7 +43,7 @@ MonoBehaviour:
     Forwards: UNHINGED
     Backwards: DEGNIHNU
     Definition: To make someone become very upset or mentally ill.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 8
@@ -66,7 +66,7 @@ MonoBehaviour:
     Backwards: ONALL
     Definition: A large area of flat dry land with grass growing on it, found especially
       in the western and southern U.S. and parts of South America.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0
@@ -133,7 +133,7 @@ MonoBehaviour:
     Backwards: TOGIB
     Definition: "Someone who has such strong opinions about race, religion, or politics
       that he or she is unwilling to listen to anyone else\u2019s opinions."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 0
@@ -155,7 +155,7 @@ MonoBehaviour:
     Forwards: AYE
     Backwards: EYA
     Definition: Used to say yes, especially when voting.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 6
@@ -177,7 +177,7 @@ MonoBehaviour:
     Forwards: MOMS
     Backwards: SMOM
     Definition: Mother.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 6
@@ -210,7 +210,7 @@ MonoBehaviour:
     Forwards: EXIT
     Backwards: TIXE
     Definition: A door or space through which you can leave a room, building, etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 7
@@ -221,7 +221,7 @@ MonoBehaviour:
     Forwards: MUG
     Backwards: GUM
     Definition: To attack someone and rob him or her in a public place.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 4
@@ -244,7 +244,7 @@ MonoBehaviour:
     Backwards: NIG
     Definition: A strong alcoholic drink made mainly from grain, or a glass of this
       drink.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 7
@@ -255,7 +255,7 @@ MonoBehaviour:
     Forwards: SIS
     Backwards: SIS
     Definition: A name used when speaking to your sister.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 1
@@ -266,7 +266,7 @@ MonoBehaviour:
     Forwards: DARKS
     Backwards: SKRAD
     Definition: A place or time when there is no light.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -277,7 +277,7 @@ MonoBehaviour:
     Forwards: BUS
     Backwards: SUB
     Definition: A large road vehicle that can carry many people.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 5
@@ -288,7 +288,7 @@ MonoBehaviour:
     Forwards: MEMOS
     Backwards: SOMEM
     Definition: A short official note to another person in the same company or organization.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 8
@@ -299,7 +299,7 @@ MonoBehaviour:
     Forwards: HIE
     Backwards: EIH
     Definition: To make yourself hurry, or go quickly.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 0
@@ -332,7 +332,7 @@ MonoBehaviour:
     Forwards: DARK
     Backwards: KRAD
     Definition: A place or time when there is no light.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -354,7 +354,7 @@ MonoBehaviour:
     Forwards: BUR
     Backwards: RUB
     Definition: A burly man is big and strong.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 5
@@ -389,7 +389,7 @@ MonoBehaviour:
     Definition: In the US, a series of tests that are designed to provide a qualification
       equal to a high school diploma, for people who left high school without completing
       their education.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 3
@@ -400,7 +400,7 @@ MonoBehaviour:
     Forwards: VIE
     Backwards: EIV
     Definition: To compete very hard with someone in order to get something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 7
@@ -444,7 +444,7 @@ MonoBehaviour:
     Forwards: GOT
     Backwards: TOG
     Definition: The past tense of get.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 2
@@ -511,7 +511,7 @@ MonoBehaviour:
     Backwards: KRA
     Definition: In the Bible, the large boat built by Noah to save his family and
       the animals from a flood that covered the Earth.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 1
@@ -523,7 +523,7 @@ MonoBehaviour:
     Backwards: IEL
     Definition: "A circle made of flowers that you put around someone\u2019s neck
       as a greeting, especially in Hawaii."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0
@@ -546,7 +546,7 @@ MonoBehaviour:
     Backwards: MOR
     Definition: The part of a computer where permanent information and instructions
       are stored.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 2
@@ -568,7 +568,7 @@ MonoBehaviour:
     Forwards: TEN
     Backwards: NET
     Definition: A piece of paper money worth $10.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 6
@@ -579,7 +579,7 @@ MonoBehaviour:
     Forwards: TOG
     Backwards: GOT
     Definition: Clothes.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 4
@@ -590,7 +590,7 @@ MonoBehaviour:
     Forwards: ERG
     Backwards: GRE
     Definition: A unit used to measure work or energy.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 6
@@ -602,7 +602,7 @@ MonoBehaviour:
     Backwards: MUG
     Definition: A sweet sticky type of candy that you chew for a long time but do
       not swallow.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 4
@@ -613,7 +613,7 @@ MonoBehaviour:
     Forwards: MET
     Backwards: TEM
     Definition: The past tense and past participle of meet.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 6
@@ -635,7 +635,7 @@ MonoBehaviour:
     Forwards: UTS
     Backwards: STU
     Definition: The written abbreviation of utah.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 4
@@ -646,7 +646,7 @@ MonoBehaviour:
     Forwards: TIS
     Backwards: SIT
     Definition: "A short form of \u201Cit is\u201D."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 3
@@ -657,7 +657,7 @@ MonoBehaviour:
     Forwards: ASS
     Backwards: SSA
     Definition: The part of your body that you sit on.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 1
@@ -679,7 +679,7 @@ MonoBehaviour:
     Forwards: GAT
     Backwards: TAG
     Definition: A gun.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 4
@@ -701,7 +701,7 @@ MonoBehaviour:
     Forwards: URE
     Backwards: ERU
     Definition: Used to make nouns that show actions or results.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 8
@@ -712,7 +712,7 @@ MonoBehaviour:
     Forwards: MEN
     Backwards: NEM
     Definition: The plural of man.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 8
@@ -734,7 +734,7 @@ MonoBehaviour:
     Forwards: MEMO
     Backwards: OMEM
     Definition: A short official note to another person in the same company or organization.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 8
@@ -768,7 +768,7 @@ MonoBehaviour:
     Backwards: YRUJ
     Definition: A group of twelve people who listen to details of a case in court
       and decide whether someone is guilty or not.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 8
@@ -780,7 +780,7 @@ MonoBehaviour:
     Backwards: NAM
     Definition: Having qualities that people expect and admire in a man, such as being
       brave and strong.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 3
@@ -792,7 +792,7 @@ MonoBehaviour:
     Backwards: EMOS
     Definition: Used to talk about a person or thing, when you do not know or say
       exactly which.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 4
@@ -803,7 +803,7 @@ MonoBehaviour:
     Forwards: RAY
     Backwards: YAR
     Definition: A narrow beam of light from the Sun or from something such as a lamp.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 6
@@ -825,7 +825,7 @@ MonoBehaviour:
     Forwards: TAG
     Backwards: GAT
     Definition: To fasten a tag onto something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 6

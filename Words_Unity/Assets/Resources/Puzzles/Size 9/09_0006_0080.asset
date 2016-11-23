@@ -21,7 +21,7 @@ MonoBehaviour:
     Forwards: ARGUE
     Backwards: EUGRA
     Definition: To disagree with someone in words, often in an angry way.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 1
@@ -32,7 +32,7 @@ MonoBehaviour:
     Forwards: RICOTTA
     Backwards: ATTOCIR
     Definition: A type of soft white Italian cheese.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 1
@@ -76,7 +76,7 @@ MonoBehaviour:
     Forwards: SHEDS
     Backwards: SDEHS
     Definition: To get rid of something that you do not need or want anymore.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 8
@@ -99,7 +99,7 @@ MonoBehaviour:
     Backwards: SRETSYO
     Definition: A small ocean animal that has a shell and can produce a jewel called
       a pearl, or the inside part of this animal, which can be eaten raw or cooked.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 8
@@ -110,7 +110,7 @@ MonoBehaviour:
     Forwards: FOALS
     Backwards: SLAOF
     Definition: To give birth to a foal.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 3
@@ -121,7 +121,7 @@ MonoBehaviour:
     Forwards: BRICKBAT
     Backwards: TABKCIRB
     Definition: A severe criticism of something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 8
@@ -133,7 +133,7 @@ MonoBehaviour:
     Backwards: DENUR
     Definition: One of the letters of the alphabet used in ancient times by people
       in Northern Europe.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 0
@@ -145,7 +145,7 @@ MonoBehaviour:
     Backwards: GNIRIAHC
     Definition: A piece of furniture for one person to sit on, which has a back, a
       seat, and legs.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 0
@@ -178,7 +178,7 @@ MonoBehaviour:
     Forwards: STAB
     Backwards: BATS
     Definition: An act of stabbing or trying to stab someone.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -189,7 +189,7 @@ MonoBehaviour:
     Forwards: SUD
     Backwards: DUS
     Definition: The bubbles formed on the top of water with soap in it.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -201,7 +201,7 @@ MonoBehaviour:
     Backwards: SRE
     Definition: A sound you make when you pause to correct something you have just
       said, or when you do not know exactly what to say.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 8
@@ -213,7 +213,7 @@ MonoBehaviour:
     Backwards: WOL
     Definition: In or to a low position or level that is closer to the ground than
       usual.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 5
@@ -225,7 +225,7 @@ MonoBehaviour:
     Backwards: SHA
     Definition: Used in order to show your surprise, anger, pain, happiness, agreement,
       etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 7
@@ -237,7 +237,7 @@ MonoBehaviour:
     Backwards: RIF
     Definition: A tree with leaves shaped like needles that do not fall off in the
       winter.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 3
@@ -270,7 +270,7 @@ MonoBehaviour:
     Forwards: BRICK
     Backwards: KCIRB
     Definition: A hard block of baked clay used for building walls, houses, etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 8
@@ -293,7 +293,7 @@ MonoBehaviour:
     Backwards: SOS
     Definition: A signal that a ship or aircraft sends to say that it is in danger
       and needs help quickly.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 6
@@ -315,7 +315,7 @@ MonoBehaviour:
     Forwards: PAR
     Backwards: RAP
     Definition: At the same level or standard.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 1
@@ -338,7 +338,7 @@ MonoBehaviour:
     Backwards: RETSYO
     Definition: A small ocean animal that has a shell and can produce a jewel called
       a pearl, or the inside part of this animal, which can be eaten raw or cooked.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 8
@@ -371,7 +371,7 @@ MonoBehaviour:
     Forwards: RAIN
     Backwards: NIAR
     Definition: Water that falls in small drops from clouds in the sky.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 2
@@ -405,7 +405,7 @@ MonoBehaviour:
     Backwards: RRE
     Definition: To be more careful, safe, etc. than is necessary rather than risk
       making a mistake.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 1
@@ -416,7 +416,7 @@ MonoBehaviour:
     Forwards: ANTI
     Backwards: ITNA
     Definition: Opposed to something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 1
@@ -449,7 +449,7 @@ MonoBehaviour:
     Forwards: CHA
     Backwards: AHC
     Definition: A dance from South America with small, fast steps.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 0
@@ -461,7 +461,7 @@ MonoBehaviour:
     Backwards: ENUR
     Definition: One of the letters of the alphabet used in ancient times by people
       in Northern Europe.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 0
@@ -472,7 +472,7 @@ MonoBehaviour:
     Forwards: COT
     Backwards: TOC
     Definition: A light narrow bed that can be folded and stored.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 3
@@ -483,7 +483,7 @@ MonoBehaviour:
     Forwards: AIR
     Backwards: RIA
     Definition: The mixture of gases surrounding the Earth, that we breathe.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 2
@@ -495,7 +495,7 @@ MonoBehaviour:
     Backwards: TLEC
     Definition: One of the groups of people who lived in Britain and Ireland from
       about 400 B.C. before the arrival of the Romans in the first century B.C.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 3
@@ -507,7 +507,7 @@ MonoBehaviour:
     Backwards: SDI
     Definition: A document or card that shows your name, date of birth, etc., usually
       with a photograph.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 4
@@ -518,7 +518,7 @@ MonoBehaviour:
     Forwards: AIRING
     Backwards: GNIRIA
     Definition: The mixture of gases surrounding the Earth, that we breathe.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 2
@@ -529,7 +529,7 @@ MonoBehaviour:
     Forwards: LOP
     Backwards: POL
     Definition: To cut branches from a tree, especially with a single strong movement.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 3
@@ -540,7 +540,7 @@ MonoBehaviour:
     Forwards: ANT
     Backwards: TNA
     Definition: A small insect that lives in large groups.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 1
@@ -551,7 +551,7 @@ MonoBehaviour:
     Forwards: COTTA
     Backwards: ATTOC
     Definition: Hard reddish-brown baked clay.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 3
@@ -574,7 +574,7 @@ MonoBehaviour:
     Backwards: IEL
     Definition: "A circle made of flowers that you put around someone\u2019s neck
       as a greeting, especially in Hawaii."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 4
@@ -597,7 +597,7 @@ MonoBehaviour:
     Backwards: LLOP
     Definition: To try to find out what people think about a subject by asking many
       people the same question.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 1
@@ -608,7 +608,7 @@ MonoBehaviour:
     Forwards: SOT
     Backwards: TOS
     Definition: Someone who is drunk all the time.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 6
@@ -620,7 +620,7 @@ MonoBehaviour:
     Backwards: NAC
     Definition: To have the skill, opportunity, time, equipment, strength, etc. that
       you need in order to do something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 5
@@ -632,7 +632,7 @@ MonoBehaviour:
     Backwards: GNIR
     Definition: If a telephone rings, it makes a sound to show that someone is calling
       you.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 4
@@ -643,7 +643,7 @@ MonoBehaviour:
     Forwards: DOD
     Backwards: DOD
     Definition: The abbreviation of the department of defense.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 5
@@ -698,7 +698,7 @@ MonoBehaviour:
     Forwards: COL
     Backwards: LOC
     Definition: The written abbreviation of column.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 6
@@ -720,7 +720,7 @@ MonoBehaviour:
     Forwards: BAT
     Backwards: TAB
     Definition: A small animal like a mouse that flies around at night.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
@@ -732,7 +732,7 @@ MonoBehaviour:
     Backwards: KCIR
     Definition: A large pile of straw or grass that is kept in a field until it is
       needed.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 7
@@ -853,7 +853,7 @@ MonoBehaviour:
     Forwards: DEN
     Backwards: NED
     Definition: A room in a house where people relax, read, watch television, etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 0
@@ -864,7 +864,7 @@ MonoBehaviour:
     Forwards: GOSH
     Backwards: HSOG
     Definition: Used to express surprise.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 7
@@ -897,7 +897,7 @@ MonoBehaviour:
     Forwards: FOAL
     Backwards: LAOF
     Definition: To give birth to a foal.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 3
@@ -908,7 +908,7 @@ MonoBehaviour:
     Forwards: ALS
     Backwards: SLA
     Definition: The written abbreviation of alabama.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 5

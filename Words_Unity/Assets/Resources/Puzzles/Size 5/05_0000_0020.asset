@@ -22,7 +22,7 @@ MonoBehaviour:
     Backwards: ERIT
     Definition: A thick round piece of rubber that fits around the wheel of a car,
       bicycle, etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 0
@@ -33,7 +33,7 @@ MonoBehaviour:
     Forwards: CHEF
     Backwards: FEHC
     Definition: A skilled cook, especially the main cook in a restaurant or hotel.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 2
@@ -45,7 +45,7 @@ MonoBehaviour:
     Backwards: EMAN
     Definition: Used to introduce additional information that makes it clear exactly
       who or what you are talking about.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -67,7 +67,7 @@ MonoBehaviour:
     Forwards: BLOT
     Backwards: TOLB
     Definition: To dry a wet surface by pressing soft paper or cloth on it.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 1
@@ -78,7 +78,7 @@ MonoBehaviour:
     Forwards: RAH
     Backwards: HAR
     Definition: Supporting something without thinking about it enough.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 3
@@ -101,7 +101,7 @@ MonoBehaviour:
     Backwards: ARE
     Definition: A period of time that is associated with particular events or qualities,
       or that begins with a particular date or event.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 3
@@ -112,7 +112,7 @@ MonoBehaviour:
     Forwards: GEN
     Backwards: NEG
     Definition: The written abbreviation of general.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 4
@@ -145,7 +145,7 @@ MonoBehaviour:
     Forwards: IRE
     Backwards: ERI
     Definition: Anger.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 1
@@ -189,7 +189,7 @@ MonoBehaviour:
     Forwards: AAH
     Backwards: HAA
     Definition: Another spelling of ah.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 4

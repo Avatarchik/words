@@ -32,7 +32,7 @@ MonoBehaviour:
     Forwards: HOLD
     Backwards: DLOH
     Definition: Something that you own or rent, especially land or stock in a company.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 0
@@ -54,7 +54,7 @@ MonoBehaviour:
     Forwards: GUNS
     Backwards: SNUG
     Definition: To make a car go very fast by pressing the accelerator very hard.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 5
@@ -65,7 +65,7 @@ MonoBehaviour:
     Forwards: ALBEE
     Backwards: EEBLA
     Definition: A U.S. writer of dramatic plays.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 0
@@ -98,7 +98,7 @@ MonoBehaviour:
     Forwards: RED
     Backwards: DER
     Definition: The color of blood.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 5
@@ -109,7 +109,7 @@ MonoBehaviour:
     Forwards: DUD
     Backwards: DUD
     Definition: Something that is useless, especially because it does not work correctly.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 5
@@ -121,7 +121,7 @@ MonoBehaviour:
     Backwards: YLNO
     Definition: Used to emphasize that a particular amount, number, distance, etc.
       is small.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 1
@@ -154,7 +154,7 @@ MonoBehaviour:
     Forwards: OLD
     Backwards: DLO
     Definition: Something that is old has existed or been used for a long time.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 1
@@ -165,7 +165,7 @@ MonoBehaviour:
     Forwards: UNS
     Backwards: SNU
     Definition: Used to show an opposite state or a negative.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 4
@@ -198,7 +198,7 @@ MonoBehaviour:
     Forwards: EAR
     Backwards: RAE
     Definition: Having long, short, etc. ears.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 0
@@ -220,7 +220,7 @@ MonoBehaviour:
     Forwards: LID
     Backwards: DIL
     Definition: A lidded container, pot, etc. has a lid.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 1
@@ -264,7 +264,7 @@ MonoBehaviour:
     Forwards: RUE
     Backwards: EUR
     Definition: To wish that you had not done something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 5
@@ -275,7 +275,7 @@ MonoBehaviour:
     Forwards: GUN
     Backwards: NUG
     Definition: To make a car go very fast by pressing the accelerator very hard.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 5
@@ -308,7 +308,7 @@ MonoBehaviour:
     Forwards: SAN
     Backwards: NAS
     Definition: Without.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 2
@@ -319,7 +319,7 @@ MonoBehaviour:
     Forwards: GEE
     Backwards: EEG
     Definition: Used to show that you are surprised or annoyed.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 5
@@ -342,7 +342,7 @@ MonoBehaviour:
     Backwards: SAB
     Definition: A style of art in which stone or wood is cut so that shapes are raised
       above the surrounding surface.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -353,7 +353,7 @@ MonoBehaviour:
     Forwards: ATE
     Backwards: ETA
     Definition: The past tense of eat.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 1

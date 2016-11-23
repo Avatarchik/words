@@ -21,7 +21,7 @@ MonoBehaviour:
     Forwards: WOODENLY
     Backwards: YLNEDOOW
     Definition: Made of wood.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 5
@@ -33,7 +33,7 @@ MonoBehaviour:
     Backwards: SMLAUQ
     Definition: A feeling of slight worry because you are not sure that what you are
       doing is right.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 2
@@ -56,7 +56,7 @@ MonoBehaviour:
     Backwards: GNITTOLC
     Definition: If a liquid such as blood or milk clots or something clots it, it
       becomes thicker and more solid.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 8
@@ -68,7 +68,7 @@ MonoBehaviour:
     Backwards: SEDOID
     Definition: A piece of electrical equipment that makes an electrical current flow
       in one direction.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 7
@@ -80,7 +80,7 @@ MonoBehaviour:
     Backwards: SEUGNOT
     Definition: To use your tongue to make separate sounds when playing a musical
       instrument that you blow.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 7
@@ -91,7 +91,7 @@ MonoBehaviour:
     Forwards: NECTARED
     Backwards: DERATCEN
     Definition: Thick juice made from some fruits.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -135,7 +135,7 @@ MonoBehaviour:
     Forwards: PAPPY
     Backwards: YPPAP
     Definition: Father.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 0
@@ -157,7 +157,7 @@ MonoBehaviour:
     Forwards: BLOB
     Backwards: BOLB
     Definition: A small round mass of liquid or sticky substance.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 0
@@ -168,7 +168,7 @@ MonoBehaviour:
     Forwards: REP
     Backwards: PER
     Definition: Someone who speaks officially for a company or organization.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 8
@@ -201,7 +201,7 @@ MonoBehaviour:
     Forwards: TUNA
     Backwards: ANUT
     Definition: A large ocean fish caught for food.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 7
@@ -212,7 +212,7 @@ MonoBehaviour:
     Forwards: TIS
     Backwards: SIT
     Definition: "A short form of \u201Cit is\u201D."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 0
@@ -234,7 +234,7 @@ MonoBehaviour:
     Forwards: GEE
     Backwards: EEG
     Definition: Used to show that you are surprised or annoyed.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0
@@ -245,7 +245,7 @@ MonoBehaviour:
     Forwards: ODES
     Backwards: SEDO
     Definition: A poem or song that is written in order to praise a person or thing.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 5
@@ -257,7 +257,7 @@ MonoBehaviour:
     Backwards: NIT
     Definition: A soft white metal that is an element and is often used to cover and
       protect iron and steel.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 8
@@ -280,7 +280,7 @@ MonoBehaviour:
     Backwards: RAT
     Definition: A black substance, thick and sticky when hot but hard when cold, used
       especially for making road surfaces.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
@@ -303,7 +303,7 @@ MonoBehaviour:
     Backwards: HTIP
     Definition: A white substance just under the outside skin of oranges and similar
       fruit.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 0
@@ -315,7 +315,7 @@ MonoBehaviour:
     Backwards: TIDE
     Definition: The form in which a book, newspaper, product, etc. is printed or made
       at a particular time.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 5
@@ -371,7 +371,7 @@ MonoBehaviour:
     Backwards: ARE
     Definition: A period of time that is associated with particular events or qualities,
       or that begins with a particular date or event.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 6
@@ -383,7 +383,7 @@ MonoBehaviour:
     Backwards: EUGNOT
     Definition: To use your tongue to make separate sounds when playing a musical
       instrument that you blow.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 7
@@ -405,7 +405,7 @@ MonoBehaviour:
     Forwards: ALMS
     Backwards: SMLA
     Definition: Money, food, clothes, etc. that are given to poor people.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 4
@@ -417,7 +417,7 @@ MonoBehaviour:
     Backwards: TEY
     Definition: Used to introduce a statement that is surprising after what you have
       just said.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 4
@@ -428,7 +428,7 @@ MonoBehaviour:
     Forwards: RED
     Backwards: DER
     Definition: The color of blood.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 5
@@ -440,7 +440,7 @@ MonoBehaviour:
     Backwards: EROB
     Definition: Tired and impatient because you do not think something is interesting,
       or because you have nothing to do.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 0
@@ -452,7 +452,7 @@ MonoBehaviour:
     Backwards: OOW
     Definition: To try to persuade someone to buy something from you, do something
       for you, work for you, etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 5
@@ -518,7 +518,7 @@ MonoBehaviour:
     Forwards: PST
     Backwards: TSP
     Definition: The abbreviation of pacific standard time.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 2
@@ -529,7 +529,7 @@ MonoBehaviour:
     Forwards: TING
     Backwards: GNIT
     Definition: A high clear ringing sound.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 8
@@ -540,7 +540,7 @@ MonoBehaviour:
     Forwards: ORE
     Backwards: ERO
     Definition: Rock or earth from which metal can be obtained.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 1
@@ -562,7 +562,7 @@ MonoBehaviour:
     Forwards: WOOD
     Backwards: DOOW
     Definition: The material that trees are made of.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 5
@@ -573,7 +573,7 @@ MonoBehaviour:
     Forwards: COT
     Backwards: TOC
     Definition: A light narrow bed that can be folded and stored.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 0
@@ -584,7 +584,7 @@ MonoBehaviour:
     Forwards: TOTS
     Backwards: STOT
     Definition: A very small child.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 7
@@ -596,7 +596,7 @@ MonoBehaviour:
     Backwards: PAP
     Definition: Books, television programs, etc. that people read or watch for entertainment
       but which have no serious value.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 0
@@ -608,7 +608,7 @@ MonoBehaviour:
     Backwards: TIN
     Definition: "An egg of a lousea small insect, that is sometimes found in people\u2019s
       hair."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 8
@@ -620,7 +620,7 @@ MonoBehaviour:
     Backwards: TOLC
     Definition: If a liquid such as blood or milk clots or something clots it, it
       becomes thicker and more solid.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 8
@@ -653,7 +653,7 @@ MonoBehaviour:
     Forwards: DID
     Backwards: DID
     Definition: The past tense of do.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 5
@@ -665,7 +665,7 @@ MonoBehaviour:
     Backwards: BOL
     Definition: To throw something somewhere in a high curve, especially over a wall,
       fence, etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 0
@@ -677,7 +677,7 @@ MonoBehaviour:
     Backwards: MLAUQ
     Definition: A feeling of slight worry because you are not sure that what you are
       doing is right.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 2
@@ -689,7 +689,7 @@ MonoBehaviour:
     Backwards: AUQ
     Definition: Something that you must have, or which must exist, for something else
       to be possible.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 2

@@ -22,7 +22,7 @@ MonoBehaviour:
     Backwards: LIAUQ
     Definition: A small fat bird with a short tail that is hunted and shot for food
       and sport, or the meat from this bird.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 0
@@ -44,7 +44,7 @@ MonoBehaviour:
     Forwards: PAS
     Backwards: SAP
     Definition: An embarrassing mistake in a social situation.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 2
@@ -67,7 +67,7 @@ MonoBehaviour:
     Backwards: NATFAC
     Definition: A long loose piece of clothing like a dress, usually made of silk
       or cotton and worn in the Middle East.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 1
@@ -100,7 +100,7 @@ MonoBehaviour:
     Forwards: CRISPY
     Backwards: YPSIRC
     Definition: Crisp and good to eat.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 0
@@ -111,7 +111,7 @@ MonoBehaviour:
     Forwards: AUGUST
     Backwards: TSUGUA
     Definition: The eighth month of the year, between July and September.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 7
@@ -122,7 +122,7 @@ MonoBehaviour:
     Forwards: ENURES
     Backwards: SERUNE
     Definition: Another spelling of inured.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -144,7 +144,7 @@ MonoBehaviour:
     Forwards: RAYS
     Backwards: SYAR
     Definition: A narrow beam of light from the Sun or from something such as a lamp.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 6
@@ -156,7 +156,7 @@ MonoBehaviour:
     Backwards: RUO
     Definition: The thing or things belonging or relating to the person who is speaking
       and one or more other people.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 7
@@ -167,7 +167,7 @@ MonoBehaviour:
     Forwards: EFT
     Backwards: TFE
     Definition: An electronic funds transfer.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -190,7 +190,7 @@ MonoBehaviour:
     Backwards: PAP
     Definition: Books, television programs, etc. that people read or watch for entertainment
       but which have no serious value.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 4
@@ -201,7 +201,7 @@ MonoBehaviour:
     Forwards: LED
     Backwards: DEL
     Definition: The past tense and past participle of lead.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 6
@@ -245,7 +245,7 @@ MonoBehaviour:
     Forwards: ENURE
     Backwards: ERUNE
     Definition: Another spelling of inured.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -256,7 +256,7 @@ MonoBehaviour:
     Forwards: DELL
     Backwards: LLED
     Definition: A small valley with grass and trees.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 4
@@ -267,7 +267,7 @@ MonoBehaviour:
     Forwards: ETA
     Backwards: ATE
     Definition: The seventh letter of the Greek alphabet.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 5
@@ -278,7 +278,7 @@ MonoBehaviour:
     Forwards: RYE
     Backwards: EYR
     Definition: A type of grain that is used for making bread and whiskey.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 7
@@ -323,7 +323,7 @@ MonoBehaviour:
     Backwards: LIA
     Definition: An ailing company or economy is having a lot of problems and is not
       successful.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 2
@@ -401,7 +401,7 @@ MonoBehaviour:
     Backwards: GUP
     Definition: A small fat short-haired dog with a wide flat face and a short flat
       nose.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 1
@@ -412,7 +412,7 @@ MonoBehaviour:
     Forwards: GUST
     Backwards: TSUG
     Definition: If the wind gusts, it blows strongly with sudden short movements.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 5
@@ -435,7 +435,7 @@ MonoBehaviour:
     Backwards: GAS
     Definition: To hang down or bend in the middle, especially because of the weight
       of something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
@@ -446,7 +446,7 @@ MonoBehaviour:
     Forwards: RAY
     Backwards: YAR
     Definition: A narrow beam of light from the Sun or from something such as a lamp.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 6
@@ -458,7 +458,7 @@ MonoBehaviour:
     Backwards: DAS
     Definition: Not happy, especially because something bad has happened to you or
       someone else.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 3
@@ -491,7 +491,7 @@ MonoBehaviour:
     Forwards: RAT
     Backwards: TAR
     Definition: An animal that looks like a large mouse with a long tail.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 7
@@ -502,7 +502,7 @@ MonoBehaviour:
     Forwards: SAP
     Backwards: PAS
     Definition: To gradually take away something such as strength or energy.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 2
@@ -524,7 +524,7 @@ MonoBehaviour:
     Forwards: SIR
     Backwards: RIS
     Definition: Used when speaking to a man in order to be polite or to show respect.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 3
@@ -536,7 +536,7 @@ MonoBehaviour:
     Backwards: PSIRC
     Definition: A type of dessert in which fruit is baked with a mixture of sugar,
       butter, flour, and sometimes oats on top.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 0
@@ -548,7 +548,7 @@ MonoBehaviour:
     Backwards: TSE
     Definition: The written abbreviation of established used after the names of a
       business to show when it was started.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 7
@@ -559,7 +559,7 @@ MonoBehaviour:
     Forwards: GAL
     Backwards: LAG
     Definition: The written abbreviation ofgallon.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 5
@@ -570,7 +570,7 @@ MonoBehaviour:
     Forwards: EFTS
     Backwards: STFE
     Definition: An electronic funds transfer.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -625,7 +625,7 @@ MonoBehaviour:
     Forwards: AFT
     Backwards: TFA
     Definition: A union of teachers in the U.S.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 2
@@ -636,7 +636,7 @@ MonoBehaviour:
     Forwards: SUP
     Backwards: PUS
     Definition: To eat supper.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0

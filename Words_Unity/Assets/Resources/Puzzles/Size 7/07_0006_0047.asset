@@ -22,7 +22,7 @@ MonoBehaviour:
     Backwards: STSIM
     Definition: To cover something with very small drops of liquid in order to keep
       it wet.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 2
@@ -34,7 +34,7 @@ MonoBehaviour:
     Backwards: SDICA
     Definition: A substance that forms a chemical salt when combined with a base.
       Some acids can burn holes in things or damage your skin.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0
@@ -79,7 +79,7 @@ MonoBehaviour:
     Backwards: SEOHCE
     Definition: A sound that you hear again, sometimes repeatedly, because it was
       made near something such as a wall or a hill.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 6
@@ -90,7 +90,7 @@ MonoBehaviour:
     Forwards: PRICK
     Backwards: KCIRP
     Definition: To make a small hole in the surface of something, using a sharp point.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 5
@@ -113,7 +113,7 @@ MonoBehaviour:
     Backwards: LWAY
     Definition: A type of boat with one main mastpole and sails, and another small
       mast and sail close to the back.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 6
@@ -136,7 +136,7 @@ MonoBehaviour:
     Backwards: LIO
     Definition: A smooth thick mineral liquid that is burned to produce heat, or used
       to make machines run easily.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 6
@@ -147,7 +147,7 @@ MonoBehaviour:
     Forwards: VIM
     Backwards: MIV
     Definition: Energy.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 0
@@ -169,7 +169,7 @@ MonoBehaviour:
     Forwards: ETA
     Backwards: ATE
     Definition: The seventh letter of the Greek alphabet.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 3
@@ -213,7 +213,7 @@ MonoBehaviour:
     Forwards: LAD
     Backwards: DAL
     Definition: A boy or young man.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 0
@@ -224,7 +224,7 @@ MonoBehaviour:
     Forwards: ASS
     Backwards: SSA
     Definition: The part of your body that you sit on.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 1
@@ -247,7 +247,7 @@ MonoBehaviour:
     Backwards: TES
     Definition: The place where something is or where something happens, and the general
       environment surrounding the thing or event.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 4
@@ -258,7 +258,7 @@ MonoBehaviour:
     Forwards: SEER
     Backwards: REES
     Definition: Someone who can see into the future and say what will happen.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 2
@@ -281,7 +281,7 @@ MonoBehaviour:
     Backwards: SEOH
     Definition: A garden tool with a long handle, used for making the soil loose and
       removing weeds.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 6
@@ -303,7 +303,7 @@ MonoBehaviour:
     Forwards: BRA
     Backwards: ARB
     Definition: A piece of underwear that a woman wears to support her breasts.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 1
@@ -326,7 +326,7 @@ MonoBehaviour:
     Backwards: SDI
     Definition: A document or card that shows your name, date of birth, etc., usually
       with a photograph.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 2
@@ -337,7 +337,7 @@ MonoBehaviour:
     Forwards: ACT
     Backwards: TCA
     Definition: One thing that someone does.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 0
@@ -348,7 +348,7 @@ MonoBehaviour:
     Forwards: HIE
     Backwards: EIH
     Definition: To make yourself hurry, or go quickly.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 6
@@ -359,7 +359,7 @@ MonoBehaviour:
     Forwards: PAR
     Backwards: RAP
     Definition: At the same level or standard.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 5
@@ -370,7 +370,7 @@ MonoBehaviour:
     Forwards: AWL
     Backwards: LWA
     Definition: A pointed tool for making holes in leather.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 5
@@ -382,7 +382,7 @@ MonoBehaviour:
     Backwards: RAC
     Definition: A vehicle with four wheels and an engine, that you use to travel from
       one place to another.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 1
@@ -393,7 +393,7 @@ MonoBehaviour:
     Forwards: RAP
     Backwards: PAR
     Definition: To hit or knock something quickly.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
@@ -438,7 +438,7 @@ MonoBehaviour:
     Backwards: DICA
     Definition: A substance that forms a chemical salt when combined with a base.
       Some acids can burn holes in things or damage your skin.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0
@@ -449,7 +449,7 @@ MonoBehaviour:
     Forwards: ALE
     Backwards: ELA
     Definition: A type of beer with a slightly bitter taste.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 0
@@ -460,7 +460,7 @@ MonoBehaviour:
     Forwards: GEL
     Backwards: LEG
     Definition: Another spelling of jell.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -471,7 +471,7 @@ MonoBehaviour:
     Forwards: ROSE
     Backwards: ESOR
     Definition: The past tense of rise.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
@@ -483,7 +483,7 @@ MonoBehaviour:
     Backwards: EOH
     Definition: A garden tool with a long handle, used for making the soil loose and
       removing weeds.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 6
@@ -517,7 +517,7 @@ MonoBehaviour:
     Backwards: WAY
     Definition: If a ship, aircraft, etc. yaws, it turns away from the correct direction
       it should be traveling in.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 6
@@ -529,7 +529,7 @@ MonoBehaviour:
     Backwards: KCIR
     Definition: A large pile of straw or grass that is kept in a field until it is
       needed.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 5
@@ -540,7 +540,7 @@ MonoBehaviour:
     Forwards: MIS
     Backwards: SIM
     Definition: Bad or badly.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 2

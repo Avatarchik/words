@@ -32,7 +32,7 @@ MonoBehaviour:
     Forwards: SPAINING
     Backwards: GNINIAPS
     Definition: A country in southwest Europe, between France and Portugal.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 9
@@ -65,7 +65,7 @@ MonoBehaviour:
     Forwards: DESERTIONS
     Backwards: SNOITRESED
     Definition: Empty because people have left.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 0
@@ -76,7 +76,7 @@ MonoBehaviour:
     Forwards: SURFED
     Backwards: DEFRUS
     Definition: The activity or sport of riding over the waves on a special board.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 6
@@ -142,7 +142,7 @@ MonoBehaviour:
     Forwards: LAIDLY
     Backwards: YLDIAL
     Definition: The past tense and past participle of lay.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 2
@@ -164,7 +164,7 @@ MonoBehaviour:
     Forwards: BREW
     Backwards: WERB
     Definition: To make beer.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 6
@@ -198,7 +198,7 @@ MonoBehaviour:
     Backwards: RUMEL
     Definition: A small animal like a monkey with large eyes and a long tail, that
       lives mainly in Madagascar.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 4
@@ -243,7 +243,7 @@ MonoBehaviour:
     Backwards: OGOL
     Definition: A small design or way of writing a name that is the official sign
       of a company or organization.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 9
@@ -266,7 +266,7 @@ MonoBehaviour:
     Backwards: IEL
     Definition: "A circle made of flowers that you put around someone\u2019s neck
       as a greeting, especially in Hawaii."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 4
@@ -277,7 +277,7 @@ MonoBehaviour:
     Forwards: ALEE
     Backwards: EELA
     Definition: A type of beer with a slightly bitter taste.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 2
@@ -299,7 +299,7 @@ MonoBehaviour:
     Forwards: DOC
     Backwards: COD
     Definition: A short form of doctor.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 6
@@ -311,7 +311,7 @@ MonoBehaviour:
     Backwards: SORB
     Definition: "The written abbreviation of \u201CBrothers,\u201D used in the names
       of companies."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 6
@@ -322,7 +322,7 @@ MonoBehaviour:
     Forwards: ERE
     Backwards: ERE
     Definition: Before.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 9
@@ -344,7 +344,7 @@ MonoBehaviour:
     Forwards: LAID
     Backwards: DIAL
     Definition: The past tense and past participle of lay.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 2
@@ -355,7 +355,7 @@ MonoBehaviour:
     Forwards: DEF
     Backwards: FED
     Definition: Very good, fashionable, attractive, etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 1
@@ -367,7 +367,7 @@ MonoBehaviour:
     Backwards: EOH
     Definition: A garden tool with a long handle, used for making the soil loose and
       removing weeds.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 5
@@ -378,7 +378,7 @@ MonoBehaviour:
     Forwards: ORB
     Backwards: BRO
     Definition: A bright ball-shaped object, especially the sun or the moon.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 4
@@ -412,7 +412,7 @@ MonoBehaviour:
     Backwards: NOGRAJ
     Definition: Words and expressions that are used mainly by people who belong to
       the same professional group, and that are difficult for others to understand.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 10
@@ -423,7 +423,7 @@ MonoBehaviour:
     Forwards: RIP
     Backwards: PIR
     Definition: A long tear or cut.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 5
@@ -435,7 +435,7 @@ MonoBehaviour:
     Backwards: LIO
     Definition: A smooth thick mineral liquid that is burned to produce heat, or used
       to make machines run easily.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 0
@@ -447,7 +447,7 @@ MonoBehaviour:
     Backwards: EDI
     Definition: A date or period of time around the middle of the month in the ancient
       Roman calendar.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 2
@@ -459,7 +459,7 @@ MonoBehaviour:
     Backwards: SECI
     Definition: A mixture made from sugar, a liquid, and sometimes a fat such as butter,
       which is used to cover cakes.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 0
@@ -470,7 +470,7 @@ MonoBehaviour:
     Forwards: BRO
     Backwards: ORB
     Definition: Your brother.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 6
@@ -481,7 +481,7 @@ MonoBehaviour:
     Forwards: COD
     Backwards: DOC
     Definition: A large ocean fish that lives in the North Atlantic.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 8
@@ -492,7 +492,7 @@ MonoBehaviour:
     Forwards: SCHOOL
     Backwards: LOOHCS
     Definition: To train or teach someone.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 9
@@ -514,7 +514,7 @@ MonoBehaviour:
     Forwards: DEN
     Backwards: NED
     Definition: A room in a house where people relax, read, watch television, etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 3
@@ -525,7 +525,7 @@ MonoBehaviour:
     Forwards: LOG
     Backwards: GOL
     Definition: To make an official record of events, facts, etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 9
@@ -547,7 +547,7 @@ MonoBehaviour:
     Forwards: HID
     Backwards: DIH
     Definition: The past tense of hide1.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 5
@@ -581,7 +581,7 @@ MonoBehaviour:
     Backwards: TROF
     Definition: A strong building or group of buildings used by soldiers or an army
       for defending an important place.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -592,7 +592,7 @@ MonoBehaviour:
     Forwards: ALE
     Backwards: ELA
     Definition: A type of beer with a slightly bitter taste.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 2
@@ -615,7 +615,7 @@ MonoBehaviour:
     Backwards: TUC
     Definition: To use a knife, scissors, etc. to divide something into two or more
       pieces, or to remove a piece from the main part of something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 6
@@ -638,7 +638,7 @@ MonoBehaviour:
     Backwards: OCED
     Definition: A style of art and decoration that uses simple shapes and was popular
       in the U.S. and Europe in the 1920s and 1930s.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 10
@@ -649,7 +649,7 @@ MonoBehaviour:
     Forwards: FOR
     Backwards: ROF
     Definition: Used to introduce the reason for something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -660,7 +660,7 @@ MonoBehaviour:
     Forwards: RAP
     Backwards: PAR
     Definition: To hit or knock something quickly.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 8
@@ -672,7 +672,7 @@ MonoBehaviour:
     Backwards: MEL
     Definition: A small rat-like animal that many people believe kills itself by following
       other lemmings and jumping into the ocean in large numbers.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 4
@@ -684,7 +684,7 @@ MonoBehaviour:
     Backwards: GGE
     Definition: To encourage someone to do something, especially something that he
       or she should not do or does not want to do.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 7
@@ -718,7 +718,7 @@ MonoBehaviour:
     Backwards: DIA
     Definition: A very serious disease caused by a virus that makes your body unable
       to defend itself against infections.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 2
@@ -729,7 +729,7 @@ MonoBehaviour:
     Forwards: BOAT
     Backwards: TAOB
     Definition: A vehicle that travels across water.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 10
@@ -752,7 +752,7 @@ MonoBehaviour:
     Backwards: MUC
     Definition: Used between two nouns to show that someone or something has two purposes
       or does two things.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 6
@@ -763,7 +763,7 @@ MonoBehaviour:
     Forwards: LAT
     Backwards: TAL
     Definition: The written abbreviation of latitude.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0
@@ -774,7 +774,7 @@ MonoBehaviour:
     Forwards: USE
     Backwards: ESU
     Definition: The state of being useful.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 9
@@ -796,7 +796,7 @@ MonoBehaviour:
     Forwards: DESERTION
     Backwards: NOITRESED
     Definition: Empty because people have left.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 0
@@ -818,7 +818,7 @@ MonoBehaviour:
     Forwards: ACT
     Backwards: TCA
     Definition: One thing that someone does.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 1
@@ -840,7 +840,7 @@ MonoBehaviour:
     Forwards: SIT
     Backwards: TIS
     Definition: During one continuous period when you are sitting in a chair.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 1
@@ -863,7 +863,7 @@ MonoBehaviour:
     Backwards: ECI
     Definition: A mixture made from sugar, a liquid, and sometimes a fat such as butter,
       which is used to cover cakes.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 0
@@ -874,7 +874,7 @@ MonoBehaviour:
     Forwards: EAU
     Backwards: UAE
     Definition: Cologne.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 7
@@ -897,7 +897,7 @@ MonoBehaviour:
     Backwards: NOI
     Definition: An atom or group of atoms that has been given a positive or negative
       charge by adding or taking away an electron.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 6
@@ -908,7 +908,7 @@ MonoBehaviour:
     Forwards: PAINING
     Backwards: GNINIAP
     Definition: It is very difficult and upsetting for someone to have to do something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 8
@@ -953,7 +953,7 @@ MonoBehaviour:
     Backwards: KCOC
     Definition: To lift a part of your body so that it is upright, or hold a part
       of your body at an angle.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 10
@@ -964,7 +964,7 @@ MonoBehaviour:
     Forwards: SURF
     Backwards: FRUS
     Definition: The activity or sport of riding over the waves on a special board.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 6
@@ -976,7 +976,7 @@ MonoBehaviour:
     Backwards: SNOI
     Definition: An atom or group of atoms that has been given a positive or negative
       charge by adding or taking away an electron.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 6
@@ -987,7 +987,7 @@ MonoBehaviour:
     Forwards: PSI
     Backwards: ISP
     Definition: The 23th letter of the Greek alphabet.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 3
@@ -998,7 +998,7 @@ MonoBehaviour:
     Forwards: OAT
     Backwards: TAO
     Definition: A grain that is eaten by people and animals.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 10
@@ -1010,7 +1010,7 @@ MonoBehaviour:
     Backwards: AOB
     Definition: A large snake that is not poisonous, but kills animals by crushing
       them.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 10
@@ -1021,7 +1021,7 @@ MonoBehaviour:
     Forwards: DESERT
     Backwards: TRESED
     Definition: Empty because people have left.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 0
@@ -1032,7 +1032,7 @@ MonoBehaviour:
     Forwards: OVA
     Backwards: AVO
     Definition: The plural form of ovum.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 8
@@ -1054,7 +1054,7 @@ MonoBehaviour:
     Forwards: TIS
     Backwards: SIT
     Definition: "A short form of \u201Cit is\u201D."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
@@ -1066,7 +1066,7 @@ MonoBehaviour:
     Backwards: LIA
     Definition: An ailing company or economy is having a lot of problems and is not
       successful.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 6
@@ -1078,7 +1078,7 @@ MonoBehaviour:
     Backwards: OAT
     Definition: The natural force that unites all things in the universe, according
       to Taoism.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 10
@@ -1100,7 +1100,7 @@ MonoBehaviour:
     Forwards: EMU
     Backwards: UME
     Definition: A large Australian bird that can run very fast, but cannot fly.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 5
@@ -1111,7 +1111,7 @@ MonoBehaviour:
     Forwards: ONS
     Backwards: SNO
     Definition: Touching or supported by a particular surface.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 7
@@ -1122,7 +1122,7 @@ MonoBehaviour:
     Forwards: ICY
     Backwards: YCI
     Definition: Extremely cold.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 5
@@ -1133,7 +1133,7 @@ MonoBehaviour:
     Forwards: LICE
     Backwards: ECIL
     Definition: The plural of louse.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0
@@ -1144,7 +1144,7 @@ MonoBehaviour:
     Forwards: HOO
     Backwards: OOH
     Definition: Noisy talk or excitement that seems too much for the thing it is about.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 7

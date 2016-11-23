@@ -33,7 +33,7 @@ MonoBehaviour:
     Backwards: POS
     Definition: To remove liquid from a surface by using something that absorbstakes
       the liquid into itself the liquid.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 0
@@ -44,7 +44,7 @@ MonoBehaviour:
     Forwards: ISH
     Backwards: HSI
     Definition: The people or language of a particular country or place.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 3
@@ -56,7 +56,7 @@ MonoBehaviour:
     Backwards: WAM
     Definition: Something that seems to take control over or use up things or people
       completely.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -67,7 +67,7 @@ MonoBehaviour:
     Forwards: FOE
     Backwards: EOF
     Definition: An enemy.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
@@ -89,7 +89,7 @@ MonoBehaviour:
     Forwards: PSI
     Backwards: ISP
     Definition: The 23th letter of the Greek alphabet.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 2
@@ -100,7 +100,7 @@ MonoBehaviour:
     Forwards: FIE
     Backwards: EIF
     Definition: Used to express anger or disapproval toward someone.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3

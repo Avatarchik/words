@@ -21,7 +21,7 @@ MonoBehaviour:
     Forwards: OWNER
     Backwards: RENWO
     Definition: Someone who owns something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 3
@@ -43,7 +43,7 @@ MonoBehaviour:
     Forwards: SILTED
     Backwards: DETLIS
     Definition: To fill or become filled with silt.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 1
@@ -65,7 +65,7 @@ MonoBehaviour:
     Forwards: ALMOST
     Backwards: TSOMLA
     Definition: Only a little less than completely.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 0
@@ -77,7 +77,7 @@ MonoBehaviour:
     Backwards: GNIEOT
     Definition: To do what other people in a job or organization say you should do,
       whether you agree with them or not.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 6
@@ -89,7 +89,7 @@ MonoBehaviour:
     Backwards: EDECER
     Definition: If something you can see or hear recedes, it gets further and further
       away until it disappears.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 6
@@ -122,7 +122,7 @@ MonoBehaviour:
     Forwards: OBS
     Backwards: SBO
     Definition: The part of medical science that deals with obstetrics and gynecology.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 6
@@ -166,7 +166,7 @@ MonoBehaviour:
     Forwards: IRE
     Backwards: ERI
     Definition: Anger.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 3
@@ -188,7 +188,7 @@ MonoBehaviour:
     Forwards: TED
     Backwards: DET
     Definition: A U.S. baseball player known for his skill as a batter.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 1
@@ -199,7 +199,7 @@ MonoBehaviour:
     Forwards: SILT
     Backwards: TLIS
     Definition: To fill or become filled with silt.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 1
@@ -232,7 +232,7 @@ MonoBehaviour:
     Forwards: GEE
     Backwards: EEG
     Definition: Used to show that you are surprised or annoyed.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 1
@@ -255,7 +255,7 @@ MonoBehaviour:
     Backwards: EOT
     Definition: To do what other people in a job or organization say you should do,
       whether you agree with them or not.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 6
@@ -266,7 +266,7 @@ MonoBehaviour:
     Forwards: RED
     Backwards: DER
     Definition: The color of blood.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 3
@@ -278,7 +278,7 @@ MonoBehaviour:
     Backwards: SRE
     Definition: A sound you make when you pause to correct something you have just
       said, or when you do not know exactly what to say.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 2
@@ -301,7 +301,7 @@ MonoBehaviour:
     Backwards: TOR
     Definition: The natural process of decaying, or the part of something that has
       decayed.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 2
@@ -313,7 +313,7 @@ MonoBehaviour:
     Backwards: CER
     Definition: A public room, for example in a hospital, used for social activities
       or games.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 6
@@ -347,7 +347,7 @@ MonoBehaviour:
     Backwards: GEL
     Definition: "Women\u2019s tight pants that stretch to fit the shape of the body,
       and that have no zipper."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0
@@ -359,7 +359,7 @@ MonoBehaviour:
     Backwards: TSOM
     Definition: Used before many adjectives and adverbs that have two or more syllables
       in order to make the superlative.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 0
@@ -371,7 +371,7 @@ MonoBehaviour:
     Backwards: DDA
     Definition: To put something with another thing or group to increase the amount,
       size, or cost.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 0
@@ -382,7 +382,7 @@ MonoBehaviour:
     Forwards: WEB
     Backwards: BEW
     Definition: Webbed feet or toes have skin between the toes.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 5
@@ -404,7 +404,7 @@ MonoBehaviour:
     Forwards: SAT
     Backwards: TAS
     Definition: A written abbreviation of saturday.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 6

@@ -44,7 +44,7 @@ MonoBehaviour:
     Backwards: EPOCNYS
     Definition: "A way of making a word shorter by leaving out sounds or letters in
       the middle of it, for example changing \u201Ccannot\u201D to \u201Ccan\u2019t\u201D."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 3
@@ -88,7 +88,7 @@ MonoBehaviour:
     Forwards: FUZZ
     Backwards: ZZUF
     Definition: To make something fuzzy.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 7
@@ -99,7 +99,7 @@ MonoBehaviour:
     Forwards: REDDENS
     Backwards: SNEDDER
     Definition: To become red, or make something red.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 1
@@ -121,7 +121,7 @@ MonoBehaviour:
     Forwards: SOBERER
     Backwards: REREBOS
     Definition: Not drunk.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 8
@@ -144,7 +144,7 @@ MonoBehaviour:
     Backwards: MOOZ
     Definition: To go somewhere quickly, especially in a car or on a motorcycle making
       a lot of noise.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 7
@@ -189,7 +189,7 @@ MonoBehaviour:
     Backwards: OAT
     Definition: The natural force that unites all things in the universe, according
       to Taoism.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 4
@@ -211,7 +211,7 @@ MonoBehaviour:
     Forwards: LID
     Backwards: DIL
     Definition: A lidded container, pot, etc. has a lid.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 7
@@ -223,7 +223,7 @@ MonoBehaviour:
     Backwards: SHA
     Definition: Used in order to show your surprise, anger, pain, happiness, agreement,
       etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 4
@@ -245,7 +245,7 @@ MonoBehaviour:
     Forwards: TOY
     Backwards: YOT
     Definition: An object for children to play with.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 8
@@ -257,7 +257,7 @@ MonoBehaviour:
     Backwards: CER
     Definition: A public room, for example in a hospital, used for social activities
       or games.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 0
@@ -269,7 +269,7 @@ MonoBehaviour:
     Backwards: HCTAB
     Definition: A quantity of food, medicine, etc. that is produced or prepared at
       the same time.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 6
@@ -302,7 +302,7 @@ MonoBehaviour:
     Forwards: BYE
     Backwards: EYB
     Definition: Goodbye.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 6
@@ -313,7 +313,7 @@ MonoBehaviour:
     Forwards: COL
     Backwards: LOC
     Definition: The written abbreviation of column.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 3
@@ -335,7 +335,7 @@ MonoBehaviour:
     Forwards: COT
     Backwards: TOC
     Definition: A light narrow bed that can be folded and stored.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 2
@@ -357,7 +357,7 @@ MonoBehaviour:
     Forwards: CHA
     Backwards: AHC
     Definition: A dance from South America with small, fast steps.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 2
@@ -368,7 +368,7 @@ MonoBehaviour:
     Forwards: DOE
     Backwards: EOD
     Definition: A female deer, rabbit, and some other animals.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 1
@@ -391,7 +391,7 @@ MonoBehaviour:
     Backwards: OOZ
     Definition: A place, usually in a city, where many kinds of animals are kept so
       that people can go to look at them.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 7
@@ -403,7 +403,7 @@ MonoBehaviour:
     Backwards: SHO
     Definition: Used to express a strong emotion or to emphasize what you think about
       something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 5
@@ -414,7 +414,7 @@ MonoBehaviour:
     Forwards: OAT
     Backwards: TAO
     Definition: A grain that is eaten by people and animals.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 4
@@ -425,7 +425,7 @@ MonoBehaviour:
     Forwards: ENS
     Backwards: SNE
     Definition: Made of a particular material or substance.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 1
@@ -447,7 +447,7 @@ MonoBehaviour:
     Forwards: COP
     Backwards: POC
     Definition: A police officer.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 3
@@ -458,7 +458,7 @@ MonoBehaviour:
     Forwards: EAR
     Backwards: RAE
     Definition: Having long, short, etc. ears.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 6
@@ -469,7 +469,7 @@ MonoBehaviour:
     Forwards: MUG
     Backwards: GUM
     Definition: To attack someone and rob him or her in a public place.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 8
@@ -513,7 +513,7 @@ MonoBehaviour:
     Forwards: ELF
     Backwards: FLE
     Definition: A small imaginary person with pointed ears and magical powers.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0
@@ -546,7 +546,7 @@ MonoBehaviour:
     Forwards: OBS
     Backwards: SBO
     Definition: The part of medical science that deals with obstetrics and gynecology.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 6
@@ -590,7 +590,7 @@ MonoBehaviour:
     Forwards: YAK
     Backwards: KAY
     Definition: To talk continuously about things that are not very serious.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 6
@@ -612,7 +612,7 @@ MonoBehaviour:
     Forwards: DEAR
     Backwards: RAED
     Definition: "Used before someone\u2019s name or title when you begin a letter."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 7
@@ -623,7 +623,7 @@ MonoBehaviour:
     Forwards: PEA
     Backwards: AEP
     Definition: A round green seed that is cooked and eaten as a vegetable.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 6
@@ -645,7 +645,7 @@ MonoBehaviour:
     Forwards: POD
     Backwards: DOP
     Definition: The part of plants such as peas and beans that the seeds grow in.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 3
@@ -656,7 +656,7 @@ MonoBehaviour:
     Forwards: NOS
     Backwards: SON
     Definition: The written abbreviation ofnumbers.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 3
@@ -690,7 +690,7 @@ MonoBehaviour:
     Backwards: TSE
     Definition: The written abbreviation of established used after the names of a
       business to show when it was started.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 8
@@ -712,7 +712,7 @@ MonoBehaviour:
     Forwards: DAN
     Backwards: NAD
     Definition: In the Bible, the head of one of the 12 tribes of Israel.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 1
@@ -734,7 +734,7 @@ MonoBehaviour:
     Forwards: LIE
     Backwards: EIL
     Definition: To deliberately tell someone something that is not true.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 4
@@ -778,7 +778,7 @@ MonoBehaviour:
     Forwards: PRE
     Backwards: ERP
     Definition: Before a particular event or period of time.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 3
@@ -789,7 +789,7 @@ MonoBehaviour:
     Forwards: RED
     Backwards: DER
     Definition: The color of blood.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 1
@@ -812,7 +812,7 @@ MonoBehaviour:
     Backwards: ELFFAW
     Definition: A thin flat cake, marked with a pattern of deep squares, and usually
       eaten for breakfast.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -834,7 +834,7 @@ MonoBehaviour:
     Forwards: LOLL
     Backwards: LLOL
     Definition: To sit or lie in a very lazy and relaxed way.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 7
@@ -857,7 +857,7 @@ MonoBehaviour:
     Backwards: SRE
     Definition: A sound you make when you pause to correct something you have just
       said, or when you do not know exactly what to say.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0

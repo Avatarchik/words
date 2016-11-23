@@ -54,7 +54,7 @@ MonoBehaviour:
     Forwards: RIMMED
     Backwards: DEMMIR
     Definition: To be around the edge of something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 1
@@ -65,7 +65,7 @@ MonoBehaviour:
     Forwards: FLATHEAD
     Backwards: DAEHTALF
     Definition: A Native American tribe from the northwestern area of the U.S.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0
@@ -98,7 +98,7 @@ MonoBehaviour:
     Forwards: DAUNTING
     Backwards: GNITNUAD
     Definition: To make someone feel afraid or less confident.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 0
@@ -120,7 +120,7 @@ MonoBehaviour:
     Forwards: CONGRUENT
     Backwards: TNEURGNOC
     Definition: Fitting together well.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 1
@@ -164,7 +164,7 @@ MonoBehaviour:
     Forwards: MOLLIFIES
     Backwards: SEIFILLOM
     Definition: To make someone feel less angry and upset about something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 0
@@ -176,7 +176,7 @@ MonoBehaviour:
     Backwards: SPMUH
     Definition: A large round shape that rises above the surface of the ground or
       a surface.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 7
@@ -198,7 +198,7 @@ MonoBehaviour:
     Forwards: ORBS
     Backwards: SBRO
     Definition: A bright ball-shaped object, especially the sun or the moon.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 6
@@ -220,7 +220,7 @@ MonoBehaviour:
     Forwards: RUFF
     Backwards: FFUR
     Definition: A stiff circular white collar, worn in the 16th century.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 3
@@ -231,7 +231,7 @@ MonoBehaviour:
     Forwards: RAP
     Backwards: PAR
     Definition: To hit or knock something quickly.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -265,7 +265,7 @@ MonoBehaviour:
     Backwards: FLES
     Definition: The person you are, including your character, your typical behavior,
       your abilities, etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 9
@@ -276,7 +276,7 @@ MonoBehaviour:
     Forwards: FUN
     Backwards: NUF
     Definition: An experience or activity that is very enjoyable and exciting.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 6
@@ -321,7 +321,7 @@ MonoBehaviour:
     Backwards: SDI
     Definition: A document or card that shows your name, date of birth, etc., usually
       with a photograph.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 7
@@ -376,7 +376,7 @@ MonoBehaviour:
     Forwards: MEN
     Backwards: NEM
     Definition: The plural of man.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 3
@@ -387,7 +387,7 @@ MonoBehaviour:
     Forwards: EGO
     Backwards: OGE
     Definition: The opinion that you have about yourself.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 3
@@ -399,7 +399,7 @@ MonoBehaviour:
     Backwards: EHT
     Definition: Used to show that two things increase or change together, in a connected
       way.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 3
@@ -411,7 +411,7 @@ MonoBehaviour:
     Backwards: IKS
     Definition: The sport of moving down hills or across land in the snow, wearing
       skis.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 9
@@ -434,7 +434,7 @@ MonoBehaviour:
     Backwards: ELFFUR
     Definition: A band of thin cloth sewn in folds, used as a decoration around the
       edge of something such as a dress.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 3
@@ -446,7 +446,7 @@ MonoBehaviour:
     Backwards: EROS
     Definition: A part of your body that is sore is painful and often red because
       of a wound or infection, or because you have used a muscle too much.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 9
@@ -468,7 +468,7 @@ MonoBehaviour:
     Forwards: FIE
     Backwards: EIF
     Definition: Used to express anger or disapproval toward someone.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0
@@ -479,7 +479,7 @@ MonoBehaviour:
     Forwards: ILL
     Backwards: LLI
     Definition: Harm, evil, or bad luck.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 0
@@ -490,7 +490,7 @@ MonoBehaviour:
     Forwards: EMS
     Backwards: SME
     Definition: "A short form of \u201Cthem\u201D."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 3
@@ -502,7 +502,7 @@ MonoBehaviour:
     Backwards: NIT
     Definition: A soft white metal that is an element and is often used to cover and
       protect iron and steel.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 10
@@ -513,7 +513,7 @@ MonoBehaviour:
     Forwards: ORB
     Backwards: BRO
     Definition: A bright ball-shaped object, especially the sun or the moon.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 6
@@ -525,7 +525,7 @@ MonoBehaviour:
     Backwards: DUP
     Definition: A thick sweet creamy food, made with milk, eggs, sugar, and a little
       flour, and usually served cold.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 1
@@ -580,7 +580,7 @@ MonoBehaviour:
     Forwards: MUTT
     Backwards: TTUM
     Definition: A dog that does not belong to any particular breed.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 10
@@ -602,7 +602,7 @@ MonoBehaviour:
     Forwards: SAT
     Backwards: TAS
     Definition: A written abbreviation of saturday.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 5
@@ -614,7 +614,7 @@ MonoBehaviour:
     Backwards: TES
     Definition: The place where something is or where something happens, and the general
       environment surrounding the thing or event.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 8
@@ -637,7 +637,7 @@ MonoBehaviour:
     Backwards: TIN
     Definition: "An egg of a lousea small insect, that is sometimes found in people\u2019s
       hair."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 10
@@ -648,7 +648,7 @@ MonoBehaviour:
     Forwards: RUE
     Backwards: EUR
     Definition: To wish that you had not done something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 5
@@ -659,7 +659,7 @@ MonoBehaviour:
     Forwards: SIN
     Backwards: NIS
     Definition: "To break God\u2019s laws."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 7
@@ -670,7 +670,7 @@ MonoBehaviour:
     Forwards: MOL
     Backwards: LOM
     Definition: Another spelling of mole.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 0
@@ -692,7 +692,7 @@ MonoBehaviour:
     Forwards: BRO
     Backwards: ORB
     Definition: Your brother.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 4
@@ -703,7 +703,7 @@ MonoBehaviour:
     Forwards: SAI
     Backwards: IAS
     Definition: A good quality that you cannot easily describe.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 3
@@ -715,7 +715,7 @@ MonoBehaviour:
     Backwards: XAT
     Definition: An amount of money that you must pay to the government according to
       your income, property, goods, etc., and that is used to pay for public services.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 10
@@ -737,7 +737,7 @@ MonoBehaviour:
     Forwards: BED
     Backwards: DEB
     Definition: Sheets, covers, etc. that you put on a bed.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 4
@@ -748,7 +748,7 @@ MonoBehaviour:
     Forwards: ESS
     Backwards: SSE
     Definition: A woman who does something, or a female.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 10
@@ -759,7 +759,7 @@ MonoBehaviour:
     Forwards: CON
     Backwards: NOC
     Definition: "A trick to get someone\u2019s money or make him or her do something."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 7
@@ -792,7 +792,7 @@ MonoBehaviour:
     Forwards: LIT
     Backwards: TIL
     Definition: The abbreviation of literature or literary.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 1
@@ -825,7 +825,7 @@ MonoBehaviour:
     Forwards: RIM
     Backwards: MIR
     Definition: To be around the edge of something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 5
@@ -836,7 +836,7 @@ MonoBehaviour:
     Forwards: DEB
     Backwards: BED
     Definition: A debutante.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 4
@@ -858,7 +858,7 @@ MonoBehaviour:
     Forwards: RED
     Backwards: DER
     Definition: The color of blood.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 2
@@ -869,7 +869,7 @@ MonoBehaviour:
     Forwards: MON
     Backwards: NOM
     Definition: The written abbreviation of monday.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 10
@@ -880,7 +880,7 @@ MonoBehaviour:
     Forwards: LYE
     Backwards: EYL
     Definition: A substance using for making soap in past times.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 0
@@ -891,7 +891,7 @@ MonoBehaviour:
     Forwards: UPS
     Backwards: SPU
     Definition: To increase the amount or level of something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 2
@@ -903,7 +903,7 @@ MonoBehaviour:
     Backwards: PMUH
     Definition: A large round shape that rises above the surface of the ground or
       a surface.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 7
@@ -915,7 +915,7 @@ MonoBehaviour:
     Backwards: TNUA
     Definition: "The sister of your father or mother, or the wife of your father\u2019s
       or mother\u2019s brother."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 1
@@ -937,7 +937,7 @@ MonoBehaviour:
     Forwards: TINGE
     Backwards: EGNIT
     Definition: A high clear ringing sound.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 4
@@ -970,7 +970,7 @@ MonoBehaviour:
     Forwards: ANTI
     Backwards: ITNA
     Definition: Opposed to something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 10
@@ -1003,7 +1003,7 @@ MonoBehaviour:
     Forwards: TING
     Backwards: GNIT
     Definition: A high clear ringing sound.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 4
@@ -1014,7 +1014,7 @@ MonoBehaviour:
     Forwards: TIL
     Backwards: LIT
     Definition: Another spelling of till.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 1
@@ -1036,7 +1036,7 @@ MonoBehaviour:
     Forwards: LID
     Backwards: DIL
     Definition: A lidded container, pot, etc. has a lid.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 7
@@ -1069,7 +1069,7 @@ MonoBehaviour:
     Forwards: GEE
     Backwards: EEG
     Definition: Used to show that you are surprised or annoyed.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 7
@@ -1081,7 +1081,7 @@ MonoBehaviour:
     Backwards: RRE
     Definition: To be more careful, safe, etc. than is necessary rather than risk
       making a mistake.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 3
@@ -1103,7 +1103,7 @@ MonoBehaviour:
     Forwards: MOLL
     Backwards: LLOM
     Definition: "A criminal\u2019s girlfriend."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 0
@@ -1125,7 +1125,7 @@ MonoBehaviour:
     Forwards: ORE
     Backwards: ERO
     Definition: Rock or earth from which metal can be obtained.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 8

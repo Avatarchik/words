@@ -32,7 +32,7 @@ MonoBehaviour:
     Forwards: HONK
     Backwards: KNOH
     Definition: Used to emphasize that something is very large.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 4
@@ -43,7 +43,7 @@ MonoBehaviour:
     Forwards: BRAG
     Backwards: GARB
     Definition: To talk too proudly about what you have done, what you own, etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -65,7 +65,7 @@ MonoBehaviour:
     Forwards: TAT
     Backwards: TAT
     Definition: A type of lace that you make by hand, or the process of making it.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 0
@@ -76,7 +76,7 @@ MonoBehaviour:
     Forwards: ENS
     Backwards: SNE
     Definition: Made of a particular material or substance.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 3
@@ -99,7 +99,7 @@ MonoBehaviour:
     Backwards: ZDA
     Definition: A sharp tool with the blade at a right angle to the handle, used in
       order to shape pieces of wood.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 2
@@ -121,7 +121,7 @@ MonoBehaviour:
     Forwards: HON
     Backwards: NOH
     Definition: A short form of honey, used to address someone you love.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 4
@@ -143,7 +143,7 @@ MonoBehaviour:
     Forwards: GEN
     Backwards: NEG
     Definition: The written abbreviation of general.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
@@ -165,7 +165,7 @@ MonoBehaviour:
     Forwards: RAG
     Backwards: GAR
     Definition: To make jokes and laugh at someone in order to embarrass him or her.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 1
@@ -188,7 +188,7 @@ MonoBehaviour:
     Backwards: DIA
     Definition: A very serious disease caused by a virus that makes your body unable
       to defend itself against infections.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 0
@@ -199,7 +199,7 @@ MonoBehaviour:
     Forwards: RAN
     Backwards: NAR
     Definition: The past tense of run.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 1
@@ -210,7 +210,7 @@ MonoBehaviour:
     Forwards: GENS
     Backwards: SNEG
     Definition: The written abbreviation of general.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
@@ -221,7 +221,7 @@ MonoBehaviour:
     Forwards: BRA
     Backwards: ARB
     Definition: A piece of underwear that a woman wears to support her breasts.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0

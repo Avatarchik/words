@@ -32,7 +32,7 @@ MonoBehaviour:
     Forwards: SCRIPTING
     Backwards: GNITPIRCS
     Definition: The written form of a speech, play, movie, etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 5
@@ -54,7 +54,7 @@ MonoBehaviour:
     Forwards: WRONGLY
     Backwards: YLGNORW
     Definition: Not in the correct way.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 9
@@ -65,7 +65,7 @@ MonoBehaviour:
     Forwards: FEASTINGS
     Backwards: SGNITSAEF
     Definition: A large meal for a lot of people, to celebrate a special occasion.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 0
@@ -77,7 +77,7 @@ MonoBehaviour:
     Backwards: SEGARIM
     Definition: A strange effect caused by hot air in a desert, in which you think
       you can see objects when they are not actually there.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 7
@@ -89,7 +89,7 @@ MonoBehaviour:
     Backwards: DENOITAR
     Definition: A specific amount of something such as food or gasoline that you are
       allowed to have, when there is not much available.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 8
@@ -122,7 +122,7 @@ MonoBehaviour:
     Forwards: ENCASING
     Backwards: GNISACNE
     Definition: To cover or surround something completely.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 1
@@ -145,7 +145,7 @@ MonoBehaviour:
     Backwards: LUFTOLP
     Definition: To make a secret plan to harm a person or organization, especially
       a political leader or government.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 2
@@ -156,7 +156,7 @@ MonoBehaviour:
     Forwards: JOKED
     Backwards: DEKOJ
     Definition: To say things that are intended to be funny.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 0
@@ -168,7 +168,7 @@ MonoBehaviour:
     Backwards: BAD
     Definition: A small amount of something that you put onto a surface with your
       hand, a cloth, etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 0
@@ -191,7 +191,7 @@ MonoBehaviour:
     Backwards: GAD
     Definition: The Secretary General of the United Nations from 1953 until his death
       in 1961.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 9
@@ -202,7 +202,7 @@ MonoBehaviour:
     Forwards: WAG
     Backwards: GAW
     Definition: Someone who says amusing things.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 9
@@ -214,7 +214,7 @@ MonoBehaviour:
     Backwards: OITAR
     Definition: A relationship between two amounts, represented by a pair of numbers
       showing how much bigger one amount is than the other.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 8
@@ -236,7 +236,7 @@ MonoBehaviour:
     Forwards: LUNG
     Backwards: GNUL
     Definition: One of the two organs in your body that you breathe with.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 3
@@ -247,7 +247,7 @@ MonoBehaviour:
     Forwards: LAB
     Backwards: BAL
     Definition: A laboratory.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 6
@@ -259,7 +259,7 @@ MonoBehaviour:
     Backwards: STIN
     Definition: "An egg of a lousea small insect, that is sometimes found in people\u2019s
       hair."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 6
@@ -270,7 +270,7 @@ MonoBehaviour:
     Forwards: EAT
     Backwards: TAE
     Definition: To put food in your mouth and swallow it.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 3
@@ -281,7 +281,7 @@ MonoBehaviour:
     Forwards: GNU
     Backwards: UNG
     Definition: A wildebeest.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 3
@@ -303,7 +303,7 @@ MonoBehaviour:
     Forwards: EASTINGS
     Backwards: SGNITSAE
     Definition: Toward the east.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 1
@@ -314,7 +314,7 @@ MonoBehaviour:
     Forwards: SLUNG
     Backwards: GNULS
     Definition: The past tense and past participle of sling.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 3
@@ -325,7 +325,7 @@ MonoBehaviour:
     Forwards: GOOD
     Backwards: DOOG
     Definition: Of a high standard or quality.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 7
@@ -347,7 +347,7 @@ MonoBehaviour:
     Forwards: KNEE
     Backwards: EENK
     Definition: The joint that bends in the middle of your leg.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 0
@@ -359,7 +359,7 @@ MonoBehaviour:
     Backwards: GAG
     Definition: To feel sick in a way that makes you feel as though you might vomitbring
       food from your stomach back through your mouth.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 7
@@ -370,7 +370,7 @@ MonoBehaviour:
     Forwards: SUN
     Backwards: NUS
     Definition: To sit or lie outside while the sun is shining.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 8
@@ -382,7 +382,7 @@ MonoBehaviour:
     Backwards: GNOG
     Definition: A round piece of metal that hangs in a frame and is hit with a stick
       to make a loud sound, especially as a signal.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 7
@@ -427,7 +427,7 @@ MonoBehaviour:
     Backwards: TEB
     Definition: An agreement to risk money on the result of a race, game, competition,
       etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 2
@@ -438,7 +438,7 @@ MonoBehaviour:
     Forwards: KEEN
     Backwards: NEEK
     Definition: Very interested in something or very eager to do it.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 4
@@ -450,7 +450,7 @@ MonoBehaviour:
     Backwards: TIK
     Definition: A set of tools, equipment, etc. that you use for a particular purpose
       or activity.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 6
@@ -461,7 +461,7 @@ MonoBehaviour:
     Forwards: SEEP
     Backwards: PEES
     Definition: To flow slowly through small holes or spaces.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 2
@@ -483,7 +483,7 @@ MonoBehaviour:
     Forwards: AGES
     Backwards: SEGA
     Definition: Between 5 and 10, 16 and 18, etc. years old.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 4
@@ -494,7 +494,7 @@ MonoBehaviour:
     Forwards: REF
     Backwards: FER
     Definition: A referee.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 8
@@ -517,7 +517,7 @@ MonoBehaviour:
     Backwards: OOD
     Definition: A word for solid waste from your body, used especially by or when
       speaking to children.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 4
@@ -528,7 +528,7 @@ MonoBehaviour:
     Forwards: SIN
     Backwards: NIS
     Definition: "To break God\u2019s laws."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 5
@@ -572,7 +572,7 @@ MonoBehaviour:
     Forwards: JOKE
     Backwards: EKOJ
     Definition: To say things that are intended to be funny.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 0
@@ -605,7 +605,7 @@ MonoBehaviour:
     Forwards: SAI
     Backwards: IAS
     Definition: A good quality that you cannot easily describe.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 8
@@ -628,7 +628,7 @@ MonoBehaviour:
     Backwards: GNISAC
     Definition: An outer layer that covers and protects something such as a wire,
       a bullet, or a sausage.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 3
@@ -640,7 +640,7 @@ MonoBehaviour:
     Backwards: CAS
     Definition: A part inside a plant or animal that is shaped like a bag and contains
       liquid or air.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 5
@@ -651,7 +651,7 @@ MonoBehaviour:
     Forwards: ANA
     Backwards: ANA
     Definition: A collection of objects, papers, etc., relating to someone or something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 6
@@ -662,7 +662,7 @@ MonoBehaviour:
     Forwards: PEES
     Backwards: SEEP
     Definition: To pass liquid waste from your body.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 2
@@ -673,7 +673,7 @@ MonoBehaviour:
     Forwards: TEL
     Backwards: LET
     Definition: "The written abbreviation of \u201Ctelephone number\u201D."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 6
@@ -718,7 +718,7 @@ MonoBehaviour:
     Backwards: DEKCIN
     Definition: To make a small cut in the surface or edge of something, usually by
       accident.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 3
@@ -730,7 +730,7 @@ MonoBehaviour:
     Backwards: SNI
     Definition: Used with the name of a container, place, or area to show where someone
       or something is.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 4
@@ -785,7 +785,7 @@ MonoBehaviour:
     Forwards: RIM
     Backwards: MIR
     Definition: To be around the edge of something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 5
@@ -820,7 +820,7 @@ MonoBehaviour:
     Definition: "Used after a negative statement, especially to add information, and
       meaning \u201Cand not,\u201D \u201Cor not,\u201D \u201Cneither,\u201D or \u201Cnot
       either\u201D."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 6
@@ -842,7 +842,7 @@ MonoBehaviour:
     Forwards: MEN
     Backwards: NEM
     Definition: The plural of man.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
@@ -853,7 +853,7 @@ MonoBehaviour:
     Forwards: TEN
     Backwards: NET
     Definition: A piece of paper money worth $10.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 1
@@ -865,7 +865,7 @@ MonoBehaviour:
     Backwards: ENCA
     Definition: A skin problem that affects mainly young people and causes a lot of
       small red pimples on the face and neck.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 4
@@ -877,7 +877,7 @@ MonoBehaviour:
     Backwards: TOLP
     Definition: To make a secret plan to harm a person or organization, especially
       a political leader or government.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 2

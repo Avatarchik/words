@@ -22,7 +22,7 @@ MonoBehaviour:
     Backwards: SGNIREFLIP
     Definition: To steal small amounts of things, or things that are not worth much,
       especially from the place where you work.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 0
@@ -56,7 +56,7 @@ MonoBehaviour:
     Backwards: SGNIGGIRP
     Definition: Someone who obeys moral rules very carefully, and seems to think that
       he or she is better than other people.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 0
@@ -133,7 +133,7 @@ MonoBehaviour:
     Forwards: UNDERMINES
     Backwards: SENIMREDNU
     Definition: To gradually make someone or something less strong or effective.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -167,7 +167,7 @@ MonoBehaviour:
     Backwards: NOCILIS
     Definition: An element that exists as a solid or as a powder and is often used
       for making glass, bricks, and parts for computers.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 0
@@ -178,7 +178,7 @@ MonoBehaviour:
     Forwards: EYE
     Backwards: EYE
     Definition: One of the two parts of the body that you see with.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 9
@@ -200,7 +200,7 @@ MonoBehaviour:
     Forwards: SERE
     Backwards: ERES
     Definition: Very dry.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 9
@@ -211,7 +211,7 @@ MonoBehaviour:
     Forwards: VILLS
     Backwards: SLLIV
     Definition: "Used in the names of places to mean \u201Ccity or town\u201D."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 1
@@ -244,7 +244,7 @@ MonoBehaviour:
     Forwards: BUG
     Backwards: GUB
     Definition: A small insect.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 4
@@ -255,7 +255,7 @@ MonoBehaviour:
     Forwards: MINE
     Backwards: ENIM
     Definition: The thing or things belonging or relating to the person who is speaking.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 5
@@ -266,7 +266,7 @@ MonoBehaviour:
     Forwards: ARM
     Backwards: MRA
     Definition: Carrying weapons, especially a gun.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 10
@@ -288,7 +288,7 @@ MonoBehaviour:
     Forwards: AIR
     Backwards: RIA
     Definition: The mixture of gases surrounding the Earth, that we breathe.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 6
@@ -300,7 +300,7 @@ MonoBehaviour:
     Backwards: ENIMRE
     Definition: An expensive white fur, used especially for the clothes of judges,
       kings, and queens.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
@@ -311,7 +311,7 @@ MonoBehaviour:
     Forwards: GALS
     Backwards: SLAG
     Definition: The written abbreviation ofgallon.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 8
@@ -323,7 +323,7 @@ MonoBehaviour:
     Backwards: KCOC
     Definition: To lift a part of your body so that it is upright, or hold a part
       of your body at an angle.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 1
@@ -367,7 +367,7 @@ MonoBehaviour:
     Forwards: ANA
     Backwards: ANA
     Definition: A collection of objects, papers, etc., relating to someone or something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 7
@@ -378,7 +378,7 @@ MonoBehaviour:
     Forwards: CON
     Backwards: NOC
     Definition: "A trick to get someone\u2019s money or make him or her do something."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 0
@@ -389,7 +389,7 @@ MonoBehaviour:
     Forwards: GEN
     Backwards: NEG
     Definition: The written abbreviation of general.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 7
@@ -400,7 +400,7 @@ MonoBehaviour:
     Forwards: SWAYS
     Backwards: SYAWS
     Definition: Power to rule or influence people.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 5
@@ -423,7 +423,7 @@ MonoBehaviour:
     Backwards: WAY
     Definition: If a ship, aircraft, etc. yaws, it turns away from the correct direction
       it should be traveling in.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 2
@@ -435,7 +435,7 @@ MonoBehaviour:
     Backwards: NOCI
     Definition: Someone famous who is admired by many people and is thought to represent
       an important idea.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 0
@@ -446,7 +446,7 @@ MonoBehaviour:
     Forwards: ILL
     Backwards: LLI
     Definition: Harm, evil, or bad luck.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 0
@@ -458,7 +458,7 @@ MonoBehaviour:
     Backwards: ECNAL
     Definition: A long thin pointed weapon that was used in the past by soldiers riding
       on horses.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 8
@@ -470,7 +470,7 @@ MonoBehaviour:
     Backwards: YPS
     Definition: Someone whose job it is to find out secret information about another
       country, organization, or group.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 0
@@ -515,7 +515,7 @@ MonoBehaviour:
     Backwards: SGNIR
     Definition: If a telephone rings, it makes a sound to show that someone is calling
       you.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 5
@@ -527,7 +527,7 @@ MonoBehaviour:
     Backwards: GALS
     Definition: A waste material similar to glass, which is left when metal is obtained
       from rock.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 5
@@ -549,7 +549,7 @@ MonoBehaviour:
     Forwards: ALS
     Backwards: SLA
     Definition: The written abbreviation of alabama.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 7
@@ -560,7 +560,7 @@ MonoBehaviour:
     Forwards: ALL
     Backwards: LLA
     Definition: Consisting of or made of only one type of thing.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 3
@@ -571,7 +571,7 @@ MonoBehaviour:
     Forwards: ULE
     Backwards: ELU
     Definition: A small type of something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 2
@@ -594,7 +594,7 @@ MonoBehaviour:
     Backwards: GIRP
     Definition: Someone who obeys moral rules very carefully, and seems to think that
       he or she is better than other people.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 0
@@ -605,7 +605,7 @@ MonoBehaviour:
     Forwards: FEES
     Backwards: SEEF
     Definition: An amount of money that you pay to do something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 3
@@ -616,7 +616,7 @@ MonoBehaviour:
     Forwards: ERE
     Backwards: ERE
     Definition: Before.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 8
@@ -628,7 +628,7 @@ MonoBehaviour:
     Backwards: SRRE
     Definition: To be more careful, safe, etc. than is necessary rather than risk
       making a mistake.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 9
@@ -673,7 +673,7 @@ MonoBehaviour:
     Backwards: SGNIGGIR
     Definition: To arrange or influence an election, competition, etc. in a dishonest
       way, so that you get the result that you want.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 1
@@ -685,7 +685,7 @@ MonoBehaviour:
     Backwards: REH
     Definition: Belonging to or relating to a woman, girl, or female animal that has
       been mentioned or is known about.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 5
@@ -708,7 +708,7 @@ MonoBehaviour:
     Backwards: ECI
     Definition: A mixture made from sugar, a liquid, and sometimes a fat such as butter,
       which is used to cover cakes.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 6
@@ -719,7 +719,7 @@ MonoBehaviour:
     Forwards: ILLS
     Backwards: SLLI
     Definition: Harm, evil, or bad luck.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 0
@@ -730,7 +730,7 @@ MonoBehaviour:
     Forwards: REF
     Backwards: FER
     Definition: A referee.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 5
@@ -753,7 +753,7 @@ MonoBehaviour:
     Backwards: YLS
     Definition: A smile, look, etc. that shows that you are hiding something you know
       from other people.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 0
@@ -764,7 +764,7 @@ MonoBehaviour:
     Forwards: MINES
     Backwards: SENIM
     Definition: The thing or things belonging or relating to the person who is speaking.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 5
@@ -808,7 +808,7 @@ MonoBehaviour:
     Forwards: SEN
     Backwards: NES
     Definition: The written abbreviation of senator.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 9
@@ -819,7 +819,7 @@ MonoBehaviour:
     Forwards: EYED
     Backwards: DEYE
     Definition: One of the two parts of the body that you see with.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 9
@@ -830,7 +830,7 @@ MonoBehaviour:
     Forwards: ARE
     Backwards: ERA
     Definition: "The present tense plural form of \u201Cbe\u201D."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 6
@@ -841,7 +841,7 @@ MonoBehaviour:
     Forwards: BUGS
     Backwards: SGUB
     Definition: A small insect.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 4
@@ -852,7 +852,7 @@ MonoBehaviour:
     Forwards: ROE
     Backwards: EOR
     Definition: Fish eggs eaten as a food.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 8
@@ -863,7 +863,7 @@ MonoBehaviour:
     Forwards: RED
     Backwards: DER
     Definition: The color of blood.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 4
@@ -875,7 +875,7 @@ MonoBehaviour:
     Backwards: LED
     Definition: A group of islands near the south coast of South America, which belong
       to Chile and Argentina.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 2
@@ -886,7 +886,7 @@ MonoBehaviour:
     Forwards: UNDER
     Backwards: REDNU
     Definition: Less of an action or quality than is appropriate, needed, or desired.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -898,7 +898,7 @@ MonoBehaviour:
     Backwards: PSIL
     Definition: "To pronounce \u201Cs\u201D sounds as \u201Cth\u201D when you are
       speaking."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0
@@ -909,7 +909,7 @@ MonoBehaviour:
     Forwards: LAIR
     Backwards: RIAL
     Definition: A secret place where you can hide.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 5
@@ -921,7 +921,7 @@ MonoBehaviour:
     Backwards: NIG
     Definition: A strong alcoholic drink made mainly from grain, or a glass of this
       drink.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 4
@@ -943,7 +943,7 @@ MonoBehaviour:
     Forwards: FEE
     Backwards: EEF
     Definition: An amount of money that you pay to do something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 3
@@ -955,7 +955,7 @@ MonoBehaviour:
     Backwards: NROH
     Definition: The piece of equipment in a car, bus, etc. that is used to make a
       loud sound as a signal or warning.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 8
@@ -966,7 +966,7 @@ MonoBehaviour:
     Forwards: RUM
     Backwards: MUR
     Definition: A strong alcoholic drink made from sugar, or a glass of this drink.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 10
@@ -977,7 +977,7 @@ MonoBehaviour:
     Forwards: HIE
     Backwards: EIH
     Definition: To make yourself hurry, or go quickly.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 8
@@ -1000,7 +1000,7 @@ MonoBehaviour:
     Backwards: EDEC
     Definition: To give something such as an area of land or a right to a country
       or person, especially when you are forced to.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 5
@@ -1012,7 +1012,7 @@ MonoBehaviour:
     Backwards: TUC
     Definition: To use a knife, scissors, etc. to divide something into two or more
       pieces, or to remove a piece from the main part of something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 1
@@ -1034,7 +1034,7 @@ MonoBehaviour:
     Forwards: LOG
     Backwards: GOL
     Definition: To make an official record of events, facts, etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 2
@@ -1045,7 +1045,7 @@ MonoBehaviour:
     Forwards: GOB
     Backwards: BOG
     Definition: A mass of something wet and sticky.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 10
@@ -1057,7 +1057,7 @@ MonoBehaviour:
     Backwards: SRE
     Definition: A sound you make when you pause to correct something you have just
       said, or when you do not know exactly what to say.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 5
@@ -1068,7 +1068,7 @@ MonoBehaviour:
     Forwards: VILL
     Backwards: LLIV
     Definition: "Used in the names of places to mean \u201Ccity or town\u201D."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 1

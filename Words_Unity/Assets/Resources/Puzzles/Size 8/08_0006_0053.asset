@@ -33,7 +33,7 @@ MonoBehaviour:
     Backwards: SLAMSID
     Definition: If a situation or place is dismal, it is so bad that it makes you
       feel very unhappy and hopeless.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 7
@@ -45,7 +45,7 @@ MonoBehaviour:
     Backwards: TEREB
     Definition: A round hat with a tight band around the head and a soft loose top
       part.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 7
@@ -79,7 +79,7 @@ MonoBehaviour:
     Backwards: ELKNAR
     Definition: If something rankles or rankles you, it makes you very annoyed or
       angry.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -113,7 +113,7 @@ MonoBehaviour:
     Backwards: DEWOL
     Definition: In or to a low position or level that is closer to the ground than
       usual.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 5
@@ -146,7 +146,7 @@ MonoBehaviour:
     Forwards: SPRATS
     Backwards: STARPS
     Definition: A small European herring.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0
@@ -201,7 +201,7 @@ MonoBehaviour:
     Forwards: YEA
     Backwards: AEY
     Definition: Yes.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 5
@@ -213,7 +213,7 @@ MonoBehaviour:
     Backwards: MSI
     Definition: A religion, political belief, or style of art based on a particular
       principle or the teachings of a particular person.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 6
@@ -225,7 +225,7 @@ MonoBehaviour:
     Backwards: DROF
     Definition: A place in a river that is not deep so that you can walk or drive
       across it.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 4
@@ -236,7 +236,7 @@ MonoBehaviour:
     Forwards: ANKLET
     Backwards: TELKNA
     Definition: A ring or bracelet worn around your ankle.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 1
@@ -248,7 +248,7 @@ MonoBehaviour:
     Backwards: WED
     Definition: The small drops of water that form on outdoor surfaces during the
       night.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 1
@@ -259,7 +259,7 @@ MonoBehaviour:
     Forwards: ALS
     Backwards: SLA
     Definition: The written abbreviation of alabama.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 3
@@ -270,7 +270,7 @@ MonoBehaviour:
     Forwards: RAT
     Backwards: TAR
     Definition: An animal that looks like a large mouse with a long tail.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 2
@@ -284,7 +284,7 @@ MonoBehaviour:
       the west coast of South America that happens every three to eight years, leading
       to severe changes in the weather in many parts of the world, especially to countries
       in or near the Pacific Ocean.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 5
@@ -318,7 +318,7 @@ MonoBehaviour:
     Backwards: EWOL
     Definition: In or to a low position or level that is closer to the ground than
       usual.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 5
@@ -329,7 +329,7 @@ MonoBehaviour:
     Forwards: DIB
     Backwards: BID
     Definition: The right to have, use, or do something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 7
@@ -340,7 +340,7 @@ MonoBehaviour:
     Forwards: RATS
     Backwards: STAR
     Definition: An animal that looks like a large mouse with a long tail.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 2
@@ -363,7 +363,7 @@ MonoBehaviour:
     Backwards: SEY
     Definition: Used as an answer to say that something is true, that you agree, that
       you want something, or that you are willing to do something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 6
@@ -375,7 +375,7 @@ MonoBehaviour:
     Backwards: SOD
     Definition: Software that is loaded onto a computer system to make all the different
       parts work together.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 0
@@ -386,7 +386,7 @@ MonoBehaviour:
     Forwards: SAT
     Backwards: TAS
     Definition: A written abbreviation of saturday.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 1
@@ -397,7 +397,7 @@ MonoBehaviour:
     Forwards: WED
     Backwards: DEW
     Definition: "Someone\u2019s legal husband or wife."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 3
@@ -430,7 +430,7 @@ MonoBehaviour:
     Forwards: PSI
     Backwards: ISP
     Definition: The 23th letter of the Greek alphabet.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 3
@@ -441,7 +441,7 @@ MonoBehaviour:
     Forwards: ACT
     Backwards: TCA
     Definition: One thing that someone does.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 3
@@ -474,7 +474,7 @@ MonoBehaviour:
     Forwards: ANKLE
     Backwards: ELKNA
     Definition: The joint between your foot and your leg.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 1
@@ -486,7 +486,7 @@ MonoBehaviour:
     Backwards: WOL
     Definition: In or to a low position or level that is closer to the ground than
       usual.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 5
@@ -508,7 +508,7 @@ MonoBehaviour:
     Forwards: MAL
     Backwards: LAM
     Definition: Bad or badly.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 4
@@ -519,7 +519,7 @@ MonoBehaviour:
     Forwards: RAN
     Backwards: NAR
     Definition: The past tense of run.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -531,7 +531,7 @@ MonoBehaviour:
     Backwards: POM
     Definition: A thing used for washing floors, made of a long stick with threads
       of thick string or a sponge fastened to one end.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 4
@@ -542,7 +542,7 @@ MonoBehaviour:
     Forwards: TEL
     Backwards: LET
     Definition: "The written abbreviation of \u201Ctelephone number\u201D."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 6
@@ -553,7 +553,7 @@ MonoBehaviour:
     Forwards: ELK
     Backwards: KLE
     Definition: A large deer with a lot of hair around its neck.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 5
@@ -564,7 +564,7 @@ MonoBehaviour:
     Forwards: CUB
     Backwards: BUC
     Definition: The baby of a wild animal such as a lion or a bear.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 7
@@ -575,7 +575,7 @@ MonoBehaviour:
     Forwards: DANS
     Backwards: SNAD
     Definition: In the Bible, the head of one of the 12 tribes of Israel.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 0
@@ -586,7 +586,7 @@ MonoBehaviour:
     Forwards: DAN
     Backwards: NAD
     Definition: In the Bible, the head of one of the 12 tribes of Israel.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 0
@@ -598,7 +598,7 @@ MonoBehaviour:
     Backwards: SOS
     Definition: A signal that a ship or aircraft sends to say that it is in danger
       and needs help quickly.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 7

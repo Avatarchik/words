@@ -22,7 +22,7 @@ MonoBehaviour:
     Backwards: TIAW
     Definition: A period of time in which you wait for something to happen, someone
       to arrive, etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 4
@@ -45,7 +45,7 @@ MonoBehaviour:
     Backwards: SGUT
     Definition: A small strong boat used for pulling or guiding ships into a port,
       up a river, etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 4
@@ -56,7 +56,7 @@ MonoBehaviour:
     Forwards: HEAR
     Backwards: RAEH
     Definition: The sense which you use to hear sounds.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 0
@@ -67,7 +67,7 @@ MonoBehaviour:
     Forwards: DIKE
     Backwards: EKID
     Definition: A wall or bank built to keep back water and prevent flooding.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 0
@@ -100,7 +100,7 @@ MonoBehaviour:
     Forwards: HAD
     Backwards: DAH
     Definition: The past tense and past participle of have.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 0
@@ -111,7 +111,7 @@ MonoBehaviour:
     Forwards: RUE
     Backwards: EUR
     Definition: To wish that you had not done something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 3
@@ -122,7 +122,7 @@ MonoBehaviour:
     Forwards: HOT
     Backwards: TOH
     Definition: Having a high temperature.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 1
@@ -145,7 +145,7 @@ MonoBehaviour:
     Backwards: GUT
     Definition: A small strong boat used for pulling or guiding ships into a port,
       up a river, etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 4
@@ -178,7 +178,7 @@ MonoBehaviour:
     Forwards: ANA
     Backwards: ANA
     Definition: A collection of objects, papers, etc., relating to someone or something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 4
@@ -190,7 +190,7 @@ MonoBehaviour:
     Backwards: GIG
     Definition: To give a performance of modern popular music, jazz, etc., for which
       you are paid.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 0
@@ -202,7 +202,7 @@ MonoBehaviour:
     Backwards: IAT
     Definition: A Chinese form of physical exercise that trains your mind and body
       in balance and control.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
@@ -235,7 +235,7 @@ MonoBehaviour:
     Forwards: EAR
     Backwards: RAE
     Definition: Having long, short, etc. ears.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 1

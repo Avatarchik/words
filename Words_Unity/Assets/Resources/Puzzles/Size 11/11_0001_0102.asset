@@ -43,7 +43,7 @@ MonoBehaviour:
     Forwards: ABET
     Backwards: TEBA
     Definition: To help someone do something wrong or illegal.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 3
@@ -76,7 +76,7 @@ MonoBehaviour:
     Forwards: MAGICAL
     Backwards: LACIGAM
     Definition: Very enjoyable, exciting, or romantic, in a strange or special way.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 1
@@ -88,7 +88,7 @@ MonoBehaviour:
     Backwards: SEITIROJAM
     Definition: A rank in the army, marines, or air force, or someone who has this
       rank.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 10
@@ -132,7 +132,7 @@ MonoBehaviour:
     Forwards: TAGGED
     Backwards: DEGGAT
     Definition: To fasten a tag onto something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 2
@@ -154,7 +154,7 @@ MonoBehaviour:
     Forwards: CLASSY
     Backwards: YSSALC
     Definition: Stylish and fashionable, and usually expensive.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 8
@@ -166,7 +166,7 @@ MonoBehaviour:
     Backwards: SESSELBON
     Definition: A phrase meaning that people who belong to a high social class should
       be generous and behave with honor.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 9
@@ -188,7 +188,7 @@ MonoBehaviour:
     Forwards: ELOPES
     Backwards: SEPOLE
     Definition: To go away secretly with someone in order to get married.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 9
@@ -200,7 +200,7 @@ MonoBehaviour:
     Backwards: SEIRC
     Definition: To produce tears from your eyes, usually because you are unhappy or
       hurt.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 8
@@ -234,7 +234,7 @@ MonoBehaviour:
     Backwards: STSEP
     Definition: A small animal or insect that harms people or destroys things, especially
       crops or food supplies.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 6
@@ -257,7 +257,7 @@ MonoBehaviour:
     Backwards: GNINWORC
     Definition: "To place a crown on someone\u2019s head so that he or she officially
       becomes king or queen."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 0
@@ -312,7 +312,7 @@ MonoBehaviour:
     Forwards: NOBLES
     Backwards: SELBON
     Definition: Morally good or generous in a way that should be admired.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 9
@@ -323,7 +323,7 @@ MonoBehaviour:
     Forwards: CLASS
     Backwards: SSALC
     Definition: To decide that someone or something belongs in a particular group.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 8
@@ -356,7 +356,7 @@ MonoBehaviour:
     Forwards: CROW
     Backwards: WORC
     Definition: If a rooster crows, it makes a loud high sound.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 0
@@ -367,7 +367,7 @@ MonoBehaviour:
     Forwards: USE
     Backwards: ESU
     Definition: The state of being useful.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 10
@@ -389,7 +389,7 @@ MonoBehaviour:
     Forwards: TAG
     Backwards: GAT
     Definition: To fasten a tag onto something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 2
@@ -401,7 +401,7 @@ MonoBehaviour:
     Backwards: SHA
     Definition: Used in order to show your surprise, anger, pain, happiness, agreement,
       etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 2
@@ -413,7 +413,7 @@ MonoBehaviour:
     Backwards: ROJAM
     Definition: A rank in the army, marines, or air force, or someone who has this
       rank.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 10
@@ -468,7 +468,7 @@ MonoBehaviour:
     Forwards: SOB
     Backwards: BOS
     Definition: To cry loudly while breathing in short sudden bursts.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 6
@@ -480,7 +480,7 @@ MonoBehaviour:
     Backwards: IGAM
     Definition: The three wise men who brought gifts to the baby Jesus Christ, according
       to the Christian religion.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 1
@@ -502,7 +502,7 @@ MonoBehaviour:
     Forwards: SIC
     Backwards: CIS
     Definition: Used to tell a dog to attack someone.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 5
@@ -535,7 +535,7 @@ MonoBehaviour:
     Forwards: TIS
     Backwards: SIT
     Definition: "A short form of \u201Cit is\u201D."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 1
@@ -569,7 +569,7 @@ MonoBehaviour:
     Backwards: GNINWO
     Definition: To legally have something because you have bought it, been given it,
       etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 0
@@ -580,7 +580,7 @@ MonoBehaviour:
     Forwards: ERGS
     Backwards: SGRE
     Definition: A unit used to measure work or energy.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 3
@@ -613,7 +613,7 @@ MonoBehaviour:
     Forwards: POLE
     Backwards: ELOP
     Definition: Someone who comes from Poland.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 6
@@ -668,7 +668,7 @@ MonoBehaviour:
     Forwards: ANI
     Backwards: INA
     Definition: Some or even the smallest amount.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 7
@@ -681,7 +681,7 @@ MonoBehaviour:
     Definition: In the US, a series of tests that are designed to provide a qualification
       equal to a high school diploma, for people who left high school without completing
       their education.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 5
@@ -714,7 +714,7 @@ MonoBehaviour:
     Forwards: ELOPE
     Backwards: EPOLE
     Definition: To go away secretly with someone in order to get married.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 9
@@ -725,7 +725,7 @@ MonoBehaviour:
     Forwards: NIP
     Backwards: PIN
     Definition: A small sharp bite, or the action of biting someone or something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 6
@@ -736,7 +736,7 @@ MonoBehaviour:
     Forwards: GOO
     Backwards: OOG
     Definition: A disgusting sticky substance.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 0
@@ -748,7 +748,7 @@ MonoBehaviour:
     Backwards: TSEP
     Definition: A small animal or insect that harms people or destroys things, especially
       crops or food supplies.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 6
@@ -759,7 +759,7 @@ MonoBehaviour:
     Forwards: GOT
     Backwards: TOG
     Definition: The past tense of get.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 7
@@ -771,7 +771,7 @@ MonoBehaviour:
     Backwards: FOO
     Definition: The sound that you make when you have been hit, especially in the
       stomach.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 9
@@ -782,7 +782,7 @@ MonoBehaviour:
     Forwards: MOO
     Backwards: OOM
     Definition: The sound that a cow makes.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 10
@@ -806,7 +806,7 @@ MonoBehaviour:
     Definition: A Chinese soldier and politician, leader of the Chinese nationalist
       Party, who was forced to move from mainland China to the island of Taiwan by
       the Communists in 1949, and ruled Taiwan as president until he died.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 1
@@ -818,7 +818,7 @@ MonoBehaviour:
     Backwards: GIR
     Definition: To arrange or influence an election, competition, etc. in a dishonest
       way, so that you get the result that you want.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 5
@@ -851,7 +851,7 @@ MonoBehaviour:
     Forwards: INANE
     Backwards: ENANI
     Definition: Extremely stupid or without much meaning.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 5
@@ -873,7 +873,7 @@ MonoBehaviour:
     Forwards: OLD
     Backwards: DLO
     Definition: Something that is old has existed or been used for a long time.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 10
@@ -885,7 +885,7 @@ MonoBehaviour:
     Backwards: TUP
     Definition: To move something to a particular place or position, especially using
       your hands.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
@@ -897,7 +897,7 @@ MonoBehaviour:
     Backwards: BOL
     Definition: To throw something somewhere in a high curve, especially over a wall,
       fence, etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 7
@@ -909,7 +909,7 @@ MonoBehaviour:
     Backwards: AKS
     Definition: A kind of popular music originally from Jamaica with a fast regular
       beat, similar to reggae.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 1
@@ -921,7 +921,7 @@ MonoBehaviour:
     Backwards: IKS
     Definition: The sport of moving down hills or across land in the snow, wearing
       skis.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 4
@@ -932,7 +932,7 @@ MonoBehaviour:
     Forwards: DIP
     Backwards: PID
     Definition: To put something into a liquid and quickly lift it out again.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -955,7 +955,7 @@ MonoBehaviour:
     Backwards: TSE
     Definition: The written abbreviation of established used after the names of a
       business to show when it was started.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 5
@@ -967,7 +967,7 @@ MonoBehaviour:
     Backwards: NIP
     Definition: To fasten something somewhere, or to join two things together, using
       a pin.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 4
@@ -1001,7 +1001,7 @@ MonoBehaviour:
     Backwards: KCUB
     Definition: If a horse bucks, it kicks its back feet into the air, or jumps with
       all four feet off the ground.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 3
@@ -1023,7 +1023,7 @@ MonoBehaviour:
     Forwards: OFF
     Backwards: FFO
     Definition: Away or from where something is.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 5
@@ -1045,7 +1045,7 @@ MonoBehaviour:
     Forwards: COO
     Backwards: OOC
     Definition: To make the low soft cry of a dove or pigeon.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 3
@@ -1078,7 +1078,7 @@ MonoBehaviour:
     Forwards: PING
     Backwards: GNIP
     Definition: To make a short high ringing sound.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 4
@@ -1089,7 +1089,7 @@ MonoBehaviour:
     Forwards: ERG
     Backwards: GRE
     Definition: A unit used to measure work or energy.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 4
@@ -1112,7 +1112,7 @@ MonoBehaviour:
     Backwards: GGE
     Definition: To encourage someone to do something, especially something that he
       or she should not do or does not want to do.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 6
@@ -1123,7 +1123,7 @@ MonoBehaviour:
     Forwards: UPPING
     Backwards: GNIPPU
     Definition: To increase the amount or level of something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 2
@@ -1135,7 +1135,7 @@ MonoBehaviour:
     Backwards: TEP
     Definition: A plan, idea, or subject that you particularly like or are interested
       in.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 2

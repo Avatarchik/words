@@ -44,7 +44,7 @@ MonoBehaviour:
     Backwards: TIC
     Definition: An abbreviation used in formal writing to refer to a book that has
       been mentioned already.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 0
@@ -56,7 +56,7 @@ MonoBehaviour:
     Backwards: RAM
     Definition: "The small red planet that is fourth in order from the Sun and is
       the first planet outside Earth\u2019s orbit."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 3
@@ -67,7 +67,7 @@ MonoBehaviour:
     Forwards: RAN
     Backwards: NAR
     Definition: The past tense of run.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -78,7 +78,7 @@ MonoBehaviour:
     Forwards: LIP
     Backwards: PIL
     Definition: With lips that are thin, round, etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
@@ -100,7 +100,7 @@ MonoBehaviour:
     Forwards: RAG
     Backwards: GAR
     Definition: To make jokes and laugh at someone in order to embarrass him or her.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0

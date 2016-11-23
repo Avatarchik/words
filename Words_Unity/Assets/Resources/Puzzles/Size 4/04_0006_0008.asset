@@ -32,7 +32,7 @@ MonoBehaviour:
     Forwards: LOP
     Backwards: POL
     Definition: To cut branches from a tree, especially with a single strong movement.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
@@ -54,7 +54,7 @@ MonoBehaviour:
     Forwards: WIG
     Backwards: GIW
     Definition: To become very anxious, upset, or afraid, or to make someone do this.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 0
@@ -88,7 +88,7 @@ MonoBehaviour:
     Backwards: NIG
     Definition: A strong alcoholic drink made mainly from grain, or a glass of this
       drink.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 1

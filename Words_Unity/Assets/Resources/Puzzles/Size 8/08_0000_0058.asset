@@ -22,7 +22,7 @@ MonoBehaviour:
     Backwards: GIF
     Definition: A soft sweet fruit with a lot of small seeds, often eaten dried, or
       the tree on which this fruit grows.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 4
@@ -56,7 +56,7 @@ MonoBehaviour:
     Backwards: WONNIW
     Definition: To become smaller, or to make a list, group, or quantity do this,
       by getting rid of the parts that you do not need or want.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 7
@@ -67,7 +67,7 @@ MonoBehaviour:
     Forwards: SODDED
     Backwards: DEDDOS
     Definition: A piece of dirt with grass growing on top of it.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 7
@@ -78,7 +78,7 @@ MonoBehaviour:
     Forwards: MERRY
     Backwards: YRREM
     Definition: Used to say that you hope someone will have a happy time at Christmas.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 1
@@ -122,7 +122,7 @@ MonoBehaviour:
     Forwards: DONS
     Backwards: SNOD
     Definition: The leader of a Mafia organization.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 5
@@ -145,7 +145,7 @@ MonoBehaviour:
     Backwards: OOW
     Definition: To try to persuade someone to buy something from you, do something
       for you, work for you, etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 3
@@ -156,7 +156,7 @@ MonoBehaviour:
     Forwards: MEN
     Backwards: NEM
     Definition: The plural of man.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 2
@@ -167,7 +167,7 @@ MonoBehaviour:
     Forwards: TOP
     Backwards: POT
     Definition: In the highest place or position.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 1
@@ -178,7 +178,7 @@ MonoBehaviour:
     Forwards: ONS
     Backwards: SNO
     Definition: Touching or supported by a particular surface.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 5
@@ -189,7 +189,7 @@ MonoBehaviour:
     Forwards: GAT
     Backwards: TAG
     Definition: A gun.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 0
@@ -223,7 +223,7 @@ MonoBehaviour:
     Backwards: SHO
     Definition: Used to express a strong emotion or to emphasize what you think about
       something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 7
@@ -234,7 +234,7 @@ MonoBehaviour:
     Forwards: STOP
     Backwards: POTS
     Definition: To prevent something from continuing or happening.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 0
@@ -245,7 +245,7 @@ MonoBehaviour:
     Forwards: DIV
     Backwards: VID
     Definition: The written abbreviation of division.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 7
@@ -256,7 +256,7 @@ MonoBehaviour:
     Forwards: ERE
     Backwards: ERE
     Definition: Before.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 6
@@ -278,7 +278,7 @@ MonoBehaviour:
     Forwards: SOD
     Backwards: DOS
     Definition: A piece of dirt with grass growing on top of it.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 7
@@ -289,7 +289,7 @@ MonoBehaviour:
     Forwards: OWS
     Backwards: SWO
     Definition: Said to show that something hurts you.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 3
@@ -334,7 +334,7 @@ MonoBehaviour:
     Backwards: SWONNIW
     Definition: To become smaller, or to make a list, group, or quantity do this,
       by getting rid of the parts that you do not need or want.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 7
@@ -368,7 +368,7 @@ MonoBehaviour:
     Backwards: EPA
     Definition: A large monkey without a tail, or with a very short tail, such as
       a gorilla or a chimpanzee.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
@@ -379,7 +379,7 @@ MonoBehaviour:
     Forwards: OAF
     Backwards: FAO
     Definition: A stupid awkward man or boy.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 2
@@ -390,7 +390,7 @@ MonoBehaviour:
     Forwards: DEN
     Backwards: NED
     Definition: A room in a house where people relax, read, watch television, etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 4
@@ -412,7 +412,7 @@ MonoBehaviour:
     Forwards: GATS
     Backwards: STAG
     Definition: A gun.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 0
@@ -423,7 +423,7 @@ MonoBehaviour:
     Forwards: OUS
     Backwards: SUO
     Definition: Having a particular quality.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 0
@@ -434,7 +434,7 @@ MonoBehaviour:
     Forwards: TOG
     Backwards: GOT
     Definition: Clothes.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0
@@ -456,7 +456,7 @@ MonoBehaviour:
     Forwards: AMP
     Backwards: PMA
     Definition: An amplifier.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 1
@@ -511,7 +511,7 @@ MonoBehaviour:
     Forwards: AMI
     Backwards: IMA
     Definition: A U.S. poet.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
@@ -522,7 +522,7 @@ MonoBehaviour:
     Forwards: FOE
     Backwards: EOF
     Definition: An enemy.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 4
@@ -533,7 +533,7 @@ MonoBehaviour:
     Forwards: DON
     Backwards: NOD
     Definition: The leader of a Mafia organization.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 5
@@ -589,7 +589,7 @@ MonoBehaviour:
     Backwards: TSUO
     Definition: To force someone out of a position of power, especially so that you
       can take his or her place.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 0
@@ -612,7 +612,7 @@ MonoBehaviour:
     Backwards: FIG
     Definition: A type of computer file used on the Internet that contains pictures,
       photographs, or other images.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 4
@@ -624,7 +624,7 @@ MonoBehaviour:
     Backwards: RRE
     Definition: To be more careful, safe, etc. than is necessary rather than risk
       making a mistake.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 2
@@ -635,7 +635,7 @@ MonoBehaviour:
     Forwards: WIN
     Backwards: NIW
     Definition: A score, plan, etc. that makes you win something or be successful.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 7
@@ -647,7 +647,7 @@ MonoBehaviour:
     Backwards: YPS
     Definition: Someone whose job it is to find out secret information about another
       country, organization, or group.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 7
@@ -658,7 +658,7 @@ MonoBehaviour:
     Forwards: ODD
     Backwards: DDO
     Definition: In a strange or unusual way.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 7

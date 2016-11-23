@@ -32,7 +32,7 @@ MonoBehaviour:
     Forwards: ALSO
     Backwards: OSLA
     Definition: In addition to something else you have mentioned; as well as.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 6
@@ -43,7 +43,7 @@ MonoBehaviour:
     Forwards: EXERT
     Backwards: TREXE
     Definition: To use your authority, influence, etc. to make something happen.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 5
@@ -54,7 +54,7 @@ MonoBehaviour:
     Forwards: PEBBLE
     Backwards: ELBBEP
     Definition: A small smooth stone found on the beach or on the bottom of a river.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 1
@@ -66,7 +66,7 @@ MonoBehaviour:
     Backwards: DEILPPA
     Definition: To make a formal, usually written request to be considered for a job,
       an opportunity to study at a college, permission to do something, etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 1
@@ -100,7 +100,7 @@ MonoBehaviour:
     Backwards: ELSSAH
     Definition: Something that is annoying, because it causes problems or is difficult
       to do.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 7
@@ -134,7 +134,7 @@ MonoBehaviour:
     Backwards: RUOY
     Definition: The thing or things belonging to or relating to the person or people
       someone is speaking or writing to.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 3
@@ -146,7 +146,7 @@ MonoBehaviour:
     Backwards: EROL
     Definition: Knowledge or information about a subject, for example nature or magic,
       that is not written down but that one person tells to another person.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 5
@@ -191,7 +191,7 @@ MonoBehaviour:
     Backwards: ENOL
     Definition: Being the only person or thing in a place, or the only person or thing
       that does something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 0
@@ -202,7 +202,7 @@ MonoBehaviour:
     Forwards: YOU
     Backwards: UOY
     Definition: The person or people someone is speaking or writing to.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 3
@@ -213,7 +213,7 @@ MonoBehaviour:
     Forwards: PLIED
     Backwards: DEILP
     Definition: To work at your business or special skill.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 1
@@ -225,7 +225,7 @@ MonoBehaviour:
     Backwards: POOL
     Definition: A shape like a curve or a circle made by a line curving back toward
       itself, or a piece of wire, string, etc. that has this shape.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 5
@@ -237,7 +237,7 @@ MonoBehaviour:
     Backwards: BBE
     Definition: A situation or state in which something increases and decreases in
       a type of pattern.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 2
@@ -259,7 +259,7 @@ MonoBehaviour:
     Forwards: ROE
     Backwards: EOR
     Definition: Fish eggs eaten as a food.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 3
@@ -270,7 +270,7 @@ MonoBehaviour:
     Forwards: NIL
     Backwards: LIN
     Definition: Nothing or zero.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0
@@ -281,7 +281,7 @@ MonoBehaviour:
     Forwards: LIED
     Backwards: DEIL
     Definition: To deliberately tell someone something that is not true.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 1
@@ -303,7 +303,7 @@ MonoBehaviour:
     Forwards: ALS
     Backwards: SLA
     Definition: The written abbreviation of alabama.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 6
@@ -314,7 +314,7 @@ MonoBehaviour:
     Forwards: BRO
     Backwards: ORB
     Definition: Your brother.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 4
@@ -337,7 +337,7 @@ MonoBehaviour:
     Backwards: TSE
     Definition: The written abbreviation of established used after the names of a
       business to show when it was started.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 7
@@ -360,7 +360,7 @@ MonoBehaviour:
     Backwards: SELOR
     Definition: The position, job, or function someone or something has in a particular
       activity or situation.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 2
@@ -371,7 +371,7 @@ MonoBehaviour:
     Forwards: VIE
     Backwards: EIV
     Definition: To compete very hard with someone in order to get something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 6
@@ -382,7 +382,7 @@ MonoBehaviour:
     Forwards: EEL
     Backwards: LEE
     Definition: A long thin fish that looks like a snake and can be eaten.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 3
@@ -393,7 +393,7 @@ MonoBehaviour:
     Forwards: HAS
     Backwards: SAH
     Definition: The third person singular of the present tense of have.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 7
@@ -405,7 +405,7 @@ MonoBehaviour:
     Backwards: LIA
     Definition: An ailing company or economy is having a lot of problems and is not
       successful.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 7
@@ -416,7 +416,7 @@ MonoBehaviour:
     Forwards: RYE
     Backwards: EYR
     Definition: A type of grain that is used for making bread and whiskey.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 6
@@ -427,7 +427,7 @@ MonoBehaviour:
     Forwards: OPS
     Backwards: SPO
     Definition: The written abbreviation of opus.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 0
@@ -438,7 +438,7 @@ MonoBehaviour:
     Forwards: BRA
     Backwards: ARB
     Definition: A piece of underwear that a woman wears to support her breasts.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 6
@@ -461,7 +461,7 @@ MonoBehaviour:
     Backwards: EROS
     Definition: A part of your body that is sore is painful and often red because
       of a wound or infection, or because you have used a muscle too much.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 4
@@ -472,7 +472,7 @@ MonoBehaviour:
     Forwards: SILL
     Backwards: LLIS
     Definition: The narrow shelf at the base of a window frame.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 5
@@ -483,7 +483,7 @@ MonoBehaviour:
     Forwards: PST
     Backwards: TSP
     Definition: The abbreviation of pacific standard time.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 1
@@ -494,7 +494,7 @@ MonoBehaviour:
     Forwards: MEN
     Backwards: NEM
     Definition: The plural of man.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 0
@@ -506,7 +506,7 @@ MonoBehaviour:
     Backwards: SORB
     Definition: "The written abbreviation of \u201CBrothers,\u201D used in the names
       of companies."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 4
@@ -517,7 +517,7 @@ MonoBehaviour:
     Forwards: ONE
     Backwards: ENO
     Definition: A piece of paper money worth $1.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 0
@@ -553,7 +553,7 @@ MonoBehaviour:
       the west coast of South America that happens every three to eight years, leading
       to severe changes in the weather in many parts of the world, especially to countries
       in or near the Pacific Ocean.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 2
@@ -565,7 +565,7 @@ MonoBehaviour:
     Backwards: EAT
     Definition: A type of exercise that combines dancing, kicking, and quick hand
       movements.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -587,7 +587,7 @@ MonoBehaviour:
     Forwards: LEA
     Backwards: AEL
     Definition: An area of land with grass.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
@@ -609,7 +609,7 @@ MonoBehaviour:
     Forwards: BIT
     Backwards: TIB
     Definition: Slightly, but not very.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 6
@@ -620,7 +620,7 @@ MonoBehaviour:
     Forwards: ILL
     Backwards: LLI
     Definition: Harm, evil, or bad luck.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 5
@@ -631,7 +631,7 @@ MonoBehaviour:
     Forwards: ASS
     Backwards: SSA
     Definition: The part of your body that you sit on.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 6
@@ -642,7 +642,7 @@ MonoBehaviour:
     Forwards: TOP
     Backwards: POT
     Definition: In the highest place or position.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0

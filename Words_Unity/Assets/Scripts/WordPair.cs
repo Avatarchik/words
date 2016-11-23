@@ -22,6 +22,7 @@ public class WordPair : IComparable
 		Backwards = WordHelper.ReverseWord(word);
 
 		Definition = definition;
+		HasDefinition = !string.IsNullOrEmpty(Definition);
 
 		FromPosition = fromPosition;
 		ToPosition = toPosition;

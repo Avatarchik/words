@@ -22,7 +22,7 @@ MonoBehaviour:
     Backwards: LACIMOTA
     Definition: Relating to the energy produced by splitting atoms or the weapons
       that use this energy.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 7
@@ -34,7 +34,7 @@ MonoBehaviour:
     Backwards: ETALUMIS
     Definition: A machine that is used for training people by letting them feel what
       real conditions are like, for example in a plane.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 8
@@ -45,7 +45,7 @@ MonoBehaviour:
     Forwards: SIDE
     Backwards: EDIS
     Definition: Having the number or type of sides mentioned.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 8
@@ -68,7 +68,7 @@ MonoBehaviour:
     Backwards: YLBAULAV
     Definition: Things that you own that are worth a lot of money, such as jewelry,
       cameras, etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 8
@@ -112,7 +112,7 @@ MonoBehaviour:
     Forwards: GROCER
     Backwards: RECORG
     Definition: Someone who owns or works in a grocery store.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 1
@@ -124,7 +124,7 @@ MonoBehaviour:
     Backwards: AREIVIR
     Definition: A warm coast that is popular with people who are on vacation, especially
       the Mediterranean coast of France.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 0
@@ -136,7 +136,7 @@ MonoBehaviour:
     Backwards: STEMOC
     Definition: An object in space like a bright ball with a tail, that moves around
       the sun.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0
@@ -159,7 +159,7 @@ MonoBehaviour:
     Backwards: DUP
     Definition: A thick sweet creamy food, made with milk, eggs, sugar, and a little
       flour, and usually served cold.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 8
@@ -182,7 +182,7 @@ MonoBehaviour:
     Backwards: ACIM
     Definition: A mineral that separates easily into small flat transparent pieces
       of rock, often used to make electrical instruments.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 7
@@ -193,7 +193,7 @@ MonoBehaviour:
     Forwards: DOD
     Backwards: DOD
     Definition: The abbreviation of the department of defense.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 8
@@ -204,7 +204,7 @@ MonoBehaviour:
     Forwards: INN
     Backwards: NNI
     Definition: A word used in the names of some hotels and restaurants.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 6
@@ -226,7 +226,7 @@ MonoBehaviour:
     Forwards: SIP
     Backwards: PIS
     Definition: To drink something slowly, taking very small mouthfuls.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 8
@@ -237,7 +237,7 @@ MonoBehaviour:
     Forwards: ALUM
     Backwards: MULA
     Definition: A former student of a school or college.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 3
@@ -249,7 +249,7 @@ MonoBehaviour:
     Backwards: ERIT
     Definition: A thick round piece of rubber that fits around the wheel of a car,
       bicycle, etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 0
@@ -260,7 +260,7 @@ MonoBehaviour:
     Forwards: SIN
     Backwards: NIS
     Definition: "To break God\u2019s laws."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 2
@@ -272,7 +272,7 @@ MonoBehaviour:
     Backwards: CER
     Definition: A public room, for example in a hospital, used for social activities
       or games.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 6
@@ -283,7 +283,7 @@ MonoBehaviour:
     Forwards: USE
     Backwards: ESU
     Definition: The state of being useful.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 5
@@ -295,7 +295,7 @@ MonoBehaviour:
     Backwards: AKS
     Definition: A kind of popular music originally from Jamaica with a fast regular
       beat, similar to reggae.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 2
@@ -340,7 +340,7 @@ MonoBehaviour:
     Backwards: CIMOTA
     Definition: Relating to the energy produced by splitting atoms or the weapons
       that use this energy.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 7
@@ -373,7 +373,7 @@ MonoBehaviour:
     Forwards: ARC
     Backwards: CRA
     Definition: A curved shape.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 5
@@ -384,7 +384,7 @@ MonoBehaviour:
     Forwards: ARD
     Backwards: DRA
     Definition: Someone who is usually or always in a particular state.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 6
@@ -407,7 +407,7 @@ MonoBehaviour:
     Backwards: EEB
     Definition: A black and yellow flying insect with a round body that makes honey
       and can sting you.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 3
@@ -419,7 +419,7 @@ MonoBehaviour:
     Backwards: MOTA
     Definition: Relating to the energy produced by splitting atoms or the weapons
       that use this energy.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 7
@@ -430,7 +430,7 @@ MonoBehaviour:
     Forwards: COME
     Backwards: EMOC
     Definition: Happening soon.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0
@@ -463,7 +463,7 @@ MonoBehaviour:
     Forwards: UPS
     Backwards: SPU
     Definition: To increase the amount or level of something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 8
@@ -475,7 +475,7 @@ MonoBehaviour:
     Backwards: RAT
     Definition: A black substance, thick and sticky when hot but hard when cold, used
       especially for making road surfaces.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 7
@@ -497,7 +497,7 @@ MonoBehaviour:
     Forwards: HOT
     Backwards: TOH
     Definition: Having a high temperature.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 0
@@ -508,7 +508,7 @@ MonoBehaviour:
     Forwards: RAN
     Backwards: NAR
     Definition: The past tense of run.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 7
@@ -530,7 +530,7 @@ MonoBehaviour:
     Forwards: ANA
     Backwards: ANA
     Definition: A collection of objects, papers, etc., relating to someone or something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 4
@@ -542,7 +542,7 @@ MonoBehaviour:
     Backwards: EAT
     Definition: A type of exercise that combines dancing, kicking, and quick hand
       movements.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 4
@@ -553,7 +553,7 @@ MonoBehaviour:
     Forwards: BIO
     Backwards: OIB
     Definition: A biography.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 3
@@ -576,7 +576,7 @@ MonoBehaviour:
     Backwards: CIT
     Definition: A sudden uncontrolled movement of a muscle in your face, usually because
       of a nervous illness.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 5
@@ -598,7 +598,7 @@ MonoBehaviour:
     Forwards: SPUD
     Backwards: DUPS
     Definition: A potato.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 8
@@ -665,7 +665,7 @@ MonoBehaviour:
     Backwards: HCRA
     Definition: A structure with a curved top and straight sides that supports the
       weight of a bridge or building.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 5
@@ -699,7 +699,7 @@ MonoBehaviour:
     Backwards: MEH
     Definition: The edge of a piece of cloth that is turned under and sewn down, especially
       the lower edge of a skirt, pants, etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 0
@@ -710,7 +710,7 @@ MonoBehaviour:
     Forwards: AIR
     Backwards: RIA
     Definition: The mixture of gases surrounding the Earth, that we breathe.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 4
@@ -743,7 +743,7 @@ MonoBehaviour:
     Forwards: THO
     Backwards: OHT
     Definition: A short form of though.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -755,7 +755,7 @@ MonoBehaviour:
     Backwards: GIR
     Definition: To arrange or influence an election, competition, etc. in a dishonest
       way, so that you get the result that you want.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 4
@@ -766,7 +766,7 @@ MonoBehaviour:
     Forwards: VIE
     Backwards: EIV
     Definition: To compete very hard with someone in order to get something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 2
@@ -789,7 +789,7 @@ MonoBehaviour:
     Backwards: TAP
     Definition: A pat answer or explanation seems too quick and too simple, and sounds
       as if it has been used before.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 0
@@ -800,7 +800,7 @@ MonoBehaviour:
     Forwards: POO
     Backwards: OOP
     Definition: Poop.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 0
@@ -811,7 +811,7 @@ MonoBehaviour:
     Forwards: COR
     Backwards: ROC
     Definition: "Used instead of con- before the letter \u201Cr\u201D."
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 4
@@ -822,7 +822,7 @@ MonoBehaviour:
     Forwards: ABLY
     Backwards: YLBA
     Definition: Intelligently, skillfully, or well.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 4
