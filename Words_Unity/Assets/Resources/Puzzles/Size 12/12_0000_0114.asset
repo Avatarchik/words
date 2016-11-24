@@ -21,7 +21,7 @@ MonoBehaviour:
     Forwards: NEARED
     Backwards: DERAEN
     Definition: Only a short distance from a person or thing.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 10
@@ -33,7 +33,7 @@ MonoBehaviour:
     Backwards: SEIVARG
     Definition: Sauce made from the juice that comes from meat as it cooks, mixed
       with flour and water.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 11
       Y: 4
@@ -66,7 +66,7 @@ MonoBehaviour:
     Forwards: KINGDOM
     Backwards: MODGNIK
     Definition: A country governed by a king or queen.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 9
@@ -77,7 +77,7 @@ MonoBehaviour:
     Forwards: IMPACTING
     Backwards: GNITCAPMI
     Definition: To have an important or noticeable effect on someone or something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 11
@@ -88,7 +88,7 @@ MonoBehaviour:
     Forwards: TOOTHSOME
     Backwards: EMOSHTOOT
     Definition: Tasting good.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 0
@@ -100,7 +100,7 @@ MonoBehaviour:
     Backwards: CIHRRYP
     Definition: A victory in which the person who wins suffers so much that the victory
       was hardly worth winning.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 9
@@ -133,7 +133,7 @@ MonoBehaviour:
     Forwards: MONOMANIA
     Backwards: AINAMONOM
     Definition: An unusually strong interest in a particular idea or subject.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 11
@@ -167,7 +167,7 @@ MonoBehaviour:
     Backwards: HCTAL
     Definition: A small metal or plastic object used to keep doors, gates, windows,
       etc. closed.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 10
@@ -190,7 +190,7 @@ MonoBehaviour:
     Backwards: PSIRC
     Definition: A type of dessert in which fruit is baked with a mixture of sugar,
       butter, flour, and sometimes oats on top.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 9
@@ -212,7 +212,7 @@ MonoBehaviour:
     Forwards: TURBO
     Backwards: OBRUT
     Definition: A turbocharger.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 5
@@ -234,7 +234,7 @@ MonoBehaviour:
     Forwards: FOND
     Backwards: DNOF
     Definition: In a way that shows you like someone or something very much.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 7
@@ -267,7 +267,7 @@ MonoBehaviour:
     Forwards: DID
     Backwards: DID
     Definition: The past tense of do.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 0
@@ -278,7 +278,7 @@ MonoBehaviour:
     Forwards: RINDS
     Backwards: SDNIR
     Definition: The thick outer skin of some types of fruit, such as oranges.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 2
@@ -289,7 +289,7 @@ MonoBehaviour:
     Forwards: ASH
     Backwards: HSA
     Definition: The soft gray powder that remains after something has been burned.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 11
@@ -301,7 +301,7 @@ MonoBehaviour:
     Backwards: YAN
     Definition: Used when you are adding something to emphasize what you have just
       said.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 6
@@ -312,7 +312,7 @@ MonoBehaviour:
     Forwards: SAX
     Backwards: XAS
     Definition: A saxophone.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 11
@@ -323,7 +323,7 @@ MonoBehaviour:
     Forwards: CAM
     Backwards: MAC
     Definition: The use of computers to help make industrial products.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 3
@@ -335,7 +335,7 @@ MonoBehaviour:
     Backwards: ARE
     Definition: A period of time that is associated with particular events or qualities,
       or that begins with a particular date or event.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 6
@@ -358,7 +358,7 @@ MonoBehaviour:
     Backwards: KRA
     Definition: In the Bible, the large boat built by Noah to save his family and
       the animals from a flood that covered the Earth.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 4
@@ -380,7 +380,7 @@ MonoBehaviour:
     Forwards: LOG
     Backwards: GOL
     Definition: To make an official record of events, facts, etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 7
@@ -402,7 +402,7 @@ MonoBehaviour:
     Forwards: HOGS
     Backwards: SGOH
     Definition: To keep or use all of something when you should share it.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 1
@@ -424,7 +424,7 @@ MonoBehaviour:
     Forwards: UNI
     Backwards: INU
     Definition: One.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 10
@@ -447,7 +447,7 @@ MonoBehaviour:
     Backwards: SNNA
     Definition: A Jewish girl who wrote a famous diary, in which she described her
       life while she and her family were hiding from the Nazis in Amsterdam.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 4
@@ -481,7 +481,7 @@ MonoBehaviour:
     Backwards: SAB
     Definition: A style of art in which stone or wood is cut so that shapes are raised
       above the surrounding surface.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 4
@@ -503,7 +503,7 @@ MonoBehaviour:
     Forwards: VIES
     Backwards: SEIV
     Definition: To compete very hard with someone in order to get something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 7
@@ -525,7 +525,7 @@ MonoBehaviour:
     Forwards: ERG
     Backwards: GRE
     Definition: A unit used to measure work or energy.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 1
@@ -537,7 +537,7 @@ MonoBehaviour:
     Backwards: ERIT
     Definition: A thick round piece of rubber that fits around the wheel of a car,
       bicycle, etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 1
@@ -548,7 +548,7 @@ MonoBehaviour:
     Forwards: DING
     Backwards: GNID
     Definition: To damage something slightly by hitting it.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 2
@@ -559,7 +559,7 @@ MonoBehaviour:
     Forwards: COT
     Backwards: TOC
     Definition: A light narrow bed that can be folded and stored.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 3
@@ -570,7 +570,7 @@ MonoBehaviour:
     Forwards: ACT
     Backwards: TCA
     Definition: One thing that someone does.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 8
@@ -581,7 +581,7 @@ MonoBehaviour:
     Forwards: DIP
     Backwards: PID
     Definition: To put something into a liquid and quickly lift it out again.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 5
@@ -593,7 +593,7 @@ MonoBehaviour:
     Backwards: NAM
     Definition: Having qualities that people expect and admire in a man, such as being
       brave and strong.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 11
@@ -604,7 +604,7 @@ MonoBehaviour:
     Forwards: DOT
     Backwards: TOD
     Definition: A round mark or spot.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 5
@@ -627,7 +627,7 @@ MonoBehaviour:
     Backwards: SRE
     Definition: A sound you make when you pause to correct something you have just
       said, or when you do not know exactly what to say.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 2
@@ -661,7 +661,7 @@ MonoBehaviour:
     Backwards: AINAM
     Definition: A very strong desire for something or interest in something, especially
       one that affects a lot of people at the same time.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 11
@@ -684,7 +684,7 @@ MonoBehaviour:
     Backwards: OOHS
     Definition: To make a child, animal, or insect go away by waving your arms, especially
       because they are annoying you.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 8
@@ -707,7 +707,7 @@ MonoBehaviour:
     Backwards: GAG
     Definition: To feel sick in a way that makes you feel as though you might vomitbring
       food from your stomach back through your mouth.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 11
       Y: 3
@@ -718,7 +718,7 @@ MonoBehaviour:
     Forwards: TING
     Backwards: GNIT
     Definition: A high clear ringing sound.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 6
@@ -730,7 +730,7 @@ MonoBehaviour:
     Backwards: RAT
     Definition: A black substance, thick and sticky when hot but hard when cold, used
       especially for making road surfaces.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 10
@@ -741,7 +741,7 @@ MonoBehaviour:
     Forwards: ALS
     Backwards: SLA
     Definition: The written abbreviation of alabama.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 4
@@ -764,7 +764,7 @@ MonoBehaviour:
     Backwards: KAO
     Definition: A large tree that is common in northern countries, or the hard wood
       of this tree.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 9
@@ -775,7 +775,7 @@ MonoBehaviour:
     Forwards: IRE
     Backwards: ERI
     Definition: Anger.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 1
@@ -819,7 +819,7 @@ MonoBehaviour:
     Forwards: LIP
     Backwards: PIL
     Definition: With lips that are thin, round, etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 7
@@ -841,7 +841,7 @@ MonoBehaviour:
     Forwards: GROUP
     Backwards: PUORG
     Definition: To put people or things into groups or types according to a system.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 5
@@ -874,7 +874,7 @@ MonoBehaviour:
     Forwards: SIR
     Backwards: RIS
     Definition: Used when speaking to a man in order to be polite or to show respect.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0
@@ -886,7 +886,7 @@ MonoBehaviour:
     Backwards: NROH
     Definition: The piece of equipment in a car, bus, etc. that is used to make a
       loud sound as a signal or warning.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 10
@@ -909,7 +909,7 @@ MonoBehaviour:
     Backwards: SHO
     Definition: Used to express a strong emotion or to emphasize what you think about
       something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 6
@@ -920,7 +920,7 @@ MonoBehaviour:
     Forwards: RIND
     Backwards: DNIR
     Definition: The thick outer skin of some types of fruit, such as oranges.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 2
@@ -932,7 +932,7 @@ MonoBehaviour:
     Backwards: SHTOOT
     Definition: One of the hard white objects in your mouth that you use to bite and
       chew your food.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 0
@@ -955,7 +955,7 @@ MonoBehaviour:
     Backwards: NIK
     Definition: Your family, including your grandparents, aunts, uncles, cousins,
       etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 9
@@ -966,7 +966,7 @@ MonoBehaviour:
     Forwards: DOC
     Backwards: COD
     Definition: A short form of doctor.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 11
       Y: 0
@@ -988,7 +988,7 @@ MonoBehaviour:
     Forwards: BED
     Backwards: DEB
     Definition: Sheets, covers, etc. that you put on a bed.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 8
@@ -999,7 +999,7 @@ MonoBehaviour:
     Forwards: VIE
     Backwards: EIV
     Definition: To compete very hard with someone in order to get something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 7
@@ -1021,7 +1021,7 @@ MonoBehaviour:
     Forwards: HID
     Backwards: DIH
     Definition: The past tense of hide1.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 5
@@ -1032,7 +1032,7 @@ MonoBehaviour:
     Forwards: VIN
     Backwards: NIV
     Definition: A dish of chicken cooked in red wine.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 7
@@ -1043,7 +1043,7 @@ MonoBehaviour:
     Forwards: PHI
     Backwards: IHP
     Definition: The 21st letter of the Greek alphabet.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 5
@@ -1054,7 +1054,7 @@ MonoBehaviour:
     Forwards: PSI
     Backwards: ISP
     Definition: The 23th letter of the Greek alphabet.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 5
@@ -1066,7 +1066,7 @@ MonoBehaviour:
     Backwards: RATS
     Definition: A large ball of burning gases in space that can be seen at night as
       a point of light in the sky.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 11
@@ -1088,7 +1088,7 @@ MonoBehaviour:
     Forwards: TOO
     Backwards: OOT
     Definition: More than is needed, wanted, or possible, or more than is reasonable.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 0
@@ -1099,7 +1099,7 @@ MonoBehaviour:
     Forwards: IMP
     Backwards: PMI
     Definition: A child who behaves badly, but in a way that is funny.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 11
@@ -1110,7 +1110,7 @@ MonoBehaviour:
     Forwards: TOOT
     Backwards: TOOT
     Definition: A way of talking to a woman, sometimes considered offensive.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 0
@@ -1122,7 +1122,7 @@ MonoBehaviour:
     Backwards: PIH
     Definition: One of the two parts on each side of your body between the top of
       your leg and your waist.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 7
@@ -1145,7 +1145,7 @@ MonoBehaviour:
     Backwards: TUC
     Definition: To use a knife, scissors, etc. to divide something into two or more
       pieces, or to remove a piece from the main part of something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 11
       Y: 2
@@ -1167,7 +1167,7 @@ MonoBehaviour:
     Forwards: KING
     Backwards: GNIK
     Definition: Two books in the Old Testament of the Christian Bible.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 9
@@ -1178,7 +1178,7 @@ MonoBehaviour:
     Forwards: LAT
     Backwards: TAL
     Definition: The written abbreviation of latitude.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 10
@@ -1190,7 +1190,7 @@ MonoBehaviour:
     Backwards: HTOOT
     Definition: One of the hard white objects in your mouth that you use to bite and
       chew your food.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 0
@@ -1213,7 +1213,7 @@ MonoBehaviour:
     Backwards: MUG
     Definition: A sweet sticky type of candy that you chew for a long time but do
       not swallow.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 11
       Y: 3
@@ -1235,7 +1235,7 @@ MonoBehaviour:
     Forwards: RAY
     Backwards: YAR
     Definition: A narrow beam of light from the Sun or from something such as a lamp.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 6
@@ -1247,7 +1247,7 @@ MonoBehaviour:
     Backwards: SNI
     Definition: Used with the name of a container, place, or area to show where someone
       or something is.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 8
@@ -1258,7 +1258,7 @@ MonoBehaviour:
     Forwards: ASP
     Backwards: PSA
     Definition: A small poisonous snake from North Africa.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 1
@@ -1270,7 +1270,7 @@ MonoBehaviour:
     Backwards: ETIR
     Definition: A ceremony that is always performed in the same way, usually for religious
       purposes.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 1
@@ -1281,7 +1281,7 @@ MonoBehaviour:
     Forwards: HOG
     Backwards: GOH
     Definition: To keep or use all of something when you should share it.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 1
@@ -1293,7 +1293,7 @@ MonoBehaviour:
     Backwards: EMOS
     Definition: Used to talk about a person or thing, when you do not know or say
       exactly which.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 0

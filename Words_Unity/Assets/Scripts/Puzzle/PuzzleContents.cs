@@ -51,10 +51,11 @@ public class PuzzleContents : ScriptableObject
 
 	public void UpdateDefinitions(WordDefinitions definitions)
 	{
-		foreach (WordPair word in Words)
+		int wordCount = Words.Length;
+		for (int wordIndex = 0; wordIndex < wordCount; ++wordIndex)
 		{
-			definitions.GetDefinitionFor(word.Forwards, ref word.Definition);
-			word.HasDefinition = !string.IsNullOrEmpty(word.Definition);
+			definitions.GetDefinitionFor(Words[wordIndex].Forwards, ref Words[wordIndex].Definition);
+			Words[wordIndex].HasDefinition = !string.IsNullOrEmpty(Words[wordIndex].Definition);
 		}
 	}
 

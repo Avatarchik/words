@@ -21,7 +21,7 @@ MonoBehaviour:
     Forwards: VIVACE
     Backwards: ECAVIV
     Definition: Played or sung quickly and with energy.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 0
@@ -66,7 +66,7 @@ MonoBehaviour:
     Backwards: SGNINWORD
     Definition: To die from being under water for too long, or to kill someone in
       this way.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 6
@@ -111,7 +111,7 @@ MonoBehaviour:
     Backwards: SRETPURSID
     Definition: A situation in which something is prevented from continuing in its
       usual way because of problems and difficulties.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 11
       Y: 10
@@ -122,7 +122,7 @@ MonoBehaviour:
     Forwards: RELIEVES
     Backwards: SEVEILER
     Definition: Feeling happy because you are no longer worried about something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 2
@@ -134,7 +134,7 @@ MonoBehaviour:
     Backwards: SACILISAB
     Definition: A large Christian church with long straight sides and one end that
       is shaped like half a circle.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 0
@@ -244,7 +244,7 @@ MonoBehaviour:
     Forwards: DEBS
     Backwards: SBED
     Definition: A debutante.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 1
@@ -256,7 +256,7 @@ MonoBehaviour:
     Backwards: GNINWO
     Definition: To legally have something because you have bought it, been given it,
       etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 6
@@ -301,7 +301,7 @@ MonoBehaviour:
     Backwards: XYP
     Definition: A small container in which the holy bread used for the Christian ceremony
       of communion is kept.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 10
@@ -378,7 +378,7 @@ MonoBehaviour:
     Forwards: BATE
     Backwards: ETAB
     Definition: Feeling very anxious or excited.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 7
@@ -389,7 +389,7 @@ MonoBehaviour:
     Forwards: ULE
     Backwards: ELU
     Definition: A small type of something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 3
@@ -400,7 +400,7 @@ MonoBehaviour:
     Forwards: SAT
     Backwards: TAS
     Definition: A written abbreviation of saturday.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 8
@@ -411,7 +411,7 @@ MonoBehaviour:
     Forwards: GOY
     Backwards: YOG
     Definition: A word used by Jewish people to talk about someone who is not Jewish.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 7
@@ -434,7 +434,7 @@ MonoBehaviour:
     Backwards: EDAH
     Definition: The place where people went after they died in the stories of ancient
       Greece.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 11
       Y: 8
@@ -445,7 +445,7 @@ MonoBehaviour:
     Forwards: ERE
     Backwards: ERE
     Definition: Before.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
@@ -456,7 +456,7 @@ MonoBehaviour:
     Forwards: LAS
     Backwards: SAL
     Definition: A city in the desert of the U.S. state of Nevada.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 11
@@ -467,7 +467,7 @@ MonoBehaviour:
     Forwards: RYE
     Backwards: EYR
     Definition: A type of grain that is used for making bread and whiskey.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 4
@@ -490,7 +490,7 @@ MonoBehaviour:
     Backwards: NWORD
     Definition: To die from being under water for too long, or to kill someone in
       this way.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 6
@@ -524,7 +524,7 @@ MonoBehaviour:
     Backwards: LIAP
     Definition: A container with a handle used for holding or carrying liquids, or
       used by children playing with sand.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 11
@@ -547,7 +547,7 @@ MonoBehaviour:
     Backwards: TPURSID
     Definition: A situation in which something is prevented from continuing in its
       usual way because of problems and difficulties.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 11
       Y: 10
@@ -559,7 +559,7 @@ MonoBehaviour:
     Backwards: NAC
     Definition: To have the skill, opportunity, time, equipment, strength, etc. that
       you need in order to do something.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 8
@@ -570,7 +570,7 @@ MonoBehaviour:
     Forwards: FIE
     Backwards: EIF
     Definition: Used to express anger or disapproval toward someone.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 3
@@ -582,7 +582,7 @@ MonoBehaviour:
     Backwards: LIA
     Definition: An ailing company or economy is having a lot of problems and is not
       successful.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 11
@@ -594,7 +594,7 @@ MonoBehaviour:
     Backwards: SRRE
     Definition: To be more careful, safe, etc. than is necessary rather than risk
       making a mistake.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 11
@@ -606,7 +606,7 @@ MonoBehaviour:
     Backwards: HCUOLS
     Definition: To stand, sit, or walk with your shoulders bent forward in a way that
       makes you look tired or lazy.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 1
@@ -617,7 +617,7 @@ MonoBehaviour:
     Forwards: FACTS
     Backwards: STCAF
     Definition: A piece of information that is known to be true.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 2
@@ -639,7 +639,7 @@ MonoBehaviour:
     Forwards: OUCH
     Backwards: HCUO
     Definition: A sound that you make when you feel sudden pain.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 1
@@ -661,7 +661,7 @@ MonoBehaviour:
     Forwards: LASS
     Backwards: SSAL
     Definition: A girl or young woman.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 11
@@ -672,7 +672,7 @@ MonoBehaviour:
     Forwards: BASIL
     Backwards: LISAB
     Definition: A sweet-smelling herb used in cooking.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 0
@@ -694,7 +694,7 @@ MonoBehaviour:
     Forwards: HOO
     Backwards: OOH
     Definition: Noisy talk or excitement that seems too much for the thing it is about.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 3
@@ -716,7 +716,7 @@ MonoBehaviour:
     Forwards: ACE
     Backwards: ECA
     Definition: To do very well on a test, a piece of written work, etc.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 3
@@ -738,7 +738,7 @@ MonoBehaviour:
     Forwards: ALUM
     Backwards: MULA
     Definition: A former student of a school or college.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 9
@@ -749,7 +749,7 @@ MonoBehaviour:
     Forwards: OFT
     Backwards: TFO
     Definition: Often.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 5
@@ -783,7 +783,7 @@ MonoBehaviour:
     Backwards: CAS
     Definition: A part inside a plant or animal that is shaped like a bag and contains
       liquid or air.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 8
@@ -796,7 +796,7 @@ MonoBehaviour:
     Definition: To have to pay someone for something that he or she has done for you
       or sold to you, or to have to give someone back money that he or she has lent
       you.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 7
@@ -807,7 +807,7 @@ MonoBehaviour:
     Forwards: ESS
     Backwards: SSE
     Definition: A woman who does something, or a female.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 11
@@ -818,7 +818,7 @@ MonoBehaviour:
     Forwards: VEIL
     Backwards: LIEV
     Definition: To cover someone or something with a veil or other cloth.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 2
@@ -829,7 +829,7 @@ MonoBehaviour:
     Forwards: BAT
     Backwards: TAB
     Definition: A small animal like a mouse that flies around at night.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 7
@@ -841,7 +841,7 @@ MonoBehaviour:
     Backwards: ACILISAB
     Definition: A large Christian church with long straight sides and one end that
       is shaped like half a circle.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 0
@@ -852,7 +852,7 @@ MonoBehaviour:
     Forwards: ALL
     Backwards: LLA
     Definition: Consisting of or made of only one type of thing.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 11
@@ -863,7 +863,7 @@ MonoBehaviour:
     Forwards: SUN
     Backwards: NUS
     Definition: To sit or lie outside while the sun is shining.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 4
@@ -874,7 +874,7 @@ MonoBehaviour:
     Forwards: ACTS
     Backwards: STCA
     Definition: One thing that someone does.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 3
@@ -885,7 +885,7 @@ MonoBehaviour:
     Forwards: NOS
     Backwards: SON
     Definition: The written abbreviation ofnumbers.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 5
       Y: 6
@@ -897,7 +897,7 @@ MonoBehaviour:
     Backwards: YPS
     Definition: Someone whose job it is to find out secret information about another
       country, organization, or group.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 11
@@ -942,7 +942,7 @@ MonoBehaviour:
     Backwards: SRE
     Definition: A sound you make when you pause to correct something you have just
       said, or when you do not know exactly what to say.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 4
       Y: 10
@@ -953,7 +953,7 @@ MonoBehaviour:
     Forwards: DIN
     Backwards: NID
     Definition: A loud continuous noise that sounds bad.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 11
       Y: 2
@@ -975,7 +975,7 @@ MonoBehaviour:
     Forwards: CURS
     Backwards: SRUC
     Definition: Having a lot of curls.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 4
@@ -997,7 +997,7 @@ MonoBehaviour:
     Forwards: SIR
     Backwards: RIS
     Definition: Used when speaking to a man in order to be polite or to show respect.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 11
       Y: 11
@@ -1008,7 +1008,7 @@ MonoBehaviour:
     Forwards: FACT
     Backwards: TCAF
     Definition: A piece of information that is known to be true.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 1
       Y: 2
@@ -1019,7 +1019,7 @@ MonoBehaviour:
     Forwards: EVE
     Backwards: EVE
     Definition: The night or day before an important religious day or holiday.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 2
@@ -1030,7 +1030,7 @@ MonoBehaviour:
     Forwards: ILL
     Backwards: LLI
     Definition: Harm, evil, or bad luck.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 8
       Y: 11
@@ -1085,7 +1085,7 @@ MonoBehaviour:
     Forwards: YON
     Backwards: NOY
     Definition: Yonder.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 0
@@ -1096,7 +1096,7 @@ MonoBehaviour:
     Forwards: DING
     Backwards: GNID
     Definition: To damage something slightly by hitting it.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 11
       Y: 2
@@ -1118,7 +1118,7 @@ MonoBehaviour:
     Forwards: OAR
     Backwards: RAO
     Definition: A long pole with a wide flat blade at one end, used for rowing a boat.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 7
       Y: 7
@@ -1130,7 +1130,7 @@ MonoBehaviour:
     Backwards: PLA
     Definition: A range of mountains in Europe that runs through France, Switzerland,
       Italy, Germany, and Austria.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 6
       Y: 8
@@ -1142,7 +1142,7 @@ MonoBehaviour:
     Backwards: TES
     Definition: The place where something is or where something happens, and the general
       environment surrounding the thing or event.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 11
@@ -1154,7 +1154,7 @@ MonoBehaviour:
     Backwards: SAB
     Definition: A style of art in which stone or wood is cut so that shapes are raised
       above the surrounding surface.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 10
       Y: 0
@@ -1165,7 +1165,7 @@ MonoBehaviour:
     Forwards: DON
     Backwards: NOD
     Definition: The leader of a Mafia organization.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 11
       Y: 10
@@ -1177,7 +1177,7 @@ MonoBehaviour:
     Backwards: XOB
     Definition: A container for putting things in, especially one with four stiff
       straight sides.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 8
@@ -1189,7 +1189,7 @@ MonoBehaviour:
     Backwards: OERETS
     Definition: Using a system of sound recording or broadcasting in which the sound
       is directed through two speakers to make it seem more real.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 0
       Y: 1
@@ -1201,7 +1201,7 @@ MonoBehaviour:
     Backwards: RRE
     Definition: To be more careful, safe, etc. than is necessary rather than risk
       making a mistake.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 2
       Y: 11
@@ -1223,7 +1223,7 @@ MonoBehaviour:
     Forwards: DEB
     Backwards: BED
     Definition: A debutante.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 9
       Y: 1
@@ -1245,7 +1245,7 @@ MonoBehaviour:
     Forwards: HAD
     Backwards: DAH
     Definition: The past tense and past participle of have.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 11
       Y: 8
@@ -1268,7 +1268,7 @@ MonoBehaviour:
     Backwards: RUO
     Definition: The thing or things belonging or relating to the person who is speaking
       and one or more other people.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 3
       Y: 5
@@ -1290,7 +1290,7 @@ MonoBehaviour:
     Forwards: DINGE
     Backwards: EGNID
     Definition: To damage something slightly by hitting it.
-    HasDefinition: 0
+    HasDefinition: 1
     FromPosition:
       X: 11
       Y: 2
