@@ -118,7 +118,7 @@ public class Highlighter : SingletonMonoBehaviour<Highlighter>
 		}
 		else
 		{
-			if (!result.WasInvalidLength)
+			if (!result.WasInvalidLength && !result.IsWrongInstance)
 			{
 				score = wordFromHighlightedTiles.Length * -50;
 			}
