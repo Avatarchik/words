@@ -23,6 +23,7 @@ public class ScoreManager : SingletonMonoBehaviour<ScoreManager>
 		if (scoreToAdd != 0)
 		{
 			mTargetScore += scoreToAdd;
+			mTargetScore = Mathf.Clamp(mTargetScore, 0, int.MaxValue);	
 			UpdateText();
 
 			ScoreAdditionRef.ShowScoreAddition(scoreToAdd);
