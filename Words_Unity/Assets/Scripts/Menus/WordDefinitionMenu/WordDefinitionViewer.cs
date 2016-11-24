@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 
-public class WordDefinitionViewer : UIMonoBehaviour
+public class WordDefinitionViewer : UIMonoBehaviour, IOrientationChangedNotifiee
 {
 	public GameObject ValidDefinitionButtonSetRoot;
 	public GameObject InvalidDefinitionButtonSetRoot;
@@ -15,6 +15,25 @@ public class WordDefinitionViewer : UIMonoBehaviour
 	void Awake()
 	{
 		DefinitionFormat = DefinitionFormat.Replace("\\n", Environment.NewLine);
+	}
+
+	public virtual void OnEnable()
+	{
+		OrientationManager.Instance.RegisterForNotification(this);
+	}
+
+	public virtual void OnDisable()
+	{
+		OrientationManager.Instance.UnregisterForNotification(this);
+	}
+
+	public void OnScreenSizeChanged(Vector2 screenSize)
+	{
+		Vector2 sizeDelta = rectTransform.sizeDelta;
+		sizeDelta.y = TextRef.preferredHeight;
+		rectTransform.sizeDelta = sizeDelta;
+
+		Debug.Log(sizeDelta.y);
 	}
 
 	public void ShowDefinitionFor(WordPair word)
