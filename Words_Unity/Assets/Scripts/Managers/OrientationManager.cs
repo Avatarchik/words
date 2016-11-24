@@ -42,6 +42,8 @@ public class OrientationManager : SingletonMonoBehaviour<OrientationManager>
 #else
 		CurrentOrientation = ScreenOrientation.Landscape;
 #endif
+
+		ChangeOrientation();
 	}
 
 	void Update()
