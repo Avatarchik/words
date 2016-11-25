@@ -40,7 +40,7 @@ public class WordPanel : UIMonoBehaviour
 	public PuzzleLoader PuzzleLoaderRef;
 	public WordPanelGroup WordPanelGroupPrefab;
 
-	public WordPanelTitle Title;
+	public WordPanelTitle TitleRef;
 
 	private int mWordCount;
 	private int mWordsRemaining;
@@ -55,6 +55,8 @@ public class WordPanel : UIMonoBehaviour
 	public void Initialise(WordPair[] wordPairs)
 	{
 		CleanUp();
+
+		TitleRef.Initialise();
 
 		mWordCount = wordPairs.Length;
 		mWordsRemaining = mWordCount;
@@ -101,7 +103,7 @@ public class WordPanel : UIMonoBehaviour
 			}
 		}
 
-		Title.SetTitle(mWordsRemaining);
+		TitleRef.SetTitle(mWordsRemaining);
 	}
 
 	void Update()
@@ -220,7 +222,7 @@ public class WordPanel : UIMonoBehaviour
 
 		if (updateTitle)
 		{
-			Title.WordsRemoved(result, mWordsRemaining);
+			TitleRef.WordsRemoved(result, mWordsRemaining);
 		}
 
 		return result;

@@ -10,6 +10,14 @@ public class WordPanelTitle : MonoBehaviour
 	public string OneWordLeftTitle;
 	public string AllFoundTitle;
 
+	public void Initialise()
+	{
+		foreach (Transform child in transform)
+		{
+			Destroy(child.gameObject);
+		}
+	}
+
 	public void SetTitle(int wordsLeft)
 	{
 		if (wordsLeft > 1)
@@ -35,7 +43,7 @@ public class WordPanelTitle : MonoBehaviour
 		for (int wordIndex = 0; wordIndex < wordCount; ++wordIndex)
 		{
 			WordPanelFoundWord foundWordInst = Instantiate(FoundWordPrefab, transform.position, Quaternion.identity, transform) as WordPanelFoundWord;
-			foundWordInst.SetAsFoundWord(validityResult.Words[wordIndex], (wordIndex + 1) * 0.08f);
+			foundWordInst.SetAsFoundWord(validityResult.Words[wordIndex], (wordIndex + 1) * 0.1f);
 		}
 
 		SetTitle(wordsNowRemaining);
