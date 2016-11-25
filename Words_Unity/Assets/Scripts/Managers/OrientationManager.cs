@@ -33,7 +33,9 @@ public class OrientationManager : SingletonMonoBehaviour<OrientationManager>
 	public ScreenOrientation ForcedOrientation;
 #endif // UNITY_EDITOR
 
-	public HandedPositionSet[] HandedPositionSets;
+	private List<HandedPositionSet> mHandedPositionSets = new List<HandedPositionSet>();
+
+	private EHandedPositionType mCurrentPositionType;
 
 	void Awake()
 	{
@@ -104,6 +106,16 @@ public class OrientationManager : SingletonMonoBehaviour<OrientationManager>
 		mOrientationChangedNotifiees.Remove(notifiee);
 	}
 
+	public void RegisterHandedPositionSet(HandedPositionSet positionSet)
+	{
+		if (!mHandedPositionSets.Contains(positionSet))
+		{
+			mHandedPositionSets.Add(positionSet);
+		}
+
+		positionSet.SwitchTo(mCurrentPositionType);
+	}
+
 	private void UpdateScreenSizeChanged()
 	{
 		foreach (IOrientationChangedNotifiee notifiee in mOrientationChangedNotifiees)
@@ -124,11 +136,10 @@ public class OrientationManager : SingletonMonoBehaviour<OrientationManager>
 			layoutOption = (int)EHandedPositionType.Top + PlayerPrefsPlus.GetInt(PlayerPrefKeys.PuzzlePortraitLayout, GlobalSettings.Instance.DefaultPuzzlePortraitLayout);
 		}
 
-		EHandedPositionType positionType = (EHandedPositionType)(layoutOption);
-
-		foreach (HandedPositionSet pair in HandedPositionSets)
+		mCurrentPositionType = (EHandedPositionType)(layoutOption);
+		foreach (HandedPositionSet pair in mHandedPositionSets)
 		{
-			pair.SwitchTo(positionType);
+			pair.SwitchTo(mCurrentPositionType);
 		}
 	}
 }

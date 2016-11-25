@@ -48,6 +48,7 @@ public class HandedPositionSet : MonoBehaviour
 	void Awake()
 	{
 		ODebug.AssertNull(RectTransRef);
+		OrientationManager.Instance.RegisterHandedPositionSet(this);
 	}
 
 	public void SwitchTo(EHandedPositionType type)
