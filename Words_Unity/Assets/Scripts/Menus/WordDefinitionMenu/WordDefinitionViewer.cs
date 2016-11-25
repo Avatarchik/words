@@ -30,7 +30,7 @@ public class WordDefinitionViewer : UIMonoBehaviour, IOrientationChangedNotifiee
 	public void OnScreenSizeChanged(Vector2 screenSize)
 	{
 		Vector2 sizeDelta = rectTransform.sizeDelta;
-		sizeDelta.y = TextRef.preferredHeight;
+		sizeDelta.y = TextRef.preferredHeight * 1.05f;
 		rectTransform.sizeDelta = sizeDelta;
 	}
 
