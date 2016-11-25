@@ -27,6 +27,7 @@ public class MenuManager : SingletonMonoBehaviour<MenuManager>
 
 	public Menu CurrentMenu { get; private set; }
 	public Menu TemporaryMenu { get; private set; }
+	private Menu PreviousMenu;
 
 	private bool mIsFading;
 	private EMenuType mNextMenuType;
@@ -66,6 +67,7 @@ public class MenuManager : SingletonMonoBehaviour<MenuManager>
 			Menu menu = Menus[menuIndex];
 			if (menu.MenuType == menuType)
 			{
+				PreviousMenu = TemporaryMenu;
 				TemporaryMenu = menu;
 				TemporaryMenu.Open();
 
@@ -108,6 +110,7 @@ public class MenuManager : SingletonMonoBehaviour<MenuManager>
 			Menu menu = Menus[menuIndex];
 			if (menu.MenuType == mNextMenuType)
 			{
+				PreviousMenu = CurrentMenu;
 				CurrentMenu = menu;
 				CurrentMenu.Open();
 
@@ -121,5 +124,10 @@ public class MenuManager : SingletonMonoBehaviour<MenuManager>
 		}
 
 		mIsFading = false;
+	}
+
+	public void ReturnToPreviousMenu()
+	{
+		SwitchMenu(PreviousMenu.MenuType);
 	}
 }
