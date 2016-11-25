@@ -18,7 +18,21 @@ public class ResetPuzzleOverallButton : MonoBehaviour, IPointerClickHandler
 		{
 			SaveGameManager.Instance.ResetPuzzleState(mPuzzleGuid);
 			mPuzzleLoadButton.Reinitialise();
-			MenuManager.Instance.CloseTemporaryMenu();
+			MenuManager.Instance.CloseTemporaryMenu(OnMenuClose);
 		}
+	}
+
+	private void OnMenuClose()
+	{
+		TimeManager.Instance.Reset();
+		ScoreManager.Instance.Reset();
+
+		mPuzzleLoadButton.PuzzleManagerRef.OpenPuzzle(mPuzzleGuid);
+		MenuManager.Instance.SwitchMenu(EMenuType.InGameMenu, OnMenuSwitchedToInGame);
+	}
+
+	private void OnMenuSwitchedToInGame()
+	{
+		TimeManager.Instance.Start();
 	}
 }

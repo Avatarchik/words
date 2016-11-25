@@ -16,7 +16,7 @@ public class PuzzleLoadButton : UIMonoBehaviour, IPointerClickHandler
 	public string ProgressBarPercentageFormat;
 	public Image TickRef;
 
-	private PuzzleManager mPuzzleManagerRef;
+	public PuzzleManager PuzzleManagerRef { get; private set; }
 
 	private int mPuzzleSize;
 	private int mPuzzleIndex;
@@ -25,15 +25,15 @@ public class PuzzleLoadButton : UIMonoBehaviour, IPointerClickHandler
 
 	public void Initialise(PuzzleManager puzzleManagerRef, int puzzleSize, int puzzleIndex)
 	{
-		mPuzzleManagerRef = puzzleManagerRef;
+		PuzzleManagerRef = puzzleManagerRef;
 
 		mPuzzleSize = puzzleSize;
 		mPuzzleIndex = puzzleIndex;
 
-		SerializableGuid puzzleGuid = mPuzzleManagerRef.GetGuidForPuzzle(puzzleSize, mPuzzleIndex);
+		SerializableGuid puzzleGuid = PuzzleManagerRef.GetGuidForPuzzle(puzzleSize, mPuzzleIndex);
 		mCurrentState = SaveGameManager.Instance.GetPuzzleStateFor(puzzleGuid);
 
-		int wordCount = mPuzzleManagerRef.GetWordCountForPuzzle(puzzleGuid);
+		int wordCount = PuzzleManagerRef.GetWordCountForPuzzle(puzzleGuid);
 
 		TitleRef.text = string.Format(TitleFormat, puzzleIndex + 1, wordCount);
 
@@ -53,7 +53,7 @@ public class PuzzleLoadButton : UIMonoBehaviour, IPointerClickHandler
 
 	public void Reinitialise()
 	{
-		Initialise(mPuzzleManagerRef, mPuzzleSize, mPuzzleIndex);
+		Initialise(PuzzleManagerRef, mPuzzleSize, mPuzzleIndex);
 	}
 
 	public void OnPointerClick(PointerEventData eventData)
@@ -65,8 +65,7 @@ public class PuzzleLoadButton : UIMonoBehaviour, IPointerClickHandler
 				TimeManager.Instance.Reset();
 				ScoreManager.Instance.Reset();
 
-				mPuzzleManagerRef.OpenPuzzle(mPuzzleSize, mPuzzleIndex);
-
+				PuzzleManagerRef.OpenPuzzle(mPuzzleSize, mPuzzleIndex);
 				MenuManager.Instance.SwitchMenu(EMenuType.InGameMenu, OnMenuSwitchedToInGame);
 			}
 			else
@@ -86,7 +85,7 @@ public class PuzzleLoadButton : UIMonoBehaviour, IPointerClickHandler
 		PuzzleResetMenu resetMenu = MenuManager.Instance.TemporaryMenu as PuzzleResetMenu;
 		if (resetMenu)
 		{
-			SerializableGuid puzzleGuid = mPuzzleManagerRef.GetGuidForPuzzle(mPuzzleSize, mPuzzleIndex);
+			SerializableGuid puzzleGuid = PuzzleManagerRef.GetGuidForPuzzle(mPuzzleSize, mPuzzleIndex);
 			resetMenu.InitialiseForPuzzle(puzzleGuid, this);
 		}
 	}
