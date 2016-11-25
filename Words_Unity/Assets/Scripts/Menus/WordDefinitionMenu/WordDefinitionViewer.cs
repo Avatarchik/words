@@ -32,8 +32,6 @@ public class WordDefinitionViewer : UIMonoBehaviour, IOrientationChangedNotifiee
 		Vector2 sizeDelta = rectTransform.sizeDelta;
 		sizeDelta.y = TextRef.preferredHeight;
 		rectTransform.sizeDelta = sizeDelta;
-
-		Debug.Log(sizeDelta.y);
 	}
 
 	public void ShowDefinitionFor(WordPair word)
