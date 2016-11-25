@@ -275,20 +275,13 @@ public class PuzzleGenerator : EditorWindow
 		return wasFinalised;
 	}
 
-	private bool RunWordListPass(out bool userCancelled)
+	private void RunWordListPass(out bool userCancelled)
 	{
 		userCancelled = false;
-
-		if (mPlacedWords >= mWordLimit)
-		{
-			return false;
-		}
 
 		string progressBarMessageFormat = "Step 2/5: Placed {0:N0}/{1:N0} ({2:N1}%). Words {3:N0}/{4:N0}";
 		string progressBarMessage = string.Format(progressBarMessageFormat, 0, 0, 0, 0, 0);
 		ProgressBarHelper.Begin(true, kProgressBarTitle, progressBarMessage, 1f / mAllWordsCount);
-
-		int wordsPlacedThisPass = 0;
 
 		mAllWords.Shuffle();
 		mPotentialPlacements.Shuffle();
@@ -304,7 +297,7 @@ public class PuzzleGenerator : EditorWindow
 				if (!isStillRunning)
 				{
 					userCancelled = true;
-					return false;
+					return;
 				}
 			}
 
@@ -355,7 +348,6 @@ public class PuzzleGenerator : EditorWindow
 				mAllWords[wordIndex] = null;
 
 				++mPlacedWords;
-				++wordsPlacedThisPass;
 				if (mPlacedWords >= mWordLimit)
 				{
 					break;
@@ -364,9 +356,6 @@ public class PuzzleGenerator : EditorWindow
 		}
 
 		ProgressBarHelper.End();
-
-		bool wasPassSuccessful = wordsPlacedThisPass > 0;
-		return wasPassSuccessful;
 	}
 
 	private bool CheckForGaps()
@@ -539,11 +528,24 @@ public class PuzzleGenerator : EditorWindow
 
 			if (foundOccurrence)
 			{
-				if (IsWordPlacementValid(word, foundPosition.X, foundPosition.Y, foundWordDirection))
+				bool alreadyUsedWord = false;
+				foreach (string usedWord in mWords)
 				{
+					if (usedWord == word)
+					{
+						alreadyUsedWord = true;
+						break;
+					}
+				}
+
+				if (!alreadyUsedWord)
+				{
+					GridPosition endPosition;
+					PlaceWord(word, foundPosition.X, foundPosition.Y, foundWordDirection, out endPosition);
+
 					string definition = null;
 					mDefinitions.GetDefinitionFor(word, ref definition);
-					mNewPuzzleContents.RegisterWord(word, definition, foundPosition, foundPositionEnd);
+					mNewPuzzleContents.RegisterWord(word, definition, foundPosition, endPosition);
 
 					mWords.Add(word);
 					mWordPlacements.Add(new ScoredWordPlacement(0, foundPosition, foundWordDirection));
