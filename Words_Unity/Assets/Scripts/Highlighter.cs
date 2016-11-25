@@ -64,7 +64,10 @@ public class Highlighter : SingletonMonoBehaviour<Highlighter>
 
 		foreach (CharacterTile tile in mHighlightedTiles)
 		{
-			tile.SetHighlight(true);
+			if (tile != null)
+			{
+				tile.SetHighlight(true);
+			}
 		}
 	}
 
