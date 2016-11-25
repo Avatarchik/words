@@ -28,7 +28,12 @@ public class PuzzleManager : MonoBehaviour
 
 	public void OpenPuzzle(int puzzleSize, int puzzleIndex)
 	{
-		mCurrentPuzzleGuid = GetGuidForPuzzle(puzzleSize, puzzleIndex);
+		OpenPuzzle(GetGuidForPuzzle(puzzleSize, puzzleIndex));
+	}
+
+	public void OpenPuzzle(SerializableGuid puzzleGuid)
+	{
+		mCurrentPuzzleGuid = puzzleGuid;
 
 		PlayerPrefsPlus.SetString(PlayerPrefKeys.CurrentPuzzleGuid, mCurrentPuzzleGuid.Value);
 		PlayerPrefsPlus.Save();
