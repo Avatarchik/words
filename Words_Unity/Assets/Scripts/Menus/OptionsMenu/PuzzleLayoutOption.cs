@@ -36,7 +36,7 @@ public class PuzzleLayoutOption : MonoBehaviour
 			defaultValue = GlobalSettings.Instance.DefaultPuzzlePortraitLayout;
 		}
 
-		int optionValue = PlayerPrefsPlus.GetInt(PlayerPrefKeys.PuzzleLandscapeLayout, defaultValue);
+		int optionValue = PlayerPrefsPlus.GetInt(mPlayerPrefsKey, defaultValue);
 		UpdateUI(optionValue);
 	}
 
