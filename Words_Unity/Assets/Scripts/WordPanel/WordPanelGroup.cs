@@ -47,7 +47,7 @@ public class WordPanelGroup : UIMonoBehaviour
 			newPair.gameObject.name = "Pair " + (pairIndex + 1);
 #endif // UNITY_EDITOR
 
-			position.y -= 24; // TODO - fix the literals
+			position.y -= 32; // TODO - fix the literals
 			newPair.rectTransform.localPosition = position;
 
 			newPair.LeftWord.Initialise(this, groupWords[pairIndex], panelEntries.Count);
