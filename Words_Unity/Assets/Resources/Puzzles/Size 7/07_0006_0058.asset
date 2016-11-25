@@ -1,0 +1,761 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 07_0006_0058
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: ef3717f1-4b01-4b50-9b3a-fadbeca7b7d7
+  Size: 7
+  WordCount: 58
+  MaxCharacterUsage: 11
+  Words:
+  - Length: 6
+    Forwards: WABBLE
+    Backwards: ELBBAW
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 5
+    Forwards: NURDS
+    Backwards: SDRUN
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 3
+    Forwards: BOS
+    Backwards: SOB
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 6
+    Forwards: FORMIC
+    Backwards: CIMROF
+    Definition: An acid used especially for coloring cloth and making leather.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 6
+    ToPosition:
+      X: 5
+      Y: 6
+  - Length: 5
+    Forwards: SKYRE
+    Backwards: ERYKS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 4
+    Forwards: EYOT
+    Backwards: TOYE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 4
+    Forwards: RHUS
+    Backwards: SUHR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 2
+    ToPosition:
+      X: 5
+      Y: 5
+  - Length: 6
+    Forwards: SCURVY
+    Backwards: YVRUCS
+    Definition: A disease caused by not eating foods such as fruit and vegetables
+      that contain vitamin C.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 0
+  - Length: 4
+    Forwards: MOOD
+    Backwards: DOOM
+    Definition: The way you feel at a particular time.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 5
+  - Length: 5
+    Forwards: ETWEE
+    Backwards: EEWTE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 6
+    ToPosition:
+      X: 6
+      Y: 2
+  - Length: 6
+    Forwards: TOMPON
+    Backwards: NOPMOT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 5
+  - Length: 3
+    Forwards: BID
+    Backwards: DIB
+    Definition: To say good morning, good afternoon, etc. to someone.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 5
+    Forwards: CURVY
+    Backwards: YVRUC
+    Definition: Having a shape with several curves.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 0
+  - Length: 3
+    Forwards: RUC
+    Backwards: CUR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 0
+  - Length: 3
+    Forwards: ORT
+    Backwards: TRO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 6
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 4
+    Forwards: NURD
+    Backwards: DRUN
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 5
+  - Length: 3
+    Forwards: LIS
+    Backwards: SIL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: BOH
+    Backwards: HOB
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 1
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 3
+    Forwards: MOO
+    Backwards: OOM
+    Definition: The sound that a cow makes.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: FOR
+    Backwards: ROF
+    Definition: Used to introduce the reason for something.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 6
+    ToPosition:
+      X: 2
+      Y: 6
+  - Length: 3
+    Forwards: POD
+    Backwards: DOP
+    Definition: The part of plants such as peas and beans that the seeds grow in.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: DOO
+    Backwards: OOD
+    Definition: A word for solid waste from your body, used especially by or when
+      speaking to children.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: OUT
+    Backwards: TUO
+    Definition: From inside to the outside of something.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 6
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 3
+    Forwards: OYE
+    Backwards: EYO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 3
+    Forwards: CUR
+    Backwards: RUC
+    Definition: Having a lot of curls.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Length: 3
+    Forwards: TOY
+    Backwards: YOT
+    Definition: An object for children to play with.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: URD
+    Backwards: DRU
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 5
+  - Length: 3
+    Forwards: CAR
+    Backwards: RAC
+    Definition: A vehicle with four wheels and an engine, that you use to travel from
+      one place to another.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 3
+    Forwards: WEE
+    Backwards: EEW
+    Definition: The early hours of the morning, just after midnight.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 4
+    ToPosition:
+      X: 6
+      Y: 2
+  - Length: 3
+    Forwards: DOR
+    Backwards: ROD
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 5
+  - Length: 4
+    Forwards: FORM
+    Backwards: MROF
+    Definition: To start to exist, or make something start to exist, especially as
+      the result of a natural process.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 6
+    ToPosition:
+      X: 3
+      Y: 6
+  - Length: 4
+    Forwards: TWEE
+    Backwards: EEWT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 5
+    ToPosition:
+      X: 6
+      Y: 2
+  - Length: 3
+    Forwards: ORB
+    Backwards: BRO
+    Definition: A bright ball-shaped object, especially the sun or the moon.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 4
+    Forwards: ORTS
+    Backwards: STRO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 6
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: YOU
+    Backwards: UOY
+    Definition: The person or people someone is speaking or writing to.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 5
+  - Length: 3
+    Forwards: DIB
+    Backwards: BID
+    Definition: The right to have, use, or do something.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 4
+    Forwards: SCUR
+    Backwards: RUCS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Length: 3
+    Forwards: SKY
+    Backwards: YKS
+    Definition: The plural of sky.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: TOM
+    Backwards: MOT
+    Definition: A tomcat.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 3
+    Forwards: EHS
+    Backwards: SHE
+    Definition: Used when you want someone to reply to you or agree with something
+      you have said.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 4
+    Forwards: BOSK
+    Backwards: KSOB
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 4
+    Forwards: URDS
+    Backwards: SDRU
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 3
+    Forwards: TOT
+    Backwards: TOT
+    Definition: A very small child.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: NUR
+    Backwards: RUN
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 5
+  - Length: 5
+    Forwards: BOSKS
+    Backwards: SKSOB
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 3
+    Forwards: BRO
+    Backwards: ORB
+    Definition: Your brother.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: ROD
+    Backwards: DOR
+    Definition: A long thin pole or bar.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: HOB
+    Backwards: BOH
+    Definition: To do something that damages or spoils something.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 3
+    Forwards: WHO
+    Backwards: OHW
+    Definition: "The short form of \u201Cwho is\u201D."
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: SOB
+    Backwards: BOS
+    Definition: To cry loudly while breathing in short sudden bursts.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 3
+    Forwards: TER
+    Backwards: RET
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 4
+    Forwards: ECIM
+    Backwards: MICE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 6
+    ToPosition:
+      X: 3
+      Y: 6
+  - Length: 3
+    Forwards: OOR
+    Backwards: ROO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 4
+    Forwards: RROD
+    Backwards: DORR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 6
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: ECI
+    Backwards: ICE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 6
+    ToPosition:
+      X: 4
+      Y: 6
+  - Length: 4
+    Forwards: OORB
+    Backwards: BROO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 3
+    Forwards: EUS
+    Backwards: SUE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 3
+    Forwards: ERO
+    Backwards: ORE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 2
+  CharGrid:
+  - Character: 84
+    NumberOfUses: 3
+  - Character: 79
+    NumberOfUses: 2
+  - Character: 77
+    NumberOfUses: 4
+  - Character: 80
+    NumberOfUses: 2
+  - Character: 79
+    NumberOfUses: 3
+  - Character: 78
+    NumberOfUses: 4
+  - Character: 70
+    NumberOfUses: 3
+  - Character: 89
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 89
+    NumberOfUses: 3
+  - Character: 79
+    NumberOfUses: 11
+  - Character: 84
+    NumberOfUses: 4
+  - Character: 85
+    NumberOfUses: 7
+  - Character: 79
+    NumberOfUses: 6
+  - Character: 86
+    NumberOfUses: 2
+  - Character: 76
+    NumberOfUses: 2
+  - Character: 82
+    NumberOfUses: 6
+  - Character: 68
+    NumberOfUses: 6
+  - Character: 79
+    NumberOfUses: 8
+  - Character: 82
+    NumberOfUses: 10
+  - Character: 82
+    NumberOfUses: 4
+  - Character: 82
+    NumberOfUses: 5
+  - Character: 66
+    NumberOfUses: 6
+  - Character: 73
+    NumberOfUses: 3
+  - Character: 89
+    NumberOfUses: 3
+  - Character: 84
+    NumberOfUses: 3
+  - Character: 68
+    NumberOfUses: 6
+  - Character: 77
+    NumberOfUses: 3
+  - Character: 85
+    NumberOfUses: 5
+  - Character: 66
+    NumberOfUses: 7
+  - Character: 79
+    NumberOfUses: 8
+  - Character: 83
+    NumberOfUses: 7
+  - Character: 75
+    NumberOfUses: 4
+  - Character: 83
+    NumberOfUses: 4
+  - Character: 73
+    NumberOfUses: 3
+  - Character: 67
+    NumberOfUses: 6
+  - Character: 65
+    NumberOfUses: 2
+  - Character: 82
+    NumberOfUses: 3
+  - Character: 72
+    NumberOfUses: 5
+  - Character: 85
+    NumberOfUses: 2
+  - Character: 83
+    NumberOfUses: 3
+  - Character: 67
+    NumberOfUses: 3
+  - Character: 83
+    NumberOfUses: 2
+  - Character: 87
+    NumberOfUses: 1
+  - Character: 69
+    NumberOfUses: 4
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 87
+    NumberOfUses: 4
+  - Character: 84
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 3

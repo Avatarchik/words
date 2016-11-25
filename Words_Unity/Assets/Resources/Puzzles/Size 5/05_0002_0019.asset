@@ -1,0 +1,281 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 05_0002_0019
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: 4051ca97-f2f6-40e1-bda3-8889ca3aaa33
+  Size: 5
+  WordCount: 19
+  MaxCharacterUsage: 7
+  Words:
+  - Length: 3
+    Forwards: WAY
+    Backwards: YAW
+    Definition: In a particular direction.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 4
+    Forwards: DAUR
+    Backwards: RUAD
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: PUT
+    Backwards: TUP
+    Definition: To move something to a particular place or position, especially using
+      your hands.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 4
+    Forwards: FLAB
+    Backwards: BALF
+    Definition: "Soft loose fat on a person\u2019s body."
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 4
+    Forwards: POND
+    Backwards: DNOP
+    Definition: A small area of fresh water that is smaller than a lake.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: HUI
+    Backwards: IUH
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: ONE
+    Backwards: ENO
+    Definition: A piece of paper money worth $1.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: OPT
+    Backwards: TPO
+    Definition: To choose one thing or one course of action instead of another.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 3
+    Forwards: AWE
+    Backwards: EWA
+    Definition: A feeling of great respect and admiration for someone or something.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: YAW
+    Backwards: WAY
+    Definition: If a ship, aircraft, etc. yaws, it turns away from the correct direction
+      it should be traveling in.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 3
+    Forwards: NEW
+    Backwards: WEN
+    Definition: Recently made, built, invented, written, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 3
+    Forwards: RYA
+    Backwards: AYR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: OAF
+    Backwards: FAO
+    Definition: A stupid awkward man or boy.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  - Length: 3
+    Forwards: OBI
+    Backwards: IBO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: LAB
+    Backwards: BAL
+    Definition: A laboratory.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 4
+    Forwards: DUAN
+    Backwards: NAUD
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: WEN
+    Backwards: NEW
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: TEA
+    Backwards: AET
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: UEL
+    Backwards: LEU
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 1
+  CharGrid:
+  - Character: 79
+    NumberOfUses: 2
+  - Character: 80
+    NumberOfUses: 1
+  - Character: 84
+    NumberOfUses: 3
+  - Character: 85
+    NumberOfUses: 2
+  - Character: 80
+    NumberOfUses: 2
+  - Character: 65
+    NumberOfUses: 2
+  - Character: 87
+    NumberOfUses: 5
+  - Character: 69
+    NumberOfUses: 6
+  - Character: 78
+    NumberOfUses: 4
+  - Character: 79
+    NumberOfUses: 3
+  - Character: 70
+    NumberOfUses: 2
+  - Character: 76
+    NumberOfUses: 3
+  - Character: 65
+    NumberOfUses: 7
+  - Character: 66
+    NumberOfUses: 3
+  - Character: 78
+    NumberOfUses: 1
+  - Character: 72
+    NumberOfUses: 1
+  - Character: 85
+    NumberOfUses: 2
+  - Character: 73
+    NumberOfUses: 2
+  - Character: 89
+    NumberOfUses: 3
+  - Character: 68
+    NumberOfUses: 1
+  - Character: 68
+    NumberOfUses: 2
+  - Character: 65
+    NumberOfUses: 1
+  - Character: 85
+    NumberOfUses: 1
+  - Character: 82
+    NumberOfUses: 1
+  - Character: 82
+    NumberOfUses: 1

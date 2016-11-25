@@ -1,0 +1,549 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 06_0003_0041
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: 050a40da-96c7-4c41-ad30-4c1df7fc5afd
+  Size: 6
+  WordCount: 41
+  MaxCharacterUsage: 10
+  Words:
+  - Length: 5
+    Forwards: MODUS
+    Backwards: SUDOM
+    Definition: See M.O.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 5
+    Forwards: EDITE
+    Backwards: ETIDE
+    Definition: The form in which a book, newspaper, product, etc. is printed or made
+      at a particular time.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 1
+  - Length: 5
+    Forwards: BIPOD
+    Backwards: DOPIB
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 3
+    Forwards: BAY
+    Backwards: YAB
+    Definition: A part of the ocean that is enclosed by a curve in the land.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 5
+    Forwards: CABOB
+    Backwards: BOBAC
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 0
+  - Length: 5
+    Forwards: EMITS
+    Backwards: STIME
+    Definition: To send out gas, heat, light, sound, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 5
+  - Length: 4
+    Forwards: LOCI
+    Backwards: ICOL
+    Definition: The plural of locus.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: SPY
+    Backwards: YPS
+    Definition: Someone whose job it is to find out secret information about another
+      country, organization, or group.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: NAE
+    Backwards: EAN
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: SOL
+    Backwards: LOS
+    Definition: So5.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 4
+    Forwards: SCOP
+    Backwards: POCS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: DUO
+    Backwards: OUD
+    Definition: Two people who do something together, especially sing or play music.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 4
+    Forwards: SOLA
+    Backwards: ALOS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: DIT
+    Backwards: TID
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 3
+    Forwards: COP
+    Backwards: POC
+    Definition: A police officer.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: POD
+    Backwards: DOP
+    Definition: The part of plants such as peas and beans that the seeds grow in.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 3
+    Forwards: MID
+    Backwards: DIM
+    Definition: In the middle of something.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 4
+    Forwards: EDIT
+    Backwards: TIDE
+    Definition: The form in which a book, newspaper, product, etc. is printed or made
+      at a particular time.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 3
+    Forwards: UDO
+    Backwards: ODU
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 2
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 3
+    Forwards: SUD
+    Backwards: DUS
+    Definition: The bubbles formed on the top of water with soap in it.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: OBA
+    Backwards: ABO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 0
+  - Length: 3
+    Forwards: TID
+    Backwards: DIT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 2
+    ToPosition:
+      X: 5
+      Y: 4
+  - Length: 3
+    Forwards: YAP
+    Backwards: PAY
+    Definition: If a small dog yaps, it makes short loud sounds in an excited way.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: PUP
+    Backwards: PUP
+    Definition: A puppy.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 4
+    Forwards: DITE
+    Backwards: ETID
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 5
+      Y: 1
+  - Length: 4
+    Forwards: BOBA
+    Backwards: ABOB
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 0
+  - Length: 3
+    Forwards: ITS
+    Backwards: STI
+    Definition: Belonging or relating to a thing, situation, person, or idea that
+      has been mentioned or is known about.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 5
+  - Length: 3
+    Forwards: DOP
+    Backwards: POD
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 4
+    Forwards: PUPA
+    Backwards: APUP
+    Definition: A young insect at the stage of its development when it does not feed
+      and is protected inside a special cover, before it becomes an adult.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 2
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: ASP
+    Backwards: PSA
+    Definition: A small poisonous snake from North Africa.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: CAB
+    Backwards: BAC
+    Definition: A car in which you pay the driver to take you somewhere.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Length: 3
+    Forwards: MOD
+    Backwards: DOM
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: YOD
+    Backwards: DOY
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: BOB
+    Backwards: BOB
+    Definition: "A way of cutting a woman\u2019s or girl\u2019s hair so that it hangs
+      down to the level of her chin and is the same length all the way around."
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Length: 4
+    Forwards: EMIT
+    Backwards: TIME
+    Definition: To send out gas, heat, light, sound, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 5
+  - Length: 3
+    Forwards: EDI
+    Backwards: IDE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 3
+    Forwards: LOC
+    Backwards: COL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 4
+    Forwards: EPOC
+    Backwards: COPE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: EDO
+    Backwards: ODE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: EPO
+    Backwards: OPE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: YLC
+    Backwards: CLY
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 4
+  CharGrid:
+  - Character: 66
+    NumberOfUses: 2
+  - Character: 65
+    NumberOfUses: 1
+  - Character: 89
+    NumberOfUses: 3
+  - Character: 78
+    NumberOfUses: 1
+  - Character: 76
+    NumberOfUses: 2
+  - Character: 77
+    NumberOfUses: 2
+  - Character: 66
+    NumberOfUses: 3
+  - Character: 73
+    NumberOfUses: 1
+  - Character: 65
+    NumberOfUses: 4
+  - Character: 76
+    NumberOfUses: 3
+  - Character: 79
+    NumberOfUses: 7
+  - Character: 83
+    NumberOfUses: 5
+  - Character: 79
+    NumberOfUses: 4
+  - Character: 69
+    NumberOfUses: 1
+  - Character: 80
+    NumberOfUses: 6
+  - Character: 68
+    NumberOfUses: 6
+  - Character: 67
+    NumberOfUses: 6
+  - Character: 84
+    NumberOfUses: 3
+  - Character: 66
+    NumberOfUses: 5
+  - Character: 68
+    NumberOfUses: 1
+  - Character: 85
+    NumberOfUses: 6
+  - Character: 79
+    NumberOfUses: 10
+  - Character: 73
+    NumberOfUses: 2
+  - Character: 73
+    NumberOfUses: 3
+  - Character: 65
+    NumberOfUses: 5
+  - Character: 83
+    NumberOfUses: 4
+  - Character: 80
+    NumberOfUses: 8
+  - Character: 89
+    NumberOfUses: 2
+  - Character: 68
+    NumberOfUses: 4
+  - Character: 77
+    NumberOfUses: 3
+  - Character: 67
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 4
+  - Character: 84
+    NumberOfUses: 5
+  - Character: 73
+    NumberOfUses: 6
+  - Character: 68
+    NumberOfUses: 6
+  - Character: 69
+    NumberOfUses: 6

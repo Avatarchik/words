@@ -12,38 +12,49 @@ MonoBehaviour:
   m_Name: 04_0002_0008
   m_EditorClassIdentifier: 
   Guid:
-    Value: 8145c3ce-daea-4497-9793-cc381e351435
+    Value: c1080001-bc2e-4725-bf26-28ba0f81b136
   Size: 4
   WordCount: 8
-  MaxCharacterUsage: 3
+  MaxCharacterUsage: 4
   Words:
   - Length: 3
-    Forwards: CIG
-    Backwards: GIC
-    Definition: 
-    HasDefinition: 0
+    Forwards: OVA
+    Backwards: AVO
+    Definition: The plural form of ovum.
+    HasDefinition: 1
     FromPosition:
-      X: 0
-      Y: 2
+      X: 3
+      Y: 3
     ToPosition:
-      X: 2
-      Y: 2
-  - Length: 3
-    Forwards: JAP
-    Backwards: PAJ
-    Definition: 
-    HasDefinition: 0
-    FromPosition:
-      X: 0
-      Y: 1
-    ToPosition:
-      X: 2
+      X: 1
       Y: 1
   - Length: 3
-    Forwards: CIT
-    Backwards: TIC
-    Definition: An abbreviation used in formal writing to refer to a book that has
-      been mentioned already.
+    Forwards: COY
+    Backwards: YOC
+    Definition: Pretending to be shy in order to attract interest, or to avoid dealing
+      with something difficult.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 3
+    Forwards: SAN
+    Backwards: NAS
+    Definition: Without.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: DOW
+    Backwards: WOD
+    Definition: The dow jones industrial average.
     HasDefinition: 1
     FromPosition:
       X: 3
@@ -52,55 +63,43 @@ MonoBehaviour:
       X: 3
       Y: 2
   - Length: 3
-    Forwards: MAR
-    Backwards: RAM
-    Definition: "The small red planet that is fourth in order from the Sun and is
-      the first planet outside Earth\u2019s orbit."
-    HasDefinition: 1
-    FromPosition:
-      X: 3
-      Y: 3
-    ToPosition:
-      X: 1
-      Y: 3
-  - Length: 3
-    Forwards: RAN
-    Backwards: NAR
-    Definition: The past tense of run.
-    HasDefinition: 1
-    FromPosition:
-      X: 0
-      Y: 0
-    ToPosition:
-      X: 2
-      Y: 0
-  - Length: 3
-    Forwards: LIP
-    Backwards: PIL
-    Definition: With lips that are thin, round, etc.
+    Forwards: JOE
+    Backwards: EOJ
+    Definition: An ordinary average man.
     HasDefinition: 1
     FromPosition:
       X: 0
       Y: 3
     ToPosition:
       X: 2
-      Y: 1
+      Y: 3
   - Length: 3
-    Forwards: RIA
-    Backwards: AIR
+    Forwards: DAS
+    Backwards: SAD
     Definition: 
     HasDefinition: 0
     FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
       X: 1
-      Y: 3
+      Y: 0
+  - Length: 3
+    Forwards: ODA
+    Backwards: ADO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 1
     ToPosition:
       X: 1
       Y: 1
   - Length: 3
-    Forwards: RAG
-    Backwards: GAR
-    Definition: To make jokes and laugh at someone in order to embarrass him or her.
-    HasDefinition: 1
+    Forwards: CAV
+    Backwards: VAC
+    Definition: 
+    HasDefinition: 0
     FromPosition:
       X: 0
       Y: 0
@@ -108,35 +107,35 @@ MonoBehaviour:
       X: 2
       Y: 2
   CharGrid:
-  - Character: 82
+  - Character: 67
     NumberOfUses: 2
+  - Character: 79
+    NumberOfUses: 1
+  - Character: 89
+    NumberOfUses: 1
   - Character: 74
     NumberOfUses: 1
-  - Character: 67
-    NumberOfUses: 1
-  - Character: 76
-    NumberOfUses: 1
-  - Character: 65
-    NumberOfUses: 1
-  - Character: 65
-    NumberOfUses: 3
-  - Character: 73
-    NumberOfUses: 3
-  - Character: 82
+  - Character: 83
     NumberOfUses: 2
+  - Character: 65
+    NumberOfUses: 4
   - Character: 78
     NumberOfUses: 1
-  - Character: 80
-    NumberOfUses: 2
-  - Character: 71
-    NumberOfUses: 2
+  - Character: 79
+    NumberOfUses: 1
   - Character: 65
     NumberOfUses: 1
-  - Character: 67
+  - Character: 68
     NumberOfUses: 1
-  - Character: 73
+  - Character: 86
+    NumberOfUses: 2
+  - Character: 69
     NumberOfUses: 1
-  - Character: 84
+  - Character: 68
+    NumberOfUses: 2
+  - Character: 79
+    NumberOfUses: 2
+  - Character: 87
     NumberOfUses: 1
-  - Character: 77
+  - Character: 79
     NumberOfUses: 1

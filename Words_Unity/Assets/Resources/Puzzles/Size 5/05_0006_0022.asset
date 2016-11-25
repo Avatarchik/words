@@ -1,0 +1,318 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 05_0006_0022
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: 16baeff5-ee83-4969-8a7e-96624a4702e4
+  Size: 5
+  WordCount: 22
+  MaxCharacterUsage: 7
+  Words:
+  - Length: 4
+    Forwards: FUBS
+    Backwards: SBUF
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 4
+    Forwards: SWIZ
+    Backwards: ZIWS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 3
+    Forwards: KIN
+    Backwards: NIK
+    Definition: Your family, including your grandparents, aunts, uncles, cousins,
+      etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 4
+    Forwards: LONE
+    Backwards: ENOL
+    Definition: Being the only person or thing in a place, or the only person or thing
+      that does something.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 4
+    Forwards: LOTE
+    Backwards: ETOL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 3
+  - Length: 3
+    Forwards: OOM
+    Backwards: MOO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: HAM
+    Backwards: MAH
+    Definition: "The upper part of a pig\u2019s leg used as meat and preserved with
+      salt or smoke."
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 4
+    Forwards: FAKE
+    Backwards: EKAF
+    Definition: A copy of a valuable object, painting, etc. that is intended to deceive
+      people.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 3
+    Forwards: LOT
+    Backwards: TOL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 3
+    Forwards: SEW
+    Backwards: WES
+    Definition: To use a needle and thread to fasten pieces of cloth together, or
+      to attach something such as a button to clothes.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: ZEK
+    Backwards: KEZ
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: FUB
+    Backwards: BUF
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: BEN
+    Backwards: NEB
+    Definition: A U.S. golf player.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: ZOA
+    Backwards: AOZ
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 4
+    Forwards: HAMS
+    Backwards: SMAH
+    Definition: "The upper part of a pig\u2019s leg used as meat and preserved with
+      salt or smoke."
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: AWE
+    Backwards: EWA
+    Definition: A feeling of great respect and admiration for someone or something.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: FET
+    Backwards: TEF
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 3
+    Forwards: AKE
+    Backwards: EKA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 4
+    Forwards: AWES
+    Backwards: SEWA
+    Definition: A feeling of great respect and admiration for someone or something.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: ONE
+    Backwards: ENO
+    Definition: A piece of paper money worth $1.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: HOI
+    Backwards: IOH
+    Definition: An insulting phrase for ordinary people.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: SEM
+    Backwards: MES
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 2
+  CharGrid:
+  - Character: 76
+    NumberOfUses: 2
+  - Character: 79
+    NumberOfUses: 2
+  - Character: 84
+    NumberOfUses: 3
+  - Character: 69
+    NumberOfUses: 2
+  - Character: 70
+    NumberOfUses: 3
+  - Character: 72
+    NumberOfUses: 3
+  - Character: 65
+    NumberOfUses: 3
+  - Character: 77
+    NumberOfUses: 4
+  - Character: 83
+    NumberOfUses: 3
+  - Character: 85
+    NumberOfUses: 2
+  - Character: 76
+    NumberOfUses: 1
+  - Character: 79
+    NumberOfUses: 5
+  - Character: 78
+    NumberOfUses: 4
+  - Character: 69
+    NumberOfUses: 7
+  - Character: 66
+    NumberOfUses: 3
+  - Character: 79
+    NumberOfUses: 1
+  - Character: 90
+    NumberOfUses: 2
+  - Character: 73
+    NumberOfUses: 3
+  - Character: 87
+    NumberOfUses: 4
+  - Character: 83
+    NumberOfUses: 3
+  - Character: 90
+    NumberOfUses: 1
+  - Character: 69
+    NumberOfUses: 3
+  - Character: 75
+    NumberOfUses: 4
+  - Character: 65
+    NumberOfUses: 4
+  - Character: 70
+    NumberOfUses: 1

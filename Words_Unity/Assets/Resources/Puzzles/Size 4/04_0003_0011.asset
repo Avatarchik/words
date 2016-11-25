@@ -1,0 +1,177 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 04_0003_0011
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: a5c7af78-5a1d-4d61-ab9b-19edb372bcf9
+  Size: 4
+  WordCount: 11
+  MaxCharacterUsage: 4
+  Words:
+  - Length: 3
+    Forwards: FID
+    Backwards: DIF
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: TON
+    Backwards: NOT
+    Definition: A unit for measuring weight, equal to 2,000 pounds or 907.2 kilograms
+      in the U.S.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: OFT
+    Backwards: TFO
+    Definition: Often.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: SPA
+    Backwards: APS
+    Definition: A place where people go in order to improve their health or beauty,
+      especially through swimming, exercise, beauty treatments, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: THO
+    Backwards: OHT
+    Definition: A short form of though.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  - Length: 3
+    Forwards: TWP
+    Backwards: PWT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 3
+    Forwards: HOI
+    Backwards: IOH
+    Definition: An insulting phrase for ordinary people.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: OOH
+    Backwards: HOO
+    Definition: Said when you think something is very beautiful, bad, surprising,
+      etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 0
+  - Length: 3
+    Forwards: PIN
+    Backwards: NIP
+    Definition: To fasten something somewhere, or to join two things together, using
+      a pin.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: SNO
+    Backwards: ONS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 3
+    Forwards: WOD
+    Backwards: DOW
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 1
+  CharGrid:
+  - Character: 84
+    NumberOfUses: 3
+  - Character: 87
+    NumberOfUses: 2
+  - Character: 80
+    NumberOfUses: 2
+  - Character: 70
+    NumberOfUses: 1
+  - Character: 72
+    NumberOfUses: 3
+  - Character: 79
+    NumberOfUses: 4
+  - Character: 73
+    NumberOfUses: 3
+  - Character: 65
+    NumberOfUses: 1
+  - Character: 79
+    NumberOfUses: 2
+  - Character: 68
+    NumberOfUses: 2
+  - Character: 78
+    NumberOfUses: 3
+  - Character: 80
+    NumberOfUses: 1
+  - Character: 79
+    NumberOfUses: 2
+  - Character: 70
+    NumberOfUses: 1
+  - Character: 84
+    NumberOfUses: 1
+  - Character: 83
+    NumberOfUses: 2

@@ -1,0 +1,562 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 06_0005_0042
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: 11b209d2-3879-4268-bd96-8d50a046a478
+  Size: 6
+  WordCount: 42
+  MaxCharacterUsage: 12
+  Words:
+  - Length: 5
+    Forwards: AIDER
+    Backwards: REDIA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 1
+  - Length: 5
+    Forwards: INTIL
+    Backwards: LITNI
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 5
+    Forwards: REBID
+    Backwards: DIBER
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 5
+    Forwards: MUIST
+    Backwards: TSIUM
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 4
+    Forwards: BYTE
+    Backwards: ETYB
+    Definition: A unit of computer information equal to eight bits.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 4
+    Forwards: LOIR
+    Backwards: RIOL
+    Definition: A river in central France that flows into the Bay of Biscay.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 3
+  - Length: 5
+    Forwards: YIRDS
+    Backwards: SDRIY
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 0
+  - Length: 3
+    Forwards: SPY
+    Backwards: YPS
+    Definition: Someone whose job it is to find out secret information about another
+      country, organization, or group.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: PAP
+    Backwards: PAP
+    Definition: Books, television programs, etc. that people read or watch for entertainment
+      but which have no serious value.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: APE
+    Backwards: EPA
+    Definition: A large monkey without a tail, or with a very short tail, such as
+      a gorilla or a chimpanzee.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: DEB
+    Backwards: BED
+    Definition: A debutante.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 4
+    Forwards: SITE
+    Backwards: ETIS
+    Definition: Be placed or built in a particular place.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: REP
+    Backwards: PER
+    Definition: Someone who speaks officially for a company or organization.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: TAB
+    Backwards: BAT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 4
+    Forwards: PAPE
+    Backwards: EPAP
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: LIT
+    Backwards: TIL
+    Definition: The abbreviation of literature or literary.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 4
+    Forwards: SLIT
+    Backwards: TILS
+    Definition: A long straight narrow cut or hole.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: BAT
+    Backwards: TAB
+    Definition: A small animal like a mouse that flies around at night.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: LAT
+    Backwards: TAL
+    Definition: The written abbreviation of latitude.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: ATE
+    Backwards: ETA
+    Definition: The past tense of eat.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 3
+    Forwards: SIP
+    Backwards: PIS
+    Definition: To drink something slowly, taking very small mouthfuls.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: SIT
+    Backwards: TIS
+    Definition: During one continuous period when you are sitting in a chair.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 4
+    Forwards: YIRD
+    Backwards: DRIY
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  - Length: 3
+    Forwards: BID
+    Backwards: DIB
+    Definition: To say good morning, good afternoon, etc. to someone.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 3
+    Forwards: ETA
+    Backwards: ATE
+    Definition: The seventh letter of the Greek alphabet.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: RIB
+    Backwards: BIR
+    Definition: To make jokes and laugh at someone in a friendly way.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: RED
+    Backwards: DER
+    Definition: The color of blood.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 3
+    Forwards: YET
+    Backwards: TEY
+    Definition: Used to introduce a statement that is surprising after what you have
+      just said.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 4
+    Forwards: AIDE
+    Backwards: EDIA
+    Definition: A very serious disease caused by a virus that makes your body unable
+      to defend itself against infections.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 3
+    Forwards: DIB
+    Backwards: BID
+    Definition: The right to have, use, or do something.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 3
+    Forwards: AID
+    Backwards: DIA
+    Definition: A very serious disease caused by a virus that makes your body unable
+      to defend itself against infections.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 4
+    Forwards: INTI
+    Backwards: ITNI
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 5
+    Forwards: LOIRS
+    Backwards: SRIOL
+    Definition: A river in central France that flows into the Bay of Biscay.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 4
+  - Length: 3
+    Forwards: IDE
+    Backwards: EDI
+    Definition: A date or period of time around the middle of the month in the ancient
+      Roman calendar.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 3
+    Forwards: TIL
+    Backwards: LIT
+    Definition: Another spelling of till.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 3
+    Forwards: EEN
+    Backwards: NEE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 3
+    Forwards: OBA
+    Backwards: ABO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 4
+    Forwards: LATE
+    Backwards: ETAL
+    Definition: Arriving, happening, or done after the time that was expected, agreed,
+      or arranged.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 4
+    Forwards: DEPA
+    Backwards: APED
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 4
+    Forwards: TTAB
+    Backwards: BATT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: DEP
+    Backwards: PED
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: EET
+    Backwards: TEE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 2
+  CharGrid:
+  - Character: 76
+    NumberOfUses: 2
+  - Character: 79
+    NumberOfUses: 3
+  - Character: 73
+    NumberOfUses: 2
+  - Character: 82
+    NumberOfUses: 2
+  - Character: 83
+    NumberOfUses: 3
+  - Character: 77
+    NumberOfUses: 1
+  - Character: 83
+    NumberOfUses: 3
+  - Character: 68
+    NumberOfUses: 3
+  - Character: 66
+    NumberOfUses: 6
+  - Character: 80
+    NumberOfUses: 4
+  - Character: 76
+    NumberOfUses: 6
+  - Character: 85
+    NumberOfUses: 1
+  - Character: 68
+    NumberOfUses: 2
+  - Character: 73
+    NumberOfUses: 6
+  - Character: 89
+    NumberOfUses: 2
+  - Character: 65
+    NumberOfUses: 12
+  - Character: 73
+    NumberOfUses: 6
+  - Character: 73
+    NumberOfUses: 1
+  - Character: 82
+    NumberOfUses: 3
+  - Character: 66
+    NumberOfUses: 4
+  - Character: 84
+    NumberOfUses: 9
+  - Character: 80
+    NumberOfUses: 6
+  - Character: 84
+    NumberOfUses: 8
+  - Character: 83
+    NumberOfUses: 2
+  - Character: 73
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 69
+    NumberOfUses: 6
+  - Character: 78
+    NumberOfUses: 3
+  - Character: 84
+    NumberOfUses: 2
+  - Character: 89
+    NumberOfUses: 3
+  - Character: 82
+    NumberOfUses: 4
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 68
+    NumberOfUses: 8
+  - Character: 73
+    NumberOfUses: 6
+  - Character: 65
+    NumberOfUses: 3

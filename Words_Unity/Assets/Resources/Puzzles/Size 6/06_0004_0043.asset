@@ -1,0 +1,569 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 06_0004_0043
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: e3130fb7-768b-473f-b5b4-efd08583f703
+  Size: 6
+  WordCount: 43
+  MaxCharacterUsage: 10
+  Words:
+  - Length: 4
+    Forwards: CONS
+    Backwards: SNOC
+    Definition: "A trick to get someone\u2019s money or make him or her do something."
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 5
+  - Length: 5
+    Forwards: FARLE
+    Backwards: ELRAF
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 5
+    Forwards: EDUCT
+    Backwards: TCUDE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 0
+  - Length: 5
+    Forwards: PYGAL
+    Backwards: LAGYP
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 1
+  - Length: 5
+    Forwards: GNARR
+    Backwards: RRANG
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 5
+    Forwards: PICRA
+    Backwards: ARCIP
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 4
+    Forwards: LAER
+    Backwards: REAL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: GEE
+    Backwards: EEG
+    Definition: Used to show that you are surprised or annoyed.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 4
+    Forwards: YELD
+    Backwards: DLEY
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 4
+    Forwards: FIRE
+    Backwards: ERIF
+    Definition: To force someone to leave his or her job.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 3
+    Forwards: TEA
+    Backwards: AET
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 4
+    Forwards: FARL
+    Backwards: LRAF
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: PIC
+    Backwards: CIP
+    Definition: A picture or movie.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 4
+    Forwards: GEES
+    Backwards: SEEG
+    Definition: Used to show that you are surprised or annoyed.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: CEL
+    Backwards: LEC
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: TAR
+    Backwards: RAT
+    Definition: A black substance, thick and sticky when hot but hard when cold, used
+      especially for making road surfaces.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: CUD
+    Backwards: DUC
+    Definition: Food that a cow has eaten, swallowed, and brought back into its mouth
+      to chew a second time.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 0
+  - Length: 3
+    Forwards: CON
+    Backwards: NOC
+    Definition: "A trick to get someone\u2019s money or make him or her do something."
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 5
+  - Length: 3
+    Forwards: ONS
+    Backwards: SNO
+    Definition: Touching or supported by a particular surface.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 5
+  - Length: 4
+    Forwards: RALE
+    Backwards: ELAR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 4
+    Forwards: DUCT
+    Backwards: TCUD
+    Definition: A pipe or tube for carrying liquids, air, cables, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 0
+  - Length: 3
+    Forwards: SEE
+    Backwards: EES
+    Definition: An area governed by a bishop.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 4
+    Forwards: DINE
+    Backwards: ENID
+    Definition: To eat dinner, especially at a formal occasion.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 4
+    Forwards: GNAR
+    Backwards: RANG
+    Definition: A gnarly tree or branch is rough and twisted.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: LAR
+    Backwards: RAL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: FIR
+    Backwards: RIF
+    Definition: A tree with leaves shaped like needles that do not fall off in the
+      winter.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: RAN
+    Backwards: NAR
+    Definition: The past tense of run.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 2
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: ELD
+    Backwards: DLE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: ALE
+    Backwards: ELA
+    Definition: A type of beer with a slightly bitter taste.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 4
+    Forwards: FLAG
+    Backwards: GALF
+    Definition: A piece of cloth with a colored pattern or picture on it, that represents
+      a particular country or organization.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 4
+    Forwards: ARLE
+    Backwards: ELRA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 3
+    Forwards: LAG
+    Backwards: GAL
+    Definition: A delay or period of waiting between one event and a second event.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 3
+    Forwards: EEN
+    Backwards: NEE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: FAR
+    Backwards: RAF
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: GAL
+    Backwards: LAG
+    Definition: The written abbreviation ofgallon.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 3
+    ToPosition:
+      X: 5
+      Y: 1
+  - Length: 3
+    Forwards: DIN
+    Backwards: NID
+    Definition: A loud continuous noise that sounds bad.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: ARC
+    Backwards: CRA
+    Definition: A curved shape.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: IRE
+    Backwards: ERI
+    Definition: Anger.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 3
+    Forwards: PYG
+    Backwards: GYP
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 3
+    Forwards: YEL
+    Backwards: LEY
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: PID
+    Backwards: DIP
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: CER
+    Backwards: REC
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: GRE
+    Backwards: ERG
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 1
+  CharGrid:
+  - Character: 69
+    NumberOfUses: 1
+  - Character: 70
+    NumberOfUses: 2
+  - Character: 71
+    NumberOfUses: 2
+  - Character: 89
+    NumberOfUses: 2
+  - Character: 71
+    NumberOfUses: 2
+  - Character: 67
+    NumberOfUses: 3
+  - Character: 68
+    NumberOfUses: 5
+  - Character: 73
+    NumberOfUses: 5
+  - Character: 78
+    NumberOfUses: 6
+  - Character: 69
+    NumberOfUses: 6
+  - Character: 69
+    NumberOfUses: 6
+  - Character: 79
+    NumberOfUses: 3
+  - Character: 85
+    NumberOfUses: 3
+  - Character: 82
+    NumberOfUses: 6
+  - Character: 65
+    NumberOfUses: 7
+  - Character: 76
+    NumberOfUses: 10
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 78
+    NumberOfUses: 3
+  - Character: 67
+    NumberOfUses: 4
+  - Character: 69
+    NumberOfUses: 6
+  - Character: 82
+    NumberOfUses: 8
+  - Character: 68
+    NumberOfUses: 3
+  - Character: 83
+    NumberOfUses: 1
+  - Character: 83
+    NumberOfUses: 3
+  - Character: 84
+    NumberOfUses: 4
+  - Character: 65
+    NumberOfUses: 8
+  - Character: 82
+    NumberOfUses: 5
+  - Character: 67
+    NumberOfUses: 3
+  - Character: 73
+    NumberOfUses: 3
+  - Character: 80
+    NumberOfUses: 2
+  - Character: 70
+    NumberOfUses: 4
+  - Character: 76
+    NumberOfUses: 5
+  - Character: 65
+    NumberOfUses: 4
+  - Character: 71
+    NumberOfUses: 6
+  - Character: 89
+    NumberOfUses: 2
+  - Character: 80
+    NumberOfUses: 3

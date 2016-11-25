@@ -1,0 +1,903 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 07_0002_0070
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: f3ec4b95-072a-4fe9-ab52-31a959b2b91d
+  Size: 7
+  WordCount: 70
+  MaxCharacterUsage: 13
+  Words:
+  - Length: 6
+    Forwards: IMAGOS
+    Backwards: SOGAMI
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 5
+      Y: 1
+  - Length: 5
+    Forwards: PACED
+    Backwards: DECAP
+    Definition: Moving, happening, or developing slowly, quickly, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 4
+  - Length: 6
+    Forwards: DUBBIN
+    Backwards: NIBBUD
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 6
+    ToPosition:
+      X: 5
+      Y: 6
+  - Length: 6
+    Forwards: OCHRED
+    Backwards: DERHCO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 4
+    Forwards: UMBO
+    Backwards: OBMU
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 0
+  - Length: 6
+    Forwards: FREEST
+    Backwards: TSEERF
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 0
+    ToPosition:
+      X: 6
+      Y: 5
+  - Length: 6
+    Forwards: PROVER
+    Backwards: REVORP
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 5
+  - Length: 5
+    Forwards: SPEWY
+    Backwards: YWEPS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 3
+    Forwards: DIN
+    Backwards: NID
+    Definition: A loud continuous noise that sounds bad.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 5
+    Forwards: OWCHE
+    Backwards: EHCWO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 2
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: WEY
+    Backwards: YEW
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 3
+    Forwards: EYE
+    Backwards: EYE
+    Definition: One of the two parts of the body that you see with.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 3
+    Forwards: PEW
+    Backwards: WEP
+    Definition: A long wooden seat in a church.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: ARY
+    Backwards: YRA
+    Definition: The first sign of the zodiac, represented by a rammale sheep, and
+      believed to affect the character and life of people born between March 21 and
+      April 20.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 6
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 3
+    Forwards: SOD
+    Backwards: DOS
+    Definition: A piece of dirt with grass growing on top of it.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 3
+    Forwards: YEW
+    Backwards: WEY
+    Definition: A tree with dark green leaves and red berries, or the wood of this
+      tree.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: MAE
+    Backwards: EAM
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: SOG
+    Backwards: GOS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 5
+    Forwards: PROVE
+    Backwards: EVORP
+    Definition: To show that something is definitely true, especially by providing
+      facts, information, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 4
+    Forwards: SPEW
+    Backwards: WEPS
+    Definition: To flow out of something in quantities that are too large, or to make
+      something, especially something unwanted, flow out in this way.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: RED
+    Backwards: DER
+    Definition: The color of blood.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 3
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 5
+    Forwards: IMAGO
+    Backwards: OGAMI
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 3
+    Forwards: SEE
+    Backwards: EES
+    Definition: An area governed by a bishop.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 4
+    ToPosition:
+      X: 6
+      Y: 2
+  - Length: 3
+    Forwards: FOB
+    Backwards: BOF
+    Definition: A short chain or piece of cloth to which a fob watch is fastened.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 0
+  - Length: 4
+    Forwards: ACED
+    Backwards: DECA
+    Definition: To do very well on a test, a piece of written work, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 1
+    ToPosition:
+      X: 5
+      Y: 4
+  - Length: 4
+    Forwards: REES
+    Backwards: SEER
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 1
+    ToPosition:
+      X: 6
+      Y: 4
+  - Length: 3
+    Forwards: DOS
+    Backwards: SOD
+    Definition: Software that is loaded onto a computer system to make all the different
+      parts work together.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 3
+    ToPosition:
+      X: 5
+      Y: 1
+  - Length: 3
+    Forwards: MAG
+    Backwards: GAM
+    Definition: A magazine.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 3
+    Forwards: CHE
+    Backwards: EHC
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 2
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: AGO
+    Backwards: OGA
+    Definition: Used to show how far back in the past something happened.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 3
+    Forwards: OWE
+    Backwards: EWO
+    Definition: To have to pay someone for something that he or she has done for you
+      or sold to you, or to have to give someone back money that he or she has lent
+      you.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: GAM
+    Backwards: MAG
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 5
+    Forwards: REEST
+    Backwards: TSEER
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 1
+    ToPosition:
+      X: 6
+      Y: 5
+  - Length: 4
+    Forwards: PACE
+    Backwards: ECAP
+    Definition: Moving, happening, or developing slowly, quickly, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: BOW
+    Backwards: WOB
+    Definition: To bend or curve.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 5
+    Forwards: FREES
+    Backwards: SEERF
+    Definition: To allow someone to leave prison or a place where he or she has been
+      kept by force.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 0
+    ToPosition:
+      X: 6
+      Y: 4
+  - Length: 4
+    Forwards: OVER
+    Backwards: REVO
+    Definition: Falling down from an upright position.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 5
+  - Length: 3
+    Forwards: REE
+    Backwards: EER
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 1
+    ToPosition:
+      X: 6
+      Y: 3
+  - Length: 3
+    Forwards: EST
+    Backwards: TSE
+    Definition: The written abbreviation of established used after the names of a
+      business to show when it was started.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 3
+    ToPosition:
+      X: 6
+      Y: 5
+  - Length: 3
+    Forwards: BOP
+    Backwards: POB
+    Definition: To hit someone without much force, or as a joke.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 6
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 3
+    Forwards: DUB
+    Backwards: BUD
+    Definition: To give something or someone a humorous name that describes his or
+      her character.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 6
+    ToPosition:
+      X: 2
+      Y: 6
+  - Length: 3
+    Forwards: NOS
+    Backwards: SON
+    Definition: The written abbreviation ofnumbers.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 0
+      Y: 4
+  - Length: 5
+    Forwards: ROVER
+    Backwards: REVOR
+    Definition: Someone who travels or moves around from place to place and does not
+      stay long in one place.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 5
+  - Length: 3
+    Forwards: ODD
+    Backwards: DDO
+    Definition: In a strange or unusual way.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 2
+    ToPosition:
+      X: 5
+      Y: 4
+  - Length: 3
+    Forwards: SON
+    Backwards: NOS
+    Definition: "Someone\u2019s male child."
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 4
+    Forwards: ROVE
+    Backwards: EVOR
+    Definition: To travel from one place to another.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 5
+    Forwards: OCHRE
+    Backwards: ERHCO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: NEW
+    Backwards: WEN
+    Definition: Recently made, built, invented, written, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 6
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 4
+    Forwards: FREE
+    Backwards: EERF
+    Definition: To allow someone to leave prison or a place where he or she has been
+      kept by force.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 0
+    ToPosition:
+      X: 6
+      Y: 3
+  - Length: 3
+    Forwards: PRO
+    Backwards: ORP
+    Definition: Doing a job, sport, or activity for money.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 5
+  - Length: 3
+    Forwards: MOO
+    Backwards: OOM
+    Definition: The sound that a cow makes.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 4
+    Forwards: OGAM
+    Backwards: MAGO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 3
+    Forwards: ACE
+    Backwards: ECA
+    Definition: To do very well on a test, a piece of written work, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: BED
+    Backwards: DEB
+    Definition: Sheets, covers, etc. that you put on a bed.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 6
+    ToPosition:
+      X: 5
+      Y: 4
+  - Length: 3
+    Forwards: OCH
+    Backwards: HCO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: NIB
+    Backwards: BIN
+    Definition: The pointed metal part at the end of a pen.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 6
+    ToPosition:
+      X: 3
+      Y: 6
+  - Length: 3
+    Forwards: REV
+    Backwards: VER
+    Definition: A complete turn of a wheel or engine part, used as a unit for measuring
+      the speed of an engine.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 5
+  - Length: 3
+    Forwards: ROE
+    Backwards: EOR
+    Definition: Fish eggs eaten as a food.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: BIN
+    Backwards: NIB
+    Definition: A large container for storing things, such as goods in a store or
+      substances in a factory.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 6
+    ToPosition:
+      X: 5
+      Y: 6
+  - Length: 3
+    Forwards: ANI
+    Backwards: INA
+    Definition: Some or even the smallest amount.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 6
+    ToPosition:
+      X: 4
+      Y: 6
+  - Length: 4
+    Forwards: SEER
+    Backwards: REES
+    Definition: Someone who can see into the future and say what will happen.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 4
+    ToPosition:
+      X: 6
+      Y: 1
+  - Length: 3
+    Forwards: FRE
+    Backwards: ERF
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 0
+    ToPosition:
+      X: 6
+      Y: 2
+  - Length: 3
+    Forwards: PAC
+    Backwards: CAP
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: EOW
+    Backwards: WOE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: IMA
+    Backwards: AMI
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 4
+    Forwards: TREV
+    Backwards: VERT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 5
+  - Length: 3
+    Forwards: NEH
+    Backwards: HEN
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 4
+    Forwards: EDER
+    Backwards: REDE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 5
+    Forwards: TREVO
+    Backwards: OVERT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 5
+  - Length: 3
+    Forwards: OOC
+    Backwards: COO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 2
+  CharGrid:
+  - Character: 68
+    NumberOfUses: 1
+  - Character: 73
+    NumberOfUses: 4
+  - Character: 78
+    NumberOfUses: 4
+  - Character: 79
+    NumberOfUses: 5
+  - Character: 83
+    NumberOfUses: 4
+  - Character: 80
+    NumberOfUses: 3
+  - Character: 68
+    NumberOfUses: 2
+  - Character: 80
+    NumberOfUses: 3
+  - Character: 77
+    NumberOfUses: 6
+  - Character: 69
+    NumberOfUses: 4
+  - Character: 67
+    NumberOfUses: 3
+  - Character: 80
+    NumberOfUses: 4
+  - Character: 82
+    NumberOfUses: 5
+  - Character: 85
+    NumberOfUses: 2
+  - Character: 85
+    NumberOfUses: 1
+  - Character: 65
+    NumberOfUses: 13
+  - Character: 72
+    NumberOfUses: 3
+  - Character: 72
+    NumberOfUses: 3
+  - Character: 69
+    NumberOfUses: 3
+  - Character: 79
+    NumberOfUses: 9
+  - Character: 66
+    NumberOfUses: 2
+  - Character: 77
+    NumberOfUses: 3
+  - Character: 71
+    NumberOfUses: 7
+  - Character: 67
+    NumberOfUses: 8
+  - Character: 82
+    NumberOfUses: 4
+  - Character: 87
+    NumberOfUses: 5
+  - Character: 86
+    NumberOfUses: 8
+  - Character: 66
+    NumberOfUses: 5
+  - Character: 66
+    NumberOfUses: 3
+  - Character: 79
+    NumberOfUses: 8
+  - Character: 87
+    NumberOfUses: 5
+  - Character: 69
+    NumberOfUses: 13
+  - Character: 89
+    NumberOfUses: 5
+  - Character: 69
+    NumberOfUses: 11
+  - Character: 73
+    NumberOfUses: 4
+  - Character: 79
+    NumberOfUses: 3
+  - Character: 83
+    NumberOfUses: 4
+  - Character: 79
+    NumberOfUses: 7
+  - Character: 68
+    NumberOfUses: 6
+  - Character: 68
+    NumberOfUses: 4
+  - Character: 82
+    NumberOfUses: 7
+  - Character: 78
+    NumberOfUses: 5
+  - Character: 70
+    NumberOfUses: 5
+  - Character: 82
+    NumberOfUses: 9
+  - Character: 69
+    NumberOfUses: 10
+  - Character: 69
+    NumberOfUses: 10
+  - Character: 83
+    NumberOfUses: 7
+  - Character: 84
+    NumberOfUses: 5
+  - Character: 65
+    NumberOfUses: 2

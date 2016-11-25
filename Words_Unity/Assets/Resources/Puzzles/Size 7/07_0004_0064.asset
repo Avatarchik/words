@@ -1,0 +1,836 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 07_0004_0064
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: 60bcbd03-f032-44eb-9744-36b5771dc22a
+  Size: 7
+  WordCount: 64
+  MaxCharacterUsage: 14
+  Words:
+  - Length: 6
+    Forwards: HEAVED
+    Backwards: DEVAEH
+    Definition: A strong pulling, pushing, or lifting movement.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 5
+  - Length: 6
+    Forwards: UNNEST
+    Backwards: TSENNU
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 5
+      Y: 1
+  - Length: 5
+    Forwards: HEALS
+    Backwards: SLAEH
+    Definition: The process of becoming well again after an illness or of feeling
+      happy again after a bad experience, or the process of helping someone to do
+      this.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 2
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 5
+    Forwards: SELFS
+    Backwards: SFLES
+    Definition: The person you are, including your character, your typical behavior,
+      your abilities, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 6
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 6
+    Forwards: CORODY
+    Backwards: YDOROC
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 6
+    ToPosition:
+      X: 6
+      Y: 1
+  - Length: 6
+    Forwards: RECAPS
+    Backwards: SPACER
+    Definition: To repeat the main points of something that has just been said.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 6
+    ToPosition:
+      X: 5
+      Y: 6
+  - Length: 5
+    Forwards: ROMAL
+    Backwards: LAMOR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 6
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 4
+    Forwards: DIED
+    Backwards: DEID
+    Definition: The present participle of die.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 3
+    Forwards: GIO
+    Backwards: OIG
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 4
+    Forwards: SHOE
+    Backwards: EOHS
+    Definition: To put a shoe on a horse.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 0
+  - Length: 3
+    Forwards: VIS
+    Backwards: SIV
+    Definition: In relation to or in comparison with something or someone.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 5
+  - Length: 3
+    Forwards: ROM
+    Backwards: MOR
+    Definition: The part of a computer where permanent information and instructions
+      are stored.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 6
+    ToPosition:
+      X: 0
+      Y: 4
+  - Length: 5
+    Forwards: PODAL
+    Backwards: LADOP
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 6
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: LOS
+    Backwards: SOL
+    Definition: A town in the U.S. state of New Mexico where the first atom bomb and
+      hydrogen bomb were developed.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  - Length: 3
+    Forwards: VOX
+    Backwards: XOV
+    Definition: The opinions of ordinary people.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: ELF
+    Backwards: FLE
+    Definition: A small imaginary person with pointed ears and magical powers.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 3
+    Forwards: DOE
+    Backwards: EOD
+    Definition: A female deer, rabbit, and some other animals.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 5
+  - Length: 4
+    Forwards: SELF
+    Backwards: FLES
+    Definition: The person you are, including your character, your typical behavior,
+      your abilities, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 4
+    Forwards: DALS
+    Backwards: SLAD
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 3
+    Forwards: LAD
+    Backwards: DAL
+    Definition: A boy or young man.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 3
+    Forwards: SPA
+    Backwards: APS
+    Definition: A place where people go in order to improve their health or beauty,
+      especially through swimming, exercise, beauty treatments, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 6
+    ToPosition:
+      X: 3
+      Y: 6
+  - Length: 3
+    Forwards: DIE
+    Backwards: EID
+    Definition: The present participle of die.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: MAL
+    Backwards: LAM
+    Definition: Bad or badly.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 3
+    Forwards: SEN
+    Backwards: NES
+    Definition: The written abbreviation of senator.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: OVA
+    Backwards: AVO
+    Definition: The plural form of ovum.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 4
+    Forwards: ROMA
+    Backwards: AMOR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 6
+    ToPosition:
+      X: 0
+      Y: 3
+  - Length: 3
+    Forwards: DOR
+    Backwards: ROD
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 2
+    ToPosition:
+      X: 6
+      Y: 4
+  - Length: 3
+    Forwards: GEO
+    Backwards: OEG
+    Definition: Relating to the Earth or its surface.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 0
+  - Length: 4
+    Forwards: HEAL
+    Backwards: LAEH
+    Definition: The process of becoming well again after an illness or of feeling
+      happy again after a bad experience, or the process of helping someone to do
+      this.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: EAS
+    Backwards: SAE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 3
+    Forwards: ADO
+    Backwards: ODA
+    Definition: Without delaying anymore, or wasting any more time.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 4
+    Forwards: PACE
+    Backwards: ECAP
+    Definition: Moving, happening, or developing slowly, quickly, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 6
+    ToPosition:
+      X: 1
+      Y: 6
+  - Length: 3
+    Forwards: COR
+    Backwards: ROC
+    Definition: "Used instead of con- before the letter \u201Cr\u201D."
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 6
+    ToPosition:
+      X: 6
+      Y: 4
+  - Length: 4
+    Forwards: DEID
+    Backwards: DIED
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 5
+    Forwards: RECAP
+    Backwards: PACER
+    Definition: To repeat the main points of something that has just been said.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 6
+    ToPosition:
+      X: 4
+      Y: 6
+  - Length: 4
+    Forwards: ODAL
+    Backwards: LADO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: LAM
+    Backwards: MAL
+    Definition: Escaping or hiding from someone, especially the police.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 0
+      Y: 4
+  - Length: 5
+    Forwards: ODALS
+    Backwards: SLADO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 3
+    Forwards: EST
+    Backwards: TSE
+    Definition: The written abbreviation of established used after the names of a
+      business to show when it was started.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 1
+    ToPosition:
+      X: 5
+      Y: 1
+  - Length: 3
+    Forwards: POD
+    Backwards: DOP
+    Definition: The part of plants such as peas and beans that the seeds grow in.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 6
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 3
+    Forwards: ODA
+    Backwards: ADO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 4
+    Forwards: DEVA
+    Backwards: AVED
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: ACE
+    Backwards: ECA
+    Definition: To do very well on a test, a piece of written work, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 6
+    ToPosition:
+      X: 1
+      Y: 6
+  - Length: 3
+    Forwards: REC
+    Backwards: CER
+    Definition: A public room, for example in a hospital, used for social activities
+      or games.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 6
+    ToPosition:
+      X: 2
+      Y: 6
+  - Length: 3
+    Forwards: SAE
+    Backwards: EAS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: CAP
+    Backwards: PAC
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 6
+    ToPosition:
+      X: 4
+      Y: 6
+  - Length: 4
+    Forwards: NEST
+    Backwards: TSEN
+    Definition: The activity of making a nest.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 1
+    ToPosition:
+      X: 5
+      Y: 1
+  - Length: 3
+    Forwards: DAL
+    Backwards: LAD
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 4
+    Forwards: CAPS
+    Backwards: SPAC
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 6
+    ToPosition:
+      X: 5
+      Y: 6
+  - Length: 5
+    Forwards: SPACE
+    Backwards: ECAPS
+    Definition: To arrange objects or events so that they have a particular amount
+      of space or time between them.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 6
+    ToPosition:
+      X: 1
+      Y: 6
+  - Length: 4
+    Forwards: LOSH
+    Backwards: HSOL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Length: 3
+    Forwards: SEL
+    Backwards: LES
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: OHS
+    Backwards: SHO
+    Definition: Used to express a strong emotion or to emphasize what you think about
+      something.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  - Length: 3
+    Forwards: ROD
+    Backwards: DOR
+    Definition: A long thin pole or bar.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 4
+    ToPosition:
+      X: 6
+      Y: 2
+  - Length: 5
+    Forwards: HEAVE
+    Backwards: EVAEH
+    Definition: A strong pulling, pushing, or lifting movement.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: AAL
+    Backwards: LAA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 2
+    ToPosition:
+      X: 5
+      Y: 4
+  - Length: 3
+    Forwards: AVE
+    Backwards: EVA
+    Definition: The written abbreviation of avenue.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: ALS
+    Backwards: SLA
+    Definition: The written abbreviation of alabama.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 2
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 4
+    Forwards: SLAE
+    Backwards: EALS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: HOE
+    Backwards: EOH
+    Definition: A garden tool with a long handle, used for making the soil loose and
+      removing weeds.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: SNE
+    Backwards: ENS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 4
+    Forwards: OSLA
+    Backwards: ALSO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: YTS
+    Backwards: STY
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 4
+    Forwards: YSAE
+    Backwards: EASY
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 4
+  CharGrid:
+  - Character: 76
+    NumberOfUses: 2
+  - Character: 85
+    NumberOfUses: 1
+  - Character: 76
+    NumberOfUses: 3
+  - Character: 65
+    NumberOfUses: 4
+  - Character: 77
+    NumberOfUses: 5
+  - Character: 79
+    NumberOfUses: 3
+  - Character: 82
+    NumberOfUses: 6
+  - Character: 79
+    NumberOfUses: 2
+  - Character: 78
+    NumberOfUses: 1
+  - Character: 72
+    NumberOfUses: 3
+  - Character: 88
+    NumberOfUses: 1
+  - Character: 68
+    NumberOfUses: 3
+  - Character: 83
+    NumberOfUses: 1
+  - Character: 69
+    NumberOfUses: 6
+  - Character: 83
+    NumberOfUses: 7
+  - Character: 78
+    NumberOfUses: 4
+  - Character: 69
+    NumberOfUses: 4
+  - Character: 79
+    NumberOfUses: 4
+  - Character: 73
+    NumberOfUses: 5
+  - Character: 71
+    NumberOfUses: 1
+  - Character: 67
+    NumberOfUses: 8
+  - Character: 72
+    NumberOfUses: 5
+  - Character: 69
+    NumberOfUses: 8
+  - Character: 65
+    NumberOfUses: 9
+  - Character: 86
+    NumberOfUses: 7
+  - Character: 69
+    NumberOfUses: 11
+  - Character: 68
+    NumberOfUses: 3
+  - Character: 65
+    NumberOfUses: 8
+  - Character: 79
+    NumberOfUses: 4
+  - Character: 83
+    NumberOfUses: 8
+  - Character: 76
+    NumberOfUses: 13
+  - Character: 65
+    NumberOfUses: 14
+  - Character: 68
+    NumberOfUses: 11
+  - Character: 79
+    NumberOfUses: 7
+  - Character: 80
+    NumberOfUses: 9
+  - Character: 69
+    NumberOfUses: 2
+  - Character: 84
+    NumberOfUses: 4
+  - Character: 83
+    NumberOfUses: 7
+  - Character: 70
+    NumberOfUses: 3
+  - Character: 76
+    NumberOfUses: 3
+  - Character: 69
+    NumberOfUses: 3
+  - Character: 83
+    NumberOfUses: 5
+  - Character: 71
+    NumberOfUses: 1
+  - Character: 89
+    NumberOfUses: 3
+  - Character: 68
+    NumberOfUses: 3
+  - Character: 79
+    NumberOfUses: 3
+  - Character: 82
+    NumberOfUses: 4
+  - Character: 79
+    NumberOfUses: 2
+  - Character: 67
+    NumberOfUses: 2

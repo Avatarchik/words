@@ -1,0 +1,834 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 07_0000_0064
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: 636282cb-8d80-4ddb-a9bd-3b7542fdb7dc
+  Size: 7
+  WordCount: 64
+  MaxCharacterUsage: 10
+  Words:
+  - Length: 5
+    Forwards: STAGS
+    Backwards: SGATS
+    Definition: A fully grown male deer.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 5
+  - Length: 4
+    Forwards: ATAP
+    Backwards: PATA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 6
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 5
+    Forwards: GAUMY
+    Backwards: YMUAG
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 6
+    ToPosition:
+      X: 2
+      Y: 6
+  - Length: 5
+    Forwards: HAKES
+    Backwards: SEKAH
+    Definition: An ocean fish, used as food.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 5
+      Y: 5
+  - Length: 5
+    Forwards: OMENS
+    Backwards: SNEMO
+    Definition: A sign of what will happen in the future.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 5
+      Y: 5
+  - Length: 6
+    Forwards: EARWIG
+    Backwards: GIWRAE
+    Definition: A long brown insect with two curved pointed parts at the back of its
+      body.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 0
+    ToPosition:
+      X: 6
+      Y: 5
+  - Length: 6
+    Forwards: NEALED
+    Backwards: DELAEN
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 0
+  - Length: 3
+    Forwards: FIG
+    Backwards: GIF
+    Definition: A soft sweet fruit with a lot of small seeds, often eaten dried, or
+      the tree on which this fruit grows.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 5
+  - Length: 5
+    Forwards: AHEAP
+    Backwards: PAEHA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 5
+    Forwards: CLARO
+    Backwards: ORALC
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: REH
+    Backwards: HER
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 6
+    ToPosition:
+      X: 0
+      Y: 4
+  - Length: 3
+    Forwards: CAB
+    Backwards: BAC
+    Definition: A car in which you pay the driver to take you somewhere.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 4
+    Forwards: EERY
+    Backwards: YREE
+    Definition: Strange and frightening.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: ALE
+    Backwards: ELA
+    Definition: A type of beer with a slightly bitter taste.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 0
+  - Length: 3
+    Forwards: MEN
+    Backwards: NEM
+    Definition: The plural of man.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 2
+    ToPosition:
+      X: 5
+      Y: 4
+  - Length: 4
+    Forwards: STAG
+    Backwards: GATS
+    Definition: A fully grown male deer.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 5
+  - Length: 5
+    Forwards: MORAL
+    Backwards: LAROM
+    Definition: The level of confidence and positive feelings that people have, especially
+      people who work together, who belong to the same team, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 2
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 4
+    Forwards: SIAL
+    Backwards: LAIS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: GYM
+    Backwards: MYG
+    Definition: A special building or room that has equipment for doing physical exercise
+      or playing sports.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 6
+    ToPosition:
+      X: 3
+      Y: 6
+  - Length: 3
+    Forwards: LAR
+    Backwards: RAL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 4
+    Forwards: GAUM
+    Backwards: MUAG
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 6
+    ToPosition:
+      X: 3
+      Y: 6
+  - Length: 3
+    Forwards: ABA
+    Backwards: ABA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 4
+    Forwards: ORAL
+    Backwards: LARO
+    Definition: A test in which questions and answers are spoken, rather than written.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 2
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: TAP
+    Backwards: PAT
+    Definition: "To hit your fingers, foot, or something you can hold lightly on something,
+      for example to get someone\u2019s attention, because you are nervous, when you
+      listen to music, etc."
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 4
+    Forwards: MORA
+    Backwards: AROM
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 4
+    Forwards: HEAP
+    Backwards: PAEH
+    Definition: To put a lot of things on top of each other in a messy way.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 3
+    Forwards: MYA
+    Backwards: AYM
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 4
+    Forwards: HAKE
+    Backwards: EKAH
+    Definition: An ocean fish, used as food.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 3
+    Forwards: ENS
+    Backwards: SNE
+    Definition: Made of a particular material or substance.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 3
+    ToPosition:
+      X: 5
+      Y: 5
+  - Length: 3
+    Forwards: YET
+    Backwards: TEY
+    Definition: Used to introduce a statement that is surprising after what you have
+      just said.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 3
+    Forwards: WEY
+    Backwards: YEW
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: MOR
+    Backwards: ROM
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 4
+    Forwards: GATS
+    Backwards: STAG
+    Definition: A gun.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 5
+  - Length: 3
+    Forwards: KYE
+    Backwards: EYK
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 3
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 4
+    Forwards: NEAL
+    Backwards: LAEN
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Length: 3
+    Forwards: MAA
+    Backwards: AAM
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 6
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: WIG
+    Backwards: GIW
+    Definition: To become very anxious, upset, or afraid, or to make someone do this.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 3
+    ToPosition:
+      X: 6
+      Y: 5
+  - Length: 4
+    Forwards: DOME
+    Backwards: EMOD
+    Definition: A round roof on a building or room.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 3
+    Forwards: DEL
+    Backwards: LED
+    Definition: A group of islands near the south coast of South America, which belong
+      to Chile and Argentina.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Length: 4
+    Forwards: TAGS
+    Backwards: SGAT
+    Definition: To fasten a tag onto something.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 5
+  - Length: 3
+    Forwards: ARK
+    Backwards: KRA
+    Definition: In the Bible, the large boat built by Noah to save his family and
+      the animals from a flood that covered the Earth.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 4
+    Forwards: AKES
+    Backwards: SEKA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 2
+    ToPosition:
+      X: 5
+      Y: 5
+  - Length: 4
+    Forwards: OMEN
+    Backwards: NEMO
+    Definition: A sign of what will happen in the future.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 5
+      Y: 4
+  - Length: 4
+    Forwards: LARK
+    Backwards: KRAL
+    Definition: Something that you do to amuse yourself or as a joke.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: GAU
+    Backwards: UAG
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 6
+    ToPosition:
+      X: 4
+      Y: 6
+  - Length: 3
+    Forwards: LED
+    Backwards: DEL
+    Definition: The past tense and past participle of lead.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 0
+  - Length: 3
+    Forwards: GAY
+    Backwards: YAG
+    Definition: Someone who is homosexual, especially a man.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: ROM
+    Backwards: MOR
+    Definition: The part of a computer where permanent information and instructions
+      are stored.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 2
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 3
+    Forwards: OYE
+    Backwards: EYO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 3
+    Forwards: EAR
+    Backwards: RAE
+    Definition: Having long, short, etc. ears.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 0
+    ToPosition:
+      X: 6
+      Y: 2
+  - Length: 3
+    Forwards: PAT
+    Backwards: TAP
+    Definition: A pat answer or explanation seems too quick and too simple, and sounds
+      as if it has been used before.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 3
+    Forwards: ALP
+    Backwards: PLA
+    Definition: A range of mountains in Europe that runs through France, Switzerland,
+      Italy, Germany, and Austria.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: AKE
+    Backwards: EKA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 3
+    Forwards: REE
+    Backwards: EER
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 3
+    Forwards: TAG
+    Backwards: GAT
+    Definition: To fasten a tag onto something.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 5
+  - Length: 3
+    Forwards: GAT
+    Backwards: TAG
+    Definition: A gun.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 3
+    Forwards: AIS
+    Backwards: SIA
+    Definition: The abbreviation of artificial intelligence.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 5
+  - Length: 3
+    Forwards: DOM
+    Backwards: MOD
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 3
+    Forwards: NAC
+    Backwards: CAN
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 3
+    Forwards: EIP
+    Backwards: PIE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: HAA
+    Backwards: AAH
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: AOP
+    Backwards: POA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 3
+    Forwards: FLE
+    Backwards: ELF
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: EPO
+    Backwards: OPE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 2
+  CharGrid:
+  - Character: 78
+    NumberOfUses: 3
+  - Character: 65
+    NumberOfUses: 3
+  - Character: 67
+    NumberOfUses: 3
+  - Character: 70
+    NumberOfUses: 2
+  - Character: 72
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 2
+  - Character: 82
+    NumberOfUses: 1
+  - Character: 69
+    NumberOfUses: 3
+  - Character: 72
+    NumberOfUses: 4
+  - Character: 76
+    NumberOfUses: 7
+  - Character: 65
+    NumberOfUses: 5
+  - Character: 73
+    NumberOfUses: 4
+  - Character: 83
+    NumberOfUses: 4
+  - Character: 71
+    NumberOfUses: 1
+  - Character: 65
+    NumberOfUses: 3
+  - Character: 69
+    NumberOfUses: 4
+  - Character: 65
+    NumberOfUses: 10
+  - Character: 80
+    NumberOfUses: 5
+  - Character: 66
+    NumberOfUses: 2
+  - Character: 71
+    NumberOfUses: 8
+  - Character: 89
+    NumberOfUses: 2
+  - Character: 76
+    NumberOfUses: 6
+  - Character: 65
+    NumberOfUses: 4
+  - Character: 82
+    NumberOfUses: 10
+  - Character: 75
+    NumberOfUses: 7
+  - Character: 65
+    NumberOfUses: 6
+  - Character: 65
+    NumberOfUses: 8
+  - Character: 77
+    NumberOfUses: 4
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 80
+    NumberOfUses: 4
+  - Character: 79
+    NumberOfUses: 8
+  - Character: 89
+    NumberOfUses: 7
+  - Character: 69
+    NumberOfUses: 7
+  - Character: 84
+    NumberOfUses: 10
+  - Character: 85
+    NumberOfUses: 3
+  - Character: 68
+    NumberOfUses: 5
+  - Character: 79
+    NumberOfUses: 5
+  - Character: 77
+    NumberOfUses: 10
+  - Character: 69
+    NumberOfUses: 8
+  - Character: 78
+    NumberOfUses: 4
+  - Character: 83
+    NumberOfUses: 7
+  - Character: 65
+    NumberOfUses: 4
+  - Character: 69
+    NumberOfUses: 2
+  - Character: 65
+    NumberOfUses: 3
+  - Character: 82
+    NumberOfUses: 3
+  - Character: 87
+    NumberOfUses: 3
+  - Character: 73
+    NumberOfUses: 2
+  - Character: 71
+    NumberOfUses: 2
+  - Character: 71
+    NumberOfUses: 3

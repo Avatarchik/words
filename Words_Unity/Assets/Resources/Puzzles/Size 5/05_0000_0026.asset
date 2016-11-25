@@ -1,0 +1,362 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 05_0000_0026
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: 7106ea54-0692-440b-ac09-19e72a9c5c1d
+  Size: 5
+  WordCount: 26
+  MaxCharacterUsage: 7
+  Words:
+  - Length: 4
+    Forwards: BYES
+    Backwards: SEYB
+    Definition: Goodbye.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 4
+    Forwards: OTIC
+    Backwards: CITO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 4
+    Forwards: ORDS
+    Backwards: SDRO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 3
+  - Length: 4
+    Forwards: DAGO
+    Backwards: OGAD
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 4
+    Forwards: SOUP
+    Backwards: PUOS
+    Definition: To improve something by making it bigger, more attractive, or more
+      exciting.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 4
+    Forwards: YUKE
+    Backwards: EKUY
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: USE
+    Backwards: ESU
+    Definition: The state of being useful.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: YES
+    Backwards: SEY
+    Definition: Used as an answer to say that something is true, that you agree, that
+      you want something, or that you are willing to do something.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 3
+    Forwards: SOD
+    Backwards: DOS
+    Definition: A piece of dirt with grass growing on top of it.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 0
+  - Length: 3
+    Forwards: SOC
+    Backwards: COS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: SEY
+    Backwards: YES
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: TIC
+    Backwards: CIT
+    Definition: A sudden uncontrolled movement of a muscle in your face, usually because
+      of a nervous illness.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: RAT
+    Backwards: TAR
+    Definition: An animal that looks like a large mouse with a long tail.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: ORD
+    Backwards: DRO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 3
+    Forwards: AGO
+    Backwards: OGA
+    Definition: Used to show how far back in the past something happened.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: CIT
+    Backwards: TIC
+    Definition: An abbreviation used in formal writing to refer to a book that has
+      been mentioned already.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: BYE
+    Backwards: EYB
+    Definition: Goodbye.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: SOG
+    Backwards: GOS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: UKE
+    Backwards: EKU
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: DAG
+    Backwards: GAD
+    Definition: The Secretary General of the United Nations from 1953 until his death
+      in 1961.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: DOS
+    Backwards: SOD
+    Definition: Software that is loaded onto a computer system to make all the different
+      parts work together.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Length: 3
+    Forwards: PIA
+    Backwards: AIP
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 3
+    Forwards: YUK
+    Backwards: KUY
+    Definition: To tell a lot of jokes and behave in a funny way.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: SOU
+    Backwards: UOS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 4
+    Forwards: ECIT
+    Backwards: TICE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: ECI
+    Backwards: ICE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 2
+  CharGrid:
+  - Character: 79
+    NumberOfUses: 2
+  - Character: 82
+    NumberOfUses: 3
+  - Character: 68
+    NumberOfUses: 2
+  - Character: 83
+    NumberOfUses: 2
+  - Character: 85
+    NumberOfUses: 1
+  - Character: 68
+    NumberOfUses: 4
+  - Character: 65
+    NumberOfUses: 5
+  - Character: 71
+    NumberOfUses: 4
+  - Character: 79
+    NumberOfUses: 4
+  - Character: 83
+    NumberOfUses: 5
+  - Character: 79
+    NumberOfUses: 3
+  - Character: 84
+    NumberOfUses: 5
+  - Character: 73
+    NumberOfUses: 6
+  - Character: 67
+    NumberOfUses: 6
+  - Character: 69
+    NumberOfUses: 7
+  - Character: 83
+    NumberOfUses: 4
+  - Character: 79
+    NumberOfUses: 2
+  - Character: 85
+    NumberOfUses: 2
+  - Character: 80
+    NumberOfUses: 2
+  - Character: 89
+    NumberOfUses: 4
+  - Character: 89
+    NumberOfUses: 2
+  - Character: 85
+    NumberOfUses: 3
+  - Character: 75
+    NumberOfUses: 3
+  - Character: 69
+    NumberOfUses: 2
+  - Character: 66
+    NumberOfUses: 2

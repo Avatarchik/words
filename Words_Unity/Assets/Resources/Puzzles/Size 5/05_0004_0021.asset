@@ -1,0 +1,304 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 05_0004_0021
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: 97440121-726b-4dcd-9d47-e235643a9cb7
+  Size: 5
+  WordCount: 21
+  MaxCharacterUsage: 6
+  Words:
+  - Length: 4
+    Forwards: WOWS
+    Backwards: SWOW
+    Definition: To make people admire you very much.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 4
+    Forwards: MUDS
+    Backwards: SDUM
+    Definition: Wet earth that has become soft and sticky.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 4
+    Forwards: PIRN
+    Backwards: NRIP
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 3
+  - Length: 3
+    Forwards: SIN
+    Backwards: NIS
+    Definition: "To break God\u2019s laws."
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: DOC
+    Backwards: COD
+    Definition: A short form of doctor.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 4
+    Forwards: BABE
+    Backwards: EBAB
+    Definition: A way of speaking to someone you love, especially your wife, husband,
+      boyfriend, or girlfriend.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 4
+    Forwards: CRUD
+    Backwards: DURC
+    Definition: Something that is very bad or disgusting to look at, taste, smell,
+      etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 3
+    Forwards: NON
+    Backwards: NON
+    Definition: Used to say that something does not have or do something.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: NIS
+    Backwards: SIN
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: RUD
+    Backwards: DUR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 3
+    Forwards: MAN
+    Backwards: NAM
+    Definition: Having qualities that people expect and admire in a man, such as being
+      brave and strong.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Length: 3
+    Forwards: OWS
+    Backwards: SWO
+    Definition: Said to show that something hurts you.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: NAM
+    Backwards: MAN
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 0
+  - Length: 3
+    Forwards: MUD
+    Backwards: DUM
+    Definition: Wet earth that has become soft and sticky.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: UDS
+    Backwards: SDU
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: CRU
+    Backwards: URC
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: AIN
+    Backwards: NIA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: WOW
+    Backwards: WOW
+    Definition: To make people admire you very much.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: PIR
+    Backwards: RIP
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 3
+    Forwards: PMA
+    Backwards: AMP
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  - Length: 3
+    Forwards: EID
+    Backwards: DIE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 2
+  CharGrid:
+  - Character: 80
+    NumberOfUses: 3
+  - Character: 73
+    NumberOfUses: 2
+  - Character: 82
+    NumberOfUses: 2
+  - Character: 78
+    NumberOfUses: 1
+  - Character: 66
+    NumberOfUses: 1
+  - Character: 77
+    NumberOfUses: 5
+  - Character: 85
+    NumberOfUses: 3
+  - Character: 68
+    NumberOfUses: 4
+  - Character: 83
+    NumberOfUses: 6
+  - Character: 65
+    NumberOfUses: 2
+  - Character: 65
+    NumberOfUses: 3
+  - Character: 67
+    NumberOfUses: 1
+  - Character: 87
+    NumberOfUses: 3
+  - Character: 73
+    NumberOfUses: 4
+  - Character: 66
+    NumberOfUses: 1
+  - Character: 78
+    NumberOfUses: 3
+  - Character: 79
+    NumberOfUses: 5
+  - Character: 78
+    NumberOfUses: 2
+  - Character: 78
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 2
+  - Character: 87
+    NumberOfUses: 2
+  - Character: 68
+    NumberOfUses: 3
+  - Character: 85
+    NumberOfUses: 3
+  - Character: 82
+    NumberOfUses: 3
+  - Character: 67
+    NumberOfUses: 2
