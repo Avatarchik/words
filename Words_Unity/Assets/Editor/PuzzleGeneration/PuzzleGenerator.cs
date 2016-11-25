@@ -207,11 +207,11 @@ public class PuzzleGenerator : EditorWindow
 		}
 
 		// Step 5 - Check for naturally placed words
-		/*CheckForNaturallyPlacedWords(out userCancelled);
+		CheckForNaturallyPlacedWords(out userCancelled);
 		if (userCancelled)
 		{
 			return false;
-		}*/
+		}
 
 		// Finished
 		ODebug.Log("Word count: " + mWords.Count);
@@ -547,6 +547,7 @@ public class PuzzleGenerator : EditorWindow
 					foundPosition = potentialPlacement.Position;
 					foundWordDirection = potentialPlacement.WordDirection;
 
+					word = wordReversed;
 					foundOccurrence = true;
 					break;
 				}
