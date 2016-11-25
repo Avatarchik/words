@@ -74,10 +74,17 @@ public class HandedPositionSet : MonoBehaviour
 		}
 
 		RectTransRef.anchoredPosition = new Vector2(pos.PosX, pos.PosY);
-		if (pos.Width >= 0 && pos.Height >= 0) // TODO - bad!
+
+		Vector2 sizeDelta = RectTransRef.sizeDelta;
+		if (pos.Width >= 0) // TODO - bad!
 		{
-			RectTransRef.sizeDelta = new Vector2(pos.Width, pos.Height);
+			sizeDelta.x = pos.Width;
 		}
+		if (pos.Height >= 0) // TODO - bad!
+		{
+			sizeDelta.y =pos.Height;
+		}
+		RectTransRef.sizeDelta = sizeDelta;
 
 		RectTransRef.pivot = new Vector2(pos.PivotX, pos.PivotY);
 
