@@ -9,7 +9,6 @@ public class PuzzleGenerator : EditorWindow
 	private const int kWordListProgressBarStep = 1000;
 
 	private int mSize = 7;
-	private int mWordListPasses = 1;
 	private int mWordLimit = 100;
 	private int mMaxTileUsage = 5;
 
@@ -51,7 +50,6 @@ public class PuzzleGenerator : EditorWindow
 
 		GUILayout.Space(8);
 		mSize = EditorGUILayout.IntSlider("Size", mSize, GlobalSettings.Instance.PuzzleSizeMin, GlobalSettings.Instance.PuzzleSizeMax);
-		mWordListPasses = EditorGUILayout.IntSlider("Word List Passes", mWordListPasses, 1, 3);
 		mWordLimit = EditorGUILayout.IntSlider("Word Limit", mWordLimit, 1, 1024);
 		mMaxTileUsage = EditorGUILayout.IntSlider("Max Tile Usage", mMaxTileUsage, 1, GlobalSettings.Instance.PuzzleSizeMaxTileUsage);
 
@@ -175,22 +173,9 @@ public class PuzzleGenerator : EditorWindow
 		// Step 1 - initialise
 		mNewPuzzleContents = InitialiseGeneration();
 
-		// Step 2 - Run over the word lists and attempt to places words
-		for (int passIndex = 0; passIndex < mWordListPasses; ++passIndex)
-		{
-			bool wasSuccessful = RunWordListPass(passIndex, out userCancelled);
-			ODebug.Log(string.Format("Pass #{0} placed words: {1}", passIndex + 1, mPlacedWords));
-
-			if (userCancelled)
-			{
-				return false;
-			}
-
-			if (!wasSuccessful)
-			{
-				break;
-			}
-		}
+		// Step 2 - Run over the word list and attempt to places words
+		RunWordListPass(out userCancelled);
+		ODebug.Log(string.Format("Placed words: {0}", mPlacedWords));
 
 		// Step 3 - Check for any gaps to assess the validity
 		bool foundGaps = CheckForGaps();
@@ -290,7 +275,7 @@ public class PuzzleGenerator : EditorWindow
 		return wasFinalised;
 	}
 
-	private bool RunWordListPass(int passIndex, out bool userCancelled)
+	private bool RunWordListPass(out bool userCancelled)
 	{
 		userCancelled = false;
 
@@ -299,8 +284,8 @@ public class PuzzleGenerator : EditorWindow
 			return false;
 		}
 
-		string progressBarMessageFormat = "Step 2/5: Pass #{0}/{1}. Placed {2:N0}/{3:N0} ({4:N1}%). Words {5:N0}/{6:N0}";
-		string progressBarMessage = string.Format(progressBarMessageFormat, (passIndex + 1), mWordListPasses, 0, 0, 0, 0, 0);
+		string progressBarMessageFormat = "Step 2/5: Placed {0:N0}/{1:N0} ({2:N1}%). Words {3:N0}/{4:N0}";
+		string progressBarMessage = string.Format(progressBarMessageFormat, 0, 0, 0, 0, 0);
 		ProgressBarHelper.Begin(true, kProgressBarTitle, progressBarMessage, 1f / mAllWordsCount);
 
 		int wordsPlacedThisPass = 0;
@@ -313,7 +298,6 @@ public class PuzzleGenerator : EditorWindow
 			if ((wordIndex % kWordListProgressBarStep) == 0)
 			{
 				progressBarMessage = string.Format(progressBarMessageFormat,
-					(passIndex + 1), mWordListPasses,
 					mPlacedWords, mWordLimit, ((float)mPlacedWords / mWordLimit) * 100,
 					wordIndex, mAllWordsCount);
 				bool isStillRunning = ProgressBarHelper.Update(kWordListProgressBarStep, progressBarMessage);
