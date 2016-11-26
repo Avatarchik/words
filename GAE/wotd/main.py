@@ -9,7 +9,7 @@ app.config['DEBUG'] = True
 # the App Engine WSGI application server.
 
 @app.route('/')
-def hello():
+def hello(self):
 	# GET
 	name1 = self.request.get('thing')
 	#print(name1)
