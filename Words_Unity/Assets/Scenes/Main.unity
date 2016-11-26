@@ -9271,7 +9271,6 @@ GameObject:
   - 114: {fileID: 1285168432}
   - 114: {fileID: 1285168431}
   - 114: {fileID: 1285168430}
-  - 114: {fileID: 1285168435}
   m_Layer: 5
   m_Name: SearchGoogleButton
   m_TagString: Untagged
@@ -9293,9 +9292,9 @@ RectTransform:
   - {fileID: 241003627}
   m_Father: {fileID: 52916271}
   m_RootOrder: 1
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 64, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 16, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1285168430
@@ -9397,66 +9396,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1285168428}
---- !u!114 &1285168435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1285168428}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a4254b0913bbad4995302cf6f620901, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RectTransRef: {fileID: 1285168429}
-  Left:
-    PosX: 64
-    PosY: 0
-    Width: -1
-    Height: -1
-    AnchoredMinX: 0
-    AnchoredMinY: 0.5
-    AnchoredMaxX: 0
-    AnchoredMaxY: 0.5
-    PivotX: 0
-    PivotY: 0.5
-    Rotation: {x: 0, y: 0, z: 0}
-  Right:
-    PosX: 64
-    PosY: 0
-    Width: -1
-    Height: -1
-    AnchoredMinX: 0
-    AnchoredMinY: 0.5
-    AnchoredMaxX: 0
-    AnchoredMaxY: 0.5
-    PivotX: 0
-    PivotY: 0.5
-    Rotation: {x: 0, y: 0, z: 0}
-  Top:
-    PosX: 16
-    PosY: 0
-    Width: -1
-    Height: -1
-    AnchoredMinX: 0
-    AnchoredMinY: 0.5
-    AnchoredMaxX: 0
-    AnchoredMaxY: 0.5
-    PivotX: 0
-    PivotY: 0.5
-    Rotation: {x: 0, y: 0, z: 0}
-  Bottom:
-    PosX: 16
-    PosY: 0
-    Width: -1
-    Height: -1
-    AnchoredMinX: 0
-    AnchoredMinY: 0.5
-    AnchoredMaxX: 0
-    AnchoredMaxY: 0.5
-    PivotX: 0
-    PivotY: 0.5
-    Rotation: {x: 0, y: 0, z: 0}
 --- !u!1001 &1327026066
 Prefab:
   m_ObjectHideFlags: 0
@@ -11680,7 +11619,6 @@ GameObject:
   - 114: {fileID: 1672829757}
   - 114: {fileID: 1672829756}
   - 114: {fileID: 1672829755}
-  - 114: {fileID: 1672829760}
   m_Layer: 5
   m_Name: CloseWordDefinitionButton
   m_TagString: Untagged
@@ -11702,9 +11640,9 @@ RectTransform:
   - {fileID: 1537992291}
   m_Father: {fileID: 52916271}
   m_RootOrder: 0
-  m_AnchorMin: {x: 1, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -64, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -16, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1672829755
@@ -11805,66 +11743,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672829753}
---- !u!114 &1672829760
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1672829753}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a4254b0913bbad4995302cf6f620901, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RectTransRef: {fileID: 1672829754}
-  Left:
-    PosX: -64
-    PosY: 0
-    Width: -1
-    Height: -1
-    AnchoredMinX: 1
-    AnchoredMinY: 0.5
-    AnchoredMaxX: 1
-    AnchoredMaxY: 0.5
-    PivotX: 1
-    PivotY: 0.5
-    Rotation: {x: 0, y: 0, z: 0}
-  Right:
-    PosX: -64
-    PosY: 0
-    Width: -1
-    Height: -1
-    AnchoredMinX: 1
-    AnchoredMinY: 0.5
-    AnchoredMaxX: 1
-    AnchoredMaxY: 0.5
-    PivotX: 1
-    PivotY: 0.5
-    Rotation: {x: 0, y: 0, z: 0}
-  Top:
-    PosX: -16
-    PosY: 0
-    Width: -1
-    Height: -1
-    AnchoredMinX: 1
-    AnchoredMinY: 0.5
-    AnchoredMaxX: 1
-    AnchoredMaxY: 0.5
-    PivotX: 1
-    PivotY: 0.5
-    Rotation: {x: 0, y: 0, z: 0}
-  Bottom:
-    PosX: -16
-    PosY: 0
-    Width: -1
-    Height: -1
-    AnchoredMinX: 1
-    AnchoredMinY: 0.5
-    AnchoredMaxX: 1
-    AnchoredMaxY: 0.5
-    PivotX: 1
-    PivotY: 0.5
-    Rotation: {x: 0, y: 0, z: 0}
 --- !u!4 &1684182312 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000010011794668, guid: 5475f5c9a27a0d54a84619f0a5ccc592,
@@ -15120,12 +14998,12 @@ Prefab:
         type: 2}
       propertyPath: HandedPositionSets.Array.data[19]
       value: 
-      objectReference: {fileID: 1672829760}
+      objectReference: {fileID: 0}
     - target: {fileID: 114000011921708248, guid: 39451c59ab631ad478b53c3059ae6bb4,
         type: 2}
       propertyPath: HandedPositionSets.Array.data[20]
       value: 
-      objectReference: {fileID: 1285168435}
+      objectReference: {fileID: 0}
     - target: {fileID: 114000011921708248, guid: 39451c59ab631ad478b53c3059ae6bb4,
         type: 2}
       propertyPath: HandedPositionSets.Array.data[21]
