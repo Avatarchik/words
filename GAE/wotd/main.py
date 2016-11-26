@@ -17,7 +17,7 @@ class PageNotFound(webapp2.RequestHandler):
 class WOTD(webapp2.RequestHandler):
 
 	def get(self):
-		day = self.request.get('day', -1)
+		day = int(self.request.get('day', -1))
 		self.response.write(day)
 
 		if day != -1:
