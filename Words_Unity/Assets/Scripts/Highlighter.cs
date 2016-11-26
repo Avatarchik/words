@@ -76,6 +76,10 @@ public class Highlighter : SingletonMonoBehaviour<Highlighter>
 		//ODebug.Log(string.Format("From: {0} To: {1}", mFrom.name, mTo.name));
 
 		string wordFromHighlightedTiles = GetWordFromHighlightedTiles();
+		if (string.IsNullOrEmpty(wordFromHighlightedTiles))
+		{
+			return;
+		}
 
 		LastSelectionCheckedRef.SetSelection(wordFromHighlightedTiles, mHighlightedTiles);
 
