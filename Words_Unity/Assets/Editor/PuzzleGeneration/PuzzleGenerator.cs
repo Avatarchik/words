@@ -476,10 +476,7 @@ public class PuzzleGenerator : EditorWindow
 
 		string word;
 		string wordReversed;
-		bool foundOccurrence = false;
-		GridPosition foundPosition = null;
 		GridPosition foundPositionEnd = null;
-		EWordDirection foundWordDirection = EWordDirection.Unknown;
 
 		int naturallyPlacedWordsFound = 0;
 		for (int wordIndex = 0; wordIndex < mAllWordsCount; ++wordIndex)
@@ -502,63 +499,32 @@ public class PuzzleGenerator : EditorWindow
 			word = mAllWords[wordIndex];
 			wordReversed = WordHelper.ReverseWord(word);
 
-			foundOccurrence = false;
-
+			bool hasPlacedWord = false;
 			foreach (PotentialWordPlacement potentialPlacement in mPotentialPlacements)
 			{
 				if (DoesPlacementContainWord(word, potentialPlacement.Position.X, potentialPlacement.Position.Y, potentialPlacement.WordDirection, out foundPositionEnd))
 				{
-					foundPosition = potentialPlacement.Position;
-					foundWordDirection = potentialPlacement.WordDirection;
-
-					foundOccurrence = true;
+					hasPlacedWord = PlaceNaturalWord(word, word, potentialPlacement.Position, potentialPlacement.WordDirection);
 					break;
 				}
 
 				if (DoesPlacementContainWord(wordReversed, potentialPlacement.Position.X, potentialPlacement.Position.Y, potentialPlacement.WordDirection, out foundPositionEnd))
 				{
-					foundPosition = potentialPlacement.Position;
-					foundWordDirection = potentialPlacement.WordDirection;
-
-					word = wordReversed;
-					foundOccurrence = true;
+					hasPlacedWord = PlaceNaturalWord(wordReversed, word, potentialPlacement.Position, potentialPlacement.WordDirection);
 					break;
 				}
 			}
 
-			if (foundOccurrence)
+			if (hasPlacedWord)
 			{
-				bool alreadyUsedWord = false;
-				foreach (string usedWord in mWords)
+				mAllWords[wordIndex] = null;
+
+				++mPlacedWords;
+				++naturallyPlacedWordsFound;
+
+				if (mWords.Count >= mWordLimit)
 				{
-					if (usedWord == word)
-					{
-						alreadyUsedWord = true;
-						break;
-					}
-				}
-
-				if (!alreadyUsedWord)
-				{
-					GridPosition endPosition;
-					PlaceWord(word, foundPosition.X, foundPosition.Y, foundWordDirection, out endPosition);
-
-					string definition = null;
-					mDefinitions.GetDefinitionFor(word, ref definition);
-					mNewPuzzleContents.RegisterWord(word, definition, foundPosition, endPosition);
-
-					mWords.Add(word);
-					mWordPlacements.Add(new ScoredWordPlacement(0, foundPosition, foundWordDirection));
-
-					mAllWords[wordIndex] = null;
-
-					++mPlacedWords;
-					++naturallyPlacedWordsFound;
-
-					if (mWords.Count >= mWordLimit)
-					{
-						break;
-					}
+					break;
 				}
 			}
 		}
@@ -566,6 +532,32 @@ public class PuzzleGenerator : EditorWindow
 		ODebug.Log("Naturally placed words: " + naturallyPlacedWordsFound);
 
 		ProgressBarHelper.End();
+	}
+
+	private bool PlaceNaturalWord(string word, string forwardsWord, GridPosition startPosition, EWordDirection direction)
+	{
+		foreach (string usedWord in mWords)
+		{
+			if (usedWord == forwardsWord)
+			{
+				return false;
+			}
+		}
+
+		if (IsWordPlacementValid(word, startPosition.X, startPosition.Y, direction))
+		{
+			GridPosition endPosition;
+			PlaceWord(word, startPosition.X, startPosition.Y, direction, out endPosition);
+
+			string definition = null;
+			mDefinitions.GetDefinitionFor(forwardsWord, ref definition);
+			mNewPuzzleContents.RegisterWord(forwardsWord, definition, startPosition, endPosition);
+
+			mWords.Add(forwardsWord);
+			mWordPlacements.Add(new ScoredWordPlacement(0, startPosition, direction));
+		}
+
+		return true;
 	}
 
 	private bool DoesPlacementContainWord(string word, int x, int y, EWordDirection wordDirection, out GridPosition foundPositionEnd)

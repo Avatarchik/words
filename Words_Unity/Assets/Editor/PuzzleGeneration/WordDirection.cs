@@ -42,4 +42,21 @@ public struct WordDirection
 		xModifier = modifiers.XModifier;
 		yModifier = modifiers.YModifier;
 	}
+
+	static public EWordDirection GetOppositeDirection(EWordDirection direction)
+	{
+		switch (direction)
+		{
+			case EWordDirection.North: return EWordDirection.South;
+			case EWordDirection.NorthEast: return EWordDirection.SouthWest;
+			case EWordDirection.East: return EWordDirection.West;
+			case EWordDirection.SouthEast: return EWordDirection.NorthWest;
+			case EWordDirection.South: return EWordDirection.NorthWest;
+			case EWordDirection.SouthWest: return EWordDirection.NorthEast;
+			case EWordDirection.West: return EWordDirection.East;
+			case EWordDirection.NorthWest: return EWordDirection.SouthEast;
+
+			default: return EWordDirection.Unknown;
+		}
+	}
 }
