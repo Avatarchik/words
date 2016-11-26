@@ -1,24 +1,40 @@
-from flask import Flask
-import datetime
-from google.appengine.ext import webapp
+#!/usr/bin/env python
 
-app = Flask(__name__)
-app.config['DEBUG'] = True
+# Copyright 2016 Google Inc.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
 
-# Note: We don't need to call run() since our application is embedded within
-# the App Engine WSGI application server.
+# [START imports]
+import os
+import urllib
 
-@app.route('/')
-def hello(self):
-	# GET
-	name1 = self.request.get('thing')
-	#print(name1)
+import webapp2
+# [END imports]
 
-	"""Return a friendly HTTP greeting."""
-	return 'Hello World! It Works! test 456'
+class PageNotFound(webapp2.RequestHandler):
 
+	def get(self):
+		self.response.write('Page not found. 404')
 
-@app.errorhandler(404)
-def page_not_found(e):
-	"""Return a custom 404 error."""
-	return 'Sorry, nothing at this URL.', 404
+class WOTD(webapp2.RequestHandler):
+
+    def get(self):
+        name1 = self.request.get('thing', 'unknown')
+        self.response.write(name1)
+
+# [START app]
+app = webapp2.WSGIApplication([
+    ('/', PageNotFound),
+    ('/wotd', WOTD),
+], debug=True)
+# [END app]
