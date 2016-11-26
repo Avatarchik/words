@@ -11,19 +11,14 @@ app.config['DEBUG'] = True
 @app.route('/')
 def hello():
 	# GET
-	x = MyHandler()
-	print x.get()
+	name1 = self.request.get_all("thing")
+	print(name1)
 
-    """Return a friendly HTTP greeting."""
-    return 'Hello World! It Works! test 456'
-
-class MyHandler(webapp.RequestHandler):
-    def get(self):
-        name1 = self.request.get_all("thing")
-        return name1
+	"""Return a friendly HTTP greeting."""
+	return 'Hello World! It Works! test 456'
 
 
 @app.errorhandler(404)
 def page_not_found(e):
-    """Return a custom 404 error."""
-    return 'Sorry, nothing at this URL.', 404
+	"""Return a custom 404 error."""
+	return 'Sorry, nothing at this URL.', 404
