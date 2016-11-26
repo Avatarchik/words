@@ -513,7 +513,6 @@ public class PuzzleGenerator : EditorWindow
 
 			if (hasPlacedWord)
 			{
-				Debug.LogWarning(word);
 				mAllWords[wordIndex] = null;
 
 				++naturallyPlacedWordsFound;
