@@ -1,25 +1,12 @@
-#!/usr/bin/env python
-
-# Copyright 2016 Google Inc.
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
-# [START imports]
 import os
 import urllib
-
 import webapp2
-# [END imports]
+from google.appengine.ext import ndb
+
+class WordDefinition(ndb.Model):
+	day = ndb.IntegerProperty(indexed=True)
+	word = ndb.StringProperty(indexed=False)
+	definition = ndb.StringProperty(indexed=False)
 
 class PageNotFound(webapp2.RequestHandler):
 
@@ -28,13 +15,15 @@ class PageNotFound(webapp2.RequestHandler):
 
 class WOTD(webapp2.RequestHandler):
 
-    def get(self):
-        name1 = self.request.get('thing', 'unknown')
-        self.response.write(name1)
+	def get(self):
+		day = self.request.get('day', -1)
+		self.response.write(day)
 
-# [START app]
+		todays_wotd_query = WordDefinition.query(ancestor=ndb.Key('day', day))
+		todays_wotd = todays_wotd_query.fetch(1)
+		self.response.write(todays_wotd)
+
 app = webapp2.WSGIApplication([
-    ('/', PageNotFound),
-    ('/wotd', WOTD),
+	('/', PageNotFound),
+	('/wotd', WOTD),
 ], debug=True)
-# [END app]
