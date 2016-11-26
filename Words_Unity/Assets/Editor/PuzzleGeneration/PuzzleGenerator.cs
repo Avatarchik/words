@@ -30,8 +30,6 @@ public class PuzzleGenerator : EditorWindow
 	private string[] mAllWords;
 	private int mAllWordsCount;
 
-	private int mPlacedWords;
-
 	private PuzzleContents mNewPuzzleContents;
 	private string mContentsPath;
 
@@ -85,8 +83,6 @@ public class PuzzleGenerator : EditorWindow
 
 		mScoredPlacements = new List<ScoredWordPlacement>(mWordLimit);
 		mHasPlacedInitialWord = false;
-
-		mPlacedWords = 0;
 
 		mNewPuzzleContents = null;
 
@@ -175,7 +171,6 @@ public class PuzzleGenerator : EditorWindow
 
 		// Step 2 - Run over the word list and attempt to places words
 		RunWordListPass(out userCancelled);
-		ODebug.Log(string.Format("Placed words: {0}", mPlacedWords));
 
 		// Step 3 - Check for any gaps to assess the validity
 		bool foundGaps = CheckForGaps();
@@ -225,8 +220,6 @@ public class PuzzleGenerator : EditorWindow
 		mScoredPlacements = new List<ScoredWordPlacement>(mSize * mSize);
 		mHasPlacedInitialWord = false;
 
-		mPlacedWords = 0;
-
 		mAllWords = WordList.GetAllWords(mSize);
 		mAllWordsCount = mAllWords.Length;
 
@@ -255,7 +248,7 @@ public class PuzzleGenerator : EditorWindow
 			++nextID;
 		}
 
-		string newContentsFileName = string.Format("{0:D2}_{1:D4}_{2:D4}", mSize, nextID, mPlacedWords);
+		string newContentsFileName = string.Format("{0:D2}_{1:D4}_{2:D4}", mSize, nextID, mWords.Count);
 		if (!wasFinalised)
 		{
 			newContentsFileName += "_Failed";
@@ -286,12 +279,14 @@ public class PuzzleGenerator : EditorWindow
 		mAllWords.Shuffle();
 		mPotentialPlacements.Shuffle();
 
+		int placedWords = 0;
+
 		for (int wordIndex = 0; wordIndex < mAllWordsCount; ++wordIndex)
 		{
 			if ((wordIndex % kWordListProgressBarStep) == 0)
 			{
 				progressBarMessage = string.Format(progressBarMessageFormat,
-					mPlacedWords, mWordLimit, ((float)mPlacedWords / mWordLimit) * 100,
+					placedWords, mWordLimit, ((float)placedWords / mWordLimit) * 100,
 					wordIndex, mAllWordsCount);
 				bool isStillRunning = ProgressBarHelper.Update(kWordListProgressBarStep, progressBarMessage);
 				if (!isStillRunning)
@@ -347,8 +342,8 @@ public class PuzzleGenerator : EditorWindow
 
 				mAllWords[wordIndex] = null;
 
-				++mPlacedWords;
-				if (mPlacedWords >= mWordLimit)
+				++placedWords;
+				if (placedWords >= mWordLimit)
 				{
 					break;
 				}
@@ -356,6 +351,8 @@ public class PuzzleGenerator : EditorWindow
 		}
 
 		ProgressBarHelper.End();
+
+		ODebug.Log(string.Format("Placed words: {0}", placedWords));
 	}
 
 	private bool CheckForGaps()
@@ -451,7 +448,6 @@ public class PuzzleGenerator : EditorWindow
 
 							mAllWords[wordIndex] = null;
 
-							++mPlacedWords;
 							++partialWordsPlaced;
 
 							break;
@@ -517,9 +513,9 @@ public class PuzzleGenerator : EditorWindow
 
 			if (hasPlacedWord)
 			{
+				Debug.LogWarning(word);
 				mAllWords[wordIndex] = null;
 
-				++mPlacedWords;
 				++naturallyPlacedWordsFound;
 
 				if (mWords.Count >= mWordLimit)
@@ -554,10 +550,11 @@ public class PuzzleGenerator : EditorWindow
 			mNewPuzzleContents.RegisterWord(forwardsWord, definition, startPosition, endPosition);
 
 			mWords.Add(forwardsWord);
-			mWordPlacements.Add(new ScoredWordPlacement(0, startPosition, direction));
+
+			return true;
 		}
 
-		return true;
+		return false;
 	}
 
 	private bool DoesPlacementContainWord(string word, int x, int y, EWordDirection wordDirection, out GridPosition foundPositionEnd)
