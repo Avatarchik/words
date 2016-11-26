@@ -1,0 +1,384 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 05_0002_0028
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: bd401e3b-4cc1-4fea-abbe-36c727ce9da6
+  Size: 5
+  WordCount: 28
+  MaxCharacterUsage: 8
+  Words:
+  - Length: 4
+    Forwards: GAPS
+    Backwards: SPAG
+    Definition: An empty space between two objects or two parts of something, especially
+      because something is missing.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 0
+      Y: 1
+  - Length: 4
+    Forwards: EDGY
+    Backwards: YGDE
+    Definition: Nervous and worried.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 4
+    Forwards: MUTT
+    Backwards: TTUM
+    Definition: A dog that does not belong to any particular breed.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 4
+    Forwards: WAXY
+    Backwards: YXAW
+    Definition: Looking or feeling like wax.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 4
+    Forwards: TART
+    Backwards: TRAT
+    Definition: If a woman tarts herself up, she tries to make herself look attractive,
+      by putting on jewelry,makeup, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Length: 4
+    Forwards: MIRE
+    Backwards: ERIM
+    Definition: Deep mud.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: WAX
+    Backwards: XAW
+    Definition: A solid material used to make candles, polish, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: YET
+    Backwards: TEY
+    Definition: Used to introduce a statement that is surprising after what you have
+      just said.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 3
+    Forwards: IRE
+    Backwards: ERI
+    Definition: Anger.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: GAR
+    Backwards: RAG
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: GAP
+    Backwards: PAG
+    Definition: An empty space between two objects or two parts of something, especially
+      because something is missing.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 3
+    Forwards: AXE
+    Backwards: EXA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: SYE
+    Backwards: EYS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: MIR
+    Backwards: RIM
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: TYG
+    Backwards: GYT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: WIT
+    Backwards: TIW
+    Definition: The ability to say things that are clever and amusing.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: SPA
+    Backwards: APS
+    Definition: A place where people go in order to improve their health or beauty,
+      especially through swimming, exercise, beauty treatments, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 0
+      Y: 3
+  - Length: 3
+    Forwards: MIX
+    Backwards: XIM
+    Definition: The particular combination of things or people that form a group.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: TAR
+    Backwards: RAT
+    Definition: A black substance, thick and sticky when hot but hard when cold, used
+      especially for making road surfaces.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  - Length: 3
+    Forwards: ART
+    Backwards: TRA
+    Definition: Showing or resulting from a lot of skill and artistic ability.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 3
+    Forwards: MUT
+    Backwards: TUM
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: RUE
+    Backwards: EUR
+    Definition: To wish that you had not done something.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 4
+    Forwards: TRAT
+    Backwards: TART
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Length: 3
+    Forwards: PST
+    Backwards: TSP
+    Definition: The abbreviation of pacific standard time.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 3
+    Forwards: RAG
+    Backwards: GAR
+    Definition: To make jokes and laugh at someone in order to embarrass him or her.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: RAT
+    Backwards: TAR
+    Definition: An animal that looks like a large mouse with a long tail.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  - Length: 3
+    Forwards: RIM
+    Backwards: MIR
+    Definition: To be around the edge of something.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: TEA
+    Backwards: AET
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 2
+  CharGrid:
+  - Character: 84
+    NumberOfUses: 5
+  - Character: 83
+    NumberOfUses: 4
+  - Character: 80
+    NumberOfUses: 4
+  - Character: 65
+    NumberOfUses: 4
+  - Character: 71
+    NumberOfUses: 4
+  - Character: 65
+    NumberOfUses: 5
+  - Character: 89
+    NumberOfUses: 3
+  - Character: 88
+    NumberOfUses: 4
+  - Character: 65
+    NumberOfUses: 5
+  - Character: 87
+    NumberOfUses: 3
+  - Character: 82
+    NumberOfUses: 4
+  - Character: 69
+    NumberOfUses: 6
+  - Character: 82
+    NumberOfUses: 8
+  - Character: 73
+    NumberOfUses: 6
+  - Character: 77
+    NumberOfUses: 3
+  - Character: 84
+    NumberOfUses: 2
+  - Character: 84
+    NumberOfUses: 3
+  - Character: 84
+    NumberOfUses: 4
+  - Character: 85
+    NumberOfUses: 3
+  - Character: 77
+    NumberOfUses: 3
+  - Character: 84
+    NumberOfUses: 1
+  - Character: 89
+    NumberOfUses: 2
+  - Character: 71
+    NumberOfUses: 2
+  - Character: 68
+    NumberOfUses: 1
+  - Character: 69
+    NumberOfUses: 2

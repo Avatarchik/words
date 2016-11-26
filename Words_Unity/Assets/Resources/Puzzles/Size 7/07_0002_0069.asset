@@ -1,0 +1,886 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 07_0002_0069
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: 1ed107dc-8f9c-4537-adba-c34d2f2d916f
+  Size: 7
+  WordCount: 69
+  MaxCharacterUsage: 12
+  Words:
+  - Length: 6
+    Forwards: DOODAH
+    Backwards: HADOOD
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 0
+  - Length: 4
+    Forwards: LEYS
+    Backwards: SYEL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 5
+  - Length: 6
+    Forwards: TAMPER
+    Backwards: REPMAT
+    Definition: To touch something or make changes to it without permission, especially
+      in order to deliberately damage it.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 6
+    ToPosition:
+      X: 1
+      Y: 6
+  - Length: 6
+    Forwards: SOCAGE
+    Backwards: EGACOS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 6
+    Forwards: DIMMER
+    Backwards: REMMID
+    Definition: An electric switch that can change the brightness of a light.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 6
+    ToPosition:
+      X: 0
+      Y: 1
+  - Length: 6
+    Forwards: GABLES
+    Backwards: SELBAG
+    Definition: Having one or more gables.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 2
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 5
+    Forwards: BAELS
+    Backwards: SLEAB
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 4
+    Forwards: GIMP
+    Backwards: PMIG
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 2
+    ToPosition:
+      X: 6
+      Y: 5
+  - Length: 4
+    Forwards: JASP
+    Backwards: PSAJ
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 5
+  - Length: 3
+    Forwards: LAG
+    Backwards: GAL
+    Definition: A delay or period of waiting between one event and a second event.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 2
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 4
+    Forwards: BEAT
+    Backwards: TAEB
+    Definition: An act of hitting someone many times as a punishment or in a fight.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 2
+    ToPosition:
+      X: 1
+      Y: 5
+  - Length: 3
+    Forwards: CHA
+    Backwards: AHC
+    Definition: A dance from South America with small, fast steps.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  - Length: 3
+    Forwards: JAY
+    Backwards: YAJ
+    Definition: A type of noisy bird.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: AMP
+    Backwards: PMA
+    Definition: An amplifier.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 6
+    ToPosition:
+      X: 3
+      Y: 6
+  - Length: 3
+    Forwards: ELS
+    Backwards: SLE
+    Definition: A rise in the temperature in the current in the Pacific Ocean off
+      the west coast of South America that happens every three to eight years, leading
+      to severe changes in the weather in many parts of the world, especially to countries
+      in or near the Pacific Ocean.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 3
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 3
+    Forwards: SAL
+    Backwards: LAS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: ASP
+    Backwards: PSA
+    Definition: A small poisonous snake from North Africa.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 5
+  - Length: 3
+    Forwards: REM
+    Backwards: MER
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 0
+      Y: 3
+  - Length: 3
+    Forwards: SEL
+    Backwards: LES
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: MAA
+    Backwards: AAM
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 6
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 3
+    Forwards: SYE
+    Backwards: EYS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 4
+    Forwards: CAGE
+    Backwards: EGAC
+    Definition: A structure made of wires or bars in which birds or animals can be
+      kept.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 3
+    Forwards: BAS
+    Backwards: SAB
+    Definition: A style of art in which stone or wood is cut so that shapes are raised
+      above the surrounding surface.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 5
+  - Length: 3
+    Forwards: HAD
+    Backwards: DAH
+    Definition: The past tense and past participle of have.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Length: 3
+    Forwards: DAH
+    Backwards: HAD
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 0
+  - Length: 3
+    Forwards: PER
+    Backwards: REP
+    Definition: For each.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 6
+    ToPosition:
+      X: 1
+      Y: 6
+  - Length: 3
+    Forwards: HES
+    Backwards: SEH
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 4
+    Forwards: ISLE
+    Backwards: ELSI
+    Definition: A word for an island, used in poetry or in names of islands.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: ADO
+    Backwards: ODA
+    Definition: Without delaying anymore, or wasting any more time.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 0
+  - Length: 3
+    Forwards: GAL
+    Backwards: LAG
+    Definition: The written abbreviation ofgallon.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: SAY
+    Backwards: YAS
+    Definition: To use particular words to tell someone a thought, opinion, explanation,
+      etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: ODA
+    Backwards: ADO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  - Length: 3
+    Forwards: LES
+    Backwards: SEL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 2
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 4
+    Forwards: TAMP
+    Backwards: PMAT
+    Definition: To press or push something down by lightly hitting it several times.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 6
+    ToPosition:
+      X: 3
+      Y: 6
+  - Length: 3
+    Forwards: AAL
+    Backwards: LAA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: LEY
+    Backwards: YEL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: SAB
+    Backwards: BAS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: DIM
+    Backwards: MID
+    Definition: Fairly dark or not giving much light so that you cannot see well.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 6
+    ToPosition:
+      X: 0
+      Y: 4
+  - Length: 5
+    Forwards: GABLE
+    Backwards: ELBAG
+    Definition: Having one or more gables.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 4
+    Forwards: CLAG
+    Backwards: GALC
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 4
+    Forwards: CHAD
+    Backwards: DAHC
+    Definition: A country in north central Africa, west of Sudan.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Length: 3
+    Forwards: DAL
+    Backwards: LAD
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: ALE
+    Backwards: ELA
+    Definition: A type of beer with a slightly bitter taste.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: DOB
+    Backwards: BOD
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 4
+    Forwards: DALE
+    Backwards: ELAD
+    Definition: A valley.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 4
+    Forwards: BAEL
+    Backwards: LEAB
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: AGE
+    Backwards: EGA
+    Definition: Between 5 and 10, 16 and 18, etc. years old.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: CEE
+    Backwards: EEC
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: GAY
+    Backwards: YAG
+    Definition: Someone who is homosexual, especially a man.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: OCA
+    Backwards: ACO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 3
+    Forwards: DOO
+    Backwards: OOD
+    Definition: A word for solid waste from your body, used especially by or when
+      speaking to children.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 0
+  - Length: 3
+    Forwards: EAT
+    Backwards: TAE
+    Definition: To put food in your mouth and swallow it.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 5
+  - Length: 3
+    Forwards: LEA
+    Backwards: AEL
+    Definition: An area of land with grass.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: IMP
+    Backwards: PMI
+    Definition: A child who behaves badly, but in a way that is funny.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 3
+    ToPosition:
+      X: 6
+      Y: 5
+  - Length: 3
+    Forwards: ALB
+    Backwards: BLA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: TAM
+    Backwards: MAT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 6
+    ToPosition:
+      X: 4
+      Y: 6
+  - Length: 3
+    Forwards: GAB
+    Backwards: BAG
+    Definition: To talk continuously, usually about things that are not important.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: REP
+    Backwards: PER
+    Definition: Someone who speaks officially for a company or organization.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 6
+    ToPosition:
+      X: 3
+      Y: 6
+  - Length: 4
+    Forwards: SOCA
+    Backwards: ACOS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 3
+    Forwards: SOC
+    Backwards: COS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 3
+    Forwards: MAT
+    Backwards: TAM
+    Definition: Another spelling of matte.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 6
+    ToPosition:
+      X: 4
+      Y: 6
+  - Length: 3
+    Forwards: JAP
+    Backwards: PAJ
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 6
+    ToPosition:
+      X: 5
+      Y: 4
+  - Length: 3
+    Forwards: MID
+    Backwards: DIM
+    Definition: In the middle of something.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 6
+    ToPosition:
+      X: 0
+      Y: 4
+  - Length: 3
+    Forwards: COS
+    Backwards: SOC
+    Definition: The abbreviation of cosine.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 3
+    Forwards: BAG
+    Backwards: GAB
+    Definition: To put materials or objects into bags.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: LAS
+    Backwards: SAL
+    Definition: A city in the desert of the U.S. state of Nevada.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: APE
+    Backwards: EPA
+    Definition: A large monkey without a tail, or with a very short tail, such as
+      a gorilla or a chimpanzee.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 6
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: BOD
+    Backwards: DOB
+    Definition: "Someone\u2019s body."
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: BAA
+    Backwards: AAB
+    Definition: To make a sound like a sheep.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 2
+  CharGrid:
+  - Character: 67
+    NumberOfUses: 3
+  - Character: 82
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 2
+  - Character: 77
+    NumberOfUses: 2
+  - Character: 77
+    NumberOfUses: 3
+  - Character: 73
+    NumberOfUses: 3
+  - Character: 68
+    NumberOfUses: 3
+  - Character: 72
+    NumberOfUses: 6
+  - Character: 69
+    NumberOfUses: 4
+  - Character: 83
+    NumberOfUses: 5
+  - Character: 66
+    NumberOfUses: 4
+  - Character: 71
+    NumberOfUses: 4
+  - Character: 84
+    NumberOfUses: 2
+  - Character: 82
+    NumberOfUses: 3
+  - Character: 65
+    NumberOfUses: 9
+  - Character: 71
+    NumberOfUses: 3
+  - Character: 69
+    NumberOfUses: 6
+  - Character: 65
+    NumberOfUses: 7
+  - Character: 65
+    NumberOfUses: 6
+  - Character: 80
+    NumberOfUses: 3
+  - Character: 69
+    NumberOfUses: 4
+  - Character: 68
+    NumberOfUses: 8
+  - Character: 65
+    NumberOfUses: 8
+  - Character: 76
+    NumberOfUses: 12
+  - Character: 69
+    NumberOfUses: 12
+  - Character: 89
+    NumberOfUses: 6
+  - Character: 83
+    NumberOfUses: 6
+  - Character: 80
+    NumberOfUses: 6
+  - Character: 79
+    NumberOfUses: 4
+  - Character: 67
+    NumberOfUses: 7
+  - Character: 66
+    NumberOfUses: 9
+  - Character: 76
+    NumberOfUses: 9
+  - Character: 65
+    NumberOfUses: 4
+  - Character: 65
+    NumberOfUses: 5
+  - Character: 77
+    NumberOfUses: 6
+  - Character: 79
+    NumberOfUses: 2
+  - Character: 79
+    NumberOfUses: 7
+  - Character: 65
+    NumberOfUses: 6
+  - Character: 83
+    NumberOfUses: 3
+  - Character: 74
+    NumberOfUses: 2
+  - Character: 74
+    NumberOfUses: 1
+  - Character: 65
+    NumberOfUses: 5
+  - Character: 68
+    NumberOfUses: 4
+  - Character: 83
+    NumberOfUses: 6
+  - Character: 71
+    NumberOfUses: 5
+  - Character: 73
+    NumberOfUses: 3
+  - Character: 77
+    NumberOfUses: 2
+  - Character: 80
+    NumberOfUses: 2
+  - Character: 84
+    NumberOfUses: 4

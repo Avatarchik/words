@@ -1,0 +1,185 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 04_0003_0012
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: 044ed55e-9d78-4386-809b-c295e0522a8e
+  Size: 4
+  WordCount: 12
+  MaxCharacterUsage: 5
+  Words:
+  - Length: 3
+    Forwards: REN
+    Backwards: NER
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 3
+    Forwards: MYA
+    Backwards: AYM
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  - Length: 3
+    Forwards: DYE
+    Backwards: EYD
+    Definition: A substance you use to change the color of your clothes, hair, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: OYS
+    Backwards: SYO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 2
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: ZOS
+    Backwards: SOZ
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 0
+      Y: 1
+  - Length: 3
+    Forwards: LOR
+    Backwards: ROL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 3
+    Forwards: RAY
+    Backwards: YAR
+    Definition: A narrow beam of light from the Sun or from something such as a lamp.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 0
+  - Length: 3
+    Forwards: ZED
+    Backwards: DEZ
+    Definition: "A way of writing the letter \u201CZ\u201D to show how it is pronounced
+      in Canadian and British English."
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: RES
+    Backwards: SER
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: YEA
+    Backwards: AEY
+    Definition: Yes.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: SNY
+    Backwards: YNS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: ENS
+    Backwards: SNE
+    Definition: Made of a particular material or substance.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 1
+  CharGrid:
+  - Character: 77
+    NumberOfUses: 1
+  - Character: 83
+    NumberOfUses: 2
+  - Character: 79
+    NumberOfUses: 1
+  - Character: 90
+    NumberOfUses: 2
+  - Character: 89
+    NumberOfUses: 3
+  - Character: 78
+    NumberOfUses: 3
+  - Character: 83
+    NumberOfUses: 3
+  - Character: 69
+    NumberOfUses: 1
+  - Character: 65
+    NumberOfUses: 3
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 89
+    NumberOfUses: 3
+  - Character: 68
+    NumberOfUses: 2
+  - Character: 82
+    NumberOfUses: 2
+  - Character: 82
+    NumberOfUses: 2
+  - Character: 79
+    NumberOfUses: 2
+  - Character: 76
+    NumberOfUses: 1

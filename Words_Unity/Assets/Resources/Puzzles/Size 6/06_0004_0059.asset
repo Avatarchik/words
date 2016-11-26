@@ -1,0 +1,758 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 06_0004_0059
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: 2734524d-8fe1-4fc7-9bd9-00e2f8a75991
+  Size: 6
+  WordCount: 59
+  MaxCharacterUsage: 12
+  Words:
+  - Length: 4
+    Forwards: HIGH
+    Backwards: HGIH
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 5
+    Forwards: DEMES
+    Backwards: SEMED
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 4
+    Forwards: KAIL
+    Backwards: LIAK
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 5
+    Forwards: HALOS
+    Backwards: SOLAH
+    Definition: A bright circle that is often shown above or around the heads of holy
+      people in religious art.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 5
+  - Length: 5
+    Forwards: TOPOS
+    Backwards: SOPOT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 0
+      Y: 1
+  - Length: 5
+    Forwards: SHOWY
+    Backwards: YWOHS
+    Definition: "Very colorful, big, expensive, etc., especially in a way that is
+      meant to attract people\u2019s attention."
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 0
+  - Length: 3
+    Forwards: POH
+    Backwards: HOP
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 3
+    Forwards: LES
+    Backwards: SEL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 3
+    ToPosition:
+      X: 5
+      Y: 1
+  - Length: 3
+    Forwards: BAH
+    Backwards: HAB
+    Definition: Used to show disapproval of something.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 2
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 3
+    Forwards: WAP
+    Backwards: PAW
+    Definition: A system that uses radio waves to allow electronic equipment, for
+      example a cell phone, to use the Internet even when it is not physically attached
+      to a computer.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 4
+    Forwards: DEME
+    Backwards: EMED
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 5
+    Forwards: SHALE
+    Backwards: ELAHS
+    Definition: A smooth soft rock that breaks easily into thin flat pieces.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 3
+    Forwards: SOL
+    Backwards: LOS
+    Definition: So5.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 5
+  - Length: 3
+    Forwards: ELK
+    Backwards: KLE
+    Definition: A large deer with a lot of hair around its neck.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 2
+    ToPosition:
+      X: 5
+      Y: 4
+  - Length: 3
+    Forwards: MES
+    Backwards: SEM
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 3
+    Forwards: POS
+    Backwards: SOP
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 0
+      Y: 1
+  - Length: 3
+    Forwards: DSO
+    Backwards: OSD
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 3
+    Forwards: AGE
+    Backwards: EGA
+    Definition: Between 5 and 10, 16 and 18, etc. years old.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: SAP
+    Backwards: PAS
+    Definition: To gradually take away something such as strength or energy.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: AIL
+    Backwards: LIA
+    Definition: An ailing company or economy is having a lot of problems and is not
+      successful.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: OHO
+    Backwards: OHO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 4
+    Forwards: HALO
+    Backwards: OLAH
+    Definition: A bright circle that is often shown above or around the heads of holy
+      people in religious art.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 5
+  - Length: 3
+    Forwards: HOW
+    Backwards: WOH
+    Definition: Used to ask or talk about the way something is done.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  - Length: 3
+    Forwards: KAI
+    Backwards: IAK
+    Definition: A Chinese soldier and politician, leader of the Chinese nationalist
+      Party, who was forced to move from mainland China to the island of Taiwan by
+      the Communists in 1949, and ruled Taiwan as president until he died.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: EME
+    Backwards: EME
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 4
+    Forwards: PAGE
+    Backwards: EGAP
+    Definition: To call someone by sending a message to a pagera small machine that
+      someone carries that receives signals.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: TOP
+    Backwards: POT
+    Definition: In the highest place or position.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 0
+      Y: 3
+  - Length: 3
+    Forwards: HAM
+    Backwards: MAH
+    Definition: "The upper part of a pig\u2019s leg used as meat and preserved with
+      salt or smoke."
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: SEL
+    Backwards: LES
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 4
+    Forwards: HOPS
+    Backwards: SPOH
+    Definition: To move by jumping on one foot or by making short quick jumps on both
+      feet.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 3
+    Forwards: PAS
+    Backwards: SAP
+    Definition: An embarrassing mistake in a social situation.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 5
+    Forwards: SELAH
+    Backwards: HALES
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 3
+    Forwards: LAH
+    Backwards: HAL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 4
+    Forwards: SOLA
+    Backwards: ALOS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 3
+    Forwards: ALE
+    Backwards: ELA
+    Definition: A type of beer with a slightly bitter taste.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 3
+    Forwards: LOS
+    Backwards: SOL
+    Definition: A town in the U.S. state of New Mexico where the first atom bomb and
+      hydrogen bomb were developed.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 5
+  - Length: 4
+    Forwards: EMES
+    Backwards: SEME
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 4
+    Forwards: SHOW
+    Backwards: WOHS
+    Definition: An occasion when a movie, collection of art works, etc. is shown to
+      the public.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  - Length: 3
+    Forwards: HOP
+    Backwards: POH
+    Definition: To move by jumping on one foot or by making short quick jumps on both
+      feet.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: SOP
+    Backwards: POS
+    Definition: To remove liquid from a surface by using something that absorbstakes
+      the liquid into itself the liquid.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 0
+      Y: 3
+  - Length: 4
+    Forwards: HALE
+    Backwards: ELAH
+    Definition: Very healthy and active; used especially of an older person.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 3
+    Forwards: OPS
+    Backwards: SPO
+    Definition: The written abbreviation of opus.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 4
+    Forwards: SHAL
+    Backwards: LAHS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 4
+    Forwards: SELA
+    Backwards: ALES
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 3
+    Forwards: SHO
+    Backwards: OHS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Length: 3
+    Forwards: SHA
+    Backwards: AHS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 3
+    Forwards: PAG
+    Backwards: GAP
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 4
+    Forwards: AMAH
+    Backwards: HAMA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: POT
+    Backwards: TOP
+    Definition: A potted plant grows indoors in a pot.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 0
+      Y: 3
+  - Length: 4
+    Forwards: GEAL
+    Backwards: LAEG
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 4
+    Forwards: LESS
+    Backwards: SSEL
+    Definition: Not helpful, perfect, friendly, etc. at all.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 3
+    Forwards: PAW
+    Backwards: WAP
+    Definition: If an animal paws a surface, it touches or rubs one place several
+      times with its paw.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 5
+    Forwards: HIGHT
+    Backwards: THGIH
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 3
+    Forwards: GOO
+    Backwards: OOG
+    Definition: A disgusting sticky substance.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: BEY
+    Backwards: YEB
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 4
+    Forwards: MESH
+    Backwards: HSEM
+    Definition: If two ideas or qualities mesh, they go well together and are appropriate
+      for each other.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: ESS
+    Backwards: SSE
+    Definition: A woman who does something, or a female.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 4
+    Forwards: BAHS
+    Backwards: SHAB
+    Definition: Used to show disapproval of something.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 4
+    Forwards: LOST
+    Backwards: TSOL
+    Definition: Not knowing where you are or which way to go.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 5
+  CharGrid:
+  - Character: 68
+    NumberOfUses: 3
+  - Character: 83
+    NumberOfUses: 6
+  - Character: 79
+    NumberOfUses: 4
+  - Character: 80
+    NumberOfUses: 7
+  - Character: 79
+    NumberOfUses: 4
+  - Character: 84
+    NumberOfUses: 5
+  - Character: 89
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 10
+  - Character: 66
+    NumberOfUses: 3
+  - Character: 65
+    NumberOfUses: 6
+  - Character: 72
+    NumberOfUses: 8
+  - Character: 83
+    NumberOfUses: 6
+  - Character: 87
+    NumberOfUses: 5
+  - Character: 76
+    NumberOfUses: 9
+  - Character: 77
+    NumberOfUses: 8
+  - Character: 71
+    NumberOfUses: 7
+  - Character: 79
+    NumberOfUses: 6
+  - Character: 79
+    NumberOfUses: 7
+  - Character: 79
+    NumberOfUses: 4
+  - Character: 65
+    NumberOfUses: 12
+  - Character: 73
+    NumberOfUses: 5
+  - Character: 69
+    NumberOfUses: 9
+  - Character: 80
+    NumberOfUses: 4
+  - Character: 76
+    NumberOfUses: 6
+  - Character: 72
+    NumberOfUses: 6
+  - Character: 72
+    NumberOfUses: 8
+  - Character: 80
+    NumberOfUses: 4
+  - Character: 65
+    NumberOfUses: 6
+  - Character: 83
+    NumberOfUses: 8
+  - Character: 65
+    NumberOfUses: 3
+  - Character: 83
+    NumberOfUses: 5
+  - Character: 83
+    NumberOfUses: 7
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 76
+    NumberOfUses: 5
+  - Character: 75
+    NumberOfUses: 3
+  - Character: 72
+    NumberOfUses: 3

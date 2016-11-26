@@ -1,0 +1,351 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 05_0001_0025
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: 3c477dd2-09cc-4df6-a3a7-43c60035ff0d
+  Size: 5
+  WordCount: 25
+  MaxCharacterUsage: 7
+  Words:
+  - Length: 4
+    Forwards: RAZE
+    Backwards: EZAR
+    Definition: To completely destroy a town or building.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 3
+    Forwards: SOW
+    Backwards: WOS
+    Definition: To plant or scatter seeds on a piece of ground.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 4
+    Forwards: ILKS
+    Backwards: SKLI
+    Definition: Of that type, his type, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Length: 4
+    Forwards: SKER
+    Backwards: REKS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 4
+    Forwards: DEIL
+    Backwards: LIED
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 0
+      Y: 1
+  - Length: 4
+    Forwards: GAIN
+    Backwards: NIAG
+    Definition: An increase in the amount or level of something.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: DEN
+    Backwards: NED
+    Definition: A room in a house where people relax, read, watch television, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: KOI
+    Backwards: IOK
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 3
+    Forwards: REE
+    Backwards: EER
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: ONE
+    Backwards: ENO
+    Definition: A piece of paper money worth $1.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: ARE
+    Backwards: ERA
+    Definition: "The present tense plural form of \u201Cbe\u201D."
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: KON
+    Backwards: NOK
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: ZEN
+    Backwards: NEZ
+    Definition: A type of Buddhism that emphasizes meditation rather than faith or
+      reading religious books.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: AIN
+    Backwards: NIA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: LIE
+    Backwards: EIL
+    Definition: To deliberately tell someone something that is not true.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 0
+      Y: 3
+  - Length: 3
+    Forwards: ILK
+    Backwards: KLI
+    Definition: Of that type, his type, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  - Length: 3
+    Forwards: WEE
+    Backwards: EEW
+    Definition: The early hours of the morning, just after midnight.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: ERN
+    Backwards: NRE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: ZED
+    Backwards: DEZ
+    Definition: "A way of writing the letter \u201CZ\u201D to show how it is pronounced
+      in Canadian and British English."
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: OIL
+    Backwards: LIO
+    Definition: A smooth thick mineral liquid that is burned to produce heat, or used
+      to make machines run easily.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: OWE
+    Backwards: EWO
+    Definition: To have to pay someone for something that he or she has done for you
+      or sold to you, or to have to give someone back money that he or she has lent
+      you.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: ERA
+    Backwards: ARE
+    Definition: A period of time that is associated with particular events or qualities,
+      or that begins with a particular date or event.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: WOS
+    Backwards: SOW
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 4
+    Forwards: LIED
+    Backwards: DEIL
+    Definition: To deliberately tell someone something that is not true.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 0
+      Y: 1
+  - Length: 3
+    Forwards: NED
+    Backwards: DEN
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 2
+  CharGrid:
+  - Character: 73
+    NumberOfUses: 2
+  - Character: 76
+    NumberOfUses: 4
+  - Character: 73
+    NumberOfUses: 3
+  - Character: 69
+    NumberOfUses: 4
+  - Character: 68
+    NumberOfUses: 5
+  - Character: 76
+    NumberOfUses: 2
+  - Character: 73
+    NumberOfUses: 2
+  - Character: 87
+    NumberOfUses: 4
+  - Character: 69
+    NumberOfUses: 4
+  - Character: 69
+    NumberOfUses: 3
+  - Character: 75
+    NumberOfUses: 3
+  - Character: 79
+    NumberOfUses: 7
+  - Character: 78
+    NumberOfUses: 5
+  - Character: 69
+    NumberOfUses: 4
+  - Character: 90
+    NumberOfUses: 3
+  - Character: 83
+    NumberOfUses: 4
+  - Character: 75
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 3
+  - Character: 82
+    NumberOfUses: 5
+  - Character: 65
+    NumberOfUses: 3
+  - Character: 71
+    NumberOfUses: 1
+  - Character: 65
+    NumberOfUses: 2
+  - Character: 73
+    NumberOfUses: 2
+  - Character: 78
+    NumberOfUses: 3
+  - Character: 82
+    NumberOfUses: 1

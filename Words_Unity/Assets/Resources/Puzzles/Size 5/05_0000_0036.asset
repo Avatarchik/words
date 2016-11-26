@@ -1,0 +1,470 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 05_0000_0036
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: 1fbd707a-1447-49d3-9d3d-cffb0b9a0fd8
+  Size: 5
+  WordCount: 36
+  MaxCharacterUsage: 9
+  Words:
+  - Length: 4
+    Forwards: CENS
+    Backwards: SNEC
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 4
+    Forwards: DING
+    Backwards: GNID
+    Definition: To damage something slightly by hitting it.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 2
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 4
+    Forwards: CLAM
+    Backwards: MALC
+    Definition: To suddenly stop talking, especially when you are nervous, shy, or
+      unhappy.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 4
+    Forwards: GILA
+    Backwards: ALIG
+    Definition: A large orange and black lizard that is poisonous and lives in the
+      deserts of the southwestern U.S. and western Mexico.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Length: 4
+    Forwards: LEAN
+    Backwards: NAEL
+    Definition: A tendency to prefer or agree with a particular set of beliefs, opinions,
+      etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 4
+    Forwards: NOUS
+    Backwards: SUON
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 3
+    Forwards: GNU
+    Backwards: UNG
+    Definition: A wildebeest.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 4
+    Forwards: BODE
+    Backwards: EDOB
+    Definition: To be a good or bad sign for the future.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 3
+    Forwards: SAL
+    Backwards: LAS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  - Length: 3
+    Forwards: BOD
+    Backwards: DOB
+    Definition: "Someone\u2019s body."
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: MAL
+    Backwards: LAM
+    Definition: Bad or badly.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 3
+    Forwards: EGO
+    Backwards: OGE
+    Definition: The opinion that you have about yourself.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 3
+    Forwards: SED
+    Backwards: DES
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: NAE
+    Backwards: EAN
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: LAM
+    Backwards: MAL
+    Definition: Escaping or hiding from someone, especially the police.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: OUS
+    Backwards: SUO
+    Definition: Having a particular quality.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 3
+    Forwards: ODE
+    Backwards: EDO
+    Definition: A poem or song that is written in order to praise a person or thing.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 4
+    Forwards: LUNA
+    Backwards: ANUL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: MAG
+    Backwards: GAM
+    Definition: A magazine.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: LEA
+    Backwards: AEL
+    Definition: An area of land with grass.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: DIN
+    Backwards: NID
+    Definition: A loud continuous noise that sounds bad.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: SIN
+    Backwards: NIS
+    Definition: "To break God\u2019s laws."
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: NIS
+    Backwards: SIN
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 3
+    Forwards: ENS
+    Backwards: SNE
+    Definition: Made of a particular material or substance.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 3
+    Forwards: LEG
+    Backwards: GEL
+    Definition: "Women\u2019s tight pants that stretch to fit the shape of the body,
+      and that have no zipper."
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: GIL
+    Backwards: LIG
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  - Length: 3
+    Forwards: DOB
+    Backwards: BOD
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: GEL
+    Backwards: LEG
+    Definition: Another spelling of jell.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: NID
+    Backwards: DIN
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 4
+    Forwards: LUNG
+    Backwards: GNUL
+    Definition: One of the two organs in your body that you breathe with.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 3
+  - Length: 3
+    Forwards: NOG
+    Backwards: GON
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 4
+    Forwards: LAMB
+    Backwards: BMAL
+    Definition: To give birth to lambs.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 3
+    Forwards: LAS
+    Backwards: SAL
+    Definition: A city in the desert of the U.S. state of Nevada.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  - Length: 4
+    Forwards: ODES
+    Backwards: SEDO
+    Definition: A poem or song that is written in order to praise a person or thing.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: GAM
+    Backwards: MAG
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: USE
+    Backwards: ESU
+    Definition: The state of being useful.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 1
+  CharGrid:
+  - Character: 71
+    NumberOfUses: 5
+  - Character: 78
+    NumberOfUses: 3
+  - Character: 85
+    NumberOfUses: 2
+  - Character: 76
+    NumberOfUses: 3
+  - Character: 67
+    NumberOfUses: 2
+  - Character: 73
+    NumberOfUses: 2
+  - Character: 79
+    NumberOfUses: 4
+  - Character: 71
+    NumberOfUses: 6
+  - Character: 69
+    NumberOfUses: 8
+  - Character: 76
+    NumberOfUses: 6
+  - Character: 76
+    NumberOfUses: 5
+  - Character: 85
+    NumberOfUses: 4
+  - Character: 78
+    NumberOfUses: 7
+  - Character: 65
+    NumberOfUses: 6
+  - Character: 65
+    NumberOfUses: 4
+  - Character: 65
+    NumberOfUses: 3
+  - Character: 83
+    NumberOfUses: 7
+  - Character: 73
+    NumberOfUses: 5
+  - Character: 78
+    NumberOfUses: 4
+  - Character: 77
+    NumberOfUses: 6
+  - Character: 83
+    NumberOfUses: 4
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 68
+    NumberOfUses: 9
+  - Character: 79
+    NumberOfUses: 5
+  - Character: 66
+    NumberOfUses: 4

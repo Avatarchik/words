@@ -1,0 +1,559 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 06_0007_0042
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: 87e30c36-b0c6-428c-8f46-fa4ab6d1cd25
+  Size: 6
+  WordCount: 42
+  MaxCharacterUsage: 10
+  Words:
+  - Length: 5
+    Forwards: HUNKS
+    Backwards: SKNUH
+    Definition: A thick piece of something that has been taken from a bigger piece.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 5
+  - Length: 5
+    Forwards: LUPUS
+    Backwards: SUPUL
+    Definition: Any of several diseases that affect the skin and joints.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 4
+    Forwards: AWDL
+    Backwards: LDWA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Length: 5
+    Forwards: PUKES
+    Backwards: SEKUP
+    Definition: To bring food back up from your stomach through your mouth.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 4
+  - Length: 4
+    Forwards: GLIA
+    Backwards: AILG
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 5
+    Forwards: RUINS
+    Backwards: SNIUR
+    Definition: To spoil or destroy something completely.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 5
+    Forwards: VANGS
+    Backwards: SGNAV
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 0
+      Y: 1
+  - Length: 4
+    Forwards: BEAT
+    Backwards: TAEB
+    Definition: An act of hitting someone many times as a punishment or in a fight.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 4
+    Forwards: PUPA
+    Backwards: APUP
+    Definition: A young insect at the stage of its development when it does not feed
+      and is protected inside a special cover, before it becomes an adult.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: AGE
+    Backwards: EGA
+    Definition: Between 5 and 10, 16 and 18, etc. years old.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: EAT
+    Backwards: TAE
+    Definition: To put food in your mouth and swallow it.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: SUP
+    Backwards: PUS
+    Definition: To eat supper.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: PUP
+    Backwards: PUP
+    Definition: A puppy.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: KIP
+    Backwards: PIK
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: VAN
+    Backwards: NAV
+    Definition: A large box-like car that can carry a lot of people.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 0
+      Y: 3
+  - Length: 3
+    Forwards: INS
+    Backwards: SNI
+    Definition: Used with the name of a container, place, or area to show where someone
+      or something is.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 3
+    Forwards: SUE
+    Backwards: EUS
+    Definition: To make a legal claim against someone, especially for money, because
+      he or she has harmed you in some way.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: SAL
+    Backwards: LAS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: TAE
+    Backwards: EAT
+    Definition: A type of exercise that combines dancing, kicking, and quick hand
+      movements.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: RUE
+    Backwards: EUR
+    Definition: To wish that you had not done something.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 4
+    Forwards: RUIN
+    Backwards: NIUR
+    Definition: To spoil or destroy something completely.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: PUS
+    Backwards: SUP
+    Definition: A thick yellowish liquid produced in an infected part of your body.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: SAI
+    Backwards: IAS
+    Definition: A good quality that you cannot easily describe.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: UKE
+    Backwards: EKU
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 4
+    Forwards: SAIL
+    Backwards: LIAS
+    Definition: To travel across an area of water in a boat or ship.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 4
+    Forwards: VANG
+    Backwards: GNAV
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 3
+    Forwards: TUI
+    Backwards: IUT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: GIT
+    Backwards: TIG
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 4
+    Forwards: UKES
+    Backwards: SEKU
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 5
+      Y: 4
+  - Length: 4
+    Forwards: KIPE
+    Backwards: EPIK
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: AIL
+    Backwards: LIA
+    Definition: An ailing company or economy is having a lot of problems and is not
+      successful.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: LEP
+    Backwards: PEL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: LAS
+    Backwards: SAL
+    Definition: A city in the desert of the U.S. state of Nevada.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 4
+    Forwards: PUKE
+    Backwards: EKUP
+    Definition: To bring food back up from your stomach through your mouth.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 4
+    Forwards: HUNK
+    Backwards: KNUH
+    Definition: A thick piece of something that has been taken from a bigger piece.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 5
+  - Length: 3
+    Forwards: ALS
+    Backwards: SLA
+    Definition: The written abbreviation of alabama.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 4
+    Forwards: AUNE
+    Backwards: ENUA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: TIG
+    Backwards: GIT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 4
+    Forwards: KESH
+    Backwards: HSEK
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 3
+    Forwards: UTS
+    Backwards: STU
+    Definition: The written abbreviation of utah.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: AIN
+    Backwards: NIA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 4
+    Forwards: SALS
+    Backwards: SLAS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 4
+  CharGrid:
+  - Character: 65
+    NumberOfUses: 2
+  - Character: 83
+    NumberOfUses: 3
+  - Character: 71
+    NumberOfUses: 4
+  - Character: 78
+    NumberOfUses: 4
+  - Character: 65
+    NumberOfUses: 3
+  - Character: 86
+    NumberOfUses: 3
+  - Character: 87
+    NumberOfUses: 1
+  - Character: 71
+    NumberOfUses: 2
+  - Character: 76
+    NumberOfUses: 8
+  - Character: 73
+    NumberOfUses: 7
+  - Character: 65
+    NumberOfUses: 4
+  - Character: 83
+    NumberOfUses: 4
+  - Character: 68
+    NumberOfUses: 1
+  - Character: 66
+    NumberOfUses: 1
+  - Character: 69
+    NumberOfUses: 8
+  - Character: 65
+    NumberOfUses: 10
+  - Character: 84
+    NumberOfUses: 7
+  - Character: 75
+    NumberOfUses: 2
+  - Character: 76
+    NumberOfUses: 2
+  - Character: 85
+    NumberOfUses: 2
+  - Character: 80
+    NumberOfUses: 8
+  - Character: 85
+    NumberOfUses: 7
+  - Character: 83
+    NumberOfUses: 6
+  - Character: 78
+    NumberOfUses: 2
+  - Character: 82
+    NumberOfUses: 3
+  - Character: 85
+    NumberOfUses: 4
+  - Character: 73
+    NumberOfUses: 6
+  - Character: 78
+    NumberOfUses: 4
+  - Character: 83
+    NumberOfUses: 3
+  - Character: 85
+    NumberOfUses: 2
+  - Character: 80
+    NumberOfUses: 4
+  - Character: 85
+    NumberOfUses: 4
+  - Character: 75
+    NumberOfUses: 7
+  - Character: 69
+    NumberOfUses: 6
+  - Character: 83
+    NumberOfUses: 3
+  - Character: 72
+    NumberOfUses: 3

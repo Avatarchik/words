@@ -1,0 +1,698 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 06_0005_0054
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: 22a2304f-d0fe-40c3-95e6-218e66b0f839
+  Size: 6
+  WordCount: 54
+  MaxCharacterUsage: 12
+  Words:
+  - Length: 5
+    Forwards: LAYER
+    Backwards: REYAL
+    Definition: An amount or piece of a material or substance that covers a surface
+      or that is between two other things.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 0
+      Y: 1
+  - Length: 5
+    Forwards: VALET
+    Backwards: TELAV
+    Definition: Someone who parks your car for you at a hotel or restaurant.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 5
+    Forwards: TENOR
+    Backwards: RONET
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 4
+  - Length: 5
+    Forwards: CRISP
+    Backwards: PSIRC
+    Definition: A type of dessert in which fruit is baked with a mixture of sugar,
+      butter, flour, and sometimes oats on top.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 0
+  - Length: 5
+    Forwards: TIARS
+    Backwards: SRAIT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 4
+    Forwards: COSS
+    Backwards: SSOC
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 5
+  - Length: 3
+    Forwards: DOT
+    Backwards: TOD
+    Definition: A round mark or spot.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 4
+    Forwards: RAWS
+    Backwards: SWAR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: TAB
+    Backwards: BAT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: SPA
+    Backwards: APS
+    Definition: A place where people go in order to improve their health or beauty,
+      especially through swimming, exercise, beauty treatments, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: TAE
+    Backwards: EAT
+    Definition: A type of exercise that combines dancing, kicking, and quick hand
+      movements.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: SIR
+    Backwards: RIS
+    Definition: Used when speaking to a man in order to be polite or to show respect.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 0
+  - Length: 3
+    Forwards: ALE
+    Backwards: ELA
+    Definition: A type of beer with a slightly bitter taste.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: TEL
+    Backwards: LET
+    Definition: "The written abbreviation of \u201Ctelephone number\u201D."
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: PSI
+    Backwards: ISP
+    Definition: The 23th letter of the Greek alphabet.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  - Length: 3
+    Forwards: PED
+    Backwards: DEP
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 4
+    Forwards: TELA
+    Backwards: ALET
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 3
+    Forwards: TEN
+    Backwards: NET
+    Definition: A piece of paper money worth $10.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 3
+    Forwards: PAL
+    Backwards: LAP
+    Definition: A close friend.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: LET
+    Backwards: TEL
+    Definition: A smaller type of something.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 3
+    Forwards: RET
+    Backwards: TER
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: LAP
+    Backwards: PAL
+    Definition: If water laps something or laps against something such as the shore
+      or a boat, it moves against it or hits it in small waves.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 3
+    Forwards: EAT
+    Backwards: TAE
+    Definition: To put food in your mouth and swallow it.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: ASS
+    Backwards: SSA
+    Definition: The part of your body that you sit on.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: LAY
+    Backwards: YAL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 0
+      Y: 3
+  - Length: 3
+    Forwards: SOC
+    Backwards: COS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 3
+    Forwards: RAW
+    Backwards: WAR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: ERS
+    Backwards: SRE
+    Definition: A sound you make when you pause to correct something you have just
+      said, or when you do not know exactly what to say.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: CAB
+    Backwards: BAC
+    Definition: A car in which you pay the driver to take you somewhere.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: TOD
+    Backwards: DOT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: COS
+    Backwards: SOC
+    Definition: The abbreviation of cosine.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 5
+  - Length: 3
+    Forwards: RAI
+    Backwards: IAR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 3
+    Forwards: ONE
+    Backwards: ENO
+    Definition: A piece of paper money worth $1.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 3
+    ToPosition:
+      X: 5
+      Y: 1
+  - Length: 3
+    Forwards: PIT
+    Backwards: TIP
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 4
+    Forwards: VALE
+    Backwards: ELAV
+    Definition: A broad low valley.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 4
+    Forwards: RISP
+    Backwards: PSIR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 0
+  - Length: 4
+    Forwards: TIAR
+    Backwards: RAIT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: OWL
+    Backwards: LWO
+    Definition: A bird that hunts at night and has a large head, eyes that face forward,
+      and a loud call.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: ODS
+    Backwards: SDO
+    Definition: To take too much of a dangerous drug.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 2
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 4
+    Forwards: TODS
+    Backwards: SDOT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 3
+    Forwards: AWS
+    Backwards: SWA
+    Definition: Very.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 4
+    Forwards: RONE
+    Backwards: ENOR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 5
+      Y: 1
+  - Length: 3
+    Forwards: NOR
+    Backwards: RON
+    Definition: "Used after a negative statement, especially to add information, and
+      meaning \u201Cand not,\u201D \u201Cor not,\u201D \u201Cneither,\u201D or \u201Cnot
+      either\u201D."
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 2
+    ToPosition:
+      X: 5
+      Y: 4
+  - Length: 3
+    Forwards: BAT
+    Backwards: TAB
+    Definition: A small animal like a mouse that flies around at night.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: AYE
+    Backwards: EYA
+    Definition: Used to say yes, especially when voting.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 3
+    Forwards: VAL
+    Backwards: LAV
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: TIA
+    Backwards: AIT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: TIP
+    Backwards: PIT
+    Definition: To move into a position where one end or side is higher than the other,
+      or to make something do this.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 4
+    Forwards: RAIT
+    Backwards: TIAR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: PIE
+    Backwards: EIP
+    Definition: A pied bird or animal has spots of two or more different colors, usually
+      black and white.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 3
+    Forwards: TOY
+    Backwards: YOT
+    Definition: An object for children to play with.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: WAR
+    Backwards: RAW
+    Definition: At war or fighting each other.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: NET
+    Backwards: TEN
+    Definition: To earn a particular amount of money as a profit after taxes have
+      been paid.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 3
+    Forwards: DSO
+    Backwards: OSD
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 3
+  CharGrid:
+  - Character: 67
+    NumberOfUses: 1
+  - Character: 82
+    NumberOfUses: 1
+  - Character: 69
+    NumberOfUses: 2
+  - Character: 89
+    NumberOfUses: 4
+  - Character: 65
+    NumberOfUses: 4
+  - Character: 76
+    NumberOfUses: 2
+  - Character: 82
+    NumberOfUses: 3
+  - Character: 84
+    NumberOfUses: 7
+  - Character: 79
+    NumberOfUses: 5
+  - Character: 68
+    NumberOfUses: 6
+  - Character: 83
+    NumberOfUses: 4
+  - Character: 83
+    NumberOfUses: 1
+  - Character: 73
+    NumberOfUses: 4
+  - Character: 84
+    NumberOfUses: 4
+  - Character: 69
+    NumberOfUses: 11
+  - Character: 82
+    NumberOfUses: 6
+  - Character: 83
+    NumberOfUses: 5
+  - Character: 83
+    NumberOfUses: 3
+  - Character: 83
+    NumberOfUses: 5
+  - Character: 80
+    NumberOfUses: 5
+  - Character: 65
+    NumberOfUses: 12
+  - Character: 76
+    NumberOfUses: 10
+  - Character: 87
+    NumberOfUses: 5
+  - Character: 79
+    NumberOfUses: 5
+  - Character: 80
+    NumberOfUses: 5
+  - Character: 73
+    NumberOfUses: 8
+  - Character: 84
+    NumberOfUses: 4
+  - Character: 66
+    NumberOfUses: 3
+  - Character: 65
+    NumberOfUses: 10
+  - Character: 67
+    NumberOfUses: 4
+  - Character: 84
+    NumberOfUses: 7
+  - Character: 69
+    NumberOfUses: 6
+  - Character: 78
+    NumberOfUses: 6
+  - Character: 79
+    NumberOfUses: 4
+  - Character: 82
+    NumberOfUses: 6
+  - Character: 86
+    NumberOfUses: 3

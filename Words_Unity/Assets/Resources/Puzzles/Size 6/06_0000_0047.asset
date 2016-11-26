@@ -1,0 +1,618 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 06_0000_0047
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: e356b1c2-a2f8-41bb-8e97-685a70f8e1c3
+  Size: 6
+  WordCount: 47
+  MaxCharacterUsage: 12
+  Words:
+  - Length: 5
+    Forwards: SPIRY
+    Backwards: YRIPS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 2
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 5
+    Forwards: KITHS
+    Backwards: SHTIK
+    Definition: Family and friends.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 4
+  - Length: 4
+    Forwards: ROTE
+    Backwards: ETOR
+    Definition: A rote action, process, etc. involves repeating something many times,
+      without thinking about it carefully or without understanding.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 0
+  - Length: 5
+    Forwards: ARGOL
+    Backwards: LOGRA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 5
+    Forwards: PEEPS
+    Backwards: SPEEP
+    Definition: To look at something quickly and secretly, especially through a hole
+      or opening.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 5
+    Forwards: TOOTS
+    Backwards: STOOT
+    Definition: A way of talking to a woman, sometimes considered offensive.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 5
+    Forwards: NULLA
+    Backwards: ALLUN
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: TOO
+    Backwards: OOT
+    Definition: More than is needed, wanted, or possible, or more than is reasonable.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 5
+  - Length: 3
+    Forwards: CAN
+    Backwards: NAC
+    Definition: To have the skill, opportunity, time, equipment, strength, etc. that
+      you need in order to do something.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 4
+    Forwards: KITH
+    Backwards: HTIK
+    Definition: Family and friends.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 3
+  - Length: 3
+    Forwards: RET
+    Backwards: TER
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Length: 3
+    Forwards: AYS
+    Backwards: SYA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 3
+    Forwards: TOR
+    Backwards: ROT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 0
+  - Length: 3
+    Forwards: PEE
+    Backwards: EEP
+    Definition: To pass liquid waste from your body.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 3
+    Forwards: KIT
+    Backwards: TIK
+    Definition: A set of tools, equipment, etc. that you use for a particular purpose
+      or activity.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 3
+    Forwards: LAY
+    Backwards: YAL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 4
+    Forwards: LAYS
+    Backwards: SYAL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 3
+    Forwards: LOG
+    Backwards: GOL
+    Definition: To make an official record of events, facts, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: ILL
+    Backwards: LLI
+    Definition: Harm, evil, or bad luck.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 2
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 4
+    Forwards: SLOG
+    Backwards: GOLS
+    Definition: Something you do that takes a lot of effort and time.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: HYP
+    Backwards: PYH
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 4
+    Forwards: PEEP
+    Backwards: PEEP
+    Definition: To look at something quickly and secretly, especially through a hole
+      or opening.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: RIP
+    Backwards: PIR
+    Definition: A long tear or cut.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: TAO
+    Backwards: OAT
+    Definition: The natural force that unites all things in the universe, according
+      to Taoism.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 4
+    Forwards: TOOT
+    Backwards: TOOT
+    Definition: A way of talking to a woman, sometimes considered offensive.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 5
+  - Length: 3
+    Forwards: ROT
+    Backwards: TOR
+    Definition: The natural process of decaying, or the part of something that has
+      decayed.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Length: 3
+    Forwards: ALL
+    Backwards: LLA
+    Definition: Consisting of or made of only one type of thing.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: LIE
+    Backwards: EIL
+    Definition: To deliberately tell someone something that is not true.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 4
+    Forwards: HALL
+    Backwards: LLAH
+    Definition: A passage in a building or house that leads to many of the rooms.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: PUR
+    Backwards: RUP
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 3
+    Forwards: ARE
+    Backwards: ERA
+    Definition: "The present tense plural form of \u201Cbe\u201D."
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 3
+    Forwards: ERA
+    Backwards: ARE
+    Definition: A period of time that is associated with particular events or qualities,
+      or that begins with a particular date or event.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 4
+    Forwards: NULL
+    Backwards: LLUN
+    Definition: An agreement, contract, etc. that is null and void has no legal effect.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: SAR
+    Backwards: RAS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 4
+    Forwards: CANS
+    Backwards: SNAC
+    Definition: To have the skill, opportunity, time, equipment, strength, etc. that
+      you need in order to do something.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 4
+    Forwards: TEIL
+    Backwards: LIET
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 4
+    Forwards: SPIR
+    Backwards: RIPS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: HAL
+    Backwards: LAH
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: PSI
+    Backwards: ISP
+    Definition: The 23th letter of the Greek alphabet.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: RAS
+    Backwards: SAR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: LOO
+    Backwards: OOL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 4
+    Forwards: PURS
+    Backwards: SRUP
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: GUS
+    Backwards: SUG
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: URS
+    Backwards: SRU
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 5
+    Forwards: RUPEE
+    Backwards: EEPUR
+    Definition: The standard unit of money in some countries such as India and Pakistan.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 4
+    Forwards: LIER
+    Backwards: REIL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: REE
+    Backwards: EER
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 2
+  CharGrid:
+  - Character: 75
+    NumberOfUses: 3
+  - Character: 73
+    NumberOfUses: 4
+  - Character: 84
+    NumberOfUses: 4
+  - Character: 72
+    NumberOfUses: 5
+  - Character: 83
+    NumberOfUses: 4
+  - Character: 84
+    NumberOfUses: 3
+  - Character: 82
+    NumberOfUses: 3
+  - Character: 83
+    NumberOfUses: 4
+  - Character: 89
+    NumberOfUses: 5
+  - Character: 65
+    NumberOfUses: 12
+  - Character: 76
+    NumberOfUses: 6
+  - Character: 79
+    NumberOfUses: 3
+  - Character: 79
+    NumberOfUses: 3
+  - Character: 80
+    NumberOfUses: 5
+  - Character: 82
+    NumberOfUses: 8
+  - Character: 76
+    NumberOfUses: 8
+  - Character: 79
+    NumberOfUses: 5
+  - Character: 79
+    NumberOfUses: 4
+  - Character: 84
+    NumberOfUses: 5
+  - Character: 69
+    NumberOfUses: 8
+  - Character: 73
+    NumberOfUses: 7
+  - Character: 76
+    NumberOfUses: 6
+  - Character: 71
+    NumberOfUses: 4
+  - Character: 84
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 4
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 80
+    NumberOfUses: 6
+  - Character: 85
+    NumberOfUses: 7
+  - Character: 82
+    NumberOfUses: 5
+  - Character: 83
+    NumberOfUses: 3
+  - Character: 82
+    NumberOfUses: 2
+  - Character: 80
+    NumberOfUses: 2
+  - Character: 83
+    NumberOfUses: 4
+  - Character: 78
+    NumberOfUses: 4
+  - Character: 65
+    NumberOfUses: 3
+  - Character: 67
+    NumberOfUses: 2

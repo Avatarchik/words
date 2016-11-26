@@ -1,0 +1,809 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 07_0005_0061
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: beb727ac-b2da-4643-837b-41e0b29e1ac7
+  Size: 7
+  WordCount: 61
+  MaxCharacterUsage: 12
+  Words:
+  - Length: 4
+    Forwards: HUMP
+    Backwards: PMUH
+    Definition: A large round shape that rises above the surface of the ground or
+      a surface.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 4
+    Forwards: MOPY
+    Backwards: YPOM
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 5
+  - Length: 4
+    Forwards: MANO
+    Backwards: ONAM
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 6
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 5
+    Forwards: WHOAS
+    Backwards: SAOHW
+    Definition: Used to tell someone to become calmer or to do something more slowly.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 5
+      Y: 5
+  - Length: 6
+    Forwards: EPHODS
+    Backwards: SDOHPE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 5
+  - Length: 4
+    Forwards: SPRY
+    Backwards: YRPS
+    Definition: A spry old person is active and cheerful.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 6
+    Forwards: HARROW
+    Backwards: WORRAH
+    Definition: A farming machine with sharp round metal blades, used to break up
+      the soil before planting crops.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 6
+    ToPosition:
+      X: 1
+      Y: 6
+  - Length: 5
+    Forwards: COCKY
+    Backwards: YKCOC
+    Definition: Too confident about yourself and your abilities, especially in a way
+      that annoys other people.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 0
+  - Length: 4
+    Forwards: CASH
+    Backwards: HSAC
+    Definition: Money in the form of coins or bills rather than credit cards, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 5
+    Forwards: SCOLD
+    Backwards: DLOCS
+    Definition: To angrily criticize someone, especially a child, about something
+      he or she has done.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 1
+    ToPosition:
+      X: 6
+      Y: 5
+  - Length: 6
+    Forwards: CHIELD
+    Backwards: DLEIHC
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 5
+  - Length: 3
+    Forwards: WHO
+    Backwards: OHW
+    Definition: "The short form of \u201Cwho is\u201D."
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 4
+    Forwards: HOAS
+    Backwards: SAOH
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 2
+    ToPosition:
+      X: 5
+      Y: 5
+  - Length: 4
+    Forwards: WAUR
+    Backwards: RUAW
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 6
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: HOD
+    Backwards: DOH
+    Definition: A container shaped like a box with a long handle, used for carrying
+      bricks.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 2
+    ToPosition:
+      X: 5
+      Y: 4
+  - Length: 3
+    Forwards: GEY
+    Backwards: YEG
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 0
+  - Length: 3
+    Forwards: OLM
+    Backwards: MLO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 4
+    Forwards: ORRA
+    Backwards: ARRO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 6
+    ToPosition:
+      X: 5
+      Y: 6
+  - Length: 3
+    Forwards: HOA
+    Backwards: AOH
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 3
+    Forwards: SAC
+    Backwards: CAS
+    Definition: A part inside a plant or animal that is shaped like a bag and contains
+      liquid or air.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 3
+    Forwards: ODS
+    Backwards: SDO
+    Definition: To take too much of a dangerous drug.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 3
+    ToPosition:
+      X: 5
+      Y: 5
+  - Length: 4
+    Forwards: WAPS
+    Backwards: SPAW
+    Definition: A system that uses radio waves to allow electronic equipment, for
+      example a cell phone, to use the Internet even when it is not physically attached
+      to a computer.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 6
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: PHO
+    Backwards: OHP
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 3
+    Forwards: HON
+    Backwards: NOH
+    Definition: A short form of honey, used to address someone you love.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: MAN
+    Backwards: NAM
+    Definition: Having qualities that people expect and admire in a man, such as being
+      brave and strong.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 6
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 4
+    Forwards: WHOA
+    Backwards: AOHW
+    Definition: Used to tell someone to become calmer or to do something more slowly.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 4
+    Forwards: PHON
+    Backwards: NOHP
+    Definition: Relating to sound, the voice, or the ability to speak.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: PAD
+    Backwards: DAP
+    Definition: Something made of or filled with soft material that is used to protect
+      something, clean something, or make something more comfortable.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 5
+      Y: 4
+  - Length: 4
+    Forwards: COLD
+    Backwards: DLOC
+    Definition: Having a low temperature.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 2
+    ToPosition:
+      X: 6
+      Y: 5
+  - Length: 3
+    Forwards: HUM
+    Backwards: MUH
+    Definition: A low continuous sound.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: DOH
+    Backwards: HOD
+    Definition: A soft substance like clay made in many different colors, used by
+      children for making shapes.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 3
+    Forwards: CHI
+    Backwards: IHC
+    Definition: The 22nd letter of the Greek alphabet.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 5
+    Forwards: ARROW
+    Backwards: WORRA
+    Definition: A weapon like a thin straight stick with a point at one end that you
+      shoot with a bow.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 6
+    ToPosition:
+      X: 1
+      Y: 6
+  - Length: 4
+    Forwards: OLMS
+    Backwards: SMLO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 4
+    Forwards: COCK
+    Backwards: KCOC
+    Definition: To lift a part of your body so that it is upright, or hold a part
+      of your body at an angle.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Length: 3
+    Forwards: NOH
+    Backwards: HON
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: COL
+    Backwards: LOC
+    Definition: The written abbreviation of column.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 2
+    ToPosition:
+      X: 6
+      Y: 4
+  - Length: 3
+    Forwards: POM
+    Backwards: MOP
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: KYE
+    Backwards: EYK
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 0
+  - Length: 3
+    Forwards: OLD
+    Backwards: DLO
+    Definition: Something that is old has existed or been used for a long time.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 3
+    ToPosition:
+      X: 6
+      Y: 5
+  - Length: 3
+    Forwards: ELD
+    Backwards: DLE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 0
+      Y: 5
+  - Length: 3
+    Forwards: ROW
+    Backwards: WOR
+    Definition: A line of things or people next to each other.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 6
+    ToPosition:
+      X: 1
+      Y: 6
+  - Length: 3
+    Forwards: WAP
+    Backwards: PAW
+    Definition: A system that uses radio waves to allow electronic equipment, for
+      example a cell phone, to use the Internet even when it is not physically attached
+      to a computer.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 6
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: HIE
+    Backwards: EIH
+    Definition: To make yourself hurry, or go quickly.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 0
+      Y: 3
+  - Length: 3
+    Forwards: DAP
+    Backwards: PAD
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: LEI
+    Backwards: IEL
+    Definition: "A circle made of flowers that you put around someone\u2019s neck
+      as a greeting, especially in Hawaii."
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 3
+    Forwards: OOS
+    Backwards: SOO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: MNA
+    Backwards: ANM
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 5
+  - Length: 3
+    Forwards: SPA
+    Backwards: APS
+    Definition: A place where people go in order to improve their health or beauty,
+      especially through swimming, exercise, beauty treatments, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 5
+  - Length: 5
+    Forwards: CHIEL
+    Backwards: LEIHC
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 4
+  - Length: 3
+    Forwards: MOP
+    Backwards: POM
+    Definition: A thing used for washing floors, made of a long stick with threads
+      of thick string or a sponge fastened to one end.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: PRY
+    Backwards: YRP
+    Definition: To force something open, or force it away from something else.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 5
+    Forwards: EPHOD
+    Backwards: DOHPE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 4
+  - Length: 3
+    Forwards: ASH
+    Backwards: HSA
+    Definition: The soft gray powder that remains after something has been burned.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 4
+    Forwards: HODS
+    Backwards: SDOH
+    Definition: A container shaped like a box with a long handle, used for carrying
+      bricks.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 2
+    ToPosition:
+      X: 5
+      Y: 5
+  - Length: 3
+    Forwards: HAR
+    Backwards: RAH
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 6
+    ToPosition:
+      X: 4
+      Y: 6
+  - Length: 3
+    Forwards: HUI
+    Backwards: IUH
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: NAM
+    Backwards: MAN
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 6
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: PAW
+    Backwards: WAP
+    Definition: If an animal paws a surface, it touches or rubs one place several
+      times with its paw.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 6
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: RHO
+    Backwards: OHR
+    Definition: The 17th letter of the Greek alphabet.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 3
+    Forwards: MUD
+    Backwards: DUM
+    Definition: Wet earth that has become soft and sticky.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 3
+  CharGrid:
+  - Character: 67
+    NumberOfUses: 5
+  - Character: 72
+    NumberOfUses: 6
+  - Character: 73
+    NumberOfUses: 6
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 76
+    NumberOfUses: 4
+  - Character: 68
+    NumberOfUses: 3
+  - Character: 77
+    NumberOfUses: 3
+  - Character: 79
+    NumberOfUses: 4
+  - Character: 87
+    NumberOfUses: 3
+  - Character: 85
+    NumberOfUses: 3
+  - Character: 82
+    NumberOfUses: 1
+  - Character: 85
+    NumberOfUses: 2
+  - Character: 65
+    NumberOfUses: 4
+  - Character: 87
+    NumberOfUses: 7
+  - Character: 67
+    NumberOfUses: 2
+  - Character: 76
+    NumberOfUses: 2
+  - Character: 72
+    NumberOfUses: 6
+  - Character: 77
+    NumberOfUses: 4
+  - Character: 78
+    NumberOfUses: 7
+  - Character: 65
+    NumberOfUses: 5
+  - Character: 79
+    NumberOfUses: 4
+  - Character: 75
+    NumberOfUses: 3
+  - Character: 89
+    NumberOfUses: 2
+  - Character: 77
+    NumberOfUses: 5
+  - Character: 79
+    NumberOfUses: 12
+  - Character: 80
+    NumberOfUses: 10
+  - Character: 89
+    NumberOfUses: 1
+  - Character: 82
+    NumberOfUses: 4
+  - Character: 89
+    NumberOfUses: 3
+  - Character: 82
+    NumberOfUses: 3
+  - Character: 72
+    NumberOfUses: 5
+  - Character: 83
+    NumberOfUses: 7
+  - Character: 65
+    NumberOfUses: 9
+  - Character: 67
+    NumberOfUses: 2
+  - Character: 82
+    NumberOfUses: 4
+  - Character: 69
+    NumberOfUses: 4
+  - Character: 80
+    NumberOfUses: 6
+  - Character: 72
+    NumberOfUses: 7
+  - Character: 79
+    NumberOfUses: 8
+  - Character: 68
+    NumberOfUses: 8
+  - Character: 83
+    NumberOfUses: 5
+  - Character: 65
+    NumberOfUses: 4
+  - Character: 71
+    NumberOfUses: 1
+  - Character: 83
+    NumberOfUses: 2
+  - Character: 67
+    NumberOfUses: 3
+  - Character: 79
+    NumberOfUses: 6
+  - Character: 76
+    NumberOfUses: 4
+  - Character: 68
+    NumberOfUses: 3
+  - Character: 72
+    NumberOfUses: 2

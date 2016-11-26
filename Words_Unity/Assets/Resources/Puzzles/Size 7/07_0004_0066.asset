@@ -1,0 +1,853 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 07_0004_0066
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: 7b18d31f-0a02-4cd0-a97c-b05084f2615e
+  Size: 7
+  WordCount: 66
+  MaxCharacterUsage: 12
+  Words:
+  - Length: 6
+    Forwards: TABBED
+    Backwards: DEBBAT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 5
+  - Length: 6
+    Forwards: RUDDLE
+    Backwards: ELDDUR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 5
+      Y: 4
+  - Length: 6
+    Forwards: SARRED
+    Backwards: DERRAS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 5
+  - Length: 4
+    Forwards: TWAE
+    Backwards: EAWT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 1
+    ToPosition:
+      X: 5
+      Y: 4
+  - Length: 5
+    Forwards: RAVIN
+    Backwards: NIVAR
+    Definition: A narrow valley with steep sides, formed by running water.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 6
+    ToPosition:
+      X: 2
+      Y: 6
+  - Length: 6
+    Forwards: SUSLIK
+    Backwards: KILSUS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 0
+    ToPosition:
+      X: 6
+      Y: 5
+  - Length: 4
+    Forwards: DARI
+    Backwards: IRAD
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 5
+    Forwards: DWALE
+    Backwards: ELAWD
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 4
+    Forwards: BUYS
+    Backwards: SYUB
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 0
+  - Length: 5
+    Forwards: YARRS
+    Backwards: SRRAY
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 0
+      Y: 5
+  - Length: 3
+    Forwards: PAN
+    Backwards: NAP
+    Definition: A round metal container used for cooking, usually with one long handle
+      and sometimes a lid.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 6
+    ToPosition:
+      X: 2
+      Y: 6
+  - Length: 3
+    Forwards: DIP
+    Backwards: PID
+    Definition: To put something into a liquid and quickly lift it out again.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: BRA
+    Backwards: ARB
+    Definition: A piece of underwear that a woman wears to support her breasts.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 4
+    Forwards: PAUA
+    Backwards: AUAP
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 2
+    ToPosition:
+      X: 1
+      Y: 5
+  - Length: 3
+    Forwards: TAB
+    Backwards: BAT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 3
+    Forwards: BAD
+    Backwards: DAB
+    Definition: Badly.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: RAI
+    Backwards: IAR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: IDE
+    Backwards: EDI
+    Definition: A date or period of time around the middle of the month in the ancient
+      Roman calendar.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 3
+    Forwards: ANI
+    Backwards: INA
+    Definition: Some or even the smallest amount.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 6
+    ToPosition:
+      X: 3
+      Y: 6
+  - Length: 3
+    Forwards: WAE
+    Backwards: EAW
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 2
+    ToPosition:
+      X: 5
+      Y: 4
+  - Length: 3
+    Forwards: RID
+    Backwards: DIR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: BED
+    Backwards: DEB
+    Definition: Sheets, covers, etc. that you put on a bed.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 3
+    ToPosition:
+      X: 5
+      Y: 5
+  - Length: 4
+    Forwards: ABBE
+    Backwards: EBBA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 5
+      Y: 4
+  - Length: 3
+    Forwards: DEB
+    Backwards: BED
+    Definition: A debutante.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 3
+    Forwards: EBB
+    Backwards: BBE
+    Definition: A situation or state in which something increases and decreases in
+      a type of pattern.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 3
+    Forwards: SAP
+    Backwards: PAS
+    Definition: To gradually take away something such as strength or energy.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: SAR
+    Backwards: RAS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 5
+  - Length: 4
+    Forwards: YARR
+    Backwards: RRAY
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 0
+      Y: 4
+  - Length: 3
+    Forwards: SUS
+    Backwards: SUS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 0
+    ToPosition:
+      X: 6
+      Y: 2
+  - Length: 3
+    Forwards: TWA
+    Backwards: AWT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: ELD
+    Backwards: DLE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: RED
+    Backwards: DER
+    Definition: The color of blood.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 5
+  - Length: 3
+    Forwards: RAY
+    Backwards: YAR
+    Definition: A narrow beam of light from the Sun or from something such as a lamp.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 0
+      Y: 1
+  - Length: 4
+    Forwards: ARIL
+    Backwards: LIRA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 3
+    Forwards: LEE
+    Backwards: EEL
+    Definition: The side of something that is away from the wind or provides shelter
+      from it.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 4
+    Forwards: DIRT
+    Backwards: TRID
+    Definition: Earth or soil.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: SUI
+    Backwards: IUS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: KEA
+    Backwards: AEK
+    Definition: A mountain on the island of Hawaii that is an active volcano.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 4
+    Forwards: WALE
+    Backwards: ELAW
+    Definition: A country in the United Kingdom, west of England.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 3
+    Forwards: LAW
+    Backwards: WAL
+    Definition: Allowed or officially accepted by the law.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 4
+    Forwards: LIRA
+    Backwards: ARIL
+    Definition: The standard unit of money in various countries including Turkey,
+      and in Italy before the euro.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 3
+    Forwards: PAD
+    Backwards: DAP
+    Definition: Something made of or filled with soft material that is used to protect
+      something, clean something, or make something more comfortable.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 6
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: RUD
+    Backwards: DUR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: SAW
+    Backwards: WAS
+    Definition: The past tense of see.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 4
+    Forwards: VELA
+    Backwards: ALEV
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 6
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: ERR
+    Backwards: RRE
+    Definition: To be more careful, safe, etc. than is necessary rather than risk
+      making a mistake.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 5
+  - Length: 3
+    Forwards: DAB
+    Backwards: BAD
+    Definition: A small amount of something that you put onto a surface with your
+      hand, a cloth, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 3
+    Forwards: ALE
+    Backwards: ELA
+    Definition: A type of beer with a slightly bitter taste.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 3
+    Forwards: ARB
+    Backwards: BRA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 4
+    Forwards: RUDD
+    Backwards: DDUR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: ARD
+    Backwards: DRA
+    Definition: Someone who is usually or always in a particular state.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 6
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: BUY
+    Backwards: YUB
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  - Length: 4
+    Forwards: VINA
+    Backwards: ANIV
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 6
+    ToPosition:
+      X: 1
+      Y: 6
+  - Length: 3
+    Forwards: VIN
+    Backwards: NIV
+    Definition: A dish of chicken cooked in red wine.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 6
+    ToPosition:
+      X: 2
+      Y: 6
+  - Length: 3
+    Forwards: VEL
+    Backwards: LEV
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 6
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 3
+    Forwards: DAR
+    Backwards: RAD
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: EEL
+    Backwards: LEE
+    Definition: A long thin fish that looks like a snake and can be eaten.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 3
+    Forwards: NAP
+    Backwards: PAN
+    Definition: A short sleep, especially during the day.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 6
+    ToPosition:
+      X: 2
+      Y: 6
+  - Length: 3
+    Forwards: PAS
+    Backwards: SAP
+    Definition: An embarrassing mistake in a social situation.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 5
+    Forwards: DIRTY
+    Backwards: YTRID
+    Definition: Extremely dishonest or unkind.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: DAP
+    Backwards: PAD
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 6
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: RAS
+    Backwards: SAR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 5
+  - Length: 3
+    Forwards: TAY
+    Backwards: YAT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 4
+    Forwards: IDEA
+    Backwards: AEDI
+    Definition: A plan or suggestion for a possible course of action, especially one
+      that you think of suddenly.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 6
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: BAT
+    Backwards: TAB
+    Definition: A small animal like a mouse that flies around at night.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 3
+    Forwards: WAS
+    Backwards: SAW
+    Definition: The first and third person singular of the past tense of be.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 2
+  CharGrid:
+  - Character: 68
+    NumberOfUses: 2
+  - Character: 89
+    NumberOfUses: 4
+  - Character: 65
+    NumberOfUses: 3
+  - Character: 82
+    NumberOfUses: 4
+  - Character: 82
+    NumberOfUses: 5
+  - Character: 83
+    NumberOfUses: 5
+  - Character: 80
+    NumberOfUses: 4
+  - Character: 83
+    NumberOfUses: 3
+  - Character: 65
+    NumberOfUses: 7
+  - Character: 80
+    NumberOfUses: 4
+  - Character: 65
+    NumberOfUses: 4
+  - Character: 85
+    NumberOfUses: 5
+  - Character: 65
+    NumberOfUses: 6
+  - Character: 65
+    NumberOfUses: 5
+  - Character: 89
+    NumberOfUses: 3
+  - Character: 84
+    NumberOfUses: 5
+  - Character: 82
+    NumberOfUses: 9
+  - Character: 73
+    NumberOfUses: 8
+  - Character: 68
+    NumberOfUses: 8
+  - Character: 82
+    NumberOfUses: 5
+  - Character: 78
+    NumberOfUses: 6
+  - Character: 85
+    NumberOfUses: 2
+  - Character: 66
+    NumberOfUses: 2
+  - Character: 87
+    NumberOfUses: 3
+  - Character: 73
+    NumberOfUses: 3
+  - Character: 68
+    NumberOfUses: 9
+  - Character: 82
+    NumberOfUses: 3
+  - Character: 73
+    NumberOfUses: 4
+  - Character: 66
+    NumberOfUses: 2
+  - Character: 68
+    NumberOfUses: 1
+  - Character: 87
+    NumberOfUses: 5
+  - Character: 65
+    NumberOfUses: 11
+  - Character: 76
+    NumberOfUses: 10
+  - Character: 69
+    NumberOfUses: 12
+  - Character: 86
+    NumberOfUses: 5
+  - Character: 84
+    NumberOfUses: 3
+  - Character: 65
+    NumberOfUses: 6
+  - Character: 66
+    NumberOfUses: 7
+  - Character: 66
+    NumberOfUses: 5
+  - Character: 69
+    NumberOfUses: 12
+  - Character: 68
+    NumberOfUses: 5
+  - Character: 65
+    NumberOfUses: 2
+  - Character: 83
+    NumberOfUses: 4
+  - Character: 85
+    NumberOfUses: 2
+  - Character: 83
+    NumberOfUses: 2
+  - Character: 76
+    NumberOfUses: 3
+  - Character: 73
+    NumberOfUses: 1
+  - Character: 75
+    NumberOfUses: 2
+  - Character: 82
+    NumberOfUses: 1

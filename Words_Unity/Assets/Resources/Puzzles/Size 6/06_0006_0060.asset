@@ -1,0 +1,768 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 06_0006_0060
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: 55f11aac-abdd-4205-acb8-f272c9176c71
+  Size: 6
+  WordCount: 60
+  MaxCharacterUsage: 12
+  Words:
+  - Length: 5
+    Forwards: BEGAD
+    Backwards: DAGEB
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 5
+    Forwards: TOMAN
+    Backwards: NAMOT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 3
+    Forwards: ZEA
+    Backwards: AEZ
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 5
+    Forwards: PROMS
+    Backwards: SMORP
+    Definition: A formal dance party for high school students, often held at the end
+      of a school year.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 5
+    Forwards: FLEYS
+    Backwards: SYELF
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 0
+  - Length: 4
+    Forwards: FATS
+    Backwards: STAF
+    Definition: Weighing too much because you have too much flesh on your body.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 4
+    Forwards: SOAP
+    Backwards: PAOS
+    Definition: The substance that you use to wash your body or other things.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 4
+    Forwards: KOBS
+    Backwards: SBOK
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 4
+    Forwards: DZHO
+    Backwards: OHZD
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 3
+    Forwards: ERR
+    Backwards: RRE
+    Definition: To be more careful, safe, etc. than is necessary rather than risk
+      making a mistake.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 3
+    Forwards: SOS
+    Backwards: SOS
+    Definition: A signal that a ship or aircraft sends to say that it is in danger
+      and needs help quickly.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 4
+    Forwards: LOST
+    Backwards: TSOL
+    Definition: Not knowing where you are or which way to go.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: GAD
+    Backwards: DAG
+    Definition: To go out and enjoy yourself, going to many different places, especially
+      when you should be doing something else.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: ORE
+    Backwards: ERO
+    Definition: Rock or earth from which metal can be obtained.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: ESS
+    Backwards: SSE
+    Definition: A woman who does something, or a female.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: LAR
+    Backwards: RAL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: ONE
+    Backwards: ENO
+    Definition: A piece of paper money worth $1.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: OMS
+    Backwards: SMO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 4
+    Forwards: EGAD
+    Backwards: DAGE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: NAM
+    Backwards: MAN
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: SYE
+    Backwards: EYS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  - Length: 4
+    Forwards: FLEY
+    Backwards: YELF
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Length: 3
+    Forwards: ZHO
+    Backwards: OHZ
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 3
+    Forwards: ART
+    Backwards: TRA
+    Definition: Showing or resulting from a lot of skill and artistic ability.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: ROM
+    Backwards: MOR
+    Definition: The part of a computer where permanent information and instructions
+      are stored.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 4
+    Forwards: ONER
+    Backwards: RENO
+    Definition: Onerous work or responsibilities are difficult and worrying or make
+      you tired.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 4
+    Forwards: ORES
+    Backwards: SERO
+    Definition: Rock or earth from which metal can be obtained.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 5
+    Forwards: FATSO
+    Backwards: OSTAF
+    Definition: An insulting word for someone who is fat.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 3
+    Forwards: FRA
+    Backwards: ARF
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: MAN
+    Backwards: NAM
+    Definition: Having qualities that people expect and admire in a man, such as being
+      brave and strong.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 2
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 3
+    Forwards: REN
+    Backwards: NER
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 3
+    Forwards: DAG
+    Backwards: GAD
+    Definition: The Secretary General of the United Nations from 1953 until his death
+      in 1961.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 4
+    Forwards: ROMS
+    Backwards: SMOR
+    Definition: The part of a computer where permanent information and instructions
+      are stored.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: BEG
+    Backwards: GEB
+    Definition: To ask for something in an anxious or urgent way, because you want
+      it very much.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 4
+    Forwards: LARD
+    Backwards: DRAL
+    Definition: White fat from pigs that is used in cooking.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: OBS
+    Backwards: SBO
+    Definition: The part of medical science that deals with obstetrics and gynecology.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 3
+    Forwards: AGE
+    Backwards: EGA
+    Definition: Between 5 and 10, 16 and 18, etc. years old.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 4
+    Forwards: PROM
+    Backwards: MORP
+    Definition: A formal dance party for high school students, often held at the end
+      of a school year.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: ARD
+    Backwards: DRA
+    Definition: Someone who is usually or always in a particular state.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: LEY
+    Backwards: YEL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Length: 3
+    Forwards: PRO
+    Backwards: ORP
+    Definition: Doing a job, sport, or activity for money.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: LOS
+    Backwards: SOL
+    Definition: A town in the U.S. state of New Mexico where the first atom bomb and
+      hydrogen bomb were developed.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 3
+    Forwards: RES
+    Backwards: SER
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 5
+    Forwards: ADAGE
+    Backwards: EGADA
+    Definition: A well-known phrase that says something wise about human experience.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: SOD
+    Backwards: DOS
+    Definition: A piece of dirt with grass growing on top of it.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: TOM
+    Backwards: MOT
+    Definition: A tomcat.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: MOR
+    Backwards: ROM
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 2
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: DOS
+    Backwards: SOD
+    Definition: Software that is loaded onto a computer system to make all the different
+      parts work together.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 4
+    Forwards: LEYS
+    Backwards: SYEL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 0
+  - Length: 3
+    Forwards: FAT
+    Backwards: TAF
+    Definition: Weighing too much because you have too much flesh on your body.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: KOB
+    Backwards: BOK
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 3
+    Forwards: FLE
+    Backwards: ELF
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  - Length: 3
+    Forwards: BOK
+    Backwards: KOB
+    Definition: A type of cabbage eaten especially in East Asia.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 4
+    Forwards: DOSS
+    Backwards: SSOD
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 4
+    Forwards: MANS
+    Backwards: SNAM
+    Definition: Having qualities that people expect and admire in a man, such as being
+      brave and strong.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: SOL
+    Backwards: LOS
+    Definition: So5.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 3
+    Forwards: MOT
+    Backwards: TOM
+    Definition: Exactly the right word or phrase.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: OAF
+    Backwards: FAO
+    Definition: A stupid awkward man or boy.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: GED
+    Backwards: DEG
+    Definition: In the US, a series of tests that are designed to provide a qualification
+      equal to a high school diploma, for people who left high school without completing
+      their education.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 4
+    Forwards: GOAF
+    Backwards: FAOG
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 3
+  CharGrid:
+  - Character: 70
+    NumberOfUses: 5
+  - Character: 70
+    NumberOfUses: 4
+  - Character: 80
+    NumberOfUses: 4
+  - Character: 65
+    NumberOfUses: 3
+  - Character: 79
+    NumberOfUses: 3
+  - Character: 83
+    NumberOfUses: 2
+  - Character: 76
+    NumberOfUses: 7
+  - Character: 65
+    NumberOfUses: 8
+  - Character: 82
+    NumberOfUses: 11
+  - Character: 68
+    NumberOfUses: 10
+  - Character: 78
+    NumberOfUses: 7
+  - Character: 68
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 7
+  - Character: 84
+    NumberOfUses: 5
+  - Character: 79
+    NumberOfUses: 12
+  - Character: 65
+    NumberOfUses: 12
+  - Character: 69
+    NumberOfUses: 6
+  - Character: 90
+    NumberOfUses: 3
+  - Character: 89
+    NumberOfUses: 5
+  - Character: 83
+    NumberOfUses: 9
+  - Character: 77
+    NumberOfUses: 12
+  - Character: 71
+    NumberOfUses: 9
+  - Character: 82
+    NumberOfUses: 3
+  - Character: 72
+    NumberOfUses: 2
+  - Character: 83
+    NumberOfUses: 5
+  - Character: 79
+    NumberOfUses: 8
+  - Character: 83
+    NumberOfUses: 7
+  - Character: 69
+    NumberOfUses: 8
+  - Character: 82
+    NumberOfUses: 4
+  - Character: 79
+    NumberOfUses: 4
+  - Character: 84
+    NumberOfUses: 3
+  - Character: 76
+    NumberOfUses: 3
+  - Character: 83
+    NumberOfUses: 2
+  - Character: 66
+    NumberOfUses: 6
+  - Character: 79
+    NumberOfUses: 4
+  - Character: 75
+    NumberOfUses: 3

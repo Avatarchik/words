@@ -1,0 +1,1194 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 08_0005_0093
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: 822d2127-3655-457f-b9dc-f9cabbc93ed0
+  Size: 8
+  WordCount: 93
+  MaxCharacterUsage: 12
+  Words:
+  - Length: 4
+    Forwards: GLEE
+    Backwards: EELG
+    Definition: A feeling of happy excitement and satisfaction, sometimes because
+      something bad has happened to someone you do not like.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 5
+  - Length: 5
+    Forwards: BUBBY
+    Backwards: YBBUB
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 6
+    Forwards: TRULLS
+    Backwards: SLLURT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 6
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 6
+    Forwards: SEXIER
+    Backwards: REIXES
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 7
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 6
+  - Length: 7
+    Forwards: UNHITCH
+    Backwards: HCTIHNU
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 7
+    ToPosition:
+      X: 6
+      Y: 7
+  - Length: 7
+    Forwards: RUDDILY
+    Backwards: YLIDDUR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 6
+      Y: 4
+  - Length: 4
+    Forwards: GAST
+    Backwards: TSAG
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 7
+      Y: 7
+    ToPosition:
+      X: 7
+      Y: 4
+  - Length: 7
+    Forwards: DIORAMA
+    Backwards: AMAROID
+    Definition: A box or glass case that contains a model of a scene from history
+      or from a story, often made by children in school.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 0
+  - Length: 6
+    Forwards: SNAILS
+    Backwards: SLIANS
+    Definition: A small soft creature that moves very slowly and has a hard shell
+      on its back.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 6
+      Y: 6
+  - Length: 3
+    Forwards: HYP
+    Backwards: PYH
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 3
+    Forwards: ERE
+    Backwards: ERE
+    Definition: Before.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 2
+    ToPosition:
+      X: 6
+      Y: 2
+  - Length: 5
+    Forwards: NEPER
+    Backwards: REPEN
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 4
+  - Length: 4
+    Forwards: HEAR
+    Backwards: RAEH
+    Definition: The sense which you use to hear sounds.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 6
+    ToPosition:
+      X: 2
+      Y: 6
+  - Length: 3
+    Forwards: CEE
+    Backwards: EEC
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 7
+    ToPosition:
+      X: 3
+      Y: 5
+  - Length: 4
+    Forwards: HATS
+    Backwards: STAH
+    Definition: A piece of clothing that you wear on your head.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 2
+    ToPosition:
+      X: 7
+      Y: 5
+  - Length: 4
+    Forwards: CRED
+    Backwards: DERC
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 5
+    Forwards: SHEAR
+    Backwards: RAEHS
+    Definition: To cut the wool off a sheep.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 6
+    ToPosition:
+      X: 2
+      Y: 6
+  - Length: 3
+    Forwards: CEP
+    Backwards: PEC
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 1
+    ToPosition:
+      X: 6
+      Y: 3
+  - Length: 4
+    Forwards: LEET
+    Backwards: TEEL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 5
+  - Length: 3
+    Forwards: HIT
+    Backwards: TIH
+    Definition: To touch someone or something hard and quickly with your hand, a stick,
+      etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 7
+    ToPosition:
+      X: 4
+      Y: 7
+  - Length: 3
+    Forwards: ICE
+    Backwards: ECI
+    Definition: A mixture made from sugar, a liquid, and sometimes a fat such as butter,
+      which is used to cover cakes.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 0
+    ToPosition:
+      X: 6
+      Y: 2
+  - Length: 4
+    Forwards: TEEL
+    Backwards: LEET
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 5
+  - Length: 3
+    Forwards: SUP
+    Backwards: PUS
+    Definition: To eat supper.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 4
+    Forwards: PLEA
+    Backwards: AELP
+    Definition: A request that is urgent or full of emotion.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 6
+  - Length: 3
+    Forwards: EEL
+    Backwards: LEE
+    Definition: A long thin fish that looks like a snake and can be eaten.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 5
+  - Length: 3
+    Forwards: ASH
+    Backwards: HSA
+    Definition: The soft gray powder that remains after something has been burned.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 6
+    ToPosition:
+      X: 5
+      Y: 6
+  - Length: 3
+    Forwards: HAT
+    Backwards: TAH
+    Definition: A piece of clothing that you wear on your head.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 2
+    ToPosition:
+      X: 7
+      Y: 4
+  - Length: 3
+    Forwards: DAB
+    Backwards: BAD
+    Definition: A small amount of something that you put onto a surface with your
+      hand, a cloth, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: PER
+    Backwards: REP
+    Definition: For each.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 0
+      Y: 4
+  - Length: 3
+    Forwards: AIL
+    Backwards: LIA
+    Definition: An ailing company or economy is having a lot of problems and is not
+      successful.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 3
+    ToPosition:
+      X: 5
+      Y: 5
+  - Length: 3
+    Forwards: PEC
+    Backwards: CEP
+    Definition: Pectorals.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 3
+    ToPosition:
+      X: 6
+      Y: 1
+  - Length: 3
+    Forwards: RYE
+    Backwards: EYR
+    Definition: A type of grain that is used for making bread and whiskey.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 4
+    Forwards: RUDD
+    Backwards: DDUR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: HAE
+    Backwards: EAH
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 7
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 3
+    Forwards: LEA
+    Backwards: AEL
+    Definition: An area of land with grass.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 6
+  - Length: 5
+    Forwards: UMBRE
+    Backwards: ERBMU
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 7
+    ToPosition:
+      X: 0
+      Y: 3
+  - Length: 3
+    Forwards: RUD
+    Backwards: DUR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: RED
+    Backwards: DER
+    Definition: The color of blood.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: LID
+    Backwards: DIL
+    Definition: A lidded container, pot, etc. has a lid.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 5
+    Forwards: NAILS
+    Backwards: SLIAN
+    Definition: To fasten something to something else with a nail or nails.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 2
+    ToPosition:
+      X: 6
+      Y: 6
+  - Length: 3
+    Forwards: TAT
+    Backwards: TAT
+    Definition: A type of lace that you make by hand, or the process of making it.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 7
+    ToPosition:
+      X: 2
+      Y: 5
+  - Length: 3
+    Forwards: DEE
+    Backwards: EED
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 6
+  - Length: 3
+    Forwards: RAM
+    Backwards: MAR
+    Definition: To run or drive into something very hard.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  - Length: 4
+    Forwards: SHEA
+    Backwards: AEHS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 6
+    ToPosition:
+      X: 3
+      Y: 6
+  - Length: 3
+    Forwards: PUS
+    Backwards: SUP
+    Definition: A thick yellowish liquid produced in an infected part of your body.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 3
+    Forwards: MAR
+    Backwards: RAM
+    Definition: "The small red planet that is fourth in order from the Sun and is
+      the first planet outside Earth\u2019s orbit."
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 0
+  - Length: 3
+    Forwards: NEP
+    Backwards: PEN
+    Definition: The abbreviation of the new economic policy.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 4
+    Forwards: SHAT
+    Backwards: TAHS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 7
+      Y: 1
+    ToPosition:
+      X: 7
+      Y: 4
+  - Length: 3
+    Forwards: LUR
+    Backwards: RUL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 5
+  - Length: 4
+    Forwards: TATU
+    Backwards: UTAT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 7
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 3
+    Forwards: SEX
+    Backwards: XES
+    Definition: Physical activity between two people that involves the joining of
+      their sexual organs, done either to produce babies, or for pleasure.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 1
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 3
+    Forwards: AHS
+    Backwards: SHA
+    Definition: Used in order to show your surprise, anger, pain, happiness, agreement,
+      etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 3
+    ToPosition:
+      X: 7
+      Y: 1
+  - Length: 4
+    Forwards: BADE
+    Backwards: EDAB
+    Definition: The past tense and past participle of bid.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 5
+  - Length: 4
+    Forwards: HEAD
+    Backwards: DAEH
+    Definition: The top of something.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: DAE
+    Backwards: EAD
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 4
+    Forwards: AILS
+    Backwards: SLIA
+    Definition: An ailing company or economy is having a lot of problems and is not
+      successful.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 3
+    ToPosition:
+      X: 6
+      Y: 6
+  - Length: 3
+    Forwards: BEL
+    Backwards: LEB
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 2
+    ToPosition:
+      X: 5
+      Y: 4
+  - Length: 5
+    Forwards: HITCH
+    Backwards: HCTIH
+    Definition: A small problem that makes something difficult or delays it for a
+      short time.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 7
+    ToPosition:
+      X: 6
+      Y: 7
+  - Length: 3
+    Forwards: REP
+    Backwards: PER
+    Definition: Someone who speaks officially for a company or organization.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 5
+    Forwards: SNAIL
+    Backwards: LIANS
+    Definition: A small soft creature that moves very slowly and has a hard shell
+      on its back.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 5
+      Y: 5
+  - Length: 3
+    Forwards: LEE
+    Backwards: EEL
+    Definition: The side of something that is away from the wind or provides shelter
+      from it.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 5
+  - Length: 3
+    Forwards: HER
+    Backwards: REH
+    Definition: Belonging to or relating to a woman, girl, or female animal that has
+      been mentioned or is known about.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 2
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 3
+    Forwards: BAD
+    Backwards: DAB
+    Definition: Badly.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: NAM
+    Backwards: MAN
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  - Length: 3
+    Forwards: GAS
+    Backwards: SAG
+    Definition: A liquid made from petroleum, used mainly for producing power in the
+      engines of cars, trucks, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 7
+    ToPosition:
+      X: 7
+      Y: 5
+  - Length: 4
+    Forwards: HERE
+    Backwards: EREH
+    Definition: Used when you are giving or offering something to someone.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: ART
+    Backwards: TRA
+    Definition: Showing or resulting from a lot of skill and artistic ability.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 6
+    ToPosition:
+      X: 1
+      Y: 6
+  - Length: 5
+    Forwards: GLEET
+    Backwards: TEELG
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 5
+  - Length: 3
+    Forwards: EHS
+    Backwards: SHE
+    Definition: Used when you want someone to reply to you or agree with something
+      you have said.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 6
+    ToPosition:
+      X: 6
+      Y: 6
+  - Length: 5
+    Forwards: TRULL
+    Backwards: LLURT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 6
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: GYP
+    Backwards: PYG
+    Definition: Something that you were tricked into buying, or a situation in which
+      you feel you have been cheated.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 5
+    ToPosition:
+      X: 6
+      Y: 3
+  - Length: 3
+    Forwards: TEE
+    Backwards: EET
+    Definition: To hit the ball off the tee in a game of golf.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 7
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 3
+    Forwards: PRY
+    Backwards: YRP
+    Definition: To force something open, or force it away from something else.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 4
+    Forwards: ITCH
+    Backwards: HCTI
+    Definition: An uncomfortable feeling on your skin that makes you want to scratch
+      it.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 7
+    ToPosition:
+      X: 6
+      Y: 7
+  - Length: 4
+    Forwards: BERE
+    Backwards: EREB
+    Definition: A narrow passage of water between Asia and North America that connects
+      the Bering Sea to the Arctic Ocean.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 2
+    ToPosition:
+      X: 6
+      Y: 2
+  - Length: 3
+    Forwards: MUN
+    Backwards: NUM
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 5
+    Forwards: HEART
+    Backwards: TRAEH
+    Definition: The part of your body in your chest that pumps blood through your
+      body.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 6
+    ToPosition:
+      X: 1
+      Y: 6
+  - Length: 3
+    Forwards: EAR
+    Backwards: RAE
+    Definition: Having long, short, etc. ears.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 6
+    ToPosition:
+      X: 2
+      Y: 6
+  - Length: 3
+    Forwards: BUB
+    Backwards: BUB
+    Definition: Used to speak to a man you do not know, especially when you are angry.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: SHE
+    Backwards: EHS
+    Definition: A female.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 6
+    ToPosition:
+      X: 4
+      Y: 6
+  - Length: 4
+    Forwards: NAIL
+    Backwards: LIAN
+    Definition: To fasten something to something else with a nail or nails.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 2
+    ToPosition:
+      X: 5
+      Y: 5
+  - Length: 5
+    Forwards: DIORA
+    Backwards: AROID
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 7
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Length: 4
+    Forwards: ABLE
+    Backwards: ELBA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 5
+    Forwards: BELGA
+    Backwards: AGLEB
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 7
+      Y: 6
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: ERN
+    Backwards: NRE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 7
+    ToPosition:
+      X: 3
+      Y: 5
+  - Length: 3
+    Forwards: RYA
+    Backwards: AYR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 3
+    Forwards: USE
+    Backwards: ESU
+    Definition: The state of being useful.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: ULE
+    Backwards: ELU
+    Definition: A small type of something.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: REH
+    Backwards: HER
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 7
+      Y: 2
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 3
+    Forwards: MAN
+    Backwards: NAM
+    Definition: Having qualities that people expect and admire in a man, such as being
+      brave and strong.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  - Length: 3
+    Forwards: SAG
+    Backwards: GAS
+    Definition: To hang down or bend in the middle, especially because of the weight
+      of something.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 7
+    ToPosition:
+      X: 7
+      Y: 5
+  - Length: 3
+    Forwards: PEN
+    Backwards: NEP
+    Definition: A written abbreviation of peninsula.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 3
+    Forwards: RHO
+    Backwards: OHR
+    Definition: The 17th letter of the Greek alphabet.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 2
+  CharGrid:
+  - Character: 78
+    NumberOfUses: 5
+  - Character: 69
+    NumberOfUses: 4
+  - Character: 80
+    NumberOfUses: 5
+  - Character: 69
+    NumberOfUses: 6
+  - Character: 82
+    NumberOfUses: 7
+  - Character: 66
+    NumberOfUses: 3
+  - Character: 77
+    NumberOfUses: 1
+  - Character: 85
+    NumberOfUses: 2
+  - Character: 65
+    NumberOfUses: 3
+  - Character: 83
+    NumberOfUses: 6
+  - Character: 76
+    NumberOfUses: 3
+  - Character: 76
+    NumberOfUses: 4
+  - Character: 85
+    NumberOfUses: 9
+  - Character: 82
+    NumberOfUses: 3
+  - Character: 84
+    NumberOfUses: 4
+  - Character: 78
+    NumberOfUses: 2
+  - Character: 77
+    NumberOfUses: 6
+  - Character: 85
+    NumberOfUses: 5
+  - Character: 78
+    NumberOfUses: 5
+  - Character: 66
+    NumberOfUses: 3
+  - Character: 68
+    NumberOfUses: 6
+  - Character: 84
+    NumberOfUses: 5
+  - Character: 82
+    NumberOfUses: 7
+  - Character: 72
+    NumberOfUses: 4
+  - Character: 65
+    NumberOfUses: 5
+  - Character: 80
+    NumberOfUses: 3
+  - Character: 66
+    NumberOfUses: 7
+  - Character: 65
+    NumberOfUses: 12
+  - Character: 68
+    NumberOfUses: 8
+  - Character: 69
+    NumberOfUses: 11
+  - Character: 65
+    NumberOfUses: 11
+  - Character: 73
+    NumberOfUses: 4
+  - Character: 82
+    NumberOfUses: 5
+  - Character: 89
+    NumberOfUses: 5
+  - Character: 69
+    NumberOfUses: 6
+  - Character: 69
+    NumberOfUses: 4
+  - Character: 73
+    NumberOfUses: 9
+  - Character: 69
+    NumberOfUses: 10
+  - Character: 69
+    NumberOfUses: 10
+  - Character: 84
+    NumberOfUses: 7
+  - Character: 79
+    NumberOfUses: 3
+  - Character: 72
+    NumberOfUses: 3
+  - Character: 82
+    NumberOfUses: 10
+  - Character: 88
+    NumberOfUses: 2
+  - Character: 76
+    NumberOfUses: 6
+  - Character: 76
+    NumberOfUses: 12
+  - Character: 72
+    NumberOfUses: 7
+  - Character: 67
+    NumberOfUses: 4
+  - Character: 73
+    NumberOfUses: 3
+  - Character: 67
+    NumberOfUses: 4
+  - Character: 69
+    NumberOfUses: 10
+  - Character: 80
+    NumberOfUses: 5
+  - Character: 89
+    NumberOfUses: 2
+  - Character: 71
+    NumberOfUses: 4
+  - Character: 83
+    NumberOfUses: 8
+  - Character: 72
+    NumberOfUses: 3
+  - Character: 68
+    NumberOfUses: 2
+  - Character: 83
+    NumberOfUses: 4
+  - Character: 72
+    NumberOfUses: 7
+  - Character: 65
+    NumberOfUses: 4
+  - Character: 84
+    NumberOfUses: 4
+  - Character: 83
+    NumberOfUses: 4
+  - Character: 65
+    NumberOfUses: 5
+  - Character: 71
+    NumberOfUses: 3

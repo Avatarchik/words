@@ -1,0 +1,627 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 06_0003_0048
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: 9f5c817b-9dc8-4d56-a8b4-ca56915378db
+  Size: 6
+  WordCount: 48
+  MaxCharacterUsage: 12
+  Words:
+  - Length: 5
+    Forwards: BUNYA
+    Backwards: AYNUB
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 5
+    Forwards: QUIMS
+    Backwards: SMIUQ
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 1
+  - Length: 5
+    Forwards: RULES
+    Backwards: SELUR
+    Definition: Ruled paper has parallel lines printed across it.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 5
+    Forwards: STOCK
+    Backwards: KCOTS
+    Definition: A supply of a particular type of thing that a store has to sell.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 5
+    Forwards: LOBUS
+    Backwards: SUBOL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 4
+  - Length: 5
+    Forwards: FADER
+    Backwards: REDAF
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 5
+    Forwards: ABLET
+    Backwards: TELBA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: NAN
+    Backwards: NAN
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: ULE
+    Backwards: ELU
+    Definition: A small type of something.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: RED
+    Backwards: DER
+    Definition: The color of blood.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 4
+    Forwards: STAR
+    Backwards: RATS
+    Definition: A large ball of burning gases in space that can be seen at night as
+      a point of light in the sky.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 3
+    Forwards: SEN
+    Backwards: NES
+    Definition: The written abbreviation of senator.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: SUB
+    Backwards: BUS
+    Definition: A submarine.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 4
+    Forwards: RULE
+    Backwards: ELUR
+    Definition: Ruled paper has parallel lines printed across it.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: FAD
+    Backwards: DAF
+    Definition: Something that someone likes or does for a short time, or that is
+      fashionable for a short time.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: ANE
+    Backwards: ENA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: EYE
+    Backwards: EYE
+    Definition: One of the two parts of the body that you see with.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: LOB
+    Backwards: BOL
+    Definition: To throw something somewhere in a high curve, especially over a wall,
+      fence, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 4
+    Forwards: ABLE
+    Backwards: ELBA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: BAR
+    Backwards: RAB
+    Definition: Unless something happens.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 0
+  - Length: 3
+    Forwards: RAT
+    Backwards: TAR
+    Definition: An animal that looks like a large mouse with a long tail.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: LET
+    Backwards: TEL
+    Definition: A smaller type of something.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: BET
+    Backwards: TEB
+    Definition: An agreement to risk money on the result of a race, game, competition,
+      etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: TEL
+    Backwards: LET
+    Definition: "The written abbreviation of \u201Ctelephone number\u201D."
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: LES
+    Backwards: SEL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 2
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 3
+    Forwards: TAR
+    Backwards: RAT
+    Definition: A black substance, thick and sticky when hot but hard when cold, used
+      especially for making road surfaces.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 4
+    Forwards: TOCK
+    Backwards: KCOT
+    Definition: The sound that a large clock makes when it ticks.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 3
+    Forwards: BUS
+    Backwards: SUB
+    Definition: A large road vehicle that can carry many people.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 0
+      Y: 4
+  - Length: 4
+    Forwards: FADE
+    Backwards: EDAF
+    Definition: To gradually disappear.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: LEA
+    Backwards: AEL
+    Definition: An area of land with grass.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 4
+    Forwards: ULES
+    Backwards: SELU
+    Definition: A small type of something.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 3
+    Forwards: KAE
+    Backwards: EAK
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: COT
+    Backwards: TOC
+    Definition: A light narrow bed that can be folded and stored.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 5
+  - Length: 4
+    Forwards: SENA
+    Backwards: ANES
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 4
+    Forwards: ANES
+    Backwards: SENA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 3
+    Forwards: SEL
+    Backwards: LES
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: CAY
+    Backwards: YAC
+    Definition: A very small island formed from coral or sand.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 4
+    Forwards: BLET
+    Backwards: TELB
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 4
+    Forwards: QUIM
+    Backwards: MIUQ
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 3
+    Forwards: BUN
+    Backwards: NUB
+    Definition: A small round type of bread.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 4
+    Forwards: RATS
+    Backwards: STAR
+    Definition: An animal that looks like a large mouse with a long tail.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 3
+    Forwards: RUL
+    Backwards: LUR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 4
+    Forwards: STOC
+    Backwards: COTS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 5
+  - Length: 3
+    Forwards: NUB
+    Backwards: BUN
+    Definition: The central or main part of something.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 4
+    Forwards: LEST
+    Backwards: TSEL
+    Definition: Afraid or worried that a particular thing might happen.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 4
+    Forwards: BUSS
+    Backwards: SSUB
+    Definition: A plural of the noun bus, and a third person singular of the verb
+      bus.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 3
+    Forwards: EST
+    Backwards: TSE
+    Definition: The written abbreviation of established used after the names of a
+      business to show when it was started.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: ERK
+    Backwards: KRE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 3
+  CharGrid:
+  - Character: 76
+    NumberOfUses: 2
+  - Character: 79
+    NumberOfUses: 2
+  - Character: 66
+    NumberOfUses: 6
+  - Character: 85
+    NumberOfUses: 4
+  - Character: 83
+    NumberOfUses: 4
+  - Character: 83
+    NumberOfUses: 3
+  - Character: 82
+    NumberOfUses: 4
+  - Character: 85
+    NumberOfUses: 5
+  - Character: 76
+    NumberOfUses: 9
+  - Character: 69
+    NumberOfUses: 9
+  - Character: 83
+    NumberOfUses: 11
+  - Character: 84
+    NumberOfUses: 6
+  - Character: 65
+    NumberOfUses: 3
+  - Character: 66
+    NumberOfUses: 3
+  - Character: 76
+    NumberOfUses: 5
+  - Character: 69
+    NumberOfUses: 12
+  - Character: 84
+    NumberOfUses: 9
+  - Character: 79
+    NumberOfUses: 4
+  - Character: 66
+    NumberOfUses: 4
+  - Character: 85
+    NumberOfUses: 3
+  - Character: 78
+    NumberOfUses: 8
+  - Character: 89
+    NumberOfUses: 3
+  - Character: 65
+    NumberOfUses: 8
+  - Character: 67
+    NumberOfUses: 5
+  - Character: 70
+    NumberOfUses: 3
+  - Character: 65
+    NumberOfUses: 7
+  - Character: 68
+    NumberOfUses: 4
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 82
+    NumberOfUses: 7
+  - Character: 75
+    NumberOfUses: 4
+  - Character: 78
+    NumberOfUses: 1
+  - Character: 83
+    NumberOfUses: 1
+  - Character: 77
+    NumberOfUses: 2
+  - Character: 73
+    NumberOfUses: 2
+  - Character: 85
+    NumberOfUses: 2
+  - Character: 81
+    NumberOfUses: 2

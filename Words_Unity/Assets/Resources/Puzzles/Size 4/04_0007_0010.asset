@@ -1,0 +1,165 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 04_0007_0010
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: 964fb107-b507-4874-b0c8-850f5f883a62
+  Size: 4
+  WordCount: 10
+  MaxCharacterUsage: 3
+  Words:
+  - Length: 3
+    Forwards: KEP
+    Backwards: PEK
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 3
+    Forwards: NIM
+    Backwards: MIN
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 2
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: PRE
+    Backwards: ERP
+    Definition: Before a particular event or period of time.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 0
+      Y: 1
+  - Length: 3
+    Forwards: BYE
+    Backwards: EYB
+    Definition: Goodbye.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 0
+  - Length: 3
+    Forwards: VIE
+    Backwards: EIV
+    Definition: To compete very hard with someone in order to get something.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: HEY
+    Backwards: YEH
+    Definition: "A shout used to get someone\u2019s attention or to express surprise,
+      interest, or annoyance."
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  - Length: 3
+    Forwards: YIP
+    Backwards: PIY
+    Definition: If a dog yips, it makes short, high, loud sounds because it is afraid
+      or excited.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 3
+    Forwards: HER
+    Backwards: REH
+    Definition: Belonging to or relating to a woman, girl, or female animal that has
+      been mentioned or is known about.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 3
+    Forwards: AMP
+    Backwards: PMA
+    Definition: An amplifier.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 3
+    Forwards: REH
+    Backwards: HER
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 2
+  CharGrid:
+  - Character: 72
+    NumberOfUses: 3
+  - Character: 69
+    NumberOfUses: 3
+  - Character: 82
+    NumberOfUses: 3
+  - Character: 80
+    NumberOfUses: 1
+  - Character: 69
+    NumberOfUses: 2
+  - Character: 80
+    NumberOfUses: 3
+  - Character: 77
+    NumberOfUses: 2
+  - Character: 65
+    NumberOfUses: 1
+  - Character: 89
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 2
+  - Character: 73
+    NumberOfUses: 3
+  - Character: 86
+    NumberOfUses: 1
+  - Character: 66
+    NumberOfUses: 1
+  - Character: 75
+    NumberOfUses: 1
+  - Character: 78
+    NumberOfUses: 1
+  - Character: 89
+    NumberOfUses: 1

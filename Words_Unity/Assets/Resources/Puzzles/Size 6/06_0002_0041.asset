@@ -1,0 +1,550 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 06_0002_0041
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: c62a46ca-e8b5-4951-9439-0f0141bfaa6e
+  Size: 6
+  WordCount: 41
+  MaxCharacterUsage: 12
+  Words:
+  - Length: 5
+    Forwards: SICKS
+    Backwards: SKCIS
+    Definition: Suffering from a disease or illness.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 4
+    Forwards: DAIS
+    Backwards: SIAD
+    Definition: A low stage or platform indoors that you stand or sit on so that people
+      can see and hear you, for example when you are making a speech.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 0
+  - Length: 5
+    Forwards: ARARS
+    Backwards: SRARA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 5
+    Forwards: SCRAT
+    Backwards: TARCS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 5
+    Forwards: TRIES
+    Backwards: SEIRT
+    Definition: Three.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 5
+    Forwards: TERRA
+    Backwards: ARRET
+    Definition: The Roman name for the goddess Gaea.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 4
+  - Length: 4
+    Forwards: CAMS
+    Backwards: SMAC
+    Definition: The use of computers to help make industrial products.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 3
+    Forwards: LAS
+    Backwards: SAL
+    Definition: A city in the desert of the U.S. state of Nevada.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: AHA
+    Backwards: AHA
+    Definition: Used in order to show that you understand or realize something.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 4
+    Forwards: RUSA
+    Backwards: ASUR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 0
+      Y: 1
+  - Length: 3
+    Forwards: SIR
+    Backwards: RIS
+    Definition: Used when speaking to a man in order to be polite or to show respect.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: ERK
+    Backwards: KRE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: DOR
+    Backwards: ROD
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: WAR
+    Backwards: RAW
+    Definition: At war or fighting each other.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 4
+    Forwards: SEIR
+    Backwards: RIES
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 5
+  - Length: 3
+    Forwards: ETH
+    Backwards: HTE
+    Definition: Used to form the third person singular of verbs.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: MAC
+    Backwards: CAM
+    Definition: A type of personal computer.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 3
+    Forwards: CAM
+    Backwards: MAC
+    Definition: The use of computers to help make industrial products.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: ERR
+    Backwards: RRE
+    Definition: To be more careful, safe, etc. than is necessary rather than risk
+      making a mistake.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 3
+    Forwards: TAR
+    Backwards: RAT
+    Definition: A black substance, thick and sticky when hot but hard when cold, used
+      especially for making road surfaces.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 4
+    Forwards: DORK
+    Backwards: KROD
+    Definition: Someone who you think is stupid, because her or she behaves strangely
+      or wears strange clothes.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: SEI
+    Backwards: IES
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 5
+  - Length: 3
+    Forwards: RAT
+    Backwards: TAR
+    Definition: An animal that looks like a large mouse with a long tail.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: COL
+    Backwards: LOC
+    Definition: The written abbreviation of column.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: SAL
+    Backwards: LAS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: SAM
+    Backwards: MAS
+    Definition: A U.S. soldier and politician who fought to make Texas independent
+      from Mexico and was president of the Republic of Texas from 1836 until it became
+      a state of the U.S. in 1845.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: ARC
+    Backwards: CRA
+    Definition: A curved shape.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 2
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 4
+    Forwards: SICK
+    Backwards: KCIS
+    Definition: Suffering from a disease or illness.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: AIL
+    Backwards: LIA
+    Definition: An ailing company or economy is having a lot of problems and is not
+      successful.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: SIC
+    Backwards: CIS
+    Definition: Used to tell a dog to attack someone.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 4
+    Forwards: ARAR
+    Backwards: RARA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 4
+    Forwards: TRIE
+    Backwards: EIRT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 5
+  - Length: 3
+    Forwards: AIS
+    Backwards: SIA
+    Definition: The abbreviation of artificial intelligence.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 0
+  - Length: 3
+    Forwards: TER
+    Backwards: RET
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 4
+    Forwards: SCRA
+    Backwards: ARCS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: SAI
+    Backwards: IAS
+    Definition: A good quality that you cannot easily describe.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: RAW
+    Backwards: WAR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 4
+    Forwards: SALS
+    Backwards: SLAS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: MAS
+    Backwards: SAM
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: HAE
+    Backwards: EAH
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: ROD
+    Backwards: DOR
+    Definition: A long thin pole or bar.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 2
+  CharGrid:
+  - Character: 83
+    NumberOfUses: 1
+  - Character: 65
+    NumberOfUses: 2
+  - Character: 83
+    NumberOfUses: 3
+  - Character: 85
+    NumberOfUses: 1
+  - Character: 82
+    NumberOfUses: 1
+  - Character: 84
+    NumberOfUses: 2
+  - Character: 83
+    NumberOfUses: 6
+  - Character: 73
+    NumberOfUses: 5
+  - Character: 67
+    NumberOfUses: 6
+  - Character: 75
+    NumberOfUses: 4
+  - Character: 83
+    NumberOfUses: 3
+  - Character: 82
+    NumberOfUses: 3
+  - Character: 73
+    NumberOfUses: 2
+  - Character: 76
+    NumberOfUses: 5
+  - Character: 82
+    NumberOfUses: 9
+  - Character: 77
+    NumberOfUses: 5
+  - Character: 82
+    NumberOfUses: 3
+  - Character: 73
+    NumberOfUses: 5
+  - Character: 65
+    NumberOfUses: 2
+  - Character: 79
+    NumberOfUses: 4
+  - Character: 65
+    NumberOfUses: 12
+  - Character: 72
+    NumberOfUses: 3
+  - Character: 65
+    NumberOfUses: 7
+  - Character: 69
+    NumberOfUses: 6
+  - Character: 68
+    NumberOfUses: 4
+  - Character: 67
+    NumberOfUses: 4
+  - Character: 84
+    NumberOfUses: 4
+  - Character: 83
+    NumberOfUses: 4
+  - Character: 82
+    NumberOfUses: 2
+  - Character: 83
+    NumberOfUses: 5
+  - Character: 84
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 4
+  - Character: 82
+    NumberOfUses: 3
+  - Character: 82
+    NumberOfUses: 4
+  - Character: 65
+    NumberOfUses: 5
+  - Character: 87
+    NumberOfUses: 2

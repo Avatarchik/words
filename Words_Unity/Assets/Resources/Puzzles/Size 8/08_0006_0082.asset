@@ -1,0 +1,1072 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 08_0006_0082
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: 9d1499e0-9e8f-4aff-a994-c7ae24aa5724
+  Size: 8
+  WordCount: 82
+  MaxCharacterUsage: 12
+  Words:
+  - Length: 7
+    Forwards: MEDDLED
+    Backwards: DELDDEM
+    Definition: To deliberately try to influence or change a situation that does not
+      concern you, or that you do not understand fully.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 6
+  - Length: 7
+    Forwards: FINDERS
+    Backwards: SREDNIF
+    Definition: Someone who finds something, especially something that was lost or
+      stolen.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 6
+      Y: 3
+  - Length: 7
+    Forwards: NYMPHET
+    Backwards: TEHPMYN
+    Definition: A young girl who is very sexually attractive.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 7
+    ToPosition:
+      X: 6
+      Y: 7
+  - Length: 7
+    Forwards: KHANUMS
+    Backwards: SMUNAHK
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 6
+  - Length: 7
+    Forwards: STRATHS
+    Backwards: SHTARTS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 7
+      Y: 7
+    ToPosition:
+      X: 7
+      Y: 1
+  - Length: 6
+    Forwards: FAINLY
+    Backwards: YLNIAF
+    Definition: If someone would fain do something, he or she would like to do it.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 6
+  - Length: 4
+    Forwards: VEAL
+    Backwards: LAEV
+    Definition: Meat from a calfa young cow.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 6
+    Forwards: ENSOUL
+    Backwards: LUOSNE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 1
+    ToPosition:
+      X: 6
+      Y: 6
+  - Length: 3
+    Forwards: ECU
+    Backwards: UCE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 3
+    ToPosition:
+      X: 6
+      Y: 5
+  - Length: 4
+    Forwards: LINN
+    Backwards: NNIL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 7
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 0
+  - Length: 3
+    Forwards: GAR
+    Backwards: RAG
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 4
+    Forwards: TOGS
+    Backwards: SGOT
+    Definition: Clothes.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 6
+  - Length: 4
+    Forwards: FITS
+    Backwards: STIF
+    Definition: Happening for short and irregular periods of time.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 0
+      Y: 6
+  - Length: 3
+    Forwards: MAD
+    Backwards: DAM
+    Definition: Very much in love with someone.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 3
+    Forwards: MET
+    Backwards: TEM
+    Definition: The past tense and past participle of meet.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 3
+    Forwards: ITS
+    Backwards: STI
+    Definition: Belonging or relating to a thing, situation, person, or idea that
+      has been mentioned or is known about.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 0
+      Y: 6
+  - Length: 3
+    Forwards: FIT
+    Backwards: TIF
+    Definition: Happening for short and irregular periods of time.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 0
+      Y: 5
+  - Length: 3
+    Forwards: LUD
+    Backwards: DUL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: EGG
+    Backwards: GGE
+    Definition: To encourage someone to do something, especially something that he
+      or she should not do or does not want to do.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 7
+    ToPosition:
+      X: 5
+      Y: 5
+  - Length: 3
+    Forwards: SEG
+    Backwards: GES
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 7
+      Y: 1
+    ToPosition:
+      X: 5
+      Y: 1
+  - Length: 4
+    Forwards: RATH
+    Backwards: HTAR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 7
+      Y: 5
+    ToPosition:
+      X: 7
+      Y: 2
+  - Length: 4
+    Forwards: KHAN
+    Backwards: NAHK
+    Definition: A ruler or official in India or central Asia, or their title.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: AIN
+    Backwards: NIA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 2
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 3
+    Forwards: INN
+    Backwards: NNI
+    Definition: A word used in the names of some hotels and restaurants.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 0
+  - Length: 4
+    Forwards: CRAG
+    Backwards: GARC
+    Definition: A high and very steep rough rock or mass of rocks.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 5
+      Y: 1
+  - Length: 3
+    Forwards: HET
+    Backwards: TEH
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 7
+    ToPosition:
+      X: 6
+      Y: 7
+  - Length: 3
+    Forwards: UMS
+    Backwards: SMU
+    Definition: Used when you are thinking about what to say next.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 6
+  - Length: 3
+    Forwards: RAG
+    Backwards: GAR
+    Definition: To make jokes and laugh at someone in order to embarrass him or her.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 3
+    ToPosition:
+      X: 5
+      Y: 1
+  - Length: 3
+    Forwards: MAK
+    Backwards: KAM
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  - Length: 3
+    Forwards: GAD
+    Backwards: DAG
+    Definition: To go out and enjoy yourself, going to many different places, especially
+      when you should be doing something else.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: LIN
+    Backwards: NIL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 7
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 0
+  - Length: 4
+    Forwards: TART
+    Backwards: TRAT
+    Definition: If a woman tarts herself up, she tries to make herself look attractive,
+      by putting on jewelry,makeup, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 3
+    ToPosition:
+      X: 7
+      Y: 6
+  - Length: 5
+    Forwards: NYMPH
+    Backwards: HPMYN
+    Definition: One of the spirits of nature who, according to ancient Greek and Roman
+      stories, appeared as young girls living in trees, mountains, streams, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 7
+    ToPosition:
+      X: 4
+      Y: 7
+  - Length: 3
+    Forwards: RED
+    Backwards: DER
+    Definition: The color of blood.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: ELD
+    Backwards: DLE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 4
+    Forwards: IGAD
+    Backwards: DAGI
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 6
+    Forwards: FINDER
+    Backwards: REDNIF
+    Definition: Someone who finds something, especially something that was lost or
+      stolen.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 3
+    Forwards: RUG
+    Backwards: GUR
+    Definition: A piece of thick cloth or wool that covers part of a floor, used for
+      warmth or as a decoration.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 5
+  - Length: 3
+    Forwards: RAT
+    Backwards: TAR
+    Definition: An animal that looks like a large mouse with a long tail.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 5
+    ToPosition:
+      X: 7
+      Y: 3
+  - Length: 4
+    Forwards: FAIN
+    Backwards: NIAF
+    Definition: If someone would fain do something, he or she would like to do it.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 3
+    Forwards: FAH
+    Backwards: HAF
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: HAN
+    Backwards: NAH
+    Definition: A German painter who painted pictures for churches and was the father
+      of Hans Holbein the Younger.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 4
+    Forwards: INLY
+    Backwards: YLNI
+    Definition: Used with the name of a container, place, or area to show where someone
+      or something is.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 6
+  - Length: 4
+    Forwards: TRAT
+    Backwards: TART
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 7
+      Y: 6
+    ToPosition:
+      X: 7
+      Y: 3
+  - Length: 3
+    Forwards: ENS
+    Backwards: SNE
+    Definition: Made of a particular material or substance.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 1
+    ToPosition:
+      X: 6
+      Y: 3
+  - Length: 3
+    Forwards: FIN
+    Backwards: NIF
+    Definition: One of the thin body parts that a fish uses to swim.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: EAR
+    Backwards: RAE
+    Definition: Having long, short, etc. ears.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 1
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 6
+    Forwards: STRATH
+    Backwards: HTARTS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 7
+      Y: 7
+    ToPosition:
+      X: 7
+      Y: 2
+  - Length: 3
+    Forwards: DAG
+    Backwards: GAD
+    Definition: The Secretary General of the United Nations from 1953 until his death
+      in 1961.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 3
+    ToPosition:
+      X: 5
+      Y: 1
+  - Length: 4
+    Forwards: ELMY
+    Backwards: YMLE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 6
+  - Length: 3
+    Forwards: FAD
+    Backwards: DAF
+    Definition: Something that someone likes or does for a short time, or that is
+      fashionable for a short time.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: DEL
+    Backwards: LED
+    Definition: A group of islands near the south coast of South America, which belong
+      to Chile and Argentina.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 6
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 4
+    Forwards: SOUL
+    Backwards: LUOS
+    Definition: The part of a person that is not physical and contains someone's thoughts,
+      feelings, character, etc., that many people believe continues to exist after
+      death.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 3
+    ToPosition:
+      X: 6
+      Y: 6
+  - Length: 3
+    Forwards: ELM
+    Backwards: MLE
+    Definition: A type of large tree with broad leaves, or the wood from this tree.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 5
+  - Length: 3
+    Forwards: LEA
+    Backwards: AEL
+    Definition: An area of land with grass.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 3
+    Forwards: TAR
+    Backwards: RAT
+    Definition: A black substance, thick and sticky when hot but hard when cold, used
+      especially for making road surfaces.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 3
+    ToPosition:
+      X: 7
+      Y: 5
+  - Length: 3
+    Forwards: MUN
+    Backwards: NUM
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: SAL
+    Backwards: LAS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 4
+    Forwards: FIND
+    Backwards: DNIF
+    Definition: The information that someone has learned as a result of his or her
+      studies, work, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: LED
+    Backwards: DEL
+    Definition: The past tense and past participle of lead.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 6
+  - Length: 3
+    Forwards: SOU
+    Backwards: UOS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 3
+    ToPosition:
+      X: 6
+      Y: 5
+  - Length: 3
+    Forwards: KEA
+    Backwards: AEK
+    Definition: A mountain on the island of Hawaii that is an active volcano.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: ART
+    Backwards: TRA
+    Definition: Showing or resulting from a lot of skill and artistic ability.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 4
+    ToPosition:
+      X: 7
+      Y: 6
+  - Length: 6
+    Forwards: MEDDLE
+    Backwards: ELDDEM
+    Definition: To deliberately try to influence or change a situation that does not
+      concern you, or that you do not understand fully.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 5
+  - Length: 3
+    Forwards: ARC
+    Backwards: CRA
+    Definition: A curved shape.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 2
+    ToPosition:
+      X: 5
+      Y: 4
+  - Length: 3
+    Forwards: ERS
+    Backwards: SRE
+    Definition: A sound you make when you pause to correct something you have just
+      said, or when you do not know exactly what to say.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 3
+    ToPosition:
+      X: 6
+      Y: 3
+  - Length: 3
+    Forwards: EDH
+    Backwards: HDE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 5
+    Forwards: RATHS
+    Backwards: SHTAR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 7
+      Y: 5
+    ToPosition:
+      X: 7
+      Y: 1
+  - Length: 6
+    Forwards: KHANUM
+    Backwards: MUNAHK
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 5
+  - Length: 3
+    Forwards: LAS
+    Backwards: SAL
+    Definition: A city in the desert of the U.S. state of Nevada.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 6
+      Y: 3
+  - Length: 3
+    Forwards: TOG
+    Backwards: GOT
+    Definition: Clothes.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 3
+    ToPosition:
+      X: 5
+      Y: 5
+  - Length: 4
+    Forwards: STRA
+    Backwards: ARTS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 7
+      Y: 7
+    ToPosition:
+      X: 7
+      Y: 4
+  - Length: 5
+    Forwards: STRAT
+    Backwards: TARTS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 7
+      Y: 7
+    ToPosition:
+      X: 7
+      Y: 3
+  - Length: 3
+    Forwards: ULT
+    Backwards: TLU
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 7
+    ToPosition:
+      X: 6
+      Y: 5
+  - Length: 4
+    Forwards: HETS
+    Backwards: STEH
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 7
+      Y: 7
+    ToPosition:
+      X: 4
+      Y: 7
+  - Length: 3
+    Forwards: UGH
+    Backwards: HGU
+    Definition: Used to show strong dislike.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 7
+    ToPosition:
+      X: 6
+      Y: 5
+  - Length: 4
+    Forwards: ERST
+    Backwards: TSRE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 7
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: UNI
+    Backwards: INU
+    Definition: One.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: DAM
+    Backwards: MAD
+    Definition: A special wall built across a river, stream, etc. to stop the water
+      from flowing, especially to make a lake or produce electricity.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 3
+    Forwards: NIL
+    Backwards: LIN
+    Definition: Nothing or zero.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 0
+  - Length: 3
+    Forwards: CUT
+    Backwards: TUC
+    Definition: To use a knife, scissors, etc. to divide something into two or more
+      pieces, or to remove a piece from the main part of something.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 6
+    ToPosition:
+      X: 5
+      Y: 4
+  - Length: 3
+    Forwards: KAM
+    Backwards: MAK
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  CharGrid:
+  - Character: 77
+    NumberOfUses: 4
+  - Character: 65
+    NumberOfUses: 2
+  - Character: 68
+    NumberOfUses: 2
+  - Character: 70
+    NumberOfUses: 7
+  - Character: 73
+    NumberOfUses: 4
+  - Character: 84
+    NumberOfUses: 3
+  - Character: 83
+    NumberOfUses: 2
+  - Character: 78
+    NumberOfUses: 2
+  - Character: 65
+    NumberOfUses: 2
+  - Character: 70
+    NumberOfUses: 3
+  - Character: 65
+    NumberOfUses: 4
+  - Character: 73
+    NumberOfUses: 8
+  - Character: 78
+    NumberOfUses: 5
+  - Character: 76
+    NumberOfUses: 3
+  - Character: 89
+    NumberOfUses: 3
+  - Character: 89
+    NumberOfUses: 2
+  - Character: 75
+    NumberOfUses: 6
+  - Character: 72
+    NumberOfUses: 6
+  - Character: 65
+    NumberOfUses: 5
+  - Character: 78
+    NumberOfUses: 9
+  - Character: 85
+    NumberOfUses: 6
+  - Character: 77
+    NumberOfUses: 7
+  - Character: 83
+    NumberOfUses: 2
+  - Character: 77
+    NumberOfUses: 2
+  - Character: 77
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 4
+  - Character: 68
+    NumberOfUses: 3
+  - Character: 68
+    NumberOfUses: 12
+  - Character: 76
+    NumberOfUses: 7
+  - Character: 69
+    NumberOfUses: 6
+  - Character: 68
+    NumberOfUses: 3
+  - Character: 80
+    NumberOfUses: 2
+  - Character: 78
+    NumberOfUses: 2
+  - Character: 76
+    NumberOfUses: 3
+  - Character: 65
+    NumberOfUses: 6
+  - Character: 69
+    NumberOfUses: 10
+  - Character: 86
+    NumberOfUses: 1
+  - Character: 84
+    NumberOfUses: 1
+  - Character: 83
+    NumberOfUses: 1
+  - Character: 72
+    NumberOfUses: 5
+  - Character: 78
+    NumberOfUses: 4
+  - Character: 71
+    NumberOfUses: 7
+  - Character: 65
+    NumberOfUses: 7
+  - Character: 82
+    NumberOfUses: 10
+  - Character: 67
+    NumberOfUses: 4
+  - Character: 71
+    NumberOfUses: 4
+  - Character: 71
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 4
+  - Character: 73
+    NumberOfUses: 5
+  - Character: 69
+    NumberOfUses: 4
+  - Character: 78
+    NumberOfUses: 2
+  - Character: 83
+    NumberOfUses: 9
+  - Character: 79
+    NumberOfUses: 5
+  - Character: 85
+    NumberOfUses: 8
+  - Character: 76
+    NumberOfUses: 3
+  - Character: 84
+    NumberOfUses: 4
+  - Character: 76
+    NumberOfUses: 4
+  - Character: 83
+    NumberOfUses: 3
+  - Character: 72
+    NumberOfUses: 4
+  - Character: 84
+    NumberOfUses: 12
+  - Character: 65
+    NumberOfUses: 11
+  - Character: 82
+    NumberOfUses: 12
+  - Character: 84
+    NumberOfUses: 8
+  - Character: 83
+    NumberOfUses: 5
