@@ -4,6 +4,7 @@ import webapp2
 from google.appengine.ext import ndb
 
 class WordDefinition(ndb.Model):
+
 	day = ndb.IntegerProperty(indexed=True)
 	word = ndb.StringProperty(indexed=False)
 	definition = ndb.StringProperty(indexed=False)
@@ -19,9 +20,12 @@ class WOTD(webapp2.RequestHandler):
 		day = self.request.get('day', -1)
 		self.response.write(day)
 
-		todays_wotd_query = WordDefinition.query(ancestor=ndb.Key('day', day))
-		todays_wotd = todays_wotd_query.fetch(1)
-		self.response.write(todays_wotd)
+		if day != -1:
+			todays_wotd_query = WordDefinition.query(WordDefinition.day == day)
+			todays_wotd = todays_wotd_query.fetch(1)
+			self.response.write(todays_wotd)
+		else:
+			self.response.write('UNKNOWN')
 
 app = webapp2.WSGIApplication([
 	('/', PageNotFound),
