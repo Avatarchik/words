@@ -11,8 +11,8 @@ app.config['DEBUG'] = True
 @app.route('/')
 def hello():
 	# GET
-	name1 = self.request.get_all("thing")
-	print(name1)
+	#name1 = self.request.get_all("thing")
+	#print(name1)
 
 	"""Return a friendly HTTP greeting."""
 	return 'Hello World! It Works! test 456'
