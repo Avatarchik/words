@@ -4,9 +4,9 @@ threadsafe: yes
 
 handlers:
 - url: /wotd/.*
-  script: wotd/wotd.app
+  script: wotd.wotd.app
 - url: /wotd_uploader/.*
-  script: wotd_uploader/wotd_uploader.app
+  script: wotd_uploader.wotd_uploader.app
 
 libraries:
 - name: webapp2
