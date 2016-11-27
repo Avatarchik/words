@@ -122,6 +122,7 @@ RectTransform:
   - {fileID: 2003554145}
   - {fileID: 519188321}
   - {fileID: 274764547}
+  - {fileID: 273792713}
   m_Father: {fileID: 1920041286}
   m_RootOrder: 3
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -2584,6 +2585,156 @@ MonoBehaviour:
   SetNormalColour: 1
   SetHighlightedColour: 1
   SetPressedColour: 1
+--- !u!1 &273792712
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 273792713}
+  - 222: {fileID: 273792716}
+  - 114: {fileID: 273792715}
+  - 114: {fileID: 273792714}
+  - 114: {fileID: 273792717}
+  m_Layer: 5
+  m_Name: WordOfTheDay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &273792713
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 273792712}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.000030517578}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 6641434}
+  m_RootOrder: 5
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 36, y: -48}
+  m_SizeDelta: {x: 440, y: 72}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &273792714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 273792712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d540cdb7ad030294b97bfddf52aa83df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextRef: {fileID: 273792715}
+  TextFormat: Word of the Day - {0}\n\n{1}
+  GAEURLFormat: https://words-dlc.appspot.com/wotd/?daystamp={0}
+--- !u!114 &273792715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 273792712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 9f9a418eed9be59418ae9f23008d16c0, type: 3}
+    m_FontSize: 18
+    m_FontStyle: 2
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Word of the Day
+--- !u!222 &273792716
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 273792712}
+--- !u!114 &273792717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 273792712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a4254b0913bbad4995302cf6f620901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RectTransRef: {fileID: 273792713}
+  Left:
+    PosX: 36
+    PosY: -48
+    Width: -1
+    Height: -1
+    AnchoredMinX: 0
+    AnchoredMinY: 1
+    AnchoredMaxX: 0
+    AnchoredMaxY: 1
+    PivotX: 0
+    PivotY: 1
+    Rotation: {x: 0, y: 0, z: 0}
+  Right:
+    PosX: 36
+    PosY: -48
+    Width: -1
+    Height: -1
+    AnchoredMinX: 0
+    AnchoredMinY: 1
+    AnchoredMaxX: 0
+    AnchoredMaxY: 1
+    PivotX: 0
+    PivotY: 1
+    Rotation: {x: 0, y: 0, z: 0}
+  Top:
+    PosX: 0
+    PosY: 200
+    Width: -1
+    Height: -1
+    AnchoredMinX: 0.5
+    AnchoredMinY: 0
+    AnchoredMaxX: 0.5
+    AnchoredMaxY: 0
+    PivotX: 0.5
+    PivotY: 0
+    Rotation: {x: 0, y: 0, z: 0}
+  Bottom:
+    PosX: 0
+    PosY: 200
+    Width: -1
+    Height: -1
+    AnchoredMinX: 0.5
+    AnchoredMinY: 0
+    AnchoredMaxX: 0.5
+    AnchoredMaxY: 0
+    PivotX: 0.5
+    PivotY: 0
+    Rotation: {x: 0, y: 0, z: 0}
 --- !u!1 &274764546
 GameObject:
   m_ObjectHideFlags: 0
