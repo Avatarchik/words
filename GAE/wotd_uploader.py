@@ -16,7 +16,7 @@ wotds_words = [
 	"ELBOW",
 	"BARBES",
 	"APPAREL",
-	"REPRESENTS",
+	"REPRESENTS"
 ]
 
 wotds_definitions = [
@@ -29,7 +29,7 @@ wotds_definitions = [
 	"The joint where your arm bends.",
 	"The sharp curved point of a hook,arrow, etc. that prevents it from being easily pulled out.",
 	"Clothing – used especially by stores or the clothing industry.",
-	"A member of the House of Representatives, the lower House of Congress in the United States.",
+	"A member of the House of Representatives, the lower House of Congress in the United States."
 ]
 
 class UploadWOTD(webapp2.RequestHandler):
@@ -41,7 +41,7 @@ class UploadWOTD(webapp2.RequestHandler):
 			self.response.write(wotds_definitions[requestedIndex])
 			return
 
-		self.response.write('UNKNOWN')
+		self.response.write('FAILED')
 
 app = webapp2.WSGIApplication([
 	('/wotd_uploader/?', UploadWOTD),
