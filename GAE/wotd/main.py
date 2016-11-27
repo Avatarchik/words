@@ -24,10 +24,13 @@ class GetWOTD(webapp2.RequestHandler):
 			self.response.write("day is valid")
 			todays_wotd = WOTD.query(WOTD.day == day).get()
 			if todays_wotd:
+				self.response.write("today's wotd is valid")
 				self.response.write(todays_wotd.day)
 				self.response.write(todays_wotd.word)
 				self.response.write(todays_wotd.definition)
 				return
+			else:
+				self.response.write("today's wotd is invalid")
 		
 		self.response.write('UNKNOWN')
 
