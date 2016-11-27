@@ -6,8 +6,21 @@ class WOTD(ndb.Model):
 	word = ndb.StringProperty()
 	definition = ndb.StringProperty()
 
+wotds = [
+	0,
+	1,
+	2,
+	3
+]
+
 class UploadWOTD(webapp2.RequestHandler):
 	def get(self):
+		requestedIndex = int(self.request.get('index', -1))
+
+		if requestedIndex != -1:
+			self.response.write(wotds[requestedIndex])
+			return
+
 		self.response.write('UNKNOWN')
 
 app = webapp2.WSGIApplication([
