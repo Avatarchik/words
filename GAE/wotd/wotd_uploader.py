@@ -22,10 +22,6 @@ class WOTD(ndb.Model):
 #	WOTD(9,"REPRESENTS","A member of the House of Representatives, the lower House of Congress in the United States."),
 #]
 
-class PageNotFound(webapp2.RequestHandler):
-	def get(self):
-		self.response.write('Page not found!')
-
 class UploadWOTD(webapp2.RequestHandler):
 	def get(self):
 		self.response.write('got here')
@@ -33,8 +29,3 @@ class UploadWOTD(webapp2.RequestHandler):
 			#self.response.write('wotd')
 			#self.response.write(wotd.word)
 			#wotd.put()
-
-app = webapp2.WSGIApplication([
-	('/', PageNotFound),
-	('/wotd_uploader', UploadWOTD),
-], debug=True)
