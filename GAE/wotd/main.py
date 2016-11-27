@@ -3,7 +3,7 @@ import urllib
 import webapp2
 from google.appengine.ext import ndb
 
-class WordDefinition(ndb.Model):
+class WOTD(ndb.Model):
 
 	day = ndb.IntegerProperty(indexed=True)
 	word = ndb.StringProperty(indexed=False)
@@ -12,9 +12,9 @@ class WordDefinition(ndb.Model):
 class PageNotFound(webapp2.RequestHandler):
 
 	def get(self):
-		self.response.write('Page not found. 404')
+		self.response.write('Page not found!')
 
-class WOTD(webapp2.RequestHandler):
+class GetWOTD(webapp2.RequestHandler):
 
 	def get(self):
 		day = int(self.request.get('day', -1))
@@ -22,16 +22,16 @@ class WOTD(webapp2.RequestHandler):
 
 		if day != -1:
 			self.response.write("day is valid")
-			todays_wotd_query = WordDefinition.query(WordDefinition.day == day)
-			todays_wotd = todays_wotd_query.fetch(1)
-			self.response.write(todays_wotd[0].day)
-			self.response.write(todays_wotd[0].word)
-			self.response.write(todays_wotd[0].definition)
-			return
+			todays_wotd = WOTD.query(WOTD.day == day).get()
+			if todays_wotd:
+				self.response.write(todays_wotd.day)
+				self.response.write(todays_wotd.word)
+				self.response.write(todays_wotd.definition)
+				return
 		
 		self.response.write('UNKNOWN')
 
 app = webapp2.WSGIApplication([
 	('/', PageNotFound),
-	('/wotd', WOTD),
+	('/wotd', GetWOTD),
 ], debug=True)
