@@ -1,5 +1,3 @@
-import os
-import urllib
 import webapp2
 from google.appengine.ext import ndb
 
@@ -24,6 +22,6 @@ class GetWOTD(webapp2.RequestHandler):
 		
 		self.response.write('UNKNOWN')
 
-wotd = webapp2.WSGIApplication([
+app = webapp2.WSGIApplication([
 	('/wotd', GetWOTD),
 ], debug=True)

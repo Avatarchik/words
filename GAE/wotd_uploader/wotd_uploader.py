@@ -1,5 +1,3 @@
-import os
-import urllib
 import webapp2
 from google.appengine.ext import ndb
 
@@ -30,6 +28,6 @@ class UploadWOTD(webapp2.RequestHandler):
 			#self.response.write(wotd.word)
 			#wotd.put()
 
-wotd_uploader = webapp2.WSGIApplication([
+app = webapp2.WSGIApplication([
 	('/wotd_uploader', UploadWOTD),
 ], debug=True)
