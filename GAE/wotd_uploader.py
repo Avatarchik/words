@@ -6,43 +6,12 @@ class WOTD(ndb.Model):
 	word = ndb.StringProperty()
 	definition = ndb.StringProperty()
 
-wotds_words = (
-	"OUTVOTES",
-	"REGISTRAR", 
-	"WRESTLINGS",
-	"MEANED",
-	"CYANIDINGS",
-	"INSURANCES",
-	"ELBOW",
-	"BARBES",
-	"APPAREL",
-	"REPRESENTS"
-)
-
-wotds_definitions = (
-	"To defeat someone or something by having a larger number of votes.",
-	"Someone who is in charge of official records, for example in a city or a college.",
-	"To fight someone by holding onto and pulling or pushing someone.",
-	"To have a particular meaning or be used as a symbol or sign for something.",
-	"A very strong poison.",
-	"Protected by insurance.",
-	"The joint where your arm bends.",
-	"The sharp curved point of a hook,arrow, etc. that prevents it from being easily pulled out.",
-	"Clothing – used especially by stores or the clothing industry.",
-	"A member of the House of Representatives, the lower House of Congress in the United States."
-)
-
 class UploadWOTD(webapp2.RequestHandler):
 	def get(self):
-		requestedIndex = int(self.request.get('index', -1))
-
-		if requestedIndex != -1:
-			#self.response.write(wotds_words[requestedIndex])
-			#self.response.write(wotds_definitions[requestedIndex])
-			self.response.write('done some stuff')
-			return
-
-		self.response.write('FAILED')
+		WOTD(daystamp=0, word='dog animal', definition='goes bark').put()
+		WOTD(daystamp=1, word='cat animal', definition='meows and owns things').put()
+		WOTD(daystamp=2, word='bird animal', definition='flys places').put()
+		WOTD(daystamp=3, word='octopus animal', definition='squishes in the sea').put()
 
 app = webapp2.WSGIApplication([
 	('/wotd_uploader/?', UploadWOTD),
