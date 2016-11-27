@@ -23,7 +23,9 @@ class WOTD(webapp2.RequestHandler):
 		if day != -1:
 			todays_wotd_query = WordDefinition.query(WordDefinition.day == day)
 			todays_wotd = todays_wotd_query.fetch(1)
-			self.response.write(todays_wotd)
+			self.response.write(todays_wotd.day)
+			self.response.write(todays_wotd.word)
+			self.response.write(todays_wotd.definition)
 		else:
 			self.response.write('UNKNOWN')
 
