@@ -6,7 +6,7 @@ class WOTD(ndb.Model):
 	word = ndb.StringProperty()
 	definition = ndb.StringProperty()
 
-wotds_words = [
+wotds_words = (
 	"OUTVOTES",
 	"REGISTRAR", 
 	"WRESTLINGS",
@@ -17,9 +17,9 @@ wotds_words = [
 	"BARBES",
 	"APPAREL",
 	"REPRESENTS"
-]
+)
 
-wotds_definitions = [
+wotds_definitions = (
 	"To defeat someone or something by having a larger number of votes.",
 	"Someone who is in charge of official records, for example in a city or a college.",
 	"To fight someone by holding onto and pulling or pushing someone.",
@@ -30,15 +30,16 @@ wotds_definitions = [
 	"The sharp curved point of a hook,arrow, etc. that prevents it from being easily pulled out.",
 	"Clothing – used especially by stores or the clothing industry.",
 	"A member of the House of Representatives, the lower House of Congress in the United States."
-]
+)
 
 class UploadWOTD(webapp2.RequestHandler):
 	def get(self):
 		requestedIndex = int(self.request.get('index', -1))
 
 		if requestedIndex != -1:
-			self.response.write(wotds_words[requestedIndex])
-			self.response.write(wotds_definitions[requestedIndex])
+			#self.response.write(wotds_words[requestedIndex])
+			#self.response.write(wotds_definitions[requestedIndex])
+			self.response.write('done some stuff')
 			return
 
 		self.response.write('FAILED')
