@@ -23,5 +23,5 @@ class GetWOTD(webapp2.RequestHandler):
 		self.response.write('UNKNOWN')
 
 app = webapp2.WSGIApplication([
-	('/wotd', GetWOTD),
+	('/wotd/?', GetWOTD),
 ], debug=True)
