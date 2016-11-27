@@ -39,7 +39,7 @@ class UploadWOTD(webapp2.RequestHandler):
 		WOTD(daystamp=28, word='Unisex', definition='Intended for both men and women.').put()
 		WOTD(daystamp=29, word='Melled', definition='Running or moving in a fast uncontrolled way.').put()
 		WOTD(daystamp=30, word='Backroom', definition='Backroom deals, politics, etc. happen in a private or secret way, when they should happen in public.').put()
-		WOTD(daystamp=31, word='Sputnik', definition='An early Soviet satellite. “Sputnik 1” was the first artificial satellite that went around the Earth, in 1957.').put()
+		WOTD(daystamp=31, word='Sputnik', definition='An early Soviet satellite. Sputnik 1 was the first artificial satellite that went around the Earth, in 1957.').put()
 		WOTD(daystamp=32, word='Drummer', definition='Someone who plays drums.').put()
 		WOTD(daystamp=33, word='Reclaimers', definition='To get back something that once belonged to you.').put()
 		WOTD(daystamp=34, word='Updated', definition='To add the most recent information to something.').put()
@@ -109,7 +109,6 @@ class UploadWOTD(webapp2.RequestHandler):
 		WOTD(daystamp=98, word='Worsens', definition='To become worse, or to make something worse.').put()
 		WOTD(daystamp=99, word='Shippings', definition='The price charged for delivering goods.').put()
 		WOTD(daystamp=100, word='Inborn', definition='An inborn quality or ability is one that you have had naturally since birth.').put()
-
 
 app = webapp2.WSGIApplication([
 	('/wotd_uploader/?', UploadWOTD),
