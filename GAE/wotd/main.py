@@ -2,7 +2,7 @@ import os
 import urllib
 import webapp2
 from google.appengine.ext import ndb
-#import wotd
+import wotd
 #import wotd_uploader
 
 class PageNotFound(webapp2.RequestHandler):
@@ -11,6 +11,6 @@ class PageNotFound(webapp2.RequestHandler):
 
 app = webapp2.WSGIApplication([
 	('/', PageNotFound),
-	#('/wotd', wotd.GetWOTD),
+	('/wotd', wotd.GetWOTD),
 	#('/wotd_uploader', wotd_uploader.UploadWOTD),
 ], debug=True)
