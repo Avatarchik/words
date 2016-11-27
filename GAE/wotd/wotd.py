@@ -1,3 +1,8 @@
+import os
+import urllib
+import webapp2
+from google.appengine.ext import ndb
+
 class WOTD(ndb.Model):
 	daystamp = ndb.IntegerProperty()
 	word = ndb.StringProperty()
@@ -18,3 +23,7 @@ class GetWOTD(webapp2.RequestHandler):
 				return
 		
 		self.response.write('UNKNOWN')
+
+app = webapp2.WSGIApplication([
+	('/', GetWOTD),
+], debug=True)
