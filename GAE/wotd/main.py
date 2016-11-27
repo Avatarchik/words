@@ -19,7 +19,11 @@ class GetWOTD(webapp2.RequestHandler):
 		if daystamp != -1:
 			todays_wotd = WOTD.query(WOTD.daystamp == daystamp).get()
 			if todays_wotd:
-				self.response.write(todays_wotd)
+				self.response.write(todays_wotd.daystamp)
+				self.response.write('##')
+				self.response.write(todays_wotd.word)
+				self.response.write('##')
+				self.response.write(todays_wotd.definition)
 				return
 		
 		self.response.write('UNKNOWN')
