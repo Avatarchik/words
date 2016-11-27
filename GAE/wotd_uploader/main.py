@@ -30,6 +30,6 @@ class UploadWOTD(webapp2.RequestHandler):
 			#self.response.write(wotd.word)
 			#wotd.put()
 
-appnew = webapp2.WSGIApplication([
+app = webapp2.WSGIApplication([
 	('/wotd_uploader', UploadWOTD),
 ], debug=True)
