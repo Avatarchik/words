@@ -31,5 +31,5 @@ class UploadWOTD(webapp2.RequestHandler):
 			#wotd.put()
 
 app = webapp2.WSGIApplication([
-	('/', UploadWOTD),
+	('/wotd_uploader', UploadWOTD),
 ], debug=True)
