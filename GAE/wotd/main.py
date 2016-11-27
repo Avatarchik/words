@@ -21,6 +21,7 @@ class WOTD(webapp2.RequestHandler):
 		self.response.write(day)
 
 		if day != -1:
+			self.response.write("day is valid")
 			todays_wotd_query = WordDefinition.query(WordDefinition.day == day)
 			todays_wotd = todays_wotd_query.fetch(1)
 			if todays_wotd:
