@@ -3,6 +3,8 @@ api_version: 1
 threadsafe: yes
 
 handlers:
+- url: /wotd/.*
+  script: /wotd/wotd.app
 - url: /wotd_uploader/.*
   script: /wotd_uploader/wotd_uploader.app
 
