@@ -6,7 +6,7 @@ public class WordDefinitionViewer : UIMonoBehaviour, IOrientationChangedNotifiee
 {
 	public GameObject ValidDefinitionButtonSetRoot;
 	public GameObject InvalidDefinitionButtonSetRoot;
-	public SearchGoogleButton SearchGoogleButtonRef;
+	public LookupDefinitionButton LookupDefinitionButtonRef;
 
 	public Text TextRef;
 	public string DefinitionFormat;
@@ -43,7 +43,7 @@ public class WordDefinitionViewer : UIMonoBehaviour, IOrientationChangedNotifiee
 		else
 		{
 			TextRef.text = string.Format(DefinitionFormat, word.Forwards, NoDefinitionMessage);
-			SearchGoogleButtonRef.Initialise(word.Forwards);
+			LookupDefinitionButtonRef.Initialise(word.Forwards);
 		}
 
 		Vector2 sizeDelta = rectTransform.sizeDelta;

@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class SearchGoogleButton : MonoBehaviour, IPointerClickHandler
+public class LookupDefinitionButton : MonoBehaviour, IPointerClickHandler
 {
 	public string URLFormat;
 	private string mSearchWord;

@@ -1000,10 +1000,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ValidDefinitionButtonSetRoot: {fileID: 116282649}
   InvalidDefinitionButtonSetRoot: {fileID: 52916270}
-  SearchGoogleButtonRef: {fileID: 1285168431}
+  LookupDefinitionButtonRef: {fileID: 1285168431}
   TextRef: {fileID: 108673000}
   DefinitionFormat: Definition of {0}\n\n{1}
-  NoDefinitionMessage: We aren't quite sure. Would you like to Google it?
+  NoDefinitionMessage: We aren't quite sure. Would you like to look it up?
 --- !u!114 &108673000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1933,7 +1933,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Search Google
+  m_Text: Lookup
 --- !u!222 &241003629
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9272,7 +9272,7 @@ GameObject:
   - 114: {fileID: 1285168431}
   - 114: {fileID: 1285168430}
   m_Layer: 5
-  m_Name: SearchGoogleButton
+  m_Name: LookupDefinitionButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9321,7 +9321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e53ae8872721d1d4db33c4578df3dac5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  URLFormat: https://www.google.co.uk/search?q=define:{0}
+  URLFormat: http://www.dictionary.com/browse/{0}
 --- !u!114 &1285168432
 MonoBehaviour:
   m_ObjectHideFlags: 0
