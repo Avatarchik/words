@@ -3,10 +3,10 @@ import urllib
 import webapp2
 from google.appengine.ext import ndb
 
-class WOTD(ndb.Model):
-	daystamp = ndb.IntegerProperty()
-	word = ndb.StringProperty()
-	definition = ndb.StringProperty()
+#class WOTD(ndb.Model):
+#	daystamp = ndb.IntegerProperty()
+#	word = ndb.StringProperty()
+#	definition = ndb.StringProperty()
 
 #wotds =
 #[
