@@ -1,4 +1,5 @@
 using System;
+using System.Threading;
 
 static public class WordHelper
 {
@@ -17,5 +18,12 @@ static public class WordHelper
 
 		string reversedWord = new string(charArray, 0, originalWordLength);
 		return reversedWord;
+	}
+
+	static public string ConvertToTitleCase(string word)
+	{
+		word = word.ToLower();
+		word = Thread.CurrentThread.CurrentCulture.TextInfo.ToTitleCase(word);
+		return word;
 	}
 }
