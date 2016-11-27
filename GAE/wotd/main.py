@@ -19,7 +19,7 @@ class GetWOTD(webapp2.RequestHandler):
 
 		if day != -1:
 			self.response.write("day is valid")
-			todays_wotd = WOTD.query().filter(WOTD.day == day).get()
+			todays_wotd = WOTD.query(WOTD.day == day).get()
 			if todays_wotd:
 				self.response.write("today's wotd is valid")
 				self.response.write(todays_wotd.day)
