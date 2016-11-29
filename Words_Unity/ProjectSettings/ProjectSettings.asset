@@ -129,23 +129,33 @@ PlayerSettings:
   uIStatusBarHidden: 1
   uIExitOnSuspend: 0
   uIStatusBarStyle: 0
-  iPhoneSplashScreen: {fileID: 0}
-  iPhoneHighResSplashScreen: {fileID: 0}
-  iPhoneTallHighResSplashScreen: {fileID: 0}
-  iPhone47inSplashScreen: {fileID: 0}
-  iPhone55inPortraitSplashScreen: {fileID: 0}
-  iPhone55inLandscapeSplashScreen: {fileID: 0}
-  iPadPortraitSplashScreen: {fileID: 0}
-  iPadHighResPortraitSplashScreen: {fileID: 0}
-  iPadLandscapeSplashScreen: {fileID: 0}
-  iPadHighResLandscapeSplashScreen: {fileID: 0}
+  iPhoneSplashScreen: {fileID: 2800000, guid: 4f485d1ea6a56244caf0012024d026ef, type: 3}
+  iPhoneHighResSplashScreen: {fileID: 2800000, guid: cea1a6e34d677c347ae80ae42f4fa37c,
+    type: 3}
+  iPhoneTallHighResSplashScreen: {fileID: 2800000, guid: d0d9afd056d97fa44869378c3b242914,
+    type: 3}
+  iPhone47inSplashScreen: {fileID: 2800000, guid: 09fedccb05f761a4a8cd63534cab7cde,
+    type: 3}
+  iPhone55inPortraitSplashScreen: {fileID: 2800000, guid: 853bb63b8a827994a902701e300b09be,
+    type: 3}
+  iPhone55inLandscapeSplashScreen: {fileID: 2800000, guid: 8256d1b12b07a8c46859c1ad7a704196,
+    type: 3}
+  iPadPortraitSplashScreen: {fileID: 2800000, guid: d9f36f438cbf4c5458ee415579ee405c,
+    type: 3}
+  iPadHighResPortraitSplashScreen: {fileID: 2800000, guid: 5899e5b2aec3beb4da5eba69b2144afe,
+    type: 3}
+  iPadLandscapeSplashScreen: {fileID: 2800000, guid: 90549772c74ec4e49be1454d2821c3f8,
+    type: 3}
+  iPadHighResLandscapeSplashScreen: {fileID: 2800000, guid: 21d2d3b4980f6ec429a93f3d423fde9b,
+    type: 3}
   appleTVSplashScreen: {fileID: 0}
   tvOSSmallIconLayers: []
   tvOSLargeIconLayers: []
   tvOSTopShelfImageLayers: []
   iOSLaunchScreenType: 1
-  iOSLaunchScreenPortrait: {fileID: 0}
-  iOSLaunchScreenLandscape: {fileID: 2800000, guid: eda53b677890fbd438966cc6429f5c74,
+  iOSLaunchScreenPortrait: {fileID: 2800000, guid: 853bb63b8a827994a902701e300b09be,
+    type: 3}
+  iOSLaunchScreenLandscape: {fileID: 2800000, guid: 8256d1b12b07a8c46859c1ad7a704196,
     type: 3}
   iOSLaunchScreenBackgroundColor:
     serializedVersion: 2
@@ -153,11 +163,12 @@ PlayerSettings:
   iOSLaunchScreenFillPct: 80
   iOSLaunchScreenSize: 100
   iOSLaunchScreenCustomXibPath: 
-  iOSLaunchScreeniPadType: 3
-  iOSLaunchScreeniPadImage: {fileID: 0}
+  iOSLaunchScreeniPadType: 1
+  iOSLaunchScreeniPadImage: {fileID: 2800000, guid: 21d2d3b4980f6ec429a93f3d423fde9b,
+    type: 3}
   iOSLaunchScreeniPadBackgroundColor:
     serializedVersion: 2
-    rgba: 4292927712
+    rgba: 4294967295
   iOSLaunchScreeniPadFillPct: 80
   iOSLaunchScreeniPadSize: 100
   iOSLaunchScreeniPadCustomXibPath: 
