@@ -12,7 +12,7 @@ public class ScreenStretchedUIMonoBehaviour : UIMonoBehaviour, IOrientationChang
 		OrientationManager.Instance.UnregisterForNotification(this);
 	}
 
-	public void OnScreenSizeChanged(Vector2 screenSize)
+	public virtual void OnScreenSizeChanged(Vector2 screenSize)
 	{
 		rectTransform.sizeDelta = screenSize;
 	}
