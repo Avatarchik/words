@@ -3,23 +3,18 @@ using System.Collections.Generic;
 
 public class MainMenu : Menu, IMenu
 {
-	public GameObject PuzzleListButtonPrefab;
 	public GameObject ColourSchemeButtonPrefab;
 
-	public PuzzleManager PuzzleManagerRef;
 	public ColourSchemeManager ColourSchemeManagerRef;
 
-	public RectTransform PuzzleListsRoot;
 	public RectTransform ColourSchemesRoot;
 
-	private List<RectTransform> mPuzzleLists;
 	private List<RectTransform> mColourSchemes;
 
 	public override void OnEnable()
 	{
 		base.OnEnable();
 
-		SetupPuzzleLists();
 		SetupColourSchemes();
 	}
 
@@ -27,41 +22,9 @@ public class MainMenu : Menu, IMenu
 	{
 		base.OnDisable();
 
-		for (int listIndex = 0; listIndex < mPuzzleLists.Count; ++listIndex)
-		{
-			Destroy(mPuzzleLists[listIndex].gameObject);
-		}
-
 		for (int colourSchemeIndex = 0; colourSchemeIndex < mColourSchemes.Count; ++colourSchemeIndex)
 		{
 			Destroy(mColourSchemes[colourSchemeIndex].gameObject);
-		}
-	}
-
-	private void SetupPuzzleLists()
-	{
-		int puzzleListsCount = PuzzleManagerRef.PuzzleLists.Count;
-		mPuzzleLists = new List<RectTransform>(puzzleListsCount);
-
-		const int puzzlesPerColumn = 3;
-		int columnIndex = 0;
-		int rowIndex = 0;
-		for (int listIndex = 1; listIndex <= puzzleListsCount; ++listIndex)
-		{
-			columnIndex = (listIndex - 1) / puzzlesPerColumn;
-			rowIndex = ((listIndex - 1) % puzzlesPerColumn) + 1;
-
-			GameObject newButtonGO = Instantiate(PuzzleListButtonPrefab, Vector3.zero, Quaternion.identity, transform) as GameObject;
-			newButtonGO.transform.SetParent(PuzzleListsRoot);
-#if UNITY_EDITOR
-			newButtonGO.name = "Puzzle List #" + listIndex;
-#endif // UNITY_EDITOR
-
-			PuzzleListButton puzzleListButton = newButtonGO.GetComponent<PuzzleListButton>();
-			puzzleListButton.rectTransform.localPosition = new Vector3(116 * columnIndex, -GlobalSettings.Instance.TileSizeWithSpacing * rowIndex, 0); // TODO - fix the literals
-			puzzleListButton.Initialise(listIndex + 3); // TODO - fix the literal
-
-			mPuzzleLists.Add(puzzleListButton.rectTransform);
 		}
 	}
 
@@ -80,7 +43,7 @@ public class MainMenu : Menu, IMenu
 #endif // UNITY_EDITOR
 
 			ColourSchemeSwitchButton schemeSwitchButton = newButtonGO.GetComponent<ColourSchemeSwitchButton>();
-			schemeSwitchButton.rectTransform.localPosition = new Vector3(0, GlobalSettings.Instance.TileSizeWithSpacing * (schemeIndex + 1), 0);
+			schemeSwitchButton.rectTransform.localPosition = new Vector3(32, -96 - (GlobalSettings.Instance.ColourSchemeButtonSpacing * schemeIndex), 0);
 
 			schemeSwitchButton.Initialise(ColourSchemeManagerRef, schemeIndex);
 

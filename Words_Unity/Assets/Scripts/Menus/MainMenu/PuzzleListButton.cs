@@ -1,18 +1,8 @@
 using UnityEngine.EventSystems;
-using UnityEngine.UI;
 
 public class PuzzleListButton : UIMonoBehaviour, IPointerClickHandler
 {
-	public Text TextRef;
-	public string TextFormat;
-
-	private int mPuzzleSize;
-
-	public void Initialise(int puzzleSize)
-	{
-		mPuzzleSize = puzzleSize;
-		TextRef.text = string.Format(TextFormat, puzzleSize);
-	}
+	public int PuzzleSize;
 
 	public void OnPointerClick(PointerEventData eventData)
 	{
@@ -27,7 +17,7 @@ public class PuzzleListButton : UIMonoBehaviour, IPointerClickHandler
 		PuzzleSelectionMenu selectionMenu = MenuManager.Instance.CurrentMenu as PuzzleSelectionMenu;
 		if (selectionMenu)
 		{
-			selectionMenu.Initialise(mPuzzleSize);
+			selectionMenu.Initialise(PuzzleSize);
 		}
 	}
 }
