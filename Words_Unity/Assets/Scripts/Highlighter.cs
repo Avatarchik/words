@@ -129,6 +129,8 @@ public class Highlighter : SingletonMonoBehaviour<Highlighter>
 			{
 				score = wordFromHighlightedTiles.Length * -50;
 			}
+
+			Handheld.Vibrate();
 		}
 		ScoreManager.Instance.AddScore(score);
 
