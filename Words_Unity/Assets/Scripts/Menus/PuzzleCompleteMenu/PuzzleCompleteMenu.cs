@@ -22,7 +22,10 @@ public class PuzzleCompleteMenu : Menu, IMenu, IOrientationChangedNotifiee
 	{
 		base.OnDisable();
 
-		OrientationManager.Instance.UnregisterForNotification(this);
+		if (OrientationManager.Instance)
+		{
+			OrientationManager.Instance.UnregisterForNotification(this);
+		}
 
 		foreach (ParticleSystem effect in Effects)
 		{

@@ -24,7 +24,10 @@ public class WordDefinitionViewer : UIMonoBehaviour, IOrientationChangedNotifiee
 
 	public virtual void OnDisable()
 	{
-		OrientationManager.Instance.UnregisterForNotification(this);
+		if (OrientationManager.Instance)
+		{
+			OrientationManager.Instance.UnregisterForNotification(this);
+		}
 	}
 
 	public void OnScreenSizeChanged(Vector2 screenSize)
