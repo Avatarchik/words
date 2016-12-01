@@ -13026,7 +13026,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -64, y: 0}
+  m_AnchoredPosition: {x: -128, y: 0}
   m_SizeDelta: {x: 256, y: 128}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1635503586
@@ -13075,7 +13075,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RectTransRef: {fileID: 1635503585}
   Left:
-    PosX: -64
+    PosX: -128
     PosY: 0
     Width: -1
     Height: -1
@@ -13087,7 +13087,7 @@ MonoBehaviour:
     PivotY: 0.5
     Rotation: {x: 0, y: 0, z: 0}
   Right:
-    PosX: -64
+    PosX: -128
     PosY: 0
     Width: -1
     Height: -1
@@ -13159,7 +13159,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -64, y: 0}
+  m_AnchoredPosition: {x: -128, y: 0}
   m_SizeDelta: {x: 256, y: 128}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1658224722
@@ -13379,7 +13379,7 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -64, y: 0}
+  m_AnchoredPosition: {x: -128, y: 0}
   m_SizeDelta: {x: 256, y: 128}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1685986300
@@ -13428,7 +13428,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RectTransRef: {fileID: 1685986299}
   Left:
-    PosX: -64
+    PosX: -128
     PosY: 0
     Width: -1
     Height: -1
@@ -13440,7 +13440,7 @@ MonoBehaviour:
     PivotY: 0.5
     Rotation: {x: 0, y: 0, z: 0}
   Right:
-    PosX: -64
+    PosX: -128
     PosY: 0
     Width: -1
     Height: -1
@@ -15684,7 +15684,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -64, y: 0}
+  m_AnchoredPosition: {x: -128, y: 0}
   m_SizeDelta: {x: 256, y: 128}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1941215453
@@ -15733,7 +15733,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RectTransRef: {fileID: 1941215452}
   Left:
-    PosX: -64
+    PosX: -128
     PosY: 0
     Width: -1
     Height: -1
@@ -15745,7 +15745,7 @@ MonoBehaviour:
     PivotY: 0.5
     Rotation: {x: 0, y: 0, z: 0}
   Right:
-    PosX: -64
+    PosX: -128
     PosY: 0
     Width: -1
     Height: -1
