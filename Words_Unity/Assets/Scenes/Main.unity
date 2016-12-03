@@ -11158,7 +11158,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextRef: {fileID: 1414869221}
-  FadeTime: 1.4
+  FadeTime: 2
+  EaseType: 4
   StartColour: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   EndColour: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0}
 --- !u!114 &1414869221

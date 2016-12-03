@@ -7,6 +7,8 @@ public class ScoreAddition : MonoBehaviour
 
 	[Range(0f, 5f)]
 	public float FadeTime = 1f;
+	public EasingType EaseType;
+
 	public Color StartColour = ColorHelper.SetAlpha(Color.black, 1);
 	public Color EndColour = ColorHelper.SetAlpha(Color.black, 0);
 
@@ -21,6 +23,7 @@ public class ScoreAddition : MonoBehaviour
 			float timeNow = Time.time;
 			float t = (mFadeEndTime - timeNow) / (mFadeEndTime - mFadeStartTime);
 			t = MathfHelper.Clamp01(t);
+			t = EasingCurves.EaseOut(t, EaseType);
 			TextRef.color = ColorHelper.Blend(StartColour, EndColour, t);
 			mIsFading = timeNow < mFadeEndTime;
 		}
