@@ -16,13 +16,15 @@ public class PuzzleManager : MonoBehaviour
 
 	public List<PuzzleList> PuzzleLists;
 
-	private SerializableGuid mCurrentPuzzleGuid;
+	static public SerializableGuid sActivePuzzleGuid { get; private set; }
 
 	void Awake()
 	{
+		sActivePuzzleGuid = Guid.Empty;
+
 		if (PlayerPrefsPlus.HasKey(PlayerPrefKeys.CurrentPuzzleGuid))
 		{
-			mCurrentPuzzleGuid = PlayerPrefsPlus.GetString(PlayerPrefKeys.CurrentPuzzleGuid, string.Empty);
+			sActivePuzzleGuid = PlayerPrefsPlus.GetString(PlayerPrefKeys.CurrentPuzzleGuid, string.Empty);
 		}
 	}
 
@@ -33,14 +35,14 @@ public class PuzzleManager : MonoBehaviour
 
 	public void OpenPuzzle(SerializableGuid puzzleGuid)
 	{
-		mCurrentPuzzleGuid = puzzleGuid;
+		sActivePuzzleGuid = puzzleGuid;
 
-		PlayerPrefsPlus.SetString(PlayerPrefKeys.CurrentPuzzleGuid, mCurrentPuzzleGuid.Value);
+		PlayerPrefsPlus.SetString(PlayerPrefKeys.CurrentPuzzleGuid, sActivePuzzleGuid.Value);
 		PlayerPrefsPlus.Save();
 
 		PuzzleLoaderRef.gameObject.SetActive(true);
 
-		PuzzleContents contents = GetContentsFor(mCurrentPuzzleGuid);
+		PuzzleContents contents = GetContentsFor(sActivePuzzleGuid);
 		PuzzleState state = SaveGameManager.Instance.SetActivePuzzle(contents.Guid);
 		PuzzleLoaderRef.LoadPuzzle(contents);
 
@@ -51,7 +53,7 @@ public class PuzzleManager : MonoBehaviour
 	public void ResetPuzzle()
 	{
 		SaveGameManager.Instance.ResetActivePuzzleState();
-		PuzzleContents contents = GetContentsFor(mCurrentPuzzleGuid);
+		PuzzleContents contents = GetContentsFor(sActivePuzzleGuid);
 		PuzzleLoaderRef.LoadPuzzle(contents);
 	}
 

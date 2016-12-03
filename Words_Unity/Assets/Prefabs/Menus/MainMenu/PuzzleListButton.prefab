@@ -72,7 +72,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd371e13ca7eb084cb82f0936371a4f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ButtonRef: {fileID: 114000012035199442}
+  PuzzleManagerRef: {fileID: 0}
   PuzzleSize: 0
+  IsLastPlayedButton: 0
 --- !u!114 &114000012035199442
 MonoBehaviour:
   m_ObjectHideFlags: 1
