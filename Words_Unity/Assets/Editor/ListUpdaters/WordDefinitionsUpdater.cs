@@ -63,6 +63,48 @@ public class WordDefinitionsUpdater
 		}
 	}
 
+	[MenuItem("Words/List Updaters/Export Definitions For GAE")]
+	static void ExportDefinitions()
+	{
+		GameObject wordDefinitionsPrefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/WordDefinitions.prefab");
+		if (wordDefinitionsPrefab)
+		{
+			sDefinitions = wordDefinitionsPrefab.GetComponent<WordDefinitions>();
+			if (sDefinitions)
+			{
+				string path = EditorUtility.OpenFolderPanel("Export Definitions csv", string.Empty, string.Empty);
+
+				if (!string.IsNullOrEmpty(path))
+				{
+					sDefinitions.DefinitionList.Shuffle();
+
+					StringBuilder sb = new StringBuilder();
+					int definitionIndex = 0;
+					int definitionsRequired = 100;//365 * 10;
+
+					foreach (WordDefinition definition in sDefinitions.DefinitionList)
+					{
+						sb.AppendLine(string.Format("\t\tWOTD(daystamp={0}, word='{1}', definition='{2}').put()",
+							definitionIndex,
+							WordHelper.ConvertToTitleCase(definition.ActualWord),
+							definition.Definition));
+
+						++definitionIndex;
+
+						if (definitionIndex >= definitionsRequired)
+						{
+							break;
+						}
+					}
+
+					path = Path.Combine(path, "definitions.txt");
+					File.WriteAllText(path, sb.ToString());
+					ODebug.Log("Exported definitions for GAE: " + path);
+				}
+			}
+		}
+	}
+
 	static private void GetDefinitions()
 	{
 		sWordsToCheck = 0;
