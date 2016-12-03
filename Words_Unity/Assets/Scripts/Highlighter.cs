@@ -125,10 +125,10 @@ public class Highlighter : SingletonMonoBehaviour<Highlighter>
 		}
 		else
 		{
-			if (overallResult != EWordValidityResult.WasAlreadyFound && !result.WasInvalidLength && !result.IsWrongInstance)
+			/*if (overallResult != EWordValidityResult.WasAlreadyFound && !result.WasInvalidLength && !result.IsWrongInstance)
 			{
 				score = wordFromHighlightedTiles.Length * -50;
-			}
+			}*/
 
 #if UNITY_IOS || UNITY_ANDROID
 			Handheld.Vibrate();
