@@ -131,7 +131,10 @@ public class Highlighter : SingletonMonoBehaviour<Highlighter>
 			}*/
 
 #if UNITY_IOS || UNITY_ANDROID
-			Handheld.Vibrate();
+			if (!result.WasInvalidLength)
+			{
+				Handheld.Vibrate();
+			}
 #endif // UNITY_IOS || UNITY_ANDROID
 		}
 		ScoreManager.Instance.AddScore(score);
