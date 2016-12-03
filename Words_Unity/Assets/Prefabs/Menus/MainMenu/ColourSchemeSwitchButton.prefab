@@ -74,7 +74,6 @@ GameObject:
   - 114: {fileID: 114000012129705034}
   - 114: {fileID: 114000011956194566}
   - 114: {fileID: 114000010577824364}
-  - 114: {fileID: 114000011018190002}
   - 114: {fileID: 114000012252560990}
   m_Layer: 5
   m_Name: ColourSchemeSwitchButton
@@ -160,7 +159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f04b54c8557fc04782114a08c3e8717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ImageRef: {fileID: 114000012129705034}
+  ButtonRef: {fileID: 114000011956194566}
   TextRef: {fileID: 114000013292889762}
   ColourExamplesRoot: {fileID: 224000012560862944}
   ColourExamples:
@@ -169,17 +168,6 @@ MonoBehaviour:
   - {fileID: 114000012411430912}
   - {fileID: 114000011265659032}
   - {fileID: 114000011454895916}
---- !u!114 &114000011018190002
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011350221210}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ded6022f50fd0264c822df94d3bf6396, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114000011265659032
 MonoBehaviour:
   m_ObjectHideFlags: 1

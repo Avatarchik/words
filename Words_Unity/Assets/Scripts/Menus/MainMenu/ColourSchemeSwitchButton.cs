@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class ColourSchemeSwitchButton : UIMonoBehaviour, IPointerClickHandler
 {
-	public Image ImageRef;
+	public Button ButtonRef;
 	public Text TextRef;
 
 	public RectTransform ColourExamplesRoot;
@@ -13,7 +13,7 @@ public class ColourSchemeSwitchButton : UIMonoBehaviour, IPointerClickHandler
 	private ColourSchemeManager mColourSchemeManagerRef;
 	private int mSchemeIndex;
 
-	static private Image sSelectedButton;
+	static private Button sSelectedButton;
 
 	public void Initialise(ColourSchemeManager colourSchemeManagerRef, int schemeIndex)
 	{
@@ -26,12 +26,12 @@ public class ColourSchemeSwitchButton : UIMonoBehaviour, IPointerClickHandler
 
 		if (colourSchemeManagerRef.IsActiveScheme(mSchemeIndex))
 		{
-			ImageRef.color = GlobalSettings.Instance.UIHightlightColour;
-			sSelectedButton = ImageRef;
+			ColorBlockHelper.SetNormalColour(ButtonRef, GlobalSettings.Instance.UIHightlightColour);
+			sSelectedButton = ButtonRef;
 		}
 		else
 		{
-			ImageRef.color = Color.white;
+			ColorBlockHelper.SetNormalColour(ButtonRef, Color.white);
 		}
 	}
 
@@ -69,9 +69,11 @@ public class ColourSchemeSwitchButton : UIMonoBehaviour, IPointerClickHandler
 
 			if (sSelectedButton != null)
 			{
-				sSelectedButton.color = Color.white;
+				ColorBlockHelper.SetNormalColour(sSelectedButton, Color.white);
 			}
-			sSelectedButton = ImageRef;
+
+			ColorBlockHelper.SetNormalColour(ButtonRef, GlobalSettings.Instance.UIHightlightColour);
+			sSelectedButton = ButtonRef;
 		}
 	}
 }
