@@ -42,8 +42,13 @@ public class MainMenu : Menu, IMenu
 			newButtonGO.name = string.Format("Scheme #{0} - {1}", schemeIndex, ColourSchemeManagerRef.Schemes[schemeIndex].Name);
 #endif // UNITY_EDITOR
 
+			int column = schemeIndex / 4;
+			int row = schemeIndex % 4;
+			int x = 16 + (column * 232);
+			int y = -96 - (GlobalSettings.Instance.ColourSchemeButtonSpacing * row);
+
 			ColourSchemeSwitchButton schemeSwitchButton = newButtonGO.GetComponent<ColourSchemeSwitchButton>();
-			schemeSwitchButton.rectTransform.localPosition = new Vector3(32, -96 - (GlobalSettings.Instance.ColourSchemeButtonSpacing * schemeIndex), 0);
+			schemeSwitchButton.rectTransform.localPosition = new Vector3(x, y, 0);
 
 			schemeSwitchButton.Initialise(ColourSchemeManagerRef, schemeIndex);
 
