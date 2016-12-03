@@ -71,10 +71,14 @@ public class WordPanelGroup : UIMonoBehaviour
 		mWordPanelRef = panelRef;
 	}
 
-	public void ToggleCollapsedState()
+	public bool ToggleCollapsedState(out bool isComplete)
 	{
 		IsCollapsed = !IsCollapsed;
 		SetCollapsedState();
+
+		isComplete = mWordsFound == mWordsInGroup;
+
+		return IsCollapsed;
 	}
 
 	private void SetCollapsedState()
@@ -95,18 +99,23 @@ public class WordPanelGroup : UIMonoBehaviour
 	public void IncrementWordsFound()
 	{
 		++mWordsFound;
+		bool isComplete = mWordsFound >= mWordsInGroup;
 
 		if (!IsCollapsed)
 		{
-			if (mWordsFound >= mWordsInGroup)
+			if (isComplete)
 			{
 				Invoke("AutoHideGroup", 2);
 			}
 		}
+
+		GroupTitle.SetCollapsedIconsState(IsCollapsed, isComplete);
 	}
 
 	private void AutoHideGroup()
 	{
-		mWordPanelRef.ToggleGroup(this);
+		bool isComplete;
+		mWordPanelRef.ToggleGroup(this, out isComplete);
+		GroupTitle.SetCollapsedIconsState(IsCollapsed, isComplete);
 	}
 }

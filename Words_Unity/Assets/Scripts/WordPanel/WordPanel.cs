@@ -228,9 +228,9 @@ public class WordPanel : UIMonoBehaviour
 		return result;
 	}
 
-	public void ToggleGroup(WordPanelGroup group)
+	public bool ToggleGroup(WordPanelGroup group, out bool isComplete)
 	{
-		group.ToggleCollapsedState();
+		bool isCollapsed = group.ToggleCollapsedState(out isComplete);
 
 		float deltaModifier = group.IsCollapsed ? group.HeightMinusTitle : -group.HeightMinusTitle;
 
@@ -252,6 +252,8 @@ public class WordPanel : UIMonoBehaviour
 
 		mPanelSize -= deltaModifier;
 		rectTransform.sizeDelta = new Vector2(rectTransform.sizeDelta.x, mPanelSize);
+
+		return isCollapsed;
 	}
 
 	public float GetCompletePercentage()
