@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections.Generic;
 
 public class PuzzleSelectionMenu : Menu, IMenu
@@ -9,6 +10,9 @@ public class PuzzleSelectionMenu : Menu, IMenu
 
 	public RectTransform PuzzlesRoot;
 	private List<RectTransform> mPuzzles;
+
+	public Text MenuTitleRef;
+	public string MenuTitleFormat;
 
 	static private int sLastChosenPuzzleSize;
 
@@ -38,6 +42,7 @@ public class PuzzleSelectionMenu : Menu, IMenu
 	public void Initialise(int puzzleSize)
 	{
 		sLastChosenPuzzleSize = puzzleSize;
+		MenuTitleRef.text = string.Format(MenuTitleFormat, puzzleSize);
 
 		int puzzleCount = PuzzleManagerRef.PuzzleLists[puzzleSize - GlobalSettings.Instance.PuzzleSizeMin].Puzzles.Count;
 		mPuzzles = new List<RectTransform>(puzzleCount);
