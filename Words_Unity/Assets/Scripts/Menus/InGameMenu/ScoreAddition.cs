@@ -7,7 +7,7 @@ public class ScoreAddition : MonoBehaviour
 
 	[Range(0f, 5f)]
 	public float FadeTime = 1f;
-	public EasingType EaseType;
+	public EEasingType EaseType;
 
 	public Color StartColour = ColorHelper.SetAlpha(Color.black, 1);
 	public Color EndColour = ColorHelper.SetAlpha(Color.black, 0);

@@ -14,7 +14,7 @@ public class WordPanelFlasher : SingletonMonoBehaviour<WordPanelFlasher>
 
 	public bool IsEnabled = true;
 	public float FlashTime = 1f;
-	public EasingType EaseType = EasingType.Sine;
+	public EEasingType EaseType = EEasingType.Sine;
 
 	private Image mImageRef;
 

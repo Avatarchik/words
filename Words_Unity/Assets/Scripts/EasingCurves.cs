@@ -10,7 +10,7 @@ static public class EasingCurves
 	/// <param name="acceleration">The acceleration.</param>
 	/// <param name="type">The type.</param>
 	/// <returns>The ease.</returns>
-	static public float Ease(double linearStep, float acceleration, EasingType type)
+	static public float Ease(double linearStep, float acceleration, EEasingType type)
 	{
 		float easedStep = acceleration > 0
 								? EaseIn(linearStep, type)
@@ -26,23 +26,23 @@ static public class EasingCurves
 	/// <param name="type">The type.</param>
 	/// <returns>The ease in.</returns>
 	/// <exception cref="NotImplementedException"></exception>
-	static public float EaseIn(double linearStep, EasingType type)
+	static public float EaseIn(double linearStep, EEasingType type)
 	{
 		switch (type)
 		{
-			case EasingType.Step:
+			case EEasingType.Step:
 				return linearStep < 0.5 ? 0 : 1;
-			case EasingType.Linear:
+			case EEasingType.Linear:
 				return (float)linearStep;
-			case EasingType.Sine:
+			case EEasingType.Sine:
 				return Sine.EaseIn(linearStep);
-			case EasingType.Quadratic:
+			case EEasingType.Quadratic:
 				return Power.EaseIn(linearStep, 2);
-			case EasingType.Cubic:
+			case EEasingType.Cubic:
 				return Power.EaseIn(linearStep, 3);
-			case EasingType.Quartic:
+			case EEasingType.Quartic:
 				return Power.EaseIn(linearStep, 4);
-			case EasingType.Quintic:
+			case EEasingType.Quintic:
 				return Power.EaseIn(linearStep, 5);
 		}
 
@@ -54,23 +54,23 @@ static public class EasingCurves
 	/// <param name="type">The type.</param>
 	/// <returns>The ease out.</returns>
 	/// <exception cref="NotImplementedException"></exception>
-	static public float EaseOut(double linearStep, EasingType type)
+	static public float EaseOut(double linearStep, EEasingType type)
 	{
 		switch (type)
 		{
-			case EasingType.Step:
+			case EEasingType.Step:
 				return linearStep < 0.5 ? 0 : 1;
-			case EasingType.Linear:
+			case EEasingType.Linear:
 				return (float)linearStep;
-			case EasingType.Sine:
+			case EEasingType.Sine:
 				return Sine.EaseOut(linearStep);
-			case EasingType.Quadratic:
+			case EEasingType.Quadratic:
 				return Power.EaseOut(linearStep, 2);
-			case EasingType.Cubic:
+			case EEasingType.Cubic:
 				return Power.EaseOut(linearStep, 3);
-			case EasingType.Quartic:
+			case EEasingType.Quartic:
 				return Power.EaseOut(linearStep, 4);
-			case EasingType.Quintic:
+			case EEasingType.Quintic:
 				return Power.EaseOut(linearStep, 5);
 		}
 
@@ -82,7 +82,7 @@ static public class EasingCurves
 	/// <param name="easeInType">The ease in type.</param>
 	/// <param name="easeOutType">The ease out type.</param>
 	/// <returns>The ease in out.</returns>
-	static public float EaseInOut(double linearStep, EasingType easeInType, EasingType easeOutType)
+	static public float EaseInOut(double linearStep, EEasingType easeInType, EEasingType easeOutType)
 	{
 		return linearStep < 0.5 ? EaseInOut(linearStep, easeInType) : EaseInOut(linearStep, easeOutType);
 	}
@@ -92,23 +92,23 @@ static public class EasingCurves
 	/// <param name="type">The type.</param>
 	/// <returns>The ease in out.</returns>
 	/// <exception cref="NotImplementedException"></exception>
-	static public float EaseInOut(double linearStep, EasingType type)
+	static public float EaseInOut(double linearStep, EEasingType type)
 	{
 		switch (type)
 		{
-			case EasingType.Step:
+			case EEasingType.Step:
 				return linearStep < 0.5 ? 0 : 1;
-			case EasingType.Linear:
+			case EEasingType.Linear:
 				return (float)linearStep;
-			case EasingType.Sine:
+			case EEasingType.Sine:
 				return Sine.EaseInOut(linearStep);
-			case EasingType.Quadratic:
+			case EEasingType.Quadratic:
 				return Power.EaseInOut(linearStep, 2);
-			case EasingType.Cubic:
+			case EEasingType.Cubic:
 				return Power.EaseInOut(linearStep, 3);
-			case EasingType.Quartic:
+			case EEasingType.Quartic:
 				return Power.EaseInOut(linearStep, 4);
-			case EasingType.Quintic:
+			case EEasingType.Quintic:
 				return Power.EaseInOut(linearStep, 5);
 		}
 
@@ -185,7 +185,7 @@ static private class Sine
 }
 
 /// <summary>The easing type.</summary>
-public enum EasingType
+public enum EEasingType
 {
 	/// <summary>The step.</summary>
 	Step,
