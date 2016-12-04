@@ -130,12 +130,12 @@ public class Highlighter : SingletonMonoBehaviour<Highlighter>
 				score = wordFromHighlightedTiles.Length * -50;
 			}*/
 
-#if UNITY_IOS || UNITY_ANDROID
+#if !UNITY_EDITOR && (UNITY_IOS || UNITY_ANDROID)
 			if (!result.WasInvalidLength)
 			{
 				Handheld.Vibrate();
 			}
-#endif // UNITY_IOS || UNITY_ANDROID
+#endif // !UNITY_EDITOR && (UNITY_IOS || UNITY_ANDROID)
 		}
 		ScoreManager.Instance.AddScore(score);
 
