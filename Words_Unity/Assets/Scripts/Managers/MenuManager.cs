@@ -15,6 +15,7 @@ public enum EMenuType
 	OptionsMenu,
 	ProgressResetMenu,
 	StatsMenu,
+	DailyPuzzleCompleteMenu,
 
 	Count,
 }

@@ -3,11 +3,20 @@ using UnityEngine.EventSystems;
 
 public class CompleteContinueButton : MonoBehaviour, IPointerClickHandler
 {
+	public PuzzleManager PuzzleManagerRef;
+
 	public void OnPointerClick(PointerEventData eventData)
 	{
 		if (eventData.button == PointerEventData.InputButton.Left)
 		{
-			MenuManager.Instance.SwitchMenu(EMenuType.PuzzleSelectionMenu, OnMenuSwitched);
+			if (PuzzleManagerRef.IsPuzzleOfTheDay)
+			{
+				MenuManager.Instance.SwitchMenu(EMenuType.MainMenu);
+			}
+			else
+			{
+				MenuManager.Instance.SwitchMenu(EMenuType.PuzzleSelectionMenu, OnMenuSwitched);
+			}
 		}
 	}
 

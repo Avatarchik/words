@@ -23,7 +23,7 @@ public class PuzzleListUpdater
 
 					foreach (string path in puzzlePaths)
 					{
-						string relativePath = PathHelper.MakeRelativeToAssetsFolder(path);
+						string relativePath = FileIOHelper.MakePathRelativeToAssetsFolder(path);
 						PuzzleContents puzzle = AssetDatabase.LoadAssetAtPath(relativePath, typeof(PuzzleContents)) as PuzzleContents;
 						puzzleManager.RegisterPuzzle(puzzle, puzzleSize);
 					}
@@ -66,7 +66,7 @@ public class PuzzleListUpdater
 		ProgressBarHelper.Begin(true, "Puzzle Updater", "Updating puzzles", 1f / puzzleCount);
 		foreach (string path in puzzlePaths)
 		{
-			string relativePath = PathHelper.MakeRelativeToAssetsFolder(path);
+			string relativePath = FileIOHelper.MakePathRelativeToAssetsFolder(path);
 			PuzzleContents puzzle = AssetDatabase.LoadAssetAtPath(relativePath, typeof(PuzzleContents)) as PuzzleContents;
 			puzzle.UpdateDefinitions(definitions);
 			EditorUtility.SetDirty(puzzle);

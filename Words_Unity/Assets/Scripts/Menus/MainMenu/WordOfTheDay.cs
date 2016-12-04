@@ -5,7 +5,6 @@ using System.Collections;
 
 public class WordOfTheDay : UIMonoBehaviour
 {
-	private DateTime kEpoch = new DateTime(2016, 11, 27);
 	public Text TextRef;
 	public string TextFormat;
 
@@ -19,15 +18,15 @@ public class WordOfTheDay : UIMonoBehaviour
 
 	void OnEnable()
 	{
-		int daysSinceEpoch = (DateTime.Today - kEpoch).Days;
+		int daysSinceEpoch = (DateTime.Today - GlobalSettings.kEpoch).Days;
 
-		int lastRetrievedDayStamp = PlayerPrefsPlus.GetInt(PlayerPrefKeys.WotDLastRetrievedWordDayStamp, -1);
+		int lastRetrievedDayStamp = PlayerPrefsPlus.GetInt(PlayerPrefKeys.WotDLastRetrievedDayStamp, -1);
 		if (lastRetrievedDayStamp != -1)
 		{
 			if (lastRetrievedDayStamp == daysSinceEpoch)
 			{
-				string word = PlayerPrefsPlus.GetString(PlayerPrefKeys.WotDLastRetrievedWordWord);
-				string definition = PlayerPrefsPlus.GetString(PlayerPrefKeys.WotDLastRetrievedWordDefinition);
+				string word = PlayerPrefsPlus.GetString(PlayerPrefKeys.WotDLastRetrievedWord);
+				string definition = PlayerPrefsPlus.GetString(PlayerPrefKeys.WotDLastRetrievedDefinition);
 				UpdateText(word, definition);
 			}
 			else
@@ -43,7 +42,7 @@ public class WordOfTheDay : UIMonoBehaviour
 
 	private IEnumerator FetchWoTD()
 	{
-		int daysSinceEpoch = (DateTime.Today - kEpoch).Days;
+		int daysSinceEpoch = (DateTime.Today - GlobalSettings.kEpoch).Days;
 
 		string url = string.Format(GAEURLFormat, daysSinceEpoch);
 
@@ -62,9 +61,9 @@ public class WordOfTheDay : UIMonoBehaviour
 				{
 					UpdateText(word, definition);
 
-					PlayerPrefsPlus.SetInt(PlayerPrefKeys.WotDLastRetrievedWordDayStamp, daysSinceEpoch);
-					PlayerPrefsPlus.SetString(PlayerPrefKeys.WotDLastRetrievedWordWord, word);
-					PlayerPrefsPlus.SetString(PlayerPrefKeys.WotDLastRetrievedWordDefinition, definition);
+					PlayerPrefsPlus.SetInt(PlayerPrefKeys.WotDLastRetrievedDayStamp, daysSinceEpoch);
+					PlayerPrefsPlus.SetString(PlayerPrefKeys.WotDLastRetrievedWord, word);
+					PlayerPrefsPlus.SetString(PlayerPrefKeys.WotDLastRetrievedDefinition, definition);
 					PlayerPrefsPlus.Save();
 				}
 			}

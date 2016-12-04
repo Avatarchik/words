@@ -128,7 +128,15 @@ public class WordPanel : UIMonoBehaviour
 		yield return new WaitForSeconds(2);
 
 		PuzzleManagerRef.ClosePuzzle();
-		AnalyticsManager.Instance.SendLevelComplete();
+
+		if (PuzzleManagerRef.IsPuzzleOfTheDay)
+		{
+			AnalyticsManager.Instance.SendPuzzleOfTheDayComplete();
+		}
+		else
+		{
+			AnalyticsManager.Instance.SendPuzzleComplete();
+		}
 
 		MenuManager.Instance.SwitchMenu(EMenuType.PuzzleCompleteMenu);
 	}

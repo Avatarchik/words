@@ -9,7 +9,9 @@ static public class PlayerPrefKeys
 	static public readonly string PuzzlePortraitLayout = "Option PuzzlePortraitLayout";
 
 	// Features
-	static public readonly string WotDLastRetrievedWordDayStamp = "Feature WotD DayStamp";
-	static public readonly string WotDLastRetrievedWordWord = "Feature WotD Word";
-	static public readonly string WotDLastRetrievedWordDefinition = "Feature WotD Definition";
+	static public readonly string WotDLastRetrievedDayStamp = "Feature WotD DayStamp";
+	static public readonly string WotDLastRetrievedWord = "Feature WotD Word";
+	static public readonly string WotDLastRetrievedDefinition = "Feature WotD Definition";
+
+	static public readonly string PotDLastRetrievedDayStamp = "Feature PotD DayStamp";
 }

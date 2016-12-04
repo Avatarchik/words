@@ -1,11 +1,12 @@
 using UnityEngine.Analytics;
+using System;
 using System.Collections.Generic;
 
 public class AnalyticsManager : SingletonMonoBehaviour<AnalyticsManager>
 {
 	public PuzzleManager PuzzleManagerRef;
 
-	public void SendLevelComplete()
+	public void SendPuzzleComplete()
 	{
 		int puzzleSize;
 		int puzzleIndex;
@@ -21,6 +22,24 @@ public class AnalyticsManager : SingletonMonoBehaviour<AnalyticsManager>
 			{ "Time", state.TotalTimeInSeconds },
 		};
 
-		Analytics.CustomEvent("LevelComplete", dict);
+		Analytics.CustomEvent("PuzzleComplete", dict);
+	}
+
+	public void SendPuzzleOfTheDayComplete()
+	{
+		PuzzleState state = SaveGameManager.Instance.ActivePuzzleState;
+
+		DateTime now = DateTime.Today;
+
+		Dictionary<string, object> dict = new Dictionary<string, object>
+		{
+			{ "Day", now.Day },
+			{ "Month", now.Month },
+			{ "Year", now.Year },
+			{ "Score", state.Score },
+			{ "Time", state.TotalTimeInSeconds },
+		};
+
+		Analytics.CustomEvent("PuzzleComplete", dict);
 	}
 }

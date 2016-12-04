@@ -10,7 +10,15 @@ public class ExitPuzzleButton : MonoBehaviour, IPointerClickHandler
 		if (eventData.button == PointerEventData.InputButton.Left)
 		{
 			PuzzleManagerRef.ClosePuzzle();
-			MenuManager.Instance.SwitchMenu(EMenuType.PuzzleSelectionMenu, OnMenuSwitched);
+
+			if (PuzzleManagerRef.IsPuzzleOfTheDay)
+			{
+				MenuManager.Instance.SwitchMenu(EMenuType.MainMenu);
+			}
+			else
+			{
+				MenuManager.Instance.SwitchMenu(EMenuType.PuzzleSelectionMenu, OnMenuSwitched);
+			}
 		}
 	}
 

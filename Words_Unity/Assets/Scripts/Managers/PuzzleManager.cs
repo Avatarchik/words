@@ -18,14 +18,34 @@ public class PuzzleManager : MonoBehaviour
 
 	static public SerializableGuid sActivePuzzleGuid { get; private set; }
 
+	public bool IsPuzzleOfTheDay
+	{
+		get
+		{
+			return sActivePuzzleGuid == GlobalSettings.Instance.PotDFixedGuid;
+		}
+	}
+
 	void Awake()
 	{
-		sActivePuzzleGuid = Guid.Empty;
+		sActivePuzzleGuid = SerializableGuid.Empty;
 
 		if (PlayerPrefsPlus.HasKey(PlayerPrefKeys.CurrentPuzzleGuid))
 		{
 			sActivePuzzleGuid = PlayerPrefsPlus.GetString(PlayerPrefKeys.CurrentPuzzleGuid, string.Empty);
 		}
+	}
+
+	public void RegisterPuzzleOfTheDay(PuzzleContents potdContents)
+	{
+		PuzzleList potdList = new PuzzleList();
+		potdList.Puzzles.Add(potdContents);
+		PuzzleLists.Add(potdList);
+	}
+
+	public void OpenPuzzleOfTheDay()
+	{
+		OpenPuzzle(GlobalSettings.Instance.PotDFixedGuid);
 	}
 
 	public void OpenPuzzle(int puzzleSize, int puzzleIndex)

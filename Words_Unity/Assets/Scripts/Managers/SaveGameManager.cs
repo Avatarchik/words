@@ -19,6 +19,7 @@ public class SaveGameManager : SingletonMonoBehaviour<SaveGameManager>
 	{
 		mPuzzleGuids = new List<SerializableGuid>();
 		PuzzleManagerRef.PopulateGuidList(ref mPuzzleGuids);
+		mPuzzleGuids.Add(GlobalSettings.Instance.PotDFixedGuid);
 
 		mPuzzleStates = new List<PuzzleState>(mPuzzleGuids.Count);
 		foreach (SerializableGuid puzzleGuid in mPuzzleGuids)

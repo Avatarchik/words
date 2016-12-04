@@ -11,7 +11,7 @@ public class PuzzleListButton : UIMonoBehaviour, IPointerClickHandler
 	public int PuzzleSize;
 	public bool IsLastPlayedButton = false;
 
-	private SerializableGuid mLastPuzzleGuid;
+	private SerializableGuid mLastPuzzleGuid = SerializableGuid.Empty;
 
 	void Awake()
 	{
@@ -26,7 +26,7 @@ public class PuzzleListButton : UIMonoBehaviour, IPointerClickHandler
 		if (IsLastPlayedButton)
 		{
 			mLastPuzzleGuid = PuzzleManager.sActivePuzzleGuid;
-			ButtonRef.interactable = mLastPuzzleGuid != null && mLastPuzzleGuid != Guid.Empty;
+			ButtonRef.interactable = mLastPuzzleGuid != null && mLastPuzzleGuid != SerializableGuid.Empty;
 		}
 	}
 
