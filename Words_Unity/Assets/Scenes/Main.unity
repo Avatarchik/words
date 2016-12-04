@@ -2777,6 +2777,7 @@ GameObject:
   - 222: {fileID: 241386174}
   - 114: {fileID: 241386173}
   - 114: {fileID: 241386172}
+  - 114: {fileID: 241386176}
   - 114: {fileID: 241386175}
   m_Layer: 5
   m_Name: PauseButton
@@ -2907,6 +2908,17 @@ MonoBehaviour:
     PivotX: 1
     PivotY: 1
     Rotation: {x: 0, y: 0, z: 0}
+--- !u!114 &241386176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 241386170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ded6022f50fd0264c822df94d3bf6396, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &250530556
 GameObject:
   m_ObjectHideFlags: 0
