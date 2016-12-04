@@ -1,0 +1,295 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 2016_12_08
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: 01234567-89ab-cdef-0123-456789abcdef
+  Size: 5
+  WordCount: 20
+  MaxCharacterUsage: 4
+  Words:
+  - Length: 4
+    Forwards: PLED
+    Backwards: DELP
+    Definition: A past tense and past participle of plead.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 4
+    Forwards: RIFF
+    Backwards: FFIR
+    Definition: A series of notes in popular or jazz music, especially one that is
+      improvised and repeated.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 4
+    Forwards: DODS
+    Backwards: SDOD
+    Definition: The abbreviation of the department of defense.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 4
+    Forwards: PEPS
+    Backwards: SPEP
+    Definition: Physical energy.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 3
+  - Length: 4
+    Forwards: DAIS
+    Backwards: SIAD
+    Definition: A low stage or platform indoors that you stand or sit on so that people
+      can see and hear you, for example when you are making a speech.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 4
+    Forwards: LARN
+    Backwards: NRAL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: IFF
+    Backwards: FFI
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: ADD
+    Backwards: DDA
+    Definition: To put something with another thing or group to increase the amount,
+      size, or cost.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  - Length: 3
+    Forwards: AIS
+    Backwards: SIA
+    Definition: The abbreviation of artificial intelligence.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: LAR
+    Backwards: RAL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: LED
+    Backwards: DEL
+    Definition: The past tense and past participle of lead.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: DEL
+    Backwards: LED
+    Definition: A group of islands near the south coast of South America, which belong
+      to Chile and Argentina.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 3
+    Forwards: DOD
+    Backwards: DOD
+    Definition: The abbreviation of the department of defense.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: ELF
+    Backwards: FLE
+    Definition: A small imaginary person with pointed ears and magical powers.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: PEP
+    Backwards: PEP
+    Definition: Physical energy.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 3
+    Forwards: ODS
+    Backwards: SDO
+    Definition: To take too much of a dangerous drug.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 3
+    Forwards: RIF
+    Backwards: FIR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: FID
+    Backwards: DIF
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: FAS
+    Backwards: SAF
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: IDS
+    Backwards: SDI
+    Definition: A document or card that shows your name, date of birth, etc., usually
+      with a photograph.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 3
+  CharGrid:
+  - Character: 80
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 3
+  - Character: 80
+    NumberOfUses: 2
+  - Character: 83
+    NumberOfUses: 2
+  - Character: 76
+    NumberOfUses: 2
+  - Character: 80
+    NumberOfUses: 1
+  - Character: 76
+    NumberOfUses: 4
+  - Character: 69
+    NumberOfUses: 3
+  - Character: 68
+    NumberOfUses: 4
+  - Character: 65
+    NumberOfUses: 2
+  - Character: 68
+    NumberOfUses: 1
+  - Character: 70
+    NumberOfUses: 4
+  - Character: 70
+    NumberOfUses: 4
+  - Character: 73
+    NumberOfUses: 4
+  - Character: 82
+    NumberOfUses: 4
+  - Character: 68
+    NumberOfUses: 2
+  - Character: 65
+    NumberOfUses: 3
+  - Character: 73
+    NumberOfUses: 3
+  - Character: 83
+    NumberOfUses: 2
+  - Character: 78
+    NumberOfUses: 1
+  - Character: 65
+    NumberOfUses: 1
+  - Character: 83
+    NumberOfUses: 3
+  - Character: 68
+    NumberOfUses: 4
+  - Character: 79
+    NumberOfUses: 3
+  - Character: 68
+    NumberOfUses: 2

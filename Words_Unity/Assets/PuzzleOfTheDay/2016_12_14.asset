@@ -1,0 +1,383 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 2016_12_14
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: 01234567-89ab-cdef-0123-456789abcdef
+  Size: 5
+  WordCount: 28
+  MaxCharacterUsage: 9
+  Words:
+  - Length: 4
+    Forwards: PLOP
+    Backwards: POLP
+    Definition: The sound made by something when it falls or is dropped into liquid.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 4
+    Forwards: YELL
+    Backwards: LLEY
+    Definition: A loud shout.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 3
+  - Length: 3
+    Forwards: PST
+    Backwards: TSP
+    Definition: The abbreviation of pacific standard time.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: DAW
+    Backwards: WAD
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 3
+    Forwards: PIC
+    Backwards: CIP
+    Definition: A picture or movie.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Length: 4
+    Forwards: TROY
+    Backwards: YORT
+    Definition: A small unit of troy weight that is equal to 31.1 grams.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 4
+    Forwards: OURS
+    Backwards: SRUO
+    Definition: The thing or things belonging or relating to the person who is speaking
+      and one or more other people.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: MAR
+    Backwards: RAM
+    Definition: "The small red planet that is fourth in order from the Sun and is
+      the first planet outside Earth\u2019s orbit."
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: SUD
+    Backwards: DUS
+    Definition: The bubbles formed on the top of water with soap in it.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: LOP
+    Backwards: POL
+    Definition: To cut branches from a tree, especially with a single strong movement.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: LAR
+    Backwards: RAL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: URS
+    Backwards: SRU
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: WAD
+    Backwards: DAW
+    Definition: To press something such as a piece of paper or cloth into a small
+      tight ball.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 4
+    Forwards: CATS
+    Backwards: STAC
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: ART
+    Backwards: TRA
+    Definition: Showing or resulting from a lot of skill and artistic ability.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: CAT
+    Backwards: TAC
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: EAU
+    Backwards: UAE
+    Definition: Cologne.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: ELL
+    Backwards: LLE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 0
+      Y: 3
+  - Length: 3
+    Forwards: OUR
+    Backwards: RUO
+    Definition: The thing or things belonging or relating to the person who is speaking
+      and one or more other people.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: LAS
+    Backwards: SAL
+    Definition: A city in the desert of the U.S. state of Nevada.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: ARD
+    Backwards: DRA
+    Definition: Someone who is usually or always in a particular state.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: TRO
+    Backwards: ORT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: YEL
+    Backwards: LEY
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 3
+    Forwards: SAL
+    Backwards: LAS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: OPT
+    Backwards: TPO
+    Definition: To choose one thing or one course of action instead of another.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: RAM
+    Backwards: MAR
+    Definition: To run or drive into something very hard.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 4
+    Forwards: DRAM
+    Backwards: MARD
+    Definition: A small unit of weight or of liquid.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: SAY
+    Backwards: YAS
+    Definition: To use particular words to tell someone a thought, opinion, explanation,
+      etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 1
+  CharGrid:
+  - Character: 89
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 4
+  - Character: 76
+    NumberOfUses: 4
+  - Character: 76
+    NumberOfUses: 4
+  - Character: 80
+    NumberOfUses: 1
+  - Character: 80
+    NumberOfUses: 1
+  - Character: 87
+    NumberOfUses: 2
+  - Character: 65
+    NumberOfUses: 7
+  - Character: 68
+    NumberOfUses: 5
+  - Character: 76
+    NumberOfUses: 2
+  - Character: 73
+    NumberOfUses: 1
+  - Character: 83
+    NumberOfUses: 5
+  - Character: 82
+    NumberOfUses: 9
+  - Character: 85
+    NumberOfUses: 5
+  - Character: 79
+    NumberOfUses: 5
+  - Character: 67
+    NumberOfUses: 3
+  - Character: 65
+    NumberOfUses: 7
+  - Character: 84
+    NumberOfUses: 4
+  - Character: 83
+    NumberOfUses: 3
+  - Character: 80
+    NumberOfUses: 4
+  - Character: 77
+    NumberOfUses: 3
+  - Character: 89
+    NumberOfUses: 2
+  - Character: 79
+    NumberOfUses: 2
+  - Character: 82
+    NumberOfUses: 2
+  - Character: 84
+    NumberOfUses: 3

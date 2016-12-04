@@ -1,0 +1,618 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 2016_12_12
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: 01234567-89ab-cdef-0123-456789abcdef
+  Size: 6
+  WordCount: 47
+  MaxCharacterUsage: 10
+  Words:
+  - Length: 4
+    Forwards: CRIT
+    Backwards: TIRC
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 5
+    Forwards: KELTS
+    Backwards: STLEK
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 5
+    Forwards: ERICS
+    Backwards: SCIRE
+    Definition: Th century) a Norwegian explorer who sailed along the coast of Greenland
+      and brought people to settle there.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 4
+  - Length: 4
+    Forwards: MIXY
+    Backwards: YXIM
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 4
+    Forwards: EVIL
+    Backwards: LIVE
+    Definition: Someone who is evil deliberately does very cruel things to harm other
+      people.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 5
+    Forwards: DECOR
+    Backwards: ROCED
+    Definition: The way that the inside of a building is decorated.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 5
+    Forwards: STRIP
+    Backwards: PIRTS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 4
+    Forwards: FARE
+    Backwards: ERAF
+    Definition: The price you pay to travel by bus, train, airplane, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 0
+      Y: 1
+  - Length: 3
+    Forwards: FAN
+    Backwards: NAF
+    Definition: Someone who likes a particular sport, kind of music, etc. very much,
+      or who admires a famous person.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: ROC
+    Backwards: COR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 5
+  - Length: 3
+    Forwards: PYX
+    Backwards: XYP
+    Definition: A small container in which the holy bread used for the Christian ceremony
+      of communion is kept.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 4
+    Forwards: TRIP
+    Backwards: PIRT
+    Definition: An occasion when you travel from one place to another.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 4
+    Forwards: ERIC
+    Backwards: CIRE
+    Definition: Th century) a Norwegian explorer who sailed along the coast of Greenland
+      and brought people to settle there.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 3
+    Forwards: AIT
+    Backwards: TIA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 4
+    Forwards: SERA
+    Backwards: ARES
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 3
+  - Length: 3
+    Forwards: MIX
+    Backwards: XIM
+    Definition: The particular combination of things or people that form a group.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: YET
+    Backwards: TEY
+    Definition: Used to introduce a statement that is surprising after what you have
+      just said.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 3
+    Forwards: PER
+    Backwards: REP
+    Definition: For each.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: AYE
+    Backwards: EYA
+    Definition: Used to say yes, especially when voting.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: ELT
+    Backwards: TLE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: NIS
+    Backwards: SIN
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: COR
+    Backwards: ROC
+    Definition: "Used instead of con- before the letter \u201Cr\u201D."
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 3
+    Forwards: SIN
+    Backwards: NIS
+    Definition: "To break God\u2019s laws."
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: ERA
+    Backwards: ARE
+    Definition: A period of time that is associated with particular events or qualities,
+      or that begins with a particular date or event.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 0
+      Y: 3
+  - Length: 4
+    Forwards: DECO
+    Backwards: OCED
+    Definition: A style of art and decoration that uses simple shapes and was popular
+      in the U.S. and Europe in the 1920s and 1930s.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 5
+  - Length: 4
+    Forwards: ELTS
+    Backwards: STLE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: RIP
+    Backwards: PIR
+    Definition: A long tear or cut.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 2
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 3
+    Forwards: RIT
+    Backwards: TIR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 4
+    Forwards: KELT
+    Backwards: TLEK
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: ARE
+    Backwards: ERA
+    Definition: "The present tense plural form of \u201Cbe\u201D."
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 0
+      Y: 1
+  - Length: 3
+    Forwards: FIL
+    Backwards: LIF
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: SEX
+    Backwards: XES
+    Definition: Physical activity between two people that involves the joining of
+      their sexual organs, done either to produce babies, or for pleasure.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: RAY
+    Backwards: YAR
+    Definition: A narrow beam of light from the Sun or from something such as a lamp.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 3
+    Forwards: FAR
+    Backwards: RAF
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 3
+    Forwards: SER
+    Backwards: RES
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 3
+    Forwards: KEL
+    Backwards: LEK
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: ERI
+    Backwards: IRE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 3
+    Forwards: REP
+    Backwards: PER
+    Definition: Someone who speaks officially for a company or organization.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: SIR
+    Backwards: RIS
+    Definition: Used when speaking to a man in order to be polite or to show respect.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 5
+    Forwards: TRIPE
+    Backwards: EPIRT
+    Definition: Something that has been said or written which is stupid or not true.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 4
+    Forwards: CORE
+    Backwards: EROC
+    Definition: The hard central part of fruit such as an apple.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 5
+  - Length: 3
+    Forwards: ORE
+    Backwards: ERO
+    Definition: Rock or earth from which metal can be obtained.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 5
+  - Length: 4
+    Forwards: CIRE
+    Backwards: ERIC
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 3
+  - Length: 5
+    Forwards: FARES
+    Backwards: SERAF
+    Definition: The price you pay to travel by bus, train, airplane, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 4
+  - Length: 4
+    Forwards: RIPE
+    Backwards: EPIR
+    Definition: Ripe fruit or crops are fully grown and ready to eat.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 4
+    Forwards: LIVE
+    Backwards: EVIL
+    Definition: To be alive or continue to stay alive.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 4
+    Forwards: ARES
+    Backwards: SERA
+    Definition: "The present tense plural form of \u201Cbe\u201D."
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 3
+  CharGrid:
+  - Character: 83
+    NumberOfUses: 4
+  - Character: 69
+    NumberOfUses: 7
+  - Character: 82
+    NumberOfUses: 9
+  - Character: 65
+    NumberOfUses: 8
+  - Character: 70
+    NumberOfUses: 4
+  - Character: 68
+    NumberOfUses: 2
+  - Character: 83
+    NumberOfUses: 2
+  - Character: 84
+    NumberOfUses: 4
+  - Character: 82
+    NumberOfUses: 7
+  - Character: 73
+    NumberOfUses: 8
+  - Character: 80
+    NumberOfUses: 5
+  - Character: 69
+    NumberOfUses: 4
+  - Character: 75
+    NumberOfUses: 3
+  - Character: 69
+    NumberOfUses: 10
+  - Character: 76
+    NumberOfUses: 8
+  - Character: 84
+    NumberOfUses: 7
+  - Character: 83
+    NumberOfUses: 5
+  - Character: 67
+    NumberOfUses: 5
+  - Character: 80
+    NumberOfUses: 3
+  - Character: 89
+    NumberOfUses: 5
+  - Character: 88
+    NumberOfUses: 4
+  - Character: 73
+    NumberOfUses: 8
+  - Character: 77
+    NumberOfUses: 2
+  - Character: 79
+    NumberOfUses: 6
+  - Character: 70
+    NumberOfUses: 1
+  - Character: 65
+    NumberOfUses: 3
+  - Character: 78
+    NumberOfUses: 3
+  - Character: 82
+    NumberOfUses: 2
+  - Character: 86
+    NumberOfUses: 2
+  - Character: 82
+    NumberOfUses: 5
+  - Character: 69
+    NumberOfUses: 4
+  - Character: 82
+    NumberOfUses: 5
+  - Character: 73
+    NumberOfUses: 4
+  - Character: 67
+    NumberOfUses: 4
+  - Character: 83
+    NumberOfUses: 1
+  - Character: 69
+    NumberOfUses: 4

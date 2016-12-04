@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEditor;
+using System;
 using System.Collections.Generic;
 using System.IO;
 
@@ -13,6 +14,14 @@ public class PuzzleGenerator : EditorWindow
 	private int mMaxTileUsage = 5;
 
 	private int mTestLevelsPerSize = 5;
+
+	private int mPotDsToGenerate = 30;
+	[Range(1, 31)]
+	public int mPotDStartDateDay = 1;
+	[Range(1, 12)]
+	public int mPotDStartDateMonth = 1;
+	[Range(2016, 2020)]
+	public int mPotDStartDateYear = 2016;
 
 	private char INVALID_CHAR = ' ';
 	private CharacterUsage[,] mGrid;
@@ -44,6 +53,7 @@ public class PuzzleGenerator : EditorWindow
 
 	void OnGUI()
 	{
+		// Normal generation
 		GUILayout.Label("Settings", EditorStyles.boldLabel);
 
 		GUILayout.Space(8);
@@ -54,9 +64,10 @@ public class PuzzleGenerator : EditorWindow
 		GUILayout.Space(8);
 		if (GUILayout.Button("Generate"))
 		{
-			Generate();
+			Generate("Assets/Resources/Puzzles");
 		}
 
+		// Test level generation
 		GUILayout.Space(8);
 		GUILayout.Label("Test Levels", EditorStyles.boldLabel);
 
@@ -67,6 +78,22 @@ public class PuzzleGenerator : EditorWindow
 		if (GUILayout.Button("Generate Test Puzzles"))
 		{
 			GenerateTestLevels();
+		}
+
+		// Puzzle of the Day generation
+		GUILayout.Space(8);
+		GUILayout.Label("Puzzle of the Day Levels", EditorStyles.boldLabel);
+
+		GUILayout.Space(8);
+		mPotDsToGenerate = EditorGUILayout.IntSlider("Puzzles", mPotDsToGenerate, 1, 365);
+		mPotDStartDateDay = EditorGUILayout.IntSlider("Start Date Day", mPotDStartDateDay, 1, 31);
+		mPotDStartDateMonth = EditorGUILayout.IntSlider("Start Date Month", mPotDStartDateMonth, 1, 12);
+		mPotDStartDateYear = EditorGUILayout.IntSlider("Start Date Year", mPotDStartDateYear, 2016, 2020);
+
+		GUILayout.Space(8);
+		if (GUILayout.Button("Generate PotD Puzzles"))
+		{
+			GeneratePuzzleOfTheDays();
 		}
 	}
 
@@ -93,14 +120,14 @@ public class PuzzleGenerator : EditorWindow
 		}
 	}
 
-	private bool Generate()
+	private bool Generate(string pathRoot, bool isPotD = false, string potdDate = "")
 	{
 		float startTime = Time.realtimeSinceStartup;
 
 		Initialise();
 		SetupPositionalLists();
 
-		bool wasGenerationSuccessful = GenerateInternal();
+		bool wasGenerationSuccessful = GenerateInternal(pathRoot, isPotD, potdDate);
 		if (!wasGenerationSuccessful)
 		{
 			ODebug.LogWarning("Generation unsuccessful!");
@@ -129,7 +156,7 @@ public class PuzzleGenerator : EditorWindow
 			{
 				mSize = i;
 
-				bool wasSuccessful = Generate();
+				bool wasSuccessful = Generate("Assets/Resources/Puzzles");
 				if (!wasSuccessful)
 				{
 					--j;
@@ -138,6 +165,31 @@ public class PuzzleGenerator : EditorWindow
 		}
 
 		mSize = originalSize;
+	}
+
+	private void GeneratePuzzleOfTheDays()
+	{
+		string pathRoot = "Assets/PuzzleOfTheDay/";
+		mWordLimit = 1024;
+		mMaxTileUsage = GlobalSettings.Instance.PuzzleSizeMaxTileUsage;
+
+		DateTime startDate = new DateTime(mPotDStartDateYear, mPotDStartDateMonth, mPotDStartDateDay);
+
+		for (int puzzleCount = 0; puzzleCount < mPotDsToGenerate; ++puzzleCount)
+		{
+			mSize = UnityEngine.Random.Range(GlobalSettings.Instance.PuzzleSizeMin, GlobalSettings.Instance.PuzzleSizeMax);
+
+			DateTime date = startDate;
+			date = date.AddDays(puzzleCount);
+
+			bool wasSuccessful = Generate(pathRoot, true, date.ToString("yyyy_MM_dd"));
+			if (!wasSuccessful)
+			{
+				puzzleCount = MathfHelper.Clamp0(puzzleCount - 1);
+			}
+		}
+
+		ODebug.Log("Puzzle of the Days generated");
 	}
 
 	private void SetupPositionalLists()
@@ -162,12 +214,12 @@ public class PuzzleGenerator : EditorWindow
 		}
 	}
 
-	private bool GenerateInternal()
+	private bool GenerateInternal(string pathRoot, bool isPotD, string potdDate)
 	{
 		bool userCancelled = false;
 
 		// Step 1 - initialise
-		mNewPuzzleContents = InitialiseGeneration();
+		mNewPuzzleContents = InitialiseGeneration(pathRoot);
 
 		// Step 2 - Run over the word list and attempt to places words
 		RunWordListPass(out userCancelled);
@@ -195,16 +247,16 @@ public class PuzzleGenerator : EditorWindow
 
 		// Finished
 		ODebug.Log("Word count: " + mWords.Count);
-		bool wasFinalised = FinaliseGeneration();
+		bool wasFinalised = FinaliseGeneration(isPotD, potdDate);
 
 		return wasFinalised;
 	}
 
-	private PuzzleContents InitialiseGeneration()
+	private PuzzleContents InitialiseGeneration(string pathRoot)
 	{
 		ProgressBarHelper.Begin(false, kProgressBarTitle, "Step 1/5: Initialising...");
 
-		mContentsPath = string.Format("Assets/Resources/Puzzles/{0}.asset", System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss"));
+		mContentsPath = string.Format("{0}{1}.asset", pathRoot, DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss"));
 		PuzzleContents contents = CreateScriptableObjects.CreateNewPuzzleContents(mContentsPath);
 		contents.Initialise(mSize);
 
@@ -228,7 +280,7 @@ public class PuzzleGenerator : EditorWindow
 		return contents;
 	}
 
-	private bool FinaliseGeneration()
+	private bool FinaliseGeneration(bool isPotD, string potdDate)
 	{
 		bool wasFinalised = mNewPuzzleContents.Finalise(mGrid);
 
@@ -248,7 +300,17 @@ public class PuzzleGenerator : EditorWindow
 			++nextID;
 		}
 
-		string newContentsFileName = string.Format("{0:D2}_{1:D4}_{2:D4}", mSize, nextID, mWords.Count);
+		string newContentsFileName;
+		if (isPotD)
+		{
+			newContentsFileName = potdDate;
+			mNewPuzzleContents.Guid = GlobalSettings.Instance.PotDFixedGuid;
+		}
+		else
+		{
+			newContentsFileName = string.Format("{0:D2}_{1:D4}_{2:D4}", mSize, nextID, mWords.Count);
+		}
+
 		if (!wasFinalised)
 		{
 			newContentsFileName += "_Failed";
@@ -264,6 +326,13 @@ public class PuzzleGenerator : EditorWindow
 			AssetDatabase.Refresh();
 		}
 		AssetDatabase.MoveAsset(currentPath, newPath);
+		AssetDatabase.Refresh();
+
+		if (isPotD)
+		{
+			AssetImporter assetImporter = AssetImporter.GetAtPath(newPath);
+			assetImporter.assetBundleName = potdDate;
+		}
 
 		return wasFinalised;
 	}

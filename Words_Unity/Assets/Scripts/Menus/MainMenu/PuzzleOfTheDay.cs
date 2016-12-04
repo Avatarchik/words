@@ -55,7 +55,7 @@ public class PuzzleOfTheDay : MonoBehaviour, IPointerClickHandler
 
 	private IEnumerator FetchPoTD()
 	{
-		string url = string.Format(GAEURLFormat, DateTime.Today.ToString("dd_MM_yyyy"));
+		string url = string.Format(GAEURLFormat, DateTime.Today.ToString("yyyy_MM_dd"));
 		UnityWebRequest www = UnityWebRequest.GetAssetBundle(url);
 		yield return www.Send();
 

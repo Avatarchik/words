@@ -1,0 +1,1649 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 2017_01_02
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: 01234567-89ab-cdef-0123-456789abcdef
+  Size: 9
+  WordCount: 130
+  MaxCharacterUsage: 12
+  Words:
+  - Length: 7
+    Forwards: STRETTO
+    Backwards: OTTERTS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 7
+    ToPosition:
+      X: 0
+      Y: 1
+  - Length: 6
+    Forwards: ANARCH
+    Backwards: HCRANA
+    Definition: The political belief that there should be no government and that ordinary
+      people should work together to improve society.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 1
+    ToPosition:
+      X: 7
+      Y: 6
+  - Length: 8
+    Forwards: GAROTTES
+    Backwards: SETTORAG
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 8
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 7
+    Forwards: HIPPING
+    Backwards: GNIPPIH
+    Definition: One of the two parts on each side of your body between the top of
+      your leg and your waist.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 6
+    ToPosition:
+      X: 1
+      Y: 6
+  - Length: 7
+    Forwards: FLUBBED
+    Backwards: DEBBULF
+    Definition: To make a mistake or do something badly.
+    HasDefinition: 1
+    FromPosition:
+      X: 8
+      Y: 8
+    ToPosition:
+      X: 2
+      Y: 8
+  - Length: 8
+    Forwards: TRUNDLES
+    Backwards: SELDNURT
+    Definition: To move slowly and heavily along on wheels, or to make something do
+      this by pushing or pulling it.
+    HasDefinition: 1
+    FromPosition:
+      X: 8
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 8
+    Forwards: BLAZONED
+    Backwards: DENOZALB
+    Definition: To be written or shown on something in a very noticeable way.
+    HasDefinition: 1
+    FromPosition:
+      X: 8
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 0
+  - Length: 7
+    Forwards: FAILING
+    Backwards: GNILIAF
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 8
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 6
+    Forwards: KNOSPS
+    Backwards: SPSONK
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 8
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 7
+    Forwards: COASTED
+    Backwards: DETSAOC
+    Definition: The area where the land meets the ocean.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 5
+  - Length: 8
+    Forwards: MATTOIDS
+    Backwards: SDIOTTAM
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 8
+      Y: 7
+    ToPosition:
+      X: 1
+      Y: 7
+  - Length: 4
+    Forwards: TINS
+    Backwards: SNIT
+    Definition: A soft white metal that is an element and is often used to cover and
+      protect iron and steel.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: FED
+    Backwards: DEF
+    Definition: The past tense and past participle of feed.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 8
+    ToPosition:
+      X: 2
+      Y: 8
+  - Length: 3
+    Forwards: TRY
+    Backwards: YRT
+    Definition: Three.
+    HasDefinition: 1
+    FromPosition:
+      X: 8
+      Y: 4
+    ToPosition:
+      X: 8
+      Y: 6
+  - Length: 3
+    Forwards: HEN
+    Backwards: NEH
+    Definition: An adult female chicken.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: TOR
+    Backwards: ROT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 3
+    ToPosition:
+      X: 6
+      Y: 3
+  - Length: 5
+    Forwards: KNOSP
+    Backwards: PSONK
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 8
+      Y: 2
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 7
+    Forwards: RUNDLES
+    Backwards: SELDNUR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 7
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 4
+    Forwards: HENT
+    Backwards: TNEH
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 3
+  - Length: 3
+    Forwards: ALP
+    Backwards: PLA
+    Definition: A range of mountains in Europe that runs through France, Switzerland,
+      Italy, Germany, and Austria.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 4
+    Forwards: PAUA
+    Backwards: AUAP
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 6
+    ToPosition:
+      X: 7
+      Y: 3
+  - Length: 5
+    Forwards: TERTS
+    Backwards: STRET
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 0
+      Y: 7
+  - Length: 3
+    Forwards: HON
+    Backwards: NOH
+    Definition: A short form of honey, used to address someone you love.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 6
+    ToPosition:
+      X: 5
+      Y: 4
+  - Length: 4
+    Forwards: ILIA
+    Backwards: AILI
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 1
+    ToPosition:
+      X: 7
+      Y: 1
+  - Length: 3
+    Forwards: GAR
+    Backwards: RAG
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 8
+      Y: 3
+    ToPosition:
+      X: 6
+      Y: 3
+  - Length: 4
+    Forwards: RANA
+    Backwards: ANAR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 7
+      Y: 4
+    ToPosition:
+      X: 7
+      Y: 1
+  - Length: 3
+    Forwards: ANA
+    Backwards: ANA
+    Definition: A collection of objects, papers, etc., relating to someone or something.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 1
+    ToPosition:
+      X: 7
+      Y: 3
+  - Length: 3
+    Forwards: NOS
+    Backwards: SON
+    Definition: The written abbreviation ofnumbers.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 3
+    Forwards: TIN
+    Backwards: NIT
+    Definition: A soft white metal that is an element and is often used to cover and
+      protect iron and steel.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 3
+    Forwards: TIC
+    Backwards: CIT
+    Definition: A sudden uncontrolled movement of a muscle in your face, usually because
+      of a nervous illness.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 7
+    ToPosition:
+      X: 7
+      Y: 5
+  - Length: 3
+    Forwards: LIS
+    Backwards: SIL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 7
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 3
+    Forwards: RAN
+    Backwards: NAR
+    Definition: The past tense of run.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 4
+    ToPosition:
+      X: 7
+      Y: 2
+  - Length: 3
+    Forwards: DEN
+    Backwards: NED
+    Definition: A room in a house where people relax, read, watch television, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Length: 3
+    Forwards: BIN
+    Backwards: NIB
+    Definition: A large container for storing things, such as goods in a store or
+      substances in a factory.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 8
+    ToPosition:
+      X: 2
+      Y: 6
+  - Length: 3
+    Forwards: DIP
+    Backwards: PID
+    Definition: To put something into a liquid and quickly lift it out again.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 8
+    ToPosition:
+      X: 4
+      Y: 6
+  - Length: 6
+    Forwards: AILING
+    Backwards: GNILIA
+    Definition: An ailing company or economy is having a lot of problems and is not
+      successful.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 5
+    Forwards: ISTLE
+    Backwards: ELTSI
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 5
+  - Length: 4
+    Forwards: FAIL
+    Backwards: LIAF
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 8
+      Y: 1
+    ToPosition:
+      X: 5
+      Y: 1
+  - Length: 3
+    Forwards: NIS
+    Backwards: SIN
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 3
+    Forwards: RUN
+    Backwards: NUR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 7
+      Y: 4
+    ToPosition:
+      X: 5
+      Y: 4
+  - Length: 3
+    Forwards: LEI
+    Backwards: IEL
+    Definition: "A circle made of flowers that you put around someone\u2019s neck
+      as a greeting, especially in Hawaii."
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 2
+  - Length: 3
+    Forwards: LIN
+    Backwards: NIL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 3
+    Forwards: TIG
+    Backwards: GIT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 5
+    Forwards: ZONED
+    Backwards: DENOZ
+    Definition: To officially divide an area into zones for different purposes, or
+      to say officially that a particular area must be used for a particular purpose.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 0
+  - Length: 4
+    Forwards: SETT
+    Backwards: TTES
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: RET
+    Backwards: TER
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 0
+      Y: 3
+  - Length: 4
+    Forwards: LIST
+    Backwards: TSIL
+    Definition: To write a list, or mention things one after the other.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: INS
+    Backwards: SNI
+    Definition: Used with the name of a container, place, or area to show where someone
+      or something is.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: OPS
+    Backwards: SPO
+    Definition: The written abbreviation of opus.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 7
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 6
+    Forwards: RUNDLE
+    Backwards: ELDNUR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 7
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 4
+    Forwards: STED
+    Backwards: DETS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 5
+  - Length: 4
+    Forwards: BIND
+    Backwards: DNIB
+    Definition: An annoying or difficult situation.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 8
+    ToPosition:
+      X: 1
+      Y: 5
+  - Length: 3
+    Forwards: SON
+    Backwards: NOS
+    Definition: "Someone\u2019s male child."
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 2
+    ToPosition:
+      X: 7
+      Y: 2
+  - Length: 3
+    Forwards: NIL
+    Backwards: LIN
+    Definition: Nothing or zero.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 1
+    ToPosition:
+      X: 5
+      Y: 1
+  - Length: 4
+    Forwards: BOPS
+    Backwards: SPOB
+    Definition: To hit someone without much force, or as a joke.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 8
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 4
+    Forwards: CRAN
+    Backwards: NARC
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 7
+      Y: 5
+    ToPosition:
+      X: 7
+      Y: 2
+  - Length: 3
+    Forwards: SET
+    Backwards: TES
+    Definition: The place where something is or where something happens, and the general
+      environment surrounding the thing or event.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 5
+  - Length: 3
+    Forwards: EEN
+    Backwards: NEE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 6
+  - Length: 4
+    Forwards: OAST
+    Backwards: TSAO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 6
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 5
+  - Length: 3
+    Forwards: AIA
+    Backwards: AIA
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 7
+      Y: 7
+  - Length: 3
+    Forwards: OUR
+    Backwards: RUO
+    Definition: The thing or things belonging or relating to the person who is speaking
+      and one or more other people.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 5
+    ToPosition:
+      X: 6
+      Y: 3
+  - Length: 4
+    Forwards: FLUB
+    Backwards: BULF
+    Definition: To make a mistake or do something badly.
+    HasDefinition: 1
+    FromPosition:
+      X: 8
+      Y: 8
+    ToPosition:
+      X: 5
+      Y: 8
+  - Length: 3
+    Forwards: FLU
+    Backwards: ULF
+    Definition: A common infectious disease that makes your throat sore, makes it
+      difficult for you to breathe, gives you a fever, and makes you feel very tired.
+    HasDefinition: 1
+    FromPosition:
+      X: 8
+      Y: 8
+    ToPosition:
+      X: 6
+      Y: 8
+  - Length: 3
+    Forwards: ELS
+    Backwards: SLE
+    Definition: A rise in the temperature in the current in the Pacific Ocean off
+      the west coast of South America that happens every three to eight years, leading
+      to severe changes in the weather in many parts of the world, especially to countries
+      in or near the Pacific Ocean.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 4
+    Forwards: SELD
+    Backwards: DLES
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 4
+    Forwards: ZONE
+    Backwards: ENOZ
+    Definition: To officially divide an area into zones for different purposes, or
+      to say officially that a particular area must be used for a particular purpose.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  - Length: 4
+    Forwards: NARC
+    Backwards: CRAN
+    Definition: A police officer who deals with the problem of illegal drugs.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 2
+    ToPosition:
+      X: 7
+      Y: 5
+  - Length: 3
+    Forwards: NOH
+    Backwards: HON
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 7
+      Y: 6
+  - Length: 3
+    Forwards: CHA
+    Backwards: AHC
+    Definition: A dance from South America with small, fast steps.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 5
+    ToPosition:
+      X: 7
+      Y: 7
+  - Length: 5
+    Forwards: COAST
+    Backwards: TSAOC
+    Definition: The area where the land meets the ocean.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 5
+    ToPosition:
+      X: 3
+      Y: 5
+  - Length: 3
+    Forwards: CIT
+    Backwards: TIC
+    Definition: An abbreviation used in formal writing to refer to a book that has
+      been mentioned already.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 7
+  - Length: 3
+    Forwards: MAT
+    Backwards: TAM
+    Definition: Another spelling of matte.
+    HasDefinition: 1
+    FromPosition:
+      X: 8
+      Y: 7
+    ToPosition:
+      X: 6
+      Y: 7
+  - Length: 3
+    Forwards: PAN
+    Backwards: NAP
+    Definition: A round metal container used for cooking, usually with one long handle
+      and sometimes a lid.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 6
+    ToPosition:
+      X: 5
+      Y: 4
+  - Length: 3
+    Forwards: ROT
+    Backwards: TOR
+    Definition: The natural process of decaying, or the part of something that has
+      decayed.
+    HasDefinition: 1
+    FromPosition:
+      X: 6
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: ELD
+    Backwards: DLE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 4
+    Forwards: LANA
+    Backwards: ANAL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 7
+      Y: 0
+    ToPosition:
+      X: 7
+      Y: 3
+  - Length: 3
+    Forwards: AIL
+    Backwards: LIA
+    Definition: An ailing company or economy is having a lot of problems and is not
+      successful.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 1
+    ToPosition:
+      X: 5
+      Y: 1
+  - Length: 3
+    Forwards: IDS
+    Backwards: SDI
+    Definition: A document or card that shows your name, date of birth, etc., usually
+      with a photograph.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 7
+    ToPosition:
+      X: 1
+      Y: 7
+  - Length: 4
+    Forwards: ARCH
+    Backwards: HCRA
+    Definition: A structure with a curved top and straight sides that supports the
+      weight of a bridge or building.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 3
+    ToPosition:
+      X: 7
+      Y: 6
+  - Length: 3
+    Forwards: LES
+    Backwards: SEL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 3
+    Forwards: PIN
+    Backwards: NIP
+    Definition: To fasten something somewhere, or to join two things together, using
+      a pin.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 6
+    ToPosition:
+      X: 2
+      Y: 6
+  - Length: 3
+    Forwards: DEB
+    Backwards: BED
+    Definition: A debutante.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 8
+    ToPosition:
+      X: 4
+      Y: 8
+  - Length: 3
+    Forwards: NAP
+    Backwards: PAN
+    Definition: A short sleep, especially during the day.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 5
+      Y: 6
+  - Length: 4
+    Forwards: GELT
+    Backwards: TLEG
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 6
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: HIP
+    Backwards: PIH
+    Definition: One of the two parts on each side of your body between the top of
+      your leg and your waist.
+    HasDefinition: 1
+    FromPosition:
+      X: 7
+      Y: 6
+    ToPosition:
+      X: 5
+      Y: 6
+  - Length: 4
+    Forwards: LING
+    Backwards: GNIL
+    Definition: A smaller, younger, or less important type of something.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: SEI
+    Backwards: IES
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 1
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 6
+  - Length: 4
+    Forwards: MATT
+    Backwards: TTAM
+    Definition: Matte paint, color, or photographs have a dull surface, not shiny.
+    HasDefinition: 1
+    FromPosition:
+      X: 8
+      Y: 7
+    ToPosition:
+      X: 5
+      Y: 7
+  - Length: 4
+    Forwards: PING
+    Backwards: GNIP
+    Definition: To make a short high ringing sound.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 6
+    ToPosition:
+      X: 1
+      Y: 6
+  - Length: 3
+    Forwards: MHO
+    Backwards: OHM
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 8
+      Y: 7
+    ToPosition:
+      X: 6
+      Y: 5
+  - Length: 4
+    Forwards: ELTS
+    Backwards: STLE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 3
+    Forwards: BOP
+    Backwards: POB
+    Definition: To hit someone without much force, or as a joke.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 8
+    ToPosition:
+      X: 4
+      Y: 6
+  - Length: 3
+    Forwards: LEG
+    Backwards: GEL
+    Definition: "Women\u2019s tight pants that stretch to fit the shape of the body,
+      and that have no zipper."
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 6
+  - Length: 3
+    Forwards: DOO
+    Backwards: OOD
+    Definition: A word for solid waste from your body, used especially by or when
+      speaking to children.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 4
+    ToPosition:
+      X: 6
+      Y: 2
+  - Length: 3
+    Forwards: END
+    Backwards: DNE
+    Definition: If a situation or activity ends, or someone ends it, it finishes or
+      stops.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 7
+  - Length: 3
+    Forwards: ONE
+    Backwards: ENO
+    Definition: A piece of paper money worth $1.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  - Length: 3
+    Forwards: EBB
+    Backwards: BBE
+    Definition: A situation or state in which something increases and decreases in
+      a type of pattern.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 8
+    ToPosition:
+      X: 5
+      Y: 8
+  - Length: 3
+    Forwards: NIP
+    Backwards: PIN
+    Definition: A small sharp bite, or the action of biting someone or something.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 6
+    ToPosition:
+      X: 4
+      Y: 6
+  - Length: 4
+    Forwards: BEDE
+    Backwards: EDEB
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 8
+    ToPosition:
+      X: 1
+      Y: 8
+  - Length: 7
+    Forwards: MATTOID
+    Backwards: DIOTTAM
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 8
+      Y: 7
+    ToPosition:
+      X: 2
+      Y: 7
+  - Length: 3
+    Forwards: HOT
+    Backwards: TOH
+    Definition: Having a high temperature.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 4
+    Forwards: RUND
+    Backwards: DNUR
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 7
+      Y: 4
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 3
+    Forwards: TAO
+    Backwards: OAT
+    Definition: The natural force that unites all things in the universe, according
+      to Taoism.
+    HasDefinition: 1
+    FromPosition:
+      X: 8
+      Y: 4
+    ToPosition:
+      X: 6
+      Y: 2
+  - Length: 3
+    Forwards: NUR
+    Backwards: RUN
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 7
+      Y: 4
+  - Length: 3
+    Forwards: TES
+    Backwards: SET
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 3
+    Forwards: BED
+    Backwards: DEB
+    Definition: Sheets, covers, etc. that you put on a bed.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 8
+    ToPosition:
+      X: 2
+      Y: 8
+  - Length: 6
+    Forwards: HOTTER
+    Backwards: RETTOH
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 0
+      Y: 5
+  - Length: 3
+    Forwards: APT
+    Backwards: TPA
+    Definition: To have a tendency to do something.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 5
+      Y: 7
+  - Length: 3
+    Forwards: NED
+    Backwards: DEN
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 1
+      Y: 0
+  - Length: 3
+    Forwards: LAH
+    Backwards: HAL
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 7
+      Y: 8
+    ToPosition:
+      X: 7
+      Y: 6
+  - Length: 6
+    Forwards: BLAZON
+    Backwards: NOZALB
+    Definition: To be written or shown on something in a very noticeable way.
+    HasDefinition: 1
+    FromPosition:
+      X: 8
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 0
+  - Length: 5
+    Forwards: OTTER
+    Backwards: RETTO
+    Definition: A small animal that can swim, has brown fur, and eats fish.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 0
+      Y: 5
+  - Length: 3
+    Forwards: TED
+    Backwards: DET
+    Definition: A U.S. baseball player known for his skill as a batter.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 5
+  - Length: 4
+    Forwards: TRET
+    Backwards: TERT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 6
+    ToPosition:
+      X: 0
+      Y: 3
+  - Length: 3
+    Forwards: BLA
+    Backwards: ALB
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 8
+      Y: 0
+    ToPosition:
+      X: 6
+      Y: 0
+  - Length: 3
+    Forwards: TAM
+    Backwards: MAT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 8
+      Y: 7
+    ToPosition:
+      X: 6
+      Y: 7
+  - Length: 3
+    Forwards: GIT
+    Backwards: TIG
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: IDE
+    Backwards: EDI
+    Definition: A date or period of time around the middle of the month in the ancient
+      Roman calendar.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 8
+    ToPosition:
+      X: 3
+      Y: 6
+  - Length: 3
+    Forwards: DEF
+    Backwards: FED
+    Definition: Very good, fashionable, attractive, etc.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 8
+    ToPosition:
+      X: 2
+      Y: 8
+  - Length: 3
+    Forwards: OHM
+    Backwards: MHO
+    Definition: A unit of electrical resistance, used to measure how easily an electric
+      current flows through a material.
+    HasDefinition: 1
+    FromPosition:
+      X: 8
+      Y: 7
+    ToPosition:
+      X: 6
+      Y: 5
+  - Length: 4
+    Forwards: SNIT
+    Backwards: TINS
+    Definition: To be annoyed about something, in a way that seems unreasonable.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: NIB
+    Backwards: BIN
+    Definition: The pointed metal part at the end of a pen.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 8
+    ToPosition:
+      X: 2
+      Y: 6
+  - Length: 4
+    Forwards: SIDE
+    Backwards: EDIS
+    Definition: Having the number or type of sides mentioned.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 8
+    ToPosition:
+      X: 4
+      Y: 5
+  - Length: 3
+    Forwards: EDH
+    Backwards: HDE
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  - Length: 3
+    Forwards: SIN
+    Backwards: NIS
+    Definition: "To break God\u2019s laws."
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 0
+    ToPosition:
+      X: 5
+      Y: 2
+  - Length: 4
+    Forwards: TEST
+    Backwards: TSET
+    Definition: To scientifically examine a substance or object in order to find out
+      something.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 5
+  - Length: 3
+    Forwards: GEO
+    Backwards: OEG
+    Definition: Relating to the Earth or its surface.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: NIT
+    Backwards: TIN
+    Definition: "An egg of a lousea small insect, that is sometimes found in people\u2019s
+      hair."
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 4
+    Forwards: CHAL
+    Backwards: LAHC
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 7
+      Y: 8
+    ToPosition:
+      X: 7
+      Y: 5
+  - Length: 3
+    Forwards: EST
+    Backwards: TSE
+    Definition: The written abbreviation of established used after the names of a
+      business to show when it was started.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 4
+  CharGrid:
+  - Character: 72
+    NumberOfUses: 5
+  - Character: 79
+    NumberOfUses: 5
+  - Character: 84
+    NumberOfUses: 10
+  - Character: 84
+    NumberOfUses: 8
+  - Character: 69
+    NumberOfUses: 6
+  - Character: 82
+    NumberOfUses: 6
+  - Character: 84
+    NumberOfUses: 3
+  - Character: 83
+    NumberOfUses: 2
+  - Character: 70
+    NumberOfUses: 2
+  - Character: 68
+    NumberOfUses: 5
+  - Character: 69
+    NumberOfUses: 3
+  - Character: 73
+    NumberOfUses: 8
+  - Character: 83
+    NumberOfUses: 6
+  - Character: 83
+    NumberOfUses: 5
+  - Character: 68
+    NumberOfUses: 4
+  - Character: 71
+    NumberOfUses: 4
+  - Character: 83
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 69
+    NumberOfUses: 7
+  - Character: 71
+    NumberOfUses: 6
+  - Character: 78
+    NumberOfUses: 7
+  - Character: 69
+    NumberOfUses: 4
+  - Character: 69
+    NumberOfUses: 11
+  - Character: 69
+    NumberOfUses: 10
+  - Character: 78
+    NumberOfUses: 9
+  - Character: 68
+    NumberOfUses: 6
+  - Character: 68
+    NumberOfUses: 7
+  - Character: 78
+    NumberOfUses: 9
+  - Character: 78
+    NumberOfUses: 5
+  - Character: 83
+    NumberOfUses: 4
+  - Character: 84
+    NumberOfUses: 3
+  - Character: 76
+    NumberOfUses: 12
+  - Character: 84
+    NumberOfUses: 8
+  - Character: 73
+    NumberOfUses: 7
+  - Character: 73
+    NumberOfUses: 7
+  - Character: 69
+    NumberOfUses: 5
+  - Character: 79
+    NumberOfUses: 5
+  - Character: 73
+    NumberOfUses: 8
+  - Character: 80
+    NumberOfUses: 3
+  - Character: 84
+    NumberOfUses: 8
+  - Character: 68
+    NumberOfUses: 7
+  - Character: 83
+    NumberOfUses: 8
+  - Character: 80
+    NumberOfUses: 9
+  - Character: 79
+    NumberOfUses: 5
+  - Character: 66
+    NumberOfUses: 10
+  - Character: 90
+    NumberOfUses: 4
+  - Character: 76
+    NumberOfUses: 9
+  - Character: 83
+    NumberOfUses: 10
+  - Character: 79
+    NumberOfUses: 5
+  - Character: 78
+    NumberOfUses: 11
+  - Character: 65
+    NumberOfUses: 8
+  - Character: 80
+    NumberOfUses: 5
+  - Character: 84
+    NumberOfUses: 6
+  - Character: 66
+    NumberOfUses: 3
+  - Character: 65
+    NumberOfUses: 4
+  - Character: 73
+    NumberOfUses: 8
+  - Character: 79
+    NumberOfUses: 5
+  - Character: 82
+    NumberOfUses: 5
+  - Character: 85
+    NumberOfUses: 8
+  - Character: 79
+    NumberOfUses: 8
+  - Character: 73
+    NumberOfUses: 5
+  - Character: 84
+    NumberOfUses: 5
+  - Character: 85
+    NumberOfUses: 3
+  - Character: 76
+    NumberOfUses: 6
+  - Character: 65
+    NumberOfUses: 9
+  - Character: 78
+    NumberOfUses: 10
+  - Character: 65
+    NumberOfUses: 12
+  - Character: 82
+    NumberOfUses: 12
+  - Character: 67
+    NumberOfUses: 10
+  - Character: 72
+    NumberOfUses: 11
+  - Character: 65
+    NumberOfUses: 9
+  - Character: 76
+    NumberOfUses: 5
+  - Character: 66
+    NumberOfUses: 3
+  - Character: 70
+    NumberOfUses: 2
+  - Character: 75
+    NumberOfUses: 2
+  - Character: 71
+    NumberOfUses: 2
+  - Character: 84
+    NumberOfUses: 3
+  - Character: 82
+    NumberOfUses: 1
+  - Character: 89
+    NumberOfUses: 1
+  - Character: 77
+    NumberOfUses: 7
+  - Character: 70
+    NumberOfUses: 3

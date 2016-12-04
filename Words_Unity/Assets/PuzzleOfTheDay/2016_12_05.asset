@@ -1,0 +1,493 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6804df6d333dd45a0fe8e11f31153c, type: 3}
+  m_Name: 2016_12_05
+  m_EditorClassIdentifier: 
+  Guid:
+    Value: 01234567-89ab-cdef-0123-456789abcdef
+  Size: 6
+  WordCount: 36
+  MaxCharacterUsage: 9
+  Words:
+  - Length: 3
+    Forwards: UNS
+    Backwards: SNU
+    Definition: Used to show an opposite state or a negative.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 5
+    Forwards: YERBA
+    Backwards: ABREY
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 4
+  - Length: 4
+    Forwards: TYND
+    Backwards: DNYT
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  - Length: 5
+    Forwards: VASES
+    Backwards: SESAV
+    Definition: A container used to put flowers in or for decoration.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 1
+      Y: 4
+  - Length: 5
+    Forwards: CUFFS
+    Backwards: SFFUC
+    Definition: The end part of a sleevethe arm of a shirt, dress etc. that often
+      has a button on it to hold it closed around your wrist.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 1
+      Y: 5
+  - Length: 5
+    Forwards: SORDS
+    Backwards: SDROS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 0
+      Y: 1
+  - Length: 5
+    Forwards: MEEDS
+    Backwards: SDEEM
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 1
+      Y: 1
+  - Length: 3
+    Forwards: FUN
+    Backwards: NUF
+    Definition: An experience or activity that is very enjoyable and exciting.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 2
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: TED
+    Backwards: DET
+    Definition: A U.S. baseball player known for his skill as a batter.
+    HasDefinition: 1
+    FromPosition:
+      X: 0
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 0
+  - Length: 3
+    Forwards: SOV
+    Backwards: VOS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 2
+    ToPosition:
+      X: 5
+      Y: 4
+  - Length: 4
+    Forwards: SORD
+    Backwards: DROS
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 5
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 3
+    Forwards: SUN
+    Backwards: NUS
+    Definition: To sit or lie outside while the sun is shining.
+    HasDefinition: 1
+    FromPosition:
+      X: 3
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: SUE
+    Backwards: EUS
+    Definition: To make a legal claim against someone, especially for money, because
+      he or she has harmed you in some way.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 3
+    Forwards: FEN
+    Backwards: NEF
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: ORE
+    Backwards: ERO
+    Definition: Rock or earth from which metal can be obtained.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 3
+    ToPosition:
+      X: 3
+      Y: 1
+  - Length: 4
+    Forwards: SNUB
+    Backwards: BUNS
+    Definition: A nose that is short and flat and points slightly up.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 3
+    Forwards: TEN
+    Backwards: NET
+    Definition: A piece of paper money worth $10.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: RUE
+    Backwards: EUR
+    Definition: To wish that you had not done something.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 2
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 3
+    Forwards: BUN
+    Backwards: NUB
+    Definition: A small round type of bread.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 3
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: DUN
+    Backwards: NUD
+    Definition: A dull brownish-gray color.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 4
+    Forwards: VASE
+    Backwards: ESAV
+    Definition: A container used to put flowers in or for decoration.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 4
+    Forwards: CUFF
+    Backwards: FFUC
+    Definition: The end part of a sleevethe arm of a shirt, dress etc. that often
+      has a button on it to hold it closed around your wrist.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 5
+  - Length: 4
+    Forwards: BUNS
+    Backwards: SNUB
+    Definition: A small round type of bread.
+    HasDefinition: 1
+    FromPosition:
+      X: 4
+      Y: 3
+    ToPosition:
+      X: 1
+      Y: 3
+  - Length: 4
+    Forwards: ORDS
+    Backwards: SDRO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 0
+      Y: 1
+  - Length: 3
+    Forwards: VAS
+    Backwards: SAV
+    Definition: "A tube inside a male\u2019s body for carrying sperm from the testicles
+      toward the penis."
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 4
+    ToPosition:
+      X: 3
+      Y: 4
+  - Length: 3
+    Forwards: NUB
+    Backwards: BUN
+    Definition: The central or main part of something.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 3
+    ToPosition:
+      X: 4
+      Y: 3
+  - Length: 4
+    Forwards: DUNE
+    Backwards: ENUD
+    Definition: A hill made of sand near the ocean or in the desert.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 4
+  - Length: 4
+    Forwards: MEED
+    Backwards: DEEM
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: DEE
+    Backwards: EED
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 1
+    ToPosition:
+      X: 4
+      Y: 1
+  - Length: 3
+    Forwards: ORD
+    Backwards: DRO
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 0
+      Y: 4
+    ToPosition:
+      X: 0
+      Y: 2
+  - Length: 4
+    Forwards: RUES
+    Backwards: SEUR
+    Definition: To wish that you had not done something.
+    HasDefinition: 1
+    FromPosition:
+      X: 1
+      Y: 5
+    ToPosition:
+      X: 4
+      Y: 2
+  - Length: 3
+    Forwards: NEF
+    Backwards: FEN
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 2
+      Y: 5
+    ToPosition:
+      X: 2
+      Y: 3
+  - Length: 3
+    Forwards: NET
+    Backwards: TEN
+    Definition: To earn a particular amount of money as a profit after taxes have
+      been paid.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 0
+    ToPosition:
+      X: 3
+      Y: 2
+  - Length: 3
+    Forwards: UEY
+    Backwards: YEU
+    Definition: 
+    HasDefinition: 0
+    FromPosition:
+      X: 4
+      Y: 0
+    ToPosition:
+      X: 2
+      Y: 2
+  - Length: 4
+    Forwards: DEEM
+    Backwards: MEED
+    Definition: To think of or consider something in a particular way.
+    HasDefinition: 1
+    FromPosition:
+      X: 5
+      Y: 1
+    ToPosition:
+      X: 2
+      Y: 1
+  - Length: 3
+    Forwards: RED
+    Backwards: DER
+    Definition: The color of blood.
+    HasDefinition: 1
+    FromPosition:
+      X: 2
+      Y: 0
+    ToPosition:
+      X: 4
+      Y: 2
+  CharGrid:
+  - Character: 84
+    NumberOfUses: 1
+  - Character: 83
+    NumberOfUses: 2
+  - Character: 68
+    NumberOfUses: 4
+  - Character: 82
+    NumberOfUses: 4
+  - Character: 79
+    NumberOfUses: 4
+  - Character: 83
+    NumberOfUses: 2
+  - Character: 69
+    NumberOfUses: 1
+  - Character: 83
+    NumberOfUses: 1
+  - Character: 70
+    NumberOfUses: 1
+  - Character: 83
+    NumberOfUses: 4
+  - Character: 83
+    NumberOfUses: 1
+  - Character: 83
+    NumberOfUses: 2
+  - Character: 68
+    NumberOfUses: 3
+  - Character: 68
+    NumberOfUses: 6
+  - Character: 85
+    NumberOfUses: 5
+  - Character: 78
+    NumberOfUses: 9
+  - Character: 69
+    NumberOfUses: 7
+  - Character: 70
+    NumberOfUses: 4
+  - Character: 78
+    NumberOfUses: 1
+  - Character: 69
+    NumberOfUses: 8
+  - Character: 78
+    NumberOfUses: 4
+  - Character: 85
+    NumberOfUses: 8
+  - Character: 83
+    NumberOfUses: 4
+  - Character: 70
+    NumberOfUses: 2
+  - Character: 89
+    NumberOfUses: 3
+  - Character: 69
+    NumberOfUses: 7
+  - Character: 82
+    NumberOfUses: 5
+  - Character: 66
+    NumberOfUses: 5
+  - Character: 65
+    NumberOfUses: 4
+  - Character: 85
+    NumberOfUses: 2
+  - Character: 84
+    NumberOfUses: 3
+  - Character: 77
+    NumberOfUses: 3
+  - Character: 83
+    NumberOfUses: 1
+  - Character: 79
+    NumberOfUses: 2
+  - Character: 86
+    NumberOfUses: 4
+  - Character: 67
+    NumberOfUses: 2
