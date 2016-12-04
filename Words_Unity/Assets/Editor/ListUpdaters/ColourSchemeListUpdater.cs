@@ -19,7 +19,7 @@ public class ColourSchemeListUpdater
 
 				foreach (string path in schemePaths)
 				{
-					string relativePath = PathHelper.MakeRelativeToAssetsFolder(path);
+					string relativePath = FileIOHelper.MakePathRelativeToAssetsFolder(path);
 					ColourScheme scheme = AssetDatabase.LoadAssetAtPath(relativePath, typeof(ColourScheme)) as ColourScheme;
 					schemeManager.RegisterScheme(scheme);
 				}
