@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.UI;
 using System;
 using System.Collections;
@@ -45,13 +46,16 @@ public class WordOfTheDay : UIMonoBehaviour
 		int daysSinceEpoch = (DateTime.Today - GlobalSettings.kEpoch).Days;
 
 		string url = string.Format(GAEURLFormat, daysSinceEpoch);
+		UnityWebRequest www = UnityWebRequest.Get(url);
+		yield return www.Send();
 
-		WWW wotdFetch = new WWW(url);
-		yield return wotdFetch;
-
-		if (wotdFetch.error == null)
+		if (www.isError)
 		{
-			string[] wotdSplit = wotdFetch.text.Split(new string[] { "##" }, System.StringSplitOptions.None);
+			ODebug.LogWarning(string.Format("Failed to get Word of the Day. Error: " + www.error));
+		}
+		else
+		{
+			string[] wotdSplit = www.downloadHandler.text.Split(new string[] { "##" }, System.StringSplitOptions.None);
 			if (wotdSplit.Length == 3)
 			{
 				string word = wotdSplit[1];
