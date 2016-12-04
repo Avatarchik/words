@@ -6,25 +6,26 @@ public class ColourSchemeSwitchButton : UIMonoBehaviour, IPointerClickHandler
 {
 	public Button ButtonRef;
 	public Text TextRef;
+	public ColourSchemeManager ColourSchemeManagerRef;
+
+	public ColourScheme Scheme;
 
 	public RectTransform ColourExamplesRoot;
 	public Image[] ColourExamples;
 
-	private ColourSchemeManager mColourSchemeManagerRef;
 	private int mSchemeIndex;
 
 	static private Button sSelectedButton;
 
-	public void Initialise(ColourSchemeManager colourSchemeManagerRef, int schemeIndex)
+	void Awake()
 	{
-		mColourSchemeManagerRef = colourSchemeManagerRef;
-		mSchemeIndex = schemeIndex;
+		mSchemeIndex = int.Parse(Scheme.name.Split('_')[0]);
 
-		ColourScheme scheme = colourSchemeManagerRef.Schemes[mSchemeIndex];
+		ColourScheme scheme = ColourSchemeManagerRef.Schemes[mSchemeIndex];
 		TextRef.text = scheme.Name;
 		SetupColourExamples(scheme);
 
-		if (colourSchemeManagerRef.IsActiveScheme(mSchemeIndex))
+		if (ColourSchemeManagerRef.IsActiveScheme(mSchemeIndex))
 		{
 			ColorBlockHelper.SetNormalColour(ButtonRef, GlobalSettings.Instance.UIHightlightColour);
 			sSelectedButton = ButtonRef;
@@ -49,23 +50,13 @@ public class ColourSchemeSwitchButton : UIMonoBehaviour, IPointerClickHandler
 #if UNITY_EDITOR
 		ColourExamplesRoot.name = string.Format("{0} (examples)", name);
 #endif // UNITY_EDITOR
-		ColourExamplesRoot.transform.SetParent(transform.parent);
-	}
-
-	void OnDestroy()
-	{
-		if (ColourExamplesRoot != null)
-		{
-			Destroy(ColourExamplesRoot.gameObject);
-			ColourExamplesRoot = null;
-		}
 	}
 
 	public void OnPointerClick(PointerEventData eventData)
 	{
 		if (eventData.button == PointerEventData.InputButton.Left)
 		{
-			mColourSchemeManagerRef.SwitchScheme(mSchemeIndex);
+			ColourSchemeManagerRef.SwitchScheme(mSchemeIndex);
 
 			if (sSelectedButton != null)
 			{
