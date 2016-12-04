@@ -161,7 +161,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ButtonRef: {fileID: 114000011956194566}
   TextRef: {fileID: 114000013292889762}
-  ColourExamplesRoot: {fileID: 224000012560862944}
+  ColourSchemeManagerRef: {fileID: 0}
+  Scheme: {fileID: 0}
   ColourExamples:
   - {fileID: 114000014169871076}
   - {fileID: 114000014068918180}

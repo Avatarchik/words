@@ -10,7 +10,6 @@ public class ColourSchemeSwitchButton : UIMonoBehaviour, IPointerClickHandler
 
 	public ColourScheme Scheme;
 
-	public RectTransform ColourExamplesRoot;
 	public Image[] ColourExamples;
 
 	private int mSchemeIndex;
@@ -48,8 +47,9 @@ public class ColourSchemeSwitchButton : UIMonoBehaviour, IPointerClickHandler
 		}
 
 #if UNITY_EDITOR
-		ColourExamplesRoot.name = string.Format("{0} (examples)", name);
+		TextRef.gameObject.name = string.Format("{0}_Text", name);
 #endif // UNITY_EDITOR
+		TextRef.transform.transform.SetParent(transform.parent);
 	}
 
 	public void OnPointerClick(PointerEventData eventData)

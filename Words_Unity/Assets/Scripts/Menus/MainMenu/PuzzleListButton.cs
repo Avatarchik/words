@@ -4,6 +4,7 @@ using System;
 
 public class PuzzleListButton : UIMonoBehaviour, IPointerClickHandler
 {
+	public Text TextRef;
 	public Button ButtonRef;
 	public PuzzleManager PuzzleManagerRef;
 
@@ -11,6 +12,14 @@ public class PuzzleListButton : UIMonoBehaviour, IPointerClickHandler
 	public bool IsLastPlayedButton = false;
 
 	private SerializableGuid mLastPuzzleGuid;
+
+	void Awake()
+	{
+#if UNITY_EDITOR
+		TextRef.gameObject.name = string.Format("{0}_Text", name);
+#endif // UNITY_EDITOR
+		TextRef.transform.transform.SetParent(transform.parent);
+	}
 
 	void OnEnable()
 	{
