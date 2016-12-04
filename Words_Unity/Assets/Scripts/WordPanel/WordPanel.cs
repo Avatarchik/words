@@ -112,6 +112,7 @@ public class WordPanel : UIMonoBehaviour
 		if (!mIsPuzzleComplete && mWordsRemaining <= 0)
 		{
 			mIsPuzzleComplete = true;
+			TimeManager.Instance.Stop();
 			StartCoroutine(SwitchToPuzzleCompleteLevel());
 		}
 	}
