@@ -75,6 +75,8 @@ public class PuzzleOfTheDay : MonoBehaviour, IPointerClickHandler
 			int daysSinceEpoch = (DateTime.Today - GlobalSettings.kEpoch).Days;
 			PlayerPrefsPlus.SetInt(PlayerPrefKeys.PotDLastRetrievedDayStamp, daysSinceEpoch);
 			PlayerPrefsPlus.Save();
+
+			AnalyticsManager.Instance.SendPuzzleOfTheDayDownloaded();
 		}
 	}
 

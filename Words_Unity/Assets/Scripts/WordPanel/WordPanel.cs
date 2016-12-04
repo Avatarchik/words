@@ -131,11 +131,11 @@ public class WordPanel : UIMonoBehaviour
 
 		if (PuzzleManagerRef.IsPuzzleOfTheDay)
 		{
-			AnalyticsManager.Instance.SendPuzzleOfTheDayComplete();
+			AnalyticsManager.Instance.SendPuzzleOfTheDayCompleted();
 		}
 		else
 		{
-			AnalyticsManager.Instance.SendPuzzleComplete();
+			AnalyticsManager.Instance.SendPuzzleCompleted();
 		}
 
 		MenuManager.Instance.SwitchMenu(EMenuType.PuzzleCompleteMenu);

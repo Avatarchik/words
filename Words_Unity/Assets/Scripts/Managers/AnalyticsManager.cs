@@ -6,7 +6,7 @@ public class AnalyticsManager : SingletonMonoBehaviour<AnalyticsManager>
 {
 	public PuzzleManager PuzzleManagerRef;
 
-	public void SendPuzzleComplete()
+	public void SendPuzzleCompleted()
 	{
 		int puzzleSize;
 		int puzzleIndex;
@@ -22,10 +22,10 @@ public class AnalyticsManager : SingletonMonoBehaviour<AnalyticsManager>
 			{ "Time", state.TotalTimeInSeconds },
 		};
 
-		Analytics.CustomEvent("PuzzleComplete", dict);
+		Analytics.CustomEvent("PuzzleCompleted", dict);
 	}
 
-	public void SendPuzzleOfTheDayComplete()
+	public void SendPuzzleOfTheDayCompleted()
 	{
 		PuzzleState state = SaveGameManager.Instance.ActivePuzzleState;
 
@@ -40,6 +40,20 @@ public class AnalyticsManager : SingletonMonoBehaviour<AnalyticsManager>
 			{ "Time", state.TotalTimeInSeconds },
 		};
 
-		Analytics.CustomEvent("PuzzleComplete", dict);
+		Analytics.CustomEvent("PotDCompleted", dict);
+	}
+
+	public void SendPuzzleOfTheDayDownloaded()
+	{
+		DateTime now = DateTime.Today;
+
+		Dictionary<string, object> dict = new Dictionary<string, object>
+		{
+			{ "Day", now.Day },
+			{ "Month", now.Month },
+			{ "Year", now.Year },
+		};
+
+		Analytics.CustomEvent("PotDDownloaded", dict);
 	}
 }
