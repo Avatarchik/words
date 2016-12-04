@@ -19,22 +19,4 @@ static public class PathHelper
 		path = StandardiseSlashes(path);
 		return path;
 	}
-
-	static public string MakeRelativeToAssetsFolder(string path)
-	{
-		if (!string.IsNullOrEmpty(path))
-		{
-			path = StandardiseSlashes(path);
-			if (path.StartsWith(ApplicationHelper.ProjectRootPath))
-			{
-				path = path.Replace(ApplicationHelper.ProjectRootPath, string.Empty);
-				if (!Path.HasExtension(path) && !path.EndsWith("/"))
-				{
-					path += "/";
-				}
-			}
-		}
-
-		return path;
-	}
 }
