@@ -55,20 +55,24 @@ public class WordOfTheDay : UIMonoBehaviour
 		}
 		else
 		{
-			string[] wotdSplit = www.downloadHandler.text.Split(new string[] { "##" }, System.StringSplitOptions.None);
-			if (wotdSplit.Length == 3)
+			string responseText = www.downloadHandler.text;
+			if (responseText != "UNKNOWN")
 			{
-				string word = wotdSplit[1];
-				string definition = wotdSplit[2];
-
-				if (!string.IsNullOrEmpty(word) && !string.IsNullOrEmpty(definition))
+				string[] wotdSplit = responseText.Split(new string[] { "##" }, System.StringSplitOptions.None);
+				if (wotdSplit.Length == 3)
 				{
-					UpdateText(word, definition);
+					string word = wotdSplit[1];
+					string definition = wotdSplit[2];
 
-					PlayerPrefsPlus.SetInt(PlayerPrefKeys.WotDLastRetrievedDayStamp, daysSinceEpoch);
-					PlayerPrefsPlus.SetString(PlayerPrefKeys.WotDLastRetrievedWord, word);
-					PlayerPrefsPlus.SetString(PlayerPrefKeys.WotDLastRetrievedDefinition, definition);
-					PlayerPrefsPlus.Save();
+					if (!string.IsNullOrEmpty(word) && !string.IsNullOrEmpty(definition))
+					{
+						UpdateText(word, definition);
+
+						PlayerPrefsPlus.SetInt(PlayerPrefKeys.WotDLastRetrievedDayStamp, daysSinceEpoch);
+						PlayerPrefsPlus.SetString(PlayerPrefKeys.WotDLastRetrievedWord, word);
+						PlayerPrefsPlus.SetString(PlayerPrefKeys.WotDLastRetrievedDefinition, definition);
+						PlayerPrefsPlus.Save();
+					}
 				}
 			}
 		}
