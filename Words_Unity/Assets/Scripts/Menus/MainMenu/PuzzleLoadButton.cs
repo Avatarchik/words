@@ -16,12 +16,22 @@ public class PuzzleLoadButton : UIMonoBehaviour, IPointerClickHandler
 	public string ProgressBarPercentageFormat;
 	public Image TickRef;
 
+	public Transform TextRoot;
+
 	public PuzzleManager PuzzleManagerRef { get; private set; }
 
 	private int mPuzzleSize;
 	private int mPuzzleIndex;
 
 	private PuzzleState mCurrentState;
+
+	void Start()
+	{
+#if UNITY_EDITOR
+		TextRoot.gameObject.name = string.Format("{0}_Text", name);
+#endif // UNITY_EDITOR
+		TextRoot.transform.SetParent(transform.parent);
+	}
 
 	public void Initialise(PuzzleManager puzzleManagerRef, int puzzleSize, int puzzleIndex)
 	{
