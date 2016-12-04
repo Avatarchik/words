@@ -676,7 +676,7 @@ Prefab:
     - target: {fileID: 224000012759399788, guid: 61063325dd621e94390991a8e00b2def,
         type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 224000012759399788, guid: 61063325dd621e94390991a8e00b2def,
         type: 2}
@@ -1581,7 +1581,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 528688478}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 252, y: -16}
@@ -3493,7 +3493,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 738264180}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.99999994
+  m_Size: 0.9565217
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -5482,8 +5482,8 @@ RectTransform:
   - {fileID: 882201253}
   - {fileID: 1685986299}
   - {fileID: 1836929017}
-  - {fileID: 63712332}
   - {fileID: 130063092}
+  - {fileID: 63712332}
   m_Father: {fileID: 1920041286}
   m_RootOrder: 5
   m_AnchorMin: {x: 0.5, y: 0.5}
