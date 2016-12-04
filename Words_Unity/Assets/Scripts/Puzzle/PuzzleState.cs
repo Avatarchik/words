@@ -19,6 +19,14 @@ public class PuzzleState
 		}
 	}
 
+	public int TotalTimeInSeconds
+	{
+		get
+		{
+			return (TimeMins * 60) + TimeSeconds;
+		}
+	}
+
 	public void EnsureInitialisation(int puzzleSize, int wordCount)
 	{
 		bool shouldReset = false;

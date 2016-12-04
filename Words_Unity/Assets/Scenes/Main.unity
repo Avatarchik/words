@@ -941,7 +941,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &102630646
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1005,6 +1005,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PuzzleLoaderRef: {fileID: 1066591218}
+  PuzzleManagerRef: {fileID: 275983704}
   WordPanelGroupPrefab: {fileID: 114000010204794564, guid: 43ede615a7db72943b7c0820a6afe8ad,
     type: 2}
   TitleRef: {fileID: 551711092}
@@ -9088,7 +9089,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1e663ee1dbe90e4dad74f9aacbe8525, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PuzzleManagerRef: {fileID: 275983704}
 --- !u!114 &934237295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10778,6 +10778,7 @@ Transform:
   - {fileID: 1188995837}
   - {fileID: 1015616214}
   - {fileID: 2143070629}
+  - {fileID: 1544464635}
   m_Father: {fileID: 0}
   m_RootOrder: 4
 --- !u!4 &1223757650 stripped
@@ -12322,6 +12323,58 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1537992290}
+--- !u!1001 &1544464634
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1195091989}
+    m_Modifications:
+    - target: {fileID: 4000012620101502, guid: 5a08d951ddd6c8249b96b81b0e258d4f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012620101502, guid: 5a08d951ddd6c8249b96b81b0e258d4f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012620101502, guid: 5a08d951ddd6c8249b96b81b0e258d4f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012620101502, guid: 5a08d951ddd6c8249b96b81b0e258d4f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012620101502, guid: 5a08d951ddd6c8249b96b81b0e258d4f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012620101502, guid: 5a08d951ddd6c8249b96b81b0e258d4f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012620101502, guid: 5a08d951ddd6c8249b96b81b0e258d4f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012620101502, guid: 5a08d951ddd6c8249b96b81b0e258d4f, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013192790834, guid: 5a08d951ddd6c8249b96b81b0e258d4f,
+        type: 2}
+      propertyPath: PuzzleManagerRef
+      value: 
+      objectReference: {fileID: 275983704}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5a08d951ddd6c8249b96b81b0e258d4f, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1544464635 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4000012620101502, guid: 5a08d951ddd6c8249b96b81b0e258d4f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1544464634}
 --- !u!224 &1553078159 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224000011604792504, guid: b4306da0c51d4ec4bbc4b167e1e88c9f,

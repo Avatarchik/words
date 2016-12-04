@@ -106,6 +106,30 @@ public class PuzzleManager : MonoBehaviour
 		return puzzleContents.Guid;
 	}
 
+	public void GetPuzzleSizeAndIDFor(SerializableGuid puzzleGuid, out int puzzleSize, out int puzzleIndex)
+	{
+		int puzzleListCount = PuzzleLists.Count;
+
+		for (int puzzleListIndex = 0; puzzleListIndex < puzzleListCount; ++puzzleListIndex)
+		{
+			puzzleIndex = 0;
+
+			foreach (PuzzleContents puzzleContents in PuzzleLists[puzzleListIndex].Puzzles)
+			{
+				if (puzzleContents.Guid == puzzleGuid)
+				{
+					puzzleSize = puzzleListIndex + GlobalSettings.Instance.PuzzleSizeMin;
+					return;
+				}
+
+				++puzzleIndex;
+			}
+		}
+
+		puzzleSize = -1;
+		puzzleIndex = -1;
+	}
+
 	public void PopulateGuidList(ref List<SerializableGuid> mGuids)
 	{
 		mGuids.Clear();

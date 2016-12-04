@@ -38,4 +38,9 @@ public class SerializableGuid
 			return Guid.Empty;
 		}
 	}
+
+	public override string ToString()
+	{
+		return Value;
+	}
 }

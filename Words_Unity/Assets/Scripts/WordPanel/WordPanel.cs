@@ -38,6 +38,7 @@ public class WordValidityResult
 public class WordPanel : UIMonoBehaviour
 {
 	public PuzzleLoader PuzzleLoaderRef;
+	public PuzzleManager PuzzleManagerRef;
 	public WordPanelGroup WordPanelGroupPrefab;
 
 	public WordPanelTitle TitleRef;
@@ -124,6 +125,10 @@ public class WordPanel : UIMonoBehaviour
 		}
 
 		yield return new WaitForSeconds(2);
+
+		PuzzleManagerRef.ClosePuzzle();
+		AnalyticsManager.Instance.SendLevelComplete();
+
 		MenuManager.Instance.SwitchMenu(EMenuType.PuzzleCompleteMenu);
 	}
 
